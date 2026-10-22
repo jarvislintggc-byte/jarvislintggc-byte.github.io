@@ -1,4 +1,5 @@
 import { expressionSprites } from './journey-expression-art.mjs';
+import { readGameLanguage, saveGameLanguage, translateGameText, applyGameLanguage } from './journey-i18n.mjs';
 import { mapObjects } from './journey-map-objects-art.mjs';
 import { createMapObjectView } from './journey-map-objects.mjs';
 import { mapEnvironment } from './journey-environment-art.mjs';
@@ -27,7 +28,7 @@ import { levelUp } from './journey-levelup.mjs';
 import { createLevelUpView, createLevelUpSound } from './journey-levelup-view.mjs';
 import { createCombatSound } from './journey-sfx.mjs';
 import { chatBubble } from './journey-bubble.mjs';
-import { storyLine, autoAdvanceDue, bubbleGeometry, speechVisible, dialogueExpression, isClosingSpeech } from './journey-story.mjs';
+import { storyLine, readingDuration, autoAdvanceDue, bubbleGeometry, speechVisible, dialogueExpression, isClosingSpeech } from './journey-story.mjs';
 import { newPlayer, revivePlayer, resetMobility, stepPlayer, playerPhases, canMovePlayer, limits, attackReaches, manualCastDuration, hitFeedback, appendDialogue, experienceFor } from './journey-player.mjs';
 import { jumpSprites } from './journey-jump.mjs';
 import { proneSprites, doubleJumpEffects } from './journey-mobility-art.mjs';
@@ -38,6 +39,8 @@ import { climbSprites } from './journey-climb-art.mjs';
 
 const root=document.querySelector('#life-game');
 if (root) {
+  let language=readGameLanguage(),hudKind=null,soundError='';
+  const t=text=>translateGameText(text,language);
   const $=id=>document.getElementById(id), asset=name=>`/assets/journey/${name}`;
   const next=$('game-next'),portal=$('game-portal'),pause=$('game-pause'),cover=$('game-cover');
   const scene=$('scene-background'),sprite=$('character-sprite'),actor=$('game-character'),boss=$('game-boss'),caption=$('battle-caption'),trail=$('chapter-trail');
@@ -77,7 +80,8 @@ if (root) {
   }
   $('bubble-tail').src=asset(chatBubble.pieces.arrow.file);
   dialogue.style.color='#'+(chatBubble.color>>>0).toString(16).padStart(8,'0').slice(2);
-  const setText=(el,value)=>{if(el.textContent!==value)el.textContent=value;};
+  const setText=(el,value)=>{value=t(value);if(el.textContent!==value)el.textContent=value;};
+  const spokenLine=()=>t(storyLine(state,chapters[state.chapter]));
   function preload(file){if(preloaded.has(file))return;preloaded.add(file);const img=new Image();img.src=asset(file);img.decode?.().catch(()=>{});}
   function preloadAbility(ability){if(!ability)return;ability.actorFrames.forEach(frame=>preload(frame.file));ability.tracks.forEach(track=>track.frames.forEach(frame=>preload(frame.file)));}
   function preloadClass(id){
@@ -104,7 +108,7 @@ if (root) {
     label.append(input,image,name);label.style.setProperty('--class-color',job.color);$('class-choices').append(label);
   });
   function selectClass(classId){if(state.phase!=='ready'||!Object.hasOwn(jobById,classId))return;dispatch({type:'SELECT_CLASS',classId});preloadClass(classId);cue('page');}
-  const classCarousel=createClassCarousel({host:$('class-carousel'),choices:$('class-choices'),dots:$('class-dots'),counter:$('class-counter'),jobs,onSelect:selectClass});
+  const classCarousel=createClassCarousel({host:$('class-carousel'),choices:$('class-choices'),dots:$('class-dots'),counter:$('class-counter'),jobs,onSelect:selectClass,translate:t});
   $('class-choices').addEventListener('change',event=>selectClass(event.target.value));
   chapters.forEach((chapter,index)=>{
     const item=document.createElement('li'),button=document.createElement('button');button.type='button';button.textContent=String(chapter.id).padStart(2,'0');button.disabled=true;
@@ -126,7 +130,7 @@ if (root) {
   }
   new ResizeObserver(positionScene).observe(scene.parentElement);
   function updateSoundButton(error=''){
-    const button=$('game-sound');button.setAttribute('aria-pressed',String(sound));button.setAttribute('aria-label',error?`${error}；${sound?'關閉所有聲音':'開啟所有聲音'}`:sound?'關閉所有聲音':'開啟所有聲音');button.dataset.error=String(Boolean(error));
+    soundError=error;const button=$('game-sound');button.setAttribute('aria-pressed',String(sound));button.setAttribute('aria-label',t(error?`${error}；${sound?'關閉所有聲音':'開啟所有聲音'}`:sound?'關閉所有聲音':'開啟所有聲音'));button.dataset.error=String(Boolean(error));
   }
   function stopEffects(){
     soundGeneration++;combatSound.stop();levelSound.stop();for(const voice of uiVoices){try{voice.stop();}catch{}}uiVoices.clear();
@@ -203,7 +207,7 @@ if (root) {
   function syncPause(){dispatch(reasons.size?'PAUSE':'RESUME');lastTime=0;if(!state.paused&&sound&&!document.hidden)audio?.resume().catch(()=>{});}
   function setPause(reason,value){if(value)reasons.add(reason);else reasons.delete(reason);syncPause();}
   function updateSprite(pose){
-    const expression=dialogueExpression(state,chapters[state.chapter],elapsed),look=state.completed?`${state.classId}-${state.completed}`:'beginner';actor.dataset.expression=expression;
+    const expression=dialogueExpression(state,chapters[state.chapter],elapsed,spokenLine()),look=state.completed?`${state.classId}-${state.completed}`:'beginner';actor.dataset.expression=expression;
     if(state.mode==='manual'&&player.hurtTime>0){applySprite(hurtSprites[state.completed?`${state.classId}-${state.completed}`:'beginner']);return;}
     if(state.mode==='manual'&&player.climbing){const frames=climbSprites[look][player.climbingKind];applySprite(frames[player.climbMoving?Math.floor(animationTime/180)%frames.length:0]);return;}
     if(state.mode==='manual'&&player.crouching){applySprite(proneSprites[look]);return;}
@@ -256,7 +260,7 @@ if (root) {
     Object.assign(image.style,{width:`${f.width*scale}px`,height:`${f.height*scale}px`,left:`calc(50% - ${f.origin.x*scale}px)`,bottom:`${(f.origin.y-f.height)*scale}px`});
   }
   function renderDialogue(chapter,growth){
-    const closing=isClosingSpeech(state),signature=[closing?'closing':state.phase,state.chapter,state.page,state.rewardBeat,state.classId,state.completed].join('/');
+    const closing=isClosingSpeech(state),signature=[language,closing?'closing':state.phase,state.chapter,state.page,state.rewardBeat,state.classId,state.completed].join('/');
     if(signature!==lastDialogue){
       lastDialogue=signature;setText($('dialogue-speaker'),'Jarvis');const body=storyLine(state,chapter);
       const readingLine=!closing&&(['reading','encounter','retiring','reward'].includes(state.phase)||state.phase==='battle'&&state.castReturn!=='portal');
@@ -266,15 +270,16 @@ if (root) {
         history=appendDialogue(history,{id:`${storyRun}:${state.chapter}:${state.phase}:${state.page}`,speaker:'Jarvis',text:body});renderHistory();
       }
     }
-    dialogue.hidden=!speechVisible(state,chapter,elapsed);actor.dataset.expression=dialogueExpression(state,chapter,elapsed);positionBubble();
+    dialogue.hidden=!speechVisible(state,chapter,elapsed,spokenLine());actor.dataset.expression=dialogueExpression(state,chapter,elapsed,spokenLine());positionBubble();
     const auto=$('game-auto');auto.hidden=['ready','complete'].includes(state.phase);auto.disabled=state.paused;auto.setAttribute('aria-pressed',String(autoplay));setText(auto,`自動：${autoplay?'開':'關'}`);
     const labels={ready:'出發',reading:'下一句',encounter:'按 A 攻擊',battle:'施放中…',retiring:'退場中…',reward:state.rewardBeat===3?'收尾對話…':state.rewardBeat===2?'稍候…':'成長中…',portal:state.mode==='manual'?'E 進入傳點':state.chapter===chapters.length-1?'完成這段旅程':'進入傳送門',walking:'走向傳點…',transition:'前往下一站…',dead:'等待復活',complete:'重新選擇職業'};
-    if(next.dataset.label!==labels[state.phase]){next.dataset.label=labels[state.phase];next.replaceChildren(document.createTextNode(labels[state.phase]));const arrow=document.createElement('span');arrow.setAttribute('aria-hidden','true');arrow.textContent='→';if(state.phase!=='ready')next.append(arrow);}
+    const label=t(labels[state.phase]);
+    if(next.dataset.label!==label){next.dataset.label=label;next.replaceChildren(document.createTextNode(label));const arrow=document.createElement('span');arrow.setAttribute('aria-hidden','true');arrow.textContent='→';if(state.phase!=='ready')next.append(arrow);}
     next.disabled=state.paused||state.phase==='encounter'||timed.includes(state.phase)||(state.phase==='ready'&&!state.classId);
   }
   function renderHistory(){
     const log=$('dialogue-history');log.replaceChildren();
-    history.forEach(message=>{const row=document.createElement('li'),speaker=document.createElement('b'),text=document.createElement('span');speaker.textContent=message.speaker+'：';text.textContent=message.text;row.title=message.speaker+'：'+message.text;row.append(speaker,text);log.append(row);});
+    history.forEach(message=>{const row=document.createElement('li'),speaker=document.createElement('b'),text=document.createElement('span');speaker.textContent=message.speaker+(language==='en'?': ':'：');text.textContent=t(message.text);row.title=speaker.textContent+text.textContent;row.append(speaker,text);log.append(row);});
   }
   function updateVitals(){
     const growth=growthFor(state.classId,state.completed),max=limits(state.completed),hp=Math.ceil(player.hp),mp=Math.floor(player.mp),exp=experienceFor(state);
@@ -288,7 +293,10 @@ if (root) {
     const chapter=chapters[state.chapter],growth=growthFor(state.classId,state.completed),job=jobById[state.classId];
     Object.assign(root.dataset,{mode:state.mode,phase:state.phase,beat:String(state.beat),rewardBeat:String(state.rewardBeat),rewardNew:String(state.rewardNew),job:state.completed?state.classId:'beginner',rank:String(state.completed)});
     root.style.setProperty('--story-rate',String(playbackRate()));root.dataset.playbackRate=String(playbackRate());
-    classCarousel.render(state.classId);
+    root.dataset.language=language;classCarousel.render(state.classId);
+    for(const [index,card]of [...$('class-choices').children].entries()){
+      card.children[0].setAttribute('aria-label',t(jobs[index].name));card.children[1].alt=t(`楓之谷${jobs[index].name}完整角色立繪`);setText(card.children[2],jobs[index].name);
+    }
     $('story-speed').hidden=state.mode!=='watch';
     for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]])$(id).setAttribute('aria-pressed',String(rate===watchSpeed));
     $('mode-manual').setAttribute('aria-pressed',String(state.mode==='manual'));$('mode-watch').setAttribute('aria-pressed',String(state.mode==='watch'));
@@ -298,11 +306,12 @@ if (root) {
     root.style.setProperty('--job-color',job?.color||'#f1d78f');root.classList.toggle('is-paused',state.paused);
     const active=!['ready','complete'].includes(state.phase);pause.disabled=!active;setText(pause,state.paused?'繼續':'暫停');pause.setAttribute('aria-pressed',String(state.paused));$('game-pause-cover').hidden=!state.paused||reasons.has('hud');
     if(chapterShown!==state.chapter){chapterShown=state.chapter;environmentView.show(mapEnvironment[chapter.map]);mapObjectView.show(mapObjects[chapter.map]);scene.src=asset(chapter.map);scene.alt=chapter.alt;root.dataset.boss=chapter.boss;setText($('map-region'),chapter.region);setText($('map-title'),chapter.title);setText($('chapter-badge'),`CHAPTER ${String(chapter.id).padStart(2,'0')} / ${chapters.length}`);preloadScene(state.chapter);preloadScene(state.chapter+1);$('scene-sky').style.backgroundImage=chapter.background?`url("${asset(chapter.background)}")`:'none';root.dataset.chapter=String(chapter.id);setText($('monster-name'),monster().name);boss.setAttribute('aria-label',`攻擊${monster().name}，象徵${chapter.symbol}`);}
+    scene.alt=t(chapter.alt);setText($('map-region'),chapter.region);setText($('map-title'),chapter.title);setText($('monster-name'),monster().name);boss.setAttribute('aria-label',t(`攻擊${monster().name}，象徵${chapter.symbol}`));
     enemyView.render(monster(),enemy);positionScene();positionActor();if(state.phase==='battle')updateCast();else{boss.style.setProperty('--boss-recoil','0px');boss.style.setProperty('--impact-brightness','1');scene.parentElement.style.setProperty('--impact-shake','0px');skillView.hide();updateSprite(state.phase==='walking'?'walk':'idle');}
     cover.hidden=active;$('class-screen').hidden=state.phase!=='ready';$('complete-screen').hidden=state.phase!=='complete';setText($('complete-growth'),'謝謝你走過我的故事。下一章還在繼續，也希望有機會和你聊聊，我能為你的團隊做什麼。');
     $('class-choices').querySelectorAll('input').forEach(input=>{input.checked=input.value===state.classId;});setText($('selection-note'),job?`${job.name}路線 · 從初心者出發`:'選擇你的職業方向，再開始故事。');
     setText($('game-hud-level'),`Lv.${growth.level} ${growth.title}`);setText($('game-hud-skill'),growth.skill);setText($('skill-count'),`${growth.skillStage} / ${job?.skills.length||5}`);setText($('game-hud-gear'),growth.gear);
-    $('game-hud-skill').title=job?`已學會：${job.skills.slice(0,growth.skillStage).join('、')||'普通攻擊'}。按 A 使用最新學會的技能攻擊。`:'普通攻擊';
+    $('game-hud-skill').title=t(job?`已學會：${job.skills.slice(0,growth.skillStage).join('、')||'普通攻擊'}。按 A 使用最新學會的技能攻擊。`:'普通攻擊');
     const icon=state.completed?gearIcons[`${state.classId}-${state.completed}`]:null;$('game-hud-gear-icon').hidden=!icon;if(icon)$('game-hud-gear-icon').src=asset(icon.file);
     const rewarding=state.phase==='reward';$('reward-banner').hidden=state.phase==='ready';$('game-loot').hidden=!rewarding||!state.rewardNew||state.rewardBeat!==0;
     if(rewarding)$('game-loot').style.left=`${state.lootX}%`;
@@ -316,9 +325,10 @@ if (root) {
     setText($('enemy-health-label'),`${monster().name} ${state.bossHp} / ${state.bossMaxHp}`);$('enemy-health-fill').style.width=`${state.bossHp/state.bossMaxHp*100}%`;
     if(state.mode==='manual'&&rewarding&&state.rewardNew&&state.rewardBeat===0){caption.hidden=false;setText(caption,'走近地上的裝備即可拾取');}
     const open=canUsePortal(state);portal.disabled=!open;portal.classList.toggle('is-open',open||['walking','transition'].includes(state.phase));
-    portal.setAttribute('aria-label',open?state.chapter===chapters.length-1?'進入傳送門，完成這段旅程':`進入傳送門，前往第 ${chapter.id+1} 章`:'傳送門尚未開啟');setText(portal.querySelector('.portal-label'),open?state.chapter===chapters.length-1?'完成旅程 →':'下一章 →':['walking','transition'].includes(state.phase)?'傳送中…':'尚未開啟');
+    portal.setAttribute('aria-label',t(open?state.chapter===chapters.length-1?'進入傳送門，完成這段旅程':`進入傳送門，前往第 ${chapter.id+1} 章`:'傳送門尚未開啟'));setText(portal.querySelector('.portal-label'),open?state.chapter===chapters.length-1?'完成旅程 →':'下一章 →':['walking','transition'].includes(state.phase)?'傳送中…':'尚未開啟');
     lastPortal=-1;updatePortal();renderDialogue(chapter,growth);updateVitals();
     [...trail.children].forEach((item,index)=>{const button=item.firstElementChild;item.classList.toggle('is-complete',index<state.completed);button.disabled=state.paused||index>=state.completed||timed.includes(state.phase);if(index===state.chapter)button.setAttribute('aria-current','step');else button.removeAttribute('aria-current');});
+    [...trail.children].forEach((item,index)=>item.firstElementChild.setAttribute('aria-label',t(`重看第 ${chapters[index].id} 章：${chapters[index].title}`)));
     if(navigationChapter!==state.chapter){navigationChapter=state.chapter;centerChapter();}
     document.dispatchEvent(new CustomEvent('journeystate',{detail:{phase:state.phase,chapter:state.chapter,paused:state.paused}}));
   }
@@ -360,8 +370,8 @@ if (root) {
       else if(state.phase==='reward'&&state.rewardBeat===3&&elapsed>=2000)dispatch('PORTAL_OPENED');
       else if(state.phase==='walking'){positionActor();positionBubble();updateSprite(Math.floor(elapsed/130)%2?'walkAlt':'walk');if(elapsed>=walkDuration())dispatch('WALKED');}
       else if(state.phase==='transition'&&elapsed>=(motion.matches?150:350))dispatch('ARRIVED');
-      else if(autoAdvanceDue(state,elapsed,storyLine(state,chapters[state.chapter]),autoplay))dispatch('ADVANCE');
-      const speaking=speechVisible(state,chapters[state.chapter],elapsed);if(dialogue.hidden===speaking){dialogue.hidden=!speaking;actor.dataset.expression=dialogueExpression(state,chapters[state.chapter],elapsed);if(!speaking&&state.phase==='portal')updateSprite(movementPose());}
+      else if(autoAdvanceDue(state,elapsed,spokenLine(),autoplay))dispatch('ADVANCE');
+      const speaking=speechVisible(state,chapters[state.chapter],elapsed,spokenLine());if(dialogue.hidden===speaking){dialogue.hidden=!speaking;actor.dataset.expression=dialogueExpression(state,chapters[state.chapter],elapsed,spokenLine());if(!speaking&&state.phase==='portal')updateSprite(movementPose());}
       updatePortal();updateLevelUp();updateDeath();
     }
     raf=requestAnimationFrame(frame);
@@ -373,13 +383,14 @@ if (root) {
   $('game-sound').addEventListener('click',()=>{setSound(!sound);if(sound)cue('page');});
   $('hud-panel').hidden=true;
   function closeHud(){
-    $('hud-panel').hidden=true;setPause('hud',false);focusGame();
+    hudKind=null;$('hud-panel').hidden=true;setPause('hud',false);focusGame();
   }
   function openHud(kind){
+    hudKind=kind;
     clearInput();setPause('hud',true);
     const growth=growthFor(state.classId,state.completed),job=jobById[state.classId],body=$('hud-panel-body');
     body.replaceChildren();
-    const row=(text,image)=>{const line=document.createElement('p');if(image){const icon=document.createElement('img');icon.src=asset(image);icon.alt='';line.append(icon);}const copy=document.createElement('span');copy.textContent=text;line.append(copy);body.append(line);};
+    const row=(text,image)=>{const line=document.createElement('p');if(image){const icon=document.createElement('img');icon.src=asset(image);icon.alt='';line.append(icon);}const copy=document.createElement('span');copy.textContent=t(text);line.append(copy);body.append(line);};
     const titles={equipment:'裝備',skills:'技能',stats:'角色狀態',keys:'熱鍵選項',chapters:'旅程目錄'};
     setText($('hud-panel-title'),titles[kind]);
     if(kind==='equipment'){
@@ -396,7 +407,7 @@ if (root) {
     }else if(kind==='keys'){
       ['← →：左右移動','Space / W：跳躍；空中再按一次二段跳','↑／↓：靠近繩梯後攀爬；Space 跳離','↓＋Space：從平台往下跳','二段跳：五職業從初心者起常駐，落地恢復，不消耗 MP','↓：地面按住趴下，放開站起','A：攻擊（自動使用最新學會的技能）','E：互動／靠近傳點後進入','Enter：推進對話','觸控：跳躍按兩次二段跳、按住趴下；點擊阻力攻擊、藍光傳點進入'].forEach(text=>row(text));
     }else{
-      chapters.forEach((chapter,index)=>{const button=document.createElement('button');button.type='button';button.textContent=`${String(chapter.id).padStart(2,'0')}　${chapter.title}`;button.disabled=index>=state.completed||!['reading','encounter','portal','complete'].includes(state.phase);button.addEventListener('click',()=>{closeHud();dispatch({type:'REPLAY',chapter:index});});body.append(button);});
+      chapters.forEach((chapter,index)=>{const button=document.createElement('button');button.type='button';button.textContent=t(`${String(chapter.id).padStart(2,'0')}　${chapter.title}`);button.disabled=index>=state.completed||!['reading','encounter','portal','complete'].includes(state.phase);button.addEventListener('click',()=>{closeHud();dispatch({type:'REPLAY',chapter:index});});body.append(button);});
     }
     $('hud-panel').hidden=false;$('hud-panel-close').focus();
   }
@@ -417,6 +428,7 @@ if (root) {
     if(menu?.open)return;
     if(event.currentTarget&&event.currentTarget!==root&&!gameLock.active)return;
     if(isEditingText(event.target))return;
+    if(event.target?.closest?.('#journey-language')&&['Enter',' '].includes(event.key))return;
     gameLock.preventKey(event);
     if(state.phase==='ready'&&event.target?.closest?.('#class-screen'))return;
     if(!$('hud-panel').hidden){if(event.key==='Escape'){event.preventDefault();closeHud();}return;}
@@ -447,6 +459,21 @@ if (root) {
   new ResizeObserver(positionBubble).observe(dialogue);
   window.addEventListener('pagehide',()=>{gameLock.set(false);cancelAnimationFrame(raf);stopEffects();audio?.suspend();});window.addEventListener('pageshow',event=>{if(event.persisted){gameLock.set($('journey-stage').dataset.revealed==='true');lastTime=0;raf=requestAnimationFrame(frame);}});
   document.addEventListener('journeyreveal',event=>{gameLock.set(event.detail.ready);setPause('intro',!event.detail.ready);});
-  music=initJourneyMusic({muted:!sound});initJourneyScroll();
+  function changeLanguage(nextLanguage){
+    if(language===nextLanguage)return;
+    const reading=['reading','portal'].includes(state.phase),oldDuration=readingDuration(spokenLine());
+    language=nextLanguage;saveGameLanguage(language);
+    if(reading)elapsed=elapsed/oldDuration*readingDuration(spokenLine());
+    applyLanguage();render();renderHistory();updateSoundButton(soundError);if(hudKind)openHud(hudKind);
+    document.dispatchEvent(new CustomEvent('journeylanguage',{detail:{language}}));
+  }
+  function applyLanguage(){
+    applyGameLanguage($('journey-game'),language);
+    $('journey-language-zh').setAttribute('aria-pressed',String(language==='zh-Hant'));
+    $('journey-language-en').setAttribute('aria-pressed',String(language==='en'));
+  }
+  $('journey-language-zh').addEventListener('click',()=>changeLanguage('zh-Hant'));
+  $('journey-language-en').addEventListener('click',()=>changeLanguage('en'));
+  music=initJourneyMusic({muted:!sound,translate:t});initJourneyScroll();applyLanguage();updateSoundButton();
   render();raf=requestAnimationFrame(frame);
 }

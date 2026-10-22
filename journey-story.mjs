@@ -13,7 +13,7 @@ export function storyLine(state,chapter){
 export function readingDuration(text){
   const chinese=(text.match(/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/gu)||[]).length;
   const words=(text.match(/[A-Za-z0-9]+/g)||[]).length;
-  return Math.max(3200,Math.min(8000,1000+chinese*155+words*260));
+  return Math.max(3200,Math.min(chinese?8000:22000,1000+chinese*155+words*260));
 }
 export function autoAdvanceDue(state,elapsed,text,enabled){
   return enabled&&!state.paused&&['reading','portal'].includes(state.phase)&&!(state.mode==='manual'&&state.phase==='portal')&&elapsed>=readingDuration(text);
@@ -26,11 +26,11 @@ export function bubbleGeometry({width,height,actorX,boxWidth,boxHeight,headHeigh
 }
 
 // Finished speech leaves the scene; its text remains in the bottom history.
-export function speechVisible(state,chapter,elapsed=0){
- return state.phase==='reading'||isClosingSpeech(state)&&elapsed<readingDuration(storyLine(state,chapter));
+export function speechVisible(state,chapter,elapsed=0,text=storyLine(state,chapter)){
+ return state.phase==='reading'||isClosingSpeech(state)&&elapsed<readingDuration(text);
 }
-export function dialogueExpression(state,chapter,elapsed=0){
- if(!speechVisible(state,chapter,elapsed))return 'default';
+export function dialogueExpression(state,chapter,elapsed=0,text=storyLine(state,chapter)){
+ if(!speechVisible(state,chapter,elapsed,text))return 'default';
  const page=isClosingSpeech(state)?'portal':state.page;
  return dialoguePerformances.find(cue=>cue.chapter===chapter.id&&cue.page===page)?.expression||'default';
 }

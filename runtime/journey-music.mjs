@@ -58,18 +58,20 @@ export function createMusicPlayer({makeAudio=()=>new Audio(),now=()=>performance
   };
 }
 
-export function initJourneyMusic({muted=false}={}){
+export function initJourneyMusic({muted=false,translate=text=>text}={}){
   const control=document.getElementById('journey-music-control'),intro=document.querySelector('#intro'),section=document.getElementById('journey-game');
   if(!control||!intro||!section)return null;
   let state={phase:'ready',chapter:0,paused:false},eligible=false,raf=0;
   const menu=document.querySelector('#site-menu');
-  const player=createMusicPlayer({changed:status=>{
+  function updateLabel(status){
     control.hidden=!eligible;
-    control.textContent=status.masterMuted||status.muted?'BGM · 關':status.error?'BGM · 點擊重試':status.blocked?'BGM · 點擊播放':`BGM · ${bgmTracks[status.wanted]?.name||'開'}`;
+    control.textContent=translate(status.masterMuted||status.muted?'BGM · 關':status.error?'BGM · 點擊重試':status.blocked?'BGM · 點擊播放':`BGM · ${bgmTracks[status.wanted]?.name||'開'}`);
     control.setAttribute('aria-pressed',String(status.playing));
-    control.setAttribute('aria-label',status.masterMuted?'請先開啟喇叭，再播放背景音樂':status.playing?'關閉背景音樂':status.error?'重試背景音樂':'播放背景音樂');
+    control.setAttribute('aria-label',translate(status.masterMuted?'請先開啟喇叭，再播放背景音樂':status.playing?'關閉背景音樂':status.error?'重試背景音樂':'播放背景音樂'));
     control.dataset.playing=String(status.playing);
-  }});
+  }
+  const player=createMusicPlayer({changed:updateLabel});
+  document.addEventListener('journeylanguage',()=>updateLabel(player.status()));
   player.masterMute(muted);
   function sync(){
     const introBox=intro.getBoundingClientRect(),gameBox=section.getBoundingClientRect();

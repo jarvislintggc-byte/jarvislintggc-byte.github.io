@@ -1,6 +1,6 @@
 // One focused class, wrapped neighbours; selection remains an explicit user action.
 export function carouselOffset(index,active,count=5){return ((index-active+Math.floor(count/2)+count)%count)-Math.floor(count/2);}
-export function createClassCarousel({host,choices,dots,counter,jobs,onSelect}){
+export function createClassCarousel({host,choices,dots,counter,jobs,onSelect,translate=text=>text}){
  let active=0,selected=null,start=null,suppressClickUntil=0;
  const cards=[...choices.children].filter(node=>node.tagName.toLowerCase()==='label');
  const buttons=jobs.map((job,index)=>{const button=document.createElement('button');button.type='button';button.className='class-dot';button.setAttribute('aria-label',`選擇${job.name}`);button.addEventListener('click',()=>select(index));dots.append(button);return button;});
@@ -18,7 +18,7 @@ export function createClassCarousel({host,choices,dots,counter,jobs,onSelect}){
  return {render(classId){
   selected=classId;const index=jobs.findIndex(job=>job.id===classId);if(index>=0)active=index;else active=0;
   cards.forEach((card,index)=>{const offset=carouselOffset(index,active,jobs.length);card.style.setProperty('--offset',String(offset));card.dataset.offset=String(offset);card.dataset.active=String(offset===0);card.dataset.selected=String(jobs[index].id===selected);const radio=[...card.children].find(child=>child.tagName.toLowerCase()==='input');if(radio)radio.tabIndex=offset===0?0:-1;});
-  buttons.forEach((button,index)=>button.setAttribute('aria-pressed',String(index===active)));
-  counter.textContent=`${String(active+1).padStart(2,'0')} / ${String(jobs.length).padStart(2,'0')} · ${jobs[active].name}`;
+  buttons.forEach((button,index)=>{button.setAttribute('aria-pressed',String(index===active));button.setAttribute('aria-label',translate(`選擇${jobs[index].name}`));});
+  counter.textContent=translate(`${String(active+1).padStart(2,'0')} / ${String(jobs.length).padStart(2,'0')} · ${jobs[active].name}`);
  }};
 }

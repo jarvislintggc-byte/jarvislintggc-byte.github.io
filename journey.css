@@ -499,3 +499,25 @@ button.game-boss{border:0;padding:0;background:none;color:inherit;font:inherit;t
 /* Native mobility frames retain their WZ origins; never stretch the actor. */
 .maple-mobility-effects{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:5}
 .movement-buttons #player-down{touch-action:none}
+
+/* The language choice stays at the upper-right in both play modes. */
+.game-tools .journey-language{display:flex;align-items:center;gap:2px;order:20;flex:none;border:1px solid #b9cdca66;border-radius:5px;padding:2px}
+.game-tools .journey-language button{min-width:32px;min-height:28px;padding:4px 6px;border:0;border-radius:3px;background:transparent;color:#e5eeea;font-size:11px;line-height:1.2}
+.game-tools .journey-language button[aria-pressed=true]{background:#f1d78f;color:#293b3f}
+.game-tools .journey-language button:focus-visible{outline:2px solid #f1d78f;outline-offset:2px}
+.game-tools .journey-language button{white-space:nowrap}
+.life-game[data-language=en] .classic-menu .hud-menu>span{font-size:12px;letter-spacing:0;overflow-wrap:anywhere}
+.life-game[data-language=en] .reward-banner strong{overflow-wrap:anywhere}
+@media(min-width:1101px){.journey-stage .life-game .game-toolbar>.game-bottom{max-width:min(640px,calc(100% - 790px))}.journey-stage .life-game[data-mode=watch] .game-toolbar>.game-bottom{max-width:min(640px,calc(100% - 970px))}}
+@media(max-width:760px){
+ .life-game[data-mode=manual]{--toolbar-height:114px}
+ .journey-stage .life-game[data-mode=manual] .game-toolbar{display:grid;grid-template-rows:30px 34px 46px;grid-template-columns:minmax(0,1fr);padding-top:4px;gap:0;align-items:center}
+ .life-game[data-mode=manual] .game-brand{grid-row:1;justify-self:start}
+ .life-game[data-mode=manual] .game-tools{grid-row:2;justify-self:end;height:34px}
+ .journey-stage .life-game[data-mode=manual] .game-toolbar>.game-bottom{top:68px;height:46px}
+ .game-tools .journey-language{gap:0;padding:1px}
+ .game-tools .journey-language button{min-width:28px;min-height:26px;padding:3px;font-size:10px}
+ .game-toolbar .game-tools>.journey-music-control{max-width:64px}
+ .life-game[data-language=en] .classic-menu .hud-menu>span{font-size:10px}
+}
+@media(max-width:380px){.game-toolbar .game-tools>.journey-music-control{max-width:40px;padding-inline:3px}}

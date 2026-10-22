@@ -1,5 +1,5 @@
 {
-  "version": "5a6bbdf60d00a7a3",
+  "version": "a65c26568aff5e00",
   "entry": "journey.js",
   "modules": [
     "journey-animation.mjs",
@@ -12,6 +12,7 @@
     "journey-data.mjs",
     "journey-death-art.mjs",
     "journey-death.mjs",
+    "journey-en.mjs",
     "journey-enemy-view.mjs",
     "journey-enemy.mjs",
     "journey-engine.mjs",
@@ -21,6 +22,7 @@
     "journey-expression-cues.mjs",
     "journey-growth.mjs",
     "journey-hurt.mjs",
+    "journey-i18n.mjs",
     "journey-input.mjs",
     "journey-jump.mjs",
     "journey-levelup-view.mjs",
