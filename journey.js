@@ -294,7 +294,7 @@ if (root) {
     Object.assign(root.dataset,{mode:state.mode,phase:state.phase,beat:String(state.beat),rewardBeat:String(state.rewardBeat),rewardNew:String(state.rewardNew),job:state.completed?state.classId:'beginner',rank:String(state.completed)});
     root.style.setProperty('--story-rate',String(playbackRate()));root.dataset.playbackRate=String(playbackRate());
     root.dataset.language=language;classCarousel.render(state.classId);
-    for(const [index,card]of [...$('class-choices').children].entries()){
+    for(const [index,card]of [...$('class-choices').children].filter(card=>card.tagName.toLowerCase()==='label').entries()){
       card.children[0].setAttribute('aria-label',t(jobs[index].name));card.children[1].alt=t(`楓之谷${jobs[index].name}完整角色立繪`);setText(card.children[2],jobs[index].name);
     }
     $('story-speed').hidden=state.mode!=='watch';
