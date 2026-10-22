@@ -1,0 +1,24 @@
+// One focused class, wrapped neighbours; selection remains an explicit user action.
+export function carouselOffset(index,active,count=5){return ((index-active+Math.floor(count/2)+count)%count)-Math.floor(count/2);}
+export function createClassCarousel({host,choices,dots,counter,jobs,onSelect}){
+ let active=0,selected=null,start=null,suppressClickUntil=0;
+ const cards=[...choices.children].filter(node=>node.tagName.toLowerCase()==='label');
+ const buttons=jobs.map((job,index)=>{const button=document.createElement('button');button.type='button';button.className='class-dot';button.setAttribute('aria-label',`選擇${job.name}`);button.addEventListener('click',()=>select(index));dots.append(button);return button;});
+ function select(index){active=(index+jobs.length)%jobs.length;onSelect(jobs[active].id);}
+ host.addEventListener('keydown',event=>{
+  if(event.altKey||event.ctrlKey||event.metaKey)return;
+  const key=event.key;if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(key))return;
+  event.preventDefault();event.stopPropagation?.();
+  if(key==='ArrowRight'||key==='ArrowDown')select(active+1);else if(key==='ArrowLeft'||key==='ArrowUp')select(active-1);else select(key==='Home'?0:jobs.length-1);
+ });
+ host.addEventListener('pointerdown',event=>{if(event.pointerType==='mouse'&&event.button!==0)return;start={x:event.clientX,y:event.clientY};});
+ host.addEventListener('pointerup',event=>{if(!start)return;const dx=event.clientX-start.x,dy=event.clientY-start.y;start=null;if(Math.abs(dx)>=45&&Math.abs(dx)>Math.abs(dy)*1.3){suppressClickUntil=Date.now()+400;event.preventDefault?.();select(active+(dx<0?1:-1));}});
+ host.addEventListener('click',event=>{if(event.detail!==0&&Date.now()<suppressClickUntil){event.preventDefault();event.stopPropagation?.();suppressClickUntil=0;}},{capture:true});
+ host.addEventListener('pointercancel',()=>start=null);
+ return {render(classId){
+  selected=classId;const index=jobs.findIndex(job=>job.id===classId);if(index>=0)active=index;else active=0;
+  cards.forEach((card,index)=>{const offset=carouselOffset(index,active,jobs.length);card.style.setProperty('--offset',String(offset));card.dataset.offset=String(offset);card.dataset.active=String(offset===0);card.dataset.selected=String(jobs[index].id===selected);const radio=[...card.children].find(child=>child.tagName.toLowerCase()==='input');if(radio)radio.tabIndex=offset===0?0:-1;});
+  buttons.forEach((button,index)=>button.setAttribute('aria-pressed',String(index===active)));
+  counter.textContent=`${String(active+1).padStart(2,'0')} / ${String(jobs.length).padStart(2,'0')} · ${jobs[active].name}`;
+ }};
+}

@@ -1,0 +1,80 @@
+import { attackDamage, encounterHealth } from './journey-enemy.mjs';
+import { jobById } from './journey-growth.mjs';
+// Pure transition rules keep portal gating independent of animation/CSS timing.
+export function initialState(mode='watch') {
+  return { mode,phase:'ready', classId:null, chapter:0, page:0, beat:0, paused:false, completed:0, characterX:25,characterY:0,facing:1,bossHp:90,bossMaxHp:90,castHit:false,castSkill:false,castReturn:'encounter', rewardBeat:0, rewardNew:false };
+}
+export function transition(state, event, chapters) {
+  const type = typeof event === 'string' ? event : event.type;
+  const s = { ...state };
+  if (type === 'RESET') return initialState(s.mode);
+  if(type==='SELECT_MODE'&&s.phase==='ready'&&['manual','watch'].includes(event.mode))return {...initialState(event.mode),classId:s.classId};
+  if (type === 'SELECT_CLASS' && s.phase === 'ready' && Object.hasOwn(jobById,event.classId)) return { ...s, classId:event.classId };
+  if (type === 'REPLAY' && !s.paused && ['reading','encounter','portal','complete'].includes(s.phase) && Number.isInteger(event.chapter) && event.chapter >= 0 && event.chapter < s.completed) {
+    return { ...s, phase:'reading', chapter:event.chapter, page:0, beat:0, rewardBeat:0, characterX:25,characterY:0,bossHp:encounterHealth(event.chapter,s.completed),bossMaxHp:encounterHealth(event.chapter,s.completed), rewardNew:false };
+  }
+  if (type === 'PAUSE' && ['reading','encounter', 'battle', 'retiring', 'reward', 'portal', 'walking', 'transition','dead'].includes(s.phase)) return { ...s, paused: true };
+  if (type === 'RESUME') return s.paused ? { ...s, paused:false } : state;
+  if (s.paused) return state;
+  if(s.mode==='manual'){
+    if(type==='PLAYER_DIED'&&event.hp===0&&(s.phase==='encounter'||s.phase==='battle'&&s.castReturn==='encounter'))return {...s,phase:'dead',deathLanded:false,characterY:0,castHit:false};
+    if(type==='TOMB_LANDED'&&s.phase==='dead'&&!s.deathLanded)return {...s,deathLanded:true};
+    if(type==='REVIVE'&&s.phase==='dead'&&s.deathLanded)return {...s,phase:'encounter',characterX:25,characterY:0,facing:1,castHit:false,castSkill:false,castLanded:false,castReturn:'encounter'};
+
+    if(type==='MOVE'&&['reading','encounter','portal','battle','retiring','reward'].includes(s.phase)&&Number.isFinite(event.x)&&Number.isFinite(event.y))return {...s,characterX:Math.max(5,Math.min(94,event.x)),characterY:Math.max(0,event.y),portalY:Number.isFinite(event.portalY)?event.portalY:s.portalY||0,facing:event.facing===-1?-1:1};
+    if(type==='ATTACK'&&s.phase==='encounter')return {...s,phase:'battle',castReturn:s.phase,castHit:false,castLanded:false,castSkill:Boolean(event.skill&&s.completed),castReach:Boolean(event.reaches)};
+    if(type==='CAST_HIT'&&s.phase==='battle'&&!s.castHit)return {...s,castHit:true,castLanded:s.castReturn==='encounter'&&(event.reaches??s.castReach),bossHp:s.castReturn==='encounter'&&(event.reaches??s.castReach)?Math.max(0,s.bossHp-attackDamage(s.completed)):s.bossHp};
+    if(type==='CAST_DONE'&&s.phase==='battle')return {...s,phase:s.castReturn==='encounter'&&s.bossHp===0?'retiring':s.castReturn};
+  }
+  const chapter = chapters[s.chapter];
+  if (type === 'ADVANCE') {
+    if (s.phase === 'ready' && s.classId) s.phase = 'reading';
+    else if (s.phase === 'reading') {
+      if (s.page < chapter.pages.length - 1) s.page++;
+      else { s.phase = s.mode==='manual'?'encounter':'battle'; s.beat = 0; }
+    } else if (s.phase === 'portal') {
+      if(s.mode==='manual'&&(Math.abs(s.characterX-88)>6||Math.abs(s.characterY-(s.portalY||0))>8))return state;
+      s.phase='walking'; s.walkStartX=s.characterX;
+    }
+    else return state;
+  } else if (type === 'BEAT' && s.phase === 'battle'&&s.mode==='watch') {
+    s.beat++;
+    if (s.beat >= 3) { s.phase = 'retiring'; s.characterX=64; }
+  } else if (type === 'BOSS_EXITED' && s.phase === 'retiring') {
+    s.phase='reward'; s.rewardBeat=0;s.lootLanded=false;s.lootX=Number.isFinite(event.lootX)?Math.max(5,Math.min(94,event.lootX)):64; s.rewardNew=s.chapter >= s.completed;
+  } else if(type==='LOOT_LANDED'&&s.phase==='reward'&&s.rewardBeat===0&&!s.lootLanded){
+    s.lootLanded=true;
+  } else if (type === 'EQUIPPED' && canCollectLoot(s,event.width)) {
+    s.completed=Math.max(s.completed,s.chapter+1); s.rewardBeat=1;
+  } else if (type === 'REWARD_FINISHED' && s.phase === 'reward' && s.rewardBeat === 1) {
+    s.rewardBeat=2;
+  } else if (type === 'CLOSING_STARTED' && s.phase === 'reward' && s.rewardBeat === 2) {
+    s.rewardBeat=3;
+  } else if (type === 'PORTAL_OPENED' && s.phase === 'reward' && s.rewardBeat === 3) {
+    s.phase='portal';
+  } else if (type === 'WALKED' && s.phase === 'walking') {
+    s.phase='transition'; s.characterX=88;
+  } else if (type === 'ARRIVED' && s.phase === 'transition') {
+    if (s.chapter === chapters.length - 1) s.phase = 'complete';
+    else { s.chapter++; s.page=0; s.beat=0; s.rewardBeat=0; s.phase='reading'; s.characterX=25;s.characterY=0;s.bossHp=encounterHealth(s.chapter,s.completed);s.bossMaxHp=s.bossHp; }
+  } else return state;
+  return s;
+}
+export function canCollectLoot(state,width){
+  if(state.phase!=='reward'||state.rewardBeat!==0||state.paused)return false;
+  if(state.mode==='watch'||!state.rewardNew)return true;
+  return state.lootLanded&&Number.isFinite(width)&&width>0&&Math.abs(state.characterX-state.lootX)/100*width<=44&&state.characterY<=14;
+}
+export function canUsePortal(state) { return state.phase === 'portal' && !state.paused; }
+export function characterPosition(state, elapsed, duration = 1200) {
+  if (state.phase !== 'walking') return state.characterX;
+  return state.walkStartX + (88-state.walkStartX) * Math.max(0,Math.min(1,elapsed/duration));
+}
+
+// Anchor the actual map surface to the actors' feet at every viewport size.
+// CSS object-fit/centering cannot preserve a floor coordinate across five maps.
+export function projectScene(camera, width, height, groundInset = 46) {
+  const scale = Math.max(width / camera.viewWidth, width / camera.width, (height - groundInset) / camera.aboveGround, groundInset / (camera.height - camera.groundY));
+  const left = Math.min(0, Math.max(width - camera.width * scale, width * .57 - camera.focusX * scale));
+  return { scale, left, top: height - groundInset - camera.groundY * scale, width: camera.width * scale, height: camera.height * scale };
+}

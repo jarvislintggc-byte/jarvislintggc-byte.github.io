@@ -1,0 +1,437 @@
+[
+  {
+    "file": "mrs-angel-products.jpeg",
+    "document": "大學經歷.docx",
+    "embeddedFile": "word/media/image7.jpeg",
+    "sha256": "4c2199db3222a7a5446d9d7bda236d027ace8f1aac635fd57ab3aa2744280eec",
+    "width": 1150,
+    "height": 927
+  },
+  {
+    "file": "mrs-angel-storefront.png",
+    "document": "大學經歷.docx",
+    "embeddedFile": "word/media/image4.png",
+    "sha256": "0e32ec47365e7d53db4dd335efdca4e5fb4a79fb817591da1bcd0198ffd76238",
+    "width": 659,
+    "height": 559
+  },
+  {
+    "file": "mrs-angel-interior.png",
+    "document": "大學經歷.docx",
+    "embeddedFile": "word/media/image5.png",
+    "sha256": "c9ca273974614f5601ea22adb88270ba785d18b65784d947235af40869c18a97",
+    "width": 1152,
+    "height": 861
+  },
+  {
+    "file": "yuki-studio-banner.jpeg",
+    "document": "大學經歷.docx",
+    "embeddedFile": "word/media/image9.jpeg",
+    "sha256": "f49e4483d5157944154f43e320f8de93667da198a82cfcacf09ba14a1f06d4aa",
+    "width": 900,
+    "height": 383,
+    "usage": "Removed from the PC article at the owner’s request; original asset retained."
+  },
+  {
+    "file": "yuki-studio-poster.png",
+    "document": "大學經歷.docx",
+    "embeddedFile": "word/media/image10.png",
+    "sha256": "17540a43b059a59a11b07a7aae4e76d86330ae6213c22e07c2016e434e22f2aa",
+    "width": 465,
+    "height": 659,
+    "usage": "Removed from the PC article at the owner’s request; original asset retained."
+  },
+  {
+    "file": "devil-chicken-delivery.png",
+    "document": "大學經歷.docx",
+    "embeddedFile": "word/media/image14.png",
+    "sha256": "e6bedfe78cb09ab4958cfe240dbe6e5fbe64212cf2924af32dfff590fc31df8b",
+    "width": 1210,
+    "height": 852
+  },
+  {
+    "file": "ayt-brand-identity.png",
+    "document": "大學經歷.docx",
+    "embeddedFile": "word/media/image13.png",
+    "sha256": "2f7a4e9f29d229f4ca1ebbadc1b7dace9130cb92a166770d8c19d1e79c305012",
+    "width": 504,
+    "height": 387
+  },
+  {
+    "file": "mrs-angel-platform-listing.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 1,
+    "attachmentFilename": "codex-clipboard-ce2348d0-682f-4b7e-9330-5c9212f5340f.png",
+    "sha256": "0cf38b850b1c3fa47abf7da84d335d7ca2cb399f3e4140974ebb0bdc23e9843e",
+    "width": 578,
+    "height": 718
+  },
+  {
+    "file": "mrs-angel-top-eats.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 2,
+    "attachmentFilename": "codex-clipboard-bf2d0d65-e533-48c0-9fed-01af4b61bba2.png",
+    "sha256": "0c0036b365418b087995da145730f932be684a6b6c465edae3dadbf38732009a",
+    "width": 849,
+    "height": 389
+  },
+  {
+    "file": "mrs-angel-operations-2025-2026.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 3,
+    "attachmentFilename": "codex-clipboard-17f7fed6-8f09-4fc5-81da-5b1f6da243de.png",
+    "sha256": "53f45f9532f9eb736492f600ed6aa41b8245f382805adab13ef642c4858dffec",
+    "width": 848,
+    "height": 378
+  },
+  {
+    "file": "mrs-angel-kyodo-promotion.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 4,
+    "attachmentFilename": "codex-clipboard-e39ef6d0-e508-4258-806a-d5ae05b53a68.png",
+    "sha256": "7cc1e68aaf215257d06f8888b4746007792fb3920889250fc26908b4070bf4b1",
+    "width": 405,
+    "height": 411
+  },
+  {
+    "file": "mrs-angel-chicken-delivery-listings.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 5,
+    "attachmentFilename": "codex-clipboard-d5e3f40d-ec5a-4933-b2eb-d0c2c5e76317.png",
+    "sha256": "c380502891f77ba22078c7afdd68dbe10ef20b64e62a740195f45081e13878a3",
+    "width": 404,
+    "height": 718
+  },
+  {
+    "file": "campus-bubble-tea-press-release.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 6,
+    "attachmentFilename": "codex-clipboard-4b0f1743-a2ce-4484-8763-221f7602b4c9.png",
+    "sha256": "b963d65a18f4f84a8b5df71680dca912efc435acf71118b5ab3a5ccc2f4b5162",
+    "width": 532,
+    "height": 718
+  },
+  {
+    "file": "campus-bubble-tea-feature.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 7,
+    "attachmentFilename": "codex-clipboard-abc071cb-7f15-47ca-b9c1-940740dfc9d9.png",
+    "sha256": "55f1940a1e2d4527da5ff1d415a61337b4d051a6cf48b62695daaaf259b567de",
+    "width": 800,
+    "height": 718
+  },
+  {
+    "file": "yuki-motherboard-assembly.png",
+    "source": "Owner-provided computer studio photo attachment",
+    "attachmentOrder": 1,
+    "attachmentFilename": "codex-clipboard-dd4e87ac-4428-4d79-9f97-242bd65eba24.png",
+    "sha256": "bb8dac6ff344a7184578c609d0fdf7965df50a5d1055998c3bebe788ca0462b7",
+    "width": 544,
+    "height": 717
+  },
+  {
+    "file": "yuki-graphics-card-stock.png",
+    "source": "Owner-provided computer studio photo attachment",
+    "attachmentOrder": 2,
+    "attachmentFilename": "codex-clipboard-967b8fa8-6b54-45e4-88ce-08b65b862bcc.png",
+    "sha256": "b95977db9035077e0c4ff4f7dfdda63c0ce836f8482a5b0ed63e8b991d73c8ba",
+    "width": 540,
+    "height": 717
+  },
+  {
+    "file": "yuki-component-stock.png",
+    "source": "Owner-provided computer studio photo attachment",
+    "attachmentOrder": 3,
+    "attachmentFilename": "codex-clipboard-c8a49a94-4167-4fb5-8cc0-fdf71a0e4f32.png",
+    "sha256": "bee300e23a82d29fddef1ac19c9e99bf277c00582e61ac4760c65247e4e1c113",
+    "width": 542,
+    "height": 719
+  },
+  {
+    "file": "yuki-custom-water-cooled-pc.png",
+    "source": "Owner-provided computer studio photo attachment",
+    "attachmentOrder": 4,
+    "attachmentFilename": "codex-clipboard-68bbf81d-24d0-44cc-9bfb-7e9cbade215d.png",
+    "sha256": "90c9381cb847a6a79137771793ded4e7bbd9a3a87e828e66b83dcab40792a7cc",
+    "width": 542,
+    "height": 720
+  },
+  {
+    "file": "yuki-parts-delivery.png",
+    "source": "Owner-provided computer studio photo attachment",
+    "attachmentOrder": 5,
+    "attachmentFilename": "codex-clipboard-4a7e9db5-aa75-4941-adfd-83a58f0b8370.png",
+    "sha256": "d2509446c35b093466563d09bac1e854c9b687a3e0b0a35a7ff2a2ba2b40acce",
+    "width": 541,
+    "height": 718
+  },
+  {
+    "file": "yuki-workspace-inventory.png",
+    "source": "Owner-provided computer studio photo attachment",
+    "attachmentOrder": 6,
+    "attachmentFilename": "codex-clipboard-e5b985c1-73f2-4968-8e76-efb39da66fbc.png",
+    "sha256": "cce4c902716822aabe10878e8276dc303805a811be99b9f48efdd03f59990d27",
+    "width": 543,
+    "height": 719
+  },
+  {
+    "file": "yuki-workbench-components.png",
+    "source": "Owner-provided computer studio photo attachment",
+    "attachmentOrder": 7,
+    "attachmentFilename": "codex-clipboard-f8b245b0-99ff-4871-a93b-ce19cf238f2b.png",
+    "sha256": "745998e225485b7fc33b800925a18198a32ab52e2a7e3b3a33847cee5e5be406",
+    "width": 541,
+    "height": 718
+  },
+  {
+    "file": "yuki-high-end-components.png",
+    "source": "Owner-provided computer studio photo attachment",
+    "attachmentOrder": 8,
+    "attachmentFilename": "codex-clipboard-cd34d922-dd54-490f-833e-32b69fa06f62.png",
+    "sha256": "a3eef80f5b4bbe66216a3a1cf3722c5e4f3ddd8accef4a322dd55db3dd21c4e7",
+    "width": 542,
+    "height": 720
+  },
+  {
+    "file": "yuki-dispatch-cart.png",
+    "source": "Owner-provided additional PC studio attachment",
+    "batch": "pc-additional-photos",
+    "attachmentOrder": 1,
+    "attachmentFilename": "codex-clipboard-ad9da37a-be41-4a44-9f01-36b0d28b0f75.png",
+    "sha256": "163cf8078a7dc109e6a16d8a2dd4962ad1d3c01b541e72a35d30e13fb015365c",
+    "width": 461,
+    "height": 717
+  },
+  {
+    "file": "yuki-packed-orders.png",
+    "source": "Owner-provided additional PC studio attachment",
+    "batch": "pc-additional-photos",
+    "attachmentOrder": 2,
+    "attachmentFilename": "codex-clipboard-7b885ba4-bb54-46d8-879b-ef27c98582c7.png",
+    "sha256": "c885043c1e53cd27ef7eac9d747b39fce40bc0c38049397d5ab6acd31b40b762",
+    "width": 470,
+    "height": 720
+  },
+  {
+    "file": "yuki-courier-collection.png",
+    "source": "Owner-provided additional PC studio attachment",
+    "batch": "pc-additional-photos",
+    "attachmentOrder": 3,
+    "attachmentFilename": "codex-clipboard-9c6def38-aeb8-4a7f-af22-754aaceb3bce.png",
+    "sha256": "174a0b8e5de9a7ab20b319c2f8ca53740e99b56df0d023d2df2eecd78d2c9272",
+    "width": 461,
+    "height": 717
+  },
+  {
+    "file": "yuki-community-inquiries-2021.png",
+    "source": "Owner-provided additional PC studio attachment",
+    "batch": "pc-additional-photos",
+    "attachmentOrder": 4,
+    "attachmentFilename": "codex-clipboard-27a6a7d6-592e-4ebc-8b21-f0582a56b507.png",
+    "sha256": "53a856a3c05cc37da53c0fe6e83dfd07d0fbf12d8f7c27ca9a5b4577df34010c",
+    "width": 321,
+    "height": 686
+  },
+  {
+    "file": "yuki-cpu-memory-assembly.png",
+    "source": "Owner-provided additional PC studio attachment",
+    "batch": "pc-additional-photos",
+    "attachmentOrder": 5,
+    "attachmentFilename": "codex-clipboard-b0055ba9-c13c-498c-aee5-2236eee5ade6.png",
+    "sha256": "fe3b0932f47a81e1421a85a0d009002aad40115dcd6cae54f0d82355ec890898",
+    "width": 548,
+    "height": 720
+  },
+  {
+    "file": "yuki-in-progress-custom-build.png",
+    "source": "Owner-provided additional PC studio attachment",
+    "batch": "pc-additional-photos",
+    "attachmentOrder": 6,
+    "attachmentFilename": "codex-clipboard-73dc64c5-f5fb-4a53-aa3b-6ec38b858c96.png",
+    "sha256": "0e8f6cb1bdef1f1c7fec1602e51050a2d0f45853d39c106896d53118339b00e6",
+    "width": 417,
+    "height": 719
+  },
+  {
+    "file": "yuki-royal-elite-memory-detail.png",
+    "source": "Owner-provided additional PC studio attachment",
+    "batch": "pc-additional-photos",
+    "attachmentOrder": 7,
+    "attachmentFilename": "codex-clipboard-963b90f1-21ce-4cc1-81c9-d49c791706de.png",
+    "sha256": "c49e38fe98a72f4bf7ab9866e750e4b900082c8d860876c8baa2a41c358837e7",
+    "width": 555,
+    "height": 717
+  },
+  {
+    "file": "yuki-royal-elite-memory-set.png",
+    "source": "Owner-provided additional PC studio attachment",
+    "batch": "pc-additional-photos",
+    "attachmentOrder": 8,
+    "attachmentFilename": "codex-clipboard-447a2547-dfe5-49a6-bb2b-ef98a8a14389.png",
+    "sha256": "cf08cd29adc7e59559db618da9817f0446303cae5b0928e5831b295e53f7c0c1",
+    "width": 539,
+    "height": 722,
+    "usage": "Removed from PC article at the owner’s request; original asset retained."
+  },
+  {
+    "file": "cover-devil-chicken.png",
+    "source": "Owner-designated entrepreneurship card cover",
+    "attachmentOrder": 1,
+    "attachmentFilename": "codex-clipboard-cd9f7476-6939-4226-a752-77f212475964.png",
+    "noteId": "taiwan-devil-chicken",
+    "sha256": "7976f1131c51baaecb6eb7bb02d758ec57d94146de5c27c87320ad620c2b264c",
+    "width": 363,
+    "height": 238,
+    "usage": "Superseded card cover; original retained."
+  },
+  {
+    "file": "cover-mrs-angel.png",
+    "source": "Owner-designated entrepreneurship card cover",
+    "attachmentOrder": 2,
+    "attachmentFilename": "codex-clipboard-c691efb0-330b-4b07-b272-fb1e3430204a.png",
+    "noteId": "mrs-angel",
+    "sha256": "b6e48a47100b3395cb78eab665535b91b76dc2fb2d565e5fc1f8c61cb6197968",
+    "width": 796,
+    "height": 531,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-yuki-studio.png",
+    "source": "Owner-designated entrepreneurship card cover",
+    "attachmentOrder": 3,
+    "attachmentFilename": "codex-clipboard-a823c05c-1b07-4ed5-8be7-03a416954712.png",
+    "noteId": "yuki-personal-pc-studio",
+    "sha256": "40642fc69d121c77c6ef4facc9e15614d0a4b7d868531ac4e2028f161ed2ea5c",
+    "width": 596,
+    "height": 493,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-ayt.png",
+    "source": "Owner-designated entrepreneurship card cover",
+    "attachmentOrder": 4,
+    "attachmentFilename": "codex-clipboard-f91ad48f-2286-4cd3-8bf3-94cb4ea34132.png",
+    "noteId": "alt",
+    "sha256": "a369390ff1895b7bcee0ceeebe1411b4542524c8db485309ac58d3d883530695",
+    "width": 697,
+    "height": 445,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-crispy-chicken.png",
+    "source": "Owner-designated entrepreneurship card cover",
+    "attachmentOrder": 5,
+    "attachmentFilename": "codex-clipboard-af587717-771a-47e4-b44b-f1bb71255830.png",
+    "noteId": "crispy-chicken-tomato-kokushikan",
+    "sha256": "3552453fbc9d43078883d69fc30bf4f67785928c5a5943022a951e18115caed3",
+    "width": 847,
+    "height": 620,
+    "usage": "card-cover"
+  },
+  {
+    "file": "yuki-white-case-assembly.png",
+    "source": "Owner-provided PC studio attachment assigned to the self-taught e-commerce section",
+    "attachmentFilename": "codex-clipboard-417b8980-4fda-4c52-b82b-4b33ba2ae031.png",
+    "sha256": "dd150bee137108365c00d0e9a644387a44a72421f080553e36a6abfde6e92c7a",
+    "width": 695,
+    "height": 720
+  },
+  {
+    "file": "cover-devil-chicken-updated.png",
+    "source": "Owner-designated replacement chicken card cover",
+    "attachmentFilename": "codex-clipboard-83376594-3f71-407c-85eb-8da693f9581b.png",
+    "noteId": "taiwan-devil-chicken",
+    "sha256": "c4619e551dd2d9887928f95e191a92c58cd0dece357d87d0a40ef83d01d6e04d",
+    "width": 369,
+    "height": 211,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-bubble-tea-supply-chain.png",
+    "source": "Owner-designated supply chain project cover",
+    "attachmentOrder": 1,
+    "attachmentFilename": "codex-clipboard-644d7e7d-feb9-40c3-8278-def9de918b7b.png",
+    "noteId": "milk-tea-supply-chain",
+    "sha256": "08f2ba021c2b10347f2a3566c2c23e7ad11e05d8986c5978ff74d8ee96135cd4",
+    "width": 1283,
+    "height": 728,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-black-smith-case-study.png",
+    "source": "Owner-designated supply chain project cover",
+    "attachmentOrder": 2,
+    "attachmentFilename": "codex-clipboard-c911d3cc-bb14-46ab-a25c-6bbf298d4d4b.png",
+    "noteId": "black-smith-case-study",
+    "sha256": "d3768505ddc7bd94d83a6df51fc8a5ee628e682e6e0697cd63b3af0ba902bf72",
+    "width": 1106,
+    "height": 622,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-nike-pre-negotiation.png",
+    "source": "Owner-designated supply chain project cover",
+    "attachmentOrder": 3,
+    "attachmentFilename": "codex-clipboard-5c1480dc-98d7-4ff3-b175-35148c0ed793.png",
+    "noteId": "nike-pre-negotiation",
+    "sha256": "3c8a66b4cf903300f8609a00738430fe24f8f00f16cd835585a58d37fd38659b",
+    "width": 932,
+    "height": 556,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-on-running.png",
+    "source": "Owner-designated supply chain project cover",
+    "attachmentOrder": 4,
+    "attachmentFilename": "codex-clipboard-a191535b-4107-4a70-bb46-146ab24eddac.png",
+    "noteId": "on-running",
+    "sha256": "a5874839bb32cd50a7be268aad54009ece6f7f9e2c53bb6c9b0134795eb2bb5b",
+    "width": 1103,
+    "height": 622,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-pelican-stores.png",
+    "source": "Owner-designated supply chain project cover",
+    "attachmentOrder": 5,
+    "attachmentFilename": "codex-clipboard-a7c73fb6-08e3-4ae0-a56f-b7173a8ac1ec.png",
+    "noteId": "pelican-stores",
+    "sha256": "4e4ade36cb603de912a3b70585af5194cbc30700dc316d5a3bb677574b0ec2d9",
+    "width": 648,
+    "height": 341,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-tony-chocolonely.png",
+    "source": "Owner-designated supply chain project cover",
+    "attachmentOrder": 6,
+    "attachmentFilename": "codex-clipboard-c5f192fa-82fb-4e2b-a5ca-bd3c5a04ea00.png",
+    "noteId": "tony-chocolonely",
+    "sha256": "80c7217c5ff2412ef5f356cd71d59587d2ea43f3ea03b9197456840831eecf28",
+    "width": 1022,
+    "height": 576,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-cosic-inventory-control.png",
+    "source": "Owner-designated supply chain project cover",
+    "attachmentOrder": 7,
+    "attachmentFilename": "codex-clipboard-8ce74bf4-2e3d-4043-b133-6fef91beaec6.png",
+    "noteId": "cosic-inventory-control",
+    "sha256": "dbe0a4ebfa58d6196fb8114acd813dd9004be28eaeac51a3ee9cca399930cd83",
+    "width": 1018,
+    "height": 572,
+    "usage": "card-cover"
+  },
+  {
+    "file": "cover-cma-cgm.png",
+    "source": "Owner-designated supply chain project cover",
+    "attachmentOrder": 8,
+    "attachmentFilename": "codex-clipboard-0c9ba425-c547-4fe6-bbe7-4e81f57555b5.png",
+    "noteId": "fleet-carbon-profitability",
+    "sha256": "f5d9d0ed00bfaee99ce17ee3f3e8b23368dbd9e5ef3b95ea5a945a7ad08e390b",
+    "width": 1021,
+    "height": 572,
+    "usage": "card-cover"
+  }
+]

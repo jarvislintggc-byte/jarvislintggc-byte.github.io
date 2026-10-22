@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2ea">
+  <meta name="description" content="Meet Jarvis Lin. Taiwanese roots and a cross-border perspective.">
+  <title>Jarvis Lin — A personal world</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%2328332d'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-size='32' fill='%23f5f2ea'%3EJ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css?v=cffdb3095bbaa945">
+  <link rel="stylesheet" href="/ink.css?v=0cf490cd03075e7c">
+  <link rel="stylesheet" href="/navigation.css?v=11ff01446444013b">
+  <link rel="stylesheet" href="/pages.css?v=b9143f4b4fcfc084">
+  <script src="/ink.js?v=cdf5351e058c428c" defer></script>
+  <script src="/navigation.js?v=c153ef14af8642dc" defer></script>
+  <link rel="stylesheet" href="/journey.css?v=5a6bbdf60d00a7a3">
+  <script src="/journey-boot.js?v=5a6bbdf60d00a7a3" defer></script>
+</head>
+<body class="page-home"><a class="skip" href="#main">Skip to content</a>
+<main id="main" class="home-main">
+<section class="intro-screen" id="intro" aria-labelledby="intro-title">
+    <div class="ink-atmosphere" aria-hidden="true"><canvas id="ink-canvas"></canvas></div>
+    <div class="intro-topline"><button class="menu-trigger" id="menu-trigger" type="button" aria-label="Open navigation" aria-controls="site-menu" aria-expanded="false" aria-haspopup="dialog"><span></span><span></span><span></span></button></div>
+    <div class="intro-center">
+      <div class="intro-symbol" aria-label="JL monogram inside an original ink circle">
+        <svg class="enso" viewBox="0 0 300 300" aria-hidden="true"><defs><filter id="brush-edge" x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency=".035 .12" numOctaves="3" seed="9" result="paper"/><feDisplacementMap in="SourceGraphic" in2="paper" scale="4" xChannelSelector="R" yChannelSelector="G"/></filter></defs><g fill="none" stroke="currentColor" stroke-linecap="round" filter="url(#brush-edge)"><path d="M214 49 C277 83 278 181 231 230 C189 274 107 273 62 223 C16 173 29 91 74 55 C105 30 149 27 181 36" stroke-width="13" opacity=".87"/><path d="M226 65 C271 110 262 190 218 229 C177 263 100 254 63 208 C32 169 36 106 76 70 C103 46 141 38 168 41" stroke-width="5" opacity=".52"/><path d="M191 39 C234 50 258 91 263 128" stroke-width="2" opacity=".4"/><path d="M48 207 C68 241 100 261 136 263" stroke-width="1.2" opacity=".35"/></g><circle cx="223" cy="48" r="2" fill="currentColor" opacity=".38"/><circle cx="231" cy="55" r="1" fill="currentColor" opacity=".28"/></svg>
+        <span class="intro-initials" aria-hidden="true">jl</span><span class="intro-symbol-caption" aria-hidden="true">中 · 日 · EN</span>
+      </div>
+      <p class="intro-kicker">TAIWAN · JAPAN · ARIZONA</p>
+      <h1 id="intro-title">Hi, I'm <em>Jarvis.</em></h1>
+      <p class="intro-subtitle">Different places. An evolving story.</p>
+      <a class="intro-enter" href="#journey-game"><span>Step inside</span><span class="intro-enter-arrow" aria-hidden="true">↗</span><span class="sr-only"> — begin Jarvis's story</span></a>
+    </div>
+  </section>
+<section class="life-journey" id="journey-game" lang="zh-Hant" aria-labelledby="journey-heading">
+  <div class="journey-wrap"><div class="journey-scroll" id="journey-scroll"><div class="journey-stage" id="journey-stage">
+    <header class="journey-heading">
+      <h2 id="journey-heading">每一段，都是下一段的起點。</h2>
+    </header>
+    <div class="life-game" id="life-game" data-phase="ready" tabindex="0" role="region" aria-label="Jarvis 的人生冒險遊戲" aria-describedby="game-controls">
+      <div class="game-toolbar"><div class="game-brand"><button type="button" class="menu-trigger game-menu-trigger" id="game-menu-trigger" aria-label="開啟選單／離開遊戲" aria-controls="site-menu" aria-expanded="false"><span></span><span></span><span></span></button><span class="game-wordmark"><span aria-hidden="true">✦</span> JARVIS / THE JOURNEY</span></div><div class="game-bottom"><ol class="chapter-trail" id="chapter-trail" aria-label="章節進度"></ol></div><div class="game-tools"><div class="story-speed" id="story-speed" role="group" aria-label="觀看故事速度" hidden><button id="story-speed-1" type="button" aria-pressed="true">1x</button><button id="story-speed-125" type="button" aria-pressed="false">1.25x</button><button id="story-speed-15" type="button" aria-pressed="false">1.5x</button></div><button type="button" id="game-pause" disabled>暫停</button><button type="button" id="game-sound" aria-pressed="true" aria-label="關閉所有聲音"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4Z"/><g class="sound-waves"><path d="M15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></g><path class="sound-muted" d="m16 9 5 6m0-6-5 6"/></svg></button></div></div>
+      <div class="game-scene" aria-label="遊戲場景"><div class="scene-sky" id="scene-sky" aria-hidden="true"></div>
+        <div class="scene-environment scene-environment-back" id="scene-environment-back" aria-hidden="true"></div>
+        <img class="scene-background" id="scene-background" src="/assets/journey/school.png" alt="楓之谷校園場景，作為住宿學校的遊戲化舞台" width="1400" height="700" loading="lazy">
+        <div class="scene-map-objects" id="scene-map-objects" aria-hidden="true" hidden></div>
+        <div class="scene-environment scene-environment-front" id="scene-environment-front" aria-hidden="true"></div>
+        <div class="scene-shade" aria-hidden="true"></div>
+        <div class="game-map-label"><span id="map-region">TAIWAN / 時雨高中 · 12—18 歲</span><strong id="map-title">六年的鐘聲</strong></div>
+        <div class="chapter-badge" id="chapter-badge">CHAPTER 01 / 18</div>
+        <div class="scene-floor" aria-hidden="true"></div>
+        <div class="game-character" id="game-character" aria-hidden="true"><img id="character-sprite" src="/assets/journey/beginner-idle.png" alt="" decoding="sync"><span class="character-shadow"></span><span class="character-name">Jarvis</span></div>
+        <button class="game-boss" id="game-boss" type="button" aria-label="攻擊本章阻力" disabled><img id="monster-sprite" alt="" decoding="sync"><span class="boss-name" id="monster-name"></span></button>
+        <div id="monster-effects" class="monster-effects" aria-hidden="true"></div>
+        <div class="maple-skill-effects" id="maple-skill-effects" aria-hidden="true" hidden></div>
+        <div class="maple-mobility-effects" id="maple-mobility-effects" aria-hidden="true" hidden></div>
+        <div class="game-loot" id="game-loot" hidden aria-hidden="true"><img id="loot-image" alt=""><span>裝備</span></div>
+        <div class="levelup-effect" id="levelup-effect" aria-hidden="true" hidden><img id="levelup-frame" alt="" decoding="sync"></div>
+        <aside class="reward-banner character-status" id="reward-banner" aria-label="角色資訊" hidden>
+          <span id="reward-heading">CHARACTER</span><strong id="game-hud-level">Lv.1 初心者</strong>
+          <div class="status-skill"><span>技能 <b id="skill-count">0 / 5</b></span><strong id="game-hud-skill">普通攻擊</strong></div>
+          <div class="status-equipment"><img id="game-hud-gear-icon" alt="" hidden><div><span>裝備</span><strong id="game-hud-gear">初心者服裝</strong></div></div>
+        </aside>
+        <div class="enemy-health" id="enemy-health" hidden><span id="enemy-health-label"></span><div><i id="enemy-health-fill"></i></div></div>
+        <p class="battle-caption" id="battle-caption" hidden></p>
+        <button class="game-portal" id="game-portal" type="button" disabled aria-label="傳送門尚未開啟"><span class="maple-portal-light" aria-hidden="true"><img id="portal-frame" alt=""></span><span class="portal-label">尚未開啟</span></button>
+        <div class="game-cover" id="game-cover">
+          <div id="class-screen">
+            <header class="class-intro"><h3>選一門職業探索我的旅程</h3></header>
+            <div class="play-mode"><button id="mode-manual" type="button" aria-pressed="true">操作角色</button><button id="mode-watch" type="button" aria-pressed="false">觀看故事</button></div>
+            <div class="class-carousel" id="class-carousel" role="region" aria-roledescription="輪播" aria-label="五種冒險職業，可左右切換">
+              <fieldset class="class-choices" id="class-choices"><legend class="sr-only">選擇職業方向</legend></fieldset>
+            </div>
+            <div class="class-carousel-footer"><span class="sr-only" id="class-counter" aria-live="polite" aria-atomic="true">01 / 05 · 劍士</span><div class="class-dots" id="class-dots" role="group" aria-label="選擇職業"></div></div>
+            <p class="sr-only" id="selection-note" role="status">選擇你的職業方向，再開始故事。</p>
+          </div>
+          <div id="complete-screen" hidden><p class="cover-kicker">CHAPTERS 01—18 / COMPLETE</p><h3>下一章，<br>還在繼續。</h3><p class="cover-description" id="complete-growth"></p><span class="cover-meta">18 章旅程 · 故事仍在繼續</span><div class="journey-end-links"><a href="/experience/">我的經歷</a><a href="/what-i-bring/">我能帶來什麼</a><a href="/connect/">聯絡我 ↗</a></div></div>
+        </div>
+        <div class="game-tombstone" id="game-tombstone" aria-hidden="true" hidden><img id="tombstone-frame" alt=""></div>
+        <section class="game-death-dialog" id="game-death-dialog" role="dialog" aria-labelledby="death-title" aria-describedby="death-message" hidden><strong id="death-title">角色已倒下</strong><p id="death-message">稍候，墓碑正在落下…</p><button type="button" id="game-revive" disabled>在本關復活</button></section>
+        <div class="game-pause-cover" id="game-pause-cover" hidden><strong>旅程暫停</strong><p>準備好了，再繼續。</p><button type="button" id="game-resume">繼續旅程 →</button></div>
+        <div class="game-dialogue character-bubble" id="character-bubble" aria-live="polite" aria-atomic="true" hidden>
+          <div class="bubble-skin" id="bubble-skin" aria-hidden="true"></div><img class="bubble-tail" id="bubble-tail" alt="" aria-hidden="true">
+          <div class="dialogue-copy" id="dialogue-copy"><div class="dialogue-byline"><strong id="dialogue-speaker">Jarvis</strong><span id="dialogue-counter"></span></div><p id="dialogue-text"></p></div>
+        </div>
+        <div class="scene-curtain" aria-hidden="true"></div>
+      </div>
+      <div class="story-controls"><button id="game-auto" type="button" aria-pressed="true" hidden>自動：開</button><button class="game-next" id="game-next" type="button" disabled>出發</button></div>
+      <div class="player-actions" id="player-actions" hidden aria-label="角色操作">
+        <div class="movement-buttons"><button id="player-left" type="button" aria-label="向左移動">◀</button><button id="player-right" type="button" aria-label="向右移動">▶</button><button id="player-up" type="button" aria-label="靠近繩梯後按住向上攀爬">攀爬 <kbd>↑</kbd></button><button id="player-down" type="button" aria-label="按住趴下，繩梯上向下攀爬">趴下 <kbd>↓</kbd></button><button id="player-jump" type="button" aria-label="跳躍，空中再按一次二段跳">跳躍 <kbd>Space ×2</kbd></button></div>
+      </div>
+      <div class="classic-hud" id="classic-hud" aria-label="角色狀態與旁白紀錄">
+        <div class="classic-chat-row"><div class="narration-history"><span class="narration-tab">旁白</span><ol id="dialogue-history" aria-label="最新一則對話" aria-live="polite" aria-relevant="additions text"></ol></div></div>
+        <div class="classic-status">
+          <div class="classic-identity"><strong class="classic-level"><span>LV.</span> <b id="player-level">1</b></strong><div><span id="player-job">初心者</span><b>Jarvis</b></div></div>
+          <div class="classic-gauges"><div class="classic-meter hp"><label>HP <span id="player-hp-text">100 / 100</span></label><div id="player-hp-meter" role="progressbar" aria-label="HP"><i id="player-hp-fill"></i></div></div>
+          <div class="classic-meter mp"><label>MP <span id="player-mp-text">60 / 60</span></label><div id="player-mp-meter" role="progressbar" aria-label="MP"><i id="player-mp-fill"></i></div></div>
+          <div class="classic-meter exp"><label>EXP <span id="player-exp-text">0%</span></label><div id="player-exp-meter" role="progressbar" aria-label="EXP"><i id="player-exp-fill"></i></div></div>
+          </div></div><div class="classic-menu" aria-label="遊戲選單"><button type="button" id="hud-equipment" class="hud-menu red" aria-controls="hud-panel"><span>裝備</span></button><button type="button" id="hud-skills" class="hud-menu green" aria-controls="hud-panel"><span>技能</span></button><button type="button" id="hud-chapters" class="hud-menu orange" aria-controls="hud-panel"><span>目錄</span></button><button type="button" id="hud-keys" class="hud-menu blue" aria-controls="hud-panel"><span>熱鍵選項</span></button></div>
+      </div>
+      <section class="classic-window" id="hud-panel" role="dialog" aria-labelledby="hud-panel-title" hidden><header><strong id="hud-panel-title"></strong><button type="button" id="hud-panel-close" aria-label="關閉選單">×</button></header><div id="hud-panel-body"></div></section>
+      <span class="sr-only" id="game-controls">操作角色：左右方向鍵移動，Space / W / ↑ 跳躍，空中再按一次二段跳，所有職業從初心者起即可使用。靠近繩梯後按住 ↑／↓ 攀爬，Space 跳離；平台上 ↓＋Space 往下跳。地面按住 ↓ 趴下，放開站起。對話結束後 A 攻擊，學到新技能後會自動成為攻擊。對話期間可移動與跳躍。HP 歸零後等待墓碑落地，按「在本關復活」或 Enter 繼續。怪物倒下後可繼續移動，走近地上的裝備即可拾取。靠近開啟的傳點按 E。Enter 推進對話。觸控可點擊本章阻力攻擊，點擊藍光傳點進入。</span>
+      <noscript><p class="game-noscript">此互動旅程需要 JavaScript。你也可以前往 <a href="/my-story/">My story</a> 閱讀我的經歷。</p></noscript>
+    </div>
+    </div></div>
+
+  </div>
+</section>
+<button class="journey-music-control" id="journey-music-control" type="button" aria-pressed="false" hidden>開啟音樂</button>
+</main>
+<dialog id="site-menu" class="site-menu" aria-labelledby="menu-title">
+    <div class="menu-shell">
+      <div class="menu-topbar"><span>JARVIS LIN <span class="menu-brand-separator">/</span> PERSONAL INDEX</span><button class="menu-close" id="menu-close" type="button" aria-label="Close navigation" autofocus><span></span><span></span></button></div>
+      <nav class="menu-navigation" aria-label="Site navigation"><h2 id="menu-title">NAVIGATION / 05</h2><ol class="menu-list">
+        <li style="--order:0"><a href="/"><span class="menu-number" aria-hidden="true">01</span><span class="menu-text">Home</span><span class="menu-arrow" aria-hidden="true">↗</span></a></li>
+        <li style="--order:1"><a href="/my-story/"><span class="menu-number" aria-hidden="true">02</span><span class="menu-text">My story</span><span class="menu-arrow" aria-hidden="true">↗</span></a></li>
+        <li style="--order:2"><a href="/experience/"><span class="menu-number" aria-hidden="true">03</span><span class="menu-text">Experience</span><span class="menu-arrow" aria-hidden="true">↗</span></a></li>
+        <li style="--order:3"><a href="/what-i-bring/"><span class="menu-number" aria-hidden="true">04</span><span class="menu-text">What I bring</span><span class="menu-arrow" aria-hidden="true">↗</span></a></li>
+        <li style="--order:4"><a href="/connect/"><span class="menu-number" aria-hidden="true">05</span><span class="menu-text">Connect</span><span class="menu-arrow" aria-hidden="true">↗</span></a></li>
+      </ol></nav>
+      <div class="menu-bottomline"><span>TAIWAN · JAPAN · ARIZONA</span><span>中 · 日 · EN</span></div>
+    </div>
+  </dialog>
+</body>
+</html>

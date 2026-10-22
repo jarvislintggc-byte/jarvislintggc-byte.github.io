@@ -1,0 +1,80 @@
+{
+  "retrieved": "2026-10-19",
+  "purpose": "Owner-authorized local prototype, chapters 1-18",
+  "copyright": "MapleStory assets: NEXON",
+  "public_reuse_permission": "UNKNOWN; not cleared for publication",
+  "boss_art": "Original CSS artwork; not extracted MapleStory monsters",
+  "audio": "Original MapleStory BGM, skill and level-up audio; authored simple UI cues. See bgm/, sfx/, levelup/ manifests.",
+  "files": [
+    {
+      "file": "school.png",
+      "source": "https://maplestory.io/api/GMS/240/map/330002003/render/0?showLife=false&showPortals=false",
+      "bytes": 810578,
+      "sha256": "4a7548c19846bf87401bd4adad4bacc4763301204e9908f546fc2790e41ca02c"
+    },
+    {
+      "file": "library.png",
+      "source": "https://maplestory.io/api/GMS/240/map/330002012/render/0?showLife=false&showPortals=false",
+      "bytes": 1004533,
+      "sha256": "39bba229d8868ed49b6c4ad309245ce45111c5fbfb41506a1680a37fe22dc43e"
+    },
+    {
+      "file": "hallway.png",
+      "source": "https://maplestory.io/api/GMS/240/map/330002101/render/0?showLife=false&showPortals=false",
+      "bytes": 4908948,
+      "sha256": "1a52f62f4a2da7458a4b7a78fc190aed4576e426e2286832ec38de49f381739a"
+    },
+    {
+      "file": "cafe.png",
+      "source": "https://maplestory.io/api/GMS/240/map/871000003/render/0?showLife=false&showPortals=false",
+      "bytes": 1173882,
+      "sha256": "24e5407664111dad0313d6f7282e922243dfcf24aff2b37540c6e01d653b42fd"
+    },
+    {
+      "file": "showa.webp",
+      "source": "https://img.maplelandzzul.gg/maps/801000000.webp",
+      "bytes": 778846,
+      "sha256": "a75d9628050bc60c6871d6513449395ea09a8ba34b1f3569cd663c8d0fa4edf6"
+    },
+    {
+      "file": "beginner-idle.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?padding=4&flipX=true",
+      "bytes": 2918,
+      "sha256": "131c1a2e03b6f3b0270574abc23d19d6e695d2c730de75fbed3faeae9768bef6"
+    },
+    {
+      "file": "beginner-walk1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/walk1/0?padding=4&flipX=true",
+      "bytes": 2928,
+      "sha256": "a8905f58a6f138bd277e68f494a94d897c3b34bda5293eab3d4ed561d016054a"
+    },
+    {
+      "file": "beginner-attack.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stabO1/0?padding=4&flipX=true",
+      "bytes": 3036,
+      "sha256": "92a6e221969cfb56268a9f1b04df2532a5f5d10df36f8e396a9dd9eea077ff69"
+    }
+  ],
+  "additionalManifests": [
+    "maps/sources.json",
+    "maps/background-sources.json",
+    "growth/sources.json",
+    "jump/sources.json",
+    "casts/sources.json",
+    "skills/sources.json",
+    "bgm/sources.json",
+    "sfx/sources.json",
+    "levelup/sources.json",
+    "bubble/sources.json",
+    "status/sources.json",
+    "environment/sources.json",
+    "map-objects/sources.json",
+    "expressions/sources.json",
+    "monsters/sources.json",
+    "hurt/sources.json",
+    "death/sources.json",
+    "mobility/sources.json",
+    "climb/sources.json"
+  ],
+  "environment": "Original GMS240 dynamic backgrounds and indoor map prop frames; see environment/ and map-objects/ manifests."
+}

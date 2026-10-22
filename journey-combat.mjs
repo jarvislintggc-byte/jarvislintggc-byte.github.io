@@ -1,0 +1,24 @@
+// A single continuous clock for approach, original cast, recovery and departure.
+const clamp=value=>Math.max(0,Math.min(1,value));
+const smooth=value=>{const t=clamp(value);return t*t*(3-2*t);};
+export function impactTimes(ability){
+  const times=ability?.tracks.filter(track=>track.anchor==='boss').map(track=>track.start)||[];
+  return times.length?times:[ability?Math.min(650,ability.actorDuration*.5):450];
+}
+export function combatPlan(ability,classId){
+  const ranged=['mage','archer'].includes(classId)&&Boolean(ability);
+  const castX=ranged?43:56;
+  const castDuration=ability?Math.max(ability.actorDuration,...ability.tracks.map(track=>track.start+Math.max(track.duration,track.hold||0,track.flight||0)))+80:1050;
+  return {approach:320,castDuration,departure:360,castX,total:320+castDuration+360};
+}
+export function combatFrame(ability,classId,time){
+  const plan=combatPlan(ability,classId);
+  const castTime=time-plan.approach;
+  if(time<plan.approach)return {x:25+(plan.castX-25)*smooth(time/plan.approach),pose:'walk',castTime:-1,hit:0};
+  if(castTime<plan.castDuration){
+    const impacts=impactTimes(ability);
+    const hit=Math.max(0,...impacts.map(start=>{const t=(castTime-start)/180;return t>=0&&t<1?Math.sin(t*Math.PI):0;}));
+    return {x:plan.castX,pose:ability?'cast':castTime<750?'attack':'idle',castTime,hit};
+  }
+  return {x:plan.castX+(64-plan.castX)*smooth((castTime-plan.castDuration)/plan.departure),pose:'walk',castTime:-1,hit:0};
+}

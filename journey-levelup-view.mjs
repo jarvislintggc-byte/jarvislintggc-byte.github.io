@@ -1,0 +1,37 @@
+import { levelUp } from './journey-levelup.mjs';
+import { sampleFrames } from './journey-animation.mjs';
+
+export function createLevelUpView(host,image,{asset,mobile}){
+  return {
+    render(time,reduced=false){
+      const result=time>=0&&time<levelUp.duration?sampleFrames(levelUp.frames,reduced?500:time):null;
+      host.hidden=!result;
+      if(!result)return;
+      const {frame,progress}=result,scale=mobile()?.98:1.4;
+      if(!image.src.endsWith(frame.file))image.src=asset(frame.file);
+      Object.assign(image.style,{width:`${frame.width*scale}px`,height:`${frame.height*scale}px`,left:`${-frame.origin.x*scale}px`,top:`${-frame.origin.y*scale}px`,opacity:String(((frame.a0??255)+((frame.a1??frame.a0??255)-(frame.a0??255))*progress)/255)});
+    }
+  };
+}
+
+// The decoded original sound is loaded ahead of the first reward; each new
+// level starts one buffer source. Replays are gated by the caller's rewardNew.
+export function createLevelUpSound({url,load=path=>fetch(path).then(response=>{if(!response.ok)throw new Error('Level-up audio unavailable');return response.arrayBuffer();})}){
+  let buffer=null,pending=null,rate=1;const voices=new Set();
+  return {
+    stop(){for(const source of voices){try{source.stop();}catch{}}voices.clear();},
+    setRate(value){rate=[1,1.25,1.5].includes(value)?value:1;for(const voice of voices)if(voice.playbackRate)voice.playbackRate.value=rate;},
+    prepare(context){
+      if(buffer)return Promise.resolve(buffer);
+      if(!pending)pending=load(url).then(bytes=>context.decodeAudioData(bytes)).then(decoded=>buffer=decoded).catch(error=>{pending=null;throw error;});
+      return pending;
+    },
+    play(context){
+      if(!buffer)return false;
+      const source=context.createBufferSource(),gain=context.createGain();
+      source.buffer=buffer;if(source.playbackRate)source.playbackRate.value=rate;voices.add(source);source.onended=()=>voices.delete(source);gain.gain.value=.65;
+      source.connect(gain);gain.connect(context.destination);source.start();
+      return true;
+    }
+  };
+}

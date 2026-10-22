@@ -1,0 +1,15 @@
+import {sampleFrames} from './journey-animation.mjs';
+import {damageDigits} from './journey-monsters.mjs';
+export function createEnemyView(boss,image,host,{asset,mobile}){
+ let numbers=[],effects=[];
+ function draw(image,frame,scale){if(!image.src.endsWith(frame.file))image.src=asset(frame.file);Object.assign(image.style,{width:`${frame.width*scale}px`,height:`${frame.height*scale}px`,left:`${-frame.origin.x*scale}px`,top:`${-frame.origin.y*scale}px`});}
+ return {
+  reset(){numbers=[];effects=[];host.replaceChildren();},
+  damage(value,x,height=130,player=false){const row=document.createElement('span');row.className='maple-damage';row.setAttribute('aria-hidden','true');row.style.left=`${x}%`;const digits=String(value);[...digits].forEach((digit,index)=>{const frame=damageDigits[player?'player':index===0?'lead':'enemy'][Number(digit)],img=document.createElement('img');img.alt='';img.src=asset(frame.file);img.style.width=`${frame.width*(mobile()?.65:.85)}px`;img.style.height=`${frame.height*(mobile()?.65:.85)}px`;row.append(img);});host.append(row);numbers.push({row,time:0,height});},
+  effect(frames,x,height=35){if(!frames?.length)return;const anchor=document.createElement('span'),img=document.createElement('img');anchor.className='monster-impact';img.alt='';anchor.append(img);host.append(anchor);effects.push({anchor,img,frames,x,height,time:0});},
+  tick(ms){for(const item of numbers){item.time+=ms;item.row.style.bottom=`calc(var(--ground-inset) + ${item.height+item.time*.055}px)`;item.row.style.opacity=String(Math.max(0,Math.min(1,(950-item.time)/250)));if(item.time>=950)item.row.remove();}numbers=numbers.filter(n=>n.time<950);
+   for(const item of effects){item.time+=ms;const sampled=sampleFrames(item.frames,item.time);if(!sampled){item.anchor.remove();continue;}item.anchor.style.left=`${item.x}%`;item.anchor.style.bottom=`calc(var(--ground-inset) + ${item.height}px)`;draw(item.img,sampled.frame,mobile()?.85:1.1);}effects=effects.filter(e=>e.time<e.frames.reduce((s,f)=>s+f.delay,0));
+  },
+  render(monster,enemy,{visible=true}={}){const frames=monster.poses[enemy.pose]||monster.poses.stand,sampled=sampleFrames(frames,enemy.time,enemy.pose==='stand'||enemy.pose==='move');image.hidden=!visible||!sampled;boss.style.left=`${enemy.x}%`;if(!sampled)return;const scale=mobile()?.7:1;draw(image,sampled.frame,scale);image.style.top='auto';image.style.bottom=`${(sampled.frame.origin.y-sampled.frame.height)*scale}px`;image.style.left=`calc(50% - ${sampled.frame.origin.x*scale}px)`;const {a0=255,a1=a0}=sampled.frame;image.style.opacity=String((a0+(a1-a0)*sampled.progress)/255);image.style.transform=enemy.facing===-1?'scaleX(-1)':'none';image.style.transformOrigin=`${sampled.frame.origin.x*scale}px ${sampled.frame.origin.y*scale}px`;boss.style.width=`${Math.max(80,sampled.frame.width*scale)}px`;boss.style.height=`${Math.max(80,sampled.frame.origin.y*scale)}px`;}
+ };
+}

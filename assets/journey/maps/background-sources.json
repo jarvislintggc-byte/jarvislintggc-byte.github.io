@@ -1,0 +1,48 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local review only",
+  "processing": "Original unchanged static background layers. CSS layers adapt original tiling for the story viewport.",
+  "files": [
+    {
+      "file": "maps/harbor-sky.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/0",
+      "sha256": "a526dd47c5a3e1f979adb66f9900404808836df52c57ab8a8158aa9c6f5b4bf7",
+      "bytes": 84877,
+      "width": 256,
+      "height": 600
+    },
+    {
+      "file": "maps/market-sky.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/grassySoil_new.img/back/0",
+      "sha256": "f7e7d832f54083cd6d1e97ca6e7aedce614848571f50dc172e37e64aaca05b05",
+      "bytes": 7837,
+      "width": 22,
+      "height": 738
+    },
+    {
+      "file": "maps/desert-sky.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/back/0",
+      "sha256": "10e558fe9b459d1b29080c09f9c7cf406c08d2eea55b481629bfd7192912334a",
+      "bytes": 161,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "file": "maps/beach-sky.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/0",
+      "sha256": "88bc3d9510a9fc70b5636eddf9e4b5533457bb4719710bbbadc29fa5b2114618",
+      "bytes": 9504,
+      "width": 18,
+      "height": 1030
+    },
+    {
+      "file": "maps/lab-wall.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenLab.img/back/51",
+      "sha256": "be4b976a91020fcd199a7723b265e3ecab79b692c0b7017dbac26884c71798fb",
+      "bytes": 238,
+      "width": 300,
+      "height": 30
+    }
+  ]
+}

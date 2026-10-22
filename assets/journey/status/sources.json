@@ -1,0 +1,218 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local prototype only",
+  "processing": "Unchanged original GMS83 PNGs. Responsive HTML uses the original silver frame, gauge fill sheet and button states. Chinese button labels and story-specific panels are authored.",
+  "files": [
+    {
+      "file": "background.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/base/backgrnd",
+      "width": 800,
+      "height": 71,
+      "sha256": "7642b7ba01aa44fb633c260b045cf5e1d0234d72535de29282db657ed4fdfddd"
+    },
+    {
+      "file": "box.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/base/box",
+      "width": 42,
+      "height": 19,
+      "sha256": "15db73aef5a44c0a8d1a6dc876f0f852901e339fd4517b2205a1e99d6c1193c2"
+    },
+    {
+      "file": "chat.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/base/chat",
+      "width": 566,
+      "height": 5,
+      "sha256": "ee364b69f6f492cd2e1bd6edfeba61ee8c2edbf09f94c14ec61542b5b90d06ef"
+    },
+    {
+      "file": "gauge.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/gauge/bar",
+      "width": 340,
+      "height": 31,
+      "sha256": "32dbc7ab69a4863f4125c9bda8a525224031d2368db3f923dbe9de3bf6244039"
+    },
+    {
+      "file": "chat-target.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/base/chatTarget",
+      "width": 81,
+      "height": 20,
+      "sha256": "0c716b4338670eca0815aeebc34352c6c7a3051e00f9453af01a0305f292f68e"
+    },
+    {
+      "file": "gauge-empty.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/gauge/gray",
+      "width": 1,
+      "height": 16,
+      "sha256": "9cd1fd1313df7a99cefd8fe0cd8614242ee00072cf524d56eedaa2899f66e909"
+    },
+    {
+      "file": "equipment-normal.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/EquipKey/normal/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "4c95bef22961044655193450c200dfd9c7aab024396e4be65238084372991003"
+    },
+    {
+      "file": "equipment-mouseOver.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/EquipKey/mouseOver/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "ac53cbeda8c21e8c02831b5778df4d0a00983b12868aead13ac825e040542cb7"
+    },
+    {
+      "file": "equipment-pressed.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/EquipKey/pressed/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "7ada988b3b498fde0c2696f72534a367c6d94942a1087d10a51bb54312ec6420"
+    },
+    {
+      "file": "skills-normal.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/SkillKey/normal/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "07ffdab5dafeba5a947c96bc9a7e1d46134f6be67ee174537cca8351687ceb60"
+    },
+    {
+      "file": "skills-mouseOver.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/SkillKey/mouseOver/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "6462e3ab8b33ca2726d7738324b6334c56d7eb94944db271c68d4c199a472155"
+    },
+    {
+      "file": "skills-pressed.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/SkillKey/pressed/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "5ea2a1c5284d7dbee23b43b64aaa992ee8b1a5c61d89aaae650d7e11eac04afc"
+    },
+    {
+      "file": "stats-normal.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/StatKey/normal/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "26298726b50a83a1d2e16cd68976e864e2cdfb12b84bd245e9797522a4440ae5"
+    },
+    {
+      "file": "stats-mouseOver.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/StatKey/mouseOver/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "dda2d49140815d20092c6e99fd379b627b0b578c1848a245f5964764c2353219"
+    },
+    {
+      "file": "stats-pressed.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/StatKey/pressed/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "750f5dcc65e07c86ab2878beeb852e96730d3ae5e0b64031227b440f74789a2e"
+    },
+    {
+      "file": "keys-normal.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/KeySet/normal/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "913874600e205b363201c2e73f795ac7874ecdddb7baf8fd8610ee5f1114f17b"
+    },
+    {
+      "file": "keys-mouseOver.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/KeySet/mouseOver/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "257fcaa4b7d8743f7a10789f86434bb871b0fe0ab9c181800cf17268bbdd38bf"
+    },
+    {
+      "file": "keys-pressed.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/KeySet/pressed/0",
+      "width": 28,
+      "height": 20,
+      "sha256": "5fab5a05602bf16cc9f758cfb73d51b5dbc336c21e34013b78c136f8e2bbdcfb"
+    },
+    {
+      "file": "red-normal.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtShop/normal/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "b180ce549d46c008b673b7cf1201be0edaef801486116e32f98f4bc558952d26"
+    },
+    {
+      "file": "red-mouseOver.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtShop/mouseOver/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "55d105b5668265f409dbe16c8be4c4a21a9189f87cfeb64d0f3a59caddbf7cfd"
+    },
+    {
+      "file": "red-pressed.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtShop/pressed/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "ed866bb371f0af9a18074c5033c3f5c7ee7a99628d660677ef23bb8e2770627b"
+    },
+    {
+      "file": "green-normal.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtNPT/normal/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "226f64ea00c73311eb1ae17a58f3bbaa8f9151575dca5e64f720e2462ee1a035"
+    },
+    {
+      "file": "green-mouseOver.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtNPT/mouseOver/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "ebbedfcf8b19befb564bdf4e259c7208d3c0a4813374987c4870b85d09abf4f3"
+    },
+    {
+      "file": "green-pressed.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtNPT/pressed/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "9ed85664928d6dfbcbdde2b8d253db00a905f2f758fb99fba09d65d7c575555c"
+    },
+    {
+      "file": "orange-normal.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtMenu/normal/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "19d3c8b41064c61a1feb15bc4dd6cf742f8983776af277b63606cacc89dd143f"
+    },
+    {
+      "file": "orange-mouseOver.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtMenu/mouseOver/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "5e9eb2aa28040ece9f8d59c60e03ba6421f2a7c6a293a55d327fcc21c52395d6"
+    },
+    {
+      "file": "orange-pressed.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtMenu/pressed/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "ee695e7b9f7d65cb359dcb1384d65849e4bb42e9e65a8207ae662f0753497639"
+    },
+    {
+      "file": "blue-normal.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtShort/normal/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "5f6c370097e7eb7bd5b4d54f7c73ca9aeb40bfdf2d7e12e0b73688c99c84c71d"
+    },
+    {
+      "file": "blue-mouseOver.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtShort/mouseOver/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "2b4b7d15649a9fb222fd2ccac0ecdf3118f5865347efe246998c0683e3e88028"
+    },
+    {
+      "file": "blue-pressed.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/StatusBar.img/BtShort/pressed/0",
+      "width": 54,
+      "height": 34,
+      "sha256": "7477ee852bbb14b36c8d3c4c38581f168fc741f19c2498840bd75e1a86f9705e"
+    }
+  ]
+}

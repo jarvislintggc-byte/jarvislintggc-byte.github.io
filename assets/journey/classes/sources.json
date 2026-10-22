@@ -1,0 +1,53 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "processing": "Unchanged official transparent full-body class illustrations; no cropping or generated imagery.",
+  "publicReusePermission": "UNKNOWN; local prototype only",
+  "files": [
+    {
+      "file": "classes/warrior.png",
+      "width": 601,
+      "height": 455,
+      "page": "https://maplestory.nexon.co.jp/job/adventurer/hero/",
+      "source": "https://static.nexon.co.jp/maplestory/ver2017/job/adventurer/hero/img_01_240306.png",
+      "sha256": "3d7c4800989eaf8612af4e724fdaf8b9ae8d3c068c65585128fbcb32652264df",
+      "bytes": 359685
+    },
+    {
+      "file": "classes/mage.png",
+      "width": 571,
+      "height": 525,
+      "page": "https://maplestory.nexon.co.jp/job/adventurer/archmage01/",
+      "source": "https://static.nexon.co.jp/maplestory/ver2017/job/adventurer/archmage01/img_01_240306.png",
+      "sha256": "5055a6ad44a7b9d2a61bc7a964c72c305435385a7cf85638aac732a43dc857d9",
+      "bytes": 396605
+    },
+    {
+      "file": "classes/thief.png",
+      "width": 474,
+      "height": 488,
+      "page": "https://maplestory.nexon.co.jp/job/adventurer/shadower/",
+      "source": "https://static.nexon.co.jp/maplestory/ver2017/job/adventurer/shadower/img_01_240306.png",
+      "sha256": "f863110a244701537a5292f2a4235aece3d9b6ee2366229064b90a27084a9019",
+      "bytes": 323554
+    },
+    {
+      "file": "classes/archer.png",
+      "width": 645,
+      "height": 614,
+      "page": "https://maplestory.nexon.co.jp/job/adventurer/bowmaster/",
+      "source": "https://static.nexon.co.jp/maplestory/ver2017/job/adventurer/bowmaster/img_01_240306.png",
+      "sha256": "0c8cf37804dc5e84305ee5b0ca20ba2e951e6962c6df73e17512c8123e1b7753",
+      "bytes": 531736
+    },
+    {
+      "file": "classes/pirate.png",
+      "width": 525,
+      "height": 564,
+      "page": "https://maplestory.nexon.co.jp/job/adventurer/viper/",
+      "source": "https://static.nexon.co.jp/maplestory/ver2017/job/adventurer/viper/img_01_240306.png",
+      "sha256": "bfc3ea62af49769c7e02680ee3538762564feb170dcbbaea148b01346088c074",
+      "bytes": 418038
+    }
+  ]
+}

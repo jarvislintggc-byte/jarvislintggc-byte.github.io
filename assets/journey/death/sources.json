@@ -1,0 +1,134 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local prototype only",
+  "processing": "Unchanged original PNGs; frame timing and origins retained. Downward motion and revive flow authored for this story game.",
+  "files": [
+    {
+      "file": "death/fall-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/0",
+      "sha256": "66bbeedd221c6ae9c128897ede730ad8a40396c1ec9ee9d84d3030e0d0faff0f",
+      "bytes": 1206
+    },
+    {
+      "file": "death/fall-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/1",
+      "sha256": "fe7735de63fc938cf02235b981445725ec3d8a8a8d7f0f0d94ecf0de4b1635bd",
+      "bytes": 1361
+    },
+    {
+      "file": "death/fall-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/2",
+      "sha256": "6872d44d0390a21b61c538d6b01cb290244d56ed62940f3c23102b3d69888624",
+      "bytes": 1162
+    },
+    {
+      "file": "death/fall-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/3",
+      "sha256": "7203f24ab9b6f3cc98d0347fdf29c0994ed87b41247fee1a0bc41607c17bbd3c",
+      "bytes": 643
+    },
+    {
+      "file": "death/fall-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/4",
+      "sha256": "b6764fe8657720f695ff9c3211a1d849b13ef066fb39ce386dd4dfcd74c41936",
+      "bytes": 1027
+    },
+    {
+      "file": "death/fall-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/5",
+      "sha256": "a5f6814bdb5de860a1dbead949b9b7649bac3bd585311fc93fb2c05cd86305e5",
+      "bytes": 1205
+    },
+    {
+      "file": "death/fall-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/6",
+      "sha256": "d4947db0733ebcb4da679bf57793fe63d23cf614f92a1c8a7f43b9b637a77aa1",
+      "bytes": 1214
+    },
+    {
+      "file": "death/fall-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/7",
+      "sha256": "2c1dfd310aa07b2143110621e03251718efc751ef7965c794ba487656dafe49a",
+      "bytes": 1291
+    },
+    {
+      "file": "death/fall-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/8",
+      "sha256": "ebea1533c1ec5c92b8280631f9258a2b56a39ed23776de85785eebf8a2119e51",
+      "bytes": 1124
+    },
+    {
+      "file": "death/fall-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/9",
+      "sha256": "8163c98c282355a4756a17ffd3ad6e6cd42889f8833bf124b33474a9633c1d5f",
+      "bytes": 649
+    },
+    {
+      "file": "death/fall-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/10",
+      "sha256": "5271f1b2d84785d79fe7abee288de6d39ccdec303a44632bae4dd237fb128aaf",
+      "bytes": 998
+    },
+    {
+      "file": "death/fall-11.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/11",
+      "sha256": "7e9f6d5a59a007ec357655d7f362f0979c2edfba944b0ce79ea3b7dfbfaddd91",
+      "bytes": 1220
+    },
+    {
+      "file": "death/fall-12.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/12",
+      "sha256": "c0ca8f9999036c8e993e87537a264e1a6b7d06e2c6ae1024b97dac3544de0ed3",
+      "bytes": 2167
+    },
+    {
+      "file": "death/fall-13.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/13",
+      "sha256": "cd00bf1d48cc4a333dace2fab41fbf1f3a7a21136d44540edfed0d825bb68339",
+      "bytes": 2201
+    },
+    {
+      "file": "death/fall-14.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/14",
+      "sha256": "df8a717150b2c9daaa268eb093d50b5d6f5e7c01d24103d4d4306c07ee3cef98",
+      "bytes": 2382
+    },
+    {
+      "file": "death/fall-15.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/15",
+      "sha256": "a96c62b74455dfec692916d0f1d278a2289b35d280ba79a29a08ee1c95aa162c",
+      "bytes": 2418
+    },
+    {
+      "file": "death/fall-16.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/16",
+      "sha256": "a96c62b74455dfec692916d0f1d278a2289b35d280ba79a29a08ee1c95aa162c",
+      "bytes": 2418
+    },
+    {
+      "file": "death/fall-17.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/17",
+      "sha256": "49cbdaef49762465f1f5516110cbff665e1e125ebf436d7b9e0ddfe927aed6d5",
+      "bytes": 2260
+    },
+    {
+      "file": "death/fall-18.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/18",
+      "sha256": "134cafdc1a62d61998f63c3c538c638e60bb9523ae3289da05151dd0b815082f",
+      "bytes": 1933
+    },
+    {
+      "file": "death/fall-19.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/fall/19",
+      "sha256": "fe7735de63fc938cf02235b981445725ec3d8a8a8d7f0f0d94ecf0de4b1635bd",
+      "bytes": 1361
+    },
+    {
+      "file": "death/land-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/Tomb.img/land/0",
+      "sha256": "fe7735de63fc938cf02235b981445725ec3d8a8a8d7f0f0d94ecf0de4b1635bd",
+      "bytes": 1361
+    }
+  ]
+}

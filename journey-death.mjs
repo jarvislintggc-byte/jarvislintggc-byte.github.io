@@ -1,0 +1,14 @@
+import {tombstone} from './journey-death-art.mjs';
+import {sampleFrames,sequenceDuration} from './journey-animation.mjs';
+export const tombstoneDuration=sequenceDuration(tombstone.fall)+sequenceDuration(tombstone.land);
+export function createDeathView(host,image,{asset,height,mobile}){
+ return {render(time,x,reduced=false){
+  host.hidden=time<0;if(time<0)return;
+  const fallDuration=sequenceDuration(tombstone.fall),falling=time<fallDuration;
+  const frames=falling?tombstone.fall:tombstone.land,local=falling?time:Math.min(time-fallDuration,sequenceDuration(tombstone.land)-1),sample=sampleFrames(frames,local)||{frame:frames.at(-1),progress:1};
+  const f=sample.frame,scale=mobile()?1.15:1.6,progress=Math.min(1,time/fallDuration),lift=falling&&!reduced?Math.max(0,height()-46)*(1-progress*progress):0;
+  host.style.left=`${x}%`;host.style.bottom=`calc(var(--ground-inset) + ${lift}px)`;
+  if(!image.src.endsWith(f.file))image.src=asset(f.file);
+  Object.assign(image.style,{width:`${f.width*scale}px`,height:`${f.height*scale}px`,left:`${-f.origin.x*scale}px`,bottom:`${(f.origin.y-f.height)*scale}px`,opacity:String(((f.a0??255)+((f.a1??f.a0??255)-(f.a0??255))*sample.progress)/255)});
+ }};
+}

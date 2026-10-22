@@ -1,0 +1,688 @@
+// Dialogue synced verbatim from docs/JOURNEY-DIALOGUE-01-18.md by build.py.
+export const chapters=Object.freeze([
+  {
+    "id": 1,
+    "title": "六年的鐘聲",
+    "region": "TAIWAN / 時雨高中 · 12—18 歲",
+    "map": "school.png",
+    "background": "",
+    "camera": {
+      "width": 2340,
+      "height": 890,
+      "groundY": 615,
+      "focusX": 1680,
+      "viewWidth": 1800,
+      "aboveGround": 600
+    },
+    "alt": "楓之谷原始場景，作為「六年的鐘聲」的遊戲化舞台；不是實際地點照片。",
+    "boss": "clock",
+    "bossName": "鐘律守衛",
+    "symbol": "嚴格作息與規範",
+    "tokens": [
+      "作息",
+      "規範"
+    ],
+    "pages": [
+      "12 到 18 歲，我在時雨高中就讀六年，也有過住校生活。",
+      "時雨是一所軍事化教育出名的學校，讓我學會自律。",
+      "另外，我從小有 ADHD，雖然長大後它慢慢消失了；但頑皮的個性是刻在骨子裡的。",
+      "也參與過幾次活動的籌劃，高中畢業前，我也擔任了畢業典禮籌劃副主席。"
+    ],
+    "action": "鐘律守衛作為「嚴格作息與規範」的遊戲化比喻退場。",
+    "result": "高中時英文對我來說就像咒語，是我怎麼也跨不過去的坎，當時的我選擇放棄。",
+    "bridge": "",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 2,
+    "title": "螢幕另一端的世界",
+    "region": "TAIWAN → JAPAN / 日文與出發",
+    "map": "library.png",
+    "background": "",
+    "camera": {
+      "width": 1644,
+      "height": 790,
+      "groundY": 646,
+      "focusX": 822,
+      "viewWidth": 1644,
+      "aboveGround": 630
+    },
+    "alt": "楓之谷原始場景，作為「螢幕另一端的世界」的遊戲化舞台；不是實際地點照片。",
+    "boss": "words",
+    "bossName": "語句之霧",
+    "symbol": "日文與未知環境",
+    "tokens": [
+      "日文",
+      "N3"
+    ],
+    "pages": [
+      "因為對日本的嚮往，在高中畢業前取得了 JLPT N3 日文檢定。",
+      "接下來也決定不往日文系走，高二就在計劃畢業後前往日本求學，也謝謝家人的支持！",
+      "高三改成通勤，想提早接觸社會也想為家裡分擔，就開始了打工！"
+    ],
+    "action": "語句之霧作為「日文與未知環境」的遊戲化比喻退場。",
+    "result": "取得 JLPT N3 後，我前往東京讀語言學校。",
+    "bridge": "在學中嘗試了各種打工，餐飲, 銷售, 活動都有做過。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 3,
+    "title": "日本，第一道門",
+    "region": "JAPAN / 大學一年級",
+    "map": "hallway.png",
+    "background": "",
+    "camera": {
+      "width": 2881,
+      "height": 3217,
+      "groundY": 3093,
+      "focusX": 1600,
+      "viewWidth": 2000,
+      "aboveGround": 700
+    },
+    "alt": "楓之谷原始場景，作為「日本，第一道門」的遊戲化舞台；不是實際地點照片。",
+    "boss": "door",
+    "bossName": "審核之門",
+    "symbol": "應徵過程的篩選",
+    "tokens": [
+      "面試",
+      "未錄取"
+    ],
+    "pages": [
+      "經過了一段時間的努力拿到了幾所offer，後來選擇東京的國士館大學就讀商學院，也在一入學就申請了 Apple 的 Specialist part-time。",
+      "也在學期間努力維持課業連續領了三年共100萬日圓的獎學金",
+      "通過了前面的三階段面試。但最終沒有被錄取。同時，我認識了一位會說中、日、英三語的外國人，也埋下我日後撿回英文念頭的種子。"
+    ],
+    "action": "審核之門作為「應徵過程的篩選」的遊戲化比喻退場。",
+    "result": "這次 Apple Specialist 的申請，我最終未錄取，但我沒難過，想繼續提升自己。",
+    "bridge": "",
+    "outcome": "not-hired",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 4,
+    "title": "用企畫換來機會",
+    "region": "JAPAN / 校園奶茶店",
+    "map": "cafe.png",
+    "background": "",
+    "camera": {
+      "width": 1369,
+      "height": 1118,
+      "groundY": 970,
+      "focusX": 690,
+      "viewWidth": 1369,
+      "aboveGround": 600
+    },
+    "alt": "楓之谷原始場景，作為「用企畫換來機會」的遊戲化舞台；不是實際地點照片。",
+    "boss": "plan",
+    "bossName": "散頁企畫獸",
+    "symbol": "想法如何落到營運",
+    "tokens": [
+      "企畫",
+      "管理"
+    ],
+    "pages": [
+      "因緣際會下我認識了在大學食堂小窗口賣奶茶的小哥，我向他提出營運想法與企畫，並告訴他我想參與真實的創業。",
+      "之後，經過我們的一番努力把開店的流程搞清楚了！"
+    ],
+    "action": "散頁企畫獸作為「想法如何落到營運」的遊戲化比喻退場。",
+    "result": "獲聘為管理者後，我開始學習小店面管理與日常營運還有行銷分析。",
+    "bridge": "參與第二家商店街奶茶店的開設與營運。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 5,
+    "title": "商店街開張",
+    "region": "JAPAN / 經堂商店街",
+    "map": "showa.webp",
+    "background": "",
+    "camera": {
+      "width": 4816,
+      "height": 724,
+      "groundY": 487,
+      "focusX": 2500,
+      "viewWidth": 1900,
+      "aboveGround": 500
+    },
+    "alt": "楓之谷原始場景，作為「商店街開張」的遊戲化舞台；不是實際地點照片。",
+    "boss": "tasks",
+    "bossName": "開店任務群",
+    "symbol": "排班、採購與店務",
+    "tokens": [
+      "排班",
+      "採購",
+      "POS",
+      "支付",
+      "財務"
+    ],
+    "pages": [
+      "在經堂商店街，我參與了奶茶店的開設與營運。",
+      "排班、採購、POS、支付、財務還有員工狀況，都是我實際要面對的工作，但這一切都比我想像中的難，面對不同的日本文化，語言壁壘還有供應商協調。",
+      "但我相信我跟團隊們可以做到。"
+    ],
+    "action": "開店任務群作為「排班、採購與店務」的遊戲化比喻退場。",
+    "result": "參與了開店，開始面對每天的營運工作。",
+    "bridge": "提早加入外送平台的決定，後來幫奶茶店度過了一場世界級災難。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 6,
+    "title": "熱潮退去之後",
+    "region": "JAPAN / 奶茶店 · 需求變化",
+    "map": "cafe.png",
+    "background": "",
+    "camera": {
+      "width": 1369,
+      "height": 1118,
+      "groundY": 970,
+      "focusX": 740,
+      "viewWidth": 1369,
+      "aboveGround": 650
+    },
+    "alt": "楓之谷原始場景，作為「熱潮退去之後」的遊戲化舞台；不是實際地點照片。",
+    "boss": "market",
+    "bossName": "需求波浪",
+    "symbol": "市場與季節變化",
+    "tokens": [
+      "需求",
+      "產品",
+      "外送"
+    ],
+    "pages": [
+      "奶茶店開起來之後，我們遇到了季節與市場需求的變化例如日本文化不喝熱奶茶（冬天導致營業額下滑）。",
+      "原本在賣的東西，也得跟著客人的需求調整。",
+      "我覺得當時 Uber Eats 的商業模式很好，也決定提早為店裡導入外送平台。"
+    ],
+    "action": "需求波浪作為「市場與季節變化」的遊戲化比喻退場。",
+    "result": "除了原本做法以外的營運方式，也邊走邊調整。",
+    "bridge": "八月開店後，日子走到年底。本該是聖誕節與迎接新年的氣氛，卻有一場未知的變局即將來臨。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 7,
+    "title": "疫情改寫地圖",
+    "region": "JAPAN / 疫情中的營運",
+    "map": "showa.webp",
+    "background": "",
+    "camera": {
+      "width": 4816,
+      "height": 724,
+      "groundY": 487,
+      "focusX": 2900,
+      "viewWidth": 1700,
+      "aboveGround": 500
+    },
+    "alt": "楓之谷原始場景，作為「疫情改寫地圖」的遊戲化舞台；不是實際地點照片。",
+    "boss": "storm",
+    "bossName": "變局風暴",
+    "symbol": "原本安排被打亂",
+    "tokens": [
+      "疫情",
+      "遠距",
+      "轉型"
+    ],
+    "pages": [
+      "疫情衝擊了餐飲，被強制取消店內營業，也打亂了原本的營運安排。",
+      "我們一邊適應政策，我也開始尋找其他收入來源，好消息是我們是商店街第一家引入Uber Eats的店，營收雖然不如預期，但是也慢慢地累積評價。",
+      "這段時間，大學生活改成遠距上課。日本政府也發10萬日圓給學生補助買電腦。"
+    ],
+    "action": "變局風暴作為「原本安排被打亂」的遊戲化比喻退場。",
+    "result": "提早加入外送平台的決定，幫助奶茶店度過了疫情。",
+    "bridge": "後來發現了商機這次要研究的東西變成了電腦零件。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 8,
+    "title": "從零件開始",
+    "region": "JAPAN / 電腦工作室",
+    "map": "maps/workshop.png",
+    "background": "",
+    "camera": {
+      "width": 1600,
+      "height": 817,
+      "groundY": 667,
+      "focusX": 820,
+      "viewWidth": 1500,
+      "aboveGround": 650
+    },
+    "alt": "楓之谷原始場景，作為「從零件開始」的遊戲化舞台；不是實際地點照片。",
+    "boss": "computer",
+    "bossName": "零件迷宮",
+    "symbol": "零件配置與專業門檻",
+    "tokens": [
+      "零件",
+      "配置",
+      "客製"
+    ],
+    "pages": [
+      "升大二前，我拿著補助的十萬日圓去秋葉原，發現在日華人也有客製電腦需求，卻可能受限於語言與專業知識所以只好買高價的成品。",
+      "於是我開始自學電腦組裝，研究零件與效能配置，也從中發現了新的商業模式。",
+      "後來，我成立了電腦工作室，開始做客製化電腦在網路上賣。"
+    ],
+    "action": "零件迷宮作為「零件配置與專業門檻」的遊戲化比喻退場。",
+    "result": "我在日本經營的事業，多了電腦組裝這一項，同時事業規模越做越大。",
+    "bridge": "不過，我嘗試過的生意，也有失敗的。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 9,
+    "title": "沒有成功的支線",
+    "region": "JAPAN / ALT 代購",
+    "map": "maps/market.png",
+    "background": "maps/market-sky.png",
+    "camera": {
+      "width": 2790,
+      "height": 821,
+      "groundY": 595,
+      "focusX": 1460,
+      "viewWidth": 1800,
+      "aboveGround": 580
+    },
+    "alt": "楓之谷原始場景，作為「沒有成功的支線」的遊戲化舞台；不是實際地點照片。",
+    "boss": "parcel",
+    "bossName": "跨境包裹山",
+    "symbol": "定位、獲客與物流",
+    "tokens": [
+      "定位",
+      "收費",
+      "物流"
+    ],
+    "pages": [
+      "我也做過一個叫 ALT 的代購品牌。",
+      "品牌定位、怎麼找到客人、服務怎麼收費，都是遇到的問題。",
+      "再加上國際物流還有稅金的問題，這條創業支線最後沒有成功。"
+    ],
+    "action": "跨境包裹山作為「定位、獲客與物流」的遊戲化比喻退場。",
+    "result": "ALT 是我創業經歷裡，失敗的一次嘗試。",
+    "bridge": "但同時在餐飲這邊，也嘗試了另一種產品。",
+    "outcome": "failed",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 10,
+    "title": "同一個廚房的新任務",
+    "region": "JAPAN / 雞排外送品牌",
+    "map": "maps/kitchen.png",
+    "background": "",
+    "camera": {
+      "width": 1000,
+      "height": 597,
+      "groundY": 449,
+      "focusX": 550,
+      "viewWidth": 1000,
+      "aboveGround": 440
+    },
+    "alt": "楓之谷原始場景，作為「同一個廚房的新任務」的遊戲化舞台；不是實際地點照片。",
+    "boss": "kitchen",
+    "bossName": "廚房分身術",
+    "symbol": "不同產品與客群",
+    "tokens": [
+      "奶茶",
+      "雞排",
+      "外送"
+    ],
+    "pages": [
+      "除了奶茶，我們也發展了台灣雞排外送品牌。我發現，一間店可以經營兩個、甚至三個外送平台。",
+      "利用既有的營運資源，開始經營不同的產品與客群，進而擴大市場佔有。",
+      "同一個廚房，有了新的任務；多角化經營，也讓收入來源不只一種。"
+    ],
+    "action": "廚房分身術作為「不同產品與客群」的遊戲化比喻退場。",
+    "result": "在我的餐飲經歷裡，多了雞排外送品牌的經營。",
+    "bridge": "另一邊，電腦工作室也在調整品牌方向。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 11,
+    "title": "工作室的進化",
+    "region": "JAPAN / 高階客製工作室",
+    "map": "maps/advanced-lab.png",
+    "background": "maps/lab-wall.png",
+    "camera": {
+      "width": 2610,
+      "height": 906,
+      "groundY": 615,
+      "focusX": 1200,
+      "viewWidth": 1900,
+      "aboveGround": 600
+    },
+    "alt": "楓之谷原始場景，作為「工作室的進化」的遊戲化舞台；不是實際地點照片。",
+    "boss": "multitask",
+    "bossName": "多工齒輪",
+    "symbol": "課業與多項事業",
+    "tokens": [
+      "品牌",
+      "客製",
+      "論文"
+    ],
+    "pages": [
+      "電腦工作室逐漸壯大之後，我開始調整品牌、行銷與服務。",
+      "方向也逐漸轉向高階客製化市場。",
+      "同時，大四了我還得兼顧大學的關於元宇宙NFT的畢業論文與正在經營的事業。"
+    ],
+    "action": "多工齒輪作為「課業與多項事業」的遊戲化比喻退場。",
+    "result": "工作室從最初的組裝生意，逐漸往高階客製市場發展。",
+    "bridge": "畢業後，我選擇出售電腦事業其中累計了1800位Wechat客戶。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 12,
+    "title": "成熟之後的離開",
+    "region": "JAPAN / 出售事業 · 離開",
+    "map": "maps/harbor.png",
+    "background": "maps/harbor-sky.png",
+    "camera": {
+      "width": 4878,
+      "height": 1986,
+      "groundY": 1370,
+      "focusX": 2900,
+      "viewWidth": 1450,
+      "aboveGround": 800
+    },
+    "alt": "楓之谷原始場景，作為「成熟之後的離開」的遊戲化舞台；不是實際地點照片。",
+    "boss": "choice",
+    "bossName": "下一站羅盤",
+    "symbol": "已有成果與下一步",
+    "tokens": [
+      "出售",
+      "畢業",
+      "進修"
+    ],
+    "pages": [
+      "畢業後，我出售了電腦事業，準備結束這段日本生活。",
+      "在日本生活、求學與創業的這段時間，我做過餐飲、校園店面出展、多個外送品牌、導入韓式炸雞首次進入校園、電腦組裝與電商。",
+      "所有事業加起來，約三年的累計總營業額超過一億日圓。",
+      "寫畢業論文時，我引用了不少來自西方國家的資料，後來也成了我決定赴美進修的原因。"
+    ],
+    "action": "下一站羅盤作為「已有成果與下一步」的遊戲化比喻退場。",
+    "result": "電腦事業出售後，我結束了這段日本生活。",
+    "bridge": "但前往美國之前，我先去了菲律賓宿霧，重新學英文。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 13,
+    "title": "宿霧的六個月",
+    "region": "PHILIPPINES / 宿霧 · 六個月",
+    "map": "maps/beach.png",
+    "background": "maps/beach-sky.png",
+    "camera": {
+      "width": 2432,
+      "height": 893,
+      "groundY": 575,
+      "focusX": 1200,
+      "viewWidth": 2000,
+      "aboveGround": 560
+    },
+    "alt": "楓之谷原始場景，作為「宿霧的六個月」的遊戲化舞台；不是實際地點照片。",
+    "boss": "language",
+    "bossName": "英文積木牆",
+    "symbol": "重新開始的英文",
+    "tokens": [
+      "聽力",
+      "閱讀",
+      "表達"
+    ],
+    "pages": [
+      "離開日本後，我到菲律賓宿霧，讀了六個月的語言學校。",
+      "高中時選擇放棄的英文，這次又重新開始學。",
+      "這六個月，我從零開始，把英文慢慢撿回來。"
+    ],
+    "action": "英文積木牆作為「重新開始的英文」的遊戲化比喻退場。",
+    "result": "在宿霧完成六個月的語言學校後，我回到了台灣，還有兵役要完成。",
+    "bridge": "",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 14,
+    "title": "回到台灣，進入軍營",
+    "region": "TAIWAN / 服役",
+    "map": "maps/training.png",
+    "background": "",
+    "camera": {
+      "width": 2400,
+      "height": 754,
+      "groundY": 605,
+      "focusX": 1200,
+      "viewWidth": 1900,
+      "aboveGround": 590
+    },
+    "alt": "楓之谷原始場景，作為「回到台灣，進入軍營」的遊戲化舞台；不是實際地點照片。",
+    "boss": "drill",
+    "bossName": "軍營節拍器",
+    "symbol": "軍營作息與生活",
+    "tokens": [
+      "集合",
+      "作息",
+      "服役"
+    ],
+    "pages": [
+      "回到台灣後，我進了軍營服兵役。",
+      "但就像前面說的，頑皮的個性還是跟著我，當兵時也很調皮。",
+      "我跟班長的關係也很好，度過了一段美好的軍旅時光。"
+    ],
+    "action": "軍營節拍器作為「軍營作息與生活」的遊戲化比喻退場。",
+    "result": "台灣服役，也是我前往美國之前的一段經歷。",
+    "bridge": "赴美留學之前，還得準備雅思與留學申請。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 15,
+    "title": "前往美國之前",
+    "region": "TAIWAN → USA / 留學準備",
+    "map": "maps/classroom.png",
+    "background": "",
+    "camera": {
+      "width": 1658,
+      "height": 790,
+      "groundY": 643,
+      "focusX": 850,
+      "viewWidth": 1550,
+      "aboveGround": 630
+    },
+    "alt": "楓之谷原始場景，作為「前往美國之前」的遊戲化舞台；不是實際地點照片。",
+    "boss": "exam",
+    "bossName": "出發文件塔",
+    "symbol": "考試與留學準備",
+    "tokens": [
+      "雅思",
+      "申請",
+      "出發"
+    ],
+    "pages": [
+      "為了去美國讀碩士，我準備了雅思與留學申請。",
+      "拿到幾所學校的 offer，後來我選擇了供應鏈管理。",
+      "一所明尼蘇達冷到不行，一所亞利桑那熱到不行，再來一所南加州大學貴到不行",
+      "後來選擇了ASU，也看中了亞利桑納的發展。"
+    ],
+    "action": "出發文件塔作為「考試與留學準備」的遊戲化比喻退場。",
+    "result": "赴美前，AIT 面試安排一度被取消，但最後還是趕上了入學。",
+    "bridge": "從日本的店面與工作室，後來走到了 Arizona 的研究所。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 16,
+    "title": "沙漠中的研究生",
+    "region": "USA / ASU · W. P. Carey",
+    "map": "maps/desert-campus.png",
+    "background": "maps/desert-sky.png",
+    "camera": {
+      "width": 7200,
+      "height": 1224,
+      "groundY": 820,
+      "focusX": 1850,
+      "viewWidth": 2200,
+      "aboveGround": 800
+    },
+    "alt": "楓之谷原始場景，作為「沙漠中的研究生」的遊戲化舞台；不是實際地點照片。",
+    "boss": "thesis",
+    "bossName": "研究沙漏",
+    "symbol": "供應鏈課業與專案",
+    "tokens": [
+      "課堂",
+      "專案",
+      "研究"
+    ],
+    "pages": [
+      "我在 ASU W. P. Carey School of Business，就讀供應鏈管理碩士。",
+      "過去在店裡還有電商碰過的採購、供應商協調與營運，也成了我帶進課堂的實務經驗。",
+      "這段期間，我參與了 Moses Lake Industries 的供應鏈 capstone，分析供應鏈改善機會；也開始接觸 Vibe coding，做出模型與產品。",
+      "2026 年 5 月，我畢業了，也很幸運地遇到一位走在產業發展前線的前輩，受到了很多指導。"
+    ],
+    "action": "研究沙漏作為「供應鏈課業與專案」的遊戲化比喻退場。",
+    "result": "我完成了碩士。",
+    "bridge": "在 Arizona受到前輩的影響，我也開始研究台灣、日本與當地產業的連結，還有生態系的發展。",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 17,
+    "title": "從課堂走進產業",
+    "region": "USA / 台日與 Arizona 產業",
+    "map": "maps/industry.png",
+    "background": "",
+    "camera": {
+      "width": 2224,
+      "height": 404,
+      "groundY": 288,
+      "focusX": 1120,
+      "viewWidth": 1600,
+      "aboveGround": 280
+    },
+    "alt": "楓之谷原始場景，作為「從課堂走進產業」的遊戲化舞台；不是實際地點照片。",
+    "boss": "network",
+    "bossName": "跨境連結網",
+    "symbol": "研究轉為商業理解",
+    "tokens": [
+      "台灣",
+      "日本",
+      "Arizona"
+    ],
+    "pages": [
+      "我開始研究台灣、日本與 Arizona 之間的半導體供應鏈與跨境商業機會。",
+      "透過交流活動與產業對話，接觸課堂以外的問題，也累計了很多人脈。",
+      "Arizona Chip Journey，是我目前持續整理的研究與專案方向。"
+    ],
+    "action": "跨境連結網作為「研究轉為商業理解」的遊戲化比喻退場。",
+    "result": "這些研究與專案，成了我求職時展示能力的材料。後來，我拿到半導體 東京応化工業美國子公司的客戶經理 offer。",
+    "bridge": "",
+    "outcome": "chapter",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  },
+  {
+    "id": 18,
+    "title": "還沒寫完的下一章",
+    "region": "NEXT CHAPTER / 截至 2026.10.19",
+    "map": "maps/harbor.png",
+    "background": "maps/harbor-sky.png",
+    "camera": {
+      "width": 4878,
+      "height": 1986,
+      "groundY": 1370,
+      "focusX": 2900,
+      "viewWidth": 1450,
+      "aboveGround": 800
+    },
+    "alt": "楓之谷原始場景，作為「還沒寫完的下一章」的遊戲化舞台；不是實際地點照片。",
+    "boss": "crossroads",
+    "bossName": "未完路標",
+    "symbol": "工作許可與人生轉場",
+    "tokens": [
+      "工作許可",
+      "返台計畫",
+      "下一步"
+    ],
+    "pages": [
+      "拿到正式 offer，接受後等待工作證核發。",
+      "工作證申請因為弄錯遞交時間問題被拒，我在五個月後才收到結果。後來 offer 撤回，我沒有實際到職。",
+      "接下來的安排裡，有返台的計畫，也有想回東京的念頭。計畫永遠趕不上變化，隨遇而安、兵來將擋。"
+    ],
+    "action": "未完路標作為「工作許可與人生轉場」的遊戲化比喻退場。",
+    "result": "這個故事，現在還在繼續。我才 27 歲，旅程還沒有結束。",
+    "bridge": "我是 Jarvis Lin。接下來，希望有機會和你聊聊，我能為你的團隊做什麼。",
+    "outcome": "ongoing",
+    "source": {
+      "file": "docs/JOURNEY-DIALOGUE-01-18.md",
+      "status": "OWNER-APPROVED for local implementation; source wording preserved",
+      "sha256": "9a20b85fa8e05fcfb2f66427d0885cf5a2396ad57076b49b6fd5cca202101487"
+    }
+  }
+]);

@@ -1,0 +1,498 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local review only",
+  "processing": "Unchanged original background PNGs. Original frame origins/delays/alpha and map layer parameters retained. Only layers used by the current maps are fetched; no client/server engine code imported.",
+  "files": [
+    {
+      "file": "environment/b91adb30cdbf-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/Rien.img/back/17",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/Rien.img/back/17",
+      "sha256": "2771830a4a643cbcd7b731d283007171464ba371cb4847600d1af9d95b3fce7e",
+      "bytes": 46512
+    },
+    {
+      "file": "environment/77e6dc957183-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/1",
+      "sha256": "870b346d5286d8e35bff48c0d6a730a30855877751bf8ad6edc1ab5ffdf7e5a4",
+      "bytes": 800730
+    },
+    {
+      "file": "environment/15af210371dc-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/10",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/10",
+      "sha256": "23b9838581087df8745e3d343e90dd4d10d4047bae71909962d22320ae282133",
+      "bytes": 22137
+    },
+    {
+      "file": "environment/c26af6eb05d8-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/11",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/11",
+      "sha256": "ca5e3b2fa6093f40b7eb5cf32d89b416fa77aa769ce7ac22c8ca8b41f605f984",
+      "bytes": 1390
+    },
+    {
+      "file": "environment/1b21cc3dbde4-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/3",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/3",
+      "sha256": "3899b8ea61461d92fc750cccb95d02c69ae94d4cca8bf75f0f1eb4aff25492fe",
+      "bytes": 24509
+    },
+    {
+      "file": "environment/1e29c74f5d99-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/9",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/goldBeach.img/back/9",
+      "sha256": "081eb56d219468ea4b35952d73a1d528eb713c0cc0996ee648c1ac0e048e1aae",
+      "bytes": 33833
+    },
+    {
+      "file": "environment/48a1b2aa711e-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/grassySoil_new.img/back/3",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/grassySoil_new.img/back/3",
+      "sha256": "066cb43d119a619a884962a07c7770b28dec5adf10f443bf41059de34be3f7ec",
+      "bytes": 83745
+    },
+    {
+      "file": "environment/6655d8ad4b40-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/grassySoil_new.img/back/8",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/grassySoil_new.img/back/8",
+      "sha256": "3c2ced4e76f17e99c901de41d83548050c9ed462e7dde9c07e6575cea8b3f07e",
+      "bytes": 13396
+    },
+    {
+      "file": "environment/8e9e93861388-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/laboratory.img/back/5",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/laboratory.img/back/5",
+      "sha256": "58516aad2d6f78eed92ed384f5e4c2367d01938d48597aa3315c414e43697fc7",
+      "bytes": 446
+    },
+    {
+      "file": "environment/079a0ae9e905-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/laboratory.img/back/6",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/laboratory.img/back/6",
+      "sha256": "4ba0d6748bdf383b10c8c43d8606332bda690bffd596f1362c2969bd5ded9f82",
+      "bytes": 232
+    },
+    {
+      "file": "environment/e685206e0b38-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/0/0",
+      "sha256": "6cf2fa12e4d2b317ad8a293ebdb3a0538aa97686848453eef15cba85792ff1a8",
+      "bytes": 37418
+    },
+    {
+      "file": "environment/e685206e0b38-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/0/1",
+      "sha256": "6cf2fa12e4d2b317ad8a293ebdb3a0538aa97686848453eef15cba85792ff1a8",
+      "bytes": 37418
+    },
+    {
+      "file": "environment/3688f9f43554-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/1/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/1/0",
+      "sha256": "d440a161ba6dddeaa0f9c32f9729560bb5d8f5a10a92ca370e41bb6030041583",
+      "bytes": 14401
+    },
+    {
+      "file": "environment/3688f9f43554-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/1/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/1/1",
+      "sha256": "d440a161ba6dddeaa0f9c32f9729560bb5d8f5a10a92ca370e41bb6030041583",
+      "bytes": 14401
+    },
+    {
+      "file": "environment/121f09050d7d-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/2/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/2/0",
+      "sha256": "05868bcaa997812ee463bad4a526513b60db645908c0e669a35f851b26ec02c7",
+      "bytes": 34384
+    },
+    {
+      "file": "environment/121f09050d7d-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/2/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/2/1",
+      "sha256": "05868bcaa997812ee463bad4a526513b60db645908c0e669a35f851b26ec02c7",
+      "bytes": 34384
+    },
+    {
+      "file": "environment/0a8c53772bcf-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/3/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/3/0",
+      "sha256": "aee527861667d05a39975cedbdf896ff8d5b1681eeef4dd3fb70e4c98d81b064",
+      "bytes": 42293
+    },
+    {
+      "file": "environment/0a8c53772bcf-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/3/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenCave.img/ani/3/1",
+      "sha256": "aee527861667d05a39975cedbdf896ff8d5b1681eeef4dd3fb70e4c98d81b064",
+      "bytes": 42293
+    },
+    {
+      "file": "environment/d58827b436d3-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenLab.img/back/49",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenLab.img/back/49",
+      "sha256": "ad741244ef9fa48361291611cd89828f81b75232bd656da961e14b8f655fbcac",
+      "bytes": 30527
+    },
+    {
+      "file": "environment/6eb91b649b4d-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenLab.img/back/50",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/lebenLab.img/back/50",
+      "sha256": "44380664b25e48fd4752e84361b9ab96a7b6f027a575b3fd958e1de62f603dcc",
+      "bytes": 25264
+    },
+    {
+      "file": "environment/5e4fa07141d4-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/0",
+      "sha256": "1995c0aaeb4606348f86216d0eb522a1a997d8f88d4ecdde3208934ddecb0065",
+      "bytes": 3215
+    },
+    {
+      "file": "environment/5e4fa07141d4-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/1",
+      "sha256": "bd445d0cf3962bbb6d88f9c9f1ea13a211609eba260f060fd520683733293638",
+      "bytes": 3179
+    },
+    {
+      "file": "environment/5e4fa07141d4-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/2",
+      "sha256": "5534e911b7b0017d2586e3a86e6eedd3ead0b9a564fb16e4ca31929cb7f59f76",
+      "bytes": 3346
+    },
+    {
+      "file": "environment/5e4fa07141d4-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/3",
+      "sha256": "db9a198a6f3d6d5635219be7e858919be01ee75961dca58968e8f394bda074b9",
+      "bytes": 3325
+    },
+    {
+      "file": "environment/5e4fa07141d4-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/4",
+      "sha256": "2f1d2f7d18d08373f4c8ef47f84223e22d672514acc65f4afc6b97bedb220b85",
+      "bytes": 3137
+    },
+    {
+      "file": "environment/5e4fa07141d4-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/5",
+      "sha256": "26d4c53c3aa8f20a45c7c17f25a353bd3a6511ce41b64ba4d0012945c5acf79f",
+      "bytes": 2930
+    },
+    {
+      "file": "environment/5e4fa07141d4-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/6",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/6",
+      "sha256": "dbc6e1241990e6e1cdce445f812683598d3a9eee2ebd3b273e35e0bd293ec64a",
+      "bytes": 3149
+    },
+    {
+      "file": "environment/5e4fa07141d4-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/7",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/0/7",
+      "sha256": "9e55bd7dcbcc7788014a3e85fc2acb73ef7b25221e7e1481508c84631b34c05a",
+      "bytes": 3184
+    },
+    {
+      "file": "environment/7a3809459fb2-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/0",
+      "sha256": "691413f5084733b3862606d6c664f972a1505a267ce854e95e974f52a8e06879",
+      "bytes": 3482
+    },
+    {
+      "file": "environment/7a3809459fb2-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/1",
+      "sha256": "083c20d0ffe0098d60960c9e84e61f8ca9a81bb36499d889b98eb9590ad071ce",
+      "bytes": 3581
+    },
+    {
+      "file": "environment/7a3809459fb2-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/2",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/2",
+      "sha256": "1ae99cf6d91f46664f83a1ed7da2b4941d94eb3e058c5807f5a969bbcbb01fdb",
+      "bytes": 3501
+    },
+    {
+      "file": "environment/7a3809459fb2-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/3",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/3",
+      "sha256": "083c20d0ffe0098d60960c9e84e61f8ca9a81bb36499d889b98eb9590ad071ce",
+      "bytes": 3581
+    },
+    {
+      "file": "environment/7a3809459fb2-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/4",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/4",
+      "sha256": "5eeeccf4b77aa3ff669e4a9e2e5c0c664e217f5c65e3c6a7597d692b4be0f080",
+      "bytes": 3491
+    },
+    {
+      "file": "environment/7a3809459fb2-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/5",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/5",
+      "sha256": "13f42d75156e838bd298a0cb52bb81c63c69c30f1b9e92d0cef8b4412ac85b1a",
+      "bytes": 3576
+    },
+    {
+      "file": "environment/7a3809459fb2-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/6",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/6",
+      "sha256": "ca764b59531eb6de8e59a99bec3ca274fc5bcfa353ed401eff384c7110f45494",
+      "bytes": 4201
+    },
+    {
+      "file": "environment/7a3809459fb2-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/7",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/7",
+      "sha256": "651dc9b5e38514257055095ec1d3fe69e332717aa2dec7901d2b33c589b12ee4",
+      "bytes": 4436
+    },
+    {
+      "file": "environment/7a3809459fb2-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/8",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/8",
+      "sha256": "e752f8582899c958d53d86a56d78199b94d7e23bb5d3c3f51d8d1fe9b05133e5",
+      "bytes": 4172
+    },
+    {
+      "file": "environment/7a3809459fb2-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/9",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/9",
+      "sha256": "30c0ec278afd1022b93de2d12c6c47bd46a37262df963a8ea81607f7d5b2453e",
+      "bytes": 4316
+    },
+    {
+      "file": "environment/7a3809459fb2-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/10",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/10",
+      "sha256": "0b1e73ade6070a5891a0cc7e133bd1b631c1d54f12cb6d924d8601b2708a4fe6",
+      "bytes": 4266
+    },
+    {
+      "file": "environment/7a3809459fb2-11.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/11",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/11",
+      "sha256": "54a87f0786eec75f528420f795fd630f0b63db8ab20f420da64272b124940d42",
+      "bytes": 3602
+    },
+    {
+      "file": "environment/7a3809459fb2-12.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/12",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/12",
+      "sha256": "691413f5084733b3862606d6c664f972a1505a267ce854e95e974f52a8e06879",
+      "bytes": 3482
+    },
+    {
+      "file": "environment/7a3809459fb2-13.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/13",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/13",
+      "sha256": "083c20d0ffe0098d60960c9e84e61f8ca9a81bb36499d889b98eb9590ad071ce",
+      "bytes": 3581
+    },
+    {
+      "file": "environment/7a3809459fb2-14.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/14",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/14",
+      "sha256": "691413f5084733b3862606d6c664f972a1505a267ce854e95e974f52a8e06879",
+      "bytes": 3482
+    },
+    {
+      "file": "environment/7a3809459fb2-15.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/15",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/15",
+      "sha256": "083c20d0ffe0098d60960c9e84e61f8ca9a81bb36499d889b98eb9590ad071ce",
+      "bytes": 3581
+    },
+    {
+      "file": "environment/7a3809459fb2-16.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/16",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/16",
+      "sha256": "f0e7648f34383f876b05e18459cbff7ed6ceafe149db58cfe47c33a8f0c506f1",
+      "bytes": 3555
+    },
+    {
+      "file": "environment/7a3809459fb2-17.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/17",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/17",
+      "sha256": "23569b8b6330f29dc401865e56020abb7a1823b1a1b56743781f38eed31a3d7f",
+      "bytes": 3677
+    },
+    {
+      "file": "environment/7a3809459fb2-18.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/18",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/18",
+      "sha256": "014c3d286ea1ed3dd3784753ea9cfcd3c2716e2b1dedd6adf2d8ef186fc764fc",
+      "bytes": 3620
+    },
+    {
+      "file": "environment/7a3809459fb2-19.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/19",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/ani/2/19",
+      "sha256": "23569b8b6330f29dc401865e56020abb7a1823b1a1b56743781f38eed31a3d7f",
+      "bytes": 3677
+    },
+    {
+      "file": "environment/16f089f4b783-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/back/8",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/nightDesert.img/back/8",
+      "sha256": "4db42a88994c74fc1557b6c5979153332b7dd8d8b98da4af061ed9e2206019eb",
+      "bytes": 48987
+    },
+    {
+      "file": "environment/17c5011ebeb9-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/shouwa_jp.img/back/13",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/shouwa_jp.img/back/13",
+      "sha256": "578fef7bf5477954f48331c5dfb848cdf9d1ea36494be2561da9ba825f86553f",
+      "bytes": 94523
+    },
+    {
+      "file": "environment/fe27687a146d-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/0/0",
+      "sha256": "d1818d2d2e9b1dbdc5a1fe441359cca1bbab052f8986f2f284f2bd7001b195af",
+      "bytes": 23168
+    },
+    {
+      "file": "environment/fe27687a146d-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/0/1",
+      "sha256": "d1818d2d2e9b1dbdc5a1fe441359cca1bbab052f8986f2f284f2bd7001b195af",
+      "bytes": 23168
+    },
+    {
+      "file": "environment/e0a39a71865e-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/1/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/1/0",
+      "sha256": "0a724ac9e5e09713bc21e4240624dc4f9aa6530e2a72d6ddb48bfd08144a0412",
+      "bytes": 21508
+    },
+    {
+      "file": "environment/e0a39a71865e-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/1/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/1/1",
+      "sha256": "0a724ac9e5e09713bc21e4240624dc4f9aa6530e2a72d6ddb48bfd08144a0412",
+      "bytes": 21508
+    },
+    {
+      "file": "environment/8c380c3d1636-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/2/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/2/0",
+      "sha256": "928f875db7408a397d6a620525e4a63b1f5a4f550f6cb8bd73369be065240e0f",
+      "bytes": 33164
+    },
+    {
+      "file": "environment/8c380c3d1636-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/2/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/2/1",
+      "sha256": "928f875db7408a397d6a620525e4a63b1f5a4f550f6cb8bd73369be065240e0f",
+      "bytes": 33164
+    },
+    {
+      "file": "environment/db0815be004f-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/3/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/3/0",
+      "sha256": "5fc10e6ff2dee0bf13a1206de4a08bb4b41621c89c68a12600e3e9c92751a306",
+      "bytes": 20586
+    },
+    {
+      "file": "environment/db0815be004f-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/3/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/3/1",
+      "sha256": "5fc10e6ff2dee0bf13a1206de4a08bb4b41621c89c68a12600e3e9c92751a306",
+      "bytes": 20586
+    },
+    {
+      "file": "environment/7936cc20abab-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/4/0",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/4/0",
+      "sha256": "e2aabc1a775b07c9ef723bf165b6ce78932dfa9280729800d1e9f6b503cde4d8",
+      "bytes": 25201
+    },
+    {
+      "file": "environment/7936cc20abab-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/4/1",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/ani/4/1",
+      "sha256": "e2aabc1a775b07c9ef723bf165b6ce78932dfa9280729800d1e9f6b503cde4d8",
+      "bytes": 25201
+    },
+    {
+      "file": "environment/bf8c77496f4c-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/back/6",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/spinOff1.img/back/6",
+      "sha256": "3e9da399ecdef696ffd563d36b437b9dabffd042668ae56519c8aa275aa08ffa",
+      "bytes": 81695
+    },
+    {
+      "file": "environment/e14436b77a5a-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/10",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/10",
+      "sha256": "82facccace9f76fe546fb4a5b4074e71c7dd1214d7504779fcefef8fba381e52",
+      "bytes": 37730
+    },
+    {
+      "file": "environment/33a86f00db70-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/11",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/11",
+      "sha256": "66876226681a29d60dcf844b9bea32bb268d63481a73ea0740449ec5c098c9f4",
+      "bytes": 34677
+    },
+    {
+      "file": "environment/7696ea8c8b97-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/13",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/13",
+      "sha256": "07294b234e433b6814a0cd8fe346e9558f8388aa8d6bb26e65906a71b3d1178e",
+      "bytes": 36886
+    },
+    {
+      "file": "environment/61b14891a5b2-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/4",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/4",
+      "sha256": "ebe8cfd44bdf8f87be26e947641f89c6ab53d8da202159bb20db18048b0bab3e",
+      "bytes": 25649
+    },
+    {
+      "file": "environment/426173812508-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/5",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/5",
+      "sha256": "8e92a91fd2d57d03bbfdf3c3f692d32fb5787a9680dcf9dd77478d68d7fcd0e0",
+      "bytes": 29365
+    },
+    {
+      "file": "environment/94cb77a75e48-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/6",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/6",
+      "sha256": "1317e34189e59cd2b779eedd6bceaa28a3de71865c0f511f5cdc7d6ce6a978b1",
+      "bytes": 5194
+    },
+    {
+      "file": "environment/e8dd63dd020c-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/7",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/7",
+      "sha256": "0c30d903657983428d9068145d11148514172a6ce2f6027b7f22e85e63d40442",
+      "bytes": 11775
+    },
+    {
+      "file": "environment/7d8f11e322d7-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/8",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/8",
+      "sha256": "73f887eff69b5ca88db8cdbeb725536578d6054de64c85d97cd10f7363ac3519",
+      "bytes": 24430
+    },
+    {
+      "file": "environment/9fee654a1972-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/9",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/240/Map/Back/vicportTown.img/back/9",
+      "sha256": "ba0f7d1878c36bbcfb4be831cf8484a8b871ee315fd48100515ad717ceb08c0d",
+      "bytes": 57351
+    }
+  ]
+}

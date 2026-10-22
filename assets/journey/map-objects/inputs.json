@@ -1,0 +1,1012 @@
+[
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 7,
+    "x": 66,
+    "y": -266,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/0",
+    "frame0Sha256": "faef0c0eab9b504c4f2cf2210a21f95454a6a03377e45985f4dd3095584c219c"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": -376,
+    "y": -38,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1",
+    "frame0Sha256": "e8cc1952288cbe67f99aaf3de5341149a21d5b45e48614bb1bd60e5553328b51"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": -36,
+    "y": 132,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/1",
+    "frame0Sha256": "718b87ec547f18a12c1c50ec178810fb85196273f05b4d805bdc2a833279738d"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 163,
+    "y": 132,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/0",
+    "frame0Sha256": "95342850b2006aedd36efe07dbfbef244af593a703b27503b425e6c34da81b92"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 362,
+    "y": 132,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/1",
+    "frame0Sha256": "718b87ec547f18a12c1c50ec178810fb85196273f05b4d805bdc2a833279738d"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 561,
+    "y": 132,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/2",
+    "frame0Sha256": "66ada500176c34b27f1f4a4014cf96330728131d19321a7f29887950ba220906"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 760,
+    "y": 132,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/0",
+    "frame0Sha256": "95342850b2006aedd36efe07dbfbef244af593a703b27503b425e6c34da81b92"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 780,
+    "y": -272,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/ladder/6/0",
+    "frame0Sha256": "60fce5ba7796d872d7a432acaa0c300d3b72b4fc01d9579ec7ffac6c4e22266e"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 780,
+    "y": -172,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/ladder/6/0",
+    "frame0Sha256": "60fce5ba7796d872d7a432acaa0c300d3b72b4fc01d9579ec7ffac6c4e22266e"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 780,
+    "y": -72,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/ladder/6/0",
+    "frame0Sha256": "60fce5ba7796d872d7a432acaa0c300d3b72b4fc01d9579ec7ffac6c4e22266e"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 587,
+    "y": -507,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/5",
+    "frame0Sha256": "b58704ba16be1682d4773d401f657a398c24c83800ce0efadb80437eb45ca072"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 456,
+    "y": -38,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2",
+    "frame0Sha256": "4a0a3a4144aa99a1ba952712fc88bda9f44dcd295c168226e8631de834c7c0b2"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 10,
+    "x": -51,
+    "y": -397,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3",
+    "frame0Sha256": "5707b7fec180defad4638cf3584689a9568bf92edd25da9f063b9a6ac6479677"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": 780,
+    "y": -6,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/ladder/6/0",
+    "frame0Sha256": "60fce5ba7796d872d7a432acaa0c300d3b72b4fc01d9579ec7ffac6c4e22266e"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 12,
+    "x": 594,
+    "y": -435,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/7",
+    "frame0Sha256": "0926ddb36bda363f1f5033c34ba70fd7f40abe28e177887f1bbfb513bad359f7"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 10,
+    "x": 208,
+    "y": -231,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6",
+    "frame0Sha256": "52f177477e2027a8d188dbe6561b90e2d4a83f45e164b586708d7628db0b2c83"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": -633,
+    "y": 132,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/0",
+    "frame0Sha256": "95342850b2006aedd36efe07dbfbef244af593a703b27503b425e6c34da81b92"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": -434,
+    "y": 132,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/1",
+    "frame0Sha256": "718b87ec547f18a12c1c50ec178810fb85196273f05b4d805bdc2a833279738d"
+  },
+  {
+    "mapId": 310010000,
+    "layer": 2,
+    "z": 9,
+    "x": -235,
+    "y": 132,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/2",
+    "frame0Sha256": "66ada500176c34b27f1f4a4014cf96330728131d19321a7f29887950ba220906"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 6,
+    "z": 9,
+    "x": -201,
+    "y": -73,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/dining/0",
+    "frame0Sha256": "ced1635c178b69437c0268752ca3ea5f08be9c80a4228cf4e51fce83f19c8140"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 6,
+    "z": 9,
+    "x": 299,
+    "y": -73,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/dining/1",
+    "frame0Sha256": "c4bb2a186f34f9312137d1e25fdad1a874585b00996297c2cf6a45108b9ddf09"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 6,
+    "z": 10,
+    "x": -69,
+    "y": -135,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/ladder/56/0",
+    "frame0Sha256": "495e32622e40c5a813d91b90ac8dfc8f930ffbd1e2952d7e10374d5dbc58a919"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 6,
+    "z": 10,
+    "x": -66,
+    "y": -80,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/ladder/56/3",
+    "frame0Sha256": "13cb1f6bf3aeb18d5eb464c979a50e610e89184551f1e4c0b5a8eb3b461a5969"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 6,
+    "z": 9,
+    "x": -66,
+    "y": 40,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/ladder/56/3",
+    "frame0Sha256": "13cb1f6bf3aeb18d5eb464c979a50e610e89184551f1e4c0b5a8eb3b461a5969"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 6,
+    "z": 9,
+    "x": -66,
+    "y": 96,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/ladder/56/2",
+    "frame0Sha256": "67b788908605a3322376c54baf0a32c7558e020d338ec1851bde71dfb07852e9"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 6,
+    "z": 10,
+    "x": 156,
+    "y": -37,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/ani/6",
+    "frame0Sha256": "dec85aa2d882eddc68af074d5daf85d2a0dca215f4a78aa4243a6ed6211a5b3e"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 10,
+    "z": 9,
+    "x": -326,
+    "y": 224,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/etc/0",
+    "frame0Sha256": "c85fb5534c03b19c6ec0a3271a05872d873406a906850761c01fc884dfbf3a8d"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 10,
+    "z": 9,
+    "x": -177,
+    "y": 224,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/etc/0",
+    "frame0Sha256": "c85fb5534c03b19c6ec0a3271a05872d873406a906850761c01fc884dfbf3a8d"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 10,
+    "z": 9,
+    "x": -28,
+    "y": 224,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/etc/0",
+    "frame0Sha256": "c85fb5534c03b19c6ec0a3271a05872d873406a906850761c01fc884dfbf3a8d"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 10,
+    "z": 9,
+    "x": 121,
+    "y": 224,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/etc/0",
+    "frame0Sha256": "c85fb5534c03b19c6ec0a3271a05872d873406a906850761c01fc884dfbf3a8d"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 10,
+    "z": 9,
+    "x": 270,
+    "y": 224,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/etc/0",
+    "frame0Sha256": "c85fb5534c03b19c6ec0a3271a05872d873406a906850761c01fc884dfbf3a8d"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 10,
+    "z": 9,
+    "x": 419,
+    "y": 224,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/etc/0",
+    "frame0Sha256": "c85fb5534c03b19c6ec0a3271a05872d873406a906850761c01fc884dfbf3a8d"
+  },
+  {
+    "mapId": 912080000,
+    "layer": 10,
+    "z": 9,
+    "x": 524,
+    "y": 224,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/etc/0",
+    "frame0Sha256": "c85fb5534c03b19c6ec0a3271a05872d873406a906850761c01fc884dfbf3a8d"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 2,
+    "z": 9,
+    "x": 1292,
+    "y": -239,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/wall/1",
+    "frame0Sha256": "758457b96055e8aa89d2c044f59767b98fe9521be4911559ac204f503215b053"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 2,
+    "z": 9,
+    "x": 994,
+    "y": -239,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/wall/0",
+    "frame0Sha256": "2efc163a1ceb9bc19b604075a7ec6b945ee2ac91e50467f32165a085d48c9b7d"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 2,
+    "z": 9,
+    "x": 1893,
+    "y": -239,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/wall/0",
+    "frame0Sha256": "2efc163a1ceb9bc19b604075a7ec6b945ee2ac91e50467f32165a085d48c9b7d"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 2,
+    "z": 9,
+    "x": 694,
+    "y": -239,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/wall/2",
+    "frame0Sha256": "f559d1b9fca48fbb60fc9ae4d65b4de3b4bd35d127fe9f03ba40cd5f4e79d680"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 2,
+    "z": 9,
+    "x": 394,
+    "y": -239,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/wall/1",
+    "frame0Sha256": "758457b96055e8aa89d2c044f59767b98fe9521be4911559ac204f503215b053"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 2,
+    "z": 9,
+    "x": 96,
+    "y": -239,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/wall/0",
+    "frame0Sha256": "2efc163a1ceb9bc19b604075a7ec6b945ee2ac91e50467f32165a085d48c9b7d"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 2,
+    "z": 9,
+    "x": 1593,
+    "y": -239,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/wall/2",
+    "frame0Sha256": "f559d1b9fca48fbb60fc9ae4d65b4de3b4bd35d127fe9f03ba40cd5f4e79d680"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 2,
+    "z": 9,
+    "x": -205,
+    "y": -239,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/wall/1",
+    "frame0Sha256": "758457b96055e8aa89d2c044f59767b98fe9521be4911559ac204f503215b053"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1084,
+    "y": -277,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/0",
+    "frame0Sha256": "c03f22911b22977003c636c0a23d0c8d3ccb1df2feaefc50392263b024839920"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": -318,
+    "y": 5,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/3",
+    "frame0Sha256": "12391be5a761d08e49d51af047acb4ab41c694e85e199dd0edaa3c76bd17ec9a"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1251,
+    "y": -266,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/1",
+    "frame0Sha256": "8f129df8131d3916c4579720dc18bdc7c97f04120f9022126f2ea75621997f83"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1729,
+    "y": -222,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/2",
+    "frame0Sha256": "7ba8b25bf5add8736ecea0a413ea07ba9d82fe7ee9b79f48166a37bab6e93ead"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1937,
+    "y": 4,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/4",
+    "frame0Sha256": "71b12147835a73b57f48b75b3435bc12177e10732942b05ad2a4c342c2efcb2e"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1263,
+    "y": -34,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/7",
+    "frame0Sha256": "b7a573c647c3b0b13d00d7d0b89720cdc5dea56737c1d817af1ae4dc2f06a70a"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1129,
+    "y": -40,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/6",
+    "frame0Sha256": "efd4cd1877ad989f5aa0adc79b6f33c0d878894907e393fb1efa296d9e5946be"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1869,
+    "y": -202,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/3",
+    "frame0Sha256": "12391be5a761d08e49d51af047acb4ab41c694e85e199dd0edaa3c76bd17ec9a"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1315,
+    "y": 3,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/4",
+    "frame0Sha256": "71b12147835a73b57f48b75b3435bc12177e10732942b05ad2a4c342c2efcb2e"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1453,
+    "y": 11,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/5",
+    "frame0Sha256": "af61190ffb2c1ac7f3102c7d8070b3fefe10c3b35039c2c4b09de8711947ecd5"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": -115,
+    "y": -237,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/door/0",
+    "frame0Sha256": "4b698554665738364a1de2a4f2719222c6695141206ef3cd49fc255ab43612d3"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1005,
+    "y": -64,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/9",
+    "frame0Sha256": "9b846b0afcb3ecd6c24a663b044b577d4245bb5074651d35383362446e9cd23f"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 424,
+    "y": -481,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/18",
+    "frame0Sha256": "a07eeb21970c34abb47321d6c3a8aa9430ada3aef8d06ad01457af762cc9aa77"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 306,
+    "y": -40,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/10",
+    "frame0Sha256": "2f946eab8b474aef833dd89aec1f902e270ba1098ab7265012a7b320dcbe1dbb"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 452,
+    "y": -243,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/11",
+    "frame0Sha256": "2298c5e6c5cdba3e5bf4c4ac40b4237e628ab985cd411b530a53fc5cb2a1e74b"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 309,
+    "y": -210,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/12",
+    "frame0Sha256": "7cbb1067963e25302e23f56d5d0a2483d27a42ecaaa152b78ac98d1ea365b2bc"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1122,
+    "y": -456,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/19",
+    "frame0Sha256": "5618f0fb3ce7614b08a763da543a3fbc168d413c59e49c3a41e9a93a625a7fee"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1004,
+    "y": -483,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/20",
+    "frame0Sha256": "ef42441eb639bc6e156ea77db65d7cd01dc0f1fe0ca24c7d548801a3e0bb9f3c"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 1593,
+    "y": -495,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/17",
+    "frame0Sha256": "5f8cbb0595601809b265353ec37abc9de1f8c8d2d53d6799cb5364641229e183"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": -300,
+    "y": -190,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/14",
+    "frame0Sha256": "6f3b033a5367e7e12d51f4b0bbef633c9f5dfcc5351deb8e4c75a33d7669c141"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 9,
+    "x": 105,
+    "y": -188,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/14",
+    "frame0Sha256": "6f3b033a5367e7e12d51f4b0bbef633c9f5dfcc5351deb8e4c75a33d7669c141"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 10,
+    "x": 101,
+    "y": -187,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/15",
+    "frame0Sha256": "b67781396dc2f10533730ebfae0e7df828bff13ce2d509cc6db1805140028553"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 4,
+    "z": 10,
+    "x": -307,
+    "y": -187,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/15",
+    "frame0Sha256": "b67781396dc2f10533730ebfae0e7df828bff13ce2d509cc6db1805140028553"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 204,
+    "y": -114,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/3",
+    "frame0Sha256": "b77a8c410dd597afbaaa9c4b5a2c9a80840a6b57cb9a53a002325db99fa5253c"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 355,
+    "y": -114,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/4",
+    "frame0Sha256": "a102bc1746fd6df17c3ddb60c4e975e154a10e07cbb0a552af4d4d31433cd7b6"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 1811,
+    "y": -115,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/5",
+    "frame0Sha256": "a4b6df2a9757fa996d307d6026cd17aaa4f35e3b416fc7f5e4e1ce9e2d222850"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 1962,
+    "y": -115,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/6",
+    "frame0Sha256": "22f762958184bfc8cf48cdf7a7fcd09b8f5c46a4d15dbbaa1e4209472396cf37"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 554,
+    "y": -114,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/5",
+    "frame0Sha256": "a4b6df2a9757fa996d307d6026cd17aaa4f35e3b416fc7f5e4e1ce9e2d222850"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 705,
+    "y": -114,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/6",
+    "frame0Sha256": "22f762958184bfc8cf48cdf7a7fcd09b8f5c46a4d15dbbaa1e4209472396cf37"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 821,
+    "y": -167,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/3",
+    "frame0Sha256": "b77a8c410dd597afbaaa9c4b5a2c9a80840a6b57cb9a53a002325db99fa5253c"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 972,
+    "y": -167,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/4",
+    "frame0Sha256": "a102bc1746fd6df17c3ddb60c4e975e154a10e07cbb0a552af4d4d31433cd7b6"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 1171,
+    "y": -167,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/5",
+    "frame0Sha256": "a4b6df2a9757fa996d307d6026cd17aaa4f35e3b416fc7f5e4e1ce9e2d222850"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 1322,
+    "y": -167,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/6",
+    "frame0Sha256": "22f762958184bfc8cf48cdf7a7fcd09b8f5c46a4d15dbbaa1e4209472396cf37"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 1461,
+    "y": -115,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/3",
+    "frame0Sha256": "b77a8c410dd597afbaaa9c4b5a2c9a80840a6b57cb9a53a002325db99fa5253c"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 6,
+    "z": 9,
+    "x": 1612,
+    "y": -115,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/4",
+    "frame0Sha256": "a102bc1746fd6df17c3ddb60c4e975e154a10e07cbb0a552af4d4d31433cd7b6"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 743,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/2",
+    "frame0Sha256": "66ada500176c34b27f1f4a4014cf96330728131d19321a7f29887950ba220906"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 544,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/1",
+    "frame0Sha256": "718b87ec547f18a12c1c50ec178810fb85196273f05b4d805bdc2a833279738d"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 1739,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/1",
+    "frame0Sha256": "718b87ec547f18a12c1c50ec178810fb85196273f05b4d805bdc2a833279738d"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 1540,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/0",
+    "frame0Sha256": "95342850b2006aedd36efe07dbfbef244af593a703b27503b425e6c34da81b92"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 345,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/0",
+    "frame0Sha256": "95342850b2006aedd36efe07dbfbef244af593a703b27503b425e6c34da81b92"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 146,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/2",
+    "frame0Sha256": "66ada500176c34b27f1f4a4014cf96330728131d19321a7f29887950ba220906"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": -53,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/1",
+    "frame0Sha256": "718b87ec547f18a12c1c50ec178810fb85196273f05b4d805bdc2a833279738d"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": -252,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/0",
+    "frame0Sha256": "95342850b2006aedd36efe07dbfbef244af593a703b27503b425e6c34da81b92"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 942,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/0",
+    "frame0Sha256": "95342850b2006aedd36efe07dbfbef244af593a703b27503b425e6c34da81b92"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 1141,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/1",
+    "frame0Sha256": "718b87ec547f18a12c1c50ec178810fb85196273f05b4d805bdc2a833279738d"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 1340,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/2",
+    "frame0Sha256": "66ada500176c34b27f1f4a4014cf96330728131d19321a7f29887950ba220906"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 10,
+    "z": 9,
+    "x": 1938,
+    "y": 134,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/tile/2",
+    "frame0Sha256": "66ada500176c34b27f1f4a4014cf96330728131d19321a7f29887950ba220906"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 10,
+    "x": 257,
+    "y": -146,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/0",
+    "frame0Sha256": "5832a0de7560de1f30cc929b1f45d0d44c205dd72a734898e82458e47cd036fa"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 257,
+    "y": -61,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/3",
+    "frame0Sha256": "31da15a3cbd6abc188aaa6d87f17ef6673a246679d69d537f878b512b055c7c4"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 1929,
+    "y": -147,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/0",
+    "frame0Sha256": "5832a0de7560de1f30cc929b1f45d0d44c205dd72a734898e82458e47cd036fa"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 1929,
+    "y": -62,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/3",
+    "frame0Sha256": "31da15a3cbd6abc188aaa6d87f17ef6673a246679d69d537f878b512b055c7c4"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 1929,
+    "y": 25,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/2",
+    "frame0Sha256": "fc0666b0c4df56e3a591c1cfa0946c9d602d79eac33c7ee804f970d6cdf4a9b4"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 257,
+    "y": 26,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/2",
+    "frame0Sha256": "fc0666b0c4df56e3a591c1cfa0946c9d602d79eac33c7ee804f970d6cdf4a9b4"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 852,
+    "y": -199,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/0",
+    "frame0Sha256": "5832a0de7560de1f30cc929b1f45d0d44c205dd72a734898e82458e47cd036fa"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 852,
+    "y": -114,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/3",
+    "frame0Sha256": "31da15a3cbd6abc188aaa6d87f17ef6673a246679d69d537f878b512b055c7c4"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 852,
+    "y": 9,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/2",
+    "frame0Sha256": "fc0666b0c4df56e3a591c1cfa0946c9d602d79eac33c7ee804f970d6cdf4a9b4"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 852,
+    "y": -24,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/1",
+    "frame0Sha256": "4a690bde17526cf9796af326edb2bff59d6e67e383f41a0e096294e32d6feebd"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 1508,
+    "y": -147,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/0",
+    "frame0Sha256": "5832a0de7560de1f30cc929b1f45d0d44c205dd72a734898e82458e47cd036fa"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 1508,
+    "y": -63,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/3",
+    "frame0Sha256": "31da15a3cbd6abc188aaa6d87f17ef6673a246679d69d537f878b512b055c7c4"
+  },
+  {
+    "mapId": 310010100,
+    "layer": 14,
+    "z": 9,
+    "x": 1508,
+    "y": 24,
+    "flip": 0,
+    "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/connect.img/rope/45/2",
+    "frame0Sha256": "fc0666b0c4df56e3a591c1cfa0946c9d602d79eac33c7ee804f970d6cdf4a9b4"
+  }
+]

@@ -1,0 +1,142 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local prototype only",
+  "processing": "Unchanged PNGs; MP3 WZ wrapper removed, no re-encoding.",
+  "files": [
+    {
+      "file": "levelup/frame-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/0",
+      "bytes": 3853,
+      "sha256": "23531698090d59708c720fda314984aa8783595845dcd0f4b22053331ec11c20"
+    },
+    {
+      "file": "levelup/frame-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/1",
+      "bytes": 4286,
+      "sha256": "2f590cdafe93b47b0478cd1045b42e49a7a57b830802725111fbbdaa09a4d597"
+    },
+    {
+      "file": "levelup/frame-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/2",
+      "bytes": 5089,
+      "sha256": "5c49bda80271ca879a792894cfa133b2703c65cd0de1ae7ebc702b3dc3a971db"
+    },
+    {
+      "file": "levelup/frame-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/3",
+      "bytes": 15938,
+      "sha256": "7b891b24aeac117454ad6266705609e20a6d033f9c842245cce2cfe5de7e5dad"
+    },
+    {
+      "file": "levelup/frame-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/4",
+      "bytes": 19423,
+      "sha256": "ca78a5c75ce73335c8a52d5ca7ea95ad7768684fbc5ed2920c54d9e9bb6dcd5d"
+    },
+    {
+      "file": "levelup/frame-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/5",
+      "bytes": 19649,
+      "sha256": "f2cd74a14f3a1f98d0cf806766dead98bd311e9c00ae81ac577b9d8917db1e66"
+    },
+    {
+      "file": "levelup/frame-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/6",
+      "bytes": 25877,
+      "sha256": "bf8704270e4a7cc6c8dd231e5518aa2aff688bb6c39bee062bdaa98900d5f1d3"
+    },
+    {
+      "file": "levelup/frame-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/7",
+      "bytes": 22807,
+      "sha256": "bad6ee8a92af7a04df64b014d1373d68c3e478356758cfc1e01e1b904fcc5a3a"
+    },
+    {
+      "file": "levelup/frame-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/8",
+      "bytes": 18799,
+      "sha256": "7883d5e48fcb7f1eab85e2d844c547313397535bd35e68f4261a7bd1f25a5a86"
+    },
+    {
+      "file": "levelup/frame-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/9",
+      "bytes": 22185,
+      "sha256": "6b0ca72396e75b9e6bcd4b652fe5e3599a53f1b0ce20c53dc962b006fec7409c"
+    },
+    {
+      "file": "levelup/frame-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/10",
+      "bytes": 21791,
+      "sha256": "0d966e5bbe9bedf536e5e82cd7c9110348848f083393467b2c25ad1c9c77dc60"
+    },
+    {
+      "file": "levelup/frame-11.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/11",
+      "bytes": 20912,
+      "sha256": "215385ddf835f7213ed357409c8802c54fc69fe589cea1c867c4cb4224db7013"
+    },
+    {
+      "file": "levelup/frame-12.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/12",
+      "bytes": 16052,
+      "sha256": "6fc3e03d3077b790146a0749ff4bbf1e0b581ce1119aa933601eda22fe8959a6"
+    },
+    {
+      "file": "levelup/frame-13.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/13",
+      "bytes": 16347,
+      "sha256": "e62b75c5e3c6683309348bebe450f209c6ff7ee3b215b1603157b2abb01a9894"
+    },
+    {
+      "file": "levelup/frame-14.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/14",
+      "bytes": 13102,
+      "sha256": "1f6785700ccf248b0493a844c43196871329df860c859860c1323c9650fb98c7"
+    },
+    {
+      "file": "levelup/frame-15.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/15",
+      "bytes": 15531,
+      "sha256": "9883ebfa4d81e6bdbf44d823dbc6f4b9e506d146a51f1b5cb3244c7a4d5347b1"
+    },
+    {
+      "file": "levelup/frame-16.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/16",
+      "bytes": 14463,
+      "sha256": "6e2e139e1d925ec1fe2f1b2d6b005d408a322579dd04951d9454fd6266fe9bf1"
+    },
+    {
+      "file": "levelup/frame-17.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/17",
+      "bytes": 14481,
+      "sha256": "f8c2b79f09cb2148e22c6914facce1808c7514402bde0d6195ea87dc8a6ae45b"
+    },
+    {
+      "file": "levelup/frame-18.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/18",
+      "bytes": 12437,
+      "sha256": "257caf53b373a2e44a9215bff69d42e158e9b1627b9b790f144bac10edf8b255"
+    },
+    {
+      "file": "levelup/frame-19.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/19",
+      "bytes": 7326,
+      "sha256": "f16b7dbca1edac47cf2a0740eee5828354ca2205375024d4c3a288ca1c23f2b3"
+    },
+    {
+      "file": "levelup/frame-20.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/Effect/BasicEff.img/LevelUp/20",
+      "bytes": 4939,
+      "sha256": "75e9ef061d82a82bdab847c6b253d403b7d8acacaec4d5f7a1f1d3b04ba0a4c5"
+    },
+    {
+      "file": "levelup/level-up.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/83/Sound/Game.img/LevelUp",
+      "bytes": 10838,
+      "wrapperBytesRemoved": 82,
+      "durationSeconds": 3.612667,
+      "sha256": "8e7b12dac9ec600f5b8c1ff5b8267e8de2c4ac75040549c4e424512093825b11"
+    }
+  ]
+}

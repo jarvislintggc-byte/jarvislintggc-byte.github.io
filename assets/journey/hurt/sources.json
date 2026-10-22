@@ -1,0 +1,645 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local prototype only",
+  "processing": "Unchanged original character renders, hit facial expression, no image editing.",
+  "files": [
+    {
+      "file": "hurt/beginner.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "b5cd74be4e5b0d41f523890800977f52e3781db40d76e503f73db1e3936e083e",
+      "bytes": 2935,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "e0939ccb49e4f7ab8d58e5cbccbe2e41fd32522301295ab6d785a08810bf3870",
+      "bytes": 3073,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "2e86ca1829a8e2ed065c95990daa1b5e8e08951631eafb8a84ac9c4e9a4e0069",
+      "bytes": 3077,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "3907119cb2ac5c7448a2360a6dcf986856281b3edd9adaaee398a4eb1419a14d",
+      "bytes": 2965,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "ff6a06a47623572844f38dff75a8a27213604e7606e1fa30fb76d168571dbbfc",
+      "bytes": 3102,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "4a5a71b40b6cb302556566dea5778bd6cebeca41836273a55e0da7edf3be0d3a",
+      "bytes": 3304,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "1979dc50714da010151b5ee96e8eca91f3d3df219756d024ef6595f733588fc6",
+      "bytes": 3319,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "b698cb3624402cd442c69853307d2648eb171df3def7196369e449c135cc58a6",
+      "bytes": 3349,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "8f59e18c050bf94cade2c7f990583e8b061a228ac060e8a1fcbcfab32c389efa",
+      "bytes": 3437,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "84090a07e97a6dd9e08d5ec20957473dbd3191a4cd115ecaf91bfd305cf70b55",
+      "bytes": 5043,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "827a73200e35ebe776ba237ce7f202c650cde8209574d5a9e72fcb4240745798",
+      "bytes": 5002,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "c8a26c7f29f85a10db843db236546c0db84d13d3c05e03505906ab1ea8131da6",
+      "bytes": 5040,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "9db6d9f43ae8703fb21f6a68ef3e4a968ebcd1f1ce3d7fa63d7fa988bd1b2394",
+      "bytes": 4958,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "4af80dca7b60c410fd72cd427b941c3c6b7fbbf2f6799848c83368e2463a1db2",
+      "bytes": 5139,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "1bdbc6b780beff141238ceda0df30c600bf9b879f82ebc8e0a12a1dab40e956d",
+      "bytes": 4013,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "83d94a88b5eb5b18623376e56efbb9f5862405e32e30af423392592c09f791ee",
+      "bytes": 4024,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "ef19bb83742e03f0c87c2ce15b7e6adf58418465faf5092589fdbdabc51b1bb8",
+      "bytes": 4420,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "af22d8c06a5e7b1b245e019c1aa88b2138221a375165235aa5a1da12b7b65ec5",
+      "bytes": 4293,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/warrior-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "3bc452fb09737765c5a8828d7ce7c43ec18a21380485e8d6160aa1f2a2247990",
+      "bytes": 4307,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1372005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "c6114002f9268a692b693bade3112533b2d6e3f1b2da4b9d954a49b4c6d80738",
+      "bytes": 3042,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1372005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "d9901ebd6c417c7da6b491a9ab0e36d50c802023014f02dc3d8832542206e54d",
+      "bytes": 2968,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1372005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "2327f3bff37508198630b70d3e3a9ca6475804eb4a7b1ef28548eece41855fd7",
+      "bytes": 5100,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "ee0b5bd098b3f7071924544fadf1103d595460fd655e8fc10a6d66b4d7a3e069",
+      "bytes": 5403,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "532fea7a433a3c6eb9f74859ca836b8178ddc07d61dc132933b71a5b0bfae057",
+      "bytes": 5570,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "69c2144196f344a5780c179dd3c9372cca75ed424b0eae8156eb99163793711a",
+      "bytes": 5627,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "c9cda63078afedc55c88de04b2284678a504e6c9d03b9cc9c50d6a172aaabccf",
+      "bytes": 5780,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "a0d833a7ab51987c19488c4de4198f3e851008f423c52b11b3e54ce92824b278",
+      "bytes": 5554,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "742020649fa46c95f6d4c0d8a84047f38c679bee7133a016050dc5c176aff453",
+      "bytes": 3700,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "5f3d4ad852ac726dea4bd51e49bd34b35463eef9e8ca8e760bcf975756d703fb",
+      "bytes": 3693,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "2d794aa808ba5795f7dd2d4ec702e3697d237ea3c8046fdb268fb28889152274",
+      "bytes": 3705,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382053%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "e4787837215529e41ae8a366135e4bdb489f40745dc4b717ad2954522449e9e9",
+      "bytes": 4618,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382053%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "6bceb5272fb166e6487e23cc61c1050fad1ab5178ed2df32a5b9db614e8e6ec4",
+      "bytes": 4707,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382053%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002271%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "19176defb256d8b92e467b1607bb97fe8c736af2f7319e919291d473748aa717",
+      "bytes": 5099,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382053%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002271%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "f5ac28ac464ebaa0d0b966c400d6ec8941ef969b5deb3f3ed3496350915fa453",
+      "bytes": 5118,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382060%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002271%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "2d20b78f40502573023ac036eb301dc2ded5ee471b55d2e5afe2178025f02209",
+      "bytes": 5254,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052482%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382060%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002271%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "92ea257f21ab3c4fb1cdb4cd3a0aad1956f40fb1b9b030acf8307fa81b8a2e59",
+      "bytes": 5259,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/mage-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052482%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382060%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000068%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "f86d20d5e0bc9e2c3deda5eddfac870fd65b0b98f2a00455efdcfb831dcd8c85",
+      "bytes": 5043,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "897d522a9fb31e028e3ab775ca22573a01c193465070f41bb64824ea0cc7dcdc",
+      "bytes": 3073,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "40bc1a7b16a4f4682b29dc9c93e18635f72b15edc39a73929d00438f5f01373c",
+      "bytes": 3181,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "032f516e214916be64ba1330ddfcd7771d0ff97f9af692ce763665b1946d8b37",
+      "bytes": 3145,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "662d19af77bca63fb1ba4c9087bebd65b8ba2934b07ecdb517ca97164beed163",
+      "bytes": 3256,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "45a2c477a61957c9e80d261ac0216e566b59592e48d69562d4a41902577f0f94",
+      "bytes": 3421,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "65c811ca048fc1e61c4dd1168c310ca2c1a3e76b34d7c1d1a488646e8f901e5b",
+      "bytes": 3449,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "b6cacfb5a718d7df2c8b586307e8e97af08e27a4c07f118501038c8f024af3f4",
+      "bytes": 3308,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "1009f0d0e452fb7dea0b50eb6c09cf759f938c3a6dfc1dbda78be3a03bb8b632",
+      "bytes": 3435,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "47a30bc033ed3f57fdb8e097193fc6d07e5afff863ac490f7b65354142d5679d",
+      "bytes": 3551,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "83b3d11dbab2496db85db474f7dfae009aeb34788d44dcbc3145de5dd626ec59",
+      "bytes": 3490,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "60c178d94f0128daaa735c958be1badbf04803a948656b08a2150540d9a0f711",
+      "bytes": 3504,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332018%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "390fe41244ecdfb7b4159660d8de0d628c21528406ea42f25078754bd4caf129",
+      "bytes": 3435,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332018%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "7219d2f6d729533eee2a22262e7c26ad49dbcb5f0010b541b52e96c100970f45",
+      "bytes": 3625,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332018%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002327%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "c11c1673b278474fb77fbf83b2d69134f39a4802ff551164e1cc12745c9f4127",
+      "bytes": 4109,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332018%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002327%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "9ba52908b8978926b3ae5fea2ba070a7bb6059ab68af2ddb4c30bfe661831016",
+      "bytes": 4117,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332051%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002327%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "b36da0ef88e554fb87850f948d0291acaab0bc56629d8949cd1a9930e5638832",
+      "bytes": 4160,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050096%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332051%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002327%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "867955bc7e186401752d6ba6e88c556260b781ec5f35af2e5c001acc51d8face",
+      "bytes": 4061,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/thief-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050096%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332051%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002380%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "a45a23189ab6ed8991223d9d532dcb34d8ca017fa68fbb1658eb58876aa37412",
+      "bytes": 3679,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "e54bc79dd805fa5edd87da4bd5002f1da41b825f5b6dcea7e21305fe0aff52eb",
+      "bytes": 3475,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "e11769be8d8cc08975338672020d1f0b00a65152b49cc4c90dc0b714211dfd9e",
+      "bytes": 3597,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "cc893caa30871335a600ac6c06730f0fc69cab9eb0bee7aa79c067fd0416922f",
+      "bytes": 3558,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "7a4697e1cbd175ff4e3299774913bd49bd55fd677c7c3855a52a51e04db21d23",
+      "bytes": 3601,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "8fcac00d329125ca5dc88272f9b5fcd70b7119fdde9ec54c40ef4bd29df09d67",
+      "bytes": 3763,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "3252ce0e6eb33ec9edc2de00d4e8bfc125b13d4a38ab6bf5c5c92c08d1b2ef82",
+      "bytes": 3765,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "cc08201e52ceec42dfc9f78536e97e533c4317c51ba42f0d0391c8a9c08ef83d",
+      "bytes": 3731,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "885765e56f66c1a1fdf58efe96de255b5361e7ada80834969abe2baabbaede8a",
+      "bytes": 3486,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "f3f687648482a645c7a7b23c941c296e7e0221428f945a501fa131cf23aede9c",
+      "bytes": 3993,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "5bbf39869257bdb964aac52ef2c6c21d1fa2d5a7d48a3d616410268748218450",
+      "bytes": 3952,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "9bb9ece514a8304b177e50a697d7f3e0bfde2f1c8165880552910163f115f6f7",
+      "bytes": 4020,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "c3f4775d35b10fb941be3a88fb08a1a4f165f11c059b7dc41e76d01a7eba8cec",
+      "bytes": 4299,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "f14e96a5588efa1ca25d5c617fee7d4a63c59b49287689a7e60f5f7a70c93bd7",
+      "bytes": 4295,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "70301bb3bd02739c31bc20b8d2bdee5cceabb54aa4945f363dcbd188bb85cc4f",
+      "bytes": 4553,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "5c76e25579b451a2e24e4413d19f7e4a1d1426fec883c816639c4c88e8ba86c3",
+      "bytes": 4566,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452019%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "a8ac74f43fdcfa951a421cb661317feae9d5bd4ca4e440d13eb722d8f2bea633",
+      "bytes": 4558,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050106%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452019%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "10399bd7012b4509d6e2e8fb87887aea6e29a01227b63a6e1e1b5e92ec319991",
+      "bytes": 4530,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/archer-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1050106%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452019%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002406%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "f0814e7ee14cc158f49967017789fc436d6ca51f1b9a82f46e29d3bdcb884002",
+      "bytes": 3974,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "5fbb0ec6daf89f91766d09bc2fd4ac62ef15adb798e11fbf82e175cc2430ea2e",
+      "bytes": 3044,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "4f7db942afa73d5e0f22040019a5bf9a2c130eeb4e75e33214f0c83ad3b49677",
+      "bytes": 3043,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "d8b11451ba6f4b0a03926b21cdb1de6e332f79c9acf63e2d0ded178e7e8ac2a9",
+      "bytes": 3250,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "f5b60c99013bd3a8686a24a2f0d384f69001ee54335f560d134e7e659693866c",
+      "bytes": 3251,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "d78dbb8b7d9a49b6a17281390d32b2555e53fd78e0249d3d24931e735f794c01",
+      "bytes": 3424,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "6eb82058f368cfd5ac94aa599bf645dd8860f9124d3bf7c25e2e85d0a33563dc",
+      "bytes": 3434,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "9bd2ad7154f2d4603862b8056a2eeceb45ef82de14fbfd27caa334fd39b5f2ec",
+      "bytes": 3435,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "59cc2a717ca6da7c956f542ce85fcfcd97124927fae3f95e5ffa90d3963184e5",
+      "bytes": 3488,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "019e1af6c4276d15787da369c94d8f9f35acbab86c4c8d2237694ba6e74cded8",
+      "bytes": 3744,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "05beb27a0465681ad12e3906bad58cfc2a248247b1d10e83c684e9f8b60451fb",
+      "bytes": 3691,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "ef2df86ca395e220d8f2130992526dad11e5e77e379f013779ddc03caa2d73bf",
+      "bytes": 3687,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "0e05c93d07eb066fe999702e81a4680973e4bd30cd553c2c7ae8e3a2b28f9fe3",
+      "bytes": 3677,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052122%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "38ded1bc2a370bd9aa3e6b7e6d16de97d04a4d91eca5a00e32424019c718c381",
+      "bytes": 3690,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052122%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002640%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "bcc72d5d33b5a2ec3b2cde15390b53217992e1907aa16ce7394e21ba2bf3069e",
+      "bytes": 3899,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052122%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002640%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "c7dc5158c4b5be2b5ca9e6914158f8085b6fdafc4b454c04b68122b41cb67a64",
+      "bytes": 3911,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052122%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002640%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "6fbf1a86ccb524fda29c1916a3e3fb80d976e35544559cf29123e53582aa198a",
+      "bytes": 3929,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052131%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002640%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "5479e806c5d58c03b82ab642ec99edc632d11a257723d288eb60bdbb039f55a3",
+      "bytes": 4004,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    },
+    {
+      "file": "hurt/pirate-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%2C%22animationName%22%3A%22hit%22%2C%22equipFrame%22%3A0%7D%2C%7B%22itemId%22%3A1052131%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002646%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/stand1/0?renderMode=4",
+      "sha256": "d19822d2a462c08e943bd138f7db4eb2151dc02e46f7a78f4c2014a475ad9ed2",
+      "bytes": 3791,
+      "expression": "Original Character/Face/00020000.img/hit/0; composed by original character renderer"
+    }
+  ]
+}

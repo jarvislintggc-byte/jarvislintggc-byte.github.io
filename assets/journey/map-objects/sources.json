@@ -1,0 +1,813 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local review only",
+  "processing": "Original animated PNG bytes/delays/origins retained. Static map fragments losslessly composited from original WZ images in original order, to avoid ghosting baked frame-zero props. No client/server engine imported.",
+  "files": [
+    {
+      "file": "map-objects/310010000-static-0.png",
+      "source": "Native static WZ layers; see inputs.json",
+      "processing": "Lossless composition/crop of original map tiles and objects in native order; animated props excluded.",
+      "sha256": "cd2a6b270d2c778d45bd38a2c58e951d6dff608b1a150127d12189e7e6391e8d",
+      "bytes": 756629
+    },
+    {
+      "file": "map-objects/49d340e3cc13-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/0",
+      "sha256": "e8cc1952288cbe67f99aaf3de5341149a21d5b45e48614bb1bd60e5553328b51",
+      "bytes": 40699
+    },
+    {
+      "file": "map-objects/49d340e3cc13-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/1",
+      "sha256": "19f9a8ce7d4a4804ee0f38bc6dbd71f5ad0ffca9351e5ae969add9779a306412",
+      "bytes": 41598
+    },
+    {
+      "file": "map-objects/49d340e3cc13-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/2",
+      "sha256": "378cb967e6650460936d98064606f2131a42b40f2546039a0cb2bd71b038f5a5",
+      "bytes": 41205
+    },
+    {
+      "file": "map-objects/49d340e3cc13-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/3",
+      "sha256": "1a780de74efd68a536d276adad1c43011df1fd77106e9886f6163af30477525e",
+      "bytes": 41673
+    },
+    {
+      "file": "map-objects/49d340e3cc13-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/4",
+      "sha256": "d078978cbfc446c7ee00938a249b878caa4c91cd1d5f6969e3f1a412411ada9e",
+      "bytes": 41729
+    },
+    {
+      "file": "map-objects/49d340e3cc13-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/5",
+      "sha256": "bd6e986beb5b6b6316864fb6e3ce7a4b60db640210e26013fa413c8ee74139cc",
+      "bytes": 41473
+    },
+    {
+      "file": "map-objects/49d340e3cc13-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/6",
+      "sha256": "759f739c6b41655eee7982b3ade26ed697ba59bd0a3be62cf01acc63e4c36234",
+      "bytes": 41453
+    },
+    {
+      "file": "map-objects/49d340e3cc13-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/7",
+      "sha256": "251131a742bac133b685426841d9d7f83060b1fe985adab28a7119706e84fb0f",
+      "bytes": 41887
+    },
+    {
+      "file": "map-objects/49d340e3cc13-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/8",
+      "sha256": "f402d965678224067fc6934b1eb2f9380f8fd06ecffb8b5a7274d19e5764087f",
+      "bytes": 41078
+    },
+    {
+      "file": "map-objects/49d340e3cc13-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/9",
+      "sha256": "de5814f2a89025b682ff8fde4275b3013dc2fc81c12cfb23bed851276be54f96",
+      "bytes": 41053
+    },
+    {
+      "file": "map-objects/49d340e3cc13-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/10",
+      "sha256": "e95c917701ff60e1642bae11b2116fb6ae25cfcd02e929ceefea1dfdc4ee3041",
+      "bytes": 40906
+    },
+    {
+      "file": "map-objects/49d340e3cc13-11.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/1/11",
+      "sha256": "6bfd8a79ae8b8cf7cee000c5d6b74b862fce42385ce708745b892cc5632d9145",
+      "bytes": 40032
+    },
+    {
+      "file": "map-objects/310010000-static-1.png",
+      "source": "Native static WZ layers; see inputs.json",
+      "processing": "Lossless composition/crop of original map tiles and objects in native order; animated props excluded.",
+      "sha256": "a70783f128db6a738ac906797d5142947841e071e3bd9dfcb3286263e6203ba8",
+      "bytes": 63628
+    },
+    {
+      "file": "map-objects/515ad558d0a0-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/0",
+      "sha256": "4a0a3a4144aa99a1ba952712fc88bda9f44dcd295c168226e8631de834c7c0b2",
+      "bytes": 39937
+    },
+    {
+      "file": "map-objects/515ad558d0a0-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/1",
+      "sha256": "7d42cd73da25c00746ff35e284bb30f2504d760fb3bd3e4c168ca03a9b55a8cf",
+      "bytes": 39926
+    },
+    {
+      "file": "map-objects/515ad558d0a0-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/2",
+      "sha256": "838b87e65ca504d2c8bd2f91d726199b7f20d60a0496c096b328ed7d60456d5f",
+      "bytes": 39905
+    },
+    {
+      "file": "map-objects/515ad558d0a0-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/3",
+      "sha256": "6c78b2b525136992e8d313800f0c19e915dbbbb79c6dd189324af4ca0d687489",
+      "bytes": 39840
+    },
+    {
+      "file": "map-objects/515ad558d0a0-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/4",
+      "sha256": "c9fcd50319cc32798d54c850be33cab5be76462b5721b8d0c370dfce86f0460a",
+      "bytes": 39876
+    },
+    {
+      "file": "map-objects/515ad558d0a0-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/5",
+      "sha256": "7e8706081be6220ecb6b2bc68f69d3aeb53c20446576bc95112f053695ea6731",
+      "bytes": 39998
+    },
+    {
+      "file": "map-objects/515ad558d0a0-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/6",
+      "sha256": "433b8e502eefbe8ee9a0606e99df4effcde6e62b8d7720b073bf398af273c3a4",
+      "bytes": 40014
+    },
+    {
+      "file": "map-objects/515ad558d0a0-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/7",
+      "sha256": "a55272205a41f61c3a0afe3b90171c9f5538429f67a8b6e341ae41e7c4c2bf45",
+      "bytes": 40156
+    },
+    {
+      "file": "map-objects/515ad558d0a0-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/8",
+      "sha256": "b36c6b76fc86c8cb21315a85b62e63f5c5d07da099845d5a728e2ffee3ab038d",
+      "bytes": 40129
+    },
+    {
+      "file": "map-objects/515ad558d0a0-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/9",
+      "sha256": "6963df0cf6d7152dd2647a5aa98454aaa8a19bea919923d7643b56f33efe30ff",
+      "bytes": 40341
+    },
+    {
+      "file": "map-objects/515ad558d0a0-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/10",
+      "sha256": "09a1f840b436f6605c20807464d67bea776cd1b9829fe7643f45ae47de438cc1",
+      "bytes": 40218
+    },
+    {
+      "file": "map-objects/515ad558d0a0-11.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/11",
+      "sha256": "60f9f620f6c2a9c1b2f5cb07f14667693c8a8f71c398de8f653e8ebae42b75c4",
+      "bytes": 41612
+    },
+    {
+      "file": "map-objects/515ad558d0a0-12.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/12",
+      "sha256": "d023a1244560618a91a0a0b5e48ce46a6f3f5ad531f173f7b8a0aba06690c300",
+      "bytes": 41355
+    },
+    {
+      "file": "map-objects/515ad558d0a0-13.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/13",
+      "sha256": "ef348c6c80f84a5ae7ea0ce4feb04ca9a5c70d4b9868f282dee7b06cb67172c3",
+      "bytes": 41419
+    },
+    {
+      "file": "map-objects/515ad558d0a0-14.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/14",
+      "sha256": "ef71e935d51edafe5bc9401a9d5010900d07672190539ba6df93ea8ebbb685fe",
+      "bytes": 41159
+    },
+    {
+      "file": "map-objects/515ad558d0a0-15.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/15",
+      "sha256": "3930e5aecb1941ba8641d9a43bbf637de2cd3ad66e06521a889a591ea5049975",
+      "bytes": 41188
+    },
+    {
+      "file": "map-objects/515ad558d0a0-16.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/16",
+      "sha256": "708654c81f1af1a293fef1e0bc6b7da8cbf4ab2be99e5c06cc624411e1f963fe",
+      "bytes": 40398
+    },
+    {
+      "file": "map-objects/515ad558d0a0-17.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/17",
+      "sha256": "d1bdb40b704ad50e9a0ebb1837b10c2aee91501287a040e01c78c108130e3d79",
+      "bytes": 41071
+    },
+    {
+      "file": "map-objects/515ad558d0a0-18.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/18",
+      "sha256": "57a8c2c783e9b901c19e3377a62c1a26a06c2ac8a45a7552b148325f9f5ebf5c",
+      "bytes": 40857
+    },
+    {
+      "file": "map-objects/515ad558d0a0-19.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/19",
+      "sha256": "79c486688feb9273b09480ae7553b6610d6472b4285ec6f68d253d77d7267b8b",
+      "bytes": 41728
+    },
+    {
+      "file": "map-objects/515ad558d0a0-20.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/20",
+      "sha256": "2305409977f6a920c8db5f9a3e0681e037448da7331b87d62478a1a9791cc33a",
+      "bytes": 40957
+    },
+    {
+      "file": "map-objects/515ad558d0a0-21.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/21",
+      "sha256": "fe7c6d71e0c2be97e8cb06252c4fe5803c8cc407ebb212dc9aed756d5bece5a9",
+      "bytes": 41805
+    },
+    {
+      "file": "map-objects/515ad558d0a0-22.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/22",
+      "sha256": "a07fcf010f01b5952b2eb6bf29a32ef286b8bc1dc1514669649673a684a5e303",
+      "bytes": 40783
+    },
+    {
+      "file": "map-objects/515ad558d0a0-23.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/23",
+      "sha256": "5d6a1bd9f336ba37205ebb4ef9121db77198b20ea68afd6103d24eab16251a7b",
+      "bytes": 41089
+    },
+    {
+      "file": "map-objects/515ad558d0a0-24.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/24",
+      "sha256": "8a951a67828efae217170c248c7a4604f9edc722aa84621e858385379cd3c519",
+      "bytes": 40442
+    },
+    {
+      "file": "map-objects/515ad558d0a0-25.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/25",
+      "sha256": "7b5c4c974953ef785d31a4b0d2b299f5a90f5c32480ac5c5a33d04aca6fb2e2a",
+      "bytes": 40183
+    },
+    {
+      "file": "map-objects/515ad558d0a0-26.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/26",
+      "sha256": "a5e34a0408a0ad9da85010502482ce26314a25ce5176cfde87428612143c1582",
+      "bytes": 40217
+    },
+    {
+      "file": "map-objects/515ad558d0a0-27.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/27",
+      "sha256": "0596654421c79bd28ee58dd5d9b0f8c6006accde34aacb1c9b7003274b8d7503",
+      "bytes": 40178
+    },
+    {
+      "file": "map-objects/515ad558d0a0-28.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/28",
+      "sha256": "19d0453d8c717fb3739407d3609e8046c9c9a7f97c3b176c70b42cd6cf7f9cb7",
+      "bytes": 40000
+    },
+    {
+      "file": "map-objects/515ad558d0a0-29.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/2/29",
+      "sha256": "c0296bceecb7e5c9a9eca7e2f3be325bdab38f8119b97395e1ef553a0b71e8dc",
+      "bytes": 39949
+    },
+    {
+      "file": "map-objects/310010000-static-2.png",
+      "source": "Native static WZ layers; see inputs.json",
+      "processing": "Lossless composition/crop of original map tiles and objects in native order; animated props excluded.",
+      "sha256": "1bcee09058ec7c9dd0b67a773f4752aa9392778dd3daf8e221f862b150cae0ab",
+      "bytes": 50930
+    },
+    {
+      "file": "map-objects/459263b2e60e-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/0",
+      "sha256": "5707b7fec180defad4638cf3584689a9568bf92edd25da9f063b9a6ac6479677",
+      "bytes": 14631
+    },
+    {
+      "file": "map-objects/459263b2e60e-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/1",
+      "sha256": "3380d44e033ee79608651b0b8cb45866de6860c6563ef6cae31573d7d4b2c067",
+      "bytes": 15374
+    },
+    {
+      "file": "map-objects/459263b2e60e-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/2",
+      "sha256": "3193c28fa42b7bebc56d40b1471fe78c20310d1c7caec0a8961ebcb629cc2d3e",
+      "bytes": 14788
+    },
+    {
+      "file": "map-objects/459263b2e60e-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/3",
+      "sha256": "fd32c47269dd6fd19cabe7e7d99e8d884830e55d0616979a7313eca11eac7a13",
+      "bytes": 14919
+    },
+    {
+      "file": "map-objects/459263b2e60e-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/4",
+      "sha256": "35efd0010628d0e47a833cdc63519510d1d9efd3df2921a29225be81ed1c9a85",
+      "bytes": 14473
+    },
+    {
+      "file": "map-objects/459263b2e60e-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/5",
+      "sha256": "a80d57df33550bfe7c154dd1ec8cea1a299843b63b61f3194def8e81def27075",
+      "bytes": 15096
+    },
+    {
+      "file": "map-objects/459263b2e60e-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/6",
+      "sha256": "955bc500106423787bfbae7e7e647fc1888cce968f6a9be584488f5e1ffd1181",
+      "bytes": 14778
+    },
+    {
+      "file": "map-objects/459263b2e60e-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/7",
+      "sha256": "35efd0010628d0e47a833cdc63519510d1d9efd3df2921a29225be81ed1c9a85",
+      "bytes": 14473
+    },
+    {
+      "file": "map-objects/459263b2e60e-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/8",
+      "sha256": "79a4a333b1ee781a50d540daa3ca557fe4565402d45281632edcd8296ccb0a9b",
+      "bytes": 15657
+    },
+    {
+      "file": "map-objects/459263b2e60e-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/9",
+      "sha256": "43c1d5b9390b74cf8aaacf067871517acd989fe767b8d4544314ef5e47e463f2",
+      "bytes": 15310
+    },
+    {
+      "file": "map-objects/459263b2e60e-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/10",
+      "sha256": "1b317d472c098790c5c1023d2791986e40feaaee1219bd63c713fd6689499ff3",
+      "bytes": 15416
+    },
+    {
+      "file": "map-objects/459263b2e60e-11.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/11",
+      "sha256": "cb323204b4c7a579416f40210400077f1c1bc9a310c0866ef936e998af414937",
+      "bytes": 14108
+    },
+    {
+      "file": "map-objects/459263b2e60e-12.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/12",
+      "sha256": "1b317d472c098790c5c1023d2791986e40feaaee1219bd63c713fd6689499ff3",
+      "bytes": 15416
+    },
+    {
+      "file": "map-objects/459263b2e60e-13.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/13",
+      "sha256": "99868d97109658bb1743b4fd3ca4fac6cf7887bff98f79f422915e51d6ba83a4",
+      "bytes": 15163
+    },
+    {
+      "file": "map-objects/459263b2e60e-14.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/14",
+      "sha256": "cb323204b4c7a579416f40210400077f1c1bc9a310c0866ef936e998af414937",
+      "bytes": 14108
+    },
+    {
+      "file": "map-objects/459263b2e60e-15.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/15",
+      "sha256": "ee193dcc9125bca57a17a354fbb0bc2ce504d9f15c0635a3c38dcfaff37e341f",
+      "bytes": 14515
+    },
+    {
+      "file": "map-objects/459263b2e60e-16.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/16",
+      "sha256": "cb323204b4c7a579416f40210400077f1c1bc9a310c0866ef936e998af414937",
+      "bytes": 14108
+    },
+    {
+      "file": "map-objects/459263b2e60e-17.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/17",
+      "sha256": "997b3ef9e324e6de929d7b0d45c26403967fa54b1f435f86ab9b8c93563fb9ea",
+      "bytes": 14109
+    },
+    {
+      "file": "map-objects/459263b2e60e-18.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/18",
+      "sha256": "ee193dcc9125bca57a17a354fbb0bc2ce504d9f15c0635a3c38dcfaff37e341f",
+      "bytes": 14515
+    },
+    {
+      "file": "map-objects/459263b2e60e-19.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/19",
+      "sha256": "cb323204b4c7a579416f40210400077f1c1bc9a310c0866ef936e998af414937",
+      "bytes": 14108
+    },
+    {
+      "file": "map-objects/459263b2e60e-20.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/20",
+      "sha256": "f512124c452c16d912853cac9fc831758a0634be59280a92431303911186dd6b",
+      "bytes": 14157
+    },
+    {
+      "file": "map-objects/459263b2e60e-21.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/21",
+      "sha256": "4680263af6143bfbd9ee888cbac78075573b90c433035f79d7205ddca8923208",
+      "bytes": 13827
+    },
+    {
+      "file": "map-objects/459263b2e60e-22.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/22",
+      "sha256": "4680263af6143bfbd9ee888cbac78075573b90c433035f79d7205ddca8923208",
+      "bytes": 13827
+    },
+    {
+      "file": "map-objects/459263b2e60e-23.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/23",
+      "sha256": "8fc30cffce854b988ecef8d29bc225d23c824b795dbdb2f235c69e0e292fcf55",
+      "bytes": 15034
+    },
+    {
+      "file": "map-objects/459263b2e60e-24.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/24",
+      "sha256": "4363b68d8a9cee9476d2e2224737677a21f83a68f0ece6b2467eb5873df48758",
+      "bytes": 14473
+    },
+    {
+      "file": "map-objects/459263b2e60e-25.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/25",
+      "sha256": "57212252dc49d9ce50e2e7be619c2ccf65e161df3e379b3b4d2dd96d68245563",
+      "bytes": 15459
+    },
+    {
+      "file": "map-objects/459263b2e60e-26.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/26",
+      "sha256": "4363b68d8a9cee9476d2e2224737677a21f83a68f0ece6b2467eb5873df48758",
+      "bytes": 14473
+    },
+    {
+      "file": "map-objects/459263b2e60e-27.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/27",
+      "sha256": "4363b68d8a9cee9476d2e2224737677a21f83a68f0ece6b2467eb5873df48758",
+      "bytes": 14473
+    },
+    {
+      "file": "map-objects/459263b2e60e-28.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/28",
+      "sha256": "40913071a204b76368b1379c64cc37e9f8cd0a8d0d26420e5cf71f3365e2852e",
+      "bytes": 14786
+    },
+    {
+      "file": "map-objects/459263b2e60e-29.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/3/29",
+      "sha256": "4363b68d8a9cee9476d2e2224737677a21f83a68f0ece6b2467eb5873df48758",
+      "bytes": 14473
+    },
+    {
+      "file": "map-objects/0bf03e95350f-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/0",
+      "sha256": "52f177477e2027a8d188dbe6561b90e2d4a83f45e164b586708d7628db0b2c83",
+      "bytes": 21008
+    },
+    {
+      "file": "map-objects/0bf03e95350f-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/1",
+      "sha256": "95b990814dd11d311cfa1ada38e5f05d3d1908ad277f5fcd91e15b13286d603c",
+      "bytes": 20742
+    },
+    {
+      "file": "map-objects/0bf03e95350f-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/2",
+      "sha256": "c6b7848cc623d11d23838cddf6ba0629065ada12b629a0446408428229b44088",
+      "bytes": 20345
+    },
+    {
+      "file": "map-objects/0bf03e95350f-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/3",
+      "sha256": "952c6d38ab2bf76812f001021fb81e3915ca72cfae014e89743bdeb7ab546596",
+      "bytes": 20096
+    },
+    {
+      "file": "map-objects/0bf03e95350f-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/4",
+      "sha256": "64a842b87fb8f97bdf219fee57b164d00fddae5e14d161633fdd49360042cce4",
+      "bytes": 20965
+    },
+    {
+      "file": "map-objects/0bf03e95350f-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/5",
+      "sha256": "03c04f922b915838a812d963c34553faec82b10490901c207254a2e080aa6b0e",
+      "bytes": 21385
+    },
+    {
+      "file": "map-objects/0bf03e95350f-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/6",
+      "sha256": "7ee013ffbbfd8e1adfef084780041a5a11224d1ea3a0fa86cabf5d3bf981edb2",
+      "bytes": 21837
+    },
+    {
+      "file": "map-objects/0bf03e95350f-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/7",
+      "sha256": "2fb82e1e791cf83d35e6a5acf6411459cd5415e57a5817f2bdb4fa44a4551e6b",
+      "bytes": 21224
+    },
+    {
+      "file": "map-objects/0bf03e95350f-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/8",
+      "sha256": "bee47fb2e86129013b5f7a7f357a1e1a3ce98efb60c403ed6353a318bcb9fb54",
+      "bytes": 20848
+    },
+    {
+      "file": "map-objects/0bf03e95350f-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/9",
+      "sha256": "90976609fe50485cdd7f5143bfb3d532a6bf0f1ca9db4c0cf8778e4e0ff5602a",
+      "bytes": 21383
+    },
+    {
+      "file": "map-objects/0bf03e95350f-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/10",
+      "sha256": "6151b5adb8de4d106b1f1558375d761028dfb77858965a845fa73de5b9fb4f11",
+      "bytes": 22399
+    },
+    {
+      "file": "map-objects/0bf03e95350f-11.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/11",
+      "sha256": "890727d3fa479cdc4bac6d1f55c8c5cce60c84b78325a77e72602fb4fca94bf7",
+      "bytes": 20814
+    },
+    {
+      "file": "map-objects/0bf03e95350f-12.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/12",
+      "sha256": "dd49841284450aa90dbe72dae7445794c490d5dfb91693c2d2f5cc24bae3e9e6",
+      "bytes": 21564
+    },
+    {
+      "file": "map-objects/0bf03e95350f-13.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/13",
+      "sha256": "329a6edb5b8381ea34610d5b0b3f8de0d83f41fdf879227cfd757ec453701f16",
+      "bytes": 21600
+    },
+    {
+      "file": "map-objects/0bf03e95350f-14.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/14",
+      "sha256": "4761015580c07320f637ba06ff226e365bc770513d34c029afce0df9aee08a7b",
+      "bytes": 21582
+    },
+    {
+      "file": "map-objects/0bf03e95350f-15.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/15",
+      "sha256": "d537ad2e2baa4407d26f9983754d6e42d4e2292bc92c6a1ed0b9e7965ed399a6",
+      "bytes": 21702
+    },
+    {
+      "file": "map-objects/0bf03e95350f-16.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/16",
+      "sha256": "b1e29524dc515e06bdad14887b87087df83e79d844426733eadcd9a1c53ddaa7",
+      "bytes": 21092
+    },
+    {
+      "file": "map-objects/0bf03e95350f-17.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/17",
+      "sha256": "63a3df03ee54618b0aea81db9f1e367e83ddfc547421b15fb66e573f29df6e94",
+      "bytes": 21479
+    },
+    {
+      "file": "map-objects/0bf03e95350f-18.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/18",
+      "sha256": "a369a6229294d3afa9e89b82b2c01fa92a390f2ab72ab538a00cb29d4622472b",
+      "bytes": 22102
+    },
+    {
+      "file": "map-objects/0bf03e95350f-19.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/19",
+      "sha256": "79d450f7803af568ef612c633ec253d39cb96f5df1b8959e4e46da502714cf70",
+      "bytes": 21271
+    },
+    {
+      "file": "map-objects/0bf03e95350f-20.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/20",
+      "sha256": "58d56aaba973486c5c01d22f5559b1fe3f509a26e8ee542d76421f84adb1860d",
+      "bytes": 20575
+    },
+    {
+      "file": "map-objects/0bf03e95350f-21.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/21",
+      "sha256": "7140118cad8c642d752e90bfb096cbb6dbed465994b591dbbd10d68ad6bae93e",
+      "bytes": 21281
+    },
+    {
+      "file": "map-objects/0bf03e95350f-22.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/22",
+      "sha256": "c72a85650e3d0b98213ba19a6e0503b0af7399b5e379f232af645afeb45705f7",
+      "bytes": 23036
+    },
+    {
+      "file": "map-objects/0bf03e95350f-23.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/23",
+      "sha256": "492723b6db62f0568115d3701dff9471edf3fd5d410a72fb1604398e7acb4c9a",
+      "bytes": 21625
+    },
+    {
+      "file": "map-objects/0bf03e95350f-24.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/24",
+      "sha256": "03c1528f5a77c07c7f6ee7afe7408ca174bc2eaf2b6b3140e818469b2a2efb3b",
+      "bytes": 21767
+    },
+    {
+      "file": "map-objects/0bf03e95350f-25.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/25",
+      "sha256": "4df64bbf5c5360039b53a256a48f127fc997a8be9abdc48257baf15d022db581",
+      "bytes": 22331
+    },
+    {
+      "file": "map-objects/0bf03e95350f-26.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/26",
+      "sha256": "2bb9d039a32c5d8bcbff191da5a299c590419ec09f2146484fb3023d3c19ce4f",
+      "bytes": 22709
+    },
+    {
+      "file": "map-objects/0bf03e95350f-27.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/27",
+      "sha256": "e62bd3395f7e1bbdc98809488aeac29bee4cdbbeffda80767432af51de0df2a1",
+      "bytes": 21753
+    },
+    {
+      "file": "map-objects/0bf03e95350f-28.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/28",
+      "sha256": "343ce729b20cfc5e65087cd7d844e13f8c22caefdae6cc1ddb1dde5783945237",
+      "bytes": 21079
+    },
+    {
+      "file": "map-objects/0bf03e95350f-29.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/6/29",
+      "sha256": "b1547c691246f5e2678650e6004c37fc1d66507480b6382116630ae63c95176a",
+      "bytes": 21662
+    },
+    {
+      "file": "map-objects/2d165005621e-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/7/0",
+      "sha256": "0926ddb36bda363f1f5033c34ba70fd7f40abe28e177887f1bbfb513bad359f7",
+      "bytes": 2436
+    },
+    {
+      "file": "map-objects/2d165005621e-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/square/7/1",
+      "sha256": "0926ddb36bda363f1f5033c34ba70fd7f40abe28e177887f1bbfb513bad359f7",
+      "bytes": 2436
+    },
+    {
+      "file": "map-objects/310010000-geometry-0.png",
+      "source": "https://maplestory.io/api/GMS/240/map/310010000/render/0?showLife=false&showPortals=false",
+      "processing": "Exact pixel crop of existing original map ladder/rope. Does not overlap any animated frame bounds.",
+      "referenceSha256": "9531b40f4f2bfbcb6589be13b2866509f6bedc206891406fec87b93a74915154",
+      "sha256": "de1258068842d586b93647c4aad4c6d699cfc39d8e2cf945221c037724322879",
+      "bytes": 13515
+    },
+    {
+      "file": "map-objects/310010000-reference-static.png",
+      "source": "https://maplestory.io/api/GMS/240/map/310010000/render/0?showLife=false&showPortals=false",
+      "processing": "Sparse original reference pixels outside all animated-frame bounds. Preserves static overlap/alpha and ladder/rope rendering; no baked animated prop is copied.",
+      "referenceSha256": "9531b40f4f2bfbcb6589be13b2866509f6bedc206891406fec87b93a74915154",
+      "sha256": "0ade041c085f8ef7f983c4ea86c6fd71dad05ed381a5dac3dd4e927f4f2f3d32",
+      "bytes": 49550
+    },
+    {
+      "file": "map-objects/912080000-static-0.png",
+      "source": "Native static WZ layers; see inputs.json",
+      "processing": "Lossless composition/crop of original map tiles and objects in native order; animated props excluded.",
+      "sha256": "6c973bfd738a178de949133043f6b505b5559c3155d87550c392d54b4ee9daa3",
+      "bytes": 356673
+    },
+    {
+      "file": "map-objects/235012dea986-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/ani/6/0",
+      "sha256": "dec85aa2d882eddc68af074d5daf85d2a0dca215f4a78aa4243a6ed6211a5b3e",
+      "bytes": 30141
+    },
+    {
+      "file": "map-objects/235012dea986-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/ani/6/1",
+      "sha256": "ae0f14c80d0901804982cbaa6dc3c131046a4de94c178eadc1f218d13ed2e786",
+      "bytes": 29966
+    },
+    {
+      "file": "map-objects/235012dea986-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/ani/6/2",
+      "sha256": "e48c850f1b03738ed7d59f47dc186247b1904c2afba68914ff5c72398f3355ad",
+      "bytes": 29572
+    },
+    {
+      "file": "map-objects/235012dea986-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/ani/6/3",
+      "sha256": "279d313f9d7723c948e376d1a41cdcfb745bafe298a2ca86cf3bd6c97ea28cb6",
+      "bytes": 30012
+    },
+    {
+      "file": "map-objects/235012dea986-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/ani/6/4",
+      "sha256": "dfd0a0078da3e166dcaf1144934a274755acffadc59e135a7eb568c2a0f8c0f9",
+      "bytes": 30275
+    },
+    {
+      "file": "map-objects/235012dea986-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/ani/6/5",
+      "sha256": "8a646ef4734cd3909ce73a1067556f7c196829dff41f5bdeea6014c6958a2c53",
+      "bytes": 29907
+    },
+    {
+      "file": "map-objects/235012dea986-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/ani/6/6",
+      "sha256": "6e9945ff88a0b72da410acdf866ec366949862d102b843c9210e9cfeb42e404b",
+      "bytes": 29565
+    },
+    {
+      "file": "map-objects/235012dea986-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc9.img/inside/ani/6/7",
+      "sha256": "eb8c1a7b66e649ecf1cc00825491b09c93f8ad9935f6b7dae459f233a0a45c9d",
+      "bytes": 29891
+    },
+    {
+      "file": "map-objects/912080000-static-1.png",
+      "source": "Native static WZ layers; see inputs.json",
+      "processing": "Lossless composition/crop of original map tiles and objects in native order; animated props excluded.",
+      "sha256": "f0a8f661d71ec0cd97ecae1f4f0a82aaf6082fc6798cd18504daa3570f40c797",
+      "bytes": 19688
+    },
+    {
+      "file": "map-objects/912080000-geometry-0.png",
+      "source": "https://maplestory.io/api/GMS/240/map/912080000/render/0?showLife=false&showPortals=false",
+      "processing": "Exact pixel crop of existing original map ladder/rope. Does not overlap any animated frame bounds.",
+      "referenceSha256": "8d6e1b83095e2c7ffe09752c2a5bbc2ac5266b3a985676089f2b3d7946d09db6",
+      "sha256": "be01e1071a9a79d6514b881f63337aed9c95656a6acd0d97f744e1cf88423d06",
+      "bytes": 10480
+    },
+    {
+      "file": "map-objects/912080000-reference-static.png",
+      "source": "https://maplestory.io/api/GMS/240/map/912080000/render/0?showLife=false&showPortals=false",
+      "processing": "Sparse original reference pixels outside all animated-frame bounds. Preserves static overlap/alpha and ladder/rope rendering; no baked animated prop is copied.",
+      "referenceSha256": "8d6e1b83095e2c7ffe09752c2a5bbc2ac5266b3a985676089f2b3d7946d09db6",
+      "sha256": "a8073651c9271811108451f585477e6886206a3d16971669320a03365c1069bf",
+      "bytes": 20357
+    },
+    {
+      "file": "map-objects/310010100-static-0.png",
+      "source": "Native static WZ layers; see inputs.json",
+      "processing": "Lossless composition/crop of original map tiles and objects in native order; animated props excluded.",
+      "sha256": "31854e731e3e4dec9afd2d5bc74562ea41aa1ba16c1ede2e4fc1f7b4662a69d5",
+      "bytes": 685048
+    },
+    {
+      "file": "map-objects/cc126849c14c-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/15/0",
+      "sha256": "b67781396dc2f10533730ebfae0e7df828bff13ce2d509cc6db1805140028553",
+      "bytes": 4465
+    },
+    {
+      "file": "map-objects/cc126849c14c-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/240/Map/Obj/acc13.img/cityUG/acc/15/1",
+      "sha256": "b67781396dc2f10533730ebfae0e7df828bff13ce2d509cc6db1805140028553",
+      "bytes": 4465
+    },
+    {
+      "file": "map-objects/310010100-static-1.png",
+      "source": "Native static WZ layers; see inputs.json",
+      "processing": "Lossless composition/crop of original map tiles and objects in native order; animated props excluded.",
+      "sha256": "8ef12fd344619eba29c908343ed10cc47d1fb9a0ff32fbd8a86c0873ca262bdb",
+      "bytes": 134827
+    },
+    {
+      "file": "map-objects/310010100-geometry-0.png",
+      "source": "https://maplestory.io/api/GMS/240/map/310010100/render/0?showLife=false&showPortals=false",
+      "processing": "Exact pixel crop of existing original map ladder/rope. Does not overlap any animated frame bounds.",
+      "referenceSha256": "bb0fa8ec7faf496d3084e65c83e74902f0ef6d4392f79da276b7081dc805c437",
+      "sha256": "b716ed960984a057526b8c56ca69ccafe8f3cbea97a8725315c983205e68b266",
+      "bytes": 9585
+    },
+    {
+      "file": "map-objects/310010100-geometry-1.png",
+      "source": "https://maplestory.io/api/GMS/240/map/310010100/render/0?showLife=false&showPortals=false",
+      "processing": "Exact pixel crop of existing original map ladder/rope. Does not overlap any animated frame bounds.",
+      "referenceSha256": "bb0fa8ec7faf496d3084e65c83e74902f0ef6d4392f79da276b7081dc805c437",
+      "sha256": "c3ecb6cc35e53e88d3eb1d5df17159412025563dfd735bed7f1ab8e14cced830",
+      "bytes": 10697
+    },
+    {
+      "file": "map-objects/310010100-geometry-2.png",
+      "source": "https://maplestory.io/api/GMS/240/map/310010100/render/0?showLife=false&showPortals=false",
+      "processing": "Exact pixel crop of existing original map ladder/rope. Does not overlap any animated frame bounds.",
+      "referenceSha256": "bb0fa8ec7faf496d3084e65c83e74902f0ef6d4392f79da276b7081dc805c437",
+      "sha256": "a952b8acca633e6da9973ab5e21b3b10155aceed5179dc3df542602af8ab47c5",
+      "bytes": 8002
+    },
+    {
+      "file": "map-objects/310010100-geometry-3.png",
+      "source": "https://maplestory.io/api/GMS/240/map/310010100/render/0?showLife=false&showPortals=false",
+      "processing": "Exact pixel crop of existing original map ladder/rope. Does not overlap any animated frame bounds.",
+      "referenceSha256": "bb0fa8ec7faf496d3084e65c83e74902f0ef6d4392f79da276b7081dc805c437",
+      "sha256": "fdecf14cb1503631f94166e3540a7b2f54de416557e2112886e5854f5a5f5e1b",
+      "bytes": 10943
+    },
+    {
+      "file": "map-objects/310010100-reference-static.png",
+      "source": "https://maplestory.io/api/GMS/240/map/310010100/render/0?showLife=false&showPortals=false",
+      "processing": "Sparse original reference pixels outside all animated-frame bounds. Preserves static overlap/alpha and ladder/rope rendering; no baked animated prop is copied.",
+      "referenceSha256": "bb0fa8ec7faf496d3084e65c83e74902f0ef6d4392f79da276b7081dc805c437",
+      "sha256": "6ca10ec861602ac9cb6735574e4c12ca0365c6bac1a6b3d4b13eda8253d86c80",
+      "bytes": 544791
+    }
+  ]
+}

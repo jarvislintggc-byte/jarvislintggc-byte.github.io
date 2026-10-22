@@ -1,0 +1,69 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local prototype only",
+  "processing": "Unchanged PNGs; original nine-slice frame and tail are composed in the DOM.",
+  "textColorSource": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/clr",
+  "files": [
+    {
+      "file": "bubble/nw.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/nw",
+      "sha256": "417784e1b42a991546c7be6053ff22d5e85df26ce9c09fe3b7698c5c3b09b140",
+      "bytes": 126
+    },
+    {
+      "file": "bubble/n.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/n",
+      "sha256": "f6c0fbf3c3e219bda00258571c235e621f62cbcf4fe752906d6681a13a3dae66",
+      "bytes": 115
+    },
+    {
+      "file": "bubble/ne.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/ne",
+      "sha256": "cf85296c2151438194cf60976fc50f8b225b52b634e91af77cf63851c3ca0096",
+      "bytes": 156
+    },
+    {
+      "file": "bubble/w.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/w",
+      "sha256": "c6aa2d3f069a71c49e376b908c79b5f0d80af27a278192f6e5c54fd5284d7fdb",
+      "bytes": 109
+    },
+    {
+      "file": "bubble/c.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/c",
+      "sha256": "7291bbba8e1279d45fe53c8546a3b3233dbb39992506649b00b8b24260476988",
+      "bytes": 105
+    },
+    {
+      "file": "bubble/e.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/e",
+      "sha256": "b8e20db6d7a7506dfd854d86d265bf9078629956da8d93ac5dce85280c8cf69c",
+      "bytes": 114
+    },
+    {
+      "file": "bubble/sw.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/sw",
+      "sha256": "e8dc4d23d9edad89fc693a404afc9858a2615e6462b2eb8d7c1602a45d2e5fd4",
+      "bytes": 159
+    },
+    {
+      "file": "bubble/s.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/s",
+      "sha256": "a2202428f438a4fed157955c2176833347052b47db7b5c1c3158c2176c0a52d8",
+      "bytes": 124
+    },
+    {
+      "file": "bubble/se.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/se",
+      "sha256": "6c697b07f5c28d4f8e87e32d5efe0c9be46d2a8cbf9fbecdd2c3797a60cff7ea",
+      "bytes": 157
+    },
+    {
+      "file": "bubble/arrow.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/ChatBalloon.img/0/arrow",
+      "sha256": "4eff1b44f841095d0d5bf835b96fad5085b73c3ad4755ca34d28d450b6bc8f24",
+      "bytes": 250
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local prototype only",
+  "processing": "Original MP3 payload; removed WZ Sound_DX8 wrapper only, no re-encoding.",
+  "tracks": [
+    {
+      "id": "login",
+      "name": "經典登入",
+      "file": "login.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/83/Sound/BgmUI.img/Title",
+      "wrapperBytesRemoved": 82,
+      "durationSeconds": 376.9388,
+      "bytes": 3769388,
+      "sha256": "c4f55aa1bfa65a489daf7d937921d90b7ca1e94875f739eece0de70d42205612"
+    },
+    {
+      "id": "lith",
+      "name": "維多利亞港",
+      "file": "lith.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/83/Sound/Bgm02.img/AboveTheTreetops",
+      "wrapperBytesRemoved": 82,
+      "durationSeconds": 271.3779,
+      "bytes": 2713779,
+      "sha256": "9a0697cd6f8ba4516f05a5b76a13607c696fcaf09b26d646ae2e04c6c9336657"
+    },
+    {
+      "id": "ellinia",
+      "name": "魔法森林",
+      "file": "ellinia.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/83/Sound/Bgm02.img/WhenTheMorningComes",
+      "wrapperBytesRemoved": 82,
+      "durationSeconds": 187.7339,
+      "bytes": 1877339,
+      "sha256": "f65f2572e2501133280c182bd845d99eceb249747a0bbf45c2335eda53979892"
+    },
+    {
+      "id": "henesys",
+      "name": "弓箭手村",
+      "file": "henesys.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/83/Sound/Bgm00.img/FloralLife",
+      "wrapperBytesRemoved": 82,
+      "durationSeconds": 137.631,
+      "bytes": 1376310,
+      "sha256": "92268d2fd2884b22f682cb43ff5f77fa26d1137853dba8b2e94c761f35cb1fd1"
+    },
+    {
+      "id": "kerning",
+      "name": "墮落城市",
+      "file": "kerning.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/83/Sound/Bgm01.img/BadGuys",
+      "wrapperBytesRemoved": 82,
+      "durationSeconds": 218.2971,
+      "bytes": 2182971,
+      "sha256": "e9bf1c8708b044e3082ebf8a0aa0feae431a7ce7dacfbeb6da6c8ae80e56f44a"
+    },
+    {
+      "id": "florina",
+      "name": "海島海岸",
+      "file": "florina.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/83/Sound/Bgm03.img/Beachway",
+      "wrapperBytesRemoved": 82,
+      "durationSeconds": 196.3804,
+      "bytes": 1963804,
+      "sha256": "6499f1dece16e4f69d6ebec34f6634886892c96e1b3012c52337bef68eb6056e"
+    },
+    {
+      "id": "ariant",
+      "name": "沙漠旅程",
+      "file": "ariant.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/83/Sound/Bgm14.img/Ariant",
+      "wrapperBytesRemoved": 82,
+      "durationSeconds": 141.501875,
+      "bytes": 3396045,
+      "sha256": "6fa3cd0bd3a69be088da2d78212c275e7f50a133aad7490065695b8b14e28f99"
+    }
+  ]
+}

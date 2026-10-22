@@ -1,0 +1,463 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local prototype only",
+  "processing": "Unchanged FeetCenter rendered PNGs.",
+  "files": [
+    {
+      "file": "beginner.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "7439f1056d18cce529f568666253e25a81dcbf7761d3ded26a5464758e0d7ae8"
+    },
+    {
+      "file": "warrior-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "7e6dde5bff844866efe13bd45d08d3d52acbf9cd95e19b6e9307cd85292b4b3d"
+    },
+    {
+      "file": "warrior-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "52a99f882f1d28eecb679e3c9d4b0a1a6ed212f103ed237650e5b636b5246c4f"
+    },
+    {
+      "file": "warrior-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "5a8ab6649393e791175b5d7f1546270472bd658e44480affadbb1ad817100283"
+    },
+    {
+      "file": "warrior-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "a35a7eb30f56114da1041e8047d5015a875793fd4fbb59fc7418fa5808e1f395"
+    },
+    {
+      "file": "warrior-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "85d10e5367f9826b72e5a5e19d31892e86a407cd9d999825c9430a2427e9a897"
+    },
+    {
+      "file": "warrior-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "80ec92f1a43d06631b3e29ae23fda9308660c2398a4a19ad095b274daa4bb8c4"
+    },
+    {
+      "file": "warrior-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "9528090284a9a973aa1334d34d4383ed7de0536be20d4c0c6fbf811988d45f37"
+    },
+    {
+      "file": "warrior-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "7f5b4e4e0bcffca2f7c732ab7195e6554a6c530452b86357699ff9ce7031003f"
+    },
+    {
+      "file": "warrior-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "30e5798f7d0feacb0c1e314c96f9c082ea94cf6d5aadd816bc046740f85a30e3"
+    },
+    {
+      "file": "warrior-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "b9591bdc308060d147ca104d064870bc1cec407195590b6e62abb7db26c7e40c"
+    },
+    {
+      "file": "warrior-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "5eee3f97adfcc1f2a304307ec1fd82cfcc70a3f0bcf10579b624f9695effae8a"
+    },
+    {
+      "file": "warrior-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "8b6f2fd417f0a5d416e498f30de45b0e97dd99910d0f45cb993e3dd583d24a4d"
+    },
+    {
+      "file": "warrior-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000039%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "aeb93f606643900538f1ae392bcb6a2c716d194ea6625df200cb48d17d020878"
+    },
+    {
+      "file": "warrior-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "5c18d3d6fd694995a8a8c49f748d1e3e1b579c9d54a5ff715299330be74926a0"
+    },
+    {
+      "file": "warrior-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "e51d46a9922564156d3d85799bb347de35706ef169ba3a285a089d3fda4475aa"
+    },
+    {
+      "file": "warrior-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "40a980371f6bcbe8b51c383e9bc4bf1dd3b400819fac591061e3a86ab76188dc"
+    },
+    {
+      "file": "warrior-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "fb9dec0bd80dc6d986c86336713d6b9007a16b5c390fe4d11a7aec83aa955333"
+    },
+    {
+      "file": "warrior-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "4e304e77c8ac6b87b653a292082a5bc6124077eddc06cdaf13c3de551e9f60a7"
+    },
+    {
+      "file": "mage-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1372005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "c7f386a3d321b0ceb7c31c16651393f03617d0d42a95565a452e4f142a0982f9"
+    },
+    {
+      "file": "mage-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1372005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "f3e13f4c1a9f9bc8e2dfb9d5fcdde53cc5c6669a2364ba5f6243b62b48d94b52"
+    },
+    {
+      "file": "mage-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1372005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "1d9946b94e6a34bcd6270f50efdc8f2878ab609d0465b67f37d157ae6f8fc804"
+    },
+    {
+      "file": "mage-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "acf7ed073e4e97132a17d4c39bc2da81659a076c711d9917a6134cba1ac9ed2c"
+    },
+    {
+      "file": "mage-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "27f93926497235b5cd8b0c99f9bf32bde2a609ada100280334ad37d277f5c45b"
+    },
+    {
+      "file": "mage-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "7a2366e61d58c9a2cf1b21d3c6c50175cd2ce4d194141ee8dff5fc3ad612ec60"
+    },
+    {
+      "file": "mage-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "2bd663acb58be6fef5d1435823305fb16ca5e2cf1560329eff76a36825a94b32"
+    },
+    {
+      "file": "mage-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1005896%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "e22e2819945af256ce7860ba553341df736e83e9c4da7b59b49def6d43ffe19e"
+    },
+    {
+      "file": "mage-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "bbe1c3e978a0b7beadba79f845153c79be879ba5f82485741e2fe3941afe459e"
+    },
+    {
+      "file": "mage-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072075%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "711c8ed52490fb118860f0b37f7ec03dfd3b44efe23db10be636903eb7f91f06"
+    },
+    {
+      "file": "mage-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "9f929fae83ee6834c95c4181537e69222edbc4f7f760e29c1a653fbfe2964394"
+    },
+    {
+      "file": "mage-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050035%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382053%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "db61861ad5e30587a74e7193c51228ae5255bc411b71e3abfb48a55df2c1ea81"
+    },
+    {
+      "file": "mage-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382053%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002215%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "45ca171af55874aae60ac31376cb3d08380ad3d8c3104a4b11271ce066ee643e"
+    },
+    {
+      "file": "mage-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382053%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002271%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "1af8b12c8d4f5d4dbadd1ddfd6d011aed803673f78fdb921245bc3a62b839720"
+    },
+    {
+      "file": "mage-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382053%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002271%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "35c26bd0d181621e4ca569f73b5924fbd48f5f4886173b98de3eb0e13fcc6b98"
+    },
+    {
+      "file": "mage-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382060%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002271%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "4ec59a3ee7001e9f5dca131f02cc417af42c88284a2fdaf3f8464d41cc445e56"
+    },
+    {
+      "file": "mage-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052482%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382060%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002271%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "d4713dbebf68c4febcaf3c29faa0d240ed5ab3a493dc77f2826e8f76fb206d71"
+    },
+    {
+      "file": "mage-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052482%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1382060%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1000068%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072136%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "9b1d7d1f87a18bbf78cd8f25d4bb2fd1f40e7e1286055ff9f27bc1959160619d"
+    },
+    {
+      "file": "thief-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ae8933fa83d7aeafeae6b53c120184abac8f3c6a85230157ae44a871caa9b9f9"
+    },
+    {
+      "file": "thief-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ab921ea552144b9ef8c9f2271ed8b1bc1411658bec1a123e030d3abc4a1c4866"
+    },
+    {
+      "file": "thief-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "28d8b3fd3dd8d4335a945a83c2c8b46fecc778fcb4400902fe9852aeb5e18d0b"
+    },
+    {
+      "file": "thief-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "e1499e00750e4944469573e19bd999e87c94078a170f45a807567ec97c46b27b"
+    },
+    {
+      "file": "thief-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "170671615b3c1bfda2f18d5abd4af33a9348b655487ec58b5f156c3a8bce8fca"
+    },
+    {
+      "file": "thief-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040042%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "884838148c2cdd707041791632cbeebb9edc85027fe7fc080a95c20940a5ad79"
+    },
+    {
+      "file": "thief-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ca6d23c80f74115e81cdb55c461ea414e77410f98bcec753f0868118fb031aca"
+    },
+    {
+      "file": "thief-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ef7013ebc9044ee4faba0d7fd7dfc4c5f7237699ebc7b25e0dc8a8507a775313"
+    },
+    {
+      "file": "thief-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "7c2561423329f65fcae5ff5a88ad55468c481cf6ff64d479414641cef3b47548"
+    },
+    {
+      "file": "thief-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072032%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "a9c74fcb1f4799aecd5439cee4383cf137d91afb93e6cd134ef79fc63673d15f"
+    },
+    {
+      "file": "thief-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "df650b0047d43f3c813bb04a8e3be11412376cd21dd94a4ddb8ec20f617d63bb"
+    },
+    {
+      "file": "thief-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050166%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332018%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "3eefdd2e912c6139004e9b6f93b3fb6cc647dfb56be919009eb4b40694438739"
+    },
+    {
+      "file": "thief-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332018%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002207%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ee6b88cea61a716ea5d35237b09c1be6559a8f162c6f66402288d60fcee02a51"
+    },
+    {
+      "file": "thief-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332018%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002327%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "1b38f66cefd14129e39f59ec52b3b22ee6cd0716f2db23937801f657a834100b"
+    },
+    {
+      "file": "thief-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332018%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002327%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "a6a2e531e4d96c13e6cff2f3ae3933272391f4c7d6606f2dc62c0eed3b667036"
+    },
+    {
+      "file": "thief-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052149%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332051%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002327%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "b302b92c1893f62b5aa219ec157ff8ac7db282f7aa2f1fff8cc5f7580c761900"
+    },
+    {
+      "file": "thief-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050096%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332051%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002327%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "3b15e15b03e2c61dd1535c6913e6f67e3ae6916e9b1345dc7a53f22888507e2c"
+    },
+    {
+      "file": "thief-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050096%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1332051%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002380%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072150%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ab74d799189da9b1cf821447fd4b68fd740ad947e89040751dfa4b136be94c45"
+    },
+    {
+      "file": "archer-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "73146ced41a9dcf33f0378c5bb105b759db8ad66e8fd9e5bbdc2b816ec64ff5c"
+    },
+    {
+      "file": "archer-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "40343899701f278be25101b0290cb21fd4e695b13520fa51d087ac35330823f8"
+    },
+    {
+      "file": "archer-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "2fe457609c1314184ca057f666564f8e610899d9fc8155a0c09092f24011ed25"
+    },
+    {
+      "file": "archer-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "5c4b45d45876fe56df0067e881ee83a26240a9bdc2fe0e8e98a9bef110f8291b"
+    },
+    {
+      "file": "archer-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "192778d931116e753a8bafa59a7b355660c3f96def09a90f9a1d1111c579143b"
+    },
+    {
+      "file": "archer-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "7ff224d46b6f6f1b4a577731f37c8ac0ca55bd33d6bc59e5d968dc666b49fcc7"
+    },
+    {
+      "file": "archer-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "e5b26a56d6cb9ba1693234b396d21b341f26ee4a9ad897640045ab836b61e3cb"
+    },
+    {
+      "file": "archer-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "6cdb59a3393d71fd93d26d5c7f6bd34b7ea0483c9bf90ae428dff3facf9073d7"
+    },
+    {
+      "file": "archer-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "b2ebe2e55bdcfb74d41d10ef55a5b840b152eceae4fb88d96c8989a9a21d58b6"
+    },
+    {
+      "file": "archer-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072079%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "73346ca6a3b09627dd7843ff60d4f8e23072356c991a55ba4e56342e5c94a934"
+    },
+    {
+      "file": "archer-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "0ce7b49956a40df107e7fdd316cd8be9c3342bf99dbafea65a4d8a964dd032b9"
+    },
+    {
+      "file": "archer-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "f914b303ad3bfdfeac9b1f7fb0de30da4500f65784833928286620b65b554c62"
+    },
+    {
+      "file": "archer-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "065c5ea3210943a56f03ed17d0e272e8b64a60b612a76eec0c19405ba82ab2e9"
+    },
+    {
+      "file": "archer-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "51efa6d30a66cd6cefc480a508f3f57788010972e8db68db927eca6d39bc729d"
+    },
+    {
+      "file": "archer-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "e29b3f6d06e9599009c266da3ee81eaca701404343853e1301286d0396080625"
+    },
+    {
+      "file": "archer-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452019%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "9ce1e46ecf5f36a362b1851049df5b3fd9749138572bd819917a692e7fc2a32b"
+    },
+    {
+      "file": "archer-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050106%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452019%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "0fea7a0c1d95ea041f490e164f9d1e0841db14365b4b70417a613b7c959ef5ca"
+    },
+    {
+      "file": "archer-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1050106%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1452019%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002406%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "c67b38dcac07073ac34e897192f440050f6bff72e3f23f29b052d6ef283505e6"
+    },
+    {
+      "file": "pirate-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1040002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1060002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "15e364edf30d20442e8c7b576d4839e0e65d0d5ff45dacc996ca9a1883d1eb8e"
+    },
+    {
+      "file": "pirate-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ce713e10c58f11876ac7498a12f7484df1064ca20ecdeabaee2cb807fa22ba67"
+    },
+    {
+      "file": "pirate-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "b33b606bcf9e09d8e0f1b3caff3e243f213cd67d24ca955e07cec69b6ce9f095"
+    },
+    {
+      "file": "pirate-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "e7ee73e4adb86cfc633729da6179256ad221099ba3a6129e5589cfbd2f436806"
+    },
+    {
+      "file": "pirate-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "8d636b377ccde00298f3f87d07442ee38b10cbeb45b1a5df455e3f479d29af01"
+    },
+    {
+      "file": "pirate-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052098%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "2efc84a5467f39d5b836db51f0787877321ac6bd3195f60ec328212115648051"
+    },
+    {
+      "file": "pirate-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482002%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "5cfb172f0efdeae06259d56ffef685d55684feb5244f14c1dd61da2875869b62"
+    },
+    {
+      "file": "pirate-8.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002613%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ba2a00ae3aaca13293a77a50167d45bdb01ca7d2a4ae060c3e748750170d5098"
+    },
+    {
+      "file": "pirate-9.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102003%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "be85106ff6abc9a8d3b875036efa0767d4031504f44277567a762394cd630964"
+    },
+    {
+      "file": "pirate-10.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072294%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "19b16275903076616434e5b89debd2eb64136e6a99634a4a73bc5606c6ad7a25"
+    },
+    {
+      "file": "pirate-11.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482007%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "f1301d0ab6628bed1b94e20254e76e09cc7f91e23d68f2ab69103924b64e35af"
+    },
+    {
+      "file": "pirate-12.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052113%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "945011a8fa912958660cefe3588ba6abcc4eb6b89b3d82729f1f3c2f613965d3"
+    },
+    {
+      "file": "pirate-13.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052122%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002631%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ebc016f4fa4c0f4e051fe1a8a65eb4a6c507ede9864078024ce6937ce6388f09"
+    },
+    {
+      "file": "pirate-14.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052122%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002640%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "ec33cd92de6871f5fc707ed4df4d7a8007a6cd5464aaac6c1dc643cdc6e35cdf"
+    },
+    {
+      "file": "pirate-15.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052122%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002640%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "faf67fd886a61f112135f83fdaebe0f15943aa8bd21f0258197b06e89ec44158"
+    },
+    {
+      "file": "pirate-16.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052122%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002640%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "18acbb923e0df3166a5b9856b6df64df4ff8d33d45847d6ad606097df3f727bc"
+    },
+    {
+      "file": "pirate-17.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052131%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002640%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "c935ed834c915467f6c23b4aab975627dcada3a4037d167a91a678a61d03b7b6"
+    },
+    {
+      "file": "pirate-18.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1052131%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1482012%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1002646%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D%2C%7B%22itemId%22%3A1072306%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22240%22%7D/jump/0?renderMode=4",
+      "sha256": "25902730159e9a6dccd7df179dc7c6221208451a64f9943f6b3b4ec3d9ee0331"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "retrieved": "2026-10-19",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local review only",
+  "processing": "Unchanged original map render PNGs, original backgrounds composited via CSS. Authored camera crops anchor floor to actor feet.",
+  "files": [
+    {
+      "file": "maps/workshop.png",
+      "mapId": 310010000,
+      "mapName": "Secret Plaza",
+      "source": "https://maplestory.io/api/GMS/240/map/310010000/render/0?showLife=false&showPortals=false",
+      "sha256": "9531b40f4f2bfbcb6589be13b2866509f6bedc206891406fec87b93a74915154",
+      "bytes": 929194,
+      "width": 1600,
+      "height": 817
+    },
+    {
+      "file": "maps/market.png",
+      "mapId": 910000000,
+      "mapName": "Free Market Entrance",
+      "source": "https://maplestory.io/api/GMS/240/map/910000000/render/0?showLife=false&showPortals=false",
+      "sha256": "476eb50e51fe2bc450bef284ead6837bfbe3fc4eac470c639942a4d0851ca6a4",
+      "bytes": 747128,
+      "width": 2790,
+      "height": 821
+    },
+    {
+      "file": "maps/kitchen.png",
+      "mapId": 912080000,
+      "mapName": "Tangyoon's Kitchen",
+      "source": "https://maplestory.io/api/GMS/240/map/912080000/render/0?showLife=false&showPortals=false",
+      "sha256": "8d6e1b83095e2c7ffe09752c2a5bbc2ac5266b3a985676089f2b3d7946d09db6",
+      "bytes": 387264,
+      "width": 1000,
+      "height": 597
+    },
+    {
+      "file": "maps/advanced-lab.png",
+      "mapId": 310060120,
+      "mapName": "Android Research Lab 3",
+      "source": "https://maplestory.io/api/GMS/240/map/310060120/render/0?showLife=false&showPortals=false",
+      "sha256": "835e11524ab47730047c4a1407c5d0a58180bb069a772f642c218cb5cf2f9b29",
+      "bytes": 836014,
+      "width": 2610,
+      "height": 906
+    },
+    {
+      "file": "maps/harbor.png",
+      "mapId": 104000000,
+      "mapName": "Lith Harbor",
+      "source": "https://maplestory.io/api/GMS/240/map/104000000/render/0?showLife=false&showPortals=false",
+      "sha256": "eda87b99db82f8f7ddceccbdbe0b4b8dd940700f90576398a340ef748bbe2315",
+      "bytes": 3031691,
+      "width": 4878,
+      "height": 1986
+    },
+    {
+      "file": "maps/beach.png",
+      "mapId": 120040000,
+      "mapName": "Gold Beach Resort",
+      "source": "https://maplestory.io/api/GMS/240/map/120040000/render/0?showLife=false&showPortals=false",
+      "sha256": "645966e5066cf279ae006d5cb3ccea72a20c1e19cb524597fc39fef725ed40c9",
+      "bytes": 1067447,
+      "width": 2432,
+      "height": 893
+    },
+    {
+      "file": "maps/training.png",
+      "mapId": 310010100,
+      "mapName": "Training Room A",
+      "source": "https://maplestory.io/api/GMS/240/map/310010100/render/0?showLife=false&showPortals=false",
+      "sha256": "bb0fa8ec7faf496d3084e65c83e74902f0ef6d4392f79da276b7081dc805c437",
+      "bytes": 917623,
+      "width": 2400,
+      "height": 754
+    },
+    {
+      "file": "maps/classroom.png",
+      "mapId": 330002005,
+      "mapName": "First Floor Classroom",
+      "source": "https://maplestory.io/api/GMS/240/map/330002005/render/0?showLife=false&showPortals=false",
+      "sha256": "a703629294724e24a05789bf76799ef66a7f371a678707c83a68621b067af3c3",
+      "bytes": 1047563,
+      "width": 1658,
+      "height": 790
+    },
+    {
+      "file": "maps/desert-campus.png",
+      "mapId": 261000000,
+      "mapName": "Magatia",
+      "source": "https://maplestory.io/api/GMS/240/map/261000000/render/0?showLife=false&showPortals=false",
+      "sha256": "21c367b5c4007c3b5ab08b0a2e540a865e05106a55d940b63e7135551cf38d1c",
+      "bytes": 3240610,
+      "width": 7200,
+      "height": 1224
+    },
+    {
+      "file": "maps/industry.png",
+      "mapId": 261010000,
+      "mapName": "Lab - 1st Floor Hallway",
+      "source": "https://maplestory.io/api/GMS/240/map/261010000/render/0?showLife=false&showPortals=false",
+      "sha256": "1e0df094d34128fab0f457323e338209d7b4f3af72aa6ecf7f16326f91e88ad6",
+      "bytes": 236168,
+      "width": 2224,
+      "height": 404
+    }
+  ]
+}
