@@ -20,11 +20,13 @@ export function stepPlayer(player,input,ms,width,{movable=true,enemy=false,rank=
   const direction=movable?Number(Boolean(input.right))-Number(Boolean(input.left)):0,jump=Boolean(input.jump||input.upPressed);
   let oldX=p.x/100*width,jumpConsumed=false;
   p.hurtTime=Math.max(0,(p.hurtTime||0)-dt);p.ropeCooldown=Math.max(0,(p.ropeCooldown||0)-dt);p.dropTime=Math.max(0,(p.dropTime||0)-dt);
-  let support=supportAt(world,oldX,p.y,p.supportId);
+  // A rope owns vertical motion until release. Platform tolerance must not snap
+  // a slow (60/120 Hz) climbing step back onto the ledge every frame.
+  let rope=p.climbing?world.ropes.find(r=>r.id===p.climbing):null;
+  let support=rope?null:supportAt(world,oldX,p.y,p.supportId);
   p.grounded=Boolean(support&&p.vy<=0&&!p.dropTime);
   if(p.grounded){p.y=support.y;p.jumpsUsed=0;p.airVx=0;p.supportId=support.surface.id;}
-  if(p.hurtTime>0){p.climbing=null;p.climbMoving=false;p.ropeCooldown=.25;}
-  let rope=p.climbing?world.ropes.find(r=>r.id===p.climbing):null;
+  if(p.hurtTime>0){p.climbing=null;rope=null;p.climbMoving=false;p.ropeCooldown=.25;}
   if(!rope&&movable&&p.hurtTime===0&&p.ropeCooldown===0)rope=nearbyRope(world,oldX,p.y,input);
   if(rope&&movable){
     p.climbing=rope.id;p.climbingKind=rope.kind;p.crouching=false;p.moving=false;p.airVx=0;p.vy=0;p.grounded=false;p.supportId=null;

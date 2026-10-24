@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="/pages.css?v=b9143f4b4fcfc084">
   <script src="/ink.js?v=cdf5351e058c428c" defer></script>
   <script src="/navigation.js?v=c153ef14af8642dc" defer></script>
-  <link rel="stylesheet" href="/journey.css?v=db1fd64c2d8484d9">
-  <script src="/journey-boot.js?v=db1fd64c2d8484d9" defer></script>
+  <link rel="stylesheet" href="/journey.css?v=81b36f897c23b379">
+  <script src="/journey-boot.js?v=81b36f897c23b379" defer></script>
 </head>
 <body class="page-home"><a class="skip" href="#main">Skip to content</a>
 <main id="main" class="home-main">
@@ -48,6 +48,8 @@
         <div class="game-map-label"><span id="map-region" data-journey-text="TAIWAN / 時雨高中 · 12—18 歲">TAIWAN / 時雨高中 · 12—18 歲</span><strong id="map-title" data-journey-text="六年的鐘聲">六年的鐘聲</strong></div>
         <div class="chapter-badge" id="chapter-badge">CHAPTER 01 / 18</div>
         <div class="scene-floor" aria-hidden="true"></div>
+        <div class="game-pets" id="game-pets" aria-hidden="true" hidden></div>
+        <div class="game-npcs" id="game-npcs" role="group" aria-label="場景 NPC・遊戲虛構演出" hidden></div>
         <div class="game-character" id="game-character" aria-hidden="true"><img id="character-sprite" src="/assets/journey/beginner-idle.png" alt="" decoding="sync"><span class="character-shadow"></span><span class="character-name">Jarvis</span></div>
         <button class="game-boss" id="game-boss" type="button" aria-label="攻擊本章阻力" data-journey-aria-label="攻擊本章阻力" disabled><img id="monster-sprite" alt="" decoding="sync"><span class="boss-name" id="monster-name"></span></button>
         <div id="monster-effects" class="monster-effects" aria-hidden="true"></div>
@@ -98,7 +100,7 @@
           </div></div><div class="classic-menu" aria-label="遊戲選單" data-journey-aria-label="遊戲選單"><button type="button" id="hud-equipment" class="hud-menu red" aria-controls="hud-panel"><span data-journey-text="裝備">裝備</span></button><button type="button" id="hud-skills" class="hud-menu green" aria-controls="hud-panel"><span data-journey-text="技能">技能</span></button><button type="button" id="hud-chapters" class="hud-menu orange" aria-controls="hud-panel"><span data-journey-text="目錄">目錄</span></button><button type="button" id="hud-keys" class="hud-menu blue" aria-controls="hud-panel"><span data-journey-text="熱鍵選項">熱鍵選項</span></button></div>
       </div>
       <section class="classic-window" id="hud-panel" role="dialog" aria-labelledby="hud-panel-title" hidden><header><strong id="hud-panel-title"></strong><button type="button" id="hud-panel-close" aria-label="關閉選單" data-journey-aria-label="關閉選單">×</button></header><div id="hud-panel-body"></div></section>
-      <span class="sr-only" id="game-controls" data-journey-text="操作角色：左右方向鍵移動，Space / W / ↑ 跳躍，空中再按一次二段跳，所有職業從初心者起即可使用。靠近繩梯後按住 ↑／↓ 攀爬，Space 跳離；平台上 ↓＋Space 往下跳。地面按住 ↓ 趴下，放開站起。對話結束後 A 攻擊，學到新技能後會自動成為攻擊。對話期間可移動與跳躍。HP 歸零後等待墓碑落地，按「在本關復活」或 Enter 繼續。怪物倒下後可繼續移動，走近地上的裝備即可拾取。靠近開啟的傳點按 E。Enter 推進對話。觸控可點擊本章阻力攻擊，點擊藍光傳點進入。">操作角色：左右方向鍵移動，Space / W / ↑ 跳躍，空中再按一次二段跳，所有職業從初心者起即可使用。靠近繩梯後按住 ↑／↓ 攀爬，Space 跳離；平台上 ↓＋Space 往下跳。地面按住 ↓ 趴下，放開站起。對話結束後 A 攻擊，學到新技能後會自動成為攻擊。對話期間可移動與跳躍。HP 歸零後等待墓碑落地，按「在本關復活」或 Enter 繼續。怪物倒下後可繼續移動，走近地上的裝備即可拾取。靠近開啟的傳點按 E。Enter 推進對話。觸控可點擊本章阻力攻擊，點擊藍光傳點進入。</span>
+      <span class="sr-only" id="game-controls" data-journey-text="操作角色：左右方向鍵移動，Space / W / ↑ 跳躍，空中再按一次二段跳，所有職業從初心者起即可使用。靠近繩梯後按住 ↑／↓ 攀爬，Space 跳離；平台上 ↓＋Space 往下跳。地面按住 ↓ 趴下，放開站起。對話結束後 A 攻擊，學到新技能後會自動成為攻擊。對話期間可移動與跳躍。HP 歸零後等待墓碑落地，按「在本關復活」或 Enter 繼續。怪物倒下後可繼續移動，三隻寵物會跨平台取回地上裝備。靠近開啟的傳點按 E。Enter 推進對話。觸控可點擊本章阻力攻擊，點擊藍光傳點進入。">操作角色：左右方向鍵移動，Space / W / ↑ 跳躍，空中再按一次二段跳，所有職業從初心者起即可使用。靠近繩梯後按住 ↑／↓ 攀爬，Space 跳離；平台上 ↓＋Space 往下跳。地面按住 ↓ 趴下，放開站起。對話結束後 A 攻擊，學到新技能後會自動成為攻擊。對話期間可移動與跳躍。HP 歸零後等待墓碑落地，按「在本關復活」或 Enter 繼續。怪物倒下後可繼續移動，三隻寵物會跨平台取回地上裝備。靠近開啟的傳點按 E。Enter 推進對話。觸控可點擊本章阻力攻擊，點擊藍光傳點進入。</span>
       <noscript><p class="game-noscript"><span data-journey-text="此互動旅程需要 JavaScript。你也可以前往 ">此互動旅程需要 JavaScript。你也可以前往 </span><a href="/my-story/">My story</a><span data-journey-text=" 閱讀我的經歷。"> 閱讀我的經歷。</span></p></noscript>
     </div>
     </div></div>

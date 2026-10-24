@@ -1,0 +1,6 @@
+// Keep authored values, since browsers may normalize CSS strings on readback.
+const applied=new WeakMap();
+export function setStyles(node,values){
+ let previous=applied.get(node);if(!previous){previous={};applied.set(node,previous);}
+ for(const [key,value]of Object.entries(values))if(previous[key]!==value){node.style[key]=value;previous[key]=value;}
+}

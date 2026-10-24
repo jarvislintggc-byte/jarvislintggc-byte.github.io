@@ -1,0 +1,896 @@
+{
+  "retrieved": "2026-10-23",
+  "copyright": "NEXON and respective collaboration owners",
+  "processing": "Unchanged original PNG bytes, WZ frame origins and delays. Cross-platform item pickup is an authored portfolio mechanic.",
+  "files": [
+    {
+      "file": "pets/5002665-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/0",
+      "sha256": "f2ae98ecc34d2e0e3eee4654f41f043ac512f87085ab335aeeeb10e3d2390a59",
+      "bytes": 2148
+    },
+    {
+      "file": "pets/5002665-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/1",
+      "sha256": "b400b7d33c07ba7dfaef83e09157b5471b45660998ed1c9e4cfeb87f3c4b7f9d",
+      "bytes": 2193
+    },
+    {
+      "file": "pets/5002665-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/2",
+      "sha256": "546eaa9939a3bcc06c2509e6996275cfab04ac0309f663b2dbc3f6e7c97ea444",
+      "bytes": 2201
+    },
+    {
+      "file": "pets/5002665-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/3",
+      "sha256": "777b53ebd1e3a9650d6da62655e7ddfef7651996bdde7520ed3b6001f04db14c",
+      "bytes": 2167
+    },
+    {
+      "file": "pets/5002665-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/4",
+      "sha256": "aa365834efaa1d047a58d2a3c756d5a13bb50e850867a617d32b3a069a2afa4d",
+      "bytes": 2128
+    },
+    {
+      "file": "pets/5002665-stand0-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/5",
+      "sha256": "7810ecbd7db726ce350840472be2ffd165624fa2e2b9e94dab8583c9068dc3be",
+      "bytes": 2118
+    },
+    {
+      "file": "pets/5002665-stand0-6.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/6",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/6",
+      "sha256": "4406759e10392405f14df40cde061874733c915dbadfaa69925908670d1f3a88",
+      "bytes": 2072
+    },
+    {
+      "file": "pets/5002665-stand0-7.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/7",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/stand0/7",
+      "sha256": "7b67ca80b8fa2f130720fe1cd1a322200f51fc45ca9edb2d3b1becd7ce5b6d1c",
+      "bytes": 2084
+    },
+    {
+      "file": "pets/5002665-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/0",
+      "sha256": "094fc00e1fe30083946e07f8d35aae77faa96ee1242a572d3dfc2052d28ec299",
+      "bytes": 2109
+    },
+    {
+      "file": "pets/5002665-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/1",
+      "sha256": "90fbf007277aa06234713a8a399144f5573a6cdea023425a413027387d7abc92",
+      "bytes": 2149
+    },
+    {
+      "file": "pets/5002665-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/2",
+      "sha256": "ca245134dcac05da149dfdca5fbaadee614b92ef654469d740e06f1a1e725135",
+      "bytes": 2240
+    },
+    {
+      "file": "pets/5002665-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/3",
+      "sha256": "f2d70184c0aa2d53364a85c60f02b9772305f47d007a0dafe3cf929bac328a00",
+      "bytes": 2173
+    },
+    {
+      "file": "pets/5002665-move-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/4",
+      "sha256": "0c1eb5374f97e5731c78b411dc07449201258455d72e22af447b6ab3bf3c7d42",
+      "bytes": 2092
+    },
+    {
+      "file": "pets/5002665-move-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/5",
+      "sha256": "f4661bd15999cd466a20a6b234095f13d2437f95be28712c45983b00baea414d",
+      "bytes": 2078
+    },
+    {
+      "file": "pets/5002665-move-6.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/6",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/6",
+      "sha256": "35f154838ec4a8acb561453e7e4269b6f44245dbaf2d08981286cbee14546771",
+      "bytes": 2132
+    },
+    {
+      "file": "pets/5002665-move-7.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/7",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/move/7",
+      "sha256": "765b959afd8e3309281ddecaf2b33768435d031bc43899673a26b8e43231620d",
+      "bytes": 2100
+    },
+    {
+      "file": "pets/5002665-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002665.img/jump/0",
+      "sha256": "5cc8cae0c98e704f442475b8186b526a88ae1819a752202d7b4925990f261424",
+      "bytes": 2134
+    },
+    {
+      "file": "pets/5002666-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/0",
+      "sha256": "9e8f759bfcb4cfd7a8b21b72d9d7c63615b1a3ca6e2c7b4558d3bb938db24c24",
+      "bytes": 2196
+    },
+    {
+      "file": "pets/5002666-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/1",
+      "sha256": "64240e37a6546426a6fc1fb8bd460c7f77df0aa8a0c55247cd4c0d0edb888449",
+      "bytes": 2278
+    },
+    {
+      "file": "pets/5002666-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/2",
+      "sha256": "10b6e479feb14fe4b627e0d5612efe542c60605512fa3a7d25167cea7cc51850",
+      "bytes": 2252
+    },
+    {
+      "file": "pets/5002666-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/3",
+      "sha256": "e46d9234a598d4d0d24af411b58e5d672a55130afe101e0b9fe45f4d6ef5956e",
+      "bytes": 2190
+    },
+    {
+      "file": "pets/5002666-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/4",
+      "sha256": "8da8a9534a5429cae5d804c959f3f31ff2023b78a98845d2f855d6e790ea2ce2",
+      "bytes": 2179
+    },
+    {
+      "file": "pets/5002666-stand0-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/5",
+      "sha256": "b5a83023a0a00f259ae66a460c6a158ec243fcaab187667a90165a308257929e",
+      "bytes": 2161
+    },
+    {
+      "file": "pets/5002666-stand0-6.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/6",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/6",
+      "sha256": "4250ac01ce8a4362e3a65d996654c3d95b2c2d28dec4d9efb8f363a552f6a8ed",
+      "bytes": 2099
+    },
+    {
+      "file": "pets/5002666-stand0-7.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/7",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/stand0/7",
+      "sha256": "a8225e575b1250acbcbda9586db7bd99e433d72cde8a5b548a68be166ae861e8",
+      "bytes": 2103
+    },
+    {
+      "file": "pets/5002666-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/0",
+      "sha256": "0a3413ce9113dde58a6423210ce2319d08ce079be54e5dd3d7f137b4fa79b485",
+      "bytes": 2149
+    },
+    {
+      "file": "pets/5002666-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/1",
+      "sha256": "e79a7b53efbc794db7faed44040d49ffc1d47d64ac51faaa9845991441266c06",
+      "bytes": 2240
+    },
+    {
+      "file": "pets/5002666-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/2",
+      "sha256": "aa1b93d22bfa88cc84317208cfc90e790da6e8a1e4c756391b7cac5fa4bf3967",
+      "bytes": 2300
+    },
+    {
+      "file": "pets/5002666-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/3",
+      "sha256": "83c270ae03964ffad360a4ab22e43bc3c27a9ff5e460b34eae0c7d9ad3a040de",
+      "bytes": 2246
+    },
+    {
+      "file": "pets/5002666-move-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/4",
+      "sha256": "1aca0219799ffde7acb88f3c708be740c0ce13ab9ec452198b30b6d73ff382c0",
+      "bytes": 2131
+    },
+    {
+      "file": "pets/5002666-move-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/5",
+      "sha256": "af859e677df9ba68cee555836727d759330e8de124ee103c897b84a1069346f5",
+      "bytes": 2140
+    },
+    {
+      "file": "pets/5002666-move-6.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/6",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/6",
+      "sha256": "c09e61e3f10b7815f8215a2ceadc2077ecec2dd4a8a4c95ba399fa16f9e2b358",
+      "bytes": 2149
+    },
+    {
+      "file": "pets/5002666-move-7.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/7",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/move/7",
+      "sha256": "67b35ff22576c4d824906407d21812406f4f7f2fc109b4edfc6238f7cd607ccc",
+      "bytes": 2149
+    },
+    {
+      "file": "pets/5002666-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002666.img/jump/0",
+      "sha256": "3916478a530e5fb9eee88179076a6d53fc7f33afa4edd57e2062db6b5d5e2c06",
+      "bytes": 2341
+    },
+    {
+      "file": "pets/5002667-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/0",
+      "sha256": "67e6b112a69ab28f5845c3ecd2b5b8d4ff20f614e49da5386e194315a2b076ff",
+      "bytes": 1307
+    },
+    {
+      "file": "pets/5002667-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/1",
+      "sha256": "94b1e14768fbc1d415870f99e54ba409d5f05d7821860c92fd1761a8535cd69e",
+      "bytes": 1335
+    },
+    {
+      "file": "pets/5002667-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/2",
+      "sha256": "712067d6bf03d0e9408fbc143c7e9f8eab88740290cbf1dce985d843e3aaa1bc",
+      "bytes": 1303
+    },
+    {
+      "file": "pets/5002667-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/3",
+      "sha256": "366dcea68bb99c737ff423b3506934d160627426bcdb65f6983514fdaf8144b6",
+      "bytes": 1287
+    },
+    {
+      "file": "pets/5002667-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/4",
+      "sha256": "0d7db4878dd72499774cc825d7c0e8cfaab4f33c113a907e6444360ff183b94e",
+      "bytes": 1357
+    },
+    {
+      "file": "pets/5002667-stand0-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/5",
+      "sha256": "8b3b6a334463280824820c0e9ef4c0f116987610fbb744f71bec987bf5680df3",
+      "bytes": 1433
+    },
+    {
+      "file": "pets/5002667-stand0-6.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/6",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/6",
+      "sha256": "d75e561012c3570b3c893cfb04961653435ea26f27abeaa838625e94d0b4a890",
+      "bytes": 1392
+    },
+    {
+      "file": "pets/5002667-stand0-7.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/7",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/stand0/7",
+      "sha256": "0aa0545a533dfaf81e54dd7b7daee87d4849af81cedefc5d1f06afd247c79094",
+      "bytes": 1337
+    },
+    {
+      "file": "pets/5002667-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/0",
+      "sha256": "da6312a598ec36757ec1f1995e0cc1321ef013b1901edc83ae6406f40c9c77f4",
+      "bytes": 1470
+    },
+    {
+      "file": "pets/5002667-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/1",
+      "sha256": "01e83b258d0ebbfa5f41c518839f4d339472fbc223e2fd1bb3456d893ef8e541",
+      "bytes": 1428
+    },
+    {
+      "file": "pets/5002667-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/2",
+      "sha256": "6d14cdd9226902ea6c5cbbc9dc184ed8ab0cb8f2fafa45ea476e869b529abafe",
+      "bytes": 1419
+    },
+    {
+      "file": "pets/5002667-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/3",
+      "sha256": "93b47363fc04b6e7bebe7b70a035bdbb4ebdb0975b0e1730f5791dafeade2f53",
+      "bytes": 1481
+    },
+    {
+      "file": "pets/5002667-move-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/4",
+      "sha256": "a5e995d3a39d006346055374f1d0c072fe7dafd889e7f97e1f50679a88812269",
+      "bytes": 1518
+    },
+    {
+      "file": "pets/5002667-move-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/5",
+      "sha256": "ccb6ca84103a71d6c400f7e81b0e32aac2c3eea4ea797b36a0741eee69e37325",
+      "bytes": 1493
+    },
+    {
+      "file": "pets/5002667-move-6.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/6",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/6",
+      "sha256": "143aa080b16b4b31447c595161bb0b2745dacd3a262131b9bcddc20ea2749c8c",
+      "bytes": 1483
+    },
+    {
+      "file": "pets/5002667-move-7.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/7",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/move/7",
+      "sha256": "24ef9cbe4136626d1bce5e1b28b70f283c26ed92e125cf6fef00927886861395",
+      "bytes": 1475
+    },
+    {
+      "file": "pets/5002667-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002667.img/jump/0",
+      "sha256": "ea0c1ba78028a88994310b32a737c3d32eab92d6457677227c2f7fd1270942ba",
+      "bytes": 1566
+    },
+    {
+      "file": "pets/5002732-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/0",
+      "sha256": "db94f2625e2c3c096de9bbb87c6e30ab653f11afee9756d9057ed27e29bcce92",
+      "bytes": 1217
+    },
+    {
+      "file": "pets/5002732-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/1",
+      "sha256": "3d9807ddafb13a80aa3f5730443e054faaf9fb518af7348fde0eb4dd25dce476",
+      "bytes": 1179
+    },
+    {
+      "file": "pets/5002732-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/2",
+      "sha256": "d554353f074c763224a3318a57bdc3b9edd9259e8b75953c917df76e08df1a57",
+      "bytes": 1211
+    },
+    {
+      "file": "pets/5002732-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/3",
+      "sha256": "db94f2625e2c3c096de9bbb87c6e30ab653f11afee9756d9057ed27e29bcce92",
+      "bytes": 1217
+    },
+    {
+      "file": "pets/5002732-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/4",
+      "sha256": "3d9807ddafb13a80aa3f5730443e054faaf9fb518af7348fde0eb4dd25dce476",
+      "bytes": 1179
+    },
+    {
+      "file": "pets/5002732-stand0-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/stand0/5",
+      "sha256": "db94f2625e2c3c096de9bbb87c6e30ab653f11afee9756d9057ed27e29bcce92",
+      "bytes": 1217
+    },
+    {
+      "file": "pets/5002732-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/move/0",
+      "sha256": "3378fc9c076c997f7793ea093b794e67f30717ff7e24766d4dfa451441da0558",
+      "bytes": 1213
+    },
+    {
+      "file": "pets/5002732-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/move/1",
+      "sha256": "1b75ff6cc6bc1a3804309b6313d8930f057b5b7ced6182db0f3888446c546c77",
+      "bytes": 1184
+    },
+    {
+      "file": "pets/5002732-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/move/2",
+      "sha256": "55579f187f2b01cce00d4bfc58f654287fd56dd8d4051fea5e52a6415c031dc9",
+      "bytes": 1206
+    },
+    {
+      "file": "pets/5002732-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/move/3",
+      "sha256": "aa55a3f69d2dd3aa50a666acab7d9c05e9165ff170c42f02a37e1cad4273a7bb",
+      "bytes": 1209
+    },
+    {
+      "file": "pets/5002732-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002732.img/jump/0",
+      "sha256": "e7827eaad28c4cd73203bd166baf9feff0a436bd432be23f4488920498ada0f6",
+      "bytes": 1167
+    },
+    {
+      "file": "pets/5002733-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/0",
+      "sha256": "584c101fc64c64ab2e7473ddac29cda65bb27efc87652e07bbc2536025a16ffb",
+      "bytes": 1250
+    },
+    {
+      "file": "pets/5002733-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/1",
+      "sha256": "b6528d0e4e426280fa2960fc0cbb1670b5d75c823464845810b6eb97bee8083d",
+      "bytes": 1203
+    },
+    {
+      "file": "pets/5002733-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/2",
+      "sha256": "b43c419f13b9fbae3ed4f399056d67f38c8d548e7dd8d815643414f55b35d21e",
+      "bytes": 1233
+    },
+    {
+      "file": "pets/5002733-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/3",
+      "sha256": "584c101fc64c64ab2e7473ddac29cda65bb27efc87652e07bbc2536025a16ffb",
+      "bytes": 1250
+    },
+    {
+      "file": "pets/5002733-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/4",
+      "sha256": "b6528d0e4e426280fa2960fc0cbb1670b5d75c823464845810b6eb97bee8083d",
+      "bytes": 1203
+    },
+    {
+      "file": "pets/5002733-stand0-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/stand0/5",
+      "sha256": "584c101fc64c64ab2e7473ddac29cda65bb27efc87652e07bbc2536025a16ffb",
+      "bytes": 1250
+    },
+    {
+      "file": "pets/5002733-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/move/0",
+      "sha256": "b850e6c10917dbdd538317ef672cd49b3b226034397bf8ac5f6b90fffbf1e1c4",
+      "bytes": 1234
+    },
+    {
+      "file": "pets/5002733-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/move/1",
+      "sha256": "61b03d3c12dc29b74177b31c473a5e327ea497dca4fe78ba669796f324f65ccd",
+      "bytes": 1217
+    },
+    {
+      "file": "pets/5002733-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/move/2",
+      "sha256": "99d9f3d024d398268cc707e04b25f6039b263b84db84fb326120bda665487b93",
+      "bytes": 1238
+    },
+    {
+      "file": "pets/5002733-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/move/3",
+      "sha256": "25539fadb3890fe6d0fa30f788b67366689c2e1aa0ff718f2d4740f4b61ac180",
+      "bytes": 1216
+    },
+    {
+      "file": "pets/5002733-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002733.img/jump/0",
+      "sha256": "9f291487b29522481ebad68fc769212e04342d6ecc9b9905aaee627625d455f2",
+      "bytes": 1195
+    },
+    {
+      "file": "pets/5002734-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/0",
+      "sha256": "96f90a62632dd8051ec8eb6827d2d1f6033c2a35f562b607604d7a3e39d2d997",
+      "bytes": 1254
+    },
+    {
+      "file": "pets/5002734-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/1",
+      "sha256": "82ab09f68daf2ed3bbb3957a687099c76e1dd36668c0c42bfcece334d4494d95",
+      "bytes": 1235
+    },
+    {
+      "file": "pets/5002734-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/2",
+      "sha256": "f20a3bbab47e5fe69eccfaae995647248fef4635b0acde6e30e07c2a634c9f3b",
+      "bytes": 1257
+    },
+    {
+      "file": "pets/5002734-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/3",
+      "sha256": "96f90a62632dd8051ec8eb6827d2d1f6033c2a35f562b607604d7a3e39d2d997",
+      "bytes": 1254
+    },
+    {
+      "file": "pets/5002734-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/4",
+      "sha256": "82ab09f68daf2ed3bbb3957a687099c76e1dd36668c0c42bfcece334d4494d95",
+      "bytes": 1235
+    },
+    {
+      "file": "pets/5002734-stand0-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/stand0/5",
+      "sha256": "96f90a62632dd8051ec8eb6827d2d1f6033c2a35f562b607604d7a3e39d2d997",
+      "bytes": 1254
+    },
+    {
+      "file": "pets/5002734-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/move/0",
+      "sha256": "5c6a70f35b2529ce9a9b2348a9e4b8df47a761ff10d785997dc8e0d8de16d830",
+      "bytes": 1248
+    },
+    {
+      "file": "pets/5002734-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/move/1",
+      "sha256": "34901aefd14a5c18a9fab39b10c16524bfea799f6da6ecb03e29a03559d217e1",
+      "bytes": 1205
+    },
+    {
+      "file": "pets/5002734-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/move/2",
+      "sha256": "5c6a70f35b2529ce9a9b2348a9e4b8df47a761ff10d785997dc8e0d8de16d830",
+      "bytes": 1248
+    },
+    {
+      "file": "pets/5002734-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/move/3",
+      "sha256": "8b4403f6b38b6c7be2381f8a44b62686e4559820d620b4022b3a4048bcfa079e",
+      "bytes": 1244
+    },
+    {
+      "file": "pets/5002734-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002734.img/jump/0",
+      "sha256": "a97254b9c97198b02a87db029eb8f3c0f3e257882ffd91e9b249f306ab3d1822",
+      "bytes": 1214
+    },
+    {
+      "file": "pets/5002828-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/0",
+      "sha256": "46c1648a7eb7df70b41b4903b6daf6f6737a7a8cab3ea603b96b97d9264100fc",
+      "bytes": 1447
+    },
+    {
+      "file": "pets/5002828-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/1",
+      "sha256": "3e36c8051de0523e01c7f9935eeddf10081735f9ece5d4116bf1721a8e2336d9",
+      "bytes": 1395
+    },
+    {
+      "file": "pets/5002828-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/2",
+      "sha256": "f05c16d4b9d7ca31dc304c0fb7a39aa2a6001a1bc6d1197f11f94049ce1bb397",
+      "bytes": 1436
+    },
+    {
+      "file": "pets/5002828-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/3",
+      "sha256": "46c1648a7eb7df70b41b4903b6daf6f6737a7a8cab3ea603b96b97d9264100fc",
+      "bytes": 1447
+    },
+    {
+      "file": "pets/5002828-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/4",
+      "sha256": "3e36c8051de0523e01c7f9935eeddf10081735f9ece5d4116bf1721a8e2336d9",
+      "bytes": 1395
+    },
+    {
+      "file": "pets/5002828-stand0-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/stand0/5",
+      "sha256": "46c1648a7eb7df70b41b4903b6daf6f6737a7a8cab3ea603b96b97d9264100fc",
+      "bytes": 1447
+    },
+    {
+      "file": "pets/5002828-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/move/0",
+      "sha256": "736a27bf5b180011946b11a64e679bf7cd39359c097377412f6ec93c6a5b04cc",
+      "bytes": 1447
+    },
+    {
+      "file": "pets/5002828-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/move/1",
+      "sha256": "65a104a6c12d175465a5b087ea97f1ee08725e314d06455d1d6c099ff9042dd6",
+      "bytes": 1423
+    },
+    {
+      "file": "pets/5002828-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/move/2",
+      "sha256": "8bd424405cc754aff4d7612c4c714f37cca3305e02c6a70240e2fb770960e74d",
+      "bytes": 1444
+    },
+    {
+      "file": "pets/5002828-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/move/3",
+      "sha256": "b998b613aac2c7330ccc7d55d1a8915a9097abca3d0f24b547e1281b54156db9",
+      "bytes": 1414
+    },
+    {
+      "file": "pets/5002828-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002828.img/jump/0",
+      "sha256": "5569e6d9d7640a277979771d531d74e51061cac372e434c4a2cf9ff4cd292e8f",
+      "bytes": 1462
+    },
+    {
+      "file": "pets/5002829-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/0",
+      "sha256": "9edec6f0b98d3945fa0f4fb3136d9ad599e559de600233fe6ccf7ef4bd2f0d77",
+      "bytes": 1143
+    },
+    {
+      "file": "pets/5002829-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/1",
+      "sha256": "d31c83ef9bf46f9e8c2a62516b07246dde24c20223522253e8070cccd833e759",
+      "bytes": 1092
+    },
+    {
+      "file": "pets/5002829-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/2",
+      "sha256": "a82f6f9bf5e2598e7e5714eedc59c149432600a6a6d051d8d4d01046177ca5aa",
+      "bytes": 1135
+    },
+    {
+      "file": "pets/5002829-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/3",
+      "sha256": "9edec6f0b98d3945fa0f4fb3136d9ad599e559de600233fe6ccf7ef4bd2f0d77",
+      "bytes": 1143
+    },
+    {
+      "file": "pets/5002829-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/stand0/4",
+      "sha256": "9edec6f0b98d3945fa0f4fb3136d9ad599e559de600233fe6ccf7ef4bd2f0d77",
+      "bytes": 1143
+    },
+    {
+      "file": "pets/5002829-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/move/0",
+      "sha256": "307494e8c3cc4b762932ed8d708876bfd48a77a92efb97c8003012a1868e2858",
+      "bytes": 1139
+    },
+    {
+      "file": "pets/5002829-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/move/1",
+      "sha256": "21e984011357aca07ba71eea02730b28865596b7bd6ddeaf210fec5f610ffa48",
+      "bytes": 1100
+    },
+    {
+      "file": "pets/5002829-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/move/2",
+      "sha256": "11bc1cae878165e90125c1023747535d1a2e0c86b4185f8c82c7dadf7f9d38a9",
+      "bytes": 1133
+    },
+    {
+      "file": "pets/5002829-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/move/3",
+      "sha256": "2e3a54acabeaac703cfc03be3a05539ec67a7d01d35ae9d424e2d1d80443de00",
+      "bytes": 1115
+    },
+    {
+      "file": "pets/5002829-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002829.img/jump/0",
+      "sha256": "d7dc2b3fb5fa322c82f5fe1deaead55b3c45856158db2ad2fc39391633425c85",
+      "bytes": 1145
+    },
+    {
+      "file": "pets/5002830-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/0",
+      "sha256": "911d66c87b3f8d9c56a67cfbfee108ca825e489ec1b0a384a3c719c815b4d7eb",
+      "bytes": 1290
+    },
+    {
+      "file": "pets/5002830-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/1",
+      "sha256": "6764c5d3e119653b139aee0f112b89475cbb7c952827977badc063296f518bb4",
+      "bytes": 1268
+    },
+    {
+      "file": "pets/5002830-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/2",
+      "sha256": "b379738d23d29bdbb5a92042b651d08ed4494e3123907e5c9ddeab16e87b1b72",
+      "bytes": 1302
+    },
+    {
+      "file": "pets/5002830-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/3",
+      "sha256": "911d66c87b3f8d9c56a67cfbfee108ca825e489ec1b0a384a3c719c815b4d7eb",
+      "bytes": 1290
+    },
+    {
+      "file": "pets/5002830-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/4",
+      "sha256": "6764c5d3e119653b139aee0f112b89475cbb7c952827977badc063296f518bb4",
+      "bytes": 1268
+    },
+    {
+      "file": "pets/5002830-stand0-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/stand0/5",
+      "sha256": "911d66c87b3f8d9c56a67cfbfee108ca825e489ec1b0a384a3c719c815b4d7eb",
+      "bytes": 1290
+    },
+    {
+      "file": "pets/5002830-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/move/0",
+      "sha256": "a1e8ad62034d2b440ce996ed48a7e1c5362c2d7fc287c6d47aa6a249f644d1b7",
+      "bytes": 1243
+    },
+    {
+      "file": "pets/5002830-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/move/1",
+      "sha256": "cc02efdb54d492c73aff5cabf9b9319a8acd73aeda7bf9083c28570b88ea8632",
+      "bytes": 1294
+    },
+    {
+      "file": "pets/5002830-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/move/2",
+      "sha256": "4669666881bc985a15c3ecdb0b824350f56f8d4e19be70133b58e999bde870e8",
+      "bytes": 1269
+    },
+    {
+      "file": "pets/5002830-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/move/3",
+      "sha256": "1e4baf3fc255ba0f82cb9198c6892eb2665d05766237119a16c0191e5fd11c4e",
+      "bytes": 1282
+    },
+    {
+      "file": "pets/5002830-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002830.img/jump/0",
+      "sha256": "cfed1b85520db865454ae207c73589fb85fa73d3b64f3ab3c341471c7e6cd513",
+      "bytes": 1252
+    },
+    {
+      "file": "pets/5002831-stand0-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/0",
+      "sha256": "c651332e43d9a9604aa521e6f0c8c8d71a9432cb14ab947b68179338ef8ecfba",
+      "bytes": 1315
+    },
+    {
+      "file": "pets/5002831-stand0-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/1",
+      "sha256": "2ad655c397289006f66a994b8bc1a9cbf05ad113a90bcd737bfc63f8bf4711d9",
+      "bytes": 1298
+    },
+    {
+      "file": "pets/5002831-stand0-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/2",
+      "sha256": "f763e89a04f11f2e94e9afd66e79e17b835d6194900f7caef6c5ea9049b7c593",
+      "bytes": 1310
+    },
+    {
+      "file": "pets/5002831-stand0-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/3",
+      "sha256": "c651332e43d9a9604aa521e6f0c8c8d71a9432cb14ab947b68179338ef8ecfba",
+      "bytes": 1315
+    },
+    {
+      "file": "pets/5002831-stand0-4.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/4",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/4",
+      "sha256": "2ad655c397289006f66a994b8bc1a9cbf05ad113a90bcd737bfc63f8bf4711d9",
+      "bytes": 1298
+    },
+    {
+      "file": "pets/5002831-stand0-5.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/5",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/stand0/5",
+      "sha256": "c651332e43d9a9604aa521e6f0c8c8d71a9432cb14ab947b68179338ef8ecfba",
+      "bytes": 1315
+    },
+    {
+      "file": "pets/5002831-move-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/move/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/move/0",
+      "sha256": "661eb89b42addac191c27cfa3e768996909ef35069a74afbd8ecbb1b44c46c18",
+      "bytes": 1321
+    },
+    {
+      "file": "pets/5002831-move-1.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/move/1",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/move/1",
+      "sha256": "861bfcf2e98f6cd8230f9f7df826a4ab3d861ee650f42b82fe212dbda5c044c8",
+      "bytes": 1291
+    },
+    {
+      "file": "pets/5002831-move-2.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/move/2",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/move/2",
+      "sha256": "179d2f4407660d7e9b895930fd5fb6a7c715d7f70e673b93f17de5c80a41625e",
+      "bytes": 1325
+    },
+    {
+      "file": "pets/5002831-move-3.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/move/3",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/move/3",
+      "sha256": "a90e2a3c093bde40f7d398c00590303673c1fb1bc7fb5fa8be039ea30d08a625",
+      "bytes": 1296
+    },
+    {
+      "file": "pets/5002831-jump-0.png",
+      "source": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/jump/0",
+      "resolvedSource": "https://maplestory.io/api/wz/JMS/444/Item/Pet/5002831.img/jump/0",
+      "sha256": "4616ab904cd644bfc54d46adb1872f0139327992e2eac874045918163772b716",
+      "bytes": 1326
+    }
+  ]
+}

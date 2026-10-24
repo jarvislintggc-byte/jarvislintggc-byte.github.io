@@ -1,4 +1,5 @@
 import {sampleFrames} from './journey-animation.mjs';
+import {setStyles} from './journey-render.mjs';
 
 const horizontal = type => [1,3,4,6,7].includes(type);
 const vertical = type => [2,3,5,6,7].includes(type);
@@ -33,12 +34,12 @@ export function createEnvironmentView(back,front,{asset}){
       if(!sample)continue;
       const {frame,progress}=sample,g=environmentGeometry(layer,frame,{...view,origin:map.origin},reduced?0:time);
       const a0=frame.a0??255,a1=frame.a1??a0;
-      node.style.opacity=String((layer.a/255)*(a0+(a1-a0)*progress)/255);
+      setStyles(node,{opacity:String((layer.a/255)*(a0+(a1-a0)*progress)/255)});
       while(entry.images.length>g.tiles.length)entry.images.pop().remove();
       while(entry.images.length<g.tiles.length){const img=document.createElement('img');img.alt='';img.draggable=false;node.append(img);entry.images.push(img);}
       entry.images.forEach((img,index)=>{
         if(!img.src.endsWith(frame.file))img.src=asset(frame.file);
-        Object.assign(img.style,{width:`${g.width}px`,height:`${g.height}px`,left:`${g.tiles[index].left}px`,top:`${g.tiles[index].top}px`,transform:layer.f?'scaleX(-1)':'none'});
+        setStyles(img,{width:`${g.width}px`,height:`${g.height}px`,left:`${g.tiles[index].left}px`,top:`${g.tiles[index].top}px`,transform:layer.f?'scaleX(-1)':'none'});
       });
     }
   }

@@ -1,0 +1,39 @@
+import {surfaceY,floorAt} from './journey-terrain.mjs';
+import {npcScenes} from './journey-npc-scenes.mjs';
+import {npcArt} from './journey-npc-art.mjs';
+import {portalFrames} from './journey-sprites.mjs';
+
+export const npcSpriteScale=(art,mobile=false,training=false)=>Math.min(mobile?(training?.66:.82):1.15,(mobile?78:110)/Math.max(...art.poses.stand.map(f=>f.height)));
+
+// Prefer a visible native upper floor. If none fits, keep the cast on the
+// native ground to the right of the portal, facing left. Never create scenery or collision surfaces.
+export function npcPlacement(world,{width,height,chapter=0,count=2,mobile=false}){
+ const margin=mobile?25:42,minY=Math.min(110,height*.2),maxY=Math.max(minY,height-235),minimum=count*(mobile?48:70)+margin*2;
+ const segments=world.platforms.filter(p=>p.id!=='base'&&Math.abs(p.y2-p.y1)<2&&p.y1>=minY&&p.y1<=maxY).map(p=>({left:Math.max(mobile?margin:width*.22,Math.min(p.x1,p.x2)),right:Math.min(width-margin,Math.max(p.x1,p.x2)),y:p.y1,surfaces:[p]})).filter(p=>p.right>p.left).sort((a,b)=>a.y-b.y||a.left-b.left),runs=[];
+ for(const part of segments){const run=runs.find(r=>Math.abs(r.y-part.y)<2&&part.left<=r.right+1&&part.right>=r.left-1);if(run){run.left=Math.min(run.left,part.left);run.right=Math.max(run.right,part.right);run.surfaces.push(...part.surfaces);}else runs.push({...part});}
+ const floor=runs.filter(r=>r.right-r.left>=minimum).sort((a,b)=>a.y-b.y||b.right-b.left-(a.right-a.left))[0];
+ if(!floor){
+  const art=npcArt[npcScenes[chapter][0].id],scale=npcSpriteScale(art,mobile),frames=Object.values(art.poses).flat();
+  const bodyLeft=Math.max(...frames.map(f=>f.origin.x))*scale,bodyRight=Math.max(...frames.map(f=>f.width-f.origin.x))*scale;
+  const portalRight=Math.max(...portalFrames.map(f=>f.width-f.origin.x))*(mobile?.73:.95),gap=12;
+  let portalPx=Math.min(width*.88,width-32-portalRight-gap-bodyLeft-bodyRight);
+  // Avoid moving the entrance onto a small counter or stair tread while
+  // reserving space for the NPC on its right.
+  while(portalPx>width*.25&&[-20,0,20].some(dx=>floorAt(world,portalPx+dx)>2))portalPx-=1;
+  const portalX=portalPx/width*100;
+  const x=portalPx+portalRight+gap+bodyLeft,y=floorAt(world,x);
+  const surface=world.platforms.find(p=>{const at=surfaceY(p,x);return at!==null&&Math.abs(at-y)<.01;});
+  const placements=[{x,y,left:x,right:x,surface,facing:-1,bodyLeft,bodyRight,location:'portal'}];
+  return {placements,kind:'portal',portalX};
+ }
+ const placements=Array.from({length:count},(_,index)=>{
+  const x=floor.left+margin+(floor.right-floor.left-margin*2)*(count===1?.5:index/(count-1));
+  const surface=floor.surfaces.find(p=>surfaceY(p,x)!==null)||floor.surfaces[0];
+  return {x,y:surfaceY(surface,x),left:Math.max(floor.left+12,Math.min(surface.x1,surface.x2)+4),right:Math.min(floor.right-12,Math.max(surface.x1,surface.x2)-4),surface};
+ });
+ return {placements,kind:'native',portalX:88};
+}
+export function npcFloorPosition(placement,motionX=0){
+ const x=Math.max(placement.left,Math.min(placement.right,placement.x+motionX));
+ return {x,y:surfaceY(placement.surface,x)};
+}

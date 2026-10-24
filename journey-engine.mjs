@@ -1,5 +1,6 @@
 import { attackDamage, encounterHealth } from './journey-enemy.mjs';
 import { jobById } from './journey-growth.mjs';
+import {petTeams} from './journey-pets.mjs';
 // Pure transition rules keep portal gating independent of animation/CSS timing.
 export function initialState(mode='watch') {
   return { mode,phase:'ready', classId:null, chapter:0, page:0, beat:0, paused:false, completed:0, characterX:25,characterY:0,facing:1,bossHp:90,bossMaxHp:90,castHit:false,castSkill:false,castReturn:'encounter', rewardBeat:0, rewardNew:false };
@@ -33,7 +34,7 @@ export function transition(state, event, chapters) {
       if (s.page < chapter.pages.length - 1) s.page++;
       else { s.phase = s.mode==='manual'?'encounter':'battle'; s.beat = 0; }
     } else if (s.phase === 'portal') {
-      if(s.mode==='manual'&&(Math.abs(s.characterX-88)>6||Math.abs(s.characterY-(s.portalY||0))>8))return state;
+      if(s.mode==='manual'&&(Math.abs(s.characterX-(s.portalX??88))>6||Math.abs(s.characterY-(s.portalY||0))>8))return state;
       s.phase='walking'; s.walkStartX=s.characterX;
     }
     else return state;
@@ -41,9 +42,11 @@ export function transition(state, event, chapters) {
     s.beat++;
     if (s.beat >= 3) { s.phase = 'retiring'; s.characterX=64; }
   } else if (type === 'BOSS_EXITED' && s.phase === 'retiring') {
-    s.phase='reward'; s.rewardBeat=0;s.lootLanded=false;s.lootX=Number.isFinite(event.lootX)?Math.max(5,Math.min(94,event.lootX)):64; s.rewardNew=s.chapter >= s.completed;
+    s.phase='reward'; s.rewardBeat=0;s.lootLanded=false;s.petLootReady=false;s.lootX=Number.isFinite(event.lootX)?Math.max(5,Math.min(94,event.lootX)):64; s.rewardNew=s.chapter >= s.completed;
   } else if(type==='LOOT_LANDED'&&s.phase==='reward'&&s.rewardBeat===0&&!s.lootLanded){
     s.lootLanded=true;
+  } else if(type==='PET_LOOT_REACHED'&&s.phase==='reward'&&s.rewardBeat===0&&s.lootLanded&&!s.petLootReady&&petTeams[s.classId]?.includes(event.petId)){
+    s.petLootReady=true;
   } else if (type === 'EQUIPPED' && canCollectLoot(s,event.width)) {
     s.completed=Math.max(s.completed,s.chapter+1); s.rewardBeat=1;
   } else if (type === 'REWARD_FINISHED' && s.phase === 'reward' && s.rewardBeat === 1) {
@@ -53,7 +56,7 @@ export function transition(state, event, chapters) {
   } else if (type === 'PORTAL_OPENED' && s.phase === 'reward' && s.rewardBeat === 3) {
     s.phase='portal';
   } else if (type === 'WALKED' && s.phase === 'walking') {
-    s.phase='transition'; s.characterX=88;
+    s.phase='transition'; s.characterX=s.portalX??88;
   } else if (type === 'ARRIVED' && s.phase === 'transition') {
     if (s.chapter === chapters.length - 1) s.phase = 'complete';
     else { s.chapter++; s.page=0; s.beat=0; s.rewardBeat=0; s.phase='reading'; s.characterX=25;s.characterY=0;s.bossHp=encounterHealth(s.chapter,s.completed);s.bossMaxHp=s.bossHp; }
@@ -63,18 +66,19 @@ export function transition(state, event, chapters) {
 export function canCollectLoot(state,width){
   if(state.phase!=='reward'||state.rewardBeat!==0||state.paused)return false;
   if(state.mode==='watch'||!state.rewardNew)return true;
+  if(state.lootLanded&&state.petLootReady&&petTeams[state.classId]?.length===3)return true;
   return state.lootLanded&&Number.isFinite(width)&&width>0&&Math.abs(state.characterX-state.lootX)/100*width<=44&&state.characterY<=14;
 }
 export function canUsePortal(state) { return state.phase === 'portal' && !state.paused; }
 export function characterPosition(state, elapsed, duration = 1200) {
   if (state.phase !== 'walking') return state.characterX;
-  return state.walkStartX + (88-state.walkStartX) * Math.max(0,Math.min(1,elapsed/duration));
+  return state.walkStartX + ((state.portalX??88)-state.walkStartX) * Math.max(0,Math.min(1,elapsed/duration));
 }
 
 // Anchor the actual map surface to the actors' feet at every viewport size.
 // CSS object-fit/centering cannot preserve a floor coordinate across five maps.
 export function projectScene(camera, width, height, groundInset = 46) {
-  const scale = Math.max(width / camera.viewWidth, width / camera.width, (height - groundInset) / camera.aboveGround, groundInset / (camera.height - camera.groundY));
+  const scale = Math.max(width / camera.viewWidth, width / camera.width, (height - groundInset) / Math.min(camera.aboveGround,camera.groundY), groundInset / (camera.height - camera.groundY));
   const left = Math.min(0, Math.max(width - camera.width * scale, width * .57 - camera.focusX * scale));
   return { scale, left, top: height - groundInset - camera.groundY * scale, width: camera.width * scale, height: camera.height * scale };
 }

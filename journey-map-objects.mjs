@@ -1,4 +1,5 @@
 import {sampleFrames} from './journey-animation.mjs';
+import {setStyles} from './journey-render.mjs';
 
 const decodeImage=(url)=>{const image=new Image();image.src=url;return image.decode?image.decode():new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=reject;});};
 
@@ -8,12 +9,14 @@ export function createMapObjectView(host,fallback,{asset,load=decodeImage}){
   let current=null,entries=[],time=0,reduced=false,ready=false,token=0,projection=null;
   function draw(){
     if(!ready||!current)return;
-    if(projection)host.style.transform=`translate(${projection.left}px,${projection.top}px) scale(${projection.scale})`;
-    for(const {entry,image}of entries){
+    if(projection)setStyles(host,{transform:`translate(${projection.left}px,${projection.top}px) scale(${projection.scale})`});
+    for(const item of entries){
+      const {entry,image}=item;if(entry.static&&item.drawn)continue;
       const sample=sampleFrames(entry.frames,reduced?0:time,true);if(!sample)continue;
       const {frame,progress}=sample,a0=frame.a0??255,a1=frame.a1??a0;
       if(!image.src.endsWith(frame.file))image.src=asset(frame.file);
-      Object.assign(image.style,{width:`${frame.width}px`,height:`${frame.height}px`,left:`${entry.x-frame.origin.x}px`,top:`${entry.y-frame.origin.y}px`,opacity:String((a0+(a1-a0)*progress)/255),transform:entry.f?'scaleX(-1)':'none'});
+      setStyles(image,{width:`${frame.width}px`,height:`${frame.height}px`,left:`${entry.x-frame.origin.x}px`,top:`${entry.y-frame.origin.y}px`,opacity:String((a0+(a1-a0)*progress)/255),transform:entry.f?'scaleX(-1)':'none'});
+      item.drawn=true;
     }
   }
   return {

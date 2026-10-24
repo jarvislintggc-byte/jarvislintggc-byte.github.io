@@ -5,16 +5,6 @@
   "processing": "Unchanged original map render PNGs, original backgrounds composited via CSS. Authored camera crops anchor floor to actor feet.",
   "files": [
     {
-      "file": "maps/workshop.png",
-      "mapId": 310010000,
-      "mapName": "Secret Plaza",
-      "source": "https://maplestory.io/api/GMS/240/map/310010000/render/0?showLife=false&showPortals=false",
-      "sha256": "9531b40f4f2bfbcb6589be13b2866509f6bedc206891406fec87b93a74915154",
-      "bytes": 929194,
-      "width": 1600,
-      "height": 817
-    },
-    {
       "file": "maps/market.png",
       "mapId": 910000000,
       "mapName": "Free Market Entrance",
@@ -75,14 +65,14 @@
       "height": 754
     },
     {
-      "file": "maps/classroom.png",
-      "mapId": 330002005,
-      "mapName": "First Floor Classroom",
-      "source": "https://maplestory.io/api/GMS/240/map/330002005/render/0?showLife=false&showPortals=false",
-      "sha256": "a703629294724e24a05789bf76799ef66a7f371a678707c83a68621b067af3c3",
-      "bytes": 1047563,
-      "width": 1658,
-      "height": 790
+      "file": "maps/industry.png",
+      "mapId": 261010000,
+      "mapName": "Lab - 1st Floor Hallway",
+      "source": "https://maplestory.io/api/GMS/240/map/261010000/render/0?showLife=false&showPortals=false",
+      "sha256": "1e0df094d34128fab0f457323e338209d7b4f3af72aa6ecf7f16326f91e88ad6",
+      "bytes": 236168,
+      "width": 2224,
+      "height": 404
     },
     {
       "file": "maps/desert-campus.png",
@@ -95,14 +85,74 @@
       "height": 1224
     },
     {
-      "file": "maps/industry.png",
-      "mapId": 261010000,
-      "mapName": "Lab - 1st Floor Hallway",
-      "source": "https://maplestory.io/api/GMS/240/map/261010000/render/0?showLife=false&showPortals=false",
-      "sha256": "1e0df094d34128fab0f457323e338209d7b4f3af72aa6ecf7f16326f91e88ad6",
-      "bytes": 236168,
-      "width": 2224,
-      "height": 404
+      "file": "maps/kerning.png",
+      "mapId": 103000000,
+      "mapName": "Kerning City",
+      "source": "https://maplestory.io/api/GMS/240/map/103000000/render/0?showLife=false&showPortals=false",
+      "sha256": "fd10e997c8eb447293d6138881b045fc10fac2e258dc576da14987ca5f3ac226",
+      "width": 3870,
+      "height": 1506,
+      "bytes": 2633178
+    },
+    {
+      "file": "maps/desert-town.png",
+      "mapId": 260000200,
+      "mapName": "The Town of Ariant",
+      "source": "https://maplestory.io/api/GMS/240/map/260000200/render/0?showLife=false&showPortals=false",
+      "sha256": "423f23e99c3114145ba5b54b265070ff6c07ad327fe8d9459e03b93ace4b4118",
+      "width": 4320,
+      "height": 644,
+      "bytes": 924326
+    },
+    {
+      "file": "maps/crossroads.png",
+      "mapId": 104020000,
+      "mapName": "Six Path Crossway",
+      "source": "https://maplestory.io/api/GMS/240/map/104020000/render/0?showLife=false&showPortals=false",
+      "sha256": "b7fba34b040b1c34f31efc8e363b93025a373c46eef4b78c21a9519e0b12d134",
+      "width": 2559,
+      "height": 2689,
+      "bytes": 2561285
+    },
+    {
+      "file": "maps/japan-shrine.png",
+      "mapId": 800000000,
+      "mapName": "Mushroom Shrine",
+      "source": "https://maplestory.io/api/GMS/240/map/800000000/render/0?showLife=false&showPortals=false",
+      "sha256": "18a450269448b16675b73b67fabf0da870fd34301a59948aed06b44906d5e4d9",
+      "width": 4694,
+      "height": 1450,
+      "bytes": 1957386
+    },
+    {
+      "file": "maps/night-market.png",
+      "mapId": 103000007,
+      "mapName": "Kerning City Night Market  ",
+      "source": "https://maplestory.io/api/GMS/240/map/103000007/render/0?showLife=false&showPortals=false",
+      "sha256": "abd61bb77e9cc65814d8c8873e7e018377f642a01f0bb3c430ef1e8378ea11b4",
+      "width": 1599,
+      "height": 782,
+      "bytes": 620560
+    },
+    {
+      "file": "maps/toy-workshop.png",
+      "mapId": 220020000,
+      "mapName": "Toy Factory <Process 1> Zone 1",
+      "source": "https://maplestory.io/api/GMS/240/map/220020000/render/0?showLife=false&showPortals=false",
+      "sha256": "5d4183e3940196fe771ce1b3b382ab9c879080eaaa1cfd2894584e1b2b39a760",
+      "width": 1440,
+      "height": 1126,
+      "bytes": 549637
+    },
+    {
+      "file": "maps/fairy-academy.png",
+      "mapId": 101072000,
+      "mapName": "Ellinel Academy Lobby",
+      "source": "https://maplestory.io/api/GMS/240/map/101072000/render/0?showLife=false&showPortals=false",
+      "sha256": "49ce4548e25dd34697be69f3dcf538c6f7c7e8525b5c96461523556ea0f177f4",
+      "width": 2114,
+      "height": 1185,
+      "bytes": 1938007
     }
   ]
 }

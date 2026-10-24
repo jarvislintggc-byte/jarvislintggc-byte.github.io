@@ -10,10 +10,14 @@ export function storyLine(state,chapter){
   if(['portal','walking'].includes(state.phase))return [chapter.result,chapter.bridge].filter(Boolean).join(' ');
   return '';
 }
+const readingTimes=new Map();
 export function readingDuration(text){
+  if(readingTimes.has(text))return readingTimes.get(text);
   const chinese=(text.match(/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/gu)||[]).length;
   const words=(text.match(/[A-Za-z0-9]+/g)||[]).length;
-  return Math.max(3200,Math.min(chinese?8000:22000,1000+chinese*155+words*260));
+  const duration=Math.max(3200,Math.min(chinese?8000:22000,1000+chinese*155+words*260));
+  if(readingTimes.size>=256)readingTimes.delete(readingTimes.keys().next().value);
+  readingTimes.set(text,duration);return duration;
 }
 export function autoAdvanceDue(state,elapsed,text,enabled){
   return enabled&&!state.paused&&['reading','portal'].includes(state.phase)&&!(state.mode==='manual'&&state.phase==='portal')&&elapsed>=readingDuration(text);
