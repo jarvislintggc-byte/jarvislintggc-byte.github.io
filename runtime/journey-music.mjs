@@ -61,7 +61,8 @@ export function createMusicPlayer({makeAudio=()=>new Audio(),now=()=>performance
 export function initJourneyMusic({muted=false,translate=text=>text}={}){
   const control=document.getElementById('journey-music-control'),intro=document.querySelector('#intro'),section=document.getElementById('journey-game');
   if(!control||!intro||!section)return null;
-  let state={phase:'ready',chapter:0,paused:false},eligible=false,raf=0;
+  let state={phase:'ready',chapter:0,paused:false},eligible=false,raf=0,trackOverride=null;
+  const choice=document.getElementById('settings-bgm-select'),currentTrack=document.getElementById('settings-bgm-current');
   const menu=document.querySelector('#site-menu');
   function updateLabel(status){
     control.hidden=!eligible;
@@ -69,6 +70,7 @@ export function initJourneyMusic({muted=false,translate=text=>text}={}){
     control.setAttribute('aria-pressed',String(status.playing));
     control.setAttribute('aria-label',translate(status.masterMuted?'請先開啟喇叭，再播放背景音樂':status.playing?'關閉背景音樂':status.error?'重試背景音樂':'播放背景音樂'));
     control.dataset.playing=String(status.playing);
+    if(currentTrack)currentTrack.textContent=translate(bgmTracks[status.wanted]?.name||'經典登入');
   }
   const player=createMusicPlayer({changed:updateLabel});
   document.addEventListener('journeylanguage',()=>updateLabel(player.status()));
@@ -76,14 +78,14 @@ export function initJourneyMusic({muted=false,translate=text=>text}={}){
   function sync(){
     const introBox=intro.getBoundingClientRect(),gameBox=section.getBoundingClientRect();
     eligible=-introBox.top>=introBox.height*.3&&gameBox.bottom>0;
-    const key=eligible?(state.phase==='ready'?'login':trackForChapter(state.chapter+1)):null;
+    const key=eligible?(trackOverride||(state.phase==='ready'?'login':trackForChapter(state.chapter+1))):null;
     player.suspend(document.hidden||Boolean(menu?.open)||state.paused);
     player.select(key);
     control.hidden=!eligible;
   }
   document.addEventListener('journeystate',event=>{state=event.detail;sync();});
   document.addEventListener('journeyreveal',event=>{
-    const tools=document.querySelector('.game-tools');
+    const tools=document.getElementById('settings-bgm-control')||document.querySelector('.game-tools');
     if(event.detail.ready&&tools)tools.append(control);else document.body.append(control);
   });
   window.addEventListener('scroll',sync,{passive:true});window.addEventListener('resize',sync);
@@ -95,6 +97,7 @@ export function initJourneyMusic({muted=false,translate=text=>text}={}){
     if(status.masterMuted)return;
     if(!status.playing)player.mute(false);else player.mute(true);
   });
+  choice?.addEventListener('change',()=>{trackOverride=Object.hasOwn(bgmTracks,choice.value)?choice.value:null;sync();player.gesture();});
   if(menu)new MutationObserver(sync).observe(menu,{attributes:true,attributeFilter:['open']});
   function frame(time){player.tick(time);raf=requestAnimationFrame(frame);}
   window.addEventListener('pagehide',()=>{cancelAnimationFrame(raf);player.suspend(true);});

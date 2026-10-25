@@ -33,7 +33,7 @@ import { jumpSprites } from './journey-jump.mjs';
 import { proneSprites, doubleJumpEffects } from './journey-mobility-art.mjs';
 import { createMobilityView } from './journey-mobility.mjs';
 import { mapTerrain } from './journey-terrain-data.mjs';
-import { flatTerrain, projectTerrain, cameraPanFor, floorAt } from './journey-terrain.mjs';
+import { flatTerrain, projectTerrain, cameraPanFor, floorAt, storyGroundInset } from './journey-terrain.mjs';
 import { climbSprites } from './journey-climb-art.mjs';
 import {createPetView,petsFor} from './journey-pets.mjs';
 import {createNpcView} from './journey-npcs.mjs';
@@ -92,7 +92,7 @@ if (root) {
   }
   $('bubble-tail').src=asset(chatBubble.pieces.arrow.file);
   dialogue.style.color='#'+(chatBubble.color>>>0).toString(16).padStart(8,'0').slice(2);
-  const setText=(el,value)=>{value=t(value);if(el.textContent!==value)el.textContent=value;};
+  const setText=(el,value)=>{value=t(value);if(el.textContent!==value)el.textContent=value;if(el.tagName?.toLowerCase()==='option')el.label=value;};
   const spokenLine=()=>t(storyLine(state,chapters[state.chapter]));
   function preload(file){if(preloaded.has(file))return;preloaded.add(file);const img=new Image();img.src=asset(file);img.decode?.().catch(()=>{});}
   function preloadAbility(ability){if(!ability)return;ability.actorFrames.forEach(frame=>preload(frame.file));ability.tracks.forEach(track=>track.frames.forEach(frame=>preload(frame.file)));}
@@ -132,9 +132,9 @@ if (root) {
   function positionScene(refreshSize=false){
     const stage=scene.parentElement,chapter=chapters[state.chapter];
     if(refreshSize||!viewport.width){viewport.width=stage.clientWidth;viewport.height=stage.clientHeight;viewport.mobile=phone.matches;}
-    const key=`${state.chapter}:${viewport.width}:${viewport.height}`;
+    const key=`${state.chapter}:${viewport.width}:${viewport.height}:${viewport.mobile}`;
     root.style.setProperty('--scene-height',`${viewport.height}px`);
-    if(key!==terrainKey){terrainKey=key;sceneProjection=projectScene(chapter.camera,viewport.width,viewport.height);terrain=projectTerrain(mapTerrain[chapter.map],chapter.camera,sceneProjection,viewport.width);
+    if(key!==terrainKey){terrainKey=key;const inset=storyGroundInset(viewport.height,viewport.mobile),minimum=viewport.mobile?projectScene(chapter.camera,viewport.width,viewport.height).scale:0;sceneProjection=projectScene(chapter.camera,viewport.width,viewport.height,inset,minimum);terrain=projectTerrain(mapTerrain[chapter.map],chapter.camera,sceneProjection,viewport.width);
       npcFloor=npcPlacement(terrain,{...viewport,chapter:state.chapter,count:npcScenes[state.chapter].length});
     }
     const base=sceneProjection;
@@ -143,14 +143,14 @@ if (root) {
     portal.style.left=`${portalX}%`;
     portal.style.bottom=`calc(var(--ground-inset) + ${portalY}px)`;
     cameraPan=state.mode==='manual'?cameraPanFor(player.y,viewport.height,-base.top):0;
-    root.style.setProperty('--ground-inset',`${46-cameraPan}px`);
+    root.style.setProperty('--ground-inset',`${storyGroundInset(viewport.height,viewport.mobile)-cameraPan}px`);
     const c={...base,top:base.top+cameraPan};
     setStyles(scene,{width:`${c.width}px`,height:`${c.height}px`,left:`${c.left}px`,top:`${c.top}px`});
     environmentView.resize({width:viewport.width,height:viewport.height,projection:c});mapObjectView.resize(c);
     drawNpcs(0);
   }
   function drawNpcs(delta){
-    npcView.show(state.chapter,npcFloor?.kind);npcView.tick(delta,{state,language,width:viewport.width,height:viewport.height,groundInset:46-cameraPan,mobile:viewport.mobile,reduced:motion.matches,placements:npcFloor?.placements,floor:x=>floorAt(terrain,x)});
+    npcView.show(state.chapter,npcFloor?.kind);npcView.tick(delta,{state,language,width:viewport.width,height:viewport.height,groundInset:storyGroundInset(viewport.height,viewport.mobile)-cameraPan,mobile:viewport.mobile,reduced:motion.matches,placements:npcFloor?.placements,floor:x=>floorAt(terrain,x)});
   }
   new ResizeObserver(()=>positionScene(true)).observe(scene.parentElement);
   function updateSoundButton(error=''){
@@ -282,7 +282,7 @@ if (root) {
     if(dialogue.hidden)return;
     const world=viewport,mobile=viewport.mobile;
     const idle=sprites[state.completed?`${state.classId}-${state.completed}-idle`:'beginner-idle'];
-    const box=bubbleGeometry({width:world.width,height:world.height,actorX:parseFloat(actor.style.left)||25,boxWidth:bubbleWidth||Math.min(300,world.width-24),boxHeight:bubbleHeight||95,headHeight:idle.height/2*(mobile?.98:1.4)});
+    const box=bubbleGeometry({width:world.width,height:world.height,actorX:parseFloat(actor.style.left)||25,boxWidth:bubbleWidth||Math.min(300,world.width-24),boxHeight:bubbleHeight||95,headHeight:idle.height/2*(mobile?.98:1.4),groundInset:storyGroundInset(world.height,mobile)});
     setStyles(dialogue,{left:`${box.left}px`,bottom:`${Math.min(world.height-(bubbleHeight||95)-12,box.bottom+(state.mode==='manual'?player.y-cameraPan:0))}px`});dialogue.style.setProperty('--bubble-tail-x',`${box.tail}px`);
   }
   function updatePortal(){
@@ -332,9 +332,9 @@ if (root) {
     for(const [index,card]of [...$('class-choices').children].filter(card=>card.tagName.toLowerCase()==='label').entries()){
       card.children[0].setAttribute('aria-label',t(jobs[index].name));card.children[0].checked=jobs[index].id===selected;card.dataset.selected=String(jobs[index].id===selected);setText(card.children[2],jobs[index].name);
     }
-    $('class-select').value=selected;[...$('class-select').children].forEach((option,index)=>setText(option,jobs[index].name));
-    $('story-speed').hidden=state.mode!=='watch';
-    for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]])$(id).setAttribute('aria-pressed',String(rate===watchSpeed));
+    [...$('class-select').children].forEach(option=>setText(option,jobById[option.value].name));$('class-select').value=selected;
+    $('story-speed').hidden=false;$('settings-speed-row').hidden=false;$('settings-mode-row').hidden=phone.matches;
+    for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]]){$(id).setAttribute('aria-pressed',String(rate===playbackRate()));$(id).disabled=state.mode!=='watch';}
     $('mode-manual').setAttribute('aria-pressed',String(state.mode==='manual'));$('mode-watch').setAttribute('aria-pressed',String(state.mode==='watch'));
     $('mode-manual').disabled=phone.matches||state.phase==='battle';$('mode-manual').hidden=phone.matches;
     $('player-actions').hidden=state.mode!=='manual'||['ready','complete'].includes(state.phase);
@@ -473,7 +473,7 @@ if (root) {
     if(seenKeys.has(event))return;seenKeys.add(event);
     if(menu?.open)return;
     if(event.currentTarget&&event.currentTarget!==root&&!gameLock.active)return;
-    if(isEditingText(event.target))return;
+    if(isEditingText(event.target)||event.target?.closest?.('#journey-settings'))return;
     if(event.target?.closest?.('#journey-language')&&['Enter',' '].includes(event.key))return;
     if(event.target?.closest?.('#class-choices')&&['Enter',' ','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;
     gameLock.preventKey(event);
@@ -528,6 +528,10 @@ if (root) {
     if(phone.matches){autoplay=true;hudKind=null;$('hud-panel').hidden=true;reasons.delete('hud');dispatch('WATCH_ONLY');}
     lastTime=0;lastVitals='';positionScene(true);render();syncPause();
   });
+  const settings=$('journey-settings'),settingsToggle=$('settings-toggle');
+  $('settings-close').addEventListener('click',()=>{settings.open=false;settingsToggle.focus();});
+  document.addEventListener('click',event=>{if(settings.open&&!event.target?.closest?.('#journey-settings'))settings.open=false;});
+  document.addEventListener('keydown',event=>{if(settings.open&&event.key==='Escape'){event.preventDefault();settings.open=false;settingsToggle.focus();}});
   music=initJourneyMusic({muted:!sound,translate:t});initJourneyScroll();applyLanguage();updateSoundButton();
   preloadClass(state.classId);render();syncAnimation();
 }

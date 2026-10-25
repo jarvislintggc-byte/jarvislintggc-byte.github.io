@@ -87,8 +87,8 @@ export function characterPosition(state, elapsed, duration = 1200) {
 
 // Anchor the actual map surface to the actors' feet at every viewport size.
 // CSS object-fit/centering cannot preserve a floor coordinate across five maps.
-export function projectScene(camera, width, height, groundInset = 46) {
-  const scale = Math.max(width / camera.viewWidth, width / camera.width, (height - groundInset) / Math.min(camera.aboveGround,camera.groundY), groundInset / (camera.height - camera.groundY));
+export function projectScene(camera, width, height, groundInset = 46, minimumScale = 0) {
+  const scale = Math.max(minimumScale, width / camera.viewWidth, width / camera.width, (height - groundInset) / Math.min(camera.aboveGround,camera.groundY), groundInset / (camera.height - camera.groundY));
   const left = Math.min(0, Math.max(width - camera.width * scale, width * .57 - camera.focusX * scale));
   return { scale, left, top: height - groundInset - camera.groundY * scale, width: camera.width * scale, height: camera.height * scale };
 }

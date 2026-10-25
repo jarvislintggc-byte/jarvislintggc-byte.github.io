@@ -22,9 +22,9 @@ export function readingDuration(text){
 export function autoAdvanceDue(state,elapsed,text,enabled){
   return enabled&&!state.paused&&['reading','portal'].includes(state.phase)&&!(state.mode==='manual'&&state.phase==='portal')&&elapsed>=readingDuration(text);
 }
-export function bubbleGeometry({width,height,actorX,boxWidth,boxHeight,headHeight}){
+export function bubbleGeometry({width,height,actorX,boxWidth,boxHeight,headHeight,groundInset=46}){
   const left=Math.max(12,Math.min(width-boxWidth-12,width*actorX/100-boxWidth/2));
-  return {left,bottom:Math.max(30,Math.min(46+headHeight+30,height-boxHeight-12)),
+  return {left,bottom:Math.max(30,Math.min(groundInset+headHeight+30,height-boxHeight-12)),
     // The original diagonal tail's visible tip is at source x=1 (2 CSS px).
     tail:Math.max(12,Math.min(boxWidth-38,width*actorX/100-left-2))};
 }

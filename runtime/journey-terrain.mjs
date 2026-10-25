@@ -45,3 +45,6 @@ export function nearbyRope(world,x,y,input){
  return world.ropes.filter(r=>Math.abs(r.x-x)<=16&&y>=r.bottom-50&&y<=r.top+8&&!(input.up&&!input.down&&y>=r.top-2))
   .sort((a,b)=>Math.abs(a.x-x)-Math.abs(b.x-x))[0]||null;
 }
+
+// On phones, frame the standing character just below the scene midpoint.
+export const storyGroundInset=(height,mobile=false)=>mobile?Math.max(46,Math.round(height*.35)):46;
