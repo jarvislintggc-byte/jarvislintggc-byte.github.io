@@ -3,14 +3,23 @@ import { jobById } from './journey-growth.mjs';
 import {petTeams} from './journey-pets.mjs';
 // Pure transition rules keep portal gating independent of animation/CSS timing.
 export function initialState(mode='watch') {
-  return { mode,phase:'ready', classId:null, chapter:0, page:0, beat:0, paused:false, completed:0, characterX:25,characterY:0,facing:1,bossHp:90,bossMaxHp:90,castHit:false,castSkill:false,castReturn:'encounter', rewardBeat:0, rewardNew:false };
+  return { mode,phase:'ready', classId:'mage', pendingClassId:null, chapter:0, page:0, beat:0, paused:false, completed:0, characterX:25,characterY:0,facing:1,bossHp:90,bossMaxHp:90,castHit:false,castSkill:false,castReturn:'encounter', rewardBeat:0, rewardNew:false };
 }
 export function transition(state, event, chapters) {
   const type = typeof event === 'string' ? event : event.type;
   const s = { ...state };
   if (type === 'RESET') return initialState(s.mode);
   if(type==='SELECT_MODE'&&s.phase==='ready'&&['manual','watch'].includes(event.mode))return {...initialState(event.mode),classId:s.classId};
-  if (type === 'SELECT_CLASS' && s.phase === 'ready' && Object.hasOwn(jobById,event.classId)) return { ...s, classId:event.classId };
+  if(type==='SELECT_CLASS'&&Object.hasOwn(jobById,event.classId)){
+    if(s.phase==='battle')return event.classId===(s.pendingClassId||s.classId)?state:{...s,pendingClassId:event.classId===s.classId?null:event.classId};
+    return event.classId===s.classId?state:{...s,classId:event.classId,pendingClassId:null};
+  }
+  // A phone can enter the story while a desktop fight is in progress.
+  if(type==='WATCH_ONLY'||type==='SET_MODE'){
+    const mode=type==='WATCH_ONLY'?'watch':event.mode;
+    if(!['manual','watch'].includes(mode)||mode===s.mode||mode==='manual'&&s.phase==='battle')return state;
+    return {...s,mode,phase:mode==='watch'&&['encounter','dead'].includes(s.phase)?'battle':s.phase,beat:0,castReturn:'encounter',castHit:false,castSkill:false};
+  }
   if (type === 'REPLAY' && !s.paused && ['reading','encounter','portal','complete'].includes(s.phase) && Number.isInteger(event.chapter) && event.chapter >= 0 && event.chapter < s.completed) {
     return { ...s, phase:'reading', chapter:event.chapter, page:0, beat:0, rewardBeat:0, characterX:25,characterY:0,bossHp:encounterHealth(event.chapter,s.completed),bossMaxHp:encounterHealth(event.chapter,s.completed), rewardNew:false };
   }
@@ -25,7 +34,7 @@ export function transition(state, event, chapters) {
     if(type==='MOVE'&&['reading','encounter','portal','battle','retiring','reward'].includes(s.phase)&&Number.isFinite(event.x)&&Number.isFinite(event.y))return {...s,characterX:Math.max(5,Math.min(94,event.x)),characterY:Math.max(0,event.y),portalY:Number.isFinite(event.portalY)?event.portalY:s.portalY||0,facing:event.facing===-1?-1:1};
     if(type==='ATTACK'&&s.phase==='encounter')return {...s,phase:'battle',castReturn:s.phase,castHit:false,castLanded:false,castSkill:Boolean(event.skill&&s.completed),castReach:Boolean(event.reaches)};
     if(type==='CAST_HIT'&&s.phase==='battle'&&!s.castHit)return {...s,castHit:true,castLanded:s.castReturn==='encounter'&&(event.reaches??s.castReach),bossHp:s.castReturn==='encounter'&&(event.reaches??s.castReach)?Math.max(0,s.bossHp-attackDamage(s.completed)):s.bossHp};
-    if(type==='CAST_DONE'&&s.phase==='battle')return {...s,phase:s.castReturn==='encounter'&&s.bossHp===0?'retiring':s.castReturn};
+    if(type==='CAST_DONE'&&s.phase==='battle')return {...s,phase:s.castReturn==='encounter'&&s.bossHp===0?'retiring':s.castReturn,classId:s.pendingClassId||s.classId,pendingClassId:null};
   }
   const chapter = chapters[s.chapter];
   if (type === 'ADVANCE') {
@@ -61,6 +70,7 @@ export function transition(state, event, chapters) {
     if (s.chapter === chapters.length - 1) s.phase = 'complete';
     else { s.chapter++; s.page=0; s.beat=0; s.rewardBeat=0; s.phase='reading'; s.characterX=25;s.characterY=0;s.bossHp=encounterHealth(s.chapter,s.completed);s.bossMaxHp=s.bossHp; }
   } else return state;
+  if(s.pendingClassId&&s.phase!=='battle'){s.classId=s.pendingClassId;s.pendingClassId=null;}
   return s;
 }
 export function canCollectLoot(state,width){

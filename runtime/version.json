@@ -1,10 +1,9 @@
 {
-  "version": "81b36f897c23b379",
+  "version": "debbac5e35dfc9a2",
   "entry": "journey.js",
   "modules": [
     "journey-animation.mjs",
     "journey-bubble.mjs",
-    "journey-carousel.mjs",
     "journey-casts.mjs",
     "journey-class-art.mjs",
     "journey-climb-art.mjs",
@@ -24,6 +23,7 @@
     "journey-hurt.mjs",
     "journey-i18n.mjs",
     "journey-input.mjs",
+    "journey-ja.mjs",
     "journey-jump.mjs",
     "journey-levelup-view.mjs",
     "journey-levelup.mjs",

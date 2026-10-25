@@ -541,3 +541,62 @@ button.game-boss{border:0;padding:0;background:none;color:inherit;font:inherit;t
 .life-game[data-load-state=error] #class-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;height:auto;max-width:640px;padding:24px;gap:16px;text-align:center}
 .life-game[data-load-state=error] #class-screen .cover-description{display:block;margin:0;font-size:16px;line-height:1.6}
 .life-game[data-load-state=error] .journey-retry{flex:none;align-self:center;width:auto;height:auto;min-height:44px;max-width:100%;margin-top:8px}
+/* Default Magician entry; class changes live beside the scene, after entry. */
+.life-game{--class-rail-width:82px}
+.journey-stage .life-game,.journey-stage .game-scene{overflow:clip}
+.journey-stage .life-game #class-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;height:auto;max-width:680px;padding:24px;gap:20px}
+.journey-stage .life-game #class-screen h3{font-size:clamp(24px,3vw,38px);line-height:1.5}
+.journey-stage .life-game #class-screen .cover-description{display:block;margin:0;font-size:13px;line-height:1.8;max-width:420px}
+.journey-stage .life-game #class-screen .play-mode{margin:0;flex:none}
+.class-rail{position:absolute;top:var(--toolbar-height);bottom:var(--hud-height);left:0;width:var(--class-rail-width);z-index:12;padding:10px 7px;background:#203940;border-right:1px solid #ffffff24;overflow-y:auto;scrollbar-width:thin}
+.class-rail .class-choices{display:flex;flex-direction:column;gap:6px;width:100%;padding:0;margin:0;border:0;min-width:0}
+.class-rail legend{width:100%;padding:0 0 8px;text-align:center;font-size:11px;letter-spacing:1px;color:#cddcd5}
+.journey-stage .class-rail .class-card{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:60px;flex:none;grid-column:auto;padding:6px 2px;border:1px solid #ffffff20;border-radius:5px;background:#152d35;cursor:pointer;transform:none;transition:background .15s}
+.class-rail .class-card img{width:42px;height:42px;object-fit:contain;pointer-events:none}
+.class-rail .class-card strong{font-size:11px;letter-spacing:0;color:#e0e9e2}
+.class-rail .class-card[data-selected=true]{background:#3c5154;border-color:#f0d58d;box-shadow:inset 3px 0 #f0d58d}
+.class-rail .class-card:has(input:focus-visible){outline:2px solid #ffe6a4;outline-offset:-3px}
+.class-rail .play-mode{flex-direction:column;margin:12px 0 0;gap:4px}
+.class-rail .play-mode button{min-height:36px;padding:6px 2px;font-size:10px;line-height:1.4}
+.journey-stage .life-game:not([data-phase=ready]):not([data-phase=complete]) .game-scene{margin-left:var(--class-rail-width);width:calc(100% - var(--class-rail-width))}
+.life-game:not([data-phase=ready]):not([data-phase=complete]) .movement-buttons{left:calc(var(--class-rail-width) + 16px)}
+.mobile-class{position:absolute;z-index:14;top:5px;left:48px}
+.mobile-class select{font:12px var(--sans);height:34px;min-width:96px;padding:4px 8px;border:1px solid #b8cbb180;border-radius:4px;background:#203940;color:#f3e5b6;color-scheme:dark}
+.mobile-class select:focus-visible{outline:2px solid #ffe6a4;outline-offset:2px}
+@media(max-width:760px),(hover:none) and (pointer:coarse) and (max-width:1024px){
+ .life-game[data-presentation=story]{--hud-height:0px;--class-rail-width:0px;--toolbar-height:84px}
+ .journey-stage>.life-game,.journey-stage>.life-game[data-phase=ready]{grid-template-rows:var(--toolbar-height) minmax(0,1fr)}
+ .life-game .classic-hud,.life-game .class-rail,.life-game .player-actions,.life-game .character-status,.life-game .battle-caption,.life-game .enemy-health{display:none!important}
+ .journey-stage .life-game .game-toolbar{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:38px 42px;height:84px;padding:4px 10px 0;gap:0;align-items:center}
+ .life-game .game-toolbar .game-brand{grid-row:1;justify-self:start;height:34px}
+ .life-game .game-toolbar .game-wordmark{display:none}
+ .life-game .game-toolbar .game-tools{grid-row:2;justify-self:end;display:flex;align-items:center;gap:5px;height:40px}
+ .life-game .game-toolbar .journey-language{position:absolute;top:5px;right:10px;height:34px}
+ .life-game .game-toolbar .journey-language button{min-height:30px;min-width:34px}
+ .life-game .game-toolbar .game-tools>.journey-music-control{max-width:96px;font-size:10px}
+ .journey-stage .life-game .game-toolbar>.game-bottom{display:none}
+ .life-game #class-screen .play-mode{display:none}
+ .journey-stage .life-game #class-screen{padding:20px 14px;gap:16px}
+ .journey-stage .life-game #class-screen .cover-description{max-width:270px;font-size:12px}
+ .life-game[data-phase=ready] .story-controls,.life-game[data-phase=complete] .story-controls{left:50%;right:auto;bottom:max(24px,env(safe-area-inset-bottom));transform:translateX(-50%)}
+ .journey-stage .life-game .story-controls .game-next{min-height:44px;min-width:150px;font-size:12px;letter-spacing:1px}
+ .life-game .story-controls #game-auto{display:none}
+ .life-game .scene-shade{backdrop-filter:none}
+ .life-game .game-map-label{left:14px;top:16px;max-width:calc(100% - 115px)}
+ .life-game .game-map-label>strong{font-size:22px}
+ .life-game .game-map-label>span{font-size:10px;line-height:1.5}
+ .life-game .chapter-badge{right:12px;top:18px}
+}
+@media(max-height:500px) and (max-width:1024px){
+ .life-game[data-presentation=story]{--toolbar-height:46px}
+ .journey-stage .life-game[data-presentation=story] .game-toolbar{height:46px;display:flex;padding:4px 10px;justify-content:space-between}
+ .life-game[data-presentation=story] .game-toolbar .game-tools{margin-left:auto;margin-right:82px;gap:4px}
+ .life-game[data-presentation=story] .game-toolbar .journey-music-control{display:none}
+ .life-game[data-presentation=story] .mobile-class{left:42px}
+ .life-game[data-presentation=story] .mobile-class select{min-width:86px;max-width:100px}
+ .journey-stage .life-game[data-presentation=story] .game-dialogue.character-bubble{width:min(70%,480px)}
+ .journey-stage .life-game[data-presentation=story] .game-dialogue.character-bubble .dialogue-copy>p{font-size:16px}
+ .journey-stage .life-game[data-presentation=story] #class-screen{gap:10px}
+ .journey-stage .life-game[data-presentation=story] #class-screen h3{font-size:22px}
+ .journey-stage .life-game[data-presentation=story] #class-screen .cover-kicker{display:none}
+}

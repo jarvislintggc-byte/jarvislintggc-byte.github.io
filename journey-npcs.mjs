@@ -53,7 +53,7 @@ export function layoutNpcBubbles(items,{width,height=600,narrationBounds=null}){
  }
  return boxes;
 }
-const drills={'zh-Hant':['行進訓練','蹲姿訓練','跳躍訓練','瞄準訓練'],en:['MARCH','SQUATS','JUMPS','AIM']};
+const drills={'zh-Hant':['行進訓練','蹲姿訓練','跳躍訓練','瞄準訓練'],en:['MARCH','SQUATS','JUMPS','AIM'],ja:['行進訓練','スクワット','ジャンプ訓練','照準訓練']};
 const shortTrainingRoles={2152002:{'zh-Hant':'反抗軍法師',en:'R. Mage'},2152003:{'zh-Hant':'反抗軍弩手',en:'R. Archer'},2152005:{'zh-Hant':'反抗軍機甲',en:'R. Mech'}};
 const put=(node,text)=>{if(node.textContent!==text)node.textContent=text;};
 export function createNpcView(host,{asset}){
@@ -76,7 +76,7 @@ export function createNpcView(host,{asset}){
    // Layout follows story movement immediately, while native sprite updates stay bounded.
    const redraw=stamp!==lastDraw||lastLanguage!==language||lastWidth!==width||lastHeight!==height||lastReduced!==reduced||lastMobile!==mobile;
    lastDraw=stamp;lastLanguage=language;lastWidth=width;lastHeight=height;lastReduced=reduced;lastMobile=mobile;
-   if(redraw)host.setAttribute('aria-label',language==='en'?'Scene NPCs · fictional game performance':'場景 NPC・遊戲虛構演出');
+   if(redraw)host.setAttribute('aria-label',language==='ja'?'背景のNPC · ゲーム内の架空の演出':language==='en'?'Scene NPCs · fictional game performance':'場景 NPC・遊戲虛構演出');
    entries.forEach((entry,index)=>{
     const {actor,anchor,image,name,bubble,drill}=entry,art=npcArt[actor.id],training=actor.action==='training';
     const motion=training?trainingMotion(time,index,reduced):{x:0,y:0,squat:1,facing:actor.x>60?-1:1,part:0},facing=placements?.[index]?.facing??motion.facing;
@@ -86,8 +86,8 @@ export function createNpcView(host,{asset}){
     put(bubble,speech[index].text);if(entry.fullText!==speech[index].fullText){entry.fullText=speech[index].fullText;bubble.title=entry.fullText;bubble.setAttribute('aria-label',entry.fullText);}
     if(redraw){
      if(!image.src.endsWith(frame.file))image.src=asset(frame.file);anchor.dataset.pose=selected.pose;
-     const role=mobile&&training?shortTrainingRoles[actor.id]||actor.role:actor.role;put(name,(role[language]||role['zh-Hant'])+' · NPC');
-     if(training){put(drill,drills[language==='en'?'en':'zh-Hant'][motion.part]);setStyles(drill,{top:placements?.[index]?.location==='portal'?`${-Math.max(...art.poses.stand.map(f=>f.origin.y))*scale-15}px`:''});}
+     const role=mobile&&training?shortTrainingRoles[actor.id]||actor.role:actor.role;put(name,(role[language]||actor.role[language]||role['zh-Hant'])+' · NPC');
+     if(training){put(drill,(drills[language]||drills['zh-Hant'])[motion.part]);setStyles(drill,{top:placements?.[index]?.location==='portal'?`${-Math.max(...art.poses.stand.map(f=>f.origin.y))*scale-15}px`:''});}
      setStyles(image,{width:`${frame.width*scale}px`,height:`${frame.height*scale}px`,left:`${-frame.origin.x*scale}px`,top:`${-frame.origin.y*scale}px`,transformOrigin:`${frame.origin.x*scale}px ${frame.origin.y*scale}px`,transform:`scale(${facing===1?-1:1},${motion.squat.toFixed(2)})`});
     }
     setStyles(anchor,{left:placements?`${x}px`:motion.x?`calc(${at}% + ${motion.x.toFixed(1)}px)`:`${at}%`,bottom:`calc(var(--ground-inset) + ${position.y+motion.y}px)`,transform:'none'});

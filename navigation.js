@@ -50,8 +50,9 @@
   menu.addEventListener('keydown', event => {
     if (event.key !== 'Tab') return;
     // Keep keyboard navigation in the panel, including at both ends of the list.
-    const first = closeButton;
-    const last = links[links.length - 1];
+    const focusable = [...menu.querySelectorAll('a[href],button:not([disabled])')];
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
     if (event.shiftKey && document.activeElement === first) {
       event.preventDefault();
       last.focus();
