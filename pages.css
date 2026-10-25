@@ -74,7 +74,7 @@ html[lang=zh-Hant] .research-region{font-size:27px}
 .page-connect .contact-section{padding-block:70px;width:min(1280px,calc(100% - 104px))}
 .page-footer{padding-top:25px}
 /* Larger small text wraps within the original cards and page structure. */
-.page-header,.experience-toolbar,.menu-topbar,.menu-bottomline{flex-wrap:wrap}
+.page-header,.experience-toolbar,.menu-topbar{flex-wrap:wrap}
 .page-brand-group,.work-heading>div,.work-note,.perspective-list>div>div{min-width:0}
 .page-location{margin-left:auto}
 .work-heading>p{max-width:480px}
@@ -88,7 +88,6 @@ html[lang=zh-Hant] .research-region{font-size:27px}
 .note-article-dialog .dialog-content,.note-article-section,.note-gallery figure{min-width:0;overflow-wrap:anywhere}
 .note-article-dialog .dialog-content{max-width:none}
 .place-tabs button{flex-wrap:wrap}
-.fact-strip>div,.fact-strip>div>span{min-width:0;overflow-wrap:anywhere}
 .work-note .receipt{width:240px;max-width:100%;margin-top:0;line-height:1.45}
 .work-note .supply-diagram{width:180px;max-width:100%;margin-top:10px}
 .work-note .orbit-note{position:static;display:block;white-space:normal;transform:none;margin-top:8px}

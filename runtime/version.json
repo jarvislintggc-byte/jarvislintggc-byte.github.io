@@ -1,9 +1,10 @@
 {
-  "version": "3a3c53e3576972e0",
+  "version": "0cbbdd923ed288ce",
   "entry": "journey.js",
   "modules": [
     "journey-animation.mjs",
     "journey-bubble.mjs",
+    "journey-carousel.mjs",
     "journey-casts.mjs",
     "journey-class-art.mjs",
     "journey-climb-art.mjs",
@@ -38,6 +39,7 @@
     "journey-npc-platforms.mjs",
     "journey-npc-scenes.mjs",
     "journey-npcs.mjs",
+    "journey-overlays.mjs",
     "journey-pet-art.mjs",
     "journey-pets.mjs",
     "journey-player.mjs",

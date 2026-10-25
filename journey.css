@@ -542,7 +542,7 @@ button.game-boss{border:0;padding:0;background:none;color:inherit;font:inherit;t
 .life-game[data-load-state=error] #class-screen .cover-description{display:block;margin:0;font-size:16px;line-height:1.6}
 .life-game[data-load-state=error] .journey-retry{flex:none;align-self:center;width:auto;height:auto;min-height:44px;max-width:100%;margin-top:8px}
 /* Default Magician entry; class changes live beside the scene, after entry. */
-.life-game{--class-rail-width:82px}
+.life-game{--class-rail-width:0px}
 .journey-stage .life-game,.journey-stage .game-scene{overflow:clip}
 .journey-stage .life-game #class-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;height:auto;max-width:680px;padding:24px;gap:20px}
 .journey-stage .life-game #class-screen h3{font-size:clamp(24px,3vw,38px);line-height:1.5}
@@ -658,3 +658,70 @@ button.game-boss{border:0;padding:0;background:none;color:inherit;font:inherit;t
 .journey-stage .life-game .settings-panel .play-mode{display:flex;gap:14px;padding:0;margin:0;border:0;background:transparent}
 .journey-stage .life-game .settings-panel .play-mode button[aria-pressed=true]{color:#28332d;box-shadow:inset 0 -1px #28332d}
 .journey-stage .life-game .settings-panel button:disabled{opacity:.4;cursor:default}
+
+/* A small illuminated invitation beside the character title, never a rail. */
+.character-status .status-title{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.character-status .status-title>strong{font-size:22px;line-height:1.4;letter-spacing:.5px;min-width:0}
+.class-menu-trigger{position:relative;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:38px;height:38px;padding:7px;border:1px solid #eed7995c;border-radius:50%;background:#f6dc9420;color:#ffe8a6;cursor:pointer;pointer-events:auto;animation:class-menu-breathe 2.8s ease-in-out infinite;isolation:isolate}
+.class-menu-trigger>span{display:block;width:16px;height:1px;background:currentColor;border-radius:2px}
+.class-menu-trigger>span:nth-child(2){width:11px;align-self:flex-start;margin-left:3px}
+.class-menu-trigger:after{content:'';position:absolute;inset:-4px;border:1px solid #ffe3a53d;border-radius:50%;box-shadow:0 0 14px #ffdf8b38;pointer-events:none}
+.class-menu-trigger:hover{background:#f6dc9440}.class-menu-trigger:focus-visible{outline:2px solid #ffe5a4;outline-offset:5px}
+@keyframes class-menu-breathe{0%,100%{transform:scale(.96);box-shadow:0 0 5px #f9d88310}50%{transform:scale(1.05);box-shadow:0 0 19px #f9d88370}}
+.journey-stage .life-game:not([data-phase=ready]):not([data-phase=complete]) .game-scene{margin-left:0;width:100%}
+.life-game:not([data-phase=ready]):not([data-phase=complete]) .movement-buttons{left:16px}
+.life-game dialog::backdrop{background:#102b35ad;backdrop-filter:blur(7px)}
+.life-game.is-paused dialog.journey-welcome,.life-game.is-paused dialog.journey-class-picker{animation-play-state:running!important}
+.life-game dialog:focus-visible{outline:2px solid #d5ba7a;outline-offset:4px}
+
+/* The welcome note shares the portfolio's paper, ink and restrained accents. */
+.journey-welcome{width:min(620px,calc(100% - 32px));max-height:calc(100dvh - 40px);padding:0;border:1px solid #d6d3c7;border-radius:18px;background:#f5f2ea;color:#28332d;box-shadow:0 26px 100px #0b202f55;text-shadow:none;letter-spacing:0;overscroll-behavior:contain;animation:journey-note-in .4s ease both}
+.welcome-content{padding:32px 38px 24px;text-align:left;font-family:var(--sans,Arial,sans-serif)}
+.welcome-symbol{display:block;color:#a77a3f;font-size:28px;line-height:1;margin-bottom:14px}.welcome-kicker{font-size:10px;letter-spacing:2px;color:#858675;margin:0 0 14px}
+.journey-welcome h3{font:500 clamp(25px,3vw,33px)/1.5 var(--serif,Georgia,serif);letter-spacing:0;color:#28332d;margin:0 0 17px;text-wrap:balance}
+.journey-welcome #welcome-story{font-size:16px;line-height:1.9;color:#566157;margin:0}
+.welcome-hr{font-size:14px;line-height:1.85;color:#697267;padding-left:15px;border-left:2px solid #c3ab7d;margin:18px 0 0}
+.welcome-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.welcome-actions>button,.welcome-actions>a{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:46px;padding:11px 18px;border:1px solid #28332d;border-radius:5px;font:500 14px/1.5 var(--sans,Arial,sans-serif);letter-spacing:0;text-decoration:none;cursor:pointer;transition:background .2s}
+.welcome-actions>button{color:#f5f2ea;background:#28332d}.welcome-actions>button:hover{background:#415044}.welcome-actions>a{color:#28332d;background:transparent;border-color:#c9ccbf}.welcome-actions>a:hover{background:#e8e8de}
+.welcome-device{display:flex;align-items:flex-start;gap:9px;font-size:12px;line-height:1.7;color:#788071;margin:18px 0 0}.welcome-device svg{width:18px;height:18px;flex:none;margin-top:1px}
+.welcome-credits{display:block;padding:15px 0 0;margin:20px 0 0;border-top:1px solid #d8d9cd;font-size:11px;line-height:1.7;color:#808578}.welcome-credits p{margin:0}.welcome-credits>div{display:flex;flex-wrap:wrap;gap:6px 15px;margin-top:7px}.welcome-credits a{font-size:11px;text-decoration:underline;text-underline-offset:3px;color:#667260}.welcome-credits a:hover{color:#28332d}
+@keyframes journey-note-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* Restore the full-body, five-route carousel inside a focused modal. */
+.journey-class-picker{width:min(1100px,calc(100% - 40px));height:min(730px,calc(100dvh - 48px));max-height:calc(100dvh - 48px);padding:30px 22px 22px;border:1px solid #e7d79a60;border-radius:16px;color:#fff1cb;background:radial-gradient(ellipse at 50% 40%,#31596b,#132e3e 85%);box-shadow:0 20px 90px #091e3255;text-shadow:none;overflow:hidden;animation:journey-note-in .3s ease both}
+.class-picker-close{position:absolute;z-index:8;right:16px;top:12px;width:40px;height:40px;border:1px solid #dcdac850;border-radius:50%;background:#ffffff08;color:#eee8d0;font:26px/1 Arial,sans-serif;cursor:pointer}
+#class-picker-screen{height:100%;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;gap:12px;text-align:center}
+#class-picker-screen h3{font:500 clamp(22px,3vw,32px)/1.4 var(--sans,Arial,sans-serif);letter-spacing:1px;margin:0;padding:0 40px}
+#class-picker-screen .class-choices{--class-step:clamp(130px,24vw,245px);position:absolute;inset:0;display:block;margin:0;padding:0;width:100%;height:100%;min-height:0;border:0;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+#class-picker-screen .class-card{position:absolute;left:50%;top:0;width:clamp(210px,34vw,390px);height:100%;padding:0;border:0;border-radius:0;background:none;box-shadow:none;display:flex;flex-direction:column;gap:4px;align-items:center;justify-content:flex-end;transform:translateX(calc(-50% + var(--offset)*var(--class-step))) scale(.7);opacity:.3;z-index:1;transition:transform .4s ease,opacity .4s ease;cursor:pointer}
+#class-picker-screen .class-card[data-active=true]{transform:translateX(-50%) scale(1);opacity:1;z-index:3}
+#class-picker-screen .class-card img{width:100%;height:auto;max-height:calc(100% - 48px);flex:0 1 auto;object-fit:contain;object-position:center;image-rendering:auto;filter:drop-shadow(0 8px 18px #071b3070);pointer-events:none}
+#class-picker-screen .class-card{justify-content:center}
+#class-picker-screen .class-card strong{font-size:clamp(22px,3vw,32px);line-height:1.4;letter-spacing:4px;color:#fff1cb;padding-block:3px}
+#class-picker-screen .class-card:after{display:none}#class-picker-screen .class-card:has(input:checked){background:none;border:0;box-shadow:none}#class-picker-screen .class-card:has(input:focus-visible){outline:0}#class-picker-screen .class-card:has(input:focus-visible) strong{outline:2px solid #ffe6a4;outline-offset:3px}
+#class-picker-screen .class-carousel-footer{min-height:30px;justify-self:center;margin:0}
+#class-picker-done{justify-self:end;min-height:44px;padding:10px 23px;border:1px solid #e5cb87;border-radius:5px;background:#f2d68c;color:#33412f;font:500 14px/1.5 var(--sans,Arial,sans-serif);cursor:pointer}
+#class-picker-done:hover{background:#ffe7a8}
+@media(max-width:760px),(hover:none) and (pointer:coarse) and (max-width:1024px){
+ .life-game[data-presentation=story] .character-status:not([hidden]){display:block!important;top:68px;left:12px;width:auto;max-width:calc(100% - 24px);padding:8px 12px;background:#203c48de;border-color:#d4c28b66;pointer-events:auto}
+ .life-game[data-presentation=story] .character-status>span,.life-game[data-presentation=story] .character-status .status-skill,.life-game[data-presentation=story] .character-status .status-equipment{display:none}
+ .character-status .status-title>strong{font-size:16px}.class-menu-trigger{width:34px;height:34px}
+ .journey-welcome{max-height:calc(100dvh - 24px);border-radius:12px}.welcome-content{padding:24px 23px 20px}.journey-welcome h3{font-size:25px;margin-bottom:12px}.journey-welcome #welcome-story{font-size:14px;line-height:1.8}.welcome-hr{font-size:13px;margin-top:14px}.welcome-kicker{font-size:9px}.welcome-symbol{font-size:23px;margin-bottom:10px}.welcome-actions{margin-top:18px}.welcome-actions>button,.welcome-actions>a{font-size:13px;padding:10px 13px;gap:12px}.welcome-credits{margin-top:16px}
+ .journey-class-picker{width:calc(100% - 20px);height:calc(100dvh - 28px);max-height:calc(100dvh - 28px);padding:65px 10px 18px}#class-picker-screen{gap:12px}#class-picker-screen h3{font-size:23px;padding:0 10px}#class-picker-screen .class-choices{--class-step:clamp(105px,32vw,170px)}#class-picker-screen .class-card{width:clamp(220px,66vw,350px)}#class-picker-screen .class-card strong{font-size:24px}#class-picker-done{margin-right:10px}
+}
+@media(max-height:540px){.welcome-content{padding:22px 28px}.welcome-symbol,.welcome-kicker{display:none}.journey-class-picker{padding-top:16px}#class-picker-screen{gap:5px}#class-picker-screen h3{font-size:21px}#class-picker-screen .class-card img{height:calc(100% - 30px)}#class-picker-screen .class-card strong{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.class-menu-trigger,.journey-welcome,.journey-class-picker{animation:none}#class-picker-screen .class-card{transition:none}}
+
+/* Keep playback settings to mode, speed and a single speaker. */
+.settings-audio{display:flex;flex-direction:column;align-items:center;gap:9px;padding:20px 0 5px}
+.journey-stage .life-game .settings-panel .settings-audio #game-sound{width:46px;min-width:46px;height:46px;min-height:46px;padding:10px;border:1px solid #d0d5c6;border-radius:50%;background:transparent;color:#586451}
+.journey-stage .life-game .settings-panel .settings-audio #game-sound:hover{background:#e8eadf}
+.settings-audio #game-sound svg{width:24px;height:24px}
+.settings-bgm-caption{font:12px/1.7 var(--sans,Arial,sans-serif);color:#78806f;margin:0;text-align:center}
+.settings-bgm-caption output{color:#586451}
+.journey-stage .life-game .game-tools>.game-pause-icon{display:inline-flex;align-items:center;justify-content:center;width:32px;min-width:32px;min-height:36px;padding:0;border:0;background:none;color:#586451;font-size:0;border-radius:0;box-shadow:none;cursor:pointer}
+.game-pause-icon:before{content:'';display:block;width:10px;height:14px;border-inline:3px solid currentColor}
+.game-pause-icon[aria-pressed=true]:before{width:0;height:0;border:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:11px solid currentColor}
+.game-pause-icon:disabled{opacity:.35;cursor:default}
+@media(max-width:760px){.journey-stage .life-game .game-toolbar .game-tools{gap:10px}.journey-stage .life-game .game-tools>.game-pause-icon{min-width:25px;width:25px}}

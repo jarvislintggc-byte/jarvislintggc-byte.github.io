@@ -17,10 +17,13 @@ body{position:relative;isolation:isolate}
 .intro-symbol-caption{position:absolute;bottom:27%;left:0;right:0;text-align:center;font-size:9.8px;letter-spacing:3px;opacity:.55;padding-left:8px}
 .intro-kicker{font-size:11.2px;letter-spacing:3.5px;margin-top:23px;color:#777771}
 .intro-screen h1{font-family:var(--serif);font-size:clamp(47px,7vw,98px);font-weight:500;line-height:1.08;letter-spacing:-4.5px;margin:17px 0 16px;color:#252522;text-wrap:balance}
-.intro-screen h1 em{font-weight:500}
+.intro-screen h1 .intro-name{font-family:'Manrope',var(--sans);font-style:normal;font-size:.94em;font-weight:500;letter-spacing:-.065em}
 .intro-subtitle{font-size:26px;letter-spacing:.2px;line-height:1.8;color:#777771}
-.intro-enter{display:inline-flex;gap:20px;align-items:center;margin-top:30px;border-bottom:1px solid #a2a29a;font-size:22px;padding:9px 0 10px;color:#45453f;transition:gap .2s}
-.intro-enter:hover{gap:29px}.intro-enter-arrow{font-size:19px;line-height:1}
+.intro-scroll{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:48px;color:#65655e;font-size:12px;letter-spacing:1.8px;line-height:1.5;pointer-events:none;user-select:none}
+.intro-scroll-track{position:relative;display:block;width:32px;height:56px;overflow:visible}
+.intro-scroll-arrow{position:absolute;top:3px;left:50%;width:3px;height:26px;border-radius:3px;background:#55554e;transform-origin:50% 65%;animation:intro-scroll-down 2.6s ease-in-out infinite}
+.intro-scroll-arrow:after{content:'';position:absolute;bottom:0;left:-4px;width:11px;height:11px;border-right:3px solid currentColor;border-bottom:3px solid currentColor;border-radius:2px;transform:rotate(45deg);color:#55554e}
+@keyframes intro-scroll-down{0%,70%,100%{transform:translate(-50%,0) rotate(-4deg)}24%{transform:translate(-50%,15px) rotate(4deg) scale(1.06,.94)}39%{transform:translate(-50%,7px) rotate(-3deg) scale(.98,1.04)}53%{transform:translate(-50%,18px) rotate(2deg) scale(1.03,.97)}}
 
 
 
@@ -33,7 +36,7 @@ body{position:relative;isolation:isolate}
 .hero-headline em{color:inherit;font-weight:500}
 @media(max-width:1050px){.hero-headline{font-size:61px;letter-spacing:-3px}}
 
-@media(max-width:760px){.intro-screen{padding:23px 24px 22px}.intro-topline{font-size:9.8px;letter-spacing:1.2px}.intro-center{padding:27px 0 35px}.intro-screen h1{font-size:clamp(44px,10.5vw,70px);letter-spacing:-2.5px;margin-top:16px}.intro-kicker{font-size:9.8px;letter-spacing:2.6px;margin-top:25px}.intro-subtitle{font-size:22px}.intro-enter{margin-top:24px;font-size:20px}.hero-headline{font-size:clamp(54px,11vw,78px);letter-spacing:-3.2px;margin-top:21px}}
+@media(max-width:760px){.intro-screen{padding:23px 24px 22px}.intro-topline{font-size:9.8px;letter-spacing:1.2px}.intro-center{padding:27px 0 35px}.intro-screen h1{font-size:clamp(44px,10.5vw,70px);letter-spacing:-2.5px;margin-top:16px}.intro-kicker{font-size:9.8px;letter-spacing:2.6px;margin-top:25px}.intro-subtitle{font-size:22px}.intro-scroll{margin-top:44px;font-size:11px}.hero-headline{font-size:clamp(54px,11vw,78px);letter-spacing:-3.2px;margin-top:21px}}
 @media(max-width:380px){.intro-screen{padding-inline:20px}}
-@media(max-height:600px) and (min-width:761px){.intro-screen{padding-block:17px}.intro-center{padding:12px 0}.intro-symbol{width:130px}.intro-initials{font-size:66px}.intro-kicker{margin-top:12px}.intro-screen h1{font-size:60px;margin:10px 0}.intro-enter{margin-top:15px}.intro-subtitle{font-size:22px}}
-@media(prefers-reduced-motion:reduce){.intro-enter{transition:none}}
+@media(max-height:600px) and (min-width:761px){.intro-screen{padding-block:17px}.intro-center{padding:12px 0}.intro-symbol{width:130px}.intro-initials{font-size:66px}.intro-kicker{margin-top:12px}.intro-screen h1{font-size:60px;margin:10px 0}.intro-scroll{margin-top:25px;gap:8px}.intro-scroll-track{height:48px}.intro-subtitle{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.intro-scroll-arrow{animation:none;transform:translate(-50%,10px);opacity:1}}

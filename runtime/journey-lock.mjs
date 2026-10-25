@@ -4,7 +4,7 @@
 export function createGameLock(doc=document,win=window){
  let locked=false;
  const scrollKeys=new Set(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','PageUp','PageDown','Home','End']);
- const internal=target=>Boolean(target?.closest?.('#site-menu,#hud-panel,.game-bottom,#dialogue-copy'));
+ const internal=target=>Boolean(target?.closest?.('#site-menu,#hud-panel,.game-bottom,#dialogue-copy,#journey-welcome,#journey-class-picker'));
  const block=event=>{if(locked&&!internal(event.target))event.preventDefault();};
  doc.addEventListener('wheel',block,{passive:false});doc.addEventListener('touchmove',block,{passive:false});
  return {get active(){return locked;},set(value){locked=Boolean(value);},preventKey(event){if(locked&&scrollKeys.has(event.key)&&!internal(event.target))event.preventDefault();}};

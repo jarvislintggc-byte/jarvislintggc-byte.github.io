@@ -61,11 +61,11 @@ export function createMusicPlayer({makeAudio=()=>new Audio(),now=()=>performance
 export function initJourneyMusic({muted=false,translate=text=>text}={}){
   const control=document.getElementById('journey-music-control'),intro=document.querySelector('#intro'),section=document.getElementById('journey-game');
   if(!control||!intro||!section)return null;
-  let state={phase:'ready',chapter:0,paused:false},eligible=false,raf=0,trackOverride=null;
-  const choice=document.getElementById('settings-bgm-select'),currentTrack=document.getElementById('settings-bgm-current');
+  let state={phase:'ready',chapter:0,paused:false},eligible=false,raf=0,revealed=false;
+  const currentTrack=document.getElementById('settings-bgm-current');
   const menu=document.querySelector('#site-menu');
   function updateLabel(status){
-    control.hidden=!eligible;
+    control.hidden=!eligible||revealed;
     control.textContent=translate(status.masterMuted||status.muted?'BGM · 關':status.error?'BGM · 點擊重試':status.blocked?'BGM · 點擊播放':`BGM · ${bgmTracks[status.wanted]?.name||'開'}`);
     control.setAttribute('aria-pressed',String(status.playing));
     control.setAttribute('aria-label',translate(status.masterMuted?'請先開啟喇叭，再播放背景音樂':status.playing?'關閉背景音樂':status.error?'重試背景音樂':'播放背景音樂'));
@@ -78,15 +78,14 @@ export function initJourneyMusic({muted=false,translate=text=>text}={}){
   function sync(){
     const introBox=intro.getBoundingClientRect(),gameBox=section.getBoundingClientRect();
     eligible=-introBox.top>=introBox.height*.3&&gameBox.bottom>0;
-    const key=eligible?(trackOverride||(state.phase==='ready'?'login':trackForChapter(state.chapter+1))):null;
+    const key=eligible?(state.phase==='ready'?'login':trackForChapter(state.chapter+1)):null;
     player.suspend(document.hidden||Boolean(menu?.open)||state.paused);
     player.select(key);
-    control.hidden=!eligible;
+    control.hidden=!eligible||revealed;
   }
   document.addEventListener('journeystate',event=>{state=event.detail;sync();});
   document.addEventListener('journeyreveal',event=>{
-    const tools=document.getElementById('settings-bgm-control')||document.querySelector('.game-tools');
-    if(event.detail.ready&&tools)tools.append(control);else document.body.append(control);
+    revealed=event.detail.ready;control.hidden=!eligible||revealed;
   });
   window.addEventListener('scroll',sync,{passive:true});window.addEventListener('resize',sync);
   document.addEventListener('visibilitychange',sync);
@@ -97,7 +96,6 @@ export function initJourneyMusic({muted=false,translate=text=>text}={}){
     if(status.masterMuted)return;
     if(!status.playing)player.mute(false);else player.mute(true);
   });
-  choice?.addEventListener('change',()=>{trackOverride=Object.hasOwn(bgmTracks,choice.value)?choice.value:null;sync();player.gesture();});
   if(menu)new MutationObserver(sync).observe(menu,{attributes:true,attributeFilter:['open']});
   function frame(time){player.tick(time);raf=requestAnimationFrame(frame);}
   window.addEventListener('pagehide',()=>{cancelAnimationFrame(raf);player.suspend(true);});

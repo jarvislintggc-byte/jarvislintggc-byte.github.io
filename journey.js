@@ -43,6 +43,7 @@ import {npcArt} from './journey-npc-art.mjs';
 import {setStyles} from './journey-render.mjs';
 import {enemyBodyTarget} from './journey-skill-placement.mjs';
 import {portalSurface,portalFrameGeometry} from './journey-portal.mjs';
+import {createJourneyOverlays} from './journey-overlays.mjs';
 
 const root=document.querySelector('#life-game');
 if (root) {
@@ -119,11 +120,10 @@ if (root) {
     const image=document.createElement('img');image.src=asset(classArt[job.id].file);image.alt='';image.width=classArt[job.id].width;image.height=classArt[job.id].height;image.draggable=false;image.loading='lazy';image.decoding='async';
     const name=document.createElement('strong');name.textContent=job.name;
     label.append(input,image,name);label.style.setProperty('--class-color',job.color);$('class-choices').append(label);
-    const option=document.createElement('option');option.value=job.id;option.textContent=job.name;$('class-select').append(option);
   });
   function selectClass(classId){if(!Object.hasOwn(jobById,classId))return;dispatch({type:'SELECT_CLASS',classId});cue('page',true);}
   $('class-choices').addEventListener('change',event=>selectClass(event.target.value));
-  $('class-select').addEventListener('change',event=>selectClass(event.target.value));
+  const overlays=createJourneyOverlays({jobs,translate:t,onSelect:selectClass,onPause(reason,value){clearInput();setPause(reason,value);},onContinue(){if(state.phase==='ready')dispatch('ADVANCE');},onFocus:focusGame});
   chapters.forEach((chapter,index)=>{
     const item=document.createElement('li'),button=document.createElement('button');button.type='button';button.textContent=String(chapter.id).padStart(2,'0');button.disabled=true;
     button.setAttribute('aria-label',`重看第 ${chapter.id} 章：${chapter.title}`);
@@ -160,7 +160,7 @@ if (root) {
     soundGeneration++;combatSound.stop();levelSound.stop();for(const voice of uiVoices){try{voice.stop();}catch{}}uiVoices.clear();
   }
   function setSound(enabled,error=''){
-    sound=enabled;updateSoundButton(error);music?.masterMute(!sound);
+    sound=enabled;updateSoundButton(error);if(sound&&music?.status().muted)music.mute(false);music?.masterMute(!sound);
     if(!sound){stopEffects();audio?.suspend().catch(()=>{});}
   }
   function cue(kind,gesture=false){
@@ -327,12 +327,12 @@ if (root) {
     root.style.setProperty('--story-rate',String(playbackRate()));root.dataset.playbackRate=String(playbackRate());
     root.dataset.language=language;root.dataset.presentation=phone.matches?'story':'interactive';root.dataset.classId=state.classId;root.dataset.pendingClass=state.pendingClassId||'';petView.show(state.classId);
     const selected=state.pendingClassId||state.classId,active=!['ready','complete'].includes(state.phase);
-    $('class-rail').hidden=phone.matches||!active;$('mobile-class').hidden=!phone.matches||!active;$('classic-hud').hidden=phone.matches;
+    $('class-picker-toggle').hidden=!active;$('classic-hud').hidden=phone.matches;
     $('game-controls').hidden=phone.matches;$('story-controls-help').hidden=!phone.matches;root.setAttribute('aria-describedby',phone.matches?'story-controls-help':'game-controls');
     for(const [index,card]of [...$('class-choices').children].filter(card=>card.tagName.toLowerCase()==='label').entries()){
       card.children[0].setAttribute('aria-label',t(jobs[index].name));card.children[0].checked=jobs[index].id===selected;card.dataset.selected=String(jobs[index].id===selected);setText(card.children[2],jobs[index].name);
     }
-    [...$('class-select').children].forEach(option=>setText(option,jobById[option.value].name));$('class-select').value=selected;
+    overlays.render(selected);
     $('story-speed').hidden=false;$('settings-speed-row').hidden=false;$('settings-mode-row').hidden=phone.matches;
     for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]]){$(id).setAttribute('aria-pressed',String(rate===playbackRate()));$(id).disabled=state.mode!=='watch';}
     $('mode-manual').setAttribute('aria-pressed',String(state.mode==='manual'));$('mode-watch').setAttribute('aria-pressed',String(state.mode==='watch'));
@@ -341,23 +341,23 @@ if (root) {
     for(const id of ['player-left','player-right','player-up','player-down','player-jump'])$(id).disabled=state.paused||!canMovePlayer(state);
     boss.disabled=state.mode!=='manual'||state.paused||!['reading','encounter','battle'].includes(state.phase)||state.phase==='battle'&&state.castReturn!=='encounter';
     root.style.setProperty('--job-color',job?.color||'#f1d78f');root.classList.toggle('is-paused',state.paused);
-    pause.disabled=!active;setText(pause,state.paused?'繼續':'暫停');pause.setAttribute('aria-pressed',String(state.paused));$('game-pause-cover').hidden=!state.paused||reasons.has('hud');
-    if(chapterShown!==state.chapter){chapterShown=state.chapter;preloadNpcs(state.chapter);environmentView.show(mapEnvironment[chapter.map]);mapObjectView.show(mapObjects[chapter.map]);scene.src=asset(chapter.map);scene.alt=chapter.alt;root.dataset.boss=chapter.boss;setText($('map-region'),chapter.region);setText($('map-title'),chapter.title);setText($('chapter-badge'),`CHAPTER ${String(chapter.id).padStart(2,'0')} / ${chapters.length}`);preloadScene(state.chapter);preloadScene(state.chapter+1);$('scene-sky').style.backgroundImage=chapter.background?`url("${asset(chapter.background)}")`:'none';root.dataset.chapter=String(chapter.id);setText($('monster-name'),monster().name);boss.setAttribute('aria-label',`攻擊${monster().name}，象徵${chapter.symbol}`);}
-    scene.alt=t(chapter.alt);setText($('map-region'),chapter.region);setText($('map-title'),chapter.title);setText($('monster-name'),monster().name);boss.setAttribute('aria-label',t(`攻擊${monster().name}，象徵${chapter.symbol}`));
+    pause.disabled=!active;setText(pause,state.paused?'繼續':'暫停');pause.setAttribute('aria-pressed',String(state.paused));pause.setAttribute('aria-label',t(state.paused?'繼續':'暫停'));$('game-pause-cover').hidden=!state.paused||['hud','welcome','class-picker'].some(reason=>reasons.has(reason));
+    if(chapterShown!==state.chapter){chapterShown=state.chapter;preloadNpcs(state.chapter);environmentView.show(mapEnvironment[chapter.map]);mapObjectView.show(mapObjects[chapter.map]);scene.src=asset(chapter.map);scene.alt=chapter.alt;root.dataset.boss=chapter.boss;setText($('map-region'),chapter.region);setText($('map-title'),chapter.title);setText($('chapter-badge'),`CHAPTER ${String(chapter.id).padStart(2,'0')} / ${chapters.length}`);preloadScene(state.chapter);preloadScene(state.chapter+1);$('scene-sky').style.backgroundImage=chapter.background?`url("${asset(chapter.background)}")`:'none';root.dataset.chapter=String(chapter.id);setText($('monster-name'),monster().name);boss.setAttribute('aria-label',`攻擊${monster().name}`);}
+    scene.alt=t(chapter.alt);setText($('map-region'),chapter.region);setText($('map-title'),chapter.title);setText($('monster-name'),monster().name);boss.setAttribute('aria-label',t(`攻擊${monster().name}`));
     enemyView.render(monster(),enemy);positionScene();positionActor();if(state.phase==='battle')updateCast();else{boss.style.setProperty('--boss-recoil','0px');boss.style.setProperty('--impact-brightness','1');scene.parentElement.style.setProperty('--impact-shake','0px');skillView.hide();updateSprite(state.phase==='walking'?'walk':'idle');}
     cover.hidden=state.phase!=='complete';$('class-screen').hidden=true;$('complete-screen').hidden=state.phase!=='complete';next.hidden=state.phase==='ready';setText($('complete-growth'),'謝謝你走過我的故事。下一章還在繼續，也希望有機會和你聊聊，我能為你的團隊做什麼。');
     setText($('selection-note'),state.pendingClassId?'本次技能施放結束後切換職業，保留進度。':`${job.name} · ${t('更換職業會保留旅程進度。')}`);
     setText($('game-hud-level'),`Lv.${growth.level} ${growth.title}`);setText($('game-hud-skill'),growth.skill);setText($('skill-count'),`${growth.skillStage} / ${job?.skills.length||5}`);setText($('game-hud-gear'),growth.gear);
     $('game-hud-skill').title=t(job?`已學會：${job.skills.slice(0,growth.skillStage).join('、')||'普通攻擊'}。按 A 使用最新學會的技能攻擊。`:'普通攻擊');
     const icon=state.completed?gearIcons[`${state.classId}-${state.completed}`]:null;$('game-hud-gear-icon').hidden=!icon;if(icon)$('game-hud-gear-icon').src=asset(icon.file);
-    const rewarding=state.phase==='reward';$('reward-banner').hidden=phone.matches||state.phase==='ready';$('game-loot').hidden=!rewarding||!state.rewardNew||state.rewardBeat!==0;
+    const rewarding=state.phase==='reward';$('reward-banner').hidden=state.phase==='ready';$('game-loot').hidden=!rewarding||!state.rewardNew||state.rewardBeat!==0;
     if(rewarding)$('game-loot').style.left=`${state.lootX}%`;
     setText($('reward-heading'),rewarding&&state.rewardNew&&state.rewardBeat===1?'LEVEL UP':'CHARACTER');
     if(rewarding)$('loot-image').src=asset(gearIcons[`${state.classId}-${state.chapter+1}`].file);
     updateLevelUp();updateDeath();
     $('game-death-dialog').hidden=state.phase!=='dead';$('game-revive').disabled=state.phase!=='dead'||state.paused||!state.deathLanded;
     setText($('death-message'),state.deathLanded?'在本關復活，繼續這段旅程。':'稍候，墓碑正在落下…');
-    caption.hidden=phone.matches||!['encounter','battle','retiring','portal'].includes(state.phase);setText(caption,state.phase==='encounter'?'靠近阻力，按 A 攻擊':state.phase==='portal'?(chapter.outcome==='not-hired'?'最終未錄取 / 故事繼續':chapter.outcome==='failed'?'這次創業沒有成功 / 故事繼續':chapter.outcome==='ongoing'?'故事走到這裡 / 下一步仍在進行':'傳點開啟，走到旁邊按 E'):(state.mode==='manual'&&!state.castSkill?'普通攻擊':growth.skill));
+    caption.hidden=phone.matches||!['encounter','battle','retiring','portal'].includes(state.phase);setText(caption,state.phase==='encounter'?`靠近${monster().name}，按 A 攻擊`:state.phase==='portal'?(chapter.outcome==='not-hired'?'最終未錄取 / 故事繼續':chapter.outcome==='failed'?'這次創業沒有成功 / 故事繼續':chapter.outcome==='ongoing'?'故事走到這裡 / 下一步仍在進行':'傳點開啟，走到旁邊按 E'):(state.mode==='manual'&&!state.castSkill?'普通攻擊':growth.skill));
     $('enemy-health').hidden=state.mode!=='manual'||!['encounter','battle'].includes(state.phase)||state.bossHp<=0||state.phase==='battle'&&state.castReturn!=='encounter';
     setText($('enemy-health-label'),`${monster().name} ${state.bossHp} / ${state.bossMaxHp}`);$('enemy-health-fill').style.width=`${state.bossHp/state.bossMaxHp*100}%`;
     if(state.mode==='manual'&&rewarding&&state.rewardNew&&state.rewardBeat===0){caption.hidden=false;setText(caption,'寵物正在取回裝備');}
@@ -451,7 +451,7 @@ if (root) {
     }else if(kind==='stats'){
       row(`Jarvis · Lv.${growth.level} ${growth.title}`);row(`HP ${$('player-hp-text').textContent}　MP ${$('player-mp-text').textContent}`);row(`章節進度 ${state.completed} / ${chapters.length}　EXP ${$('player-exp-text').textContent}`);
     }else if(kind==='keys'){
-      ['← →：左右移動','Space / W：跳躍；空中再按一次二段跳','↑／↓：靠近繩梯後攀爬；Space 跳離','↓＋Space：從平台往下跳','二段跳：五職業從初心者起常駐，落地恢復，不消耗 MP','↓：地面按住趴下，放開站起','A：攻擊（自動使用最新學會的技能）','E：互動／靠近傳點後進入','Enter：推進對話','觸控：跳躍按兩次二段跳、按住趴下；點擊阻力攻擊、藍光傳點進入'].forEach(text=>row(text));
+      ['← →：左右移動','Space / W：跳躍；空中再按一次二段跳','↑／↓：靠近繩梯後攀爬；Space 跳離','↓＋Space：從平台往下跳','二段跳：五職業從初心者起常駐，落地恢復，不消耗 MP','↓：地面按住趴下，放開站起','A：攻擊（自動使用最新學會的技能）','E：互動／靠近傳點後進入','Enter：推進對話','觸控：跳躍按兩次二段跳、按住趴下；點擊怪物攻擊、藍光傳點進入'].forEach(text=>row(text));
     }else{
       chapters.forEach((chapter,index)=>{const button=document.createElement('button');button.type='button';button.textContent=t(`${String(chapter.id).padStart(2,'0')}　${chapter.title}`);button.disabled=index>=state.completed||!['reading','encounter','portal','complete'].includes(state.phase);button.addEventListener('click',()=>{closeHud();dispatch({type:'REPLAY',chapter:index});});body.append(button);});
     }
@@ -471,10 +471,11 @@ if (root) {
   const seenKeys=new WeakSet();
   function handleKey(event){
     if(seenKeys.has(event))return;seenKeys.add(event);
+    if(overlays.active())return;
     if(menu?.open)return;
     if(event.currentTarget&&event.currentTarget!==root&&!gameLock.active)return;
     if(isEditingText(event.target)||event.target?.closest?.('#journey-settings'))return;
-    if(event.target?.closest?.('#journey-language')&&['Enter',' '].includes(event.key))return;
+    if(event.target?.closest?.('#journey-language,#game-pause')&&['Enter',' '].includes(event.key))return;
     if(event.target?.closest?.('#class-choices')&&['Enter',' ','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;
     gameLock.preventKey(event);
     if(state.phase==='ready'&&event.target?.closest?.('#class-screen'))return;
@@ -505,7 +506,7 @@ if (root) {
   motion.addEventListener('change',()=>{lastPortal=-1;updatePortal();positionBubble();});window.addEventListener('resize',()=>{lastPortal=-1;updatePortal();positionBubble();centerChapter();});
   new ResizeObserver(()=>{bubbleWidth=dialogue.offsetWidth;bubbleHeight=dialogue.offsetHeight;positionBubble();}).observe(dialogue);
   window.addEventListener('pagehide',()=>{gameLock.set(false);setPause('pagehide',true);stopEffects();audio?.suspend();});window.addEventListener('pageshow',event=>{if(event.persisted){gameLock.set($('journey-stage').dataset.revealed==='true');setPause('pagehide',false);}});
-  document.addEventListener('journeyreveal',event=>{gameLock.set(event.detail.ready);setPause('intro',!event.detail.ready);if(event.detail.ready&&state.phase==='ready')dispatch('ADVANCE');});
+  document.addEventListener('journeyreveal',event=>{gameLock.set(event.detail.ready);setPause('intro',!event.detail.ready);if(event.detail.ready&&!overlays.enter()&&state.phase==='ready')dispatch('ADVANCE');});
   function changeLanguage(nextLanguage){
     if(language===nextLanguage)return;
     const reading=['reading','portal'].includes(state.phase),oldDuration=readingDuration(spokenLine());

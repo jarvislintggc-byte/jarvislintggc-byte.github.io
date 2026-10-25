@@ -1,0 +1,25 @@
+import {createClassCarousel} from './journey-carousel.mjs';
+
+// Native dialogs contain focus and isolate game input; closing releases only
+// their own pause reason, preserving user/offscreen/visibility pauses.
+export function createJourneyOverlays({doc=document,jobs,translate,onSelect,onPause,onContinue,onFocus}){
+ const welcome=doc.getElementById('journey-welcome'),picker=doc.getElementById('journey-class-picker');
+ const trigger=doc.getElementById('class-picker-toggle');
+ let seen=false,selected=null,carousel;
+ const supported=typeof welcome?.showModal==='function'&&typeof picker?.showModal==='function';
+ const active=()=>Boolean(welcome?.open||picker?.open);
+ if(!supported)return {enter:()=>false,active,render(){}};
+ const open=(dialog,reason)=>{if(active())return;onPause(reason,true);dialog.showModal();};
+ carousel=createClassCarousel({host:doc.getElementById('class-carousel'),choices:doc.getElementById('class-choices'),dots:doc.getElementById('class-dots'),counter:doc.getElementById('class-counter'),jobs,onSelect,translate});
+ trigger.addEventListener('click',()=>{open(picker,'class-picker');carousel.render(selected);});
+ doc.getElementById('class-picker-close').addEventListener('click',()=>picker.close());
+ doc.getElementById('class-picker-done').addEventListener('click',()=>picker.close());
+ doc.getElementById('welcome-continue').addEventListener('click',()=>welcome.close());
+ welcome.addEventListener('close',()=>{onPause('welcome',false);onContinue();onFocus();});
+ picker.addEventListener('close',()=>{onPause('class-picker',false);trigger.focus({preventScroll:true});});
+ return {
+  active,
+  enter(){if(seen)return welcome.open;seen=true;open(welcome,'welcome');return true;},
+  render(classId){selected=classId;if(picker.open)carousel.render(classId);}
+ };
+}
