@@ -310,7 +310,7 @@ if (root) {
     if(narration.reviewing){setText($('dialogue-text'),narration.current.text);setText($('dialogue-counter'),`${t('回看')} · ${narration.index+1} / ${narration.size}`);}
     else{setText($('dialogue-text'),storyLine(state,chapter));}
     dialogue.hidden=!narration.reviewing&&!speechVisible(state,chapter,elapsed,spokenLine());actor.dataset.expression=dialogueExpression(state,chapter,elapsed,spokenLine());positionBubble();
-    const narrationHost=phone.matches?scene.parentElement:$('classic-menu');if($('narration-controls').parentElement!==narrationHost)narrationHost.append($('narration-controls'));
+    const narrationHost=phone.matches?scene.parentElement:$('classic-menu');if($('narration-controls').parentElement!==narrationHost){if(phone.matches)narrationHost.append($('narration-controls'));else narrationHost.prepend($('narration-controls'));}
     $('narration-controls').hidden=false;
     $('narration-previous').disabled=!narration.canBack||['ready','complete','dead'].includes(state.phase);
     $('narration-next').disabled=!narration.reviewing&&(state.phase!=='reading'||state.paused);
