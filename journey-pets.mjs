@@ -12,7 +12,7 @@ export const petTeams=Object.freeze({
  archer:petSets.luna6,pirate:petSets.demonSlayer
 });
 export const petsFor=id=>(Object.hasOwn(petTeams,id)?petTeams[id]:[]).map(id=>pets[id]);
-export function newPetParty(id,x=25,y=0,facing=1){
+export function newPetParty(id,x=10,y=0,facing=1){
  return petsFor(id).map((pet,index)=>({id:pet.id,x:Math.max(3,Math.min(96,x-facing*(index+1)*5)),y,facing,moving:false,fetchTime:0}));
 }
 // A pet travels directly to landed loot, independent of the player's platform.
@@ -41,7 +41,7 @@ export function createPetView(host,{asset,mobile}){
     image.alt='';image.draggable=false;image.decoding='async';anchor.append(image);host.append(anchor);entries.push({anchor,image,pet});
    }
   },
-  reset(x=25,y=0){party=newPetParty(classId,x,y);time=0;wasClimbing=false;},
+  reset(x=10,y=0){party=newPetParty(classId,x,y);time=0;wasClimbing=false;},
   tick(delta,player,state,width,reduced=false){
    if(player.climbing){wasClimbing=true;host.hidden=true;return {party,collected:false};}
    if(wasClimbing){party=newPetParty(classId,player.x,player.y,player.facing);wasClimbing=false;}

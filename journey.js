@@ -7,6 +7,7 @@ import { createEnvironmentView } from './journey-environment.mjs';
 import { tombstone } from './journey-death-art.mjs';
 import { createDeathView, tombstoneDuration } from './journey-death.mjs';
 import { gameKey, isEditingText } from './journey-input.mjs';
+import {createTouchControls} from './journey-touch.mjs';
 import { classArt } from './journey-class-art.mjs';
 import { chapterMonsters, monsters } from './journey-monsters.mjs';
 import { hurtSprites } from './journey-hurt.mjs';
@@ -14,21 +15,22 @@ import { newEnemy, strikeEnemy, stepEnemy, enemyAttackReaches, receiveHit, attac
 import { createEnemyView } from './journey-enemy-view.mjs';
 import { createGameLock } from './journey-lock.mjs';
 import { chapters } from './journey-data.mjs';
-import { initialState, transition, canUsePortal, canCollectLoot, projectScene, characterPosition } from './journey-engine.mjs';
+import { initialState, transition, canAttack, canUsePortal, canCollectLoot, projectScene, characterPosition } from './journey-engine.mjs';
 import { jobs, jobById, growthFor, skillRankFor } from './journey-growth.mjs';
 import { sprites, portalFrames, gearIcons } from './journey-sprites.mjs';
 import { castSprites } from './journey-casts.mjs';
 import { skillAnimations } from './journey-skills.mjs';
 import { createSkillView } from './journey-animation.mjs';
-import { combatFrame, combatPlan, impactTimes } from './journey-combat.mjs';
+import { combatFrame, combatPlan, impactTimes, watchImpactTimes } from './journey-combat.mjs';
 import {ruleFor,splitDamage} from './journey-skill-rules.mjs';
 import {createNarrationReview} from './journey-narration.mjs';
 import {paceAbility} from './journey-skill-timing.mjs';
-import {projectileTarget} from './journey-hitbox.mjs';
+import {projectileTarget,nativeAttackBox} from './journey-hitbox.mjs';
 import { initJourneyScroll } from './journey-scroll.mjs';
 import { initJourneyMusic } from './journey-music.mjs';
 import { levelUp } from './journey-levelup.mjs';
-import { createLevelUpView, createLevelUpSound } from './journey-levelup-view.mjs';
+import { createLevelUpView, createLevelUpSound, createRewardSound } from './journey-levelup-view.mjs';
+import { combatAudio } from './journey-sfx-data.mjs';
 import { createCombatSound } from './journey-sfx.mjs';
 import { chatBubble } from './journey-bubble.mjs';
 import { storyLine, readingDuration, autoAdvanceDue, bubbleGeometry, speechVisible, dialogueExpression, isClosingSpeech } from './journey-story.mjs';
@@ -46,7 +48,7 @@ import {npcScenes} from './journey-npc-scenes.mjs';
 import {npcArt} from './journey-npc-art.mjs';
 import {setStyles} from './journey-render.mjs';
 import {enemyBodyTarget} from './journey-skill-placement.mjs';
-import {portalSurface,portalFrameGeometry} from './journey-portal.mjs';
+import {portalFrameGeometry} from './journey-portal.mjs';
 import {createJourneyOverlays} from './journey-overlays.mjs';
 
 const root=document.querySelector('#life-game');
@@ -64,13 +66,13 @@ if (root) {
   const timed=['battle','retiring','reward','walking','transition','dead'], reasons=new Set(),preloaded=new Set();
   const motion=matchMedia('(prefers-reduced-motion: reduce)');
   const phone=matchMedia('(max-width:760px), (hover:none) and (pointer:coarse) and (max-width:1024px)');
-  let state=initialState(phone.matches?'watch':'manual'),player=newPlayer(),castAbility=null,history=[],storyRun=0,chapterShown=-1,elapsed=0,combatTime=0,lastTime=0,animationTime=0,raf=0,lastInput=-Infinity,lastPortal=-1,lastDialogue='',lastVitals='',navigationChapter=-1,sound=true,audio=null,music=null,soundGeneration=0,autoplay=true,watchSpeed=1;
-  let enemy=newEnemy(),watchHits=0;
+  let state=initialState('manual'),player=newPlayer(),castAbility=null,history=[],storyRun=0,chapterShown=-1,elapsed=0,combatTime=0,lastTime=0,animationTime=0,raf=0,lastInput=-Infinity,lastPortal=-1,lastDialogue='',lastVitals='',navigationChapter=-1,sound=true,audio=null,music=null,soundGeneration=0,autoplay=true,watchSpeed=1;
+  let enemy=newEnemy(),watchHits=0,watchCastIndex=-1;
   const attackBuffer=createAttackBuffer(),gameLock=createGameLock();
   const monster=()=>monsters[chapterMonsters[state.chapter]];
   const enemyView=createEnemyView(boss,$('monster-sprite'),$('monster-effects'),{asset,mobile:()=>viewport.mobile});
   const input={left:false,right:false,up:false,upPressed:false,down:false,jump:false,attack:false};
-  let npcFloor=null;
+  let npcFloor=null,npcProtectedBounds=[];
   let terrain=flatTerrain(1),terrainKey='',cameraPan=0,portalY=0,portalX=88,sceneProjection=null,bubbleWidth=0,bubbleHeight=0;
   const viewport={width:0,height:0,mobile:phone.matches};
   const mobilityView=createMobilityView($('maple-mobility-effects'),{asset,mobile:()=>viewport.mobile});
@@ -78,6 +80,7 @@ if (root) {
   const levelView=createLevelUpView($('levelup-effect'),$('levelup-frame'),{asset,mobile:()=>viewport.mobile});
   const deathView=createDeathView($('game-tombstone'),$('tombstone-frame'),{asset,height:()=>viewport.height,mobile:()=>viewport.mobile});
   const levelSound=createLevelUpSound({url:asset(levelUp.sound)});
+  const pickupSound=createRewardSound({url:asset(combatAudio.pickup)});
   const combatSound=createCombatSound({asset}),uiVoices=new Set();
   const playbackRate=()=>state.mode==='watch'?watchSpeed:1;
   const abilityCache=new Map();
@@ -87,7 +90,8 @@ if (root) {
     return abilityCache.get(key);
   }
   const currentAbility=()=>abilityFor(state.classId,state.completed);
-  const clearInput=()=>{Object.keys(input).forEach(key=>input[key]=false);attackBuffer.clear();};
+  let touchControls=null;
+  const clearInput=()=>{Object.keys(input).forEach(key=>input[key]=false);attackBuffer.clear();touchControls?.reset();};
   function systemHint(text){setText(caption,text);caption.hidden=false;}
   for(const part of ['nw','n','ne','w','c','e','sw','s','se']){
     const tile=document.createElement('span'),piece=chatBubble.pieces[part];
@@ -104,12 +108,12 @@ if (root) {
   function preloadAbility(ability){if(!ability)return;ability.actorFrames.forEach(frame=>preload(frame.file));ability.tracks.forEach(track=>track.frames.forEach(frame=>preload(frame.file)));}
   function preloadClass(id){
     petsFor(id).forEach(pet=>Object.values(pet.poses).flat().forEach(frame=>preload(frame.file)));
-    if(!phone.matches)doubleJumpEffects[id].frames.forEach(frame=>preload(frame.file));
+    doubleJumpEffects[id].frames.forEach(frame=>preload(frame.file));
     for(const stage of new Set([Math.max(1,state.completed),Math.min(chapters.length,state.completed+1)])){
-      if(!phone.matches)Object.values(climbSprites[`${id}-${stage}`]).flat().forEach(frame=>preload(frame.file));
+      Object.values(climbSprites[`${id}-${stage}`]).flat().forEach(frame=>preload(frame.file));
       for(const pose of ['idle','walk','walkAlt','attack'])preload(sprites[`${id}-${stage}-${pose}`].file);
       for(const [key,entry]of Object.entries(expressionSprites))if(key.startsWith(`${id}-${stage}-`))preload(entry.file);
-      if(!phone.matches){preload(proneSprites[`${id}-${stage}`].file);preload(hurtSprites[`${id}-${stage}`].file);preload(jumpSprites[`${id}-${stage}`].file);}preload(gearIcons[`${id}-${stage}`].file);preloadAbility(abilityFor(id,stage));
+      {preload(proneSprites[`${id}-${stage}`].file);preload(hurtSprites[`${id}-${stage}`].file);preload(jumpSprites[`${id}-${stage}`].file);}preload(gearIcons[`${id}-${stage}`].file);preloadAbility(abilityFor(id,stage));
     }
   }
   function preloadScene(index){const chapter=chapters[index];if(!chapter)return;preload(chapter.map);for(const [key,entry]of Object.entries(expressionSprites)){const stage=index===0?'beginner':`${state.classId}-${index}`;if(key.startsWith(stage+'-')||state.completed&&key.startsWith(`${state.classId}-${state.completed}-`))preload(entry.file);}mapObjects[chapter.map]?.entries.forEach(entry=>entry.frames.forEach(frame=>preload(frame.file)));mapEnvironment[chapter.map]?.layers.forEach(layer=>layer.frames.forEach(frame=>preload(frame.file)));if(chapter.background)preload(chapter.background);const mob=monsters[chapterMonsters[index]];Object.values(mob.poses).flat().forEach(f=>preload(f.file));mob.hitFrames.forEach(f=>preload(f.file));}
@@ -118,7 +122,7 @@ if (root) {
   levelUp.frames.forEach(frame=>preload(frame.file));Object.values(tombstone).flat().forEach(frame=>preload(frame.file));
   Object.values(chatBubble.pieces).forEach(piece=>preload(piece.file));
   Object.entries(sprites).filter(([key])=>key.startsWith('beginner-')).forEach(([,entry])=>preload(entry.file));
-  if(!phone.matches){preload(proneSprites.beginner.file);preload(jumpSprites.beginner.file);Object.values(climbSprites.beginner).flat().forEach(frame=>preload(frame.file));}
+  {preload(proneSprites.beginner.file);preload(jumpSprites.beginner.file);Object.values(climbSprites.beginner).flat().forEach(frame=>preload(frame.file));}
   jobs.forEach(job=>{
     const label=document.createElement('label');label.className='class-card';
     const input=document.createElement('input');input.type='radio';input.name='journey-class';input.value=job.id;input.setAttribute('aria-label',job.name);
@@ -143,8 +147,7 @@ if (root) {
       npcFloor=npcPlacement(terrain,{...viewport,chapter:state.chapter,count:npcScenes[state.chapter].length});
     }
     const base=sceneProjection;
-    portalX=npcFloor?.portalX??88;state={...state,portalX};
-    portalY=portalSurface(terrain,viewport.width,portalX);
+    portalX=state.deathX??64;portalY=0;state={...state,portalX,portalY};
     portal.style.left=`${portalX}%`;
     portal.style.bottom=`calc(var(--ground-inset) + ${portalY}px)`;
     cameraPan=state.mode==='manual'?cameraPanFor(player.y,viewport.height,-base.top):0;
@@ -152,17 +155,19 @@ if (root) {
     const c={...base,top:base.top+cameraPan};
     setStyles(scene,{width:`${c.width}px`,height:`${c.height}px`,left:`${c.left}px`,top:`${c.top}px`});
     environmentView.resize({width:viewport.width,height:viewport.height,projection:c});mapObjectView.resize(c);
+    const stageBounds=stage.getBoundingClientRect(),statusBounds=$('reward-banner').getBoundingClientRect();
+    npcProtectedBounds=!$('reward-banner').hidden&&Number.isFinite(statusBounds.left)&&statusBounds.width>0?[{left:statusBounds.left-stageBounds.left-8,right:statusBounds.right-stageBounds.left+8,bottom:stageBounds.bottom-statusBounds.bottom-8,top:stageBounds.bottom-statusBounds.top+8}]:[];
     drawNpcs(0);
   }
   function drawNpcs(delta){
-    npcView.show(state.chapter,npcFloor?.kind);npcView.tick(delta,{state,language,width:viewport.width,height:viewport.height,groundInset:storyGroundInset(viewport.height,viewport.mobile)-cameraPan,mobile:viewport.mobile,reduced:motion.matches,placements:npcFloor?.placements,floor:x=>floorAt(terrain,x)});
+    npcView.show(state.chapter,npcFloor?.kind);npcView.tick(delta,{state,language,width:viewport.width,height:viewport.height,groundInset:storyGroundInset(viewport.height,viewport.mobile)-cameraPan,mobile:viewport.mobile,reduced:motion.matches,protectedBounds:npcProtectedBounds,placements:npcFloor?.placements,floor:x=>floorAt(terrain,x)});
   }
-  new ResizeObserver(()=>positionScene(true)).observe(scene.parentElement);
+  new ResizeObserver(()=>{clearInput();positionScene(true);}).observe(scene.parentElement);
   function updateSoundButton(error=''){
     soundError=error;const button=$('game-sound');button.setAttribute('aria-pressed',String(sound));button.setAttribute('aria-label',t(error?`${error}；${sound?'關閉所有聲音':'開啟所有聲音'}`:sound?'關閉所有聲音':'開啟所有聲音'));button.dataset.error=String(Boolean(error));
   }
   function stopEffects(){
-    soundGeneration++;combatSound.stop();levelSound.stop();for(const voice of uiVoices){try{voice.stop();}catch{}}uiVoices.clear();
+    soundGeneration++;combatSound.stop();levelSound.stop();pickupSound.stop();for(const voice of uiVoices){try{voice.stop();}catch{}}uiVoices.clear();
   }
   function setSound(enabled,error=''){
     sound=enabled;updateSoundButton(error);if(sound&&music?.status().muted)music.mute(false);music?.masterMute(!sound);
@@ -174,10 +179,17 @@ if (root) {
     try{
       audio||=new(window.AudioContext||window.webkitAudioContext)();if(audio.state==='suspended')audio.resume().catch(()=>{});
       const generation=soundGeneration,prepared=levelSound.prepare(audio);
+      const pickupPrepared=pickupSound.prepare(audio);
+      pickupPrepared.catch(()=>{updateSoundButton('拾取音效載入失敗');});
       const abilities=state.classId?[null,...Array.from({length:5},(_,i)=>skillAnimations[`${state.classId}-${i+1}`])]:[null];
       combatSound.prepare(audio,abilities).catch(()=>{updateSoundButton('技能音效載入失敗');});
       prepared.catch(()=>{updateSoundButton('升級音效載入失敗');});
       if(kind==='silent')return;
+      if(kind==='pickup'){
+        const chapter=state.chapter;
+        if(!pickupSound.play(audio))pickupPrepared.then(()=>{if(sound&&generation===soundGeneration&&!document.hidden&&!state.paused&&state.chapter===chapter&&state.phase==='reward'&&state.rewardBeat===1)pickupSound.play(audio);}).catch(()=>{});
+        return;
+      }
       if(kind==='level'){
         if(!levelSound.play(audio))prepared.then(()=>{if(sound&&generation===soundGeneration&&!state.paused&&state.phase==='reward'&&state.rewardLevelUp&&state.rewardBeat===1)levelSound.play(audio);}).catch(()=>{});
         return;
@@ -187,33 +199,36 @@ if (root) {
     }catch{setSound(false,'音效目前無法使用');}
   }
   function dispatch(event){
-    const previous=state,type=typeof event==='string'?event:event.type;state=transition(state,event,chapters);if(state===previous)return;
+    const previous=state,type=typeof event==='string'?event:event.type;
+    if(['ADVANCE','SET_MODE','WATCH_ONLY'].includes(type))event={...(typeof event==='string'?{type}:event),watchCasts:phone.matches?3:1};
+    state=transition(state,event,chapters);if(state===previous)return;
     if(state.classId!==previous.classId){clearInput();mobilityView.reset();combatSound.stop();preloadClass(state.classId);}
-    if(state.mode!==previous.mode){clearInput();skillView.hide();mobilityView.reset();if(state.mode==='manual')player=resetMobility({...player,x:previous.characterX,y:previous.characterY||0,vy:0});combatTime=0;watchHits=0;castAbility=currentAbility();combatSound.stop();if(state.phase==='battle')combatSound.start(castAbility);}
+    if(state.mode!==previous.mode){clearInput();skillView.hide();mobilityView.reset();if(state.mode==='manual')player=resetMobility({...player,x:previous.characterX,y:previous.characterY||0,vy:0});combatTime=0;watchHits=0;watchCastIndex=-1;castAbility=currentAbility();combatSound.stop();if(state.phase==='battle')combatSound.start(castAbility);}
     if(type==='PLAYER_DIED'){clearInput();combatSound.stop();skillView.hide();player=resetMobility({...player,y:0,vy:0,knockbackVx:0,moving:false,hurtTime:0});}
     if(type==='REVIVE'){player=revivePlayer(player,state.completed);enemy={...enemy,pose:'stand',time:0,cooldown:1200,resolved:true,vx:0};clearInput();}
     if(previous.phase==='reading'&&state.phase==='encounter'){input.attack=false;attackBuffer.clear();}
     if(type==='RESET'||type==='SELECT_MODE'){player=newPlayer();history=[];narration.reset();reasons.delete('review');storyRun++;clearInput();$('dialogue-history').replaceChildren();}
     if(type==='RESET'||type==='REPLAY'||state.chapter!==previous.chapter){enemy=newEnemy();enemyView.reset();watchHits=0;clearInput();}
-    if(type==='REPLAY'){storyRun++;player=resetMobility({...player,x:25,y:0,vy:0});clearInput();}
-    if(state.chapter!==previous.chapter)player=resetMobility({...player,x:25,y:0,vy:0});
+    if(type==='REPLAY'){storyRun++;player=resetMobility({...player,x:10,y:0,vy:0});clearInput();}
+    if(state.chapter!==previous.chapter)player=resetMobility({...player,x:10,y:0,vy:0});
     if(['RESET','REPLAY'].includes(type)||state.chapter!==previous.chapter)petView.reset(player.x,player.y);
     if(type==='WALKED'&&state.mode==='manual')player=resetMobility({...player,x:portalX,y:portalY,vy:0});
+    if(state.phase==='walking'&&previous.phase!=='walking')player={...player,facing:state.facing,climbing:null};
     if(['PLAYER_DIED','REVIVE','RESET','SELECT_MODE','REPLAY','WALKED'].includes(type)||state.chapter!==previous.chapter||state.phase==='walking')mobilityView.reset();
-    if(state.phase!==previous.phase){if(type!=='PORTAL_OPENED')elapsed=0;if(state.phase==='battle')watchHits=0;if(state.phase==='retiring'){enemy={...enemy,pose:'die',time:0,vx:0};attackBuffer.clear();input.attack=false;}if(state.phase==='battle'){combatTime=0;castAbility=state.mode==='watch'||state.castSkill?currentAbility():null;combatSound.start(castAbility);}else if(['ready','reading'].includes(state.phase))combatSound.stop();}
+    if(state.phase!==previous.phase){if(type!=='PORTAL_OPENED')elapsed=0;if(state.phase==='battle'){watchHits=0;watchCastIndex=-1;root.dataset.watchCast='0';}if(state.phase==='retiring'){enemy={...enemy,pose:'die',time:0,vx:0};attackBuffer.clear();input.attack=false;}if(state.phase==='battle'){combatTime=0;castAbility=state.mode==='watch'||state.castSkill?currentAbility():null;combatSound.start(castAbility);}else if(['ready','reading'].includes(state.phase))combatSound.stop();}
     else if(state.page!==previous.page||state.chapter!==previous.chapter||type==='REPLAY')elapsed=0;
     if(['EQUIPPED','REWARD_FINISHED','CLOSING_STARTED'].includes(type))elapsed=0;
     if(type==='EQUIPPED'&&state.rewardLevelUp){const max=limits(state.completed);player={...player,hp:max.hp,mp:max.mp};}
-    if(state.paused)clearInput();combatSound.setRate(playbackRate());levelSound.setRate(playbackRate());render();syncAnimation();
-    if(type==='EQUIPPED'){preloadClass(state.classId);if(state.rewardLevelUp)cue('level');}else if(type==='PORTAL_OPENED')cue('portal');
+    if(state.paused)clearInput();combatSound.setRate(playbackRate());levelSound.setRate(playbackRate());pickupSound.setRate(playbackRate());render();syncAnimation();
+    if(type==='EQUIPPED'){preloadClass(state.classId);if(state.rewardNew)cue('pickup');if(state.rewardLevelUp)cue('level');}else if(type==='PORTAL_OPENED')cue('portal');
   }
   function attack(){
     if(state.mode!=='manual'||state.paused)return;
-    if(state.phase==='reading'){input.attack=false;attackBuffer.clear();systemHint('等待對話完畢後，才可攻擊怪物。');return;}
+    if(state.phase==='reading'||state.phase==='portal'&&!state.closingFinished||state.phase==='reward'&&state.rewardBeat===3){input.attack=false;attackBuffer.clear();systemHint('等待對話完畢後，才可攻擊怪物。');return;}
     if(player.climbing){input.attack=false;attackBuffer.clear();systemHint('先跳離繩梯，再按 A 攻擊');return;}
     if(input.down||player.crouching){input.attack=false;attackBuffer.clear();systemHint('放開 ↓ 後按 A 攻擊');return;}
     if(state.phase==='battle'){attackBuffer.push();return;}
-    if(state.phase!=='encounter')return;
+    if(!canAttack(state))return;
     if(player.hurtTime>0){attackBuffer.push();return;}
     if(!audio)cue('silent',true);
     const choice=attackChoice(skillRankFor(state.completed),player.mp);
@@ -228,7 +243,13 @@ if (root) {
   }
   function revive(){if(state.phase!=='dead'||state.paused||!state.deathLanded)return;dispatch('REVIVE');focusGame();}
   function basicHitFrames(){return skillAnimations['warrior-1'].tracks.find(t=>t.anchor==='boss')?.frames||[];}
-  function targetBody(){const frame=monster().poses.stand[0],scale=viewport.mobile?.7:1,body=enemyBodyTarget(monster(),viewport.mobile,enemy.facing);return {x:enemy.x+body.offsetX/viewport.width*100,height:body.height,width:frame.width*scale,bottom:(frame.origin.y-frame.height)*scale,top:frame.origin.y*scale};}
+  function targetBody(){
+    if(state.phase==='battle'&&state.castReturn==='portal'){
+      const box=nativeAttackBox(player,castAbility,viewport),height=player.y+50;
+      return {x:(player.facing===1?box.right:box.left)/viewport.width*100,height,width:0,bottom:height,top:height};
+    }
+    const frame=monster().poses.stand[0],scale=viewport.mobile?.7:1,body=enemyBodyTarget(monster(),viewport.mobile,enemy.facing);return {x:enemy.x+body.offsetX/viewport.width*100,height:body.height,width:frame.width*scale,bottom:(frame.origin.y-frame.height)*scale,top:frame.origin.y*scale};
+  }
   function damageLines(value,ability,packet=0){const rule=ruleFor(ability),lines=rule.packetLines?.[packet]??rule.lines,height=Math.min(240,monster().poses.stand[0].height+28);for(let line=0;line<lines;line++)enemyView.damage(splitDamage(value,lines,line),enemy.x,height+line*22);}
   function struckEnemy(value,ability,packet){damageLines(value,ability,packet);enemy=strikeEnemy(enemy,player.facing);const body=targetBody();enemyView.effect(basicHitFrames(),body.x,body.height);}
   function focusGame(){root.focus({preventScroll:true});}
@@ -253,7 +274,7 @@ if (root) {
     const key=state.completed?`${state.classId}-${state.completed}-${pose}`:`beginner-${pose}`,entry=sprites[key];if(!entry)return;
     applySprite(entry);
   }
-  function applySprite(entry){if(!sprite.src.endsWith(entry.file)){sprite.src=asset(entry.file);sprite.style.width=`calc(${entry.width}px * var(--sprite-scale))`;sprite.style.height=`calc(${entry.height}px * var(--sprite-scale))`;sprite.style.bottom=`calc(-${entry.height/2}px * var(--sprite-scale))`;}sprite.style.transform=(state.mode==='watch'||player.facing===1)!==Boolean(entry.flip)?'translateX(-50%) scaleX(-1)':'translateX(-50%)';}
+  function applySprite(entry){if(!sprite.src.endsWith(entry.file)){sprite.src=asset(entry.file);sprite.style.width=`calc(${entry.width}px * var(--sprite-scale))`;sprite.style.height=`calc(${entry.height}px * var(--sprite-scale))`;sprite.style.bottom=`calc(-${entry.height/2}px * var(--sprite-scale))`;}const facing=['walking','transition'].includes(state.phase)?state.facing:state.mode==='watch'?1:player.facing;actor.dataset.facing=String(facing);sprite.style.transform=(facing===1)!==Boolean(entry.flip)?'translateX(-50%) scaleX(-1)':'translateX(-50%)';}
   function updateCast(resolveHits=true){
     if(state.mode==='manual'){
       root.dataset.combatPhase='cast';
@@ -269,15 +290,18 @@ if (root) {
       if(player.hurtTime>0)updateSprite('idle');
       return;
     }
-    const ability=currentAbility(),frame=combatFrame(ability,state.classId,combatTime);
-    root.dataset.combatPhase=frame.castTime<0?(combatTime<320?'approach':'departure'):'cast';
+    const ability=currentAbility(),frame=combatFrame(ability,state.classId,combatTime,state.watchCasts||1);
+    root.dataset.combatPhase=frame.phase||(frame.castTime<0?(combatTime<320?'approach':'departure'):'cast');
     actor.style.left=`${frame.x}%`;root.style.setProperty('--actor-x',`${frame.x}%`);
     boss.style.setProperty('--boss-recoil',`${motion.matches?0:frame.hit*14}px`);
     boss.style.setProperty('--impact-brightness',String(motion.matches?1:1+frame.hit*.3));
     scene.parentElement.style.setProperty('--impact-shake',`${motion.matches?0:Math.sin(combatTime*.12)*frame.hit*2.5}px`);
-    const impacts=impactTimes(ability);while(resolveHits&&watchHits<impacts.length&&frame.castTime>=impacts[watchHits]){const before=state.bossHp,packet=watchHits++;dispatch({type:'WATCH_HIT',packet});if(state.bossHp<before){damageLines(before-state.bossHp,ability,packet);enemy=strikeEnemy(enemy,1);}}
-    combatSound.tick(audio,combatTime,sound&&!document.hidden);
-    if(frame.castTime<0){skillView.hide();updateSprite(Math.floor(combatTime/130)%2?'walkAlt':'walk');return;}
+    const impacts=watchImpactTimes(ability,state.classId,state.watchCasts||1);while(resolveHits&&watchHits<impacts.length&&combatTime>=impacts[watchHits]){const before=state.bossHp,packet=watchHits++;dispatch({type:'WATCH_HIT',packet});if(state.bossHp<before){damageLines(before-state.bossHp,ability,packet%ruleFor(ability).packets);enemy=strikeEnemy(enemy,1);}}
+    if(frame.castTime>=0){
+      if(watchCastIndex!==frame.castIndex){watchCastIndex=frame.castIndex;combatSound.start(ability);root.dataset.watchCast=String(watchCastIndex+1);}
+      combatSound.tick(audio,frame.castTime+320,sound&&!document.hidden);
+    }
+    if(frame.castTime<0){skillView.hide();updateSprite(frame.pose==='idle'?'idle':Math.floor(combatTime/130)%2?'walkAlt':'walk');return;}
     const body=targetBody(),playing=skillView.render(ability,frame.castTime,frame.x,motion.matches,{targetX:body.x,targetHeight:body.height});
     if(!playing)updateSprite(frame.pose==='cast'?'idle':frame.pose);
   }
@@ -288,11 +312,11 @@ if (root) {
     if(dialogue.hidden)return;
     const world=viewport,mobile=viewport.mobile;
     const idle=sprites[state.completed?`${state.classId}-${state.completed}-idle`:'beginner-idle'];
-    const box=bubbleGeometry({width:world.width,height:world.height,actorX:parseFloat(actor.style.left)||25,boxWidth:bubbleWidth||Math.min(300,world.width-24),boxHeight:bubbleHeight||95,headHeight:idle.height/2*(mobile?.98:1.4),groundInset:storyGroundInset(world.height,mobile)});
+    const box=bubbleGeometry({width:world.width,height:world.height,actorX:parseFloat(actor.style.left)||10,boxWidth:bubbleWidth||Math.min(300,world.width-24),boxHeight:bubbleHeight||95,headHeight:idle.height/2*(mobile?.98:1.4),groundInset:storyGroundInset(world.height,mobile)});
     setStyles(dialogue,{left:`${box.left}px`,bottom:`${Math.min(world.height-(bubbleHeight||95)-12,box.bottom+(state.mode==='manual'?player.y-cameraPan:0))}px`});dialogue.style.setProperty('--bubble-tail-x',`${box.tail}px`);
   }
   function updatePortal(){
-    const animate=['portal','walking','transition'].includes(state.phase),index=animate&&!motion.matches?Math.floor(animationTime/95)%portalFrames.length:0;if(index===lastPortal)return;lastPortal=index;
+    const animate=['portal','walking','transition'].includes(state.phase)||state.phase==='battle'&&state.castReturn==='portal',index=animate&&!motion.matches?Math.floor(animationTime/95)%portalFrames.length:0;if(index===lastPortal)return;lastPortal=index;
     const f=portalFrames[index],image=$('portal-frame'),g=portalFrameGeometry(f,viewport.mobile);image.src=asset(f.file);
     Object.assign(image.style,{width:`${g.width}px`,height:`${g.height}px`,left:`calc(50% - ${g.originX}px)`,bottom:`${g.bottom}px`});
   }
@@ -336,7 +360,7 @@ if (root) {
   }
   function render(){
     const chapter=chapters[state.chapter],growth=growthFor(state.classId,state.completed),job=jobById[state.classId];
-    Object.assign(root.dataset,{mode:state.mode,phase:state.phase,beat:String(state.beat),rewardBeat:String(state.rewardBeat),rewardNew:String(state.rewardNew),rewardLevelUp:String(state.rewardLevelUp),defeated:String(state.defeated),castSkill:String(state.castSkill),job:state.completed?state.classId:'beginner',rank:String(state.completed)});
+    Object.assign(root.dataset,{mode:state.mode,phase:state.phase,beat:String(state.beat),rewardBeat:String(state.rewardBeat),rewardNew:String(state.rewardNew),rewardLevelUp:String(state.rewardLevelUp),defeated:String(state.defeated),castSkill:String(state.castSkill),job:state.completed?state.classId:'beginner',rank:String(state.completed),watchCasts:String(state.watchCasts||1)});
     root.style.setProperty('--story-rate',String(playbackRate()));root.dataset.playbackRate=String(playbackRate());
     root.dataset.language=language;root.dataset.presentation=phone.matches?'story':'interactive';root.dataset.classId=state.classId;root.dataset.pendingClass=state.pendingClassId||'';petView.show(state.classId);
     const selected=state.pendingClassId||state.classId,active=!['ready','complete'].includes(state.phase);
@@ -346,13 +370,18 @@ if (root) {
       card.children[0].setAttribute('aria-label',t(jobs[index].name));card.children[0].checked=jobs[index].id===selected;card.dataset.selected=String(jobs[index].id===selected);setText(card.children[2],jobs[index].name);
     }
     overlays.render(selected);
-    $('story-speed').hidden=false;$('settings-speed-row').hidden=false;$('settings-mode-row').hidden=phone.matches;
+    $('story-speed').hidden=false;$('settings-speed-row').hidden=false;$('settings-mode-row').hidden=false;
     for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]]){$(id).setAttribute('aria-pressed',String(rate===playbackRate()));$(id).disabled=state.mode!=='watch';}
     $('mode-manual').setAttribute('aria-pressed',String(state.mode==='manual'));$('mode-watch').setAttribute('aria-pressed',String(state.mode==='watch'));
-    $('mode-manual').disabled=phone.matches||state.phase==='battle';$('mode-manual').hidden=phone.matches;
-    $('player-actions').hidden=state.mode!=='manual'||['ready','complete'].includes(state.phase);
+    $('mode-manual').disabled=state.phase==='battle';$('mode-manual').hidden=false;
+    $('player-actions').hidden=phone.matches||state.mode!=='manual'||['ready','complete'].includes(state.phase);
+    $('mobile-controls').hidden=!phone.matches||state.mode!=='manual'||['ready','complete'].includes(state.phase);
+    $('touch-attack').disabled=!canAttack(state)&&!(state.mode==='manual'&&!state.paused&&state.phase==='battle');
+    $('touch-jump').disabled=state.paused||!canMovePlayer(state);
+    $('touch-stick').setAttribute('aria-disabled',String(state.paused||!canMovePlayer(state)));
     for(const id of ['player-left','player-right','player-up','player-down','player-jump'])$(id).disabled=state.paused||!canMovePlayer(state);
     boss.disabled=state.mode!=='manual'||state.paused||!['reading','encounter','battle'].includes(state.phase)||state.phase==='battle'&&state.castReturn!=='encounter';
+    boss.hidden=state.phase==='battle'&&state.castReturn==='portal';
     root.style.setProperty('--job-color',job?.color||'#f1d78f');root.classList.toggle('is-paused',state.paused);
     pause.disabled=!active;setText(pause,state.paused?'繼續':'暫停');pause.setAttribute('aria-pressed',String(state.paused));pause.setAttribute('aria-label',t(state.paused?'繼續':'暫停'));$('game-pause-cover').hidden=!state.paused||['hud','welcome','class-picker','review'].some(reason=>reasons.has(reason));
     if(chapterShown!==state.chapter){chapterShown=state.chapter;preloadNpcs(state.chapter);environmentView.show(mapEnvironment[chapter.map]);mapObjectView.show(mapObjects[chapter.map]);scene.src=asset(chapter.map);scene.alt=chapter.alt;root.dataset.boss=chapter.boss;setText($('map-region'),chapter.region);setText($('map-title'),chapter.title);setText($('chapter-badge'),`CHAPTER ${String(chapter.id).padStart(2,'0')} / ${chapters.length}`);preloadScene(state.chapter);preloadScene(state.chapter+1);$('scene-sky').style.backgroundImage=chapter.background?`url("${asset(chapter.background)}")`:'none';root.dataset.chapter=String(chapter.id);setText($('monster-name'),monster().name);boss.setAttribute('aria-label',`攻擊${monster().name}`);}
@@ -376,8 +405,9 @@ if (root) {
     const enemyMeter=$('enemy-health-meter');enemyMeter.setAttribute('aria-label',t(monster().name));enemyMeter.setAttribute('aria-valuemin','0');enemyMeter.setAttribute('aria-valuemax',String(state.bossMaxHp));enemyMeter.setAttribute('aria-valuenow',String(state.bossHp));
     $('enemy-health').style.left=`${enemy.x}%`;$('enemy-health').style.bottom=`calc(var(--ground-inset) + ${Math.max(...monster().poses.stand.map(frame=>frame.origin.y))*(viewport.mobile?.7:1)+14}px)`;
     if(state.mode==='manual'&&rewarding&&state.rewardNew&&state.rewardBeat===0){caption.hidden=false;setText(caption,'寵物正在取回裝備');}
-    const open=canUsePortal(state);portal.disabled=!open;portal.classList.toggle('is-open',open||['walking','transition'].includes(state.phase));
-    portal.setAttribute('aria-label',t(open?state.chapter===chapters.length-1?'進入傳送門，完成這段旅程':`進入傳送門，前往第 ${chapter.id+1} 章`:'傳送門尚未開啟'));setText(portal.querySelector('.portal-label'),open?state.chapter===chapters.length-1?'完成旅程 →':'下一章 →':['walking','transition'].includes(state.phase)?'傳送中…':'尚未開啟');
+    const open=canUsePortal(state);portal.disabled=!open;portal.classList.toggle('is-open',open||['walking','transition'].includes(state.phase)||state.phase==='battle'&&state.castReturn==='portal');
+    portal.hidden=!Number.isFinite(state.deathX)||['ready','complete'].includes(state.phase);
+    portal.setAttribute('aria-label',t(open?state.chapter===chapters.length-1?'進入傳送門，完成這段旅程':`進入傳送門，前往第 ${chapter.id+1} 章`:'傳送門尚未開啟'));
     lastPortal=-1;updatePortal();renderDialogue(chapter,growth);updateVitals();
     [...trail.children].forEach((item,index)=>{const button=item.firstElementChild;item.classList.toggle('is-complete',index<state.completed);button.disabled=state.paused||index>=state.completed||timed.includes(state.phase);if(index===state.chapter)button.setAttribute('aria-current','step');else button.removeAttribute('aria-current');});
     [...trail.children].forEach((item,index)=>item.firstElementChild.setAttribute('aria-label',t(`重看第 ${chapters[index].id} 章：${chapters[index].title}`)));
@@ -417,7 +447,7 @@ if (root) {
       if(player.hurtTime>0&&state.mode==='manual')updateSprite('idle');
       actor.style.opacity=player.invulnerable>0&&Math.floor(animationTime/80)%2?'0.5':'1';
       enemyView.render(monster(),enemy);enemyView.tick(delta);$('enemy-health').style.left=`${enemy.x}%`;
-      const plan=combatPlan(currentAbility(),state.classId);
+      const plan=combatPlan(currentAbility(),state.classId,state.watchCasts||1);
       if(state.phase==='battle'){
         if(state.mode==='manual'){if(combatTime>=manualCastDuration(castAbility))dispatch('CAST_DONE');}
         else{const target=Math.min(3,Math.floor(combatTime/plan.total*3));while(state.phase==='battle'&&state.beat<target)dispatch('BEAT');}
@@ -427,6 +457,7 @@ if (root) {
       else if(state.phase==='reward'&&state.rewardBeat===1&&elapsed>=(state.rewardLevelUp?levelUp.duration:600))dispatch('REWARD_FINISHED');
       else if(state.phase==='reward'&&state.rewardBeat===2&&elapsed>=1000)dispatch('CLOSING_STARTED');
       else if(state.phase==='reward'&&state.rewardBeat===3&&elapsed>=2000)dispatch('PORTAL_OPENED');
+      else if(state.phase==='portal'&&!state.closingFinished&&elapsed>=readingDuration(spokenLine()))dispatch('CLOSING_FINISHED');
       else if(state.phase==='walking'){positionActor();positionBubble();updateSprite(Math.floor(elapsed/130)%2?'walkAlt':'walk');if(elapsed>=walkDuration())dispatch('WALKED');}
       else if(state.phase==='transition'&&elapsed>=(motion.matches?150:350))dispatch('ARRIVED');
       else if(autoAdvanceDue(state,elapsed,spokenLine(),autoplay))dispatch('ADVANCE');
@@ -465,13 +496,13 @@ if (root) {
   }
   for(const [id,kind]of [['hud-chapters','chapters'],['hud-keys','keys']])$(id).addEventListener('click',()=>openHud(kind));
   $('hud-panel-close').addEventListener('click',closeHud);
-  for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]])$(id).addEventListener('click',()=>{if(state.mode!=='watch')return;watchSpeed=rate;combatSound.setRate(rate);levelSound.setRate(rate);render();});
-  $('mode-manual').addEventListener('click',()=>{if(!phone.matches)dispatch({type:'SET_MODE',mode:'manual'});});
-  $('mode-watch').addEventListener('click',()=>dispatch({type:'SET_MODE',mode:'watch'}));
+  for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]])$(id).addEventListener('click',()=>{if(state.mode!=='watch')return;watchSpeed=rate;combatSound.setRate(rate);levelSound.setRate(rate);pickupSound.setRate(rate);render();});
+  $('mode-manual').addEventListener('click',()=>dispatch({type:'SET_MODE',mode:'manual'}));
+  $('mode-watch').addEventListener('click',()=>{if(phone.matches)autoplay=true;dispatch({type:'SET_MODE',mode:'watch'});render();});
   const movementKeys={ArrowLeft:'left',ArrowRight:'right',ArrowDown:'down',ArrowUp:'up',w:'jump',' ':'jump',a:'attack'};
   function press(action){
     if(state.mode!=='manual'||state.paused||!['reading','encounter','portal','battle','retiring','reward'].includes(state.phase))return;
-    if(action==='attack'&&!['encounter','battle'].includes(state.phase)){attack();return;}
+    if(action==='attack'&&!canAttack(state)&&state.phase!=='battle'){attack();return;}
     input[action]=true;if(action==='up')input.upPressed=true;focusGame();if(action==='attack')attack();
   }
   const seenKeys=new WeakSet();
@@ -504,6 +535,9 @@ if (root) {
     for(const type of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(type,()=>{if(action!=='jump')input[action]=false;});
     button.addEventListener('click',event=>{if(event.detail===0||event.detail===undefined){press(action);if(action!=='jump')input[action]=false;}});
   }
+  touchControls=createTouchControls({pad:$('touch-stick'),knob:$('touch-stick-knob'),attack:$('touch-attack'),jump:$('touch-jump'),
+    enabled:action=>phone.matches&&state.mode==='manual'&&!state.paused&&(action==='attack'?(canAttack(state)||state.phase==='battle'):canMovePlayer(state)),
+    onMove:direction=>Object.assign(input,direction),onPress:press,onRelease:action=>{if(action!=='jump')input[action]=false;},onGesture:()=>cue('silent',true)});
   boss.addEventListener('click',()=>{attack();focusGame();});
   document.addEventListener('journeydialogue',event=>{const message=event.detail;if(typeof message?.speaker==='string'&&typeof message?.text==='string'){history=appendDialogue(history,message);renderHistory();}});
   document.addEventListener('visibilitychange',()=>{setPause('hidden',document.hidden);if(document.hidden)audio?.suspend();});
@@ -532,7 +566,8 @@ if (root) {
   $('journey-language-ja').addEventListener('click',()=>changeLanguage('ja'));
   document.addEventListener('sitelanguage',event=>{if(['en','zh-Hant','ja'].includes(event.detail?.language))changeLanguage(event.detail.language);});
   phone.addEventListener('change',()=>{
-    if(phone.matches){autoplay=true;hudKind=null;$('hud-panel').hidden=true;reasons.delete('hud');dispatch('WATCH_ONLY');}
+    clearInput();
+    if(phone.matches){hudKind=null;$('hud-panel').hidden=true;reasons.delete('hud');}
     lastTime=0;lastVitals='';positionScene(true);render();syncPause();
   });
   const settings=$('journey-settings'),settingsToggle=$('settings-toggle');

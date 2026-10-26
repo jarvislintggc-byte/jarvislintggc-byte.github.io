@@ -16,7 +16,7 @@ export function createLevelUpView(host,image,{asset,mobile}){
 
 // The decoded original sound is loaded ahead of the first reward; each new
 // level starts one buffer source. Replays are gated by the caller's rewardNew.
-export function createLevelUpSound({url,load=path=>fetch(path).then(response=>{if(!response.ok)throw new Error('Level-up audio unavailable');return response.arrayBuffer();})}){
+export function createRewardSound({url,load=path=>fetch(path).then(response=>{if(!response.ok)throw new Error('Reward audio unavailable');return response.arrayBuffer();})}){
   let buffer=null,pending=null,rate=1;const voices=new Set();
   return {
     stop(){for(const source of voices){try{source.stop();}catch{}}voices.clear();},
@@ -35,3 +35,4 @@ export function createLevelUpSound({url,load=path=>fetch(path).then(response=>{i
     }
   };
 }
+export const createLevelUpSound=createRewardSound;

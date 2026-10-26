@@ -8,8 +8,8 @@ export const playerPhases=['reading','encounter','portal','retiring','reward'];
 export const canMovePlayer=state=>playerPhases.includes(state.phase)||state.phase==='battle'&&state.bossHp===0;
 export const limits=rank=>({hp:100+Math.floor(rank/2)*20,mp:60+Math.floor(rank/2)*10});
 export const resetMobility=player=>({...player,jumpsUsed:0,crouching:false,airVx:0,didDoubleJump:false,grounded:true,supportId:'base',climbing:null,climbMoving:false,ropeCooldown:0,dropTime:0});
-export const revivePlayer=(player,rank)=>resetMobility({...player,...limits(rank),x:25,y:0,vy:0,facing:1,moving:false,invulnerable:2,hurtTime:0,knockbackVx:0});
-export const newPlayer=()=>resetMobility({x:25,y:0,vy:0,facing:1,moving:false,hp:100,mp:60,invulnerable:0,hurtTime:0,knockbackVx:0});
+export const revivePlayer=(player,rank)=>resetMobility({...player,...limits(rank),x:10,y:0,vy:0,facing:1,moving:false,invulnerable:2,hurtTime:0,knockbackVx:0});
+export const newPlayer=()=>resetMobility({x:10,y:0,vy:0,facing:1,moving:false,hp:100,mp:60,invulnerable:0,hurtTime:0,knockbackVx:0});
 export function stepPlayer(player,input,ms,width,{movable=true,enemy=false,rank=0,terrain=null}={}){
   const p={...player,didDoubleJump:false},dt=Math.max(0,Math.min(ms,100))/1000,max=limits(rank),world=terrain||flatTerrain(width);
   if(p.hp<=0)return p;

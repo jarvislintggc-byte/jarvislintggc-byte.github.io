@@ -32,13 +32,24 @@ export function npcPose(art,time,index=0,base='stand',reduced=false){
  return {pose:base,time};
 }
 const overlaps=(a,b)=>a.left<b.right+8&&a.right+8>b.left&&a.bottom<b.top+8&&a.top+8>b.bottom;
-export function layoutNpcBubbles(items,{width,height=600,narrationBounds=null}){
- const occupied=narrationBounds?[narrationBounds]:[],boxes=[];
+export function layoutNpcBubbles(items,{width,height=600,narrationBounds=null,protectedBounds=[]}){
+ const occupied=[...(narrationBounds?[narrationBounds]:[]),...protectedBounds],boxes=[];
  for(const item of items){
   const w=Math.min(item.width,width-16),preferred=Math.max(8,Math.min(width-w-8,item.x-w/2)),maxBottom=Math.max(8,height-85-item.height);
   const choices=(width<600&&narrationBounds?[8,width-w-8]:[preferred,8,width-w-8,width/2-w/2,...boxes.map(b=>b.right+10),...boxes.map(b=>b.left-w-10)]).map(x=>Math.max(8,Math.min(width-w-8,x)));
   let best=null;
   for(const left of new Set(choices)){
+   if(protectedBounds.length){
+    const candidates=[Math.max(8,Math.min(maxBottom,item.bottom)),8,maxBottom,...occupied.flatMap(b=>[b.bottom-item.height-12,b.top+12])];
+    for(const bottom of candidates){
+     if(bottom<8||bottom>maxBottom)continue;
+     const box={left,right:left+w,bottom,top:bottom+item.height,width:w,height:item.height};
+     if(occupied.some(b=>overlaps(box,b)))continue;
+     const cost=Math.abs(left-preferred)+Math.abs(bottom-item.bottom)*.7;
+     if(!best||cost<best.cost)best={...box,cost};
+    }
+    continue;
+   }
    let bottom=Math.max(8,item.bottom),box;
    for(let pass=0;pass<=occupied.length;pass++){
     box={left,right:left+w,bottom,top:bottom+item.height,width:w,height:item.height};
@@ -52,6 +63,10 @@ export function layoutNpcBubbles(items,{width,height=600,narrationBounds=null}){
   occupied.push(best);boxes.push(best);
  }
  return boxes;
+}
+export function npcBubbleTail(box,x,y){
+ const side=y>box.top?'top':y<box.bottom?'bottom':x<box.left?'left':x>box.right?'right':y>(box.bottom+box.top)/2?'top':'bottom';
+ return {side,x:Math.max(12,Math.min(box.width-16,x-box.left)),y:Math.max(12,Math.min(box.height-12,box.top-y))};
 }
 const drills={'zh-Hant':['行進訓練','蹲姿訓練','跳躍訓練','瞄準訓練'],en:['MARCH','SQUATS','JUMPS','AIM'],ja:['行進訓練','スクワット','ジャンプ訓練','照準訓練']};
 const shortTrainingRoles={2152002:{'zh-Hant':'反抗軍法師',en:'R. Mage'},2152003:{'zh-Hant':'反抗軍弩手',en:'R. Archer'},2152005:{'zh-Hant':'反抗軍機甲',en:'R. Mech'}};
@@ -68,7 +83,7 @@ export function createNpcView(host,{asset}){
     anchor.append(image,name,bubble,drill);host.append(anchor);entries.push({actor,anchor,image,name,bubble,drill});
    }
   },
-  tick(delta,{state,language='zh-Hant',width,height=600,groundInset=46,mobile=false,reduced=false,narrationBounds=null,floor=()=>0,placements=null}){
+  tick(delta,{state,language='zh-Hant',width,height=600,groundInset=46,mobile=false,reduced=false,narrationBounds=null,protectedBounds=[],floor=()=>0,placements=null}){
    if(state.phase==='ready')time=0;
    if(!state.paused&&!['ready','complete','dead'].includes(state.phase))time+=Math.max(0,delta);
    host.hidden=['ready','complete'].includes(state.phase);if(host.hidden)return;
@@ -92,10 +107,10 @@ export function createNpcView(host,{asset}){
     }
     setStyles(anchor,{left:placements?`${x}px`:motion.x?`calc(${at}% + ${motion.x.toFixed(1)}px)`:`${at}%`,bottom:`calc(var(--ground-inset) + ${position.y+motion.y}px)`,transform:'none'});
     const bubbleWidth=Math.min(mobile?136:202,width*.44),characters=Math.max(8,(bubbleWidth-22)/(language==='en'?5.8:mobile?11:12)),bubbleHeight=Math.ceil(speech[index].text.length/characters)*(mobile?16.5:18)+20;
-    entry.layoutFoot=foot;entry.layoutX=x;layout.push({x,bottom:foot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale+15,width:bubbleWidth,height:bubbleHeight});
+    entry.layoutFoot=foot;entry.layoutX=x;entry.layoutHead=foot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale-10;layout.push({x,bottom:foot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale+15,width:bubbleWidth,height:bubbleHeight});
    });
-   const boxes=layoutNpcBubbles(layout,{width,height,narrationBounds});
-   entries.forEach((entry,index)=>{const box=boxes[index];if(!box)return;setStyles(entry.bubble,{bottom:`${box.bottom-entry.layoutFoot}px`,width:`${box.width}px`,transform:`translateX(${box.left-entry.layoutX}px)`});const tail=`${Math.max(12,Math.min(box.width-16,entry.layoutX-box.left))}px`;if(entry.tail!==tail){entry.bubble.style.setProperty?.('--npc-tail',tail);entry.tail=tail;}});
+   const boxes=layoutNpcBubbles(layout,{width,height,narrationBounds,protectedBounds});
+   entries.forEach((entry,index)=>{const box=boxes[index];if(!box)return;setStyles(entry.bubble,{bottom:`${box.bottom-entry.layoutFoot}px`,width:`${box.width}px`,transform:`translateX(${box.left-entry.layoutX}px)`});const tail=npcBubbleTail(box,entry.layoutX,entry.layoutHead);entry.bubble.dataset.tail=tail.side;entry.bubble.style.setProperty?.('--npc-tail',`${tail.x}px`);entry.bubble.style.setProperty?.('--npc-tail-y',`${tail.y}px`);});
   }
  };
 }

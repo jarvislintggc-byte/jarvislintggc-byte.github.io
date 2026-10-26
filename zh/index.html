@@ -17,8 +17,8 @@
 <link rel="alternate" hreflang="en" href="/">
 <link rel="alternate" hreflang="zh-Hant" href="/zh/">
 <link rel="alternate" hreflang="ja" href="/ja/">
-<link rel="stylesheet" href="/journey.css?v=0288204d493d902f">
-<script src="/journey-boot.js?v=0288204d493d902f" defer></script>
+<link rel="stylesheet" href="/journey.css?v=5ceee34a6732c1c7">
+<script src="/journey-boot.js?v=5ceee34a6732c1c7" defer></script>
 </head>
 <body class="page-home"><a class="skip" href="#main">跳至主要內容</a>
 <nav class="site-language site-language-global" aria-label="選擇語言"><a href="/zh/" data-site-language="zh-Hant" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">中文</a><a href="/" data-site-language="en" lang="en" hreflang="en">EN</a><a href="/ja/" data-site-language="ja" lang="ja" hreflang="ja">日本語</a></nav><main id="main" class="home-main"><section class="intro-screen" id="intro" aria-labelledby="intro-title">
@@ -73,7 +73,7 @@
         <div id="monster-effects" class="monster-effects" aria-hidden="true"></div>
         <div class="maple-skill-effects" id="maple-skill-effects" aria-hidden="true" hidden></div>
         <div class="maple-mobility-effects" id="maple-mobility-effects" aria-hidden="true" hidden></div>
-        <div class="game-loot" id="game-loot" hidden aria-hidden="true"><img id="loot-image" alt=""><span data-journey-text="裝備">裝備</span></div>
+        <div class="game-loot" id="game-loot" hidden aria-hidden="true"><img id="loot-image" alt=""></div>
         <div class="levelup-effect" id="levelup-effect" aria-hidden="true" hidden><img id="levelup-frame" alt="" decoding="sync"></div>
         <aside class="reward-banner character-status" id="reward-banner" aria-label="角色資訊" data-journey-aria-label="角色資訊" hidden>
           <span id="reward-heading">CHARACTER</span><div class="status-title"><strong id="game-hud-level" data-journey-text="Lv.1 初心者">Lv.1 初心者</strong><button type="button" id="class-picker-toggle" class="class-menu-trigger" aria-label="選擇職業" data-journey-aria-label="選擇職業" aria-haspopup="dialog" aria-controls="journey-class-picker"><span></span><span></span><span></span></button></div>
@@ -82,7 +82,7 @@
         </aside>
         <div class="enemy-health" id="enemy-health" hidden><span id="enemy-health-label"></span><div id="enemy-health-meter" role="progressbar"><i id="enemy-health-fill"></i></div></div>
         <p class="battle-caption" id="battle-caption" hidden></p>
-        <button class="game-portal" id="game-portal" type="button" disabled aria-label="傳送門尚未開啟" data-journey-aria-label="傳送門尚未開啟"><span class="maple-portal-light" aria-hidden="true"><img id="portal-frame" alt=""></span><span class="portal-label" data-journey-text="尚未開啟">尚未開啟</span></button>
+        <button class="game-portal" id="game-portal" type="button" disabled aria-label="傳送門尚未開啟" data-journey-aria-label="傳送門尚未開啟"><span class="maple-portal-light" aria-hidden="true"><img id="portal-frame" alt=""></span></button>
         <div class="game-cover" id="game-cover" hidden>
           <div id="class-screen" hidden></div>
           <div id="complete-screen" hidden><p class="cover-kicker">CHAPTERS 01—18 / COMPLETE</p><h3><span data-journey-text="下一章，">下一章，</span><br><span data-journey-text="還在繼續。">還在繼續。</span></h3><p class="cover-description" id="complete-growth"></p><span class="cover-meta" data-journey-text="18 章旅程 · 故事仍在繼續">18 章旅程 · 故事仍在繼續</span><div class="journey-end-links"><a href="/zh/experience/" data-journey-text="我的經歷">我的經歷</a><a href="/zh/what-i-bring/" data-journey-text="我能帶來什麼">我能帶來什麼</a><a href="/zh/connect/" data-journey-text="聯絡我 ↗">聯絡我 ↗</a></div></div>
@@ -93,6 +93,18 @@
         <div class="game-dialogue character-bubble" id="character-bubble" aria-live="polite" aria-atomic="true" hidden>
           <div class="bubble-skin" id="bubble-skin" aria-hidden="true"></div><img class="bubble-tail" id="bubble-tail" alt="" aria-hidden="true">
           <div class="dialogue-copy" id="dialogue-copy"><div class="dialogue-byline"><strong id="dialogue-speaker">Jarvis</strong><span id="dialogue-counter"></span></div><p id="dialogue-text"></p></div>
+        </div>
+        <div class="mobile-controls" id="mobile-controls" aria-label="手機操作" data-journey-aria-label="手機操作" hidden>
+          <div class="touch-stick" id="touch-stick" role="group" tabindex="0" aria-label="移動方向盤" data-journey-aria-label="移動方向盤">
+            <svg class="stick-directions" viewBox="0 0 100 100" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m44 16 6-5 6 5m28 28 5 6-5 6M56 84l-6 5-6-5M16 56l-5-6 5-6"/></svg>
+            <span class="stick-knob" id="touch-stick-knob" aria-hidden="true"></span>
+          </div>
+          <button type="button" class="touch-action touch-attack" id="touch-attack" aria-label="攻擊" data-journey-aria-label="攻擊" disabled>
+            <svg viewBox="0 0 64 64" aria-hidden="true" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m28 39 22-28 5-2-1 7-23 26Z" fill="currentColor" fill-opacity=".85" stroke-width="1.7"/><path d="m22 34 15 13M27 43l-8 10m-3-3 6 6M31 35l16-20" fill="none" stroke-width="3.3"/><path d="m24 37-4 2m14 5 1 5" fill="none" stroke-width="2"/></svg>
+          </button>
+          <button type="button" class="touch-action touch-jump" id="touch-jump" aria-label="跳躍，空中再按一次二段跳" data-journey-aria-label="跳躍，空中再按一次二段跳">
+            <svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="38" cy="17" r="4" fill="currentColor" stroke="none"/><path d="m35 26-7 12 11 5 9 10M35 26l6 10 10-2M31 30l-10-3-7 5m14 6-4 12-12 3"/><path d="M12 18c2-6 7-10 14-10m-4-4 5 4-5 4" stroke-width="1.8"/></svg>
+          </button>
         </div>
         <div class="scene-curtain" aria-hidden="true"></div>
       </div>
@@ -124,7 +136,7 @@
           <p id="welcome-story" data-journey-text="楓之谷是我童年玩的第一款遊戲。我很喜歡它的視覺風格，因此想用這場冒險，呈現我的人生旅程。">楓之谷是我童年玩的第一款遊戲。我很喜歡它的視覺風格，因此想用這場冒險，呈現我的人生旅程。</p>
           <p class="welcome-hr" data-journey-text="親愛的 HR，如果您趕時間，可以直接前往 Experience，瀏覽我的經歷與專案。">親愛的 HR，如果您趕時間，可以直接前往 Experience，瀏覽我的經歷與專案。</p>
           <div class="welcome-actions"><button id="welcome-continue" type="button"><span data-journey-text="開始旅程">開始旅程</span><span aria-hidden="true">↓</span></button><a href="/zh/experience/" id="welcome-experience"><span data-journey-text="直接看 Experience">直接看 Experience</span><span aria-hidden="true">↗</span></a></div>
-          <p class="welcome-device"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg><span data-journey-text="手機可觀看故事；建議使用電腦，體驗移動、跳躍與攻擊操作。">手機可觀看故事；建議使用電腦，體驗移動、跳躍與攻擊操作。</span></p>
+          <p class="welcome-device"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg><span data-journey-text="手機可用方向盤、大劍與跳躍鈕操作，也能在設定中切換為觀看故事。">手機可用方向盤、大劍與跳躍鈕操作，也能在設定中切換為觀看故事。</span></p>
           <footer class="welcome-credits"><p data-journey-text="楓之谷影像與音樂著作權屬 NEXON；本頁為非官方作品集致敬創作。">楓之谷影像與音樂著作權屬 NEXON；本頁為非官方作品集致敬創作。</p></footer>
         </div>
       </dialog>
@@ -132,7 +144,7 @@
         <button type="button" id="class-picker-close" class="class-picker-close" aria-label="關閉職業選擇" data-journey-aria-label="關閉職業選擇">×</button>
         <div id="class-picker-screen"><h3 id="class-picker-title" data-journey-text="選一門職業探索我的旅程">選一門職業探索我的旅程</h3><div class="class-carousel" id="class-carousel"><fieldset class="class-choices" id="class-choices"><legend class="sr-only" data-journey-text="職業">職業</legend></fieldset></div><div class="class-carousel-footer"><span id="class-counter" class="sr-only"></span><div class="class-dots" id="class-dots"></div></div><p id="selection-note" class="sr-only" role="status"></p><button type="button" id="class-picker-done" data-journey-text="繼續">繼續</button></div>
       </dialog>
-      <span class="sr-only" id="story-controls-help" hidden data-journey-text="劇情會自動播放。左上可更換職業，右上可切換語言；設定內可調整速度與音樂。">劇情會自動播放。左上可更換職業，右上可切換語言；設定內可調整速度與音樂。</span>
+      <span class="sr-only" id="story-controls-help" hidden data-journey-text="拖曳左側圓盤移動，上下拖曳可攀爬或趴下；點大劍攻擊，右側跳躍鈕可二段跳。對話結束後才能攻擊，靠近藍光傳點後點擊進入。設定內可切換觀看故事。">拖曳左側圓盤移動，上下拖曳可攀爬或趴下；點大劍攻擊，右側跳躍鈕可二段跳。對話結束後才能攻擊，靠近藍光傳點後點擊進入。設定內可切換觀看故事。</span>
       <span class="sr-only" id="game-controls" data-journey-text="操作角色：左右方向鍵移動，Space / W / ↑ 跳躍，空中再按一次二段跳，所有職業從初心者起即可使用。靠近繩梯後按住 ↑／↓ 攀爬，Space 跳離；平台上 ↓＋Space 往下跳。地面按住 ↓ 趴下，放開站起。對話結束後 A 攻擊，學到新技能後會自動成為攻擊。對話期間可移動與跳躍。HP 歸零後等待墓碑落地，按「在本關復活」或 Enter 繼續。怪物倒下後可繼續移動，三隻寵物會跨平台取回地上裝備。靠近開啟的傳點按 E。Enter 推進對話。觸控可點擊本章怪物攻擊，點擊藍光傳點進入。">操作角色：左右方向鍵移動，Space / W / ↑ 跳躍，空中再按一次二段跳，所有職業從初心者起即可使用。靠近繩梯後按住 ↑／↓ 攀爬，Space 跳離；平台上 ↓＋Space 往下跳。地面按住 ↓ 趴下，放開站起。對話結束後 A 攻擊，學到新技能後會自動成為攻擊。對話期間可移動與跳躍。HP 歸零後等待墓碑落地，按「在本關復活」或 Enter 繼續。怪物倒下後可繼續移動，三隻寵物會跨平台取回地上裝備。靠近開啟的傳點按 E。Enter 推進對話。觸控可點擊本章怪物攻擊，點擊藍光傳點進入。</span>
       <noscript><p class="game-noscript"><span data-journey-text="此互動旅程需要 JavaScript。你也可以前往 ">此互動旅程需要 JavaScript。你也可以前往 </span><a href="/zh/my-story/">My story</a><span data-journey-text=" 閱讀我的經歷。"> 閱讀我的經歷。</span></p></noscript>
     </div>

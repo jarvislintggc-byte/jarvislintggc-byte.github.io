@@ -8,20 +8,28 @@ export function impactTimes(ability){
   const start=times[0]??(ability?Math.min(650,ability.actorDuration*.5):450),rule=ruleFor(ability);
   return Array.from({length:rule.packets},(_,i)=>start+i*packetInterval(ability));
 }
-export function combatPlan(ability,classId){
+export function combatPlan(ability,classId,casts=1){
   const ranged=['mage','archer'].includes(classId)&&Boolean(ability);
   const castX=ranged?43:56;
   const castDuration=ability?castSpan(ability)+75:1050;
-  return {approach:320,castDuration,departure:360,castX,total:320+castDuration+360};
+  casts=casts===3?3:1;
+  const recovery=140,activeDuration=castDuration*casts+recovery*(casts-1);
+  return {approach:320,castDuration,casts,recovery,activeDuration,departure:360,castX,total:320+activeDuration+360};
 }
-export function combatFrame(ability,classId,time){
-  const plan=combatPlan(ability,classId);
-  const castTime=time-plan.approach;
-  if(time<plan.approach)return {x:25+(plan.castX-25)*smooth(time/plan.approach),pose:'walk',castTime:-1,hit:0};
+export function watchImpactTimes(ability,classId,casts=1){
+ const plan=combatPlan(ability,classId,casts);
+ return Array.from({length:plan.casts},(_,cast)=>impactTimes(ability).map(time=>plan.approach+cast*(plan.castDuration+plan.recovery)+time)).flat();
+}
+export function combatFrame(ability,classId,time,casts=1){
+  const plan=combatPlan(ability,classId,casts),activeTime=time-plan.approach;
+  const castIndex=Math.max(0,Math.min(plan.casts-1,Math.floor(activeTime/(plan.castDuration+plan.recovery))));
+  const castTime=activeTime-castIndex*(plan.castDuration+plan.recovery);
+  if(time<plan.approach)return {x:10+(plan.castX-10)*smooth(time/plan.approach),pose:'walk',castTime:-1,hit:0};
   if(castTime<plan.castDuration){
     const impacts=impactTimes(ability);
     const hit=Math.max(0,...impacts.map(start=>{const t=(castTime-start)/180;return t>=0&&t<1?Math.sin(t*Math.PI):0;}));
-    return {x:plan.castX,pose:ability?'cast':castTime<750?'attack':'idle',castTime,hit};
+    return {x:plan.castX,pose:ability?'cast':castTime<750?'attack':'idle',castTime,castIndex,hit};
   }
-  return {x:plan.castX+(64-plan.castX)*smooth((castTime-plan.castDuration)/plan.departure),pose:'walk',castTime:-1,hit:0};
+  if(activeTime<plan.activeDuration)return {x:plan.castX,pose:'idle',phase:'recovery',castTime:-1,castIndex,hit:0};
+  return {x:plan.castX+(64-plan.castX)*smooth((activeTime-plan.activeDuration)/plan.departure),pose:'walk',castTime:-1,castIndex,hit:0};
 }

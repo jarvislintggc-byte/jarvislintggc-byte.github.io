@@ -31,7 +31,7 @@ export function bubbleGeometry({width,height,actorX,boxWidth,boxHeight,headHeigh
 
 // Finished speech leaves the scene; its text remains in the bottom history.
 export function speechVisible(state,chapter,elapsed=0,text=storyLine(state,chapter)){
- return state.phase==='reading'||isClosingSpeech(state)&&elapsed<readingDuration(text);
+ return state.phase==='reading'||isClosingSpeech(state)&&!state.closingFinished&&elapsed<readingDuration(text);
 }
 export function dialogueExpression(state,chapter,elapsed=0,text=storyLine(state,chapter)){
  if(!speechVisible(state,chapter,elapsed,text))return 'default';

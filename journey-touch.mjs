@@ -1,0 +1,51 @@
+// One captured pointer per control lets movement and jumping/attacking coexist.
+export function stickDirection(dx,dy,radius){
+  if(!Number.isFinite(radius)||radius<=0||Math.hypot(dx,dy)<radius*.2)return {left:false,right:false,up:false,down:false};
+  const threshold=Math.max(Math.abs(dx),Math.abs(dy))*.45;
+  return {left:dx < -threshold,right:dx > threshold,up:dy < -threshold,down:dy > radius*.55&&dy>Math.abs(dx)*1.5};
+}
+export function createTouchControls({pad,knob,attack,jump,enabled,onMove,onPress,onRelease,onGesture}){
+  let stick=null;const held=new Map();
+  function releasePad(){
+    const id=stick;stick=null;pad.dataset.active='false';
+    knob.style.setProperty('--stick-x','0px');knob.style.setProperty('--stick-y','0px');
+    onMove(stickDirection(0,0,1));
+    if(id!==null&&pad.hasPointerCapture?.(id))pad.releasePointerCapture(id);
+  }
+  function move(event){
+    if(event.pointerId!==stick)return;
+    if(!enabled('move')){releasePad();return;}
+    const box=pad.getBoundingClientRect(),radius=Math.min(box.width,box.height)/2;
+    const dx=event.clientX-box.left-box.width/2,dy=event.clientY-box.top-box.height/2;
+    const length=Math.hypot(dx,dy),scale=length?Math.min(1,radius*.46/length):0;
+    knob.style.setProperty('--stick-x',`${dx*scale}px`);knob.style.setProperty('--stick-y',`${dy*scale}px`);
+    onMove(stickDirection(dx,dy,radius));
+  }
+  pad.addEventListener('pointerdown',event=>{
+    if(stick!==null||event.button>0||!enabled('move'))return;
+    event.preventDefault();stick=event.pointerId;pad.setPointerCapture?.(stick);pad.dataset.active='true';onGesture();move(event);
+  });
+  pad.addEventListener('pointermove',move);
+  for(const type of ['pointerup','pointercancel','lostpointercapture'])pad.addEventListener(type,event=>{if(event.pointerId===stick)releasePad();});
+  for(const [button,action]of [[attack,'attack'],[jump,'jump']]){
+    const release=event=>{
+      if(held.get(action)!==event.pointerId)return;
+      held.delete(action);button.dataset.active='false';onRelease(action);
+      if(button.hasPointerCapture?.(event.pointerId))button.releasePointerCapture(event.pointerId);
+    };
+    button.addEventListener('pointerdown',event=>{
+      if(held.has(action)||event.button>0||!enabled(action))return;
+      event.preventDefault();held.set(action,event.pointerId);button.setPointerCapture?.(event.pointerId);button.dataset.active='true';onGesture();onPress(action);
+    });
+    for(const type of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(type,release);
+    // Keyboard and assistive activation has no pointerdown. Touch clicks do.
+    button.addEventListener('click',event=>{if(event.detail===0&&enabled(action)){onGesture();onPress(action);onRelease(action);}});
+  }
+  return {reset(){
+    releasePad();
+    for(const [button,action]of [[attack,'attack'],[jump,'jump']]){
+      const id=held.get(action);held.delete(action);button.dataset.active='false';onRelease(action);
+      if(id!==undefined&&button.hasPointerCapture?.(id))button.releasePointerCapture(id);
+    }
+  }};
+}

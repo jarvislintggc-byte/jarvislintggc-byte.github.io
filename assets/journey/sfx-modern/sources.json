@@ -420,6 +420,14 @@
       "bytes": 854,
       "duration": 0.284667,
       "sha256": "d66b532e7478cc4e8dba6c58a18dfc745110bddc473e1c3da8f5da56154fb0e4"
+    },
+    {
+      "file": "sfx-modern/pickup-item.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Game.img/PickUpItem",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Game.img/PickUpItem",
+      "bytes": 3272,
+      "duration": 1.090667,
+      "sha256": "cfe29166d78b1c94122542d9d5b2d9f35ef132f7645460c66f82fd79200263e2"
     }
   ]
 }
