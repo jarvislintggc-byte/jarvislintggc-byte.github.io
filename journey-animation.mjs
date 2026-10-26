@@ -1,5 +1,6 @@
 import {skillTrackGeometry} from './journey-skill-placement.mjs';
 import {ruleFor} from './journey-skill-rules.mjs';
+import {packetInterval,trackWindow} from './journey-skill-timing.mjs';
 // Frame sampling preserves original WZ delays, including transparent wait frames.
 export const sequenceDuration=frames=>frames.reduce((total,frame)=>total+frame.delay,0);
 export function sampleFrames(frames,time,loop=false){
@@ -11,7 +12,7 @@ export function sampleFrames(frames,time,loop=false){
 }
 export function sampleTrack(track,time){
   const local=time-track.start;
-  const window=track.anchor==='projectile'?Math.max(track.flight||250,track.hold||0):Math.max(track.duration,track.hold||0);
+  const window=trackWindow(track);
   if(local<0||local>=window)return null;
   const loop=track.anchor==='projectile'||track.hold>track.duration;
   const result=sampleFrames(track.frames,local,loop);
@@ -27,7 +28,7 @@ export function createSkillView(host,{asset,applySprite,worldSize}){
     if(current===ability)return;
     current=ability;host.replaceChildren();layers=[];
     if(!ability)return;
-    const rule=ruleFor(ability),tracks=ability.tracks.flatMap(track=>['projectile','boss'].includes(track.anchor)?Array.from({length:rule.packets},(_,i)=>({...track,start:track.start+i*rule.packetInterval,hold:rule.packets>1?0:track.hold})):track);
+    const rule=ruleFor(ability),tracks=ability.tracks.flatMap(track=>['projectile','boss'].includes(track.anchor)?Array.from({length:rule.packets},(_,i)=>({...track,start:track.start+i*packetInterval(ability),hold:rule.packets>1?0:track.hold})):track);
     for(const track of tracks){
       const anchor=document.createElement('span'),image=document.createElement('img');
       anchor.className='maple-skill-layer';image.alt='';anchor.append(image);host.append(anchor);layers.push({track,anchor,image});

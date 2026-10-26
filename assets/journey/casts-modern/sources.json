@@ -964,108 +964,171 @@
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-16-0.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/alert/2?renderMode=4",
-      "sha256": "483d61e8d6370f2bd0275132ec309f49c6cd1890cb344239caa187f2c7ed9c21",
-      "bytes": 4266,
+      "file": "casts-modern/warrior-16-1221011-0.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/stand2/2?renderMode=4",
+      "sha256": "09e4b8f51d9e08dc9f27cf7058fd2d7b77406bdf41288c737b7f1f4028467b8f",
+      "bytes": 3804,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-16-1.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/1?renderMode=4",
-      "sha256": "ba0c47b8b6b2839f0fb838c9841bb7b5ae57d3f43797be748b64dd54f9dfc637",
-      "bytes": 3829,
+      "file": "casts-modern/warrior-16-1221011-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/alert/0?renderMode=4",
+      "sha256": "dfe822b4ba9c89303fb68b287a864670c2e49b55914a0220b92b7c4795bab356",
+      "bytes": 4278,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-16-2.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/2?renderMode=4",
-      "sha256": "916c2172133336aa209e400bbb573d5598fed012ed27dd3772c38828f7285e4d",
-      "bytes": 4266,
+      "file": "casts-modern/warrior-16-1221011-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "aef9801a05f039951778e18956d895165a138926df1d5606b1df0c016c742041",
+      "bytes": 4006,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-16-3.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/1?renderMode=4",
-      "sha256": "7cee32dd0f8cf65f2021620b5732f63e62c589058cc195dcecd1b133bbf474c1",
-      "bytes": 4041,
+      "file": "casts-modern/warrior-16-1221011-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "aef9801a05f039951778e18956d895165a138926df1d5606b1df0c016c742041",
+      "bytes": 4006,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-16-4.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingTF/3?renderMode=4",
-      "sha256": "aabd808d713fb6cd452515c35358acdbba0ec58bc6283e9ac8963c5e1933eb85",
-      "bytes": 4279,
+      "file": "casts-modern/warrior-16-1221011-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "aef9801a05f039951778e18956d895165a138926df1d5606b1df0c016c742041",
+      "bytes": 4006,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-17-0.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/alert/2?renderMode=4",
-      "sha256": "17eb0ba42a4352f2621a8a8e72c155a593c0e5a3411fe246ce92469dd17230c5",
-      "bytes": 4179,
+      "file": "casts-modern/warrior-16-1221011-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "aef9801a05f039951778e18956d895165a138926df1d5606b1df0c016c742041",
+      "bytes": 4006,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-17-1.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/1?renderMode=4",
-      "sha256": "d97e916255e10fcbdebb08d9ad5010ec7bb8fe50c4e57f1aac1c01d849d6d78e",
-      "bytes": 3825,
+      "file": "casts-modern/warrior-16-1221011-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "aef9801a05f039951778e18956d895165a138926df1d5606b1df0c016c742041",
+      "bytes": 4006,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-17-2.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/2?renderMode=4",
-      "sha256": "7abe74eeb8aa8197bca36af443a42fa50217a8c7acab4d899ad9191f8d58c62e",
-      "bytes": 4216,
+      "file": "casts-modern/warrior-16-1221011-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052148%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "aef9801a05f039951778e18956d895165a138926df1d5606b1df0c016c742041",
+      "bytes": 4006,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-17-3.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/1?renderMode=4",
-      "sha256": "809c2e0539e0c65b5e788af513d630ff2bc21c931066d639aae5880350fb231c",
-      "bytes": 3904,
+      "file": "casts-modern/warrior-17-1221011-0.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/stand2/2?renderMode=4",
+      "sha256": "7ad946e42f7c0622714a1da7e8d97a26bb29132b7917927eccccd041fef48f7b",
+      "bytes": 3652,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-17-4.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingTF/3?renderMode=4",
-      "sha256": "e92949794fabb56869ae38a4db32f79d88f06fef0313f60f61a5182547275311",
-      "bytes": 4131,
+      "file": "casts-modern/warrior-17-1221011-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/alert/0?renderMode=4",
+      "sha256": "deecc11eb18494a0440bc58a3fac7a5e1db46dcb01108a53e19ddc746bee460b",
+      "bytes": 4184,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-18-0.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/alert/2?renderMode=4",
-      "sha256": "bf0dba2047632516667d8852bf0d624ee58bbf1689c621a2f4dd548759a14888",
-      "bytes": 4246,
+      "file": "casts-modern/warrior-17-1221011-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "d8088a99d848e07d02ab43fe54d77921d069fcd8f2406c76281adc8a313bc611",
+      "bytes": 3936,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-18-1.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/1?renderMode=4",
-      "sha256": "ea14401b44f8a094613892a9c182e790ca05e95f98c86ac59e5f0c40a97c838f",
-      "bytes": 3920,
+      "file": "casts-modern/warrior-17-1221011-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "d8088a99d848e07d02ab43fe54d77921d069fcd8f2406c76281adc8a313bc611",
+      "bytes": 3936,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-18-2.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/2?renderMode=4",
-      "sha256": "30cc92187a13ac8e3d0441ec06d18c1dad94f24eae704dd1033704bcd0325ea9",
-      "bytes": 4318,
+      "file": "casts-modern/warrior-17-1221011-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "d8088a99d848e07d02ab43fe54d77921d069fcd8f2406c76281adc8a313bc611",
+      "bytes": 3936,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-18-3.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/1?renderMode=4",
-      "sha256": "ae6a32b291abbfdacb76887b08a0d5002842311099925539662903f286d28742",
-      "bytes": 3968,
+      "file": "casts-modern/warrior-17-1221011-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "d8088a99d848e07d02ab43fe54d77921d069fcd8f2406c76281adc8a313bc611",
+      "bytes": 3936,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/warrior-18-4.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingTF/3?renderMode=4",
-      "sha256": "00681c81254efdc1125c429d650a008c6f46a8ab6535446ecc7a5a00af498d60",
-      "bytes": 4230,
+      "file": "casts-modern/warrior-17-1221011-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "d8088a99d848e07d02ab43fe54d77921d069fcd8f2406c76281adc8a313bc611",
+      "bytes": 3936,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/warrior-17-1221011-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002338%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "d8088a99d848e07d02ab43fe54d77921d069fcd8f2406c76281adc8a313bc611",
+      "bytes": 3936,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/warrior-18-1221011-0.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/stand2/2?renderMode=4",
+      "sha256": "74bc51d351dd0500c6a97823c640c53751f882e3b97d8eba1f924c9815a3584c",
+      "bytes": 3712,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/warrior-18-1221011-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/alert/0?renderMode=4",
+      "sha256": "020928bc58156fcfb8951b986b57bd714fab3491daca0d8c13b7089e5ea10785",
+      "bytes": 4251,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/warrior-18-1221011-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "0e547161c1ec31a1c229ebd5cd33b57465af510187582b644a3310fbd10db76b",
+      "bytes": 4035,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/warrior-18-1221011-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "0e547161c1ec31a1c229ebd5cd33b57465af510187582b644a3310fbd10db76b",
+      "bytes": 4035,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/warrior-18-1221011-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "0e547161c1ec31a1c229ebd5cd33b57465af510187582b644a3310fbd10db76b",
+      "bytes": 4035,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/warrior-18-1221011-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "0e547161c1ec31a1c229ebd5cd33b57465af510187582b644a3310fbd10db76b",
+      "bytes": 4035,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/warrior-18-1221011-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "0e547161c1ec31a1c229ebd5cd33b57465af510187582b644a3310fbd10db76b",
+      "bytes": 4035,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/warrior-18-1221011-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1052466%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302056%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002377%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072147%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "sha256": "0e547161c1ec31a1c229ebd5cd33b57465af510187582b644a3310fbd10db76b",
+      "bytes": 4035,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
@@ -2826,59 +2889,171 @@
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/archer-12-0.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "sha256": "8aed5ab64bbb379688c0381ce8ba86b4289d692c91a155444f5c013b031850dd",
-      "bytes": 4442,
+      "file": "casts-modern/archer-12-3321014-0.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/0?renderMode=4",
+      "sha256": "2eca16d5fa06ecc0b1a5b7e4f3eb4b0fde34e32425538872e2d3af5458763352",
+      "bytes": 4097,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/archer-12-1.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "sha256": "8aed5ab64bbb379688c0381ce8ba86b4289d692c91a155444f5c013b031850dd",
-      "bytes": 4442,
+      "file": "casts-modern/archer-12-3321014-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/2?renderMode=4",
+      "sha256": "59f25af723947dafbb92350cbd78167934e86bc37fe16fda7a4a19b7a302d09a",
+      "bytes": 4004,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/archer-13-0.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "sha256": "542d7021f34d8cbcb1ffe7630b7ce7f193479a4ade57274bf829f502c20aae14",
-      "bytes": 4511,
+      "file": "casts-modern/archer-12-3321014-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingOF/1?renderMode=4",
+      "sha256": "776382350a984dba210b206723f71b95be13e84771f7dc77392ce090d2320388",
+      "bytes": 4032,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/archer-13-1.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "sha256": "542d7021f34d8cbcb1ffe7630b7ce7f193479a4ade57274bf829f502c20aae14",
-      "bytes": 4511,
+      "file": "casts-modern/archer-12-3321014-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/2?renderMode=4",
+      "sha256": "f70bfc918a3114fa1e599be8eac42deec0e8abc1e4ce85f9a3cdd668e81ed06e",
+      "bytes": 4989,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/archer-14-0.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "sha256": "a21b8e18bd339b55c38ff8e464735cb5ab4b8865f4a26d45af26e68ca1e2d52b",
-      "bytes": 4859,
+      "file": "casts-modern/archer-12-3321014-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/0?renderMode=4",
+      "sha256": "6a28c904bacef0dcc7ad7c6f5433b70e0aba767a1a32fc714a5b721ca7c792c9",
+      "bytes": 4394,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/archer-14-1.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "sha256": "a21b8e18bd339b55c38ff8e464735cb5ab4b8865f4a26d45af26e68ca1e2d52b",
-      "bytes": 4859,
+      "file": "casts-modern/archer-12-3321014-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050165%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/1?renderMode=4",
+      "sha256": "38d2d3608ec4840789a56b0148b4bf435592388aef359e686704075bc24e1f32",
+      "bytes": 4260,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/archer-15-0.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "sha256": "f351cea05ce4a4f091460bdec2c21bd1f245949fb980edbff58a381dad83e87d",
-      "bytes": 4885,
+      "file": "casts-modern/archer-13-3321014-0.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/0?renderMode=4",
+      "sha256": "88140011f072eb54a1bb6c776e0cb9179af4c0808354f1f82db8ef448a16e969",
+      "bytes": 4160,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {
-      "file": "casts-modern/archer-15-1.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "sha256": "f351cea05ce4a4f091460bdec2c21bd1f245949fb980edbff58a381dad83e87d",
-      "bytes": 4885,
+      "file": "casts-modern/archer-13-3321014-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/2?renderMode=4",
+      "sha256": "c9b86b6cbf1d88c292d63ce01c86f2e06d75893f69a48e7cf38e368570052ec6",
+      "bytes": 4000,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-13-3321014-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingOF/1?renderMode=4",
+      "sha256": "7748d9557c4845848ae1ab5c6d7cc717462a0098bd5d98d7241a1b3df79d8bec",
+      "bytes": 4113,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-13-3321014-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/2?renderMode=4",
+      "sha256": "8043d1f5113687ac393d317acb83b420cdf20606507b6ec4a034cd1e6f46ceb1",
+      "bytes": 5017,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-13-3321014-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/0?renderMode=4",
+      "sha256": "4f9c1a5c980cb99bf4f41851a9cdf57301689350e0c9f16e92e8f77464667a51",
+      "bytes": 4436,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-13-3321014-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002211%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/1?renderMode=4",
+      "sha256": "ee9dc5fff90a4fd0fefb7e656fb512e3c28c3b8b19591f382c1520a9a4e9c225",
+      "bytes": 4263,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-14-3321014-0.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/0?renderMode=4",
+      "sha256": "10bb9a66d72901e66ceb86c22b8e0f602dbe056936f3de60d29133b16f9bdced",
+      "bytes": 4427,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-14-3321014-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/2?renderMode=4",
+      "sha256": "ff6b1d8c64c0f0b23a152dc22c93e5532eeb3edb0aca5693d3c211122c64c756",
+      "bytes": 4245,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-14-3321014-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingOF/1?renderMode=4",
+      "sha256": "7babe6ae29c94b7fa85813c406b86ce482a580a4718daf1a6e2e7dbc2f27a85a",
+      "bytes": 3958,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-14-3321014-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/2?renderMode=4",
+      "sha256": "107961162aa8c26544a2c091219901d6468b53400bc1441c9943f49c782ddfb9",
+      "bytes": 5304,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-14-3321014-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/0?renderMode=4",
+      "sha256": "c9dff51f6dd2f7867515b23b81ecd33bfb047a7710b0bcf0f757f1fba62acb9f",
+      "bytes": 4728,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-14-3321014-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102015%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/1?renderMode=4",
+      "sha256": "16b72a0342a8b960f8c1c4f5ffff64a9e4e638f7b123d53403e228a4e1e2ff8f",
+      "bytes": 4537,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-15-3321014-0.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/0?renderMode=4",
+      "sha256": "1a4978a4c390c2a91ba7fbf852b4f30fac86c81fcc63883519528f995c0f4e93",
+      "bytes": 4412,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-15-3321014-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/2?renderMode=4",
+      "sha256": "a4dea0d55cf4fbfafa11cbc095b21cfda3591658dc2d4ea1bc2f3a4d19bf97a8",
+      "bytes": 4310,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-15-3321014-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingOF/1?renderMode=4",
+      "sha256": "eada16554790570b534b38206bcb0ffe904127878c25e29d54e33db192cc9497",
+      "bytes": 4152,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-15-3321014-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/2?renderMode=4",
+      "sha256": "29b518efdfa0ba1aeb7e67cf764ec195e2f69e224a6cd89a8274fcdef6637eb2",
+      "bytes": 5312,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-15-3321014-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/0?renderMode=4",
+      "sha256": "4b1e1fb088773c267149bafe757ae3c85d6bc8a5097ba2e86bc042b55da1006e",
+      "bytes": 4733,
+      "timingSource": "Existing original GMS270 skill actor frame metadata"
+    },
+    {
+      "file": "casts-modern/archer-15-3321014-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050061%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452009%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002275%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102031%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072144%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/1?renderMode=4",
+      "sha256": "e05f2e7928b86b60b25022650f7c1d873a657046c6b1ef0b22495087ee47c849",
+      "bytes": 4570,
       "timingSource": "Existing original GMS270 skill actor frame metadata"
     },
     {

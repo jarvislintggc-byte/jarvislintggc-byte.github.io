@@ -1,9 +1,9 @@
 // Chapter unlocks are game-only; skill IDs/names match original MapleStory data.
 export const jobs = [
-  { id:'warrior', name:'劍士', color:'#df9860', symbol:'斬', style:"劍氣縱橫 · 憤怒爆發",
+  { id:'warrior', name:'劍士', color:'#df9860', symbol:'斬', style:"劍氣縱橫 · 鬼神之擊",
     gear:[1302000,1050005,1002040,1302008,1102000],
     gearNames:['冒險長劍','劍士道服','秘銀頭盔','進階長劍','劍士披風'],
-    skills:["劍氣縱橫", "雙連斬", "英勇狂斬", "狂暴攻擊", "憤怒爆發"], skillIds:[1001005, 1101011, 1111010, 1120017, 1121052], actions:["slashBlast", "brandishNew2", "braveslash1", "ragingBlowNew", "HY112rageUprising"] },
+    skills:["劍氣縱橫", "雙連斬", "英勇狂斬", "狂暴攻擊", "鬼神之擊"], skillIds:[1001005, 1101011, 1111010, 1120017, 1221011], actions:["slashBlast", "brandishNew2", "braveslash1", "ragingBlowNew", "sanctuaryNew"] },
   { id:'mage', name:'法師', color:'#a8a6ef', symbol:'魔', style:"魔靈彈 · 藍焰斬",
     gear:[1372005,1050003,1005896,1382000,1102001],
     gearNames:['木製法杖','藍色法師袍','魔法師帽','進階長杖','法師披風'],
@@ -15,7 +15,7 @@ export const jobs = [
   { id:'archer', name:'弓手', color:'#a8c984', symbol:'矢', style:"斷魂箭 · 波紋衝擊",
     gear:[1452002,1040022,1002014,1452000,1102002], bottom:1060010,
     gearNames:['戰鬥弓','綠色弓手服','弓手頭帶','進階弓','弓手披風'],
-    skills:["斷魂箭", "Wind Arrow", "驟雨狂矢", "暴風神射", "波紋衝擊"], skillIds:[3001004, 3101005, 3121015, 3121020, 3121052], actions:["arrowBlow", "arrowOfWind", "uncountableArrow", "HY312stormArrowMovablePre", "HY312windOfFrey"] },
+    skills:["斷魂箭", "Wind Arrow", "驟雨狂矢", "連段襲擊", "波紋衝擊"], skillIds:[3001004, 3101005, 3121015, 3321014, 3121052], actions:["arrowBlow", "arrowOfWind", "uncountableArrow", "PFComboAttack1", "HY312windOfFrey"] },
   { id:'pirate', name:'海盜', color:'#8dcad9', symbol:'擊', style:"旋風斬 · 閃‧連殺",
     gear:[1482001,1052098,1002613,1482002,1102003],
     gearNames:['皮革指虎','海盜棉服','海盜船帽','進階指虎','海盜披風'],

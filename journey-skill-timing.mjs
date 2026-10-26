@@ -1,0 +1,27 @@
+import {ruleFor} from './journey-skill-rules.mjs';
+
+export const packetInterval=ability=>(ruleFor(ability).packetInterval||0)/(ability?.tempo||1);
+export function trackWindow(track){
+ return track.anchor==='projectile'?Math.max(track.flight||250,track.hold||0):Math.max(track.duration,track.hold||0);
+}
+function visibleWindow(track){
+ if(track.anchor==='projectile'||track.hold)return trackWindow(track);
+ let time=0,lastVisible=0;
+ for(const frame of track.frames){time+=frame.delay;if(!frame.transparent)lastVisible=time;}
+ return lastVisible;
+}
+export function castSpan(ability){
+ if(!ability)return 800;
+ const rule=ruleFor(ability),interval=packetInterval(ability);
+ return Math.max(ability.actorDuration,...ability.tracks.map(track=>track.start+visibleWindow(track)+(['boss','projectile'].includes(track.anchor)?(rule.packets-1)*interval:0)));
+}
+// Keep original art/timing metadata intact. Runtime copies share one faster
+// timeline for body poses, effects, projectiles, damage packets and audio.
+export function paceAbility(ability,actorFrames=ability?.actorFrames){
+ if(!ability)return null;
+ const original={...ability,actorFrames,actorDuration:actorFrames.reduce((sum,f)=>sum+f.delay,0)};
+ const limit=ability.id===1221011?1050:950,span=castSpan(original),tempo=Math.max(1,span/(limit-75));
+ const frames=items=>items.map(frame=>({...frame,delay:frame.delay/tempo}));
+ return {...original,tempo,sourceSpan:span,actorFrames:frames(actorFrames),actorDuration:original.actorDuration/tempo,
+  tracks:original.tracks.map(track=>({...track,start:track.start/tempo,hold:(track.hold||0)/tempo,flight:(track.flight||0)/tempo,duration:track.duration/tempo,frames:frames(track.frames)})),battleDuration:span/tempo+75};
+}

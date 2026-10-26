@@ -475,286 +475,238 @@
       "bytes": 9133
     },
     {
-      "file": "skills-modern/1121052-effect-0.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/0",
-      "sha256": "13c6b42af9594ac6bd691c4b6e4ebc609941eff11545221ce6d5807fa35b21bb",
-      "bytes": 10693
+      "file": "skills-modern/1221011-effect-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/0",
+      "sha256": "49d06a1d93afdadbd9a533fc4689a8b2f668974d5b7cc55eb8720c05a65291f8",
+      "bytes": 87926
     },
     {
-      "file": "skills-modern/1121052-effect-1.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/1",
-      "sha256": "8387e8d50917b09c8608c6416a21777470d4fe799c7703edcee56d3d36b16db7",
-      "bytes": 43841
+      "file": "skills-modern/1221011-effect-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/1",
+      "sha256": "088118e231e9258bd8ae8d0595ebfc1b0af514553621d116e614188099be3973",
+      "bytes": 114973
     },
     {
-      "file": "skills-modern/1121052-effect-10.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/10",
-      "sha256": "ff2f7643aac24b09762c688ae493f0588f04b5df4cc2fd2dfe4fb78c794a7a9e",
-      "bytes": 18687
+      "file": "skills-modern/1221011-effect-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/10",
+      "sha256": "6fc22a6e20663b286d2c547cc7cb0eb87bffde51756836e80f665226b7556c38",
+      "bytes": 103910
     },
     {
-      "file": "skills-modern/1121052-effect-11.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/11",
-      "sha256": "2e77e45f7cb277dc70b34e38c0e4fec587333b6e5afcd0581cbdec9dadfb106d",
-      "bytes": 16835
+      "file": "skills-modern/1221011-effect-11.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/11",
+      "sha256": "d4ed963e564c6769f70fdd59a0aa6be65a9c1c6bd8ce332350a180ecee210ae6",
+      "bytes": 99430
     },
     {
-      "file": "skills-modern/1121052-effect-12.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/12",
-      "sha256": "26b68c0cf58c2d586f120e19bfc7249150c4f3a0631a651af0742fd60fa17b41",
-      "bytes": 14991
+      "file": "skills-modern/1221011-effect-12.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/12",
+      "sha256": "f3881f43b8f32e2b409ec9a58c2eb1205b7ff9dd45ce8d82971f1949a9cd430e",
+      "bytes": 79435
     },
     {
-      "file": "skills-modern/1121052-effect-13.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/13",
-      "sha256": "7904faabba6af374504f5ba95447edc1113756708693a932e81befd1c9a38604",
-      "bytes": 11031
+      "file": "skills-modern/1221011-effect-13.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/13",
+      "sha256": "c081ae1c4f3ceeb5c764588af20dc8c14980d5be80d54436cf58c1bae9d24bb5",
+      "bytes": 79261
     },
     {
-      "file": "skills-modern/1121052-effect-14.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/14",
-      "sha256": "79306e15e317380367179022b7f4ee79953bebeb2caa9dcf78fe69c9ae6a4e58",
-      "bytes": 7516
+      "file": "skills-modern/1221011-effect-14.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/14",
+      "sha256": "d413d0fc71c7ca1894c26eaec0abfb5afca32103ec5bd9fef3a038be791a94e8",
+      "bytes": 75217
     },
     {
-      "file": "skills-modern/1121052-effect-15.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/15",
-      "sha256": "565d80dd65694b566ecb454e4f6c937d6b93f9dcc1c8cba9788585f7aea138f7",
-      "bytes": 4585
+      "file": "skills-modern/1221011-effect-15.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/15",
+      "sha256": "7acd816cfb0fd2fddc4dc321b70e2f4574d0a4b733134db2d2071882617c0765",
+      "bytes": 76338
     },
     {
-      "file": "skills-modern/1121052-effect-16.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/16",
-      "sha256": "8d5e620aefd2b72b1402594ca4f59f7656e9f743f9902debbd42812bb7677a1c",
-      "bytes": 2207
+      "file": "skills-modern/1221011-effect-16.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/16",
+      "sha256": "d59efa68f61db6fd471717403cd0d5cec5775e1486499b939f78d318f5ffe26b",
+      "bytes": 358028
     },
     {
-      "file": "skills-modern/1121052-effect-17.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/17",
-      "sha256": "df720e245246f65ae6e4d73d8519e04850e510d90702166332cf4c885050fc2b",
-      "bytes": 516
+      "file": "skills-modern/1221011-effect-17.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/17",
+      "sha256": "6e7c3129da9bcfed0fe0cb005030497e5c6124bc425b0e6baaf9381df3f57461",
+      "bytes": 388943
     },
     {
-      "file": "skills-modern/1121052-effect-2.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/2",
-      "sha256": "d758182dcf218c88b86761cdc4cd25bb650c73caa9d31c1fb222e9041cde7331",
-      "bytes": 68840
+      "file": "skills-modern/1221011-effect-18.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/18",
+      "sha256": "bc84d6b6ebbb0d14ed171e1fedec15c0d0fa38ef53eb4c89508197161d0fb61c",
+      "bytes": 364373
     },
     {
-      "file": "skills-modern/1121052-effect-3.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/3",
-      "sha256": "49947116881d9950d3018a24125c2051ebea8ef6f65e7a3782f4c3bb68428d3a",
-      "bytes": 69971
+      "file": "skills-modern/1221011-effect-19.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/19",
+      "sha256": "5d683219a7bdf4755fcbdbd4dd7d5c129c92b54135895bc12692f652bf082f5f",
+      "bytes": 377704
     },
     {
-      "file": "skills-modern/1121052-effect-4.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/4",
-      "sha256": "f8cbd51cee80e6d64029c5deefd8c4fd6999107d9ca95886547948b68b714c18",
-      "bytes": 60403
+      "file": "skills-modern/1221011-effect-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/2",
+      "sha256": "27a3dccaf3ca38ac412a9c0676136696e0a928883f695b3e0683534341a30f83",
+      "bytes": 125107
     },
     {
-      "file": "skills-modern/1121052-effect-5.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/5",
-      "sha256": "ed11cdde73b06a6514b7d1c95788e1207a40b86168719ea875371f20537cd85f",
-      "bytes": 47402
+      "file": "skills-modern/1221011-effect-20.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/20",
+      "sha256": "05c42607287835c5e4f986ddf8d8312a2962642db328ab82c95ed884f7333317",
+      "bytes": 392968
     },
     {
-      "file": "skills-modern/1121052-effect-6.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/6",
-      "sha256": "46d661e8c1e7f6be64d593dc2b8d915fd33621c810a14c40342f7ffa902d4b96",
-      "bytes": 38037
+      "file": "skills-modern/1221011-effect-21.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/21",
+      "sha256": "2f492b4dcab9c9e433f26e1ebfc2dfa0c0ce0197072909b60916d8db4e298b6d",
+      "bytes": 437241
     },
     {
-      "file": "skills-modern/1121052-effect-7.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/7",
-      "sha256": "4d2635e3f7d0daffff789526fe801d6bcdb8ca201ca12143db75ad5014a1d750",
-      "bytes": 18016
+      "file": "skills-modern/1221011-effect-22.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/22",
+      "sha256": "c25581f802f51d23a60cc121b0944dc6304470757319aad794fc248f753e4303",
+      "bytes": 350936
     },
     {
-      "file": "skills-modern/1121052-effect-8.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/8",
-      "sha256": "5840c163eefdbb05d4873e816d1de90b232589f9a305a83ea9c88466bea8f3b7",
-      "bytes": 6089
+      "file": "skills-modern/1221011-effect-23.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/23",
+      "sha256": "e4d57197fdedadb31a38d552747156c87c5b4f1de604a4e0a4d14dae5374a4cd",
+      "bytes": 308875
     },
     {
-      "file": "skills-modern/1121052-effect-9.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect/9",
-      "sha256": "482b61724f5ef838c999f0c403fa936ca2d8f883f003214e77ec675f6280eadf",
-      "bytes": 18589
+      "file": "skills-modern/1221011-effect-24.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/24",
+      "sha256": "602d977f6e2082b22eb5df590377e4e3897c00299538d4c853893569e077b8f2",
+      "bytes": 243606
     },
     {
-      "file": "skills-modern/1121052-effect0-0.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/0",
-      "sha256": "c578077141c51e225e4f693e034eb2ccba0ba2daa8ce91953e87e199f42c2c85",
-      "bytes": 89
+      "file": "skills-modern/1221011-effect-25.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/25",
+      "sha256": "5aa0c2378cb0040565b9d10ecb13c8183cad687601a63be191e803b5b1229616",
+      "bytes": 228209
     },
     {
-      "file": "skills-modern/1121052-effect0-1.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/1",
-      "sha256": "ee399ba2c771b24340b556a22a5c9a377cf72daedf5b41d74ea26ecd4886cc3c",
-      "bytes": 62384
+      "file": "skills-modern/1221011-effect-26.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/26",
+      "sha256": "7cded1820c7860b0a2541c8c8c158bd1347bdb537f63f6f710ab97132c064b34",
+      "bytes": 215818
     },
     {
-      "file": "skills-modern/1121052-effect0-10.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/10",
-      "sha256": "5e2a980d510f9ff1f5f2bde6edbedc243ad49f7e61391a985274a97997a92380",
-      "bytes": 533880
+      "file": "skills-modern/1221011-effect-27.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/27",
+      "sha256": "3b9793c861da51d08b1705c374156821613597469bdd9a7cb43fb51839690956",
+      "bytes": 191445
     },
     {
-      "file": "skills-modern/1121052-effect0-11.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/11",
-      "sha256": "342e7063f1347b2531f7073b8bc900bc172df820c09140b17f92c22b94f49f1d",
-      "bytes": 525639
+      "file": "skills-modern/1221011-effect-28.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/28",
+      "sha256": "ebc4bd7618be875d71aa42ce9b604a2ebf959ddc7b186cca966cbf0b459b4565",
+      "bytes": 156224
     },
     {
-      "file": "skills-modern/1121052-effect0-12.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/12",
-      "sha256": "2178b59c24a4cee38c15986cac93ea357de9a550d71a58ceab7feefe31f4a2da",
-      "bytes": 503694
+      "file": "skills-modern/1221011-effect-29.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/29",
+      "sha256": "bfdfee487574195f12b7e841ff6d02d6d4e36316e82603bfe60994c4389db1d9",
+      "bytes": 46686
     },
     {
-      "file": "skills-modern/1121052-effect0-13.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/13",
-      "sha256": "21aad72349b6c77233613edd1d2e452c3444218335bd956c2dc44a1bcb4d3ec8",
-      "bytes": 487817
+      "file": "skills-modern/1221011-effect-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/3",
+      "sha256": "dd6446202368dca63341a8db81c2956a5e0f9587cd63341cf94877c691e8e5ce",
+      "bytes": 143279
     },
     {
-      "file": "skills-modern/1121052-effect0-14.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/14",
-      "sha256": "2bc259ec344829abd68474d1db9b858283c68f7b41c9968a20f2bb7a8a867b47",
-      "bytes": 462153
+      "file": "skills-modern/1221011-effect-30.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/30",
+      "sha256": "413b7c9f9c885c71374d6bee8a8f1a91bc4aa3c10c2bb058246a18b4a0349735",
+      "bytes": 19506
     },
     {
-      "file": "skills-modern/1121052-effect0-15.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/15",
-      "sha256": "fdcb3e2c0a93d7ed5d0df1783e10eb0fd01cefca43ee737060a087621a11956f",
-      "bytes": 452000
+      "file": "skills-modern/1221011-effect-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/4",
+      "sha256": "debb1503b20b62be788fc14cbb9962b135f2f8b44c8fb1678af99976a0a09bae",
+      "bytes": 153115
     },
     {
-      "file": "skills-modern/1121052-effect0-16.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/16",
-      "sha256": "ce97a953fa5c6fddaf2dd5233dcf59a9c278975140fa3ff24323485d0a493aa4",
-      "bytes": 431734
+      "file": "skills-modern/1221011-effect-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/5",
+      "sha256": "2bb959a603b8a5dc98d6e751988a304d94845e3b5f97196b518e357a4ab36909",
+      "bytes": 152674
     },
     {
-      "file": "skills-modern/1121052-effect0-17.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/17",
-      "sha256": "69830d4f43ede14347d7fc811e6465ed7ce7af0f08b13978101bcd6f5781956e",
-      "bytes": 432358
+      "file": "skills-modern/1221011-effect-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/6",
+      "sha256": "418d20342088d75c5347aaa2ef2ae167fad9981dd13ee02c7fc1f53a2ed23125",
+      "bytes": 149087
     },
     {
-      "file": "skills-modern/1121052-effect0-18.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/18",
-      "sha256": "b5d623f6d497aa07eba96a1367f10a4d78952af0d13b8d5fbaa7280143e2550c",
-      "bytes": 395241
+      "file": "skills-modern/1221011-effect-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/7",
+      "sha256": "bbf649367d268a6cb5427fbcae4b12c077d4eb483a4bf06e3331316185b5bc59",
+      "bytes": 141422
     },
     {
-      "file": "skills-modern/1121052-effect0-19.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/19",
-      "sha256": "20d3734c0f6ccbd5d8f7fafed2bd3c0f5485a9a0e3e6734b42525fe70b0757f9",
-      "bytes": 282679
+      "file": "skills-modern/1221011-effect-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/8",
+      "sha256": "873b764b5fc5ead8d9978c1ff1268ed48c68f86db7391aae19ef1f7596592e09",
+      "bytes": 129655
     },
     {
-      "file": "skills-modern/1121052-effect0-2.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/2",
-      "sha256": "f4962fdb137a91d8865a496dc85238fdfcf0016bac57b41fac76c7a9f86bea00",
-      "bytes": 212376
+      "file": "skills-modern/1221011-effect-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/effect/9",
+      "sha256": "c1f4f0aed2b5118900b8e605387e0270208a86a4632215322a93a7dd61137cbe",
+      "bytes": 125631
     },
     {
-      "file": "skills-modern/1121052-effect0-20.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/20",
-      "sha256": "a824c4bdef5c82b9c39440bbd2ec736013b5b21acefb43a8b05c7ba46a8fe5b2",
-      "bytes": 187676
+      "file": "skills-modern/1221011-hit-0-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/hit/0/0",
+      "sha256": "89e3607121ae2250d315eb66f8ae619fb477419e3f999d99a706a5269b5104b9",
+      "bytes": 52604
     },
     {
-      "file": "skills-modern/1121052-effect0-3.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/3",
-      "sha256": "68d543ed9d182849c0a89daa31f8945c53336efef4865fb3f520c636f093cb0d",
-      "bytes": 245548
+      "file": "skills-modern/1221011-hit-0-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/hit/0/1",
+      "sha256": "14f116c6be4b170bf0dbf0d78eefcd21837f32288309213e925a2a904b8cd6f4",
+      "bytes": 53409
     },
     {
-      "file": "skills-modern/1121052-effect0-4.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/4",
-      "sha256": "8dbe148fa10ae390ad1e5798576006828b74cfece2cffce1393ac4be4a61377b",
-      "bytes": 280176
+      "file": "skills-modern/1221011-hit-0-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/hit/0/2",
+      "sha256": "6c4083d8c29198befe911c1a007c61356d1306cbc6f6b2a063330870bb9a71c1",
+      "bytes": 39680
     },
     {
-      "file": "skills-modern/1121052-effect0-5.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/5",
-      "sha256": "09b796ee0092a9f267ffbbd45b519430a7dd4347e5cd33f86b2461453bc738d0",
-      "bytes": 437436
+      "file": "skills-modern/1221011-hit-0-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/hit/0/3",
+      "sha256": "95a5cfc7bfd679d79547ead562d9ad321ad871eb269fcf52b6dc897bfd0ee27b",
+      "bytes": 44027
     },
     {
-      "file": "skills-modern/1121052-effect0-6.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/6",
-      "sha256": "f8fd7ddc4c22def7d59937be2bbd28fd0c434210c9acf109cf657c416a6ef380",
-      "bytes": 439391
+      "file": "skills-modern/1221011-hit-0-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/hit/0/4",
+      "sha256": "69d11c4f5bae45934998f01758c904a62a671cba9a74766e7017165e26fc2fc0",
+      "bytes": 44276
     },
     {
-      "file": "skills-modern/1121052-effect0-7.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/7",
-      "sha256": "4f109c2145c6afa9bb36d9a8c138a28bc5252f1c70a4de041b88784ff22cc3c8",
-      "bytes": 470795
+      "file": "skills-modern/1221011-hit-0-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/hit/0/5",
+      "sha256": "1433a9fe35aa4aefe6f98c54cf2e2f564d8146414047b028475cb31119295f2b",
+      "bytes": 51340
     },
     {
-      "file": "skills-modern/1121052-effect0-8.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/8",
-      "sha256": "c61fd6518246a5b8623806bdbc955905e38577bf17e79e74a92fa549111c2d75",
-      "bytes": 504970
+      "file": "skills-modern/1221011-hit-0-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/hit/0/6",
+      "sha256": "7c09887eb2f955ee8f339e2ed2ce4093de8a6ffd8a65e9fe88f1e3f958d5fce0",
+      "bytes": 34415
     },
     {
-      "file": "skills-modern/1121052-effect0-9.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/effect0/9",
-      "sha256": "e80df0c156c7eda3102527f964022049645a3fb2aaed2eb9a1ccd7ec9f5a59b4",
-      "bytes": 525818
-    },
-    {
-      "file": "skills-modern/1121052-hit-0-0.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/hit/0/0",
-      "sha256": "adcda4d733664fb0e027efc89599a16702a0a91b2b9175a554d809a5da0ec85e",
-      "bytes": 31753
-    },
-    {
-      "file": "skills-modern/1121052-hit-0-1.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/hit/0/1",
-      "sha256": "5e83c028b71855af418cb9a8256bd8e11f1fd18e48cea1c4237f31482491172b",
-      "bytes": 54935
-    },
-    {
-      "file": "skills-modern/1121052-hit-0-2.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/hit/0/2",
-      "sha256": "52e71d34b5f194172148ecc82665f6a02a2a70568ab88081ed3100b2e4d5777f",
-      "bytes": 64271
-    },
-    {
-      "file": "skills-modern/1121052-hit-0-3.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/hit/0/3",
-      "sha256": "4b6fb8f2c0eca53a8beb90f849c7905b13b56ec5c39d331a7f577de00bf3e236",
-      "bytes": 68699
-    },
-    {
-      "file": "skills-modern/1121052-hit-0-4.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/hit/0/4",
-      "sha256": "b2c9dbbed4c4d09dfb2eb6be5cd0ab2282a004d9534222d6e644ac78d605e08b",
-      "bytes": 72050
-    },
-    {
-      "file": "skills-modern/1121052-hit-0-5.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/hit/0/5",
-      "sha256": "ae0dfd8ba599a67572a2a36f82dcef1e1913823eb340559cfe8dfaa423c747eb",
-      "bytes": 71113
-    },
-    {
-      "file": "skills-modern/1121052-hit-0-6.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/hit/0/6",
-      "sha256": "5a188bd27e682f5fc2f6ccb97acba99bea1f97c7883b51d134fb531fe1eac45c",
-      "bytes": 64824
-    },
-    {
-      "file": "skills-modern/1121052-hit-0-7.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/112.img/skill/1121052/hit/0/7",
-      "sha256": "c6e2fef03b73370fc2c85df956082c9139a4b8fa19811c42b47c79321d989c9e",
-      "bytes": 42396
+      "file": "skills-modern/1221011-hit-0-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/122.img/skill/1221011/hit/0/7",
+      "sha256": "6d64e64eae2c288841a0919ef2b570bb76853ad07c35e369e9572b44f78bf82c",
+      "bytes": 14066
     },
     {
       "file": "skills-modern/2001008-ball-0.png",
@@ -2035,222 +1987,6 @@
       "bytes": 20651
     },
     {
-      "file": "skills-modern/3121020-ball-0.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/ball/0",
-      "sha256": "315e12d22e82fe5a2a3c4e35296c3ee3a7130069cfd381674b2fd31ddd95a7bf",
-      "bytes": 4312
-    },
-    {
-      "file": "skills-modern/3121020-ball-1.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/ball/1",
-      "sha256": "4d5a817a4d87c63529b135a788a83caab01c6443520fe39fb1167bf90cfdf9b6",
-      "bytes": 6894
-    },
-    {
-      "file": "skills-modern/3121020-ball-2.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/ball/2",
-      "sha256": "7a78e1f4130e1a87451f60e4afbffaa3060af90b958ce14a3afa9b883c699f40",
-      "bytes": 8367
-    },
-    {
-      "file": "skills-modern/3121020-ball-3.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/ball/3",
-      "sha256": "40aed44e9415425b55785be19f76f1d3ddce8b635b3fa877ef854803b8643582",
-      "bytes": 8218
-    },
-    {
-      "file": "skills-modern/3121020-ball-4.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/ball/4",
-      "sha256": "e07281758a3294c035c71b1b877f8ded03e98e5a102a805ffac046acaee48fe5",
-      "bytes": 7586
-    },
-    {
-      "file": "skills-modern/3121020-ball-5.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/ball/5",
-      "sha256": "711241b137671716ac468f1f4c15b5bbf4d5b1ed4f268713463c1ba5db83ec8d",
-      "bytes": 5356
-    },
-    {
-      "file": "skills-modern/3121020-ball-6.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/ball/6",
-      "sha256": "51695ae307069bd5093423fc852b2eae9b1ab6cc08d3c36a8ff5a3269907bb65",
-      "bytes": 4769
-    },
-    {
-      "file": "skills-modern/3121020-ball-7.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/ball/7",
-      "sha256": "483986c8e6c5c2b913cc141a6529d5d0605776d257ad719f5626818abb143000",
-      "bytes": 4087
-    },
-    {
-      "file": "skills-modern/3121020-ball-8.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/ball/8",
-      "sha256": "1fc99b91570cd4514f75e1c5bf131ca33e8d3114a3492cdc0680e466c5c955d8",
-      "bytes": 3480
-    },
-    {
-      "file": "skills-modern/3121020-hit-0-0.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/hit/0/0",
-      "sha256": "02a97975fe6ee787e6977b941f504d1b8e4a0fc82950ae51701f6fa393d2f08f",
-      "bytes": 25894
-    },
-    {
-      "file": "skills-modern/3121020-hit-0-1.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/hit/0/1",
-      "sha256": "379cd7c2a7469a5a4d37855b4158a713cdeb3dcf76b5afc2f397a2850c98bd5c",
-      "bytes": 28109
-    },
-    {
-      "file": "skills-modern/3121020-hit-0-2.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/hit/0/2",
-      "sha256": "84da51c925a99cd6fcfa5c493e06e558e785442c6ab2184ecb620220bfe053a6",
-      "bytes": 22345
-    },
-    {
-      "file": "skills-modern/3121020-keydown-0.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/0",
-      "sha256": "3e2b9602710bf4d8a777e1d4bcae5a767b193bb250676abc1cc1942a9de525ef",
-      "bytes": 199407
-    },
-    {
-      "file": "skills-modern/3121020-keydown-1.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/1",
-      "sha256": "0e306fb8e6cedd2acbd6f7ed09d37dd0837b907508d3f7efe4ca15c78bcc124a",
-      "bytes": 210605
-    },
-    {
-      "file": "skills-modern/3121020-keydown-10.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/10",
-      "sha256": "93a85ea31b851ad6ff2a0b302887ccc1dc7a616c54fd028cc601e314bdd7e5ab",
-      "bytes": 132612
-    },
-    {
-      "file": "skills-modern/3121020-keydown-2.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/2",
-      "sha256": "c879f32fd32beb5ead10036d4bf13ff553c1eda0a1686319ff85f75dd833c35f",
-      "bytes": 200729
-    },
-    {
-      "file": "skills-modern/3121020-keydown-3.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/3",
-      "sha256": "2c7303d48efb9944c859f26ac095c3e37ade14a4ced9c44e57cccfbd7007b38f",
-      "bytes": 193748
-    },
-    {
-      "file": "skills-modern/3121020-keydown-4.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/4",
-      "sha256": "a482a3d821e4cad7888352e02230c1056184096d409c73a7014897372a88437d",
-      "bytes": 166191
-    },
-    {
-      "file": "skills-modern/3121020-keydown-5.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/5",
-      "sha256": "7cfc2ca0b5b9e6b13f0e4cf0193b3db982cfa79f8e4b9343521e864a56dc5b60",
-      "bytes": 133148
-    },
-    {
-      "file": "skills-modern/3121020-keydown-6.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/6",
-      "sha256": "e48f3449fe856f78adbaa1d1e8351a41b6092ebeb0e0015351c23c54241e4d9e",
-      "bytes": 135212
-    },
-    {
-      "file": "skills-modern/3121020-keydown-7.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/7",
-      "sha256": "e06b9256471a6bff9ba9f45f3e393aeb5b3dbd7a0e6cba211c6488a1436e0d2f",
-      "bytes": 133142
-    },
-    {
-      "file": "skills-modern/3121020-keydown-8.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/8",
-      "sha256": "b7bee021e1bb0b64ad011973d79d6f88d20a8e10d341b51babbc845f12c66e6b",
-      "bytes": 138811
-    },
-    {
-      "file": "skills-modern/3121020-keydown-9.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydown/9",
-      "sha256": "bcfb3a30fd73423091651c5be370f122644654668fbc88cee69b4eb0b59110bb",
-      "bytes": 136928
-    },
-    {
-      "file": "skills-modern/3121020-keydownend-0.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydownend/0",
-      "sha256": "eb5dc5584b214af651a89e0e49405f27182faa2a4db1ccab6d88e16aa3c63542",
-      "bytes": 133986
-    },
-    {
-      "file": "skills-modern/3121020-keydownend-1.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydownend/1",
-      "sha256": "980994156904c5a2f9a83a19da5f58f8de02d801b0cdac93be239e2a0239489a",
-      "bytes": 135348
-    },
-    {
-      "file": "skills-modern/3121020-keydownend-2.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydownend/2",
-      "sha256": "e1625c03fd0dc5b165aa919152a94aeec94665c01f6d1cc5cceaf1e005d62641",
-      "bytes": 121281
-    },
-    {
-      "file": "skills-modern/3121020-keydownend-3.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/keydownend/3",
-      "sha256": "3e96198b52ad5c30832ef7f5c30964a73eb007024c9cbc4c57367b066a4694f1",
-      "bytes": 112384
-    },
-    {
-      "file": "skills-modern/3121020-prepare-0.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/prepare/0",
-      "sha256": "15efac5e2095c36ccec5a616eaea21e38697a5ed841213d8a9f7a5c73ae6b65f",
-      "bytes": 14915
-    },
-    {
-      "file": "skills-modern/3121020-prepare-1.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/prepare/1",
-      "sha256": "0e9974a259fb337f99f89eca84a2ed892e4d4a3e755f70b2f3a62f2022dffeed",
-      "bytes": 18663
-    },
-    {
-      "file": "skills-modern/3121020-prepare-2.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/prepare/2",
-      "sha256": "d48ae0b8d5792700dc596c9db12280677b51a03547e215f353d872f4c75f2fbc",
-      "bytes": 36977
-    },
-    {
-      "file": "skills-modern/3121020-prepare-3.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/prepare/3",
-      "sha256": "eabae974f62896580434000d1c68b8cdab37b22881340dd0f263dffa1375fa9f",
-      "bytes": 53102
-    },
-    {
-      "file": "skills-modern/3121020-prepare-4.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/prepare/4",
-      "sha256": "8c762dddae3a0a18518b28579e56b255bafbcde0afa58e5f2bf4d5840a86181d",
-      "bytes": 68267
-    },
-    {
-      "file": "skills-modern/3121020-prepare-5.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/prepare/5",
-      "sha256": "9feb07704dc1d117cf2ea4a28fbd57d90f506a5e0204b8ae5363a53ba52744a5",
-      "bytes": 93390
-    },
-    {
-      "file": "skills-modern/3121020-prepare-6.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/prepare/6",
-      "sha256": "a87e1a10e40a5d07abd36d83bbbe9a1a82f4fe38482f6f6fb0534802cee069c3",
-      "bytes": 105835
-    },
-    {
-      "file": "skills-modern/3121020-prepare-7.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/prepare/7",
-      "sha256": "79f82f0ed1230fabb78a44162456a3d5a80c01fd30f6ad212e00c6ecb221314d",
-      "bytes": 117050
-    },
-    {
-      "file": "skills-modern/3121020-prepare-8.png",
-      "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121020/prepare/8",
-      "sha256": "39a4564bf1415ec230a3ed9182e16df47fd5bdf85f282e02e7bf19e0adaf27c9",
-      "bytes": 160749
-    },
-    {
       "file": "skills-modern/3121052-effect-0.png",
       "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121052/effect/0",
       "sha256": "54a9002f8893afef67d6724a373f85b0d7b6ba89aea875406315b92128f5e174",
@@ -2477,6 +2213,192 @@
       "source": "https://maplestory.io/api/wz/GMS/270/Skill/312.img/skill/3121052/hit/0/8",
       "sha256": "b4ad5196b147bd1c50d272294d4f0e554a87600c6a6956dc8d6c150b9c4f59ef",
       "bytes": 2384
+    },
+    {
+      "file": "skills-modern/3321014-effect-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect/0",
+      "sha256": "18db98dedb9687c8ae30b25a2d137836512e36f8de287071e2d8622f37b46607",
+      "bytes": 6995
+    },
+    {
+      "file": "skills-modern/3321014-effect-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect/1",
+      "sha256": "6e3dbc034879be426afdcece857c2ee2633bee8e35db61a405a042b64271ae17",
+      "bytes": 13369
+    },
+    {
+      "file": "skills-modern/3321014-effect-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect/2",
+      "sha256": "107431330960974db3d525d5cf8b1b23ed97873bc76789bf4e73c7481ecb0555",
+      "bytes": 22645
+    },
+    {
+      "file": "skills-modern/3321014-effect0-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/0",
+      "sha256": "c578077141c51e225e4f693e034eb2ccba0ba2daa8ce91953e87e199f42c2c85",
+      "bytes": 89
+    },
+    {
+      "file": "skills-modern/3321014-effect0-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/1",
+      "sha256": "c578077141c51e225e4f693e034eb2ccba0ba2daa8ce91953e87e199f42c2c85",
+      "bytes": 89
+    },
+    {
+      "file": "skills-modern/3321014-effect0-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/10",
+      "sha256": "6cf88b17914bccef21f6cc2c03cf99776ba3396ce7f7406251f501164b8735bd",
+      "bytes": 72335
+    },
+    {
+      "file": "skills-modern/3321014-effect0-11.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/11",
+      "sha256": "988f77ca1f66ad534b0283800f4ee265f1a298c45cca76187f6c03e6adc9552c",
+      "bytes": 44512
+    },
+    {
+      "file": "skills-modern/3321014-effect0-12.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/12",
+      "sha256": "c1494c25a6b49e9bcd845d0ae6eacc2c1a93e46db7ce669f386e6945be9dc34d",
+      "bytes": 47631
+    },
+    {
+      "file": "skills-modern/3321014-effect0-13.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/13",
+      "sha256": "7a6a2d08355e202af64929047abb0dc63c65c5f07b9f984b795af6d2879afdaa",
+      "bytes": 47904
+    },
+    {
+      "file": "skills-modern/3321014-effect0-14.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/14",
+      "sha256": "c6d43457e1a01a1b978067e2d47834eab731f82ec30a83edda229ac2ef1c2b43",
+      "bytes": 43812
+    },
+    {
+      "file": "skills-modern/3321014-effect0-15.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/15",
+      "sha256": "1f1ff63d30dfe83a1084f1710fdc0bc25d2690e290f66cb38eb389ddfa630488",
+      "bytes": 41094
+    },
+    {
+      "file": "skills-modern/3321014-effect0-16.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/16",
+      "sha256": "46c8f5a74953f5b4c3b09660899188f4eeba42b28158b4afb11a11c990f2b389",
+      "bytes": 37673
+    },
+    {
+      "file": "skills-modern/3321014-effect0-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/2",
+      "sha256": "c578077141c51e225e4f693e034eb2ccba0ba2daa8ce91953e87e199f42c2c85",
+      "bytes": 89
+    },
+    {
+      "file": "skills-modern/3321014-effect0-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/3",
+      "sha256": "81c064cba7383b53d64a429ea1408e1e62c9de11346d2340b50c76e55b12c5c1",
+      "bytes": 119286
+    },
+    {
+      "file": "skills-modern/3321014-effect0-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/4",
+      "sha256": "ea460a20f043b3862cf78d115fff8747179a349ae36afcf633e3a7815ae406b3",
+      "bytes": 186870
+    },
+    {
+      "file": "skills-modern/3321014-effect0-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/5",
+      "sha256": "cde42bcd10eee43e8a3de1f7bac4668c81301159504f2f634bb5eafb05e3dcdb",
+      "bytes": 165435
+    },
+    {
+      "file": "skills-modern/3321014-effect0-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/6",
+      "sha256": "27b5966e97f6b62b00fcebffb7734b3f3a300692806025113729608eadcee171",
+      "bytes": 136661
+    },
+    {
+      "file": "skills-modern/3321014-effect0-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/7",
+      "sha256": "2428ec52d13087105336aa8d55fbfec23cf37e0acf96f87f107d74d0f20d4f2f",
+      "bytes": 105200
+    },
+    {
+      "file": "skills-modern/3321014-effect0-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/8",
+      "sha256": "820c3970faabaea4a5d43736faba5e0b1cbeaae102aa4f587de5fda0b5c0ecf2",
+      "bytes": 94596
+    },
+    {
+      "file": "skills-modern/3321014-effect0-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/effect0/9",
+      "sha256": "d8e8e699e9b3a84821c311ebf9fa2591ae4bd18129ea11f75a25a0a46a5471a8",
+      "bytes": 87748
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-0.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/0",
+      "sha256": "ce2a5dd8112c9a8c73c696a493e247191b1bf25d2dc8a644bf7d29a9072ed9ab",
+      "bytes": 42486
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-1.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/1",
+      "sha256": "d805e4f7a5c2f6bfa13b8e577196e074a6b041b99d9cac052cafca87bd53fd17",
+      "bytes": 70687
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-10.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/10",
+      "sha256": "cc3136880c74a4a70996012e193aebcffb477c90b0860307de4695bb939d0956",
+      "bytes": 1899
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-2.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/2",
+      "sha256": "5954bcab6a446bd5fb79fb6141da2d2db17493dd89e99ee48f42cc532a184584",
+      "bytes": 63520
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-3.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/3",
+      "sha256": "1640fb15e04a3bb8fa834991272e3e09e0815bfcf65801d7bfb2c337d4203139",
+      "bytes": 58106
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-4.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/4",
+      "sha256": "5d6a9ae73df57e644d3305fe8196d7c508c734e1f5ad5faab16fe7a12a940903",
+      "bytes": 39498
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-5.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/5",
+      "sha256": "ec9bcf484bbd78c9f76416a4ec87ad33c9c70bff3b3e50926b88b53349397c25",
+      "bytes": 37153
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-6.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/6",
+      "sha256": "bfe28737eee97f4036b34de18ce626354881054ccb5f190ae46af98e5f91a3d9",
+      "bytes": 25719
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-7.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/7",
+      "sha256": "d76d14e0a0bde7d0e6120f2abdc0967020d000f8bb223c1ccf1253626e59f091",
+      "bytes": 21247
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-8.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/8",
+      "sha256": "6aa27334d030083feb59220304993830199efa34a0634b533535defca25dd976",
+      "bytes": 8535
+    },
+    {
+      "file": "skills-modern/3321014-hit-0-9.png",
+      "source": "https://maplestory.io/api/wz/GMS/270/Skill/332.img/skill/3321014/hit/0/9",
+      "sha256": "8e5aaa8ff936f4f5188deae462e6131a30992946f2504c8a0ef599970efb0957",
+      "bytes": 3792
     },
     {
       "file": "skills-modern/4001334-effect-0.png",
@@ -3853,18 +3775,46 @@
       "bytes": 3603
     },
     {
-      "file": "skills-modern/archer-4-HY312stormArrowMovablePre-0.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/HY312stormArrowMovablePre/0/delay",
-      "sha256": "4f9cbb6bf4964117dd4f64791e388f0b09949af58965dfac59892391b4ef28b2",
-      "bytes": 3593
+      "file": "skills-modern/archer-4-PFComboAttack1-0.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/0?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/PFComboAttack1/0/delay",
+      "sha256": "e750b4fc9582a2722228a53c6217512d25b87311b2eb8bab9b1ed7a80073fe31",
+      "bytes": 3328
     },
     {
-      "file": "skills-modern/archer-4-HY312stormArrowMovablePre-1.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/shoot1/1?renderMode=4",
-      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/HY312stormArrowMovablePre/1/delay",
-      "sha256": "4f9cbb6bf4964117dd4f64791e388f0b09949af58965dfac59892391b4ef28b2",
-      "bytes": 3593
+      "file": "skills-modern/archer-4-PFComboAttack1-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingO3/2?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/PFComboAttack1/1/delay",
+      "sha256": "463954e7f91704e588485ca1e92ccc7ad8e2b7aeef0b3bf4d5b3ed04af49ecb9",
+      "bytes": 3026
+    },
+    {
+      "file": "skills-modern/archer-4-PFComboAttack1-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingOF/1?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/PFComboAttack1/2/delay",
+      "sha256": "91b23be4829cb77c65e52bf49b58bd413029380534ad67d45c390d10f836323b",
+      "bytes": 3253
+    },
+    {
+      "file": "skills-modern/archer-4-PFComboAttack1-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/2?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/PFComboAttack1/3/delay",
+      "sha256": "55c92c1f21ebe5d22881256f92040d0a0b5f5f199dcc2b17026f9145ff9fdec2",
+      "bytes": 4099
+    },
+    {
+      "file": "skills-modern/archer-4-PFComboAttack1-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/0?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/PFComboAttack1/4/delay",
+      "sha256": "0a34153c4ce11834dae2fbde39ece2a83e5c6bc7f9f2fe609977ad0e1a136f1b",
+      "bytes": 3676
+    },
+    {
+      "file": "skills-modern/archer-4-PFComboAttack1-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1040022%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1060010%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1452000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002014%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/1?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/PFComboAttack1/5/delay",
+      "sha256": "01dc360e3f90c853eeb670bf3492b34ec0a4c22e31569f2ce84760aad591ca2d",
+      "bytes": 3498
     },
     {
       "file": "skills-modern/archer-5-HY312windOfFrey-0.png",
@@ -4847,39 +4797,60 @@
       "bytes": 3139
     },
     {
-      "file": "skills-modern/warrior-5-HY112rageUprising-0.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/alert/2?renderMode=4",
-      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/HY112rageUprising/0/delay",
-      "sha256": "2eb186780582677d70cd39ad714e7fedf86f9e8f592f2c654c2b77ef72a748d5",
-      "bytes": 3263
+      "file": "skills-modern/warrior-5-sanctuaryNew-0.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/stand2/2?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/sanctuaryNew/0/delay",
+      "sha256": "3340856c79b54d95aa1c63f242bd8eb738250158e4b70a3c4349563830e09ec9",
+      "bytes": 2966
     },
     {
-      "file": "skills-modern/warrior-5-HY112rageUprising-1.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/1?renderMode=4",
-      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/HY112rageUprising/1/delay",
-      "sha256": "ece673cd78f16fc60e832b1ff85cbdf213ed11012724e9029ed86f1d91e2d8ca",
-      "bytes": 3004
+      "file": "skills-modern/warrior-5-sanctuaryNew-1.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/alert/0?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/sanctuaryNew/1/delay",
+      "sha256": "f819a64e945428c19bc172d88d12a8eb3232b966561c2d61273169a1c79bc6fe",
+      "bytes": 3218
     },
     {
-      "file": "skills-modern/warrior-5-HY112rageUprising-2.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT3/2?renderMode=4",
-      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/HY112rageUprising/2/delay",
-      "sha256": "de3d92d9b7938af5d314dad8a310d5da497cd16b399e4fbfc6e8d41376d56a76",
-      "bytes": 3343
+      "file": "skills-modern/warrior-5-sanctuaryNew-2.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/sanctuaryNew/2/delay",
+      "sha256": "51f7745114330bc6f373ee03223809b611024f683f6c9adb56add2bf90c2164e",
+      "bytes": 3095
     },
     {
-      "file": "skills-modern/warrior-5-HY112rageUprising-3.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingT1/1?renderMode=4",
-      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/HY112rageUprising/3/delay",
-      "sha256": "51ad4b467a54f6e620fe2c55595c06656cfd326b3a70ada78c6dfe121c543058",
-      "bytes": 3138
+      "file": "skills-modern/warrior-5-sanctuaryNew-3.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/sanctuaryNew/3/delay",
+      "sha256": "51f7745114330bc6f373ee03223809b611024f683f6c9adb56add2bf90c2164e",
+      "bytes": 3095
     },
     {
-      "file": "skills-modern/warrior-5-HY112rageUprising-4.png",
-      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingTF/3?renderMode=4",
-      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/HY112rageUprising/4/delay",
-      "sha256": "e174077508a6e569fabbe134261163c5e2386ffccc72a1eac5d18da2a49433ba",
-      "bytes": 3422
+      "file": "skills-modern/warrior-5-sanctuaryNew-4.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/sanctuaryNew/4/delay",
+      "sha256": "51f7745114330bc6f373ee03223809b611024f683f6c9adb56add2bf90c2164e",
+      "bytes": 3095
+    },
+    {
+      "file": "skills-modern/warrior-5-sanctuaryNew-5.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/sanctuaryNew/5/delay",
+      "sha256": "51f7745114330bc6f373ee03223809b611024f683f6c9adb56add2bf90c2164e",
+      "bytes": 3095
+    },
+    {
+      "file": "skills-modern/warrior-5-sanctuaryNew-6.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/sanctuaryNew/6/delay",
+      "sha256": "51f7745114330bc6f373ee03223809b611024f683f6c9adb56add2bf90c2164e",
+      "bytes": 3095
+    },
+    {
+      "file": "skills-modern/warrior-5-sanctuaryNew-7.png",
+      "source": "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A12000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A30000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A20000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1050005%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1072001%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1302008%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1002040%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D%2C%7B%22itemId%22%3A1102000%2C%22region%22%3A%22GMS%22%2C%22version%22%3A%22270%22%7D/swingPF/2?renderMode=4",
+      "timingSource": "https://maplestory.io/api/wz/GMS/270/Character/00002000.img/sanctuaryNew/7/delay",
+      "sha256": "51f7745114330bc6f373ee03223809b611024f683f6c9adb56add2bf90c2164e",
+      "bytes": 3095
     }
   ]
 }

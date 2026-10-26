@@ -1,6 +1,7 @@
 import { receiveHit } from './journey-enemy.mjs';
 import { flatTerrain, supportAt, stepSupport, landingOn, nearbyRope } from './journey-terrain.mjs';
 import { impactTimes } from './journey-combat.mjs';
+import {castSpan} from './journey-skill-timing.mjs';
 export {experienceFor} from './journey-progression.mjs';
 export {attackReaches} from './journey-hitbox.mjs';
 export const playerPhases=['reading','encounter','portal','retiring','reward'];
@@ -70,7 +71,7 @@ export function stepPlayer(player,input,ms,width,{movable=true,enemy=false,rank=
   else p.airVx=(p.airVx||0)*Math.exp(-5.5*dt);
   return finish();
 }
-export function manualCastDuration(ability){return ability?Math.max(ability.actorDuration,...ability.tracks.map(t=>t.start+Math.max(t.duration,t.hold||0,t.flight||0)))+100:900;}
+export function manualCastDuration(ability){return ability?castSpan(ability)+75:900;}
 export function hitFeedback(ability,time){return Math.max(0,...impactTimes(ability).map(start=>{const t=(time-start)/180;return t>=0&&t<1?Math.sin(t*Math.PI):0;}));}
 export function appendDialogue(history,message){
   if(!message?.text?.trim()||typeof message.speaker!=='string')return history;

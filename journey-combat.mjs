@@ -1,16 +1,17 @@
 import {ruleFor} from './journey-skill-rules.mjs';
+import {castSpan,packetInterval} from './journey-skill-timing.mjs';
 // A single continuous clock for approach, original cast, recovery and departure.
 const clamp=value=>Math.max(0,Math.min(1,value));
 const smooth=value=>{const t=clamp(value);return t*t*(3-2*t);};
 export function impactTimes(ability){
   const times=ability?.tracks.filter(track=>track.anchor==='boss').map(track=>track.start)||[];
   const start=times[0]??(ability?Math.min(650,ability.actorDuration*.5):450),rule=ruleFor(ability);
-  return Array.from({length:rule.packets},(_,i)=>start+i*rule.packetInterval);
+  return Array.from({length:rule.packets},(_,i)=>start+i*packetInterval(ability));
 }
 export function combatPlan(ability,classId){
   const ranged=['mage','archer'].includes(classId)&&Boolean(ability);
   const castX=ranged?43:56;
-  const castDuration=ability?Math.max(ability.actorDuration,...ability.tracks.map(track=>track.start+Math.max(track.duration,track.hold||0,track.flight||0)))+80:1050;
+  const castDuration=ability?castSpan(ability)+75:1050;
   return {approach:320,castDuration,departure:360,castX,total:320+castDuration+360};
 }
 export function combatFrame(ability,classId,time){

@@ -1,5 +1,5 @@
 {
-  "version": "cea75fdea00c3a97",
+  "version": "0288204d493d902f",
   "entry": "journey.js",
   "modules": [
     "journey-animation.mjs",
@@ -53,6 +53,7 @@
     "journey-sfx.mjs",
     "journey-skill-placement.mjs",
     "journey-skill-rules.mjs",
+    "journey-skill-timing.mjs",
     "journey-skills.mjs",
     "journey-sprites.mjs",
     "journey-story.mjs",

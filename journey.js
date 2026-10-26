@@ -23,6 +23,7 @@ import { createSkillView } from './journey-animation.mjs';
 import { combatFrame, combatPlan, impactTimes } from './journey-combat.mjs';
 import {ruleFor,splitDamage} from './journey-skill-rules.mjs';
 import {createNarrationReview} from './journey-narration.mjs';
+import {paceAbility} from './journey-skill-timing.mjs';
 import {projectileTarget} from './journey-hitbox.mjs';
 import { initJourneyScroll } from './journey-scroll.mjs';
 import { initJourneyMusic } from './journey-music.mjs';
@@ -82,7 +83,7 @@ if (root) {
   const abilityCache=new Map();
   function abilityFor(classId,stage){
     if(!classId||!skillRankFor(stage))return null;const key=`${classId}-${stage}`;
-    if(!abilityCache.has(key)){const original=skillAnimations[`${classId}-${skillRankFor(stage)}`],frames=castSprites[key];abilityCache.set(key,{...original,actorFrames:frames,actorDuration:frames.reduce((sum,frame)=>sum+frame.delay,0)});}
+    if(!abilityCache.has(key)){const original=skillAnimations[`${classId}-${skillRankFor(stage)}`],frames=castSprites[key];abilityCache.set(key,paceAbility(original,frames));}
     return abilityCache.get(key);
   }
   const currentAbility=()=>abilityFor(state.classId,state.completed);
@@ -228,8 +229,8 @@ if (root) {
   function revive(){if(state.phase!=='dead'||state.paused||!state.deathLanded)return;dispatch('REVIVE');focusGame();}
   function basicHitFrames(){return skillAnimations['warrior-1'].tracks.find(t=>t.anchor==='boss')?.frames||[];}
   function targetBody(){const frame=monster().poses.stand[0],scale=viewport.mobile?.7:1,body=enemyBodyTarget(monster(),viewport.mobile,enemy.facing);return {x:enemy.x+body.offsetX/viewport.width*100,height:body.height,width:frame.width*scale,bottom:(frame.origin.y-frame.height)*scale,top:frame.origin.y*scale};}
-  function damageLines(value,ability){const lines=ruleFor(ability).lines,height=Math.min(240,monster().poses.stand[0].height+28);for(let line=0;line<lines;line++)enemyView.damage(splitDamage(value,lines,line),enemy.x,height+line*22);}
-  function struckEnemy(value,ability){damageLines(value,ability);enemy=strikeEnemy(enemy,player.facing);const body=targetBody();enemyView.effect(basicHitFrames(),body.x,body.height);}
+  function damageLines(value,ability,packet=0){const rule=ruleFor(ability),lines=rule.packetLines?.[packet]??rule.lines,height=Math.min(240,monster().poses.stand[0].height+28);for(let line=0;line<lines;line++)enemyView.damage(splitDamage(value,lines,line),enemy.x,height+line*22);}
+  function struckEnemy(value,ability,packet){damageLines(value,ability,packet);enemy=strikeEnemy(enemy,player.facing);const body=targetBody();enemyView.effect(basicHitFrames(),body.x,body.height);}
   function focusGame(){root.focus({preventScroll:true});}
   function advance(){
     const now=performance.now();if(now-lastInput<280||state.paused)return;
@@ -264,7 +265,7 @@ if (root) {
       const body=targetBody(),target=projectileTarget(player,castAbility,viewport,body);
       const playing=skillView.render(castAbility,combatTime,player.x,motion.matches,{facing:player.facing,targetX:body.x,targetHeight:body.height,projectileX:target.x,projectileHeight:target.height,lift:player.y,impact:impactsBoss});
       if(!playing)updateSprite(!castAbility&&combatTime<600?'attack':'idle');
-      const impacts=impactTimes(castAbility);while(resolveHits&&(state.castHits||0)<impacts.length&&combatTime>=impacts[state.castHits||0]){const packet=state.castHits||0,reaches=attackReaches(player,castAbility,viewport,targetBody()),before=state.bossHp;dispatch({type:'CAST_HIT',packet,reaches});if(state.bossHp<before)struckEnemy(before-state.bossHp,castAbility);else if(!packet&&state.castReturn==='encounter'&&state.bossHp>0)systemHint('沒有命中，靠近並面向怪物再按 A');if((state.castHits||0)===packet)break;}
+      const impacts=impactTimes(castAbility);while(resolveHits&&(state.castHits||0)<impacts.length&&combatTime>=impacts[state.castHits||0]){const packet=state.castHits||0,reaches=attackReaches(player,castAbility,viewport,targetBody()),before=state.bossHp;dispatch({type:'CAST_HIT',packet,reaches});if(state.bossHp<before)struckEnemy(before-state.bossHp,castAbility,packet);else if(!packet&&state.castReturn==='encounter'&&state.bossHp>0)systemHint('沒有命中，靠近並面向怪物再按 A');if((state.castHits||0)===packet)break;}
       if(player.hurtTime>0)updateSprite('idle');
       return;
     }
@@ -274,7 +275,7 @@ if (root) {
     boss.style.setProperty('--boss-recoil',`${motion.matches?0:frame.hit*14}px`);
     boss.style.setProperty('--impact-brightness',String(motion.matches?1:1+frame.hit*.3));
     scene.parentElement.style.setProperty('--impact-shake',`${motion.matches?0:Math.sin(combatTime*.12)*frame.hit*2.5}px`);
-    const impacts=impactTimes(ability);while(resolveHits&&watchHits<impacts.length&&frame.castTime>=impacts[watchHits]){const before=state.bossHp,packet=watchHits++;dispatch({type:'WATCH_HIT',packet});if(state.bossHp<before){damageLines(before-state.bossHp,ability);enemy=strikeEnemy(enemy,1);}}
+    const impacts=impactTimes(ability);while(resolveHits&&watchHits<impacts.length&&frame.castTime>=impacts[watchHits]){const before=state.bossHp,packet=watchHits++;dispatch({type:'WATCH_HIT',packet});if(state.bossHp<before){damageLines(before-state.bossHp,ability,packet);enemy=strikeEnemy(enemy,1);}}
     combatSound.tick(audio,combatTime,sound&&!document.hidden);
     if(frame.castTime<0){skillView.hide();updateSprite(Math.floor(combatTime/130)%2?'walkAlt':'walk');return;}
     const body=targetBody(),playing=skillView.render(ability,frame.castTime,frame.x,motion.matches,{targetX:body.x,targetHeight:body.height});
