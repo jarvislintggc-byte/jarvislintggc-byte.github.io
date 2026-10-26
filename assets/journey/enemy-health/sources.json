@@ -1,0 +1,29 @@
+{
+  "retrieved": "2026-10-25",
+  "copyright": "NEXON",
+  "publicReusePermission": "Not established by public API access; see project rights notes.",
+  "processing": "Unchanged PNGs. CSS repeats the native middle and fill horizontally and mirrors the full left cap on the right; no raster cropping or recoloring.",
+  "files": [
+    {
+      "file": "frame-cap.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/UIWindow.img/MobGage/backgrnd2",
+      "width": 4,
+      "height": 19,
+      "sha256": "a2a5d0cbfd2202dec81c659e77e15895f05fbaa50f9190bf6882a8ee617b7d2a"
+    },
+    {
+      "file": "frame-middle.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/UIWindow.img/MobGage/backgrnd3",
+      "width": 1,
+      "height": 20,
+      "sha256": "e1ed20edf1c360f72de3938aab2a74790c879a5c519dc5d6b7c624369482c513"
+    },
+    {
+      "file": "fill-red.png",
+      "source": "https://maplestory.io/api/wz/GMS/83/UI/UIWindow.img/MobGage/Gage/1/1",
+      "width": 1,
+      "height": 12,
+      "sha256": "e00e23a8962ca9498422ef05d36bab5f0311db83206e17f614146fff24631a49"
+    }
+  ]
+}

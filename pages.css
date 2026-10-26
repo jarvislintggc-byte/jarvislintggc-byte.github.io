@@ -10,7 +10,7 @@
 .perspective-section .page-title{margin-top:18px}
 .page-experience .work-section{border-top:0}
 .notes-grid{align-items:stretch}
-.work-note{position:relative;cursor:pointer;display:flex;flex-direction:column}
+.work-note{position:relative;cursor:pointer;display:flex;flex-direction:column;border-radius:14px}
 .work-note:focus-within{outline:3px solid var(--orange);outline-offset:5px}
 .work-note .card-art{flex-shrink:0}
 .work-note .card-cover{padding:0}
@@ -18,13 +18,9 @@
 .work-note .receipt{margin-top:10px}
 .work-note .card-body{flex:1;display:flex;flex-direction:column}
 .work-note .card-body h3{overflow-wrap:anywhere;line-height:1.3}
-.work-note .card-body p{margin-bottom:22px}
-.work-note .card-link{margin-top:auto}
-.note-open{width:100%;border:0;border-top:1px solid var(--line);background:transparent;padding-inline:0;padding-bottom:0;color:inherit;text-align:left;cursor:pointer}
-.note-open:hover{color:var(--orange)}
-.note-open::after{content:"";position:absolute;inset:0;border-radius:3px}
+.work-note .card-body p{margin-bottom:0}
+.note-open{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:inherit;background:transparent;padding:0;cursor:pointer}
 .note-open:focus-visible{outline:none}
-.note-open>span:first-child{font-size:inherit}
 .note-article-dialog{width:min(920px,calc(100% - 32px));overscroll-behavior:contain}
 .note-article-dialog .dialog-top{position:sticky;top:0;background:var(--paper);z-index:1}
 .note-article-dialog .dialog-content{max-width:800px;margin-inline:auto}
@@ -134,3 +130,88 @@ html[lang=ja] .list-index{white-space:nowrap}
 @media(min-width:761px){.journey-section .section-heading{grid-template-columns:1.35fr 2.05fr}.journey-section .section-heading h2{grid-column:2}}
 .note-article-dialog #note-dialog-close{display:inline-grid;place-items:center;width:44px;height:44px;padding:0;flex-shrink:0}
 .note-article-dialog #note-dialog-close span{font-size:26px;line-height:1;margin:0}
+
+/* My Story keeps a compact reading rhythm on phones. */
+@media(max-width:760px){
+ .page-my-story .hero{padding-block:28px 24px;gap:28px}
+ .page-my-story .hero .eyebrow{font-size:11px;letter-spacing:1px;line-height:1.6}
+ .page-my-story .hero-headline{font-size:clamp(36px,10vw,44px);line-height:1.18;letter-spacing:-1.5px;margin:14px 0 16px}
+ .page-my-story .hero-description{font-size:17px;line-height:1.75;max-width:none}
+ .page-my-story .solid-button{min-height:44px;font-size:16px;line-height:1.4;padding:12px 16px;margin-top:18px;gap:24px}
+ .page-my-story .hero-footnote{font-size:12px;line-height:1.6;margin-top:16px;gap:8px}
+ .page-my-story .field-card{width:100%;padding:16px 18px}
+ .page-my-story .field-top{font-size:10px;letter-spacing:1px;padding-bottom:10px}
+ .page-my-story .field-title{font-size:22px;line-height:1.35;margin-top:14px}
+ .page-my-story .field-title em{font-size:21px}
+ .page-my-story .route-art{max-height:190px;margin-block:12px 8px}
+ .page-my-story .field-bottom{font-size:9px;letter-spacing:.8px;padding-top:10px}
+ .page-my-story .journey-section{padding-block:28px 36px}
+ .page-my-story .section-heading{margin-bottom:18px}
+ .page-my-story .section-heading>.eyebrow{font-size:11px;line-height:1.6;padding-top:0}
+ .page-my-story .section-heading h2{font-size:28px;line-height:1.35;letter-spacing:-.6px;margin-top:10px}
+ .page-my-story .place-tabs button{min-width:0;min-height:48px;flex-wrap:nowrap;padding:12px 6px;gap:5px;font-size:15px;line-height:1.4}
+ .page-my-story .place-tabs button>span:first-child{font-size:11px}
+ .page-my-story .place-content{padding:20px;min-height:0}
+ .page-my-story .place-kicker{font-size:11px;line-height:1.5;letter-spacing:1px;margin-bottom:10px}
+ .page-my-story .place-content h3{max-width:none;font-size:23px;line-height:1.4;letter-spacing:-.4px}
+ .page-my-story .place-content>p{max-width:none;font-size:16px;line-height:1.8;margin-top:12px}
+ .page-my-story .place-detail{flex-direction:column;align-items:flex-start;gap:6px;margin-top:16px;padding-top:14px}
+ .page-my-story .place-detail>span{font-size:23px;line-height:1.3}
+ .page-my-story .place-detail>p{width:100%;font-size:14px;line-height:1.7}
+ .page-my-story .page-footer{font-size:12px;line-height:1.5;padding-block:16px 20px;gap:10px}
+}
+
+/* Carry the same phone reading scale through the remaining portfolio pages. */
+@media(max-width:760px){
+ .content-page:not(.page-my-story) .page-title{font-size:30px;line-height:1.3;letter-spacing:-.8px}
+ .content-page:not(.page-my-story) .eyebrow{font-size:11px;line-height:1.6;letter-spacing:1px}
+ .content-page .page-footer{font-size:12px;line-height:1.5;padding-block:16px 20px;gap:10px}
+ .page-experience .work-section{padding-block:28px 36px}
+ .page-experience .work-heading .page-title{margin-top:10px}
+ .page-experience .work-heading>p{font-size:17px;line-height:1.75;margin-top:12px;max-width:none}
+ .page-experience .experience-toolbar{margin-block:18px 20px;gap:10px}
+ .page-experience .filters{gap:6px}
+ .page-experience .filters button{font-size:13px;line-height:1.4;min-height:40px;padding:8px 11px}
+ .page-experience .filters button span{font-size:11px;margin-left:5px}
+ .page-experience .notes-grid{gap:18px}
+ .page-experience .work-note .card-body{padding:18px}
+ .page-experience .work-note .card-meta{font-size:11px;line-height:1.5}
+ .page-experience .work-note .card-body h3{font-size:23px;line-height:1.4;letter-spacing:-.3px;margin:10px 0}
+ .page-experience .work-note .card-body p{font-size:16px;line-height:1.75;min-height:0;max-width:none;margin-bottom:0}
+ .page-experience .note-article-dialog{width:calc(100% - 20px);max-height:92dvh}
+ .page-experience .note-article-dialog .dialog-top{padding:10px 12px;gap:8px;flex-wrap:nowrap}
+ .page-experience .note-article-dialog .dialog-top>.eyebrow{font-size:10px;letter-spacing:.5px;flex:1;min-width:0;overflow-wrap:anywhere}
+ .page-experience .note-article-dialog .dialog-actions{width:auto;margin-left:auto;gap:4px}
+ .page-experience .note-article-dialog .dialog-content{padding:20px 18px}
+ .page-experience .note-article-dialog .dialog-content h2{font-size:27px;line-height:1.35;letter-spacing:-.5px}
+ .page-experience .note-article-dialog .dialog-intro{font-size:16px;line-height:1.75;margin-top:12px}
+ .page-experience .note-article-section{margin-top:20px;padding-top:18px}
+ .page-experience .note-article-dialog .note-article-section h3{font-size:20px;line-height:1.4;letter-spacing:0;margin-bottom:10px}
+ .page-experience .note-article-dialog .note-article-section p{font-size:16px;line-height:1.8;margin-top:12px}
+ .page-experience .note-article-dialog .note-brief .note-article-section h3,
+ .page-experience .note-article-dialog .note-brief .note-article-section p{font-size:16px;line-height:1.8;margin-top:0}
+ .page-experience .note-brief .note-attribution{font-size:15px;line-height:1.75}
+ .page-experience .note-resources{gap:8px;margin-top:18px}
+ .page-experience .note-resources a{min-height:44px;max-width:100%;min-width:0;font-size:15px;line-height:1.5;padding:8px 12px;overflow-wrap:anywhere}
+ .page-experience .note-gallery{margin-top:16px;gap:16px 10px}
+ .page-experience .note-gallery figcaption{font-size:12px;line-height:1.65;margin-top:7px}
+ .page-experience .note-article-dialog .case-note{font-size:14px;line-height:1.75;padding:12px 14px;margin-top:18px}
+ .page-what-i-bring .page-main,.page-connect .page-main{display:block}
+ .page-what-i-bring .perspective-section{padding-block:28px 36px;gap:24px}
+ .page-what-i-bring .perspective-section .page-title{margin-top:10px}
+ .page-what-i-bring .perspective-intro{font-size:17px;line-height:1.75;margin-top:12px;max-width:none}
+ .page-what-i-bring .perspective-list>div{padding-block:16px;gap:12px}
+ .page-what-i-bring .perspective-list>div:first-child{padding-top:0}
+ .page-what-i-bring .list-index{font-size:11px;line-height:1.5;padding-top:4px}
+ .page-what-i-bring .perspective-list h3{font-size:20px;line-height:1.4}
+ .page-what-i-bring .perspective-list p{font-size:16px;line-height:1.75;margin-top:6px}
+ .page-connect .contact-section{padding-block:28px 36px}
+ .page-connect .contact-box{padding:24px 20px}
+ .page-connect .contact-row{margin-top:12px;gap:12px;align-items:flex-start}
+ .page-connect .contact-row .page-title{min-width:0;max-width:none;text-wrap:balance}
+ .page-connect .contact-circle{width:44px;height:44px;font-size:23px}
+ .page-connect .contact-bottom{margin-top:20px;padding-top:16px;gap:12px}
+ .page-connect .contact-bottom p{font-size:16px;line-height:1.75}
+ .page-connect .linkedin-link{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:100%;min-height:44px;font-size:16px;line-height:1.5;padding-block:8px}
+ .page-connect .linkedin-link>span{margin-left:0}
+}

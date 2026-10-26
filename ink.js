@@ -12,13 +12,7 @@
   let height = 1;
   let frame = 0;
   let previousTime = 0;
-  let driftTime = 0;
-  // Independent, slow currents keep the mobile wash moving without touch input.
-  const currents = Array.from({ length: 3 }, () => ({
-    phase: Math.random() * Math.PI * 2,
-    speed: .07 + Math.random() * .06,
-    x: null, y: null
-  }));
+  let spiralTime = 0, previousSpiralPoint = null;
   let lastInput = 0;
   let previousPointer = null;
   // Count gestures, never the interpolated fluid samples within a gesture.
@@ -92,7 +86,7 @@
     }
     function splat(point) {
       let u=bind(programs.splat);sampler(u.source,velocity.read,0);gl.uniform2f(u.point,point.x,1-point.y);gl.uniform4f(u.amount,point.dx*3600,-point.dy*3600,0,0);gl.uniform1f(u.aspect,width/height);gl.uniform1f(u.radius,point.ambient?.002:point.down?.00105:.00052);blit(velocity.write);velocity.swap();
-      const density=point.ambient?.085:point.down?.75:.19;
+      const density=point.ambient?.085*(point.strength??1):point.down?.75:.19;
       sampler(u.source,ink.read,0);gl.uniform4f(u.amount,point.color[0]/255*density,point.color[1]/255*density,point.color[2]/255*density,density);gl.uniform1f(u.radius,point.ambient?.0012:point.down?.00068:.00027);blit(ink.write);ink.swap();
     }
     function step(dt) {
@@ -105,7 +99,7 @@
       for(let i=0;i<12;i++){sampler(u.pressure,pressure.read,0);blit(pressure.write);pressure.swap();}
       u=bind(programs.gradient);gl.uniform2f(u.texel,1/velocity.read.width,1/velocity.read.height);sampler(u.pressure,pressure.read,0);sampler(u.velocity,velocity.read,1);blit(velocity.write);velocity.swap();
       u=bind(programs.advect);gl.uniform2f(u.texel,1/velocity.read.width,1/velocity.read.height);gl.uniform1f(u.dt,dt);gl.uniform1f(u.decay,Math.exp(-1.35*dt));gl.uniform2f(u.sourceTexel,1/velocity.read.width,1/velocity.read.height);sampler(u.source,velocity.read,0);sampler(u.velocity,velocity.read,1);blit(velocity.write);velocity.swap();
-      gl.uniform1f(u.decay,Math.exp(-.48*dt));gl.uniform2f(u.sourceTexel,1/ink.read.width,1/ink.read.height);sampler(u.velocity,velocity.read,1);sampler(u.source,ink.read,0);blit(ink.write);ink.swap();
+      gl.uniform1f(u.decay,Math.exp(-(mobile.matches?.16:.48)*dt));gl.uniform2f(u.sourceTexel,1/ink.read.width,1/ink.read.height);sampler(u.velocity,velocity.read,1);sampler(u.source,ink.read,0);blit(ink.write);ink.swap();
       u=bind(programs.display);sampler(u.ink,ink.read,0);gl.uniform2f(u.inkTexel,1/ink.read.width,1/ink.read.height);blit(null);
     }
     target.dataset.inkRenderer='webgl';
@@ -118,29 +112,33 @@
     let drops=[];
     return {
       resize(w,h){target.width=Math.round(w);target.height=Math.round(h);drops=[];},
-      splat(p){if(drops.length>150)drops.shift();drops.push({x:p.x*width,y:p.y*height,vx:p.dx*width*10,vy:p.dy*height*10,life:1,r:p.ambient?55:p.down?34:20,ambient:p.ambient,phase:Math.random()*6.28,down:p.down,color:p.color.join(',')});},
+      splat(p){if(drops.length>(mobile.matches?450:150))drops.shift();drops.push({x:p.x*width,y:p.y*height,vx:p.dx*width*10,vy:p.dy*height*10,life:p.strength??1,r:p.ambient?55:p.down?34:20,ambient:p.ambient,phase:Math.random()*6.28,down:p.down,color:p.color.join(',')});},
       clear(){drops=[];ctx.clearRect(0,0,target.width,target.height);},
-      step(dt){ctx.clearRect(0,0,target.width,target.height);drops=drops.filter(p=>p.life>.015);for(const p of drops){p.life*=Math.exp(-.6*dt);p.phase+=dt*.7;p.x+=(p.vx+Math.cos(p.phase)*5)*dt;p.y+=(p.vy+Math.sin(p.phase)*4)*dt;p.vx*=Math.exp(-dt*1.5);p.vy*=Math.exp(-dt*1.5);p.r+=dt*3;const g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);g.addColorStop(0,`rgba(${p.color},${p.life*(p.ambient?.022:p.down?.0875:.03125)})`);g.addColorStop(.5,`rgba(${p.color},${p.life*.01875})`);g.addColorStop(1,`rgba(${p.color},0)`);ctx.fillStyle=g;ctx.beginPath();ctx.ellipse(p.x,p.y,p.r,p.r,0,0,Math.PI*2);ctx.fill();}}
+      step(dt){ctx.clearRect(0,0,target.width,target.height);drops=drops.filter(p=>p.life>.015);for(const p of drops){p.life*=Math.exp(-(mobile.matches?.2:.6)*dt);p.phase+=dt*.7;p.x+=(p.vx+Math.cos(p.phase)*5)*dt;p.y+=(p.vy+Math.sin(p.phase)*4)*dt;p.vx*=Math.exp(-dt*1.5);p.vy*=Math.exp(-dt*1.5);p.r+=dt*3;const g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);g.addColorStop(0,`rgba(${p.color},${p.life*(p.ambient?.022:p.down?.0875:.03125)})`);g.addColorStop(.5,`rgba(${p.color},${p.life*.01875})`);g.addColorStop(1,`rgba(${p.color},0)`);ctx.fillStyle=g;ctx.beginPath();ctx.ellipse(p.x,p.y,p.r,p.r,0,0,Math.PI*2);ctx.fill();}}
     };
   }
-  function fallback() {
-    const replacement=document.createElement('canvas');replacement.id='ink-canvas';canvas.replaceWith(replacement);canvas=replacement;canvas.dataset.inkRenderer='2d';return createWash(canvas);
+  function replaceCanvas(){const replacement=document.createElement('canvas');replacement.id='ink-canvas';canvas.replaceWith(replacement);canvas=replacement;}
+  function fallback() {replaceCanvas();canvas.dataset.inkRenderer='2d';return createWash(canvas);}
+  function initialize(){
+    try{const result=createFluid(canvas);canvas.addEventListener('webglcontextlost',contextLost);return result;}catch{return fallback();}
   }
-  try { engine=createFluid(canvas); } catch { engine=fallback(); }
+  engine=initialize();
   if(!engine)return;
 
   function resize(){const nextWidth=intro.clientWidth,nextHeight=intro.offsetHeight;if(nextWidth===width&&nextHeight===height)return;width=nextWidth;height=nextHeight;stage.style.height=`${height}px`;try{engine.resize(width,height);}catch{engine=fallback();if(!engine)return;engine.resize(width,height);}points.length=0;resetGesture();if(enabled)seed();}
   function visible(){return enabled && !document.hidden && scrollY < height;}
   function wake(){if(!visible())return;lastInput=performance.now();if(!frame){previousTime=0;frame=requestAnimationFrame(render);}}
-  function drift(dt){
-    driftTime+=dt;
-    for(const current of currents){
-      const t=driftTime*current.speed, p=current.phase;
-      const x=.5+.43*Math.sin(t+p)+.025*Math.sin(t*2.3+p);
-      const y=.5+.4*Math.cos(t*.83+p*1.7)+.03*Math.sin(t*1.9+p);
-      engine.splat({x,y,dx:current.x===null?.002:(x-current.x)*1.8,dy:current.y===null?.001:(y-current.y)*1.8,ambient:true,color:palette[0]});
-      current.x=x;current.y=y;
-    }
+  // One fluid brush follows the approved spiral, at twice the former drawing speed.
+  function spiral(dt){
+    spiralTime=(spiralTime+dt)%22;
+    if(spiralTime>=18){previousSpiralPoint=null;return;}
+    const progress=spiralTime/18;
+    const radius=.49-.435*progress, angle=-Math.PI*.85+progress*Math.PI*3.5;
+    const x=.5+radius*Math.cos(angle), y=.46+radius*Math.sin(angle)*.86;
+    const previous=previousSpiralPoint && progress>previousSpiralPoint.progress?previousSpiralPoint:null;
+    engine.splat({x,y,dx:previous?(x-previous.x)*1.8:0,dy:previous?(y-previous.y)*1.8:0,ambient:true,
+      strength:Math.min(1,progress/.025,(1-progress)/.08),color:palette[0]});
+    previousSpiralPoint={x,y,progress};
   }
   function render(now){
     frame=0;if(!visible())return;
@@ -149,12 +147,12 @@
     if(mobile.matches && elapsed<1/30){frame=requestAnimationFrame(render);return;}
     if(!mobile.matches && now-lastInput>9000){engine.clear();return;}
     const dt=Math.min(elapsed,mobile.matches?.05:.033);previousTime=now;
-    if(mobile.matches && !document.querySelector('dialog[open]'))drift(dt);
+    if(mobile.matches){if(document.querySelector('dialog[open]')){frame=requestAnimationFrame(render);return;}spiral(dt);}
     for(const point of points.splice(0,24))engine.splat(point);
     engine.step(dt);frame=requestAnimationFrame(render);
   }
   function add(x,y,dx,dy,down){points.push({x,y,dx:Math.max(-.07,Math.min(.07,dx)),dy:Math.max(-.07,Math.min(.07,dy)),down,color});if(points.length>48)points.splice(0,points.length-48);wake();}
-  function seed(){if(!enabled)return;if(mobile.matches){wake();return;}const path=[{x:.06,y:.19},{x:.1,y:.14},{x:.17,y:.13},{x:.24,y:.16},{x:.29,y:.22}];path.forEach((p,i)=>{add(p.x,p.y,i?.018:.008,.006,i===1||i===2);});add(.91,.68,-.02,-.012,true);add(.88,.64,-.018,.007,false);}
+  function seed(){if(!enabled)return;if(mobile.matches){spiralTime=0;previousSpiralPoint=null;wake();return;}const path=[{x:.06,y:.19},{x:.1,y:.14},{x:.17,y:.13},{x:.24,y:.16},{x:.29,y:.22}];path.forEach((p,i)=>{add(p.x,p.y,i?.018:.008,.006,i===1||i===2);});add(.91,.68,-.02,-.012,true);add(.88,.64,-.018,.007,false);}
   function pointer(event) {
     if (!canPaint(event)) { resetGesture(); return; }
     const y = event.clientY + scrollY;
@@ -190,10 +188,10 @@
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;resetGesture();}else if(enabled&&(mobile.matches||performance.now()-lastInput<9000))wake();});
   window.addEventListener('blur',resetGesture);
   window.addEventListener('scroll',()=>{resetGesture();if(scrollY>=height){cancelAnimationFrame(frame);frame=0;}else if(mobile.matches)wake();},{passive:true});
-  mobile.addEventListener('change',()=>{cancelAnimationFrame(frame);frame=0;points.length=0;resetGesture();for(const current of currents){current.x=null;current.y=null;}engine.clear();stage.dataset.inkMode=mobile.matches?'ambient':'interactive';if(enabled)seed();});
+  mobile.addEventListener('change',()=>{cancelAnimationFrame(frame);frame=0;points.length=0;resetGesture();engine.clear();replaceCanvas();engine=initialize();if(!engine)return;engine.resize(width,height);stage.dataset.inkMode=mobile.matches?'ambient':'interactive';if(enabled)seed();});
   stage.dataset.inkMode=mobile.matches?'ambient':'interactive';
   reducedMotion.addEventListener('change',event=>{enabled=!event.matches;cancelAnimationFrame(frame);frame=0;points.length=0;resetGesture();engine.clear();if(enabled)seed();});
-  canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();cancelAnimationFrame(frame);frame=0;points.length=0;resetGesture();engine=fallback();if(engine){engine.resize(width,height);if(enabled)seed();}});
+  function contextLost(event){event.preventDefault();cancelAnimationFrame(frame);frame=0;points.length=0;resetGesture();engine=fallback();if(engine){engine.resize(width,height);if(enabled)seed();}}
   let resizeTimer;const observer=new ResizeObserver(()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(resize,100);});observer.observe(intro);
   resize();
 })();
