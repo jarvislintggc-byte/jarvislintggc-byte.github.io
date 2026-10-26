@@ -1,10 +1,11 @@
-import { CHAPTER_COUNT } from './journey-growth.mjs';
 import { receiveHit } from './journey-enemy.mjs';
 import { flatTerrain, supportAt, stepSupport, landingOn, nearbyRope } from './journey-terrain.mjs';
 import { impactTimes } from './journey-combat.mjs';
+export {experienceFor} from './journey-progression.mjs';
+export {attackReaches} from './journey-hitbox.mjs';
 export const playerPhases=['reading','encounter','portal','retiring','reward'];
 export const canMovePlayer=state=>playerPhases.includes(state.phase)||state.phase==='battle'&&state.bossHp===0;
-export const limits=rank=>({hp:100+rank*20,mp:60+rank*10});
+export const limits=rank=>({hp:100+Math.floor(rank/2)*20,mp:60+Math.floor(rank/2)*10});
 export const resetMobility=player=>({...player,jumpsUsed:0,crouching:false,airVx:0,didDoubleJump:false,grounded:true,supportId:'base',climbing:null,climbMoving:false,ropeCooldown:0,dropTime:0});
 export const revivePlayer=(player,rank)=>resetMobility({...player,...limits(rank),x:25,y:0,vy:0,facing:1,moving:false,invulnerable:2,hurtTime:0,knockbackVx:0});
 export const newPlayer=()=>resetMobility({x:25,y:0,vy:0,facing:1,moving:false,hp:100,mp:60,invulnerable:0,hurtTime:0,knockbackVx:0});
@@ -69,21 +70,10 @@ export function stepPlayer(player,input,ms,width,{movable=true,enemy=false,rank=
   else p.airVx=(p.airVx||0)*Math.exp(-5.5*dt);
   return finish();
 }
-export function attackReaches(player,skill,classId,width,targetX=64){
-  const dx=(targetX-player.x)/100*width;
-  const range=skill&&['mage','archer'].includes(classId)?650:skill?180:140;
-  return Math.abs(dx)<=range&&dx*player.facing>=-15&&player.y<125;
-}
 export function manualCastDuration(ability){return ability?Math.max(ability.actorDuration,...ability.tracks.map(t=>t.start+Math.max(t.duration,t.hold||0,t.flight||0)))+100:900;}
 export function hitFeedback(ability,time){return Math.max(0,...impactTimes(ability).map(start=>{const t=(time-start)/180;return t>=0&&t<1?Math.sin(t*Math.PI):0;}));}
 export function appendDialogue(history,message){
   if(!message?.text?.trim()||typeof message.speaker!=='string')return history;
   if(message.id&&history.at(-1)?.id===message.id)return history;
   return [...history,{id:message.id||null,speaker:message.speaker,text:message.text.trim()}].slice(-1);
-}
-export function experienceFor(state){
-  if(state.completed>=CHAPTER_COUNT)return 100;
-  if(state.chapter<state.completed)return 0;
-  if(state.phase==='encounter'||state.phase==='battle')return Math.round(((state.bossMaxHp||90)-state.bossHp)/(state.bossMaxHp||90)*80);
-  return ['retiring','reward'].includes(state.phase)?90:0;
 }

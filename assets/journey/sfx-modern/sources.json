@@ -1,0 +1,425 @@
+{
+  "retrieved": "2026-10-25",
+  "copyright": "NEXON",
+  "publicReusePermission": "UNKNOWN; local prototype only",
+  "processing": "Original MP3 payloads, WZ wrapper removed; no re-encoding.",
+  "sharedHit": "Generic original snail damage cue used only when a skill has no independent Hit node.",
+  "files": [
+    {
+      "file": "sfx-modern/1001005-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1001005/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1001005/Use",
+      "bytes": 21234,
+      "duration": 1.327125,
+      "sha256": "0e65f85867f44a271498adf354509dadf2f98029518c7ba1e41ad0daffad1cf4"
+    },
+    {
+      "file": "sfx-modern/1001005-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1001005/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1001005/Hit",
+      "bytes": 11203,
+      "duration": 0.700187,
+      "sha256": "04e569a8ffbdc74334ca112291611728e5ab29d9a4148c410f12be8a327a9ce1"
+    },
+    {
+      "file": "sfx-modern/1101011-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1101011/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1101011/Use",
+      "bytes": 13679,
+      "duration": 0.854937,
+      "sha256": "b449a94fdc034919887401482283050161e9641892438288105fcdb9ec4de460"
+    },
+    {
+      "file": "sfx-modern/1101011-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1101011/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1101011/Hit",
+      "bytes": 7841,
+      "duration": 0.490063,
+      "sha256": "68da6d1064c78c9a42dd5410588c6f63d2752a0e64484c698986edd31e82b5fc"
+    },
+    {
+      "file": "sfx-modern/1111010-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1111010/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1111010/Use",
+      "bytes": 15764,
+      "duration": 0.98525,
+      "sha256": "10abdbf3e39163e01220ce7d8d71013a1a06027f81f0a524032b670e8516d80c"
+    },
+    {
+      "file": "sfx-modern/1111010-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1111010/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1111010/Hit",
+      "bytes": 7424,
+      "duration": 0.464,
+      "sha256": "5a66f5e867a140f3d3f13336471b1564ec53387124f91e6fbeee8d2a3c3bd531"
+    },
+    {
+      "file": "sfx-modern/1120017-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1120017/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1120017/Use",
+      "bytes": 24521,
+      "duration": 1.532563,
+      "sha256": "325d4c7a737a2e44f32710c53dc80efdd90f34cfb5b7c2462386212d20f48e38"
+    },
+    {
+      "file": "sfx-modern/1120017-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1120017/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1120017/Hit",
+      "bytes": 10760,
+      "duration": 0.6725,
+      "sha256": "7468720926ad1193af0f590d9e672febd55439836372d2527f35132a13b2a8fc"
+    },
+    {
+      "file": "sfx-modern/1121052-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1121052/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1121052/Use",
+      "bytes": 23689,
+      "duration": 2.351,
+      "sha256": "3ec8c9235f732da9ec9b46d6cab9bbf2f92c1fcecf7cf3f9013765377daaea6b"
+    },
+    {
+      "file": "sfx-modern/1121052-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1121052/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/1121052/Hit",
+      "bytes": 7494,
+      "duration": 0.7315,
+      "sha256": "db4c4d7f0e753ac3084ad26bd9011e512e889de7c9b13a49316c3460979c2315"
+    },
+    {
+      "file": "sfx-modern/2001008-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2001008/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2001008/Use",
+      "bytes": 27503,
+      "duration": 1.718937,
+      "sha256": "ea1512ce7dac9abd2b1818bf21914510f9fb49e02696246d14efa13f8ed46614"
+    },
+    {
+      "file": "sfx-modern/2001008-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2001008/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2001008/Hit",
+      "bytes": 19980,
+      "duration": 1.24875,
+      "sha256": "235e146f67b73e64f1e20d91647c8d4f0d559b97ae6085a90dda7077d90a2635"
+    },
+    {
+      "file": "sfx-modern/2101004-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2101004/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2101004/Use",
+      "bytes": 30011,
+      "duration": 1.875687,
+      "sha256": "8c212762fcc8de8fdf22a2d195f474a99f4cedb46b81bbcbd8911a3e0ed4f14c"
+    },
+    {
+      "file": "sfx-modern/2101004-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2101004/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2101004/Hit",
+      "bytes": 14965,
+      "duration": 0.935312,
+      "sha256": "aee3d5bb39c172b2ef4096cd7bed4972b5ebbfbdd9477a4a1f015ef7cd5b86a0"
+    },
+    {
+      "file": "sfx-modern/2111002-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2111002/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2111002/Use",
+      "bytes": 48819,
+      "duration": 3.051188,
+      "sha256": "0ff423a4cba1dcdcdd4520093a5c0e9b76ffab5c9babc9a40d21c153ae4043da"
+    },
+    {
+      "file": "sfx-modern/2111002-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2111002/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2111002/Hit",
+      "bytes": 21234,
+      "duration": 1.327125,
+      "sha256": "cb17bd2cfe86cad4d36bf028108f44472f40c3d3461e1c53d82059a9d75cf01f"
+    },
+    {
+      "file": "sfx-modern/2121006-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2121006/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2121006/Use",
+      "bytes": 29175,
+      "duration": 1.823438,
+      "sha256": "74db527e661270b3860e4b9ad4ac7643f764e3fc4ec73f27090ccd100ec5fea0"
+    },
+    {
+      "file": "sfx-modern/2121006-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2121006/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2121006/Hit",
+      "bytes": 17472,
+      "duration": 1.092,
+      "sha256": "c52c46f3ce7459f954c099c2faf90b79f686054c5828d9231eb0a74a8924e596"
+    },
+    {
+      "file": "sfx-modern/2121052-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2121052/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2121052/Use",
+      "bytes": 39206,
+      "duration": 2.450375,
+      "sha256": "1398989470568e8b5702afc1715930ca3d8aae94b6985e6c20d982229b3d7611"
+    },
+    {
+      "file": "sfx-modern/2121052-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2121052/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/2121052/Hit",
+      "bytes": 21652,
+      "duration": 1.35325,
+      "sha256": "0af7189da59f66508de07b5cbd7d7a2eb44e320b17c6875937d968a1c7ebc403"
+    },
+    {
+      "file": "sfx-modern/4001334-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4001334/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4001334/Use",
+      "bytes": 13262,
+      "duration": 0.828875,
+      "sha256": "07cf67f63a927bf8350bce8268a9fc7ee0d747cad4028e1a8054a66f1edca3e8"
+    },
+    {
+      "file": "sfx-modern/4001334-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4001334/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4001334/Hit",
+      "bytes": 9926,
+      "duration": 0.620375,
+      "sha256": "a1b189b8e42d0469a2e72cbb2803c4d0c1c6b25c2817d4c8b22845c0eb524884"
+    },
+    {
+      "file": "sfx-modern/4201012-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4201012/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4201012/Use",
+      "bytes": 17015,
+      "duration": 1.063438,
+      "sha256": "12efe6cd869fbbc1316e2276c6bba3e33b7223572b205a4f455a0e92ad50459f"
+    },
+    {
+      "file": "sfx-modern/4201012-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4201012/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4201012/Hit",
+      "bytes": 12011,
+      "duration": 0.750688,
+      "sha256": "13028d2cf42f3d20247d20756cdde43b11d368844478954fcf80d8e6e541c829"
+    },
+    {
+      "file": "sfx-modern/4211011-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4211011/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4211011/Use",
+      "bytes": 23270,
+      "duration": 1.454375,
+      "sha256": "0e03e567a30df565e9b2964682a9165a8e8c71ec54794291414fffa30c8ea472"
+    },
+    {
+      "file": "sfx-modern/4211011-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4211011/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4211011/Hit",
+      "bytes": 14513,
+      "duration": 0.907062,
+      "sha256": "a6bd794d652f6af06ba65641f54f076f214ed36d39f1ae836219270db7cac9ca"
+    },
+    {
+      "file": "sfx-modern/4221017-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4221017/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4221017/Use",
+      "bytes": 30776,
+      "duration": 1.9235,
+      "sha256": "cfd724497df480d01c5dbca419063f5610f89492474eb051ae0e0841cf09b3db"
+    },
+    {
+      "file": "sfx-modern/4221017-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4221017/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4221017/Hit",
+      "bytes": 10343,
+      "duration": 0.646437,
+      "sha256": "a3e379ffde7fc24caa5c47aaeecf6febfb8033be4870a40d29bd3bce1eade12b"
+    },
+    {
+      "file": "sfx-modern/4221014-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4221014/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4221014/Use",
+      "bytes": 12428,
+      "duration": 0.77675,
+      "sha256": "eae0e13bac1db326c14a182ef33bfd9d6eb14595a0f24386603251f44f434a53"
+    },
+    {
+      "file": "sfx-modern/4221014-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4221014/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/4221014/Hit",
+      "bytes": 8258,
+      "duration": 0.516125,
+      "sha256": "5c3290845e07c6828c3d3ad0a82ea984e2c943a6291543901b6a3da2ba79b852"
+    },
+    {
+      "file": "sfx-modern/3001004-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3001004/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3001004/Use",
+      "bytes": 13679,
+      "duration": 0.854937,
+      "sha256": "34b445c34e9425b93853f83d0b0809fd638494c650349f972abfb9be156d02f9"
+    },
+    {
+      "file": "sfx-modern/3001004-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3001004/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3001004/Hit",
+      "bytes": 5756,
+      "duration": 0.35975,
+      "sha256": "a38038f77e9eae32a694ef336fdf9bce703eb38f8dab3899daee70c9e7be7a3c"
+    },
+    {
+      "file": "sfx-modern/3101005-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3101005/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3101005/Use",
+      "bytes": 30011,
+      "duration": 1.875687,
+      "sha256": "49d839aa30616906583e6555633f66e15ab9c59affac320eee0c1955ad431de3"
+    },
+    {
+      "file": "sfx-modern/3101005-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3101005/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3101005/Hit",
+      "bytes": 5351,
+      "duration": 0.334437,
+      "sha256": "e552844e03882a881eaf125913edd16358adf8905ce4a87f3269dcb6a3fd0c45"
+    },
+    {
+      "file": "sfx-modern/3121015-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121015/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121015/Use",
+      "bytes": 27085,
+      "duration": 1.692813,
+      "sha256": "f5c20a973b59253db37b2494ecccdb149d363a8c87e2d947acc26a16a6515632"
+    },
+    {
+      "file": "sfx-modern/3121015-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121015/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121015/Hit",
+      "bytes": 11621,
+      "duration": 0.726313,
+      "sha256": "a05f306c09bf83862496b2f61e1fc4dd47feee655d02b1278735cb30d527ac1d"
+    },
+    {
+      "file": "sfx-modern/3121020-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121020/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121020/Use",
+      "bytes": 23324,
+      "duration": 1.45775,
+      "sha256": "9f4233bcfa20c5aab30c111f714b89ce62925d7428c4bc62686b49a2ed242b6f"
+    },
+    {
+      "file": "sfx-modern/3121020-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121020/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121020/Hit",
+      "bytes": 7441,
+      "duration": 0.465063,
+      "sha256": "d88c71433c9ef321a50430f29d4849bb4c8c595f95e7d752cf41f533abe7bc9f"
+    },
+    {
+      "file": "sfx-modern/3121052-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121052/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121052/Use",
+      "bytes": 48401,
+      "duration": 3.025063,
+      "sha256": "81e415452e633c872a570a04189902c007608c3559a3a813835e7e26918faabb"
+    },
+    {
+      "file": "sfx-modern/3121052-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121052/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/3121052/Hit",
+      "bytes": 27503,
+      "duration": 1.718937,
+      "sha256": "3ca931c885aaad67abc541cf6722db82f2935dff160b458634763de5d3f5c695"
+    },
+    {
+      "file": "sfx-modern/5001002-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5001002/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5001002/Use",
+      "bytes": 14547,
+      "duration": 0.909188,
+      "sha256": "83c66200ad19260ad228eb21d30752632301968e83dc9637eaa5975c5bc22ed5"
+    },
+    {
+      "file": "sfx-modern/5001002-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5001002/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5001002/Hit",
+      "bytes": 6187,
+      "duration": 0.386688,
+      "sha256": "d22cdd66b79dcdab370f736a2b867ef041ed5674b3f95a4190b4e20f896874fd"
+    },
+    {
+      "file": "sfx-modern/5101012-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5101012/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5101012/Use",
+      "bytes": 28339,
+      "duration": 1.771188,
+      "sha256": "3abdfc967c63206742cf4ee055d1149f10c6c7d27a2efba6ded1a084c9a10567"
+    },
+    {
+      "file": "sfx-modern/5101012-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5101012/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5101012/Hit",
+      "bytes": 14965,
+      "duration": 0.935312,
+      "sha256": "44955e27439e01429ad91a8417112a9197231669fb08c845f57ee2e341e8e3fa"
+    },
+    {
+      "file": "sfx-modern/5111002-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5111002/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5111002/Use",
+      "bytes": 22906,
+      "duration": 1.431625,
+      "sha256": "5be70bd682b2672b0bf33e75701c6f094248adfb2991fdb7142bc452cd32918e"
+    },
+    {
+      "file": "sfx-modern/5111002-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5111002/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5111002/Hit",
+      "bytes": 7441,
+      "duration": 0.465063,
+      "sha256": "a221720ed16bfaaa2b6e43bc6b7ac4eabfd1a5a3456796dcbe395ea1d23b8096"
+    },
+    {
+      "file": "sfx-modern/5121016-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5121016/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5121016/Use",
+      "bytes": 22906,
+      "duration": 1.431625,
+      "sha256": "20fde00b77f82c7d8d9aa4ec5409618deb47ffdc5a3aa2382bee7a884e214e32"
+    },
+    {
+      "file": "sfx-modern/5121016-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5121016/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5121016/Hit",
+      "bytes": 7441,
+      "duration": 0.465063,
+      "sha256": "cc25c862cb87ff70d8911c275ca6fc4c68ef9f653372ed836cb931c5ead92c06"
+    },
+    {
+      "file": "sfx-modern/5121007-use.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5121007/Use",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5121007/Use",
+      "bytes": 17890,
+      "duration": 1.118125,
+      "sha256": "dff4b46f4d13c05f564c55d16a4516505d864d38d24627581795ffabf4e06e79"
+    },
+    {
+      "file": "sfx-modern/5121007-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5121007/Hit",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Skill.img/5121007/Hit",
+      "bytes": 14965,
+      "duration": 0.935312,
+      "sha256": "769f286e188be637154e0fb5bf1f929bcad49e11df5740250801878be17510ce"
+    },
+    {
+      "file": "sfx-modern/beginner-attack.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Weapon.img/barehands/Attack",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Weapon.img/barehands/Attack",
+      "bytes": 698,
+      "duration": 0.232667,
+      "sha256": "58b1a6315318f6811b64000cafb9e2118ef3afc127a537ecec2939ab86ab7b1d"
+    },
+    {
+      "file": "sfx-modern/shared-monster-hit.mp3",
+      "source": "https://maplestory.io/api/wz/GMS/270/Sound/Mob.img/0100100/Damage",
+      "resolvedSource": "https://maplestory.io/api/wz/GMS/270/Sound/Mob.img/0100100/Damage",
+      "bytes": 854,
+      "duration": 0.284667,
+      "sha256": "d66b532e7478cc4e8dba6c58a18dfc745110bddc473e1c3da8f5da56154fb0e4"
+    }
+  ]
+}

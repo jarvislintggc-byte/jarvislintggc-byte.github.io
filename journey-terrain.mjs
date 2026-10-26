@@ -21,9 +21,12 @@ export function supportAt(world,x,y,preferred=null,tolerance=3){
 }
 export function floorAt(world,x){return Math.max(0,...world.platforms.map(s=>surfaceY(s,x)).filter(y=>y!==null&&y>=0&&y<=world.stepHeight));}
 export function stepSupport(world,fromX,toX,footY,preferred){
- return world.platforms.map(surface=>({surface,y:surfaceY(surface,toX),before:surfaceY(surface,fromX)}))
-  .filter(s=>s.y!==null&&Math.abs(s.y-footY)<=world.stepHeight&&(s.surface.id===preferred||s.before===null||Math.abs(s.before-footY)<=3))
-  .sort((a,b)=>b.y-a.y)[0]||null;
+ const current=world.platforms.find(surface=>surface.id===preferred);
+ if(current){const y=surfaceY(current,toX);if(y!==null)return {surface:current,y};}
+ // Transfer only across a level join. Raised stairs require a jump; leaving a
+ // ledge starts a real fall instead of snapping onto the next lower shelf.
+ return world.platforms.map(surface=>({surface,y:surfaceY(surface,toX),before:surfaceY(surface,fromX,.5)}))
+  .find(s=>s.y!==null&&Math.abs(s.y-footY)<.5&&(s.before===null||Math.abs(s.before-footY)<.5))||null;
 }
 // Sweep the entire fall segment, so a fast frame cannot tunnel through a ledge.
 export function landingOn(world,fromX,fromY,toX,toY,drop=false){

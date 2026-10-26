@@ -11,8 +11,9 @@ export function enemyBodyTarget(monster,mobile=false,facing=1){
  const frame=monster.poses.stand[0],scale=mobile?.7:1;
  return {offsetX:(frame.width/2-frame.origin.x)*scale*(facing===-1?-1:1),height:Math.max(8,frame.origin.y-frame.height*.55)*scale};
 }
-export function skillTrackGeometry(ability,track,frame,{width,mobile=false},{actorX,targetX=64,targetHeight=mobile?50:75,lift=0,facing=1,flight=0}){
- const maxWidth=Math.max(...track.frames.map(f=>f.width)),baseScale=mobile?.98:1.4,scale=maxWidth>600?Math.min(baseScale,width*1.2/maxWidth):baseScale;
+export function skillTrackGeometry(ability,track,frame,{width,height=width,mobile=false},{actorX,targetX=64,targetHeight=mobile?50:75,lift=0,facing=1,flight=0}){
+ const maxWidth=Math.max(...track.frames.map(f=>f.width)),maxHeight=Math.max(...track.frames.map(f=>f.height)),baseScale=mobile?.98:1.4;
+ const scale=ability.version==='GMS270'?Math.min(baseScale,width*.65/maxWidth,height*.55/maxHeight):maxWidth>600?Math.min(baseScale,width*1.2/maxWidth):baseScale;
  const mirror=(facing===1)!==Boolean(frame.flip),sign=mirror?-1:1;
  let x=track.anchor==='actor'?actorX:targetX,y=track.anchor==='actor'?lift:0;
  if(track.anchor==='projectile'){x=actorX+(targetX-actorX)*flight;y=(35*baseScale+lift)*(1-flight)+targetHeight*flight;}
