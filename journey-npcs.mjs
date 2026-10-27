@@ -73,9 +73,10 @@ const shortTrainingRoles={2152002:{'zh-Hant':'反抗軍法師',en:'R. Mage'},215
 const put=(node,text)=>{if(node.textContent!==text)node.textContent=text;};
 export function createNpcView(host,{asset}){
  let chapter=-1,castKind='',entries=[],time=0,lastDraw=-Infinity,lastLanguage='',lastWidth=0,lastHeight=0,lastReduced=null,lastMobile=null;
+ let layoutFrame='',referenceNarration=null;
  return {
   show(index,kind='native'){
-   if(chapter===index&&castKind===kind)return;if(chapter!==index)time=0;chapter=index;castKind=kind;lastDraw=-Infinity;entries=[];host.replaceChildren();
+   if(chapter===index&&castKind===kind)return;if(chapter!==index)time=0;chapter=index;castKind=kind;lastDraw=-Infinity;layoutFrame='';entries=[];host.replaceChildren();
    for(const actor of npcCast(index,kind)){
     const anchor=document.createElement('div'),image=document.createElement('img'),name=document.createElement('span'),bubble=document.createElement('p'),drill=document.createElement('span');
     anchor.className='journey-npc';anchor.dataset.npcId=String(actor.id);anchor.dataset.action=actor.action;
@@ -83,10 +84,15 @@ export function createNpcView(host,{asset}){
     anchor.append(image,name,bubble,drill);host.append(anchor);entries.push({actor,anchor,image,name,bubble,drill});
    }
   },
-  tick(delta,{state,language='zh-Hant',width,height=600,groundInset=46,mobile=false,reduced=false,narrationBounds=null,protectedBounds=[],floor=()=>0,placements=null}){
+  tick(delta,{state,language='zh-Hant',width,height=600,groundInset=46,worldWidth=width,layoutCameraX=0,layoutGroundInset=groundInset,mobile=false,reduced=false,narrationBounds=null,protectedBounds=[],cameraX=0,floor=()=>0,placements=null}){
    if(state.phase==='ready')time=0;
    if(!state.paused&&!['ready','complete','dead'].includes(state.phase))time+=Math.max(0,delta);
    host.hidden=['ready','complete'].includes(state.phase);if(host.hidden)return;
+   // Lay out in a fixed map frame. Panning only clips/translates the result;
+   // it must never pull an offscreen speaker's bubble back into the viewport.
+   const frame=[width,height,worldWidth,layoutCameraX,layoutGroundInset].join(':');
+   if(frame!==layoutFrame){layoutFrame=frame;referenceNarration=narrationBounds;}
+   else if(narrationBounds&&Math.abs(cameraX-layoutCameraX)<.01)referenceNarration=narrationBounds;
    const stamp=Math.floor(time/80),speech=ambientSpeech(entries.map(e=>e.actor),time,{language,compact:mobile}),layout=[];
    // Layout follows story movement immediately, while native sprite updates stay bounded.
    const redraw=stamp!==lastDraw||lastLanguage!==language||lastWidth!==width||lastHeight!==height||lastReduced!==reduced||lastMobile!==mobile;
@@ -107,10 +113,19 @@ export function createNpcView(host,{asset}){
     }
     setStyles(anchor,{left:placements?`${x}px`:motion.x?`calc(${at}% + ${motion.x.toFixed(1)}px)`:`${at}%`,bottom:`calc(var(--ground-inset) + ${position.y+motion.y}px)`,transform:'none'});
     const bubbleWidth=Math.min(mobile?136:202,width*.44),characters=Math.max(8,(bubbleWidth-22)/(language==='en'?5.8:mobile?11:12)),bubbleHeight=Math.ceil(speech[index].text.length/characters)*(mobile?16.5:18)+20;
-    entry.layoutFoot=foot;entry.layoutX=x;entry.layoutHead=foot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale-10;layout.push({x,bottom:foot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale+15,width:bubbleWidth,height:bubbleHeight});
+    anchor.hidden=mobile&&(x-cameraX < -100||x-cameraX>width+100);
+    const mapFoot=layoutGroundInset+position.y+motion.y;
+    entry.layoutFoot=mapFoot;entry.layoutX=x-layoutCameraX;entry.layoutHead=mapFoot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale-10;
+    layout.push({index,x:entry.layoutX,bottom:mapFoot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale+15,width:bubbleWidth,height:bubbleHeight});
    });
-   const boxes=layoutNpcBubbles(layout,{width,height,narrationBounds,protectedBounds});
-   entries.forEach((entry,index)=>{const box=boxes[index];if(!box)return;setStyles(entry.bubble,{bottom:`${box.bottom-entry.layoutFoot}px`,width:`${box.width}px`,transform:`translateX(${box.left-entry.layoutX}px)`});const tail=npcBubbleTail(box,entry.layoutX,entry.layoutHead);entry.bubble.dataset.tail=tail.side;entry.bubble.style.setProperty?.('--npc-tail',`${tail.x}px`);entry.bubble.style.setProperty?.('--npc-tail-y',`${tail.y}px`);});
+   const boxes=layoutNpcBubbles(layout,{width:worldWidth,height,narrationBounds:referenceNarration,protectedBounds});
+   layout.forEach((item,index)=>{
+    const entry=entries[item.index],box=boxes[index];if(!box)return;
+    setStyles(entry.bubble,{bottom:`${box.bottom-entry.layoutFoot}px`,width:`${box.width}px`,transform:`translateX(${box.left-entry.layoutX}px)`});
+    const screen={left:box.left+layoutCameraX-cameraX,right:box.right+layoutCameraX-cameraX,bottom:box.bottom+groundInset-layoutGroundInset,top:box.top+groundInset-layoutGroundInset};
+    entry.bubble.hidden=[...protectedBounds,...(narrationBounds?[narrationBounds]:[])].some(b=>overlaps(screen,b));
+    const tail=npcBubbleTail(box,entry.layoutX,entry.layoutHead);entry.bubble.dataset.tail=tail.side;entry.bubble.style.setProperty?.('--npc-tail',`${tail.x}px`);entry.bubble.style.setProperty?.('--npc-tail-y',`${tail.y}px`);
+   });
   }
  };
 }

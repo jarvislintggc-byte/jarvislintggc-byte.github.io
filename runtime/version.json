@@ -1,9 +1,10 @@
 {
-  "version": "5ceee34a6732c1c7",
+  "version": "571d1c454f39118b",
   "entry": "journey.js",
   "modules": [
     "journey-animation.mjs",
     "journey-bubble.mjs",
+    "journey-camera.mjs",
     "journey-carousel.mjs",
     "journey-casts.mjs",
     "journey-class-art.mjs",

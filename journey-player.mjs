@@ -19,6 +19,7 @@ export function stepPlayer(player,input,ms,width,{movable=true,enemy=false,rank=
     if(enemy&&Math.abs(p.x-64)/100*width<48&&p.y<35&&p.invulnerable===0)Object.assign(p,receiveHit(p,64,8,width));
     return p;
   };
+  const maxX=Math.max(94,world.width/Math.max(1,width)*100-6);
   const direction=movable?Number(Boolean(input.right))-Number(Boolean(input.left)):0,jump=Boolean(input.jump||input.upPressed);
   let oldX=p.x/100*width,jumpConsumed=false;
   p.hurtTime=Math.max(0,(p.hurtTime||0)-dt);p.ropeCooldown=Math.max(0,(p.ropeCooldown||0)-dt);p.dropTime=Math.max(0,(p.dropTime||0)-dt);
@@ -32,7 +33,7 @@ export function stepPlayer(player,input,ms,width,{movable=true,enemy=false,rank=
   if(!rope&&movable&&p.hurtTime===0&&p.ropeCooldown===0)rope=nearbyRope(world,oldX,p.y,input);
   if(rope&&movable){
     p.climbing=rope.id;p.climbingKind=rope.kind;p.crouching=false;p.moving=false;p.airVx=0;p.vy=0;p.grounded=false;p.supportId=null;
-    p.x=Math.max(5,Math.min(94,rope.x/width*100));oldX=p.x/100*width;
+    p.x=Math.max(5,Math.min(maxX,rope.x/width*100));oldX=p.x/100*width;
     if(input.jump){p.climbing=null;p.climbMoving=false;p.ropeCooldown=.3;p.vy=380;p.jumpsUsed=1;p.airVx=direction*240;jumpConsumed=true;}
     else{
       const vertical=Number(Boolean(input.up))-Number(Boolean(input.down));p.climbMoving=vertical!==0;
@@ -53,7 +54,7 @@ export function stepPlayer(player,input,ms,width,{movable=true,enemy=false,rank=
     else if((p.jumpsUsed||1)<2){p.vy=180;p.jumpsUsed=2;p.airVx=p.facing*1000;p.didDoubleJump=true;}
   }
   const fromY=p.y;
-  p.x=Math.max(5,Math.min(94,p.x+(axis*260+(movable?p.airVx||0:0)+(p.knockbackVx||0))/Math.max(1,width)*100*dt));
+  p.x=Math.max(5,Math.min(maxX,p.x+(axis*260+(movable?p.airVx||0:0)+(p.knockbackVx||0))/Math.max(1,width)*100*dt));
   let newX=p.x/100*width;
   if(p.grounded){
     const next=stepSupport(world,oldX,newX,p.y,p.supportId);

@@ -17,8 +17,8 @@
 <link rel="alternate" hreflang="en" href="/">
 <link rel="alternate" hreflang="zh-Hant" href="/zh/">
 <link rel="alternate" hreflang="ja" href="/ja/">
-<link rel="stylesheet" href="/journey.css?v=5ceee34a6732c1c7">
-<script src="/journey-boot.js?v=5ceee34a6732c1c7" defer></script>
+<link rel="stylesheet" href="/journey.css?v=571d1c454f39118b">
+<script src="/journey-boot.js?v=571d1c454f39118b" defer></script>
 </head>
 <body class="page-home"><a class="skip" href="#main">本文へ移動</a>
 <nav class="site-language site-language-global" aria-label="言語を選択"><a href="/zh/" data-site-language="zh-Hant" lang="zh-Hant" hreflang="zh-Hant">中文</a><a href="/" data-site-language="en" lang="en" hreflang="en">EN</a><a href="/ja/" data-site-language="ja" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav><main id="main" class="home-main"><section class="intro-screen" id="intro" aria-labelledby="intro-title">
@@ -42,7 +42,7 @@
     </header>
     <div class="life-game" id="life-game" data-phase="ready" tabindex="0" role="region" aria-label="Jarvis の人生をたどる冒険ゲーム" data-journey-aria-label="Jarvis 的人生冒險遊戲" aria-describedby="game-controls">
       <div class="game-toolbar">
-        <div class="game-brand"><button type="button" class="menu-trigger game-menu-trigger" id="game-menu-trigger" aria-label="メニューを開く／ゲームを離れる" data-journey-aria-label="開啟選單／離開遊戲" aria-controls="site-menu" aria-expanded="false"><span></span><span></span><span></span></button><span class="game-wordmark"><span aria-hidden="true">✦</span> JARVIS / THE JOURNEY</span></div>
+        <div class="game-brand"><button type="button" class="menu-trigger game-menu-trigger" id="game-menu-trigger" aria-label="メニューを開く／ゲームを離れる" data-journey-aria-label="開啟選單／離開遊戲" aria-controls="site-menu" aria-expanded="false"><span></span><span></span><span></span></button><button type="button" class="mobile-auto" id="mobile-auto" aria-pressed="false" aria-label="自動モード" data-journey-aria-label="自動模式" hidden><span class="auto-dot" aria-hidden="true"></span><span data-journey-text="自動">自動</span></button><span class="game-wordmark"><span aria-hidden="true">✦</span> JARVIS / THE JOURNEY</span></div>
         <div class="game-bottom"><ol class="chapter-trail" id="chapter-trail" aria-label="章の進行状況" data-journey-aria-label="章節進度"></ol></div>
         <div class="game-tools"><div class="journey-language" id="journey-language" role="group" aria-label="言語" data-journey-aria-label="Language"><button id="journey-language-zh" type="button" lang="zh-Hant" aria-pressed="true">中文</button><button id="journey-language-en" type="button" lang="en" aria-pressed="false">EN</button><button id="journey-language-ja" type="button" lang="ja" aria-pressed="false">日本語</button></div>
           <button type="button" id="game-pause" class="game-pause-icon" disabled aria-label="一時停止" data-journey-aria-label="暫停" data-journey-text="暫停">一時停止</button>
@@ -57,15 +57,17 @@
           </details>
         </div>
       </div>
-      <div class="game-scene" aria-label="ゲームの背景" data-journey-aria-label="遊戲場景"><div class="scene-sky" id="scene-sky" aria-hidden="true"></div>
+      <div class="game-scene" id="game-scene" aria-label="ゲームの背景" data-journey-aria-label="遊戲場景">
+        <div class="scene-world" id="scene-world"><div class="scene-sky" id="scene-sky" aria-hidden="true"></div>
         <div class="scene-environment scene-environment-back" id="scene-environment-back" aria-hidden="true"></div>
         <img class="scene-background" id="scene-background" src="/assets/journey/school.png" alt="楓之谷校園場景，作為住宿學校的遊戲化舞台" width="1400" height="700" loading="lazy">
         <div class="scene-map-objects" id="scene-map-objects" aria-hidden="true" hidden></div>
         <div class="scene-environment scene-environment-front" id="scene-environment-front" aria-hidden="true"></div>
         <div class="scene-shade" aria-hidden="true"></div>
-        <div class="game-map-label"><span id="map-region" data-journey-text="TAIWAN / 時雨高中 · 12—18 歲">台湾 / 時雨高校 · 12〜18歳</span><strong id="map-title" data-journey-text="六年的鐘聲">6年間の鐘の音</strong></div>
-        <div class="chapter-badge" id="chapter-badge">CHAPTER 01 / 18</div>
+
+
         <div class="scene-floor" aria-hidden="true"></div>
+        <div class="scene-actors" id="scene-actors">
         <div class="game-pets" id="game-pets" aria-hidden="true" hidden></div>
         <div class="game-npcs" id="game-npcs" role="group" aria-label="場景 NPC・遊戲虛構演出" hidden></div>
         <div class="game-character" id="game-character" aria-hidden="true"><img id="character-sprite" src="/assets/journey/beginner-idle.png" alt="" decoding="sync"><span class="character-shadow"></span><span class="character-name">Jarvis</span></div>
@@ -75,14 +77,19 @@
         <div class="maple-mobility-effects" id="maple-mobility-effects" aria-hidden="true" hidden></div>
         <div class="game-loot" id="game-loot" hidden aria-hidden="true"><img id="loot-image" alt=""></div>
         <div class="levelup-effect" id="levelup-effect" aria-hidden="true" hidden><img id="levelup-frame" alt="" decoding="sync"></div>
+
+        <div class="enemy-health" id="enemy-health" hidden><span id="enemy-health-label"></span><div id="enemy-health-meter" role="progressbar"><i id="enemy-health-fill"></i></div></div>
+
+        <button class="game-portal" id="game-portal" type="button" disabled aria-label="ポータルはまだ開いていません" data-journey-aria-label="傳送門尚未開啟"><span class="maple-portal-light" aria-hidden="true"><img id="portal-frame" alt=""></span></button>
+        </div></div>
+        <div class="game-map-label"><span id="map-region" data-journey-text="TAIWAN / 時雨高中 · 12—18 歲">台湾 / 時雨高校 · 12〜18歳</span><strong id="map-title" data-journey-text="六年的鐘聲">6年間の鐘の音</strong></div>
+        <div class="chapter-badge" id="chapter-badge">CHAPTER 01 / 18</div>
         <aside class="reward-banner character-status" id="reward-banner" aria-label="キャラクター情報" data-journey-aria-label="角色資訊" hidden>
           <span id="reward-heading">CHARACTER</span><div class="status-title"><strong id="game-hud-level" data-journey-text="Lv.1 初心者">Lv.1 初心者</strong><button type="button" id="class-picker-toggle" class="class-menu-trigger" aria-label="職業を選ぶ" data-journey-aria-label="選擇職業" aria-haspopup="dialog" aria-controls="journey-class-picker"><span></span><span></span><span></span></button></div>
           <div class="status-skill"><span><span data-journey-text="技能 ">スキル </span><b id="skill-count">0 / 5</b></span><strong id="game-hud-skill" data-journey-text="普通攻擊">通常攻撃</strong></div>
           <div class="status-equipment"><img id="game-hud-gear-icon" alt="" hidden><div><span data-journey-text="裝備">装備</span><strong id="game-hud-gear" data-journey-text="初心者服裝">初心者の服</strong></div></div>
         </aside>
-        <div class="enemy-health" id="enemy-health" hidden><span id="enemy-health-label"></span><div id="enemy-health-meter" role="progressbar"><i id="enemy-health-fill"></i></div></div>
         <p class="battle-caption" id="battle-caption" hidden></p>
-        <button class="game-portal" id="game-portal" type="button" disabled aria-label="ポータルはまだ開いていません" data-journey-aria-label="傳送門尚未開啟"><span class="maple-portal-light" aria-hidden="true"><img id="portal-frame" alt=""></span></button>
         <div class="game-cover" id="game-cover" hidden>
           <div id="class-screen" hidden></div>
           <div id="complete-screen" hidden><p class="cover-kicker">CHAPTERS 01—18 / COMPLETE</p><h3><span data-journey-text="下一章，">次の章は、</span><br><span data-journey-text="還在繼續。">今も続いています。</span></h3><p class="cover-description" id="complete-growth"></p><span class="cover-meta" data-journey-text="18 章旅程 · 故事仍在繼續">全18章 · 物語は続いていく</span><div class="journey-end-links"><a href="/ja/experience/" data-journey-text="我的經歷">経験・プロジェクト</a><a href="/ja/what-i-bring/" data-journey-text="我能帶來什麼">提供できる価値</a><a href="/ja/connect/" data-journey-text="聯絡我 ↗">お問い合わせ ↗</a></div></div>
@@ -93,6 +100,9 @@
         <div class="game-dialogue character-bubble" id="character-bubble" aria-live="polite" aria-atomic="true" hidden>
           <div class="bubble-skin" id="bubble-skin" aria-hidden="true"></div><img class="bubble-tail" id="bubble-tail" alt="" aria-hidden="true">
           <div class="dialogue-copy" id="dialogue-copy"><div class="dialogue-byline"><strong id="dialogue-speaker">Jarvis</strong><span id="dialogue-counter"></span></div><p id="dialogue-text"></p></div>
+        </div>
+        <div class="portal-direction" id="portal-direction" role="status" aria-live="polite" hidden>
+          <svg viewBox="0 0 64 44" aria-hidden="true" stroke="#71421b" stroke-width="2.4" stroke-linejoin="round"><path fill="#ffce39" d="M4 10h30V3l25 19-25 19v-8H4z"/><path fill="#fff1a1" stroke="none" d="M7 13h30V9l16 12H7z"/></svg><span data-journey-text="傳點">ポータル</span>
         </div>
         <div class="mobile-controls" id="mobile-controls" aria-label="タッチ操作" data-journey-aria-label="手機操作" hidden>
           <div class="touch-stick" id="touch-stick" role="group" tabindex="0" aria-label="移動スティック" data-journey-aria-label="移動方向盤">

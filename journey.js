@@ -8,6 +8,7 @@ import { tombstone } from './journey-death-art.mjs';
 import { createDeathView, tombstoneDuration } from './journey-death.mjs';
 import { gameKey, isEditingText } from './journey-input.mjs';
 import {createTouchControls} from './journey-touch.mjs';
+import {horizontalCamera,worldLimit,screenActorX,mobileMapWindow,portalDirection} from './journey-camera.mjs';
 import { classArt } from './journey-class-art.mjs';
 import { chapterMonsters, monsters } from './journey-monsters.mjs';
 import { hurtSprites } from './journey-hurt.mjs';
@@ -43,7 +44,7 @@ import { flatTerrain, projectTerrain, cameraPanFor, floorAt, storyGroundInset } 
 import { climbSprites } from './journey-climb-art.mjs';
 import {createPetView,petsFor} from './journey-pets.mjs';
 import {createNpcView} from './journey-npcs.mjs';
-import {npcPlacement} from './journey-npc-platforms.mjs';
+import {npcPlacement,npcPlacementInView} from './journey-npc-platforms.mjs';
 import {npcScenes} from './journey-npc-scenes.mjs';
 import {npcArt} from './journey-npc-art.mjs';
 import {setStyles} from './journey-render.mjs';
@@ -58,7 +59,7 @@ if (root) {
   const $=id=>document.getElementById(id), asset=name=>`/assets/journey/${name}`;
   const next=$('game-next'),portal=$('game-portal'),pause=$('game-pause'),cover=$('game-cover');
   const scene=$('scene-background'),sprite=$('character-sprite'),actor=$('game-character'),boss=$('game-boss'),caption=$('battle-caption'),trail=$('chapter-trail');
-  const dialogue=$('character-bubble');
+  const dialogue=$('character-bubble'),stage=$('game-scene'),worldLayer=$('scene-world');
   const petView=createPetView($('game-pets'),{asset,mobile:()=>viewport.mobile});
   const npcView=createNpcView($('game-npcs'),{asset});
   const mapObjectView=createMapObjectView($('scene-map-objects'),scene,{asset});
@@ -67,14 +68,15 @@ if (root) {
   const motion=matchMedia('(prefers-reduced-motion: reduce)');
   const phone=matchMedia('(max-width:760px), (hover:none) and (pointer:coarse) and (max-width:1024px)');
   let state=initialState('manual'),player=newPlayer(),castAbility=null,history=[],storyRun=0,chapterShown=-1,elapsed=0,combatTime=0,lastTime=0,animationTime=0,raf=0,lastInput=-Infinity,lastPortal=-1,lastDialogue='',lastVitals='',navigationChapter=-1,sound=true,audio=null,music=null,soundGeneration=0,autoplay=true,watchSpeed=1;
-  let enemy=newEnemy(),watchHits=0,watchCastIndex=-1;
+  let enemy=newEnemy(),watchHits=0,watchCastIndex=-1,watchSpatial=null,watchFacing=1;
   const attackBuffer=createAttackBuffer(),gameLock=createGameLock();
   const monster=()=>monsters[chapterMonsters[state.chapter]];
   const enemyView=createEnemyView(boss,$('monster-sprite'),$('monster-effects'),{asset,mobile:()=>viewport.mobile});
   const input={left:false,right:false,up:false,upPressed:false,down:false,jump:false,attack:false};
-  let npcFloor=null,npcProtectedBounds=[];
-  let terrain=flatTerrain(1),terrainKey='',cameraPan=0,portalY=0,portalX=88,sceneProjection=null,bubbleWidth=0,bubbleHeight=0;
-  const viewport={width:0,height:0,mobile:phone.matches};
+  let npcFloor=null,npcProtectedBounds=[],npcNarrationBounds=null,storyNpcKey='',storyNpcFloor=null;
+  let terrain=flatTerrain(1),terrainKey='',terrainChapter=-1,cameraX=0,cameraPan=0,portalY=0,portalX=88,sceneProjection=null,bubbleWidth=0,bubbleHeight=0;
+  const viewport={width:0,height:0,worldWidth:0,mobile:phone.matches};
+  const maxPosition=()=>worldLimit(viewport.width,viewport.worldWidth);
   const mobilityView=createMobilityView($('maple-mobility-effects'),{asset,mobile:()=>viewport.mobile});
   const skillView=createSkillView($('maple-skill-effects'),{asset,applySprite,worldSize:()=>({width:viewport.width,height:viewport.height,mobile:viewport.mobile})});
   const levelView=createLevelUpView($('levelup-effect'),$('levelup-frame'),{asset,mobile:()=>viewport.mobile});
@@ -139,12 +141,25 @@ if (root) {
     button.addEventListener('click',()=>{dispatch({type:'REPLAY',chapter:index});focusGame();});item.append(button);trail.append(item);
   });
   function positionScene(refreshSize=false){
-    const stage=scene.parentElement,chapter=chapters[state.chapter];
+    const chapter=chapters[state.chapter],oldWidth=viewport.width,oldWorld=viewport.worldWidth,oldMobile=viewport.mobile,oldScale=sceneProjection?.scale;
     if(refreshSize||!viewport.width){viewport.width=stage.clientWidth;viewport.height=stage.clientHeight;viewport.mobile=phone.matches;}
     const key=`${state.chapter}:${viewport.width}:${viewport.height}:${viewport.mobile}`;
     root.style.setProperty('--scene-height',`${viewport.height}px`);
-    if(key!==terrainKey){terrainKey=key;const inset=storyGroundInset(viewport.height,viewport.mobile),minimum=viewport.mobile?projectScene(chapter.camera,viewport.width,viewport.height).scale:0;sceneProjection=projectScene(chapter.camera,viewport.width,viewport.height,inset,minimum);terrain=projectTerrain(mapTerrain[chapter.map],chapter.camera,sceneProjection,viewport.width);
-      npcFloor=npcPlacement(terrain,{...viewport,chapter:state.chapter,count:npcScenes[state.chapter].length});
+    if(key!==terrainKey){
+      terrainKey=key;const inset=storyGroundInset(viewport.height,viewport.mobile),minimum=viewport.mobile?projectScene(chapter.camera,viewport.width,viewport.height).scale:0;
+      sceneProjection=projectScene(chapter.camera,viewport.width,viewport.height,inset,minimum);
+      viewport.worldWidth=viewport.width;
+      if(viewport.mobile){const window=mobileMapWindow(chapter.camera,sceneProjection,viewport.width,mapTerrain[chapter.map]);viewport.worldWidth=window.worldWidth;sceneProjection=window.projection;}
+      if(terrainChapter===state.chapter&&oldMobile&&viewport.mobile&&oldWorld){
+        const ratio=viewport.worldWidth*oldWidth/(oldWorld*viewport.width),scale=sceneProjection.scale/oldScale;
+        player={...player,x:player.x*ratio,y:player.y*scale,vy:player.vy*scale};
+        state={...state,characterY:(state.characterY||0)*scale};
+        for(const field of ['characterX','deathX','lootX','portalX','walkStartX'])if(Number.isFinite(state[field]))state[field]*=ratio;
+        enemy={...enemy,x:enemy.x*ratio,targetX:enemy.targetX*ratio};if(watchSpatial)watchSpatial={...watchSpatial,startX:watchSpatial.startX*ratio,targetX:watchSpatial.targetX*ratio,maxX:maxPosition()};petView.reset(player.x,player.y);
+      }else if(!viewport.mobile&&player.x>94){player={...player,x:94};state={...state,characterX:94};}
+      terrainChapter=state.chapter;terrain=projectTerrain(mapTerrain[chapter.map],chapter.camera,sceneProjection,viewport.worldWidth);
+      npcFloor=npcPlacement(terrain,{...viewport,width:viewport.worldWidth,chapter:state.chapter,count:npcScenes[state.chapter].length});
+      setStyles(worldLayer,{width:`${viewport.worldWidth}px`});setStyles($('scene-actors'),{width:`${viewport.width}px`});
     }
     const base=sceneProjection;
     portalX=state.deathX??64;portalY=0;state={...state,portalX,portalY};
@@ -154,15 +169,29 @@ if (root) {
     root.style.setProperty('--ground-inset',`${storyGroundInset(viewport.height,viewport.mobile)-cameraPan}px`);
     const c={...base,top:base.top+cameraPan};
     setStyles(scene,{width:`${c.width}px`,height:`${c.height}px`,left:`${c.left}px`,top:`${c.top}px`});
-    environmentView.resize({width:viewport.width,height:viewport.height,projection:c});mapObjectView.resize(c);
+    environmentView.resize({width:viewport.worldWidth,height:viewport.height,projection:c});mapObjectView.resize(c);
     const stageBounds=stage.getBoundingClientRect(),statusBounds=$('reward-banner').getBoundingClientRect();
     npcProtectedBounds=!$('reward-banner').hidden&&Number.isFinite(statusBounds.left)&&statusBounds.width>0?[{left:statusBounds.left-stageBounds.left-8,right:statusBounds.right-stageBounds.left+8,bottom:stageBounds.bottom-statusBounds.bottom-8,top:stageBounds.bottom-statusBounds.top+8}]:[];
-    drawNpcs(0);
+    positionWorldCamera(state.mode==='manual'?player.x:state.phase==='battle'?combatFrame(currentAbility(),state.classId,combatTime,state.watchCasts||1,watchSpatial||{}).x:state.characterX);drawNpcs(0);
+  }
+  function positionWorldCamera(x){
+    const next=viewport.mobile?horizontalCamera(x,viewport.width,viewport.worldWidth):0;
+    if(next!==cameraX){cameraX=next;drawNpcs(0);}
+    root.dataset.cameraX=String(cameraX);root.dataset.worldWidth=String(viewport.worldWidth);
+    setStyles(worldLayer,{transform:`translateX(${-cameraX}px)`});updatePortalNavigation();
   }
   function drawNpcs(delta){
-    npcView.show(state.chapter,npcFloor?.kind);npcView.tick(delta,{state,language,width:viewport.width,height:viewport.height,groundInset:storyGroundInset(viewport.height,viewport.mobile)-cameraPan,mobile:viewport.mobile,reduced:motion.matches,protectedBounds:npcProtectedBounds,placements:npcFloor?.placements,floor:x=>floorAt(terrain,x)});
+    let floor=npcFloor;
+    if(state.mode==='watch'){
+      const key=terrainKey;
+      if(key!==storyNpcKey){storyNpcKey=key;storyNpcFloor=npcPlacementInView(terrain,{...viewport,cameraX,chapter:state.chapter,count:npcScenes[state.chapter].length});}
+      floor=storyNpcFloor;
+    }else storyNpcKey='';
+    const protectedBounds=state.mode==='watch'?[...npcProtectedBounds,{left:0,right:viewport.width,bottom:0,top:84}]:npcProtectedBounds;
+    const groundInset=storyGroundInset(viewport.height,viewport.mobile);
+    npcView.show(state.chapter,floor?.kind);npcView.tick(delta,{state,language,width:viewport.width,height:viewport.height,worldWidth:state.mode==='watch'?viewport.width:viewport.worldWidth,layoutCameraX:state.mode==='watch'?floor?.cameraX||0:0,layoutGroundInset:groundInset,groundInset:groundInset-cameraPan,mobile:viewport.mobile,reduced:motion.matches,protectedBounds,narrationBounds:state.mode==='watch'?npcNarrationBounds:null,cameraX,placements:floor?.placements,floor:x=>floorAt(terrain,x)});
   }
-  new ResizeObserver(()=>{clearInput();positionScene(true);}).observe(scene.parentElement);
+  new ResizeObserver(()=>{clearInput();positionScene(true);if(state.phase==='battle')updateCast(false);else positionActor();positionBubble();}).observe(stage);
   function updateSoundButton(error=''){
     soundError=error;const button=$('game-sound');button.setAttribute('aria-pressed',String(sound));button.setAttribute('aria-label',t(error?`${error}；${sound?'關閉所有聲音':'開啟所有聲音'}`:sound?'關閉所有聲音':'開啟所有聲音'));button.dataset.error=String(Boolean(error));
   }
@@ -203,14 +232,16 @@ if (root) {
     if(['ADVANCE','SET_MODE','WATCH_ONLY'].includes(type))event={...(typeof event==='string'?{type}:event),watchCasts:phone.matches?3:1};
     state=transition(state,event,chapters);if(state===previous)return;
     if(state.classId!==previous.classId){clearInput();mobilityView.reset();combatSound.stop();preloadClass(state.classId);}
+    if(state.mode==='watch'&&state.phase==='battle'&&(previous.phase!=='battle'||previous.mode!=='watch'))watchSpatial=prepareStoryEnemy(previous.characterX);
     if(state.mode!==previous.mode){clearInput();skillView.hide();mobilityView.reset();if(state.mode==='manual')player=resetMobility({...player,x:previous.characterX,y:previous.characterY||0,vy:0});combatTime=0;watchHits=0;watchCastIndex=-1;castAbility=currentAbility();combatSound.stop();if(state.phase==='battle')combatSound.start(castAbility);}
     if(type==='PLAYER_DIED'){clearInput();combatSound.stop();skillView.hide();player=resetMobility({...player,y:0,vy:0,knockbackVx:0,moving:false,hurtTime:0});}
     if(type==='REVIVE'){player=revivePlayer(player,state.completed);enemy={...enemy,pose:'stand',time:0,cooldown:1200,resolved:true,vx:0};clearInput();}
     if(previous.phase==='reading'&&state.phase==='encounter'){input.attack=false;attackBuffer.clear();}
     if(type==='RESET'||type==='SELECT_MODE'){player=newPlayer();history=[];narration.reset();reasons.delete('review');storyRun++;clearInput();$('dialogue-history').replaceChildren();}
-    if(type==='RESET'||type==='REPLAY'||state.chapter!==previous.chapter){enemy=newEnemy();enemyView.reset();watchHits=0;clearInput();}
+    if(type==='RESET'||type==='REPLAY'||state.chapter!==previous.chapter){enemy=newEnemy();enemyView.reset();watchHits=0;watchSpatial=null;watchFacing=1;clearInput();}
     if(type==='REPLAY'){storyRun++;player=resetMobility({...player,x:10,y:0,vy:0});clearInput();}
     if(state.chapter!==previous.chapter)player=resetMobility({...player,x:10,y:0,vy:0});
+    if(state.mode==='watch'&&state.phase==='reading'&&(previous.phase!=='reading'||state.chapter!==previous.chapter||state.mode!==previous.mode))prepareStoryEnemy(state.characterX);
     if(['RESET','REPLAY'].includes(type)||state.chapter!==previous.chapter)petView.reset(player.x,player.y);
     if(type==='WALKED'&&state.mode==='manual')player=resetMobility({...player,x:portalX,y:portalY,vy:0});
     if(state.phase==='walking'&&previous.phase!=='walking')player={...player,facing:state.facing,climbing:null};
@@ -250,6 +281,15 @@ if (root) {
     }
     const frame=monster().poses.stand[0],scale=viewport.mobile?.7:1,body=enemyBodyTarget(monster(),viewport.mobile,enemy.facing);return {x:enemy.x+body.offsetX/viewport.width*100,height:body.height,width:frame.width*scale,bottom:(frame.origin.y-frame.height)*scale,top:frame.origin.y*scale};
   }
+  function prepareStoryEnemy(startX){
+    const ability=currentAbility(),facing=Math.sign(enemy.x-startX)||1,watcher={...player,x:startX,y:0,facing};
+    if(!attackReaches(watcher,ability,viewport,targetBody())){
+      const box=nativeAttackBox(watcher,ability,viewport),origin=startX/100*viewport.width,reach=facing===1?box.right-origin:origin-box.left;
+      const distance=Math.min(viewport.width*.46,Math.max(20,reach*.75));
+      enemy={...enemy,x:Math.max(5,Math.min(maxPosition(),startX+facing*distance/viewport.width*100)),vx:0};
+    }
+    return {startX,targetX:enemy.x,maxX:maxPosition(),stationary:true};
+  }
   function damageLines(value,ability,packet=0){const rule=ruleFor(ability),lines=rule.packetLines?.[packet]??rule.lines,height=Math.min(240,monster().poses.stand[0].height+28);for(let line=0;line<lines;line++)enemyView.damage(splitDamage(value,lines,line),enemy.x,height+line*22);}
   function struckEnemy(value,ability,packet){damageLines(value,ability,packet);enemy=strikeEnemy(enemy,player.facing);const body=targetBody();enemyView.effect(basicHitFrames(),body.x,body.height);}
   function focusGame(){root.focus({preventScroll:true});}
@@ -274,14 +314,14 @@ if (root) {
     const key=state.completed?`${state.classId}-${state.completed}-${pose}`:`beginner-${pose}`,entry=sprites[key];if(!entry)return;
     applySprite(entry);
   }
-  function applySprite(entry){if(!sprite.src.endsWith(entry.file)){sprite.src=asset(entry.file);sprite.style.width=`calc(${entry.width}px * var(--sprite-scale))`;sprite.style.height=`calc(${entry.height}px * var(--sprite-scale))`;sprite.style.bottom=`calc(-${entry.height/2}px * var(--sprite-scale))`;}const facing=['walking','transition'].includes(state.phase)?state.facing:state.mode==='watch'?1:player.facing;actor.dataset.facing=String(facing);sprite.style.transform=(facing===1)!==Boolean(entry.flip)?'translateX(-50%) scaleX(-1)':'translateX(-50%)';}
+  function applySprite(entry){if(!sprite.src.endsWith(entry.file)){sprite.src=asset(entry.file);sprite.style.width=`calc(${entry.width}px * var(--sprite-scale))`;sprite.style.height=`calc(${entry.height}px * var(--sprite-scale))`;sprite.style.bottom=`calc(-${entry.height/2}px * var(--sprite-scale))`;}const facing=['walking','transition'].includes(state.phase)?state.facing:state.mode==='watch'?watchFacing:player.facing;actor.dataset.facing=String(facing);sprite.style.transform=(facing===1)!==Boolean(entry.flip)?'translateX(-50%) scaleX(-1)':'translateX(-50%)';}
   function updateCast(resolveHits=true){
     if(state.mode==='manual'){
       root.dataset.combatPhase='cast';
       const reachesNow=attackReaches(player,castAbility,viewport,targetBody()),impactsBoss=state.castReturn==='encounter'&&(state.castLanded||reachesNow);
       const hit=impactsBoss?hitFeedback(castAbility,combatTime):0;
       positionActor();boss.style.setProperty('--boss-recoil',`${motion.matches?0:hit*14}px`);boss.style.setProperty('--impact-brightness',String(1+hit*.3));
-      scene.parentElement.style.setProperty('--impact-shake',`${motion.matches?0:Math.sin(combatTime*.12)*hit*2.5}px`);
+      stage.style.setProperty('--impact-shake',`${motion.matches?0:Math.sin(combatTime*.12)*hit*2.5}px`);
       combatSound.tick(audio,combatTime+320,sound&&!document.hidden,{impact:impactsBoss});
       const body=targetBody(),target=projectileTarget(player,castAbility,viewport,body);
       const playing=skillView.render(castAbility,combatTime,player.x,motion.matches,{facing:player.facing,targetX:body.x,targetHeight:body.height,projectileX:target.x,projectileHeight:target.height,lift:player.y,impact:impactsBoss});
@@ -290,32 +330,41 @@ if (root) {
       if(player.hurtTime>0)updateSprite('idle');
       return;
     }
-    const ability=currentAbility(),frame=combatFrame(ability,state.classId,combatTime,state.watchCasts||1);
+    const ability=currentAbility(),frame=combatFrame(ability,state.classId,combatTime,state.watchCasts||1,watchSpatial||{});
+    watchFacing=frame.facing;
     root.dataset.combatPhase=frame.phase||(frame.castTime<0?(combatTime<320?'approach':'departure'):'cast');
-    actor.style.left=`${frame.x}%`;root.style.setProperty('--actor-x',`${frame.x}%`);
+    actor.style.left=`${frame.x}%`;root.style.setProperty('--actor-x',`${frame.x}%`);positionWorldCamera(frame.x);
     boss.style.setProperty('--boss-recoil',`${motion.matches?0:frame.hit*14}px`);
     boss.style.setProperty('--impact-brightness',String(motion.matches?1:1+frame.hit*.3));
-    scene.parentElement.style.setProperty('--impact-shake',`${motion.matches?0:Math.sin(combatTime*.12)*frame.hit*2.5}px`);
-    const impacts=watchImpactTimes(ability,state.classId,state.watchCasts||1);while(resolveHits&&watchHits<impacts.length&&combatTime>=impacts[watchHits]){const before=state.bossHp,packet=watchHits++;dispatch({type:'WATCH_HIT',packet});if(state.bossHp<before){damageLines(before-state.bossHp,ability,packet%ruleFor(ability).packets);enemy=strikeEnemy(enemy,1);}}
+    stage.style.setProperty('--impact-shake',`${motion.matches?0:Math.sin(combatTime*.12)*frame.hit*2.5}px`);
+    const impacts=watchImpactTimes(ability,state.classId,state.watchCasts||1,watchSpatial||{});while(resolveHits&&watchHits<impacts.length&&combatTime>=impacts[watchHits]){const before=state.bossHp,packet=watchHits++;dispatch({type:'WATCH_HIT',packet});if(state.bossHp<before){damageLines(before-state.bossHp,ability,packet%ruleFor(ability).packets);enemy=strikeEnemy(enemy,1);}}
     if(frame.castTime>=0){
       if(watchCastIndex!==frame.castIndex){watchCastIndex=frame.castIndex;combatSound.start(ability);root.dataset.watchCast=String(watchCastIndex+1);}
       combatSound.tick(audio,frame.castTime+320,sound&&!document.hidden);
     }
     if(frame.castTime<0){skillView.hide();updateSprite(frame.pose==='idle'?'idle':Math.floor(combatTime/130)%2?'walkAlt':'walk');return;}
-    const body=targetBody(),playing=skillView.render(ability,frame.castTime,frame.x,motion.matches,{targetX:body.x,targetHeight:body.height});
+    const body=targetBody(),playing=skillView.render(ability,frame.castTime,frame.x,motion.matches,{facing:watchFacing,targetX:body.x,targetHeight:body.height});
     if(!playing)updateSprite(frame.pose==='cast'?'idle':frame.pose);
   }
   function walkDuration(){return state.mode==='manual'?Math.max(100,Math.abs(portalX-state.walkStartX)/100*viewport.width/300*1000):motion.matches?400:1200;}
   function movementPose(){return !player.grounded?'jump':player.moving?Math.floor(animationTime/130)%2?'walkAlt':'walk':'idle';}
-  function positionActor(){if(state.phase==='battle'&&state.mode==='watch')return;const pan=state.mode==='manual'?cameraPanFor(player.y,viewport.height,-sceneProjection.top):0;if(pan!==cameraPan)positionScene();const x=state.mode==='manual'&&state.phase!=='walking'&&state.phase!=='transition'?player.x:characterPosition(state,elapsed,walkDuration()),y=state.mode==='manual'?player.y:state.phase==='walking'?portalY*Math.min(1,elapsed/walkDuration()):state.phase==='transition'?portalY:0;setStyles(actor,{left:`${x}%`,bottom:`calc(var(--ground-inset) + ${y}px)`});root.style.setProperty('--actor-x',`${x}%`);actor.dataset.movement=player.climbing?player.climbingKind:player.crouching?'prone':movementPose();}
+  function positionActor(){if(state.phase==='battle'&&state.mode==='watch')return;const pan=state.mode==='manual'?cameraPanFor(player.y,viewport.height,-sceneProjection.top):0;if(pan!==cameraPan)positionScene();const x=state.mode==='manual'&&state.phase!=='walking'&&state.phase!=='transition'?player.x:characterPosition(state,elapsed,walkDuration()),y=state.mode==='manual'?player.y:state.phase==='walking'?portalY*Math.min(1,elapsed/walkDuration()):state.phase==='transition'?portalY:0;positionWorldCamera(x);setStyles(actor,{left:`${x}%`,bottom:`calc(var(--ground-inset) + ${y}px)`});root.style.setProperty('--actor-x',`${x}%`);actor.dataset.movement=player.climbing?player.climbingKind:player.crouching?'prone':movementPose();}
   function positionBubble(){
-    if(dialogue.hidden)return;
+    if(dialogue.hidden){npcNarrationBounds=null;return;}
     const world=viewport,mobile=viewport.mobile;
     const idle=sprites[state.completed?`${state.classId}-${state.completed}-idle`:'beginner-idle'];
-    const box=bubbleGeometry({width:world.width,height:world.height,actorX:parseFloat(actor.style.left)||10,boxWidth:bubbleWidth||Math.min(300,world.width-24),boxHeight:bubbleHeight||95,headHeight:idle.height/2*(mobile?.98:1.4),groundInset:storyGroundInset(world.height,mobile)});
-    setStyles(dialogue,{left:`${box.left}px`,bottom:`${Math.min(world.height-(bubbleHeight||95)-12,box.bottom+(state.mode==='manual'?player.y-cameraPan:0))}px`});dialogue.style.setProperty('--bubble-tail-x',`${box.tail}px`);
+    const box=bubbleGeometry({width:world.width,height:world.height,actorX:screenActorX(parseFloat(actor.style.left)||10,cameraX,viewport.width),boxWidth:bubbleWidth||Math.min(300,world.width-24),boxHeight:bubbleHeight||95,headHeight:idle.height/2*(mobile?.98:1.4),groundInset:storyGroundInset(world.height,mobile)});
+    const bottom=Math.min(world.height-(bubbleHeight||95)-12,box.bottom+(state.mode==='manual'?player.y-cameraPan:0));
+    npcNarrationBounds={left:box.left,right:box.left+(bubbleWidth||Math.min(300,world.width-24)),bottom,top:bottom+(bubbleHeight||95)};
+    setStyles(dialogue,{left:`${box.left}px`,bottom:`${bottom}px`});dialogue.style.setProperty('--bubble-tail-x',`${box.tail}px`);
+  }
+  function updatePortalNavigation(){
+    const direction=phone.matches?portalDirection(portalX,cameraX,viewport.width,canUsePortal(state)):null,indicator=$('portal-direction');
+    indicator.hidden=!direction;
+    if(direction){indicator.dataset.direction=direction;indicator.setAttribute('aria-label',t(direction==='left'?'傳點在左方':'傳點在右方'));}
   }
   function updatePortal(){
+    updatePortalNavigation();
     const animate=['portal','walking','transition'].includes(state.phase)||state.phase==='battle'&&state.castReturn==='portal',index=animate&&!motion.matches?Math.floor(animationTime/95)%portalFrames.length:0;if(index===lastPortal)return;lastPortal=index;
     const f=portalFrames[index],image=$('portal-frame'),g=portalFrameGeometry(f,viewport.mobile);image.src=asset(f.file);
     Object.assign(image.style,{width:`${g.width}px`,height:`${g.height}px`,left:`calc(50% - ${g.originX}px)`,bottom:`${g.bottom}px`});
@@ -335,7 +384,7 @@ if (root) {
     if(narration.reviewing){setText($('dialogue-text'),narration.current.text);setText($('dialogue-counter'),`${t('回看')} · ${narration.index+1} / ${narration.size}`);}
     else{setText($('dialogue-text'),storyLine(state,chapter));}
     dialogue.hidden=!narration.reviewing&&!speechVisible(state,chapter,elapsed,spokenLine());actor.dataset.expression=dialogueExpression(state,chapter,elapsed,spokenLine());positionBubble();
-    const narrationHost=phone.matches?scene.parentElement:$('classic-menu');if($('narration-controls').parentElement!==narrationHost){if(phone.matches)narrationHost.append($('narration-controls'));else narrationHost.prepend($('narration-controls'));}
+    const narrationHost=phone.matches?stage:$('classic-menu');if($('narration-controls').parentElement!==narrationHost){if(phone.matches)narrationHost.append($('narration-controls'));else narrationHost.prepend($('narration-controls'));}
     $('narration-controls').hidden=false;
     $('narration-previous').disabled=!narration.canBack||['ready','complete','dead'].includes(state.phase);
     $('narration-next').disabled=!narration.reviewing&&(state.phase!=='reading'||state.paused);
@@ -374,6 +423,7 @@ if (root) {
     for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]]){$(id).setAttribute('aria-pressed',String(rate===playbackRate()));$(id).disabled=state.mode!=='watch';}
     $('mode-manual').setAttribute('aria-pressed',String(state.mode==='manual'));$('mode-watch').setAttribute('aria-pressed',String(state.mode==='watch'));
     $('mode-manual').disabled=state.phase==='battle';$('mode-manual').hidden=false;
+    $('mobile-auto').hidden=!phone.matches||!active;$('mobile-auto').disabled=state.paused||state.mode==='watch'&&state.phase==='battle';$('mobile-auto').setAttribute('aria-pressed',String(state.mode==='watch'));
     $('player-actions').hidden=phone.matches||state.mode!=='manual'||['ready','complete'].includes(state.phase);
     $('mobile-controls').hidden=!phone.matches||state.mode!=='manual'||['ready','complete'].includes(state.phase);
     $('touch-attack').disabled=!canAttack(state)&&!(state.mode==='manual'&&!state.paused&&state.phase==='battle');
@@ -386,7 +436,7 @@ if (root) {
     pause.disabled=!active;setText(pause,state.paused?'繼續':'暫停');pause.setAttribute('aria-pressed',String(state.paused));pause.setAttribute('aria-label',t(state.paused?'繼續':'暫停'));$('game-pause-cover').hidden=!state.paused||['hud','welcome','class-picker','review'].some(reason=>reasons.has(reason));
     if(chapterShown!==state.chapter){chapterShown=state.chapter;preloadNpcs(state.chapter);environmentView.show(mapEnvironment[chapter.map]);mapObjectView.show(mapObjects[chapter.map]);scene.src=asset(chapter.map);scene.alt=chapter.alt;root.dataset.boss=chapter.boss;setText($('map-region'),chapter.region);setText($('map-title'),chapter.title);setText($('chapter-badge'),`CHAPTER ${String(chapter.id).padStart(2,'0')} / ${chapters.length}`);preloadScene(state.chapter);preloadScene(state.chapter+1);$('scene-sky').style.backgroundImage=chapter.background?`url("${asset(chapter.background)}")`:'none';root.dataset.chapter=String(chapter.id);setText($('monster-name'),monster().name);boss.setAttribute('aria-label',`攻擊${monster().name}`);}
     scene.alt=t(chapter.alt);setText($('map-region'),chapter.region);setText($('map-title'),chapter.title);setText($('monster-name'),monster().name);boss.setAttribute('aria-label',t(`攻擊${monster().name}`));
-    enemyView.render(monster(),enemy);positionScene();positionActor();if(state.phase==='battle')updateCast(false);else{boss.style.setProperty('--boss-recoil','0px');boss.style.setProperty('--impact-brightness','1');scene.parentElement.style.setProperty('--impact-shake','0px');skillView.hide();updateSprite(state.phase==='walking'?'walk':'idle');}
+    enemyView.render(monster(),enemy);positionScene();positionActor();if(state.phase==='battle')updateCast(false);else{boss.style.setProperty('--boss-recoil','0px');boss.style.setProperty('--impact-brightness','1');stage.style.setProperty('--impact-shake','0px');skillView.hide();updateSprite(state.phase==='walking'?'walk':'idle');}
     cover.hidden=state.phase!=='complete';$('class-screen').hidden=true;$('complete-screen').hidden=state.phase!=='complete';next.hidden=state.phase==='ready';setText($('complete-growth'),'謝謝你走過我的故事。下一章還在繼續，也希望有機會和你聊聊，我能為你的團隊做什麼。');
     setText($('selection-note'),state.pendingClassId?'本次技能施放結束後切換職業，保留進度。':`${job.name} · ${t('更換職業會保留旅程進度。')}`);
     setText($('game-hud-level'),`Lv.${growth.level} ${growth.title}`);setText($('game-hud-skill'),growth.skill);setText($('skill-count'),`${growth.skillStage} / ${job?.skills.length||5}`);setText($('game-hud-gear'),growth.gear);
@@ -429,14 +479,14 @@ if (root) {
       drawNpcs(delta);
       if(state.mode==='manual'&&!['ready','complete','walking','transition','dead'].includes(state.phase)){
         if(delta>0){player=stepPlayer(player,input,delta,viewport.width,{movable:canMovePlayer(state),enemy:false,rank:state.completed,terrain});input.jump=false;input.upPressed=false;mobilityView.tick(delta,motion.matches);if(player.didDoubleJump)mobilityView.start(doubleJumpEffects[state.classId],player,motion.matches);}
-        state=transition(state,{type:'MOVE',x:player.x,y:player.y,portalY,facing:player.facing},chapters);
+        state=transition(state,{type:'MOVE',x:player.x,y:player.y,portalY,maxX:maxPosition(),facing:player.facing},chapters);
         if(state.phase!=='battle'){positionActor();updateSprite(movementPose());}
         positionBubble();updateVitals();if(playerPhases.includes(state.phase)&&player.hurtTime<=0&&(input.attack||attackBuffer.take(true)))attack();
       }
       const fighting=state.phase==='encounter'||state.phase==='battle'&&(state.mode==='watch'||state.castReturn==='encounter');
-      const petResult=petView.tick(delta,state.mode==='manual'?player:{x:characterPosition(state,elapsed,walkDuration()),y:0,facing:1},state,viewport.width,motion.matches);
+      const petResult=petView.tick(delta,state.mode==='manual'?player:{x:state.phase==='battle'?combatFrame(currentAbility(),state.classId,combatTime,state.watchCasts||1,watchSpatial||{}).x:characterPosition(state,elapsed,walkDuration()),y:0,facing:watchFacing},state,viewport.width,motion.matches);
       if(petResult.collected)dispatch({type:'PET_LOOT_REACHED',petId:petResult.petId});
-      const result=stepEnemy(enemy,player,delta,viewport.width,monster(),{active:fighting&&state.mode==='manual',dead:state.phase==='retiring'});enemy=result.enemy;
+      const result=stepEnemy(enemy,player,delta,viewport.width,monster(),{active:fighting&&state.mode==='manual',dead:state.phase==='retiring',maxX:viewport.mobile?Math.max(83,maxPosition()-11):83});enemy=result.enemy;
       if(state.mode==='watch'&&state.phase==='battle'){enemy.time+=delta;if(enemy.pose==='hurt'&&enemy.time>450){enemy.pose='stand';enemy.time=0;}}
       if(state.mode==='manual'&&fighting&&state.bossHp>0){
         if(result.attack){const frames=monster().hitFrames.filter(f=>f.width>1);enemyView.effect(frames.length?frames:basicHitFrames(),enemy.targetX,35);if(enemyAttackReaches(enemy,player,viewport.width))hurtPlayer(12+state.completed*2,false);}
@@ -447,12 +497,12 @@ if (root) {
       if(player.hurtTime>0&&state.mode==='manual')updateSprite('idle');
       actor.style.opacity=player.invulnerable>0&&Math.floor(animationTime/80)%2?'0.5':'1';
       enemyView.render(monster(),enemy);enemyView.tick(delta);$('enemy-health').style.left=`${enemy.x}%`;
-      const plan=combatPlan(currentAbility(),state.classId,state.watchCasts||1);
+      const plan=combatPlan(currentAbility(),state.classId,state.watchCasts||1,watchSpatial||{});
       if(state.phase==='battle'){
         if(state.mode==='manual'){if(combatTime>=manualCastDuration(castAbility))dispatch('CAST_DONE');}
-        else{const target=Math.min(3,Math.floor(combatTime/plan.total*3));while(state.phase==='battle'&&state.beat<target)dispatch('BEAT');}
+        else{const target=Math.min(3,Math.floor(combatTime/plan.total*3));while(state.phase==='battle'&&state.beat<target)dispatch({type:'BEAT',targetX:watchSpatial?.stationary?watchSpatial.startX:watchSpatial?.targetX??64});}
       }
-      else if(state.phase==='retiring'&&elapsed>=monster().poses.die.reduce((sum,f)=>sum+f.delay,0))dispatch({type:'BOSS_EXITED',lootX:enemy.x});
+      else if(state.phase==='retiring'&&elapsed>=monster().poses.die.reduce((sum,f)=>sum+f.delay,0))dispatch({type:'BOSS_EXITED',lootX:enemy.x,maxX:maxPosition()});
       else if(state.phase==='reward'&&state.rewardBeat===0&&elapsed>=750){if(!state.lootLanded)dispatch('LOOT_LANDED');if(canCollectLoot(state,viewport.width))dispatch({type:'EQUIPPED',width:viewport.width});}
       else if(state.phase==='reward'&&state.rewardBeat===1&&elapsed>=(state.rewardLevelUp?levelUp.duration:600))dispatch('REWARD_FINISHED');
       else if(state.phase==='reward'&&state.rewardBeat===2&&elapsed>=1000)dispatch('CLOSING_STARTED');
@@ -498,6 +548,7 @@ if (root) {
   $('hud-panel-close').addEventListener('click',closeHud);
   for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]])$(id).addEventListener('click',()=>{if(state.mode!=='watch')return;watchSpeed=rate;combatSound.setRate(rate);levelSound.setRate(rate);pickupSound.setRate(rate);render();});
   $('mode-manual').addEventListener('click',()=>dispatch({type:'SET_MODE',mode:'manual'}));
+  $('mobile-auto').addEventListener('click',()=>{if(state.mode==='manual'){autoplay=true;dispatch({type:'SET_MODE',mode:'watch'});}else dispatch({type:'SET_MODE',mode:'manual'});cue('silent',true);focusGame();});
   $('mode-watch').addEventListener('click',()=>{if(phone.matches)autoplay=true;dispatch({type:'SET_MODE',mode:'watch'});render();});
   const movementKeys={ArrowLeft:'left',ArrowRight:'right',ArrowDown:'down',ArrowUp:'up',w:'jump',' ':'jump',a:'attack'};
   function press(action){
@@ -512,7 +563,7 @@ if (root) {
     if(menu?.open)return;
     if(event.currentTarget&&event.currentTarget!==root&&!gameLock.active)return;
     if(isEditingText(event.target)||event.target?.closest?.('#journey-settings'))return;
-    if(event.target?.closest?.('#journey-language,#game-pause,#narration-controls')&&['Enter',' '].includes(event.key))return;
+    if(event.target?.closest?.('#journey-language,#game-pause,#mobile-auto,#narration-controls')&&['Enter',' '].includes(event.key))return;
     if(event.target?.closest?.('#class-choices')&&['Enter',' ','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;
     gameLock.preventKey(event);
     if(state.phase==='ready'&&event.target?.closest?.('#class-screen'))return;
@@ -528,7 +579,7 @@ if (root) {
   root.addEventListener('keydown',handleKey);document.addEventListener('keydown',handleKey,{capture:true});
   window.addEventListener('keyup',event=>{const key=gameKey(event),action=movementKeys[key];if(action&&action!=='jump')input[action]=false;});
   window.addEventListener('blur',()=>{clearInput();setPause('blur',true);audio?.suspend();});window.addEventListener('focus',()=>setPause('blur',false));
-  scene.parentElement.addEventListener('pointerdown',event=>{if(!event.target?.closest?.('button,input,a'))focusGame();});
+  stage.addEventListener('pointerdown',event=>{if(!event.target?.closest?.('button,input,a'))focusGame();});
   for(const [id,action]of [['player-left','left'],['player-right','right'],['player-up','up'],['player-down','down'],['player-jump','jump']]){
     const button=$(id);
     button.addEventListener('pointerdown',event=>{event.preventDefault();button.setPointerCapture?.(event.pointerId);press(action);});

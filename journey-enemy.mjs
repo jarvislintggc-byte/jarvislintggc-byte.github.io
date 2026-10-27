@@ -5,12 +5,12 @@ export const requiredHits=chapter=>3+chapter%2;
 export const encounterHealth=chapter=>chapterHealth[Math.max(0,Math.min(chapterHealth.length-1,chapter))];
 export const newEnemy=()=>({x:64,vx:0,facing:1,pose:'stand',time:0,cooldown:1500,resolved:false,targetX:25});
 export function strikeEnemy(enemy,facing=1){return {...enemy,pose:'hurt',time:0,vx:facing*200,cooldown:Math.max(650,enemy.cooldown),resolved:true};}
-export function stepEnemy(enemy,player,ms,width,monster,{active=true,dead=false}={}){
+export function stepEnemy(enemy,player,ms,width,monster,{active=true,dead=false,maxX=83}={}){
  const e={...enemy},dt=Math.max(0,Math.min(ms,100)),seconds=dt/1000;let attack=false;
  if(dead){if(e.pose!=='die'){e.pose='die';e.time=0;e.vx=0;}else e.time+=dt;return {enemy:e,attack};}
  if(!active)return {enemy:e,attack};
  e.time+=dt;e.cooldown-=dt;e.facing=player.x>=e.x?-1:1;
- e.x=Math.max(14,Math.min(83,e.x+e.vx*seconds/Math.max(width,1)*100));e.vx*=Math.exp(-8*seconds);
+ e.x=Math.max(14,Math.min(maxX,e.x+e.vx*seconds/Math.max(width,1)*100));e.vx*=Math.exp(-8*seconds);
  if(e.pose==='hurt'){if(e.time>=Math.min(450,monster.poses.hurt.reduce((a,f)=>a+f.delay,0))){e.pose='stand';e.time=0;}return {enemy:e,attack};}
  if(e.pose==='attack'){
   if(!e.resolved&&e.time>=monster.impactTime){e.resolved=true;attack=true;}

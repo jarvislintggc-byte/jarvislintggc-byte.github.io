@@ -37,3 +37,10 @@ export function npcFloorPosition(placement,motionX=0){
  const x=Math.max(placement.left,Math.min(placement.right,placement.x+motionX));
  return {x,y:surfaceY(placement.surface,x)};
 }
+// Story casts use native surfaces inside the current camera, rather than the
+// far edge of the exploration world. Convert the chosen anchors back to world.
+export function npcPlacementInView(world,{cameraX=0,...options}){
+ const local={...world,width:options.width,platforms:world.platforms.map(p=>({...p,x1:p.x1-cameraX,x2:p.x2-cameraX}))};
+ const result=npcPlacement(local,options);
+ return {...result,cameraX,placements:result.placements.map(p=>({...p,x:p.x+cameraX,left:p.left+cameraX,right:p.right+cameraX,surface:world.platforms.find(s=>s.id===p.surface.id)||p.surface}))};
+}
