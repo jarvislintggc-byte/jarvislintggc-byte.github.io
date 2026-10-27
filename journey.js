@@ -165,7 +165,7 @@ if (root) {
     portalX=state.deathX??64;portalY=0;state={...state,portalX,portalY};
     portal.style.left=`${portalX}%`;
     portal.style.bottom=`calc(var(--ground-inset) + ${portalY}px)`;
-    cameraPan=state.mode==='manual'?cameraPanFor(player.y,viewport.height,-base.top):0;
+    cameraPan=state.mode==='manual'?cameraPanFor(player.y,viewport.height,-base.top,viewport.mobile):0;
     root.style.setProperty('--ground-inset',`${storyGroundInset(viewport.height,viewport.mobile)-cameraPan}px`);
     const c={...base,top:base.top+cameraPan};
     setStyles(scene,{width:`${c.width}px`,height:`${c.height}px`,left:`${c.left}px`,top:`${c.top}px`});
@@ -348,7 +348,7 @@ if (root) {
   }
   function walkDuration(){return state.mode==='manual'?Math.max(100,Math.abs(portalX-state.walkStartX)/100*viewport.width/300*1000):motion.matches?400:1200;}
   function movementPose(){return !player.grounded?'jump':player.moving?Math.floor(animationTime/130)%2?'walkAlt':'walk':'idle';}
-  function positionActor(){if(state.phase==='battle'&&state.mode==='watch')return;const pan=state.mode==='manual'?cameraPanFor(player.y,viewport.height,-sceneProjection.top):0;if(pan!==cameraPan)positionScene();const x=state.mode==='manual'&&state.phase!=='walking'&&state.phase!=='transition'?player.x:characterPosition(state,elapsed,walkDuration()),y=state.mode==='manual'?player.y:state.phase==='walking'?portalY*Math.min(1,elapsed/walkDuration()):state.phase==='transition'?portalY:0;positionWorldCamera(x);setStyles(actor,{left:`${x}%`,bottom:`calc(var(--ground-inset) + ${y}px)`});root.style.setProperty('--actor-x',`${x}%`);actor.dataset.movement=player.climbing?player.climbingKind:player.crouching?'prone':movementPose();}
+  function positionActor(){if(state.phase==='battle'&&state.mode==='watch')return;const pan=state.mode==='manual'?cameraPanFor(player.y,viewport.height,-sceneProjection.top,viewport.mobile):0;if(pan!==cameraPan)positionScene();const x=state.mode==='manual'&&state.phase!=='walking'&&state.phase!=='transition'?player.x:characterPosition(state,elapsed,walkDuration()),y=state.mode==='manual'?player.y:state.phase==='walking'?portalY*Math.min(1,elapsed/walkDuration()):state.phase==='transition'?portalY:0;positionWorldCamera(x);setStyles(actor,{left:`${x}%`,bottom:`calc(var(--ground-inset) + ${y}px)`});root.style.setProperty('--actor-x',`${x}%`);actor.dataset.movement=player.climbing?player.climbingKind:player.crouching?'prone':movementPose();}
   function positionBubble(){
     if(dialogue.hidden){npcNarrationBounds=null;return;}
     const world=viewport,mobile=viewport.mobile;

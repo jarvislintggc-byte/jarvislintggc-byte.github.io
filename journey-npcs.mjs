@@ -32,37 +32,13 @@ export function npcPose(art,time,index=0,base='stand',reduced=false){
  return {pose:base,time};
 }
 const overlaps=(a,b)=>a.left<b.right+8&&a.right+8>b.left&&a.bottom<b.top+8&&a.top+8>b.bottom;
-export function layoutNpcBubbles(items,{width,height=600,narrationBounds=null,protectedBounds=[]}){
- const occupied=[...(narrationBounds?[narrationBounds]:[]),...protectedBounds],boxes=[];
- for(const item of items){
-  const w=Math.min(item.width,width-16),preferred=Math.max(8,Math.min(width-w-8,item.x-w/2)),maxBottom=Math.max(8,height-85-item.height);
-  const choices=(width<600&&narrationBounds?[8,width-w-8]:[preferred,8,width-w-8,width/2-w/2,...boxes.map(b=>b.right+10),...boxes.map(b=>b.left-w-10)]).map(x=>Math.max(8,Math.min(width-w-8,x)));
-  let best=null;
-  for(const left of new Set(choices)){
-   if(protectedBounds.length){
-    const candidates=[Math.max(8,Math.min(maxBottom,item.bottom)),8,maxBottom,...occupied.flatMap(b=>[b.bottom-item.height-12,b.top+12])];
-    for(const bottom of candidates){
-     if(bottom<8||bottom>maxBottom)continue;
-     const box={left,right:left+w,bottom,top:bottom+item.height,width:w,height:item.height};
-     if(occupied.some(b=>overlaps(box,b)))continue;
-     const cost=Math.abs(left-preferred)+Math.abs(bottom-item.bottom)*.7;
-     if(!best||cost<best.cost)best={...box,cost};
-    }
-    continue;
-   }
-   let bottom=Math.max(8,item.bottom),box;
-   for(let pass=0;pass<=occupied.length;pass++){
-    box={left,right:left+w,bottom,top:bottom+item.height,width:w,height:item.height};
-    const hit=occupied.filter(b=>overlaps(box,b));if(!hit.length)break;bottom=Math.max(...hit.map(b=>b.top+10));
-   }
-   if(bottom>maxBottom)continue;
-   const cost=Math.abs(left-preferred)+Math.abs(bottom-item.bottom)*.7;
-   if(!best||cost<best.cost)best={...box,cost};
-  }
-  if(!best){const bottom=Math.max(8,Math.min(maxBottom,item.bottom));best={left:preferred,right:preferred+w,bottom,top:bottom+item.height,width:w,height:item.height};}
-  occupied.push(best);boxes.push(best);
- }
- return boxes;
+export function layoutNpcBubbles(items,{width}){
+ // Native upper floors can be above the camera. Never clamp their speech down
+ // into the viewport or move it beside another speaker to avoid an overlay.
+ return items.map(item=>{
+  const w=Math.min(item.width,width-16),left=Math.max(8,Math.min(width-w-8,item.x-w/2));
+  return {left,right:left+w,bottom:item.bottom,top:item.bottom+item.height,width:w,height:item.height};
+ });
 }
 export function npcBubbleTail(box,x,y){
  const side=y>box.top?'top':y<box.bottom?'bottom':x<box.left?'left':x>box.right?'right':y>(box.bottom+box.top)/2?'top':'bottom';
@@ -73,10 +49,9 @@ const shortTrainingRoles={2152002:{'zh-Hant':'反抗軍法師',en:'R. Mage'},215
 const put=(node,text)=>{if(node.textContent!==text)node.textContent=text;};
 export function createNpcView(host,{asset}){
  let chapter=-1,castKind='',entries=[],time=0,lastDraw=-Infinity,lastLanguage='',lastWidth=0,lastHeight=0,lastReduced=null,lastMobile=null;
- let layoutFrame='',referenceNarration=null;
  return {
   show(index,kind='native'){
-   if(chapter===index&&castKind===kind)return;if(chapter!==index)time=0;chapter=index;castKind=kind;lastDraw=-Infinity;layoutFrame='';entries=[];host.replaceChildren();
+   if(chapter===index&&castKind===kind)return;if(chapter!==index)time=0;chapter=index;castKind=kind;lastDraw=-Infinity;entries=[];host.replaceChildren();
    for(const actor of npcCast(index,kind)){
     const anchor=document.createElement('div'),image=document.createElement('img'),name=document.createElement('span'),bubble=document.createElement('p'),drill=document.createElement('span');
     anchor.className='journey-npc';anchor.dataset.npcId=String(actor.id);anchor.dataset.action=actor.action;
@@ -90,9 +65,6 @@ export function createNpcView(host,{asset}){
    host.hidden=['ready','complete'].includes(state.phase);if(host.hidden)return;
    // Lay out in a fixed map frame. Panning only clips/translates the result;
    // it must never pull an offscreen speaker's bubble back into the viewport.
-   const frame=[width,height,worldWidth,layoutCameraX,layoutGroundInset].join(':');
-   if(frame!==layoutFrame){layoutFrame=frame;referenceNarration=narrationBounds;}
-   else if(narrationBounds&&Math.abs(cameraX-layoutCameraX)<.01)referenceNarration=narrationBounds;
    const stamp=Math.floor(time/80),speech=ambientSpeech(entries.map(e=>e.actor),time,{language,compact:mobile}),layout=[];
    // Layout follows story movement immediately, while native sprite updates stay bounded.
    const redraw=stamp!==lastDraw||lastLanguage!==language||lastWidth!==width||lastHeight!==height||lastReduced!==reduced||lastMobile!==mobile;
@@ -115,10 +87,10 @@ export function createNpcView(host,{asset}){
     const bubbleWidth=Math.min(mobile?136:202,width*.44),characters=Math.max(8,(bubbleWidth-22)/(language==='en'?5.8:mobile?11:12)),bubbleHeight=Math.ceil(speech[index].text.length/characters)*(mobile?16.5:18)+20;
     anchor.hidden=mobile&&(x-cameraX < -100||x-cameraX>width+100);
     const mapFoot=layoutGroundInset+position.y+motion.y;
-    entry.layoutFoot=mapFoot;entry.layoutX=x-layoutCameraX;entry.layoutHead=mapFoot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale-10;
-    layout.push({index,x:entry.layoutX,bottom:mapFoot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale+15,width:bubbleWidth,height:bubbleHeight});
+    entry.layoutFoot=mapFoot;entry.layoutX=x-layoutCameraX;entry.layoutHead=mapFoot+Math.max(...art.poses.stand.map(f=>f.origin.y))*scale;
+    layout.push({index,x:entry.layoutX,bottom:entry.layoutHead+10,width:bubbleWidth,height:bubbleHeight});
    });
-   const boxes=layoutNpcBubbles(layout,{width:worldWidth,height,narrationBounds:referenceNarration,protectedBounds});
+   const boxes=layoutNpcBubbles(layout,{width:worldWidth});
    layout.forEach((item,index)=>{
     const entry=entries[item.index],box=boxes[index];if(!box)return;
     setStyles(entry.bubble,{bottom:`${box.bottom-entry.layoutFoot}px`,width:`${box.width}px`,transform:`translateX(${box.left-entry.layoutX}px)`});

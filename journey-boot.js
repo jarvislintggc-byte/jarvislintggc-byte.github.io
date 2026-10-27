@@ -1,5 +1,5 @@
 // The whole game loads as one versioned module graph. Asset URLs stay cached.
-import('/runtime/journey.js?v=571d1c454f39118b').catch(error=>{
+import('/runtime/journey.js?v=e8af0311e3e3cd60').catch(error=>{
   console.error('Journey could not initialize:',error);
   const stage=document.getElementById('journey-stage'),game=document.getElementById('life-game');
   if(!stage||!game)return;
