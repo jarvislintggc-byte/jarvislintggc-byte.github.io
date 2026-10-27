@@ -433,5 +433,65 @@
     "width": 1021,
     "height": 572,
     "usage": "card-cover"
+  },
+  {
+    "file": "industry-learning-mou-signing.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 1,
+    "attachmentFilename": "codex-clipboard-f569dfd0-b967-49c7-a985-62b9c53ec63b.png",
+    "sha256": "ce4e8852835fce0dbfd903f593a67ede82e640f274ea66cdc4854f452c4e9a4c",
+    "width": 812,
+    "height": 541,
+    "processing": "Unchanged PNG copied from the owner-provided attachment; no cropping, retouching, or generated image content."
+  },
+  {
+    "file": "industry-learning-venture-cafe.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 2,
+    "attachmentFilename": "codex-clipboard-b670e1ae-ce6b-44c8-9748-0caf68223457.png",
+    "sha256": "386859f2194ac6b389f61178712456c3ace0dc3bec6d0acadae814a91009308b",
+    "width": 810,
+    "height": 542,
+    "processing": "Unchanged PNG copied from the owner-provided attachment; no cropping, retouching, or generated image content."
+  },
+  {
+    "file": "industry-learning-steve-hsu.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 3,
+    "attachmentFilename": "codex-clipboard-53291d98-434b-405b-bac9-c5f246f4def8.png",
+    "sha256": "d8a481b8d21c38888ef2e3d6f761e6b20aeb57524bf75c1feb6bad3fdcd6f27a",
+    "width": 430,
+    "height": 565,
+    "processing": "Unchanged PNG copied from the owner-provided attachment; no cropping, retouching, or generated image content."
+  },
+  {
+    "file": "industry-learning-james-huang.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 4,
+    "attachmentFilename": "codex-clipboard-05f5cbff-353b-49e6-99cb-692e5bf36153.png",
+    "sha256": "563a8045371a1893ab370e0fe9c80fb02d457cd334606bc333fd3564a95960e8",
+    "width": 432,
+    "height": 574,
+    "processing": "Unchanged PNG copied from the owner-provided attachment; no cropping, retouching, or generated image content."
+  },
+  {
+    "file": "industry-learning-chiao.png",
+    "source": "Owner-provided image attachment",
+    "attachmentOrder": 5,
+    "attachmentFilename": "codex-clipboard-336e167d-f14a-4415-91c8-bca310a8e42a.png",
+    "sha256": "85afc5c8a5c3898a11f309d1abb81a49c7590ab24d6e0b8e70cf30c20880a12d",
+    "width": 433,
+    "height": 570,
+    "processing": "Unchanged PNG copied from the owner-provided attachment; no cropping, retouching, or generated image content."
+  },
+  {
+    "file": "industry-learning-event-dinner.png",
+    "source": "Owner-provided follow-up image attachment",
+    "attachmentFilename": "codex-clipboard-09b132e1-f409-4034-811c-2d6abdfb02e5.png",
+    "sha256": "7e5d26ccfb98e5b123d67d4df1c4758cab00f640021849fc665cd81c11ff5ce8",
+    "width": 959,
+    "height": 841,
+    "captionStatus": "OWNER-CONFIRMED: dinner that evening",
+    "processing": "Unchanged PNG copied from the owner-provided attachment."
   }
 ]
