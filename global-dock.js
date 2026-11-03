@@ -33,7 +33,8 @@
  function text(node,value){if(node.textContent!==value)node.textContent=value;}
  function refresh(){
   const lang=locale(),ui=labels[lang],page=slug();
-  text(hello,ui.hello);hello.setAttribute('aria-expanded',String(menu.open));trigger.setAttribute('aria-label',ui.open);close.setAttribute('aria-label',ui.close);
+  const pageIndex=slugs.indexOf(page);
+  text(hello,pageIndex>0?ui.pages[pageIndex]:ui.hello);hello.setAttribute('aria-expanded',String(menu.open));trigger.setAttribute('aria-label',ui.open);close.setAttribute('aria-label',ui.close);
   menu.querySelector('.menu-navigation').setAttribute('aria-label',ui.nav);text(menu.querySelector('#menu-title'),ui.nav);
   menu.querySelectorAll('.menu-list a').forEach((a,i)=>{
    a.href=route(lang,slugs[i]);text(a.querySelector('.menu-text'),ui.pages[i]);

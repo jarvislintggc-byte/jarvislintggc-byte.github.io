@@ -33,3 +33,16 @@
 @media(prefers-reduced-motion:reduce){#site-menu.jarvis-compact-menu,#site-menu.jarvis-compact-menu .menu-list>li,#site-menu.jarvis-compact-menu .menu-text{transition:none}}
 
 #jarvis-global-dock .jarvis-dock-hello{width:auto;height:auto;padding:0;background:transparent;color:inherit;display:block;font:600 20px/1.4 Inter,Arial,sans-serif;border:0;letter-spacing:-.04em;text-align:left}
+
+/* Keep the floating navigation entirely inside the game's white toolbar. */
+.page-my-story:has(.journey-stage[data-revealed=true]) #jarvis-global-dock{top:2px!important;min-height:60px}
+@media(max-width:760px){
+ .page-my-story:has(.journey-stage[data-revealed=true]) #jarvis-global-dock{top:4px!important;min-height:52px;padding-block:8px}
+ .page-my-story:has(.journey-stage[data-revealed=true]) #jarvis-global-dock #menu-trigger{width:36px;height:36px;padding:8px}
+}
+
+/* Restore visible hover movement on each compact navigation card. */
+#site-menu.jarvis-compact-menu .menu-list a{transition:transform .25s cubic-bezier(.22,1,.36,1),background-color .2s;will-change:transform}
+#site-menu.jarvis-compact-menu .menu-list a:hover,#site-menu.jarvis-compact-menu .menu-list a:focus-visible{transform:translateX(8px);background:#e5e1d8}
+#site-menu.jarvis-compact-menu .menu-list a:hover .menu-text,#site-menu.jarvis-compact-menu .menu-list a:focus-visible .menu-text{transform:translateX(3px)}
+@media(prefers-reduced-motion:reduce){#site-menu.jarvis-compact-menu .menu-list a{transition:none;will-change:auto}#site-menu.jarvis-compact-menu .menu-list a:hover,#site-menu.jarvis-compact-menu .menu-list a:focus-visible,#site-menu.jarvis-compact-menu .menu-list a:hover .menu-text,#site-menu.jarvis-compact-menu .menu-list a:focus-visible .menu-text{transform:none}}
