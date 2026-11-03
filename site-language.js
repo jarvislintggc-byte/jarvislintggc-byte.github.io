@@ -1,6 +1,10 @@
 (() => {
   'use strict';
   const data = JSON.parse(document.getElementById('site-locale-data').textContent);
+  if (data.slug === '' && location.hash === '#journey-game') {
+    location.replace(data.prefixes[data.locale] + '/my-story/#journey-game');
+    return;
+  }
   const locales = Object.keys(data.prefixes);
   const root = document.documentElement;
   const canonical = path => path.replace(/^\/(?:zh|ja)(?=\/)/, '').replace(/index\.html$/, '');
@@ -8,28 +12,34 @@
   const save = locale => { try { localStorage.setItem('jarvis-site-language', locale); localStorage.setItem('jarvis-journey-language', locale); } catch {} };
   const originalTexts = [];
   // Only the intro and navigation update in place. The running game owns its DOM.
-  for (const container of document.querySelectorAll('#intro,#site-menu,.skip')) {
+  for (const container of document.querySelectorAll('#intro,#journey,.home-main,.page-header,.page-footer,#site-menu,.skip')) {
     const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
     let node;
     while ((node = walker.nextNode())) {
-      if (node.parentElement.closest('.site-language,script,style')) continue;
+      if (node.parentElement.closest('.site-language,.life-journey,script,style')) continue;
+      if (originalTexts.some(item => item.node === node)) continue;
       const shown = node.textContent.trim();
       const original = Object.entries(data.text[data.locale] || {}).find(([, value]) => value === shown)?.[0] || shown;
       originalTexts.push({node, original, leading: node.textContent.match(/^\s*/)[0], trailing: node.textContent.match(/\s*$/)[0]});
     }
   }
-  const originalLabels = [...document.querySelectorAll('#intro [aria-label],#site-menu [aria-label]')].map(node => {
-    const shown = node.getAttribute('aria-label');
-    return {node, original: Object.entries(data.text[data.locale] || {}).find(([, value]) => value === shown)?.[0] || shown};
+  const originalLabels = [...document.querySelectorAll('.home-main [aria-label],.home-main [alt],#intro [aria-label],#journey [aria-label],.page-header [aria-label],#site-menu [aria-label]')].flatMap(node => {
+    if (node.closest('.life-journey')) return [];
+    return ['aria-label', 'alt'].filter(attribute => node.hasAttribute(attribute)).map(attribute => {
+      const shown = node.getAttribute(attribute);
+      return {node, attribute, original: Object.entries(data.text[data.locale] || {}).find(([, value]) => value === shown)?.[0] || shown};
+    });
   });
   function applyHome(locale, notify = true, replaceURL = true) {
     if (!locales.includes(locale)) return;
     const dictionary = data.text[locale] || {};
     for (const item of originalTexts) item.node.textContent = item.leading + (dictionary[item.original] || item.original) + item.trailing;
-    for (const item of originalLabels) item.node.setAttribute('aria-label', dictionary[item.original] || item.original);
+    for (const item of originalLabels) item.node.setAttribute(item.attribute, dictionary[item.original] || item.original);
     root.lang = locale;
     data.locale = locale;
-    document.title = `${data.pageNames[locale][0]} — Jarvis Lin`;
+    document.title = `${data.pageNames[locale][data.slug === 'my-story' ? 1 : 0]} — Jarvis Lin`;
+    const pageLocation = document.querySelector('.page-location');
+    if (data.slug === 'my-story' && pageLocation) pageLocation.textContent = '01 / ' + data.pageNames[locale][1].toUpperCase();
     document.querySelector('meta[name=description]').content = {en:'Jarvis Lin: entrepreneurship, supply chain experience, and cross-border business.','zh-Hant':'Jarvis Lin 的創業、供應鏈實務與跨境商業經歷。',ja:'Jarvis Lin の起業、サプライチェーン、国境を越えたビジネスの経験。'}[locale];
     for (const nav of document.querySelectorAll('.site-language')) {
       nav.setAttribute('aria-label', data.names[locale]);
@@ -54,7 +64,7 @@
     const locale = link.dataset.siteLanguage;
     if (!locales.includes(locale)) return;
     save(locale);
-    if (data.slug === '') {
+    if ((data.slug === '' || data.slug === 'my-story')) {
       event.preventDefault();
       applyHome(locale);
       return;
@@ -69,9 +79,9 @@
     link.href = url.href;
   });
   document.addEventListener('journeylanguage', event => {
-    if (data.slug === '' && event.detail?.language !== data.locale) applyHome(event.detail.language, false);
+    if ((data.slug === '' || data.slug === 'my-story') && event.detail?.language !== data.locale) applyHome(event.detail.language, false);
   });
   window.addEventListener('popstate', () => {
-    if (data.slug === '') applyHome(location.pathname.startsWith('/ja/') ? 'ja' : location.pathname.startsWith('/zh/') ? 'zh-Hant' : 'en', true, false);
+    if ((data.slug === '' || data.slug === 'my-story')) applyHome(location.pathname.startsWith('/ja/') ? 'ja' : location.pathname.startsWith('/zh/') ? 'zh-Hant' : 'en', true, false);
   });
 })();

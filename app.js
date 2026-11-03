@@ -4,7 +4,7 @@ const englishPlaces = {
   arizona: { kicker: 'THE SUPPLY CHAIN CHAPTER', title: 'Connecting operations\nto a wider perspective.', description: 'I graduated in May 2026 from Arizona State University’s W. P. Carey School of Business with a Master of Science in Supply Chain Management.', metric: 'M.S. · 2026', caption: 'Supply Chain Management, Arizona State University.', character: '拓', label: 'LEARNING IN ARIZONA' }
 };
 const localizedPlaces = document.querySelector('#place-locale-data');
-const places = document.documentElement.lang === 'en' ? englishPlaces : JSON.parse(localizedPlaces?.textContent || '{}');
+let places = document.documentElement.lang === 'en' ? englishPlaces : JSON.parse(localizedPlaces?.textContent || '{}');
 
 const placeTabs = [...document.querySelectorAll('[data-place]')];
 function selectPlace(tab) {
@@ -78,4 +78,13 @@ noteDialog?.addEventListener('click', event => {
 // Fresh visits and reloads begin at the page top; direct section links still work.
 window.addEventListener('pageshow', event => {
   if (!event.persisted && !location.hash) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+});
+
+// Keep the place tabs consistent with the game's in-place language switch.
+document.addEventListener('sitelanguage', event => {
+ if (!placeTabs.length) return;
+ const locale = event.detail.language;
+ const data = JSON.parse(document.getElementById('site-locale-data').textContent);
+ places = locale === 'en' ? englishPlaces : data.places[locale];
+ selectPlace(placeTabs.find(tab => tab.getAttribute('aria-selected') === 'true') || placeTabs[1]);
 });

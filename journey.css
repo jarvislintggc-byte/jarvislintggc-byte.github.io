@@ -815,3 +815,6 @@ button.game-boss{border:0;padding:0;background:none;color:inherit;font:inherit;t
 .life-game dialog.journey-welcome[data-scroll-fading=true]::backdrop{opacity:var(--welcome-opacity,1);transition:opacity .35s ease}
 @media(prefers-reduced-motion:reduce){.life-game dialog.journey-welcome[data-scroll-fading=true],.life-game dialog.journey-welcome[data-scroll-fading=true]::backdrop{transition:none}}
 
+/* The fullscreen story uses its own language controls and HUD. */
+.page-my-story:has(.journey-stage[data-revealed=true])>.site-language-global,
+.page-my-story:has(.journey-stage[data-revealed=true])>.page-footer{visibility:hidden;pointer-events:none}
