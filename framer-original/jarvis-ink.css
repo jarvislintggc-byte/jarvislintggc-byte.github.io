@@ -1,1 +1,6 @@
-.jarvis-author-ink{position:fixed;inset:0;z-index:30;pointer-events:none;overflow:hidden;mix-blend-mode:multiply;contain:strict}.jarvis-author-ink canvas{display:block;width:100%;height:100%;pointer-events:none}
+/* Paper, then the wash, then every content layer. */
+body{isolation:isolate}
+.jarvis-author-ink{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;mix-blend-mode:multiply;contain:strict}
+.jarvis-author-ink canvas{display:block;width:100%;height:100%;pointer-events:none}
+#main{position:relative;z-index:1}
+#main>[data-layout-template="true"]{background-color:transparent!important}
