@@ -15,3 +15,24 @@
 .jarvis-carousel-track:focus-visible,.jarvis-carousel-track a:focus-visible{outline:2px solid #544d3b;outline-offset:5px}
 @media(max-width:809px){.framer-zrw9y0{width:calc(100vw - 40px)!important}.jarvis-experience-carousel{padding-top:15px}.jarvis-carousel-heading{display:block;margin-bottom:25px}.jarvis-carousel-heading h3{font-size:32px}.jarvis-carousel-heading p{font-size:14px;margin-top:20px;max-width:35ch}.jarvis-carousel-track{gap:15px}.jarvis-carousel-track a{flex-basis:250px;height:240px}}
 @media(prefers-reduced-motion:reduce){.jarvis-carousel-track{scroll-behavior:auto}}
+
+/* Swap the complete Photos and Experience blocks, keeping their original children. */
+#main main.framer-1n1z6hi>section{order:10}
+#main #hero-section{order:1}
+#main #bio-section{order:2}
+#main main.framer-1n1z6hi>section.framer-ymuz9f{order:3}
+#main main.framer-1n1z6hi>section.framer-141no99{order:4}
+#main main.framer-1n1z6hi>section.framer-lcc4ld{order:5}
+#main main.framer-1n1z6hi>section.framer-9pnuil{order:6}
+/* Remove the redundant footer link row, retain logo and credits. */
+footer .framer-11w1mys{display:none!important}
+/* Only the moving gray thumb is visible. */
+.jarvis-carousel-track,.jarvis-photo-row{scrollbar-color:#999993 transparent}
+@supports selector(::-webkit-scrollbar){
+ .jarvis-carousel-track,.jarvis-photo-row{scrollbar-width:auto}
+ .jarvis-carousel-track::-webkit-scrollbar,.jarvis-photo-row::-webkit-scrollbar{height:6px;background:transparent}
+ .jarvis-carousel-track::-webkit-scrollbar-track,.jarvis-photo-row::-webkit-scrollbar-track{background:transparent;border:0;box-shadow:none}
+ .jarvis-carousel-track::-webkit-scrollbar-thumb,.jarvis-photo-row::-webkit-scrollbar-thumb{background:#999993;border-radius:10px}
+ .jarvis-carousel-track::-webkit-scrollbar-button,.jarvis-photo-row::-webkit-scrollbar-button{display:none;width:0;height:0}
+ .jarvis-carousel-track::-webkit-scrollbar-corner,.jarvis-photo-row::-webkit-scrollbar-corner{background:transparent}
+}
