@@ -7,7 +7,7 @@
   ja:{hello:'こんにちは 👋',open:'メニューを開く',close:'メニューを閉じる',nav:'サイトナビゲーション',language:'言語を選択',pages:['ホーム','私の歩み','経験・プロジェクト','提供できる価値','お問い合わせ']}
  };
  const prefixes={en:'','zh-Hant':'/zh',ja:'/ja'},slugs=['','my-story','experience','what-i-bring','connect'];
- const locale=()=>labels[document.documentElement.lang]?document.documentElement.lang:'en';
+ const locale=()=>!document.body.classList.contains('content-page')?(location.pathname.startsWith('/zh/')?'zh-Hant':location.pathname.startsWith('/ja/')?'ja':'en'):(labels[document.documentElement.lang]?document.documentElement.lang:'en');
  const slug=()=>location.pathname.replace(/^\/(?:zh|ja)(?=\/)/,'').replace(/\/index\.html$/,'/').replace(/^\/+|\/+$/g,'');
  const route=(lang,page)=>prefixes[lang]+'/'+(page?page+'/':'');
  let menu=document.getElementById('site-menu');
