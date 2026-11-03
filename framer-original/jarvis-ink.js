@@ -3,18 +3,10 @@
   'use strict';
   const stage = document.querySelector('.ink-atmosphere');
   const intro = document.querySelector('[id="hero-section"]');
-  const journeyStage = document.querySelector('.journey-stage');
-  // Keep one continuous viewport wash, clipped to the paper covering the game.
-  if (journeyStage) document.body.append(stage);
-  function paperBottom() {
-    if (!journeyStage) return height - scrollY;
-    const bounds = journeyStage.getBoundingClientRect();
-    const reveal = Number(journeyStage.style.getPropertyValue('--journey-reveal')) || 0;
-    return Math.max(0, Math.min(height, bounds.top + bounds.height * (1 - reveal)));
-  }
-  function clipPaper() {
-    if (journeyStage) stage.style.clipPath = 'inset(0 0 ' + Math.max(0, height - paperBottom()) + 'px 0)';
-  }
+  // The homepage wash stays in viewport coordinates throughout the page.
+  document.body.append(stage);
+  function paperBottom() { return height; }
+  function clipPaper() { stage.style.clipPath = 'none'; }
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const mobile = matchMedia('(max-width: 760px), (pointer: coarse)');
   let canvas = document.querySelector('#ink-canvas');
@@ -157,9 +149,8 @@
     const elapsed=previousTime?(now-previousTime)/1000:(mobile.matches?1/30:1/60);
     // Mobile runs at 30 fps; elapsed time keeps motion independent of refresh rate.
     if(mobile.matches && elapsed<1/30){frame=requestAnimationFrame(render);return;}
-    if(!mobile.matches && now-lastInput>9000){engine.clear();return;}
     const dt=Math.min(elapsed,mobile.matches?.05:.033);previousTime=now;
-    if(mobile.matches){if(document.querySelector('dialog[open]')){frame=requestAnimationFrame(render);return;}spiral(dt);}
+    if(mobile.matches || now-lastInput>9000){if(document.querySelector('dialog[open]')){frame=requestAnimationFrame(render);return;}spiral(dt);}
     for(const point of points.splice(0,24))engine.splat(point);
     engine.step(dt);frame=requestAnimationFrame(render);
   }
@@ -197,9 +188,9 @@
   document.addEventListener('pointerup',event=>{if(pressedPointer===event.pointerId)resetGesture();},{passive:true});
   document.addEventListener('pointercancel',resetGesture,{passive:true});
   document.addEventListener('pointerout',event=>{if(!event.relatedTarget)resetGesture();},{passive:true});
-  document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;resetGesture();}else if(enabled&&(mobile.matches||performance.now()-lastInput<9000))wake();});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;resetGesture();}else if(enabled)wake();});
   window.addEventListener('blur',resetGesture);
-  window.addEventListener('scroll',()=>{resetGesture();requestAnimationFrame(()=>{clipPaper();if(!visible()){cancelAnimationFrame(frame);frame=0;}else if(mobile.matches)wake();});},{passive:true});
+  window.addEventListener('scroll',()=>{resetGesture();requestAnimationFrame(()=>{clipPaper();if(!visible()){cancelAnimationFrame(frame);frame=0;}else wake();});},{passive:true});
   mobile.addEventListener('change',()=>{cancelAnimationFrame(frame);frame=0;points.length=0;resetGesture();engine.clear();replaceCanvas();engine=initialize();if(!engine)return;engine.resize(width,height);stage.dataset.inkMode=mobile.matches?'ambient':'interactive';if(enabled)seed();});
   stage.dataset.inkMode=mobile.matches?'ambient':'interactive';
   reducedMotion.addEventListener('change',event=>{enabled=!event.matches;cancelAnimationFrame(frame);frame=0;points.length=0;resetGesture();engine.clear();if(enabled)seed();});
