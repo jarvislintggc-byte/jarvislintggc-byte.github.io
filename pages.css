@@ -215,3 +215,11 @@ html[lang=ja] .list-index{white-space:nowrap}
  .page-connect .linkedin-link{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:100%;min-height:44px;font-size:16px;line-height:1.5;padding-block:8px}
  .page-connect .linkedin-link>span{margin-left:0}
 }
+
+/* Dark ecosystem diagram and quiet research progress indicators. */
+#ecosystem-study .card-cover{background:#0d1117!important}
+#ecosystem-study .card-cover img{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen}
+.card-meta .research-update{display:inline-flex;align-items:center;gap:7px;margin-left:auto;color:#8b6a24;font-size:11px;letter-spacing:.04em;white-space:nowrap}
+.research-update i{width:7px;height:7px;flex:none;border-radius:50%;background:#d8a52e;animation:research-update-breathe 2.6s ease-in-out infinite}
+@keyframes research-update-breathe{0%,100%{opacity:.45;box-shadow:0 0 0 0 #d8a52e00}50%{opacity:1;box-shadow:0 0 0 4px #d8a52e22}}
+@media(prefers-reduced-motion:reduce){.research-update i{animation:none;opacity:1}}
