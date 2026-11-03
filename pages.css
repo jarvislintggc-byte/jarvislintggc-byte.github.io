@@ -223,3 +223,20 @@ html[lang=ja] .list-index{white-space:nowrap}
 .research-update i{width:7px;height:7px;flex:none;border-radius:50%;background:#d8a52e;animation:research-update-breathe 2.6s ease-in-out infinite}
 @keyframes research-update-breathe{0%,100%{opacity:.45;box-shadow:0 0 0 0 #d8a52e00}50%{opacity:1;box-shadow:0 0 0 4px #d8a52e22}}
 @media(prefers-reduced-motion:reduce){.research-update i{animation:none;opacity:1}}
+
+/* Contact details share the existing understated link treatment. */
+.contact-actions{width:360px;max-width:100%;display:flex;flex-direction:column;gap:12px;flex-shrink:0}
+.contact-actions .linkedin-link{align-self:stretch;display:flex;justify-content:space-between}
+.contact-email{min-width:0;font-size:clamp(16px,1.5vw,22px)}
+.contact-email summary{display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none;cursor:pointer;border-bottom:1px solid #829079;padding:10px 0;perspective:800px}
+.contact-email summary::-webkit-details-marker{display:none}
+.contact-flip{display:grid;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.22,1,.36,1);min-width:0}
+.contact-flip>span{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow-wrap:anywhere}
+.contact-flip-back{transform:rotateX(180deg)}
+.contact-email[open] .contact-flip{transform:rotateX(180deg)}
+.contact-email>a{display:flex;justify-content:space-between;padding-top:12px;font-size:16px;color:inherit;text-decoration:none}
+.contact-phone{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #829079;color:inherit;text-decoration:none;font-size:clamp(16px,1.5vw,22px)}
+.contact-phone>span:last-child{white-space:nowrap}
+.contact-actions :focus-visible{outline:2px solid currentColor;outline-offset:5px}
+@media(prefers-reduced-motion:reduce){.contact-flip{transition:none}}
+@media(max-width:760px){.contact-actions{width:100%;margin-top:8px}.contact-email,.contact-phone{font-size:16px}}

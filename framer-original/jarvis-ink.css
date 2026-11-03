@@ -10,3 +10,6 @@ body{isolation:isolate;background-color:#fff!important}
 #main .framer-60ddrd-container{width:100%!important;max-width:100%!important;min-width:0!important}
 .jarvis-photo-row{max-width:100%;min-width:0;contain:inline-size;cursor:grab}
 .jarvis-photo-row:active{cursor:grabbing}
+
+/* Retire Instagram from the original hydrated footer too. */
+#main a[href*="instagram.com"]{display:none!important}
