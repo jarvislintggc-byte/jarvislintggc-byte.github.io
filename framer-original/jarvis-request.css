@@ -1,0 +1,17 @@
+/* Only the two ornaments and the Experiences block requested in the PDF. */
+#hero-section .framer-12f4eb2,#hero-section .framer-v9grtb{display:none!important}
+.framer-zrw9y0>.framer-1ut795m{display:none!important}
+.framer-zrw9y0{width:min(1376px,calc(100vw - 104px))!important;max-width:calc(100vw - 40px)!important;min-width:0!important;align-self:center}
+.jarvis-experience-carousel{width:100%;min-width:0;padding:26px 0 35px;color:#171715;font-family:Inter,Arial,sans-serif}
+.jarvis-carousel-heading{display:flex;align-items:start;justify-content:space-between;gap:60px;margin-bottom:40px;text-align:left}
+.jarvis-carousel-heading h3{margin:0;font-size:clamp(30px,3.2vw,48px);font-weight:500;line-height:1.18;letter-spacing:-.045em}
+.jarvis-carousel-heading h3 span{color:#797975}
+.jarvis-carousel-heading p{font-size:16px;line-height:1.7;margin:5px 0 0;max-width:30ch;color:#66665f}
+.jarvis-carousel-track{display:flex;gap:20px;overflow-x:auto;overflow-y:hidden;width:100%;max-width:100%;min-width:0;box-sizing:border-box;padding:8px 0 28px;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:#a3a19a transparent;cursor:grab;overscroll-behavior-x:contain;touch-action:pan-x pan-y;contain:inline-size}
+.jarvis-carousel-track.is-dragging{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.jarvis-carousel-track a{display:block;flex:0 0 clamp(240px,24vw,340px);height:280px;border-radius:14px;overflow:hidden;scroll-snap-align:start;background:#e7e6df;user-select:none;-webkit-user-drag:none}
+.jarvis-carousel-track a:nth-child(even){margin-top:28px}
+.jarvis-carousel-track img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.jarvis-carousel-track:focus-visible,.jarvis-carousel-track a:focus-visible{outline:2px solid #544d3b;outline-offset:5px}
+@media(max-width:809px){.framer-zrw9y0{width:calc(100vw - 40px)!important}.jarvis-experience-carousel{padding-top:15px}.jarvis-carousel-heading{display:block;margin-bottom:25px}.jarvis-carousel-heading h3{font-size:32px}.jarvis-carousel-heading p{font-size:14px;margin-top:20px;max-width:35ch}.jarvis-carousel-track{gap:15px}.jarvis-carousel-track a{flex-basis:250px;height:240px}}
+@media(prefers-reduced-motion:reduce){.jarvis-carousel-track{scroll-behavior:auto}}
