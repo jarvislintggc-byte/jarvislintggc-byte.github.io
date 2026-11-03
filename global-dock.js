@@ -45,6 +45,8 @@
    const target=a.dataset.siteLanguage;a.href=route(target,page);
    if(target===lang)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
   }
+  const reading=!!document.querySelector('#note-dialog[open]');
+  dock.inert=reading;dock.setAttribute('aria-hidden',String(reading));
   if(menu.open){
    if(supportsPopover&&dock.matches(':popover-open'))dock.hidePopover();
    dock.hidden=true;lastOpen=true;return;
