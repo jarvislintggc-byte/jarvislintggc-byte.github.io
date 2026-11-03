@@ -1,5 +1,5 @@
 {
-  "version": "9a94c13b7267777f",
+  "version": "4fdbcf09e75fc64a",
   "entry": "journey.js",
   "modules": [
     "journey-animation.mjs",
