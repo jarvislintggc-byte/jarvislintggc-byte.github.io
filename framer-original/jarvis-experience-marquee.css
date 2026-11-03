@@ -1,0 +1,27 @@
+.jarvis-article-marquee{position:relative;scroll-snap-type:none!important;scroll-behavior:auto;min-height:300px}
+.jarvis-article-marquee .jarvis-category-caption{flex-direction:column;align-items:flex-start;gap:8px;font-size:20px;line-height:1.35}
+.jarvis-article-marquee .jarvis-category-caption small{font-size:11px;letter-spacing:.06em;font-weight:400}
+.jarvis-article-marquee .jarvis-marquee-card{flex-shrink:0}
+body:has(#note-dialog.jarvis-home-article[open]){overflow:hidden}
+#note-dialog.jarvis-home-article{width:min(1100px,calc(100vw - 48px));max-width:none;max-height:calc(100dvh - 64px);box-sizing:border-box;margin:auto;padding:0;border:1px solid #d5d6ca;border-radius:10px;background:#f5f2ea;color:#28332d;box-shadow:0 22px 80px #0003;font:17px/1.9 Inter,Arial,sans-serif;overscroll-behavior:contain;overflow:auto}
+#note-dialog.jarvis-home-article::backdrop{background:#18211bbb;backdrop-filter:blur(5px)}
+.jarvis-home-article .dialog-top{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;background:#f5f2ea;padding:22px 32px;border-bottom:1px solid #d4d7cc}
+.jarvis-home-article #note-dialog-category{font-size:12px;letter-spacing:.08em;font-weight:600}
+.jarvis-home-article .dialog-actions,.jarvis-home-article .dialog-actions nav{display:flex;align-items:center;gap:8px}
+.jarvis-home-article button{font:inherit;color:inherit;cursor:pointer}
+.jarvis-home-article [data-article-language]{border:0;background:transparent;border-radius:22px;padding:7px 10px;font-size:13px}
+.jarvis-home-article [aria-current=true]{background:#28332d;color:#f5f2ea}
+.jarvis-home-article #note-dialog-close{display:grid;place-items:center;width:42px;height:42px;margin-left:8px;border:1px solid #cbd0c3;border-radius:50%;background:transparent;font:28px/1 Arial,sans-serif}
+.jarvis-home-article .dialog-content{padding:30px 42px 44px}
+.jarvis-home-article h2{font:500 clamp(28px,3.6vw,48px)/1.2 Georgia,'Noto Serif TC',serif;margin:0 0 18px}
+.jarvis-home-article #note-dialog-subtitle{font-size:21px;color:#637062;margin:0 0 26px}
+.jarvis-home-article h3{font-size:25px;font-weight:500;line-height:1.5;margin:30px 0 14px}
+.jarvis-home-article p{white-space:pre-line;margin:14px 0;overflow-wrap:anywhere}
+.jarvis-home-article img{display:block;max-width:100%;height:auto;border-radius:5px}
+.jarvis-home-article figure{margin:24px 0}
+.jarvis-home-article figcaption{font-size:13px;color:#6c766a;margin-top:7px}
+.jarvis-home-article a{color:inherit;text-underline-offset:4px;overflow-wrap:anywhere}
+.jarvis-home-article .article-resources{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}
+.jarvis-home-article .article-resources a{display:inline-block;padding:10px 16px;border:1px solid #c9cebf;border-radius:4px;text-decoration:none}
+.jarvis-home-article :focus-visible{outline:2px solid #a15b3e;outline-offset:3px}
+@media(max-width:650px){#note-dialog.jarvis-home-article{width:calc(100vw - 24px);max-height:calc(100dvh - 28px)}.jarvis-home-article .dialog-top{padding:14px;gap:8px}.jarvis-home-article .dialog-content{padding:24px 20px 32px}.jarvis-home-article #note-dialog-subtitle{font-size:18px}.jarvis-home-article .dialog-actions{gap:2px}.jarvis-home-article [data-article-language]{padding:5px 7px;font-size:12px}.jarvis-home-article #note-dialog-close{width:36px;height:36px;margin-left:3px}.jarvis-home-article #note-dialog-category{font-size:10px}.jarvis-home-article h3{font-size:22px}}
