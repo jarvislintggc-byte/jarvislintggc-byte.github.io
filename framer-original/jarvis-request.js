@@ -1,12 +1,9 @@
 (() => {
   'use strict';
   const photos = [
-    ['mrs-angel','cover-mrs-angel.png','Mrs.Angel Taiwanese Bubble Tea Shop'],
-    ['yuki-personal-pc-studio','cover-yuki-studio.png','Yuki Personal PC Studio'],
-    ['industry-learning','industry-learning-venture-cafe.png','Industry learning and networking in Arizona'],
-    ['crispy-chicken-tomato-kokushikan','cover-crispy-chicken.png',"CRISPY CHICKEN n’ TOMATO, Kokushikan University"],
-    ['milk-tea-supply-chain','cover-bubble-tea-supply-chain.png','Bubble Tea Shop Supply Chain'],
-    ['ecosystem-study','cover-ecosystem-study.png','Industry Ecosystem Study']
+    ['research','cover-arizona-chip-journey.png','Research Focus','04'],
+    ['ventures','cover-mrs-angel.png','Entrepreneurship','05'],
+    ['special','industry-learning-venture-cafe.png','Special Projects','03']
   ];
   let pending=false;
   function mount() {
@@ -18,10 +15,13 @@
     section.className='jarvis-experience-carousel';section.setAttribute('aria-label','Experiences');
     section.innerHTML='<div class="jarvis-carousel-heading"><h3>Different places.<br><span>A connected perspective.</span></h3><p>Building, learning, and finding the connections along the way.</p></div><div class="jarvis-carousel-track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Experience photos. Drag or use the arrow keys to browse."></div>';
     const track=section.querySelector('.jarvis-carousel-track');
-    for(const [id,file,label] of photos){
-      const link=document.createElement('a');link.href=prefix+'/experience/?note='+id;link.setAttribute('aria-label',label);link.draggable=false;
+    for(const [id,file,label,count] of photos){
+      const link=document.createElement('a');link.href=prefix+'/experience/?category='+id;link.setAttribute('aria-label',label+' '+count);link.draggable=false;
       const image=document.createElement('img');image.src='/assets/experience/'+file;image.alt=label;image.loading='lazy';image.decoding='async';image.draggable=false;
-      link.append(image);track.append(link);
+      const caption=document.createElement('span');caption.className='jarvis-category-caption';
+      const title=document.createElement('span');title.textContent=label;
+      const number=document.createElement('span');number.textContent=count;
+      caption.append(title,number);link.append(image,caption);track.append(link);
     }
     let start=null,moved=false,suppressClick=false;
     track.addEventListener('pointerdown',event=>{
