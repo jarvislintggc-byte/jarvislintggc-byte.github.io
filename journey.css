@@ -809,3 +809,9 @@ button.game-boss{border:0;padding:0;background:none;color:inherit;font:inherit;t
 .portal-direction[data-direction=right]{right:8px}
 @keyframes portal-guide{50%{translate:5px 0}}
 @media(prefers-reduced-motion:reduce){.portal-direction svg{animation:none}}
+
+/* A top-layer dialog must follow the scroll reveal rather than float over the intro. */
+.life-game dialog.journey-welcome[data-scroll-fading=true]{opacity:var(--welcome-opacity,1)!important;transition:opacity .35s ease}
+.life-game dialog.journey-welcome[data-scroll-fading=true]::backdrop{opacity:var(--welcome-opacity,1);transition:opacity .35s ease}
+@media(prefers-reduced-motion:reduce){.life-game dialog.journey-welcome[data-scroll-fading=true],.life-game dialog.journey-welcome[data-scroll-fading=true]::backdrop{transition:none}}
+

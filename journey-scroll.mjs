@@ -11,6 +11,13 @@ export function initJourneyScroll(){
     let progress=revealAt(runway.getBoundingClientRect().top,height);
     if(reduced.matches)progress=progress<.5?0:1;
     stage.style.setProperty('--journey-reveal',String(progress));
+    const welcome=document.getElementById('journey-welcome');
+    if(welcome?.open){
+      const opacity=clamp((progress-.4)/.6);
+      welcome.style.setProperty('--welcome-opacity',String(opacity));
+      welcome.dataset.scrollFading=String(progress<.995);
+      if(opacity===0){welcome.dataset.scrollDismissed='true';welcome.close();}
+    }
     const ready=progress>=.995;
     stage.dataset.revealed=String(ready);
     document.getElementById('life-game').inert=!ready;

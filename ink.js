@@ -3,6 +3,18 @@
   'use strict';
   const stage = document.querySelector('.ink-atmosphere');
   const intro = document.querySelector('.intro-screen');
+  const journeyStage = document.querySelector('.journey-stage');
+  // Keep one continuous viewport wash, clipped to the paper covering the game.
+  if (journeyStage) document.body.append(stage);
+  function paperBottom() {
+    if (!journeyStage) return height - scrollY;
+    const bounds = journeyStage.getBoundingClientRect();
+    const reveal = Number(journeyStage.style.getPropertyValue('--journey-reveal')) || 0;
+    return Math.max(0, Math.min(height, bounds.top + bounds.height * (1 - reveal)));
+  }
+  function clipPaper() {
+    if (journeyStage) stage.style.clipPath = 'inset(0 0 ' + Math.max(0, height - paperBottom()) + 'px 0)';
+  }
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const mobile = matchMedia('(max-width: 760px), (pointer: coarse)');
   let canvas = document.querySelector('#ink-canvas');
@@ -24,7 +36,7 @@
   const controls = 'a,button,input,textarea,select,dialog,[role="tab"]';
   function beginAction() { color = palette[Math.floor(actionCount / 3) % palette.length]; actionCount++; }
   function resetGesture() { previousPointer = null; lastMotion = -Infinity; pressedPointer = null; }
-  function canPaint(event) { return !mobile.matches && enabled && !document.hidden && scrollY < height && !document.querySelector('dialog[open]') && !event.target.closest(controls); }
+  function canPaint(event) { return !mobile.matches && enabled && !document.hidden && paperBottom() > 0 && event.clientY < paperBottom() && !event.target.closest('.life-game') && !document.querySelector('dialog[open]') && !event.target.closest(controls); }
   const points = [];
 
   function createFluid(target) {
@@ -85,9 +97,9 @@
       const dpr=Math.min(devicePixelRatio||1,1.5);target.width=Math.round(w*dpr);target.height=Math.round(h*dpr);clear();
     }
     function splat(point) {
-      let u=bind(programs.splat);sampler(u.source,velocity.read,0);gl.uniform2f(u.point,point.x,1-point.y);gl.uniform4f(u.amount,point.dx*3600,-point.dy*3600,0,0);gl.uniform1f(u.aspect,width/height);gl.uniform1f(u.radius,point.ambient?.002:point.down?.00105:.00052);blit(velocity.write);velocity.swap();
+      let u=bind(programs.splat);sampler(u.source,velocity.read,0);gl.uniform2f(u.point,point.x,1-point.y);gl.uniform4f(u.amount,point.dx*3600,-point.dy*3600,0,0);gl.uniform1f(u.aspect,width/height);gl.uniform1f(u.radius,point.ambient?.002:(point.down?.00105:.00052)*2.7225);blit(velocity.write);velocity.swap();
       const density=point.ambient?.085*(point.strength??1):point.down?.75:.19;
-      sampler(u.source,ink.read,0);gl.uniform4f(u.amount,point.color[0]/255*density,point.color[1]/255*density,point.color[2]/255*density,density);gl.uniform1f(u.radius,point.ambient?.0012:point.down?.00068:.00027);blit(ink.write);ink.swap();
+      sampler(u.source,ink.read,0);gl.uniform4f(u.amount,point.color[0]/255*density,point.color[1]/255*density,point.color[2]/255*density,density);gl.uniform1f(u.radius,point.ambient?.0012:(point.down?.00068:.00027)*2.7225);blit(ink.write);ink.swap();
     }
     function step(dt) {
       let u=bind(programs.curl);gl.uniform2f(u.texel,1/velocity.read.width,1/velocity.read.height);sampler(u.velocity,velocity.read,0);blit(curl);
@@ -112,7 +124,7 @@
     let drops=[];
     return {
       resize(w,h){target.width=Math.round(w);target.height=Math.round(h);drops=[];},
-      splat(p){if(drops.length>(mobile.matches?450:150))drops.shift();drops.push({x:p.x*width,y:p.y*height,vx:p.dx*width*10,vy:p.dy*height*10,life:p.strength??1,r:p.ambient?55:p.down?34:20,ambient:p.ambient,phase:Math.random()*6.28,down:p.down,color:p.color.join(',')});},
+      splat(p){if(drops.length>(mobile.matches?450:150))drops.shift();drops.push({x:p.x*width,y:p.y*height,vx:p.dx*width*10,vy:p.dy*height*10,life:p.strength??1,r:p.ambient?55:(p.down?34:20)*1.65,ambient:p.ambient,phase:Math.random()*6.28,down:p.down,color:p.color.join(',')});},
       clear(){drops=[];ctx.clearRect(0,0,target.width,target.height);},
       step(dt){ctx.clearRect(0,0,target.width,target.height);drops=drops.filter(p=>p.life>.015);for(const p of drops){p.life*=Math.exp(-(mobile.matches?.2:.6)*dt);p.phase+=dt*.7;p.x+=(p.vx+Math.cos(p.phase)*5)*dt;p.y+=(p.vy+Math.sin(p.phase)*4)*dt;p.vx*=Math.exp(-dt*1.5);p.vy*=Math.exp(-dt*1.5);p.r+=dt*3;const g=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);g.addColorStop(0,`rgba(${p.color},${p.life*(p.ambient?.022:p.down?.0875:.03125)})`);g.addColorStop(.5,`rgba(${p.color},${p.life*.01875})`);g.addColorStop(1,`rgba(${p.color},0)`);ctx.fillStyle=g;ctx.beginPath();ctx.ellipse(p.x,p.y,p.r,p.r,0,0,Math.PI*2);ctx.fill();}}
     };
@@ -125,8 +137,8 @@
   engine=initialize();
   if(!engine)return;
 
-  function resize(){const nextWidth=intro.clientWidth,nextHeight=intro.offsetHeight;if(nextWidth===width&&nextHeight===height)return;width=nextWidth;height=nextHeight;stage.style.height=`${height}px`;try{engine.resize(width,height);}catch{engine=fallback();if(!engine)return;engine.resize(width,height);}points.length=0;resetGesture();if(enabled)seed();}
-  function visible(){return enabled && !document.hidden && scrollY < height;}
+  function resize(){const nextWidth=intro.clientWidth,nextHeight=intro.offsetHeight;if(nextWidth===width&&nextHeight===height)return;width=nextWidth;height=nextHeight;stage.style.height=`${height}px`;clipPaper();try{engine.resize(width,height);}catch{engine=fallback();if(!engine)return;engine.resize(width,height);}points.length=0;resetGesture();if(enabled)seed();}
+  function visible(){return enabled && !document.hidden && paperBottom() > 0;}
   function wake(){if(!visible())return;lastInput=performance.now();if(!frame){previousTime=0;frame=requestAnimationFrame(render);}}
   // One fluid brush follows the approved spiral, at twice the former drawing speed.
   function spiral(dt){
@@ -155,7 +167,7 @@
   function seed(){if(!enabled)return;if(mobile.matches){spiralTime=0;previousSpiralPoint=null;wake();return;}const path=[{x:.06,y:.19},{x:.1,y:.14},{x:.17,y:.13},{x:.24,y:.16},{x:.29,y:.22}];path.forEach((p,i)=>{add(p.x,p.y,i?.018:.008,.006,i===1||i===2);});add(.91,.68,-.02,-.012,true);add(.88,.64,-.018,.007,false);}
   function pointer(event) {
     if (!canPaint(event)) { resetGesture(); return; }
-    const y = event.clientY + scrollY;
+    const y = event.clientY;
     if (y < 0 || y > height) { resetGesture(); return; }
     const p = { x:event.clientX/width, y:y/height, time:event.timeStamp };
     if (previousPointer && p.time - previousPointer.time < 280) {
@@ -172,7 +184,7 @@
   }
   function dab(event) {
     if (!canPaint(event) || event.button > 0 || event.shiftKey) return;
-    const y=event.clientY+scrollY;
+    const y=event.clientY;
     if(y>=0 && y<=height) {
       if(event.pointerType==='mouse')event.preventDefault();
       beginAction();pressedPointer=event.pointerId;lastMotion=event.timeStamp;
@@ -187,7 +199,7 @@
   document.addEventListener('pointerout',event=>{if(!event.relatedTarget)resetGesture();},{passive:true});
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;resetGesture();}else if(enabled&&(mobile.matches||performance.now()-lastInput<9000))wake();});
   window.addEventListener('blur',resetGesture);
-  window.addEventListener('scroll',()=>{resetGesture();if(scrollY>=height){cancelAnimationFrame(frame);frame=0;}else if(mobile.matches)wake();},{passive:true});
+  window.addEventListener('scroll',()=>{resetGesture();requestAnimationFrame(()=>{clipPaper();if(!visible()){cancelAnimationFrame(frame);frame=0;}else if(mobile.matches)wake();});},{passive:true});
   mobile.addEventListener('change',()=>{cancelAnimationFrame(frame);frame=0;points.length=0;resetGesture();engine.clear();replaceCanvas();engine=initialize();if(!engine)return;engine.resize(width,height);stage.dataset.inkMode=mobile.matches?'ambient':'interactive';if(enabled)seed();});
   stage.dataset.inkMode=mobile.matches?'ambient':'interactive';
   reducedMotion.addEventListener('change',event=>{enabled=!event.matches;cancelAnimationFrame(frame);frame=0;points.length=0;resetGesture();engine.clear();if(enabled)seed();});
