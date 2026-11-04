@@ -419,11 +419,11 @@ if (root) {
       card.children[0].setAttribute('aria-label',t(jobs[index].name));card.children[0].checked=jobs[index].id===selected;card.dataset.selected=String(jobs[index].id===selected);setText(card.children[2],jobs[index].name);
     }
     overlays.render(selected);
-    $('story-speed').hidden=false;$('settings-speed-row').hidden=false;$('settings-mode-row').hidden=false;
+    $('story-speed').hidden=false;$('settings-speed-row').hidden=false;$('settings-mode-row').hidden=true;
     for(const [id,rate]of [['story-speed-1',1],['story-speed-125',1.25],['story-speed-15',1.5]]){$(id).setAttribute('aria-pressed',String(rate===playbackRate()));$(id).disabled=state.mode!=='watch';}
     $('mode-manual').setAttribute('aria-pressed',String(state.mode==='manual'));$('mode-watch').setAttribute('aria-pressed',String(state.mode==='watch'));
     $('mode-manual').disabled=state.phase==='battle';$('mode-manual').hidden=false;
-    $('mobile-auto').hidden=!phone.matches||!active;$('mobile-auto').disabled=state.paused||state.mode==='watch'&&state.phase==='battle';$('mobile-auto').setAttribute('aria-pressed',String(state.mode==='watch'));
+    $('mobile-auto').hidden=!active;$('mobile-auto').disabled=state.paused||state.mode==='watch'&&state.phase==='battle';$('mobile-auto').setAttribute('aria-pressed',String(state.mode==='watch'));
     $('player-actions').hidden=phone.matches||state.mode!=='manual'||['ready','complete'].includes(state.phase);
     $('mobile-controls').hidden=!phone.matches||state.mode!=='manual'||['ready','complete'].includes(state.phase);
     $('touch-attack').disabled=!canAttack(state)&&!(state.mode==='manual'&&!state.paused&&state.phase==='battle');

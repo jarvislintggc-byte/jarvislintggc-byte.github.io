@@ -818,3 +818,11 @@ button.game-boss{border:0;padding:0;background:none;color:inherit;font:inherit;t
 /* The fullscreen story uses its own language controls and HUD. */
 .page-my-story:has(.journey-stage[data-revealed=true])>.site-language-global,
 .page-my-story:has(.journey-stage[data-revealed=true])>.page-footer{visibility:hidden;pointer-events:none}
+
+/* One automatic playback switch beside the wordmark on every screen. */
+#settings-mode-row{display:none!important}
+.journey-stage .life-game .game-toolbar .mobile-auto:not([hidden]){display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:6px 9px;min-height:32px;min-width:58px;border:1px solid #62766335;border-radius:18px;background:#ffffff40;color:#586451;box-shadow:none;font:500 11px/1.4 var(--sans,Arial,sans-serif);white-space:nowrap;order:1}
+.mobile-auto .auto-dot{width:7px;height:7px;border:1px solid currentColor;border-radius:50%;background:transparent}
+.mobile-auto[aria-pressed=true]{background:#667d6315!important;border-color:#667d6355!important;color:#3b573c!important}
+.mobile-auto[aria-pressed=true] .auto-dot{background:currentColor;box-shadow:0 0 7px #5b865e45}
+.mobile-auto:disabled{opacity:.45}.mobile-auto:focus-visible{outline:2px solid #879571;outline-offset:3px}
