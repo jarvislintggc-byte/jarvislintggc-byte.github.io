@@ -103,3 +103,6 @@ body:has(#jarvis-credential-dialog[open]) #jarvis-global-dock{opacity:0;visibili
 #experience .jarvis-ordered-place .framer-1dwlxmp>div{width:100%!important;height:auto!important;min-width:0}
 #experience .jarvis-ordered-place .framer-1dwlxmp p{white-space:normal!important;text-transform:none!important;margin:0!important}
 #experience .jarvis-ordered-place .framer-1dwlxmp>div:has(p:empty){display:none!important}
+
+/* Hide the exported builder badge on the personal site. */
+#__framer-badge-container,.__framer-badge{display:none!important}
