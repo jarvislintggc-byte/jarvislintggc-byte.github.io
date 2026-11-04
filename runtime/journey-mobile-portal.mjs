@@ -1,0 +1,6 @@
+// Count only active game time, independent of playback speed.
+export function mobilePortalTimer(elapsed,{mobile,open,paused,delta}){
+ if(!mobile||!open)return 0;
+ if(paused)return elapsed;
+ return elapsed+Math.max(0,Number.isFinite(delta)?delta:0);
+}

@@ -54,8 +54,8 @@ export function transition(state, event, chapters) {
       if (s.page < chapter.pages.length - 1) s.page++;
       else { s.phase = s.mode==='manual'?'encounter':'battle'; s.beat = 0;s.watchHits=0;s.watchCasts=event.watchCasts===3?3:1;s.watchStartHp=s.bossHp; }
     } else if (s.phase === 'portal') {
-      if(s.mode==='manual'&&(Math.abs(s.characterX-(s.portalX??88))>6||Math.abs(s.characterY-(s.portalY||0))>8))return state;
-      s.phase='walking'; s.walkStartX=s.characterX;s.facing=Math.sign((s.portalX??88)-s.characterX)||s.facing;
+      if(s.mode==='manual'&&!event.mobileApproach&&(Math.abs(s.characterX-(s.portalX??88))>6||Math.abs(s.characterY-(s.portalY||0))>8))return state;
+      s.phase='walking'; s.walkStartY=s.characterY||0; s.walkStartX=s.characterX;s.facing=Math.sign((s.portalX??88)-s.characterX)||s.facing;
     }
     else return state;
   } else if(type==='WATCH_HIT'&&s.phase==='battle'&&s.mode==='watch'){
