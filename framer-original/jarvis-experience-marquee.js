@@ -5,6 +5,7 @@
  const ui={en:['Different places.','A connected perspective.','Building, learning, and finding the connections along the way.','Experience articles. Drag or use arrow keys to browse.','Close','Could not load articles. Click to retry.'], 'zh-Hant':['不同地方，','連結成共同視野。','在創造與學習之間，找到不同經驗的連結。','經歷文章，可左右滑動、拖曳或使用方向鍵瀏覽。','關閉','文章暫時無法載入，點擊重試。'],ja:['さまざまな場所で、','つながる視点。','つくり、学び、経験のつながりを見つける。','経験の記事。スワイプ、ドラッグ、矢印キーで閲覧できます。','閉じる','記事を読み込めません。クリックして再試行。']};
  const paths={en:'','zh-Hant':'/zh',ja:'/ja'},cache=new Map();
  async function source(lang){if(!cache.has(lang))cache.set(lang,fetch(paths[lang]+'/experience/').then(r=>{if(!r.ok)throw Error(r.status);return r.text();}).then(html=>new DOMParser().parseFromString(html,'text/html')).catch(e=>{cache.delete(lang);throw e;}));return cache.get(lang);}
+ let mountedSection=null;
  let dialog,opener,windowTop=0,trackLeft=0,currentId,modalLanguage=locale,track;
  function populate(doc,id,lang){
   const card=doc.getElementById(id),template=doc.getElementById('note-content-'+id);
@@ -30,9 +31,10 @@
  }
  async function mount(){
   const root=document.querySelector('.framer-zrw9y0');if(!root)return false;
+  if(mountedSection){if(!mountedSection.isConnected){root.querySelector('.jarvis-experience-carousel')?.remove();root.append(mountedSection);}return true;}
   let section=root.querySelector('.jarvis-experience-carousel');if(section?.dataset.marquee)return true;
   if(!section){section=document.createElement('section');section.className='jarvis-experience-carousel';root.append(section);}
-  section.dataset.marquee='true';const labels=ui[locale];
+  section.dataset.marquee='true';mountedSection=section;const labels=ui[locale];
   const heading=section.querySelector('.jarvis-carousel-heading')?.cloneNode(true);
   section.replaceChildren();
   if(heading)section.append(heading);else{const h=document.createElement('div');h.className='jarvis-carousel-heading';const title=document.createElement('h3'),span=document.createElement('span'),p=document.createElement('p');title.append(labels[0],document.createElement('br'));span.textContent=labels[1];title.append(span);p.textContent=labels[2];h.append(title,p);section.append(h);}
@@ -64,6 +66,6 @@
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;}else wake();});
   await load();return true;
  }
- function boot(){if(document.readyState!=='complete')return;mount().then(done=>{if(done)observer.disconnect();});}
+ function boot(){if(document.readyState!=='complete')return;mount();}
  const observer=new MutationObserver(()=>{if(!document.querySelector('.jarvis-experience-carousel[data-marquee]'))boot();});observer.observe(document.documentElement,{childList:true,subtree:true});window.addEventListener('load',boot);boot();
 })();
