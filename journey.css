@@ -839,3 +839,9 @@ button.game-boss{border:0;padding:0;background:none;color:inherit;font:inherit;t
 }
 
 @media(max-width:760px){.page-my-story:has(.journey-stage[data-revealed=true]) #jarvis-global-dock{width:min(230px,calc(100vw - 140px))!important}}
+
+/* Four direct class choices extend below the character menu. */
+.inline-class-menu{position:absolute;top:calc(100% + 5px);left:0;width:100%;min-width:138px;z-index:70;display:flex;flex-direction:column;gap:2px;padding:5px;border:1px solid #e9cd87;border-radius:8px;background:#203c48f5;box-shadow:0 8px 24px #102c3955;pointer-events:auto}
+.inline-class-menu[hidden]{display:none}.inline-class-menu button{display:flex;align-items:center;gap:10px;width:100%;min-height:46px;padding:5px 10px;border:0;border-radius:5px;background:transparent;color:#fff0c2;text-align:left;font:500 15px/1.4 var(--sans,Arial,sans-serif);cursor:pointer}.inline-class-menu button:hover,.inline-class-menu button:focus-visible{background:#f6dc9420;outline:1px solid #ffe3a5}.inline-class-menu img{width:30px;height:36px;object-fit:contain;image-rendering:pixelated}
+
+.character-status:has(.inline-class-menu:not([hidden])){z-index:80}
