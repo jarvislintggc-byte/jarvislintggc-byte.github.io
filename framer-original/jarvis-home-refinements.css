@@ -113,3 +113,24 @@ body:has(#jarvis-credential-dialog[open]) #jarvis-global-dock{opacity:0;visibili
 .jarvis-heading-proof{display:inline;border:0;border-bottom:1px dashed currentColor;padding:0;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;text-align:inherit;cursor:pointer}
 .jarvis-heading-proof:hover{color:#b94d32}
 .jarvis-heading-proof:focus-visible{outline:2px solid #b94d32;outline-offset:4px}
+
+/* Mobile life entries: copy above, category and flag side by side. */
+@media(max-width:809px){
+ #experience .jarvis-ordered-place .framer-WLFa2{grid-template-columns:minmax(0,1fr) auto!important;gap:24px 22px!important;padding:28px 0!important}
+ #experience .jarvis-ordered-place .framer-j6yv7y{display:none!important}
+ #experience .jarvis-ordered-place .framer-1q1tzeh{grid-column:1/-1!important;grid-row:1!important;gap:16px!important}
+ #experience .jarvis-ordered-place .framer-iycs1n p{font-size:16px!important;line-height:1.8!important}
+ #experience .jarvis-ordered-place .framer-1hgww3v{grid-column:1!important;grid-row:2!important;justify-self:start;align-self:center;min-height:44px;padding:9px 16px!important}
+ #experience .jarvis-ordered-place .framer-1hgww3v p{font-size:16px!important}
+ #experience .jarvis-ordered-place .framer-1dwlxmp{grid-column:2!important;grid-row:2!important;align-self:center;justify-self:end;width:auto!important}
+ #experience .jarvis-ordered-place .framer-1dwlxmp>div:not(.jarvis-place-flag){display:none!important}
+ #experience .jarvis-ordered-place .jarvis-place-flag{margin:0;padding:4px;background:#f7f5ef}
+ #experience .jarvis-ordered-place .jarvis-place-flag img{width:70px;height:47px;object-fit:contain;object-position:center}
+}
+
+@media(max-width:809px){
+ #experience .jarvis-ordered-place .framer-1dwlxmp{align-items:flex-end!important;max-width:150px!important}
+ #experience .jarvis-ordered-place .framer-1dwlxmp>div:not(.jarvis-place-flag):has(p:not(:empty)){display:block!important}
+ #experience .jarvis-ordered-place .framer-1dwlxmp p{text-align:right!important;font-size:13px!important;line-height:1.5!important;overflow-wrap:normal!important;word-break:normal!important}
+ #experience .jarvis-ordered-place .jarvis-place-flag{margin-top:8px}
+}

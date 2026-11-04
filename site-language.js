@@ -36,6 +36,7 @@
     for (const item of originalTexts) item.node.textContent = item.leading + (dictionary[item.original] || item.original) + item.trailing;
     for (const item of originalLabels) item.node.setAttribute(item.attribute, dictionary[item.original] || item.original);
     root.lang = locale;
+    const intro=document.querySelector('#intro');if(intro)intro.lang=locale;
     data.locale = locale;
     document.title = `${data.pageNames[locale][data.slug === 'my-story' ? 1 : 0]} — Jarvis Lin`;
     const pageLocation = document.querySelector('.page-location');
