@@ -264,3 +264,11 @@ html[lang=ja] .list-index{white-space:nowrap}
 .page-experience .filters{display:flex;flex-wrap:wrap;min-width:0}
 .page-experience .work-heading>div,.page-experience .work-heading>p{min-width:0;overflow-wrap:anywhere}
 @media(min-width:1000px){.page-experience .work-note .card-body h3{min-height:2.6em}.page-experience .work-note .card-body p{min-height:4.8em}}
+
+/* Personal reflections precede the original game prologue. */
+.story-reflections{padding:clamp(100px,12vh,150px) 24px 88px;background:var(--paper,#f5f2ea)}
+.story-reflections-copy{width:min(100%,760px);margin:auto;color:var(--ink,#28332d)}
+.story-reflections-copy p{font-size:clamp(18px,1.6vw,23px);line-height:2;letter-spacing:.025em;margin:0 0 1.2em;overflow-wrap:anywhere}
+.story-reflections-copy p:first-child{font-size:clamp(24px,2.4vw,34px);line-height:1.6;margin-bottom:1.1em}
+.story-reflections-copy p:last-child{margin-bottom:0}
+@media(max-width:760px){.story-reflections{padding:110px 24px 60px}.story-reflections-copy p{line-height:1.9}}
