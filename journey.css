@@ -826,3 +826,16 @@ button.game-boss{border:0;padding:0;background:none;color:inherit;font:inherit;t
 .mobile-auto[aria-pressed=true]{background:#667d6315!important;border-color:#667d6355!important;color:#3b573c!important}
 .mobile-auto[aria-pressed=true] .auto-dot{background:currentColor;box-shadow:0 0 7px #5b865e45}
 .mobile-auto:disabled{opacity:.45}.mobile-auto:focus-visible{outline:2px solid #879571;outline-offset:3px}
+
+/* Mobile toolbar: Auto and one-tap audio stay clear of the navigation dock. */
+#mobile-auto-tip{position:fixed;z-index:2147483002;top:72px;right:12px;width:min(260px,calc(100vw - 24px));padding:16px;border:1px solid #d8d7c9;border-radius:14px;background:#fffdf6;color:#28332d;box-shadow:0 8px 30px #18241d26;font:15px/1.7 var(--sans,Arial,sans-serif)}
+#mobile-auto-tip[hidden]{display:none}#mobile-auto-tip p{margin:0}#mobile-auto-tip button{display:block;margin:10px 0 0 auto;min-height:44px;padding:8px 16px;border:0;border-radius:9px;background:#28332d;color:#fffdf6;font:inherit}
+@media(max-width:760px),(hover:none) and (pointer:coarse) and (max-width:1024px){
+ .journey-stage .life-game .game-toolbar #game-pause,.journey-stage .life-game .game-toolbar #journey-settings{display:none!important}
+ .journey-stage .life-game .game-toolbar .game-tools{margin-left:auto;gap:8px;flex-shrink:0}
+ .journey-stage .life-game .game-toolbar .game-tools #mobile-auto{order:0;min-width:52px;padding:6px 8px}
+ .journey-stage .life-game .game-toolbar .game-tools #game-sound.mobile-direct-sound{display:grid;place-items:center;order:1;width:36px;height:36px;min-width:36px;min-height:36px;margin:0;padding:7px;border:0;border-radius:50%;background:transparent;color:#586451;box-shadow:none}
+ #game-sound.mobile-direct-sound svg{display:block;width:22px;height:22px}#game-sound.mobile-direct-sound[aria-pressed=true] .sound-muted{display:none}#game-sound.mobile-direct-sound[aria-pressed=false] .sound-waves{display:none}
+}
+
+@media(max-width:760px){.page-my-story:has(.journey-stage[data-revealed=true]) #jarvis-global-dock{width:min(230px,calc(100vw - 140px))!important}}

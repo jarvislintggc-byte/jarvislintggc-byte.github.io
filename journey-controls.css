@@ -17,3 +17,6 @@
 @media(max-width:760px){.journey-auto-speed{width:154px}}
 @media(max-width:760px){.journey-stage .life-game .game-toolbar #mobile-auto{position:absolute;left:0;top:calc(100% + 20px);z-index:65}.journey-auto-speed{left:70px;top:calc(100% + 20px)}}
 @media(max-width:760px){.journey-stage .life-game .game-toolbar #mobile-auto,.journey-auto-speed{top:64px}}
+
+/* Mobile Auto now belongs to the right-hand toolbar, not the old floating tray. */
+@media(max-width:760px),(hover:none) and (pointer:coarse) and (max-width:1024px){.journey-stage .life-game .game-toolbar .game-tools #mobile-auto{position:static!important;inset:auto!important;transform:none!important}.journey-auto-speed{position:fixed;left:auto;right:12px;top:64px;z-index:65}}
