@@ -259,3 +259,8 @@ html[lang=ja] .list-index{white-space:nowrap}
 }
 
 .note-gallery.note-gallery-trio{grid-template-columns:repeat(3,minmax(0,1fr))}.note-gallery.note-gallery-trio figure:first-child{grid-column:auto}
+
+/* Translations share the same card rhythm and wrapping rules. */
+.page-experience .filters{display:flex;flex-wrap:wrap;min-width:0}
+.page-experience .work-heading>div,.page-experience .work-heading>p{min-width:0;overflow-wrap:anywhere}
+@media(min-width:1000px){.page-experience .work-note .card-body h3{min-height:2.6em}.page-experience .work-note .card-body p{min-height:4.8em}}

@@ -85,3 +85,41 @@
     if ((data.slug === '' || data.slug === 'my-story')) applyHome(location.pathname.startsWith('/ja/') ? 'ja' : location.pathname.startsWith('/zh/') ? 'zh-Hant' : 'en', true, false);
   });
 })();
+
+// Translate the open article in place, retaining its layout and reading position.
+(() => {
+ const dialog=document.querySelector('#note-dialog');
+ if(!dialog||!document.body.classList.contains('page-experience'))return;
+ const paths={en:'','zh-Hant':'/zh',ja:'/ja'},documents=new Map();let request=0;
+ document.addEventListener('click',async event=>{
+  const link=event.target.closest('#note-dialog a[data-site-language]');
+  if(!link||!dialog.open||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||event.button!==0)return;
+  const lang=link.dataset.siteLanguage,id=dialog.dataset.note;
+  if(!(lang in paths)||!id)return;
+  event.preventDefault();event.stopImmediatePropagation();
+  const serial=++request;
+  const sectionList=[...dialog.querySelectorAll('.note-article-section')],top=dialog.getBoundingClientRect().top+dialog.querySelector('.dialog-top').getBoundingClientRect().height;
+  let sectionIndex=sectionList.findIndex(s=>s.getBoundingClientRect().bottom>top);
+  const section=sectionList[sectionIndex],offset=section?Math.max(0,(top-section.getBoundingClientRect().top)/Math.max(1,section.getBoundingClientRect().height)):0;
+  const scroll=dialog.scrollTop;
+  dialog.setAttribute('aria-busy','true');
+  try{
+   if(!documents.has(lang))documents.set(lang,fetch(paths[lang]+'/experience/').then(r=>{if(!r.ok)throw Error(r.status);return r.text();}).then(h=>new DOMParser().parseFromString(h,'text/html')).catch(e=>{documents.delete(lang);throw e;}));
+   const doc=await documents.get(lang);if(serial!==request||!dialog.open)return;
+   const card=doc.getElementById(id),template=doc.getElementById('note-content-'+id);if(!card)throw Error('Missing article');
+   dialog.lang=lang;
+   dialog.querySelector('#note-dialog-category').textContent=card.querySelector('.card-meta').textContent;
+   dialog.querySelector('#note-dialog-title').textContent=card.querySelector('h3').textContent;
+   dialog.querySelector('#note-dialog-subtitle').textContent=card.querySelector('.note-subtitle').textContent;
+   dialog.querySelector('#note-dialog-body').replaceChildren(...(template?[template.content.cloneNode(true)]:[]));
+   const pending=dialog.querySelector('#note-dialog-pending');if(pending)pending.hidden=Boolean(template);
+   const translatedPending=doc.querySelector('#note-dialog-pending');if(pending&&translatedPending)pending.textContent=translatedPending.textContent;
+   const translatedClose=doc.querySelector('#note-dialog-close');if(translatedClose)dialog.querySelector('#note-dialog-close').setAttribute('aria-label',translatedClose.getAttribute('aria-label'));
+   dialog.querySelectorAll('[data-site-language]').forEach(a=>{if(a.dataset.siteLanguage===lang)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+   dialog.scrollTop=scroll;
+   requestAnimationFrame(()=>{if(serial!==request)return;const next=dialog.querySelectorAll('.note-article-section')[sectionIndex];if(next&&scroll>0){const headerBottom=dialog.getBoundingClientRect().top+dialog.querySelector('.dialog-top').getBoundingClientRect().height;dialog.scrollTop+=next.getBoundingClientRect().top+offset*next.getBoundingClientRect().height-headerBottom;}});
+  }catch{if(serial===request)location.assign(paths[lang]+'/experience/?note='+encodeURIComponent(id));}
+  finally{if(serial===request)dialog.removeAttribute('aria-busy');}
+ },true);
+ dialog.addEventListener('close',()=>{request++;dialog.removeAttribute('aria-busy');dialog.lang=document.documentElement.lang;dialog.querySelectorAll('[data-site-language]').forEach(a=>{if(a.dataset.siteLanguage===dialog.lang)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});});
+})();

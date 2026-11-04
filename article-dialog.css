@@ -53,3 +53,9 @@
 
 #note-dialog .note-gallery-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
 #note-dialog .note-gallery-trio{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+/* Shared geometry is independent of the surrounding page language. */
+#note-dialog .dialog-content,#note-dialog .dialog-actions,#note-dialog .note-article-section{min-width:0}
+#note-dialog h2,#note-dialog .note-article-section h3{word-break:normal;letter-spacing:0}
+#note-dialog .note-gallery{width:100%;min-width:0}
+#note-dialog[aria-busy=true]{cursor:progress}

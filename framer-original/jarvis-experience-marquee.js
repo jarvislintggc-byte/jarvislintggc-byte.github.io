@@ -7,7 +7,8 @@
  async function source(lang){if(!cache.has(lang))cache.set(lang,fetch(paths[lang]+'/experience/').then(r=>{if(!r.ok)throw Error(r.status);return r.text();}).then(html=>new DOMParser().parseFromString(html,'text/html')).catch(e=>{cache.delete(lang);throw e;}));return cache.get(lang);}
  let mountedSection=null;
  let dialog,opener,windowTop=0,trackLeft=0,currentId,modalLanguage=locale,track;
- function populate(doc,id,lang){
+ function populate(doc,id,lang,preserve=false){
+  const progress=preserve?dialog.scrollTop/Math.max(1,dialog.scrollHeight-dialog.clientHeight):0;
   const card=doc.getElementById(id),template=doc.getElementById('note-content-'+id);
   if(!card||!template)throw Error('Article missing: '+id);
   dialog.dataset.note=id;dialog.lang=lang;modalLanguage=lang;
@@ -17,7 +18,7 @@
   dialog.querySelector('#note-dialog-body').replaceChildren(template.content.cloneNode(true));
   dialog.querySelector('#note-dialog-close').setAttribute('aria-label',ui[lang][4]);
   dialog.querySelectorAll('[data-article-language]').forEach(a=>{a.setAttribute('aria-current',a.dataset.articleLanguage===lang?'true':'false');});
-  dialog.scrollTop=0;
+  dialog.scrollTop=progress*Math.max(0,dialog.scrollHeight-dialog.clientHeight);
  }
  function makeDialog(){
   dialog=document.createElement('dialog');dialog.id='note-dialog';dialog.className='jarvis-home-article';dialog.setAttribute('aria-labelledby','note-dialog-title');dialog.setAttribute('aria-describedby','note-dialog-subtitle');dialog.setAttribute('data-lenis-prevent','');
@@ -27,7 +28,7 @@
   dialog.addEventListener('close',()=>{if(!document.querySelector('dialog[open]'))document.body.classList.remove('modal-open');track.scrollLeft=trackLeft;window.scrollTo({top:windowTop,behavior:'instant'});opener?.focus({preventScroll:true});});
   dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});
   let request=0;
-  dialog.querySelectorAll('[data-article-language]').forEach(a=>a.addEventListener('click',async()=>{const serial=++request;try{const doc=await source(a.dataset.articleLanguage);if(serial===request&&dialog.open)populate(doc,currentId,a.dataset.articleLanguage);}catch{}}));
+  dialog.querySelectorAll('[data-article-language]').forEach(a=>a.addEventListener('click',async()=>{const serial=++request;try{const doc=await source(a.dataset.articleLanguage);if(serial===request&&dialog.open)populate(doc,currentId,a.dataset.articleLanguage,true);}catch{}}));
  }
  async function mount(){
   const root=document.querySelector('.framer-zrw9y0');if(!root)return false;
