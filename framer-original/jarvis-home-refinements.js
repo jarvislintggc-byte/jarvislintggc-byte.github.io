@@ -19,10 +19,11 @@
   en:{degree:'Kokushikan University · Business Administration graduate',award:'Three consecutive years of scholarships · ¥1,000,000 total',lead:'Alongside building businesses in Japan, I completed my university studies.',degreeTitle:'Kokushikan University · Faculty of Business Administration',degreeDetail:'Graduation certificate',awardTitle:'Scholarships for three consecutive years',awardDetail:'Cumulative scholarship awards of ¥1,000,000',pending:'Supporting documents coming soon',close:'Close',view:'View supporting documents',places:[['PHILIPPINES · SIX MONTHS','Learning and living in Cebu.','Six months in Cebu brought learning into everyday life, with time to explore the island’s natural surroundings and a different pace of living.','Cebu, Philippines'],['TAIWAN · ALWAYS WITH ME','Encouraged by friends, wherever I go.','Back in Taiwan, I have friends who love me. Their continued support and encouragement give me the confidence to explore, and a place to feel at home.','Taiwan']]},
   ja:{degree:'国士舘大学経営学部 卒業',award:'3年連続の奨学金 · 累計100万円',lead:'日本では起業に取り組みながら、大学での学びも修めました。',degreeTitle:'国士舘大学 · 経営学部',degreeDetail:'卒業証書',awardTitle:'3年連続で奨学金を受給',awardDetail:'奨学金の累計総額100万円',pending:'証明書類は後日掲載予定',close:'閉じる',view:'証明書類を見る',places:[['フィリピン · 6か月','セブで、学びと暮らしを。','セブ島で6か月生活し、日々の学びと島の自然に触れながら、都市とは異なる暮らしのリズムを体験しました。','Cebu, Philippines'],['台湾 · いつもそばに','友人の支えを胸に、次の一歩へ。','台湾には、私を大切に思ってくれる友人たちがいます。旅の途中でも、変わらない支えと励ましが、挑戦する力と帰る場所をくれます。','Taiwan']]}
  }[locale];
+
  let credentialFiles={graduation:null,scholarship:null},credentialDialog,credentialOpener;
  fetch('/credentials.json?v=1').then(r=>r.ok?r.json():{}).then(data=>credentialFiles=data).catch(()=>{});
  function credential(kind){
-  credentialOpener=document.activeElement;
+  if(!credentialDialog?.open)credentialOpener=document.activeElement;
   if(!credentialDialog){
    credentialDialog=document.createElement('dialog');credentialDialog.id='jarvis-credential-dialog';credentialDialog.className='jarvis-credential-dialog';credentialDialog.setAttribute('aria-labelledby','credential-title');credentialDialog.setAttribute('data-lenis-prevent','');
    const top=document.createElement('div');top.className='credential-top';const title=document.createElement('h2');title.id='credential-title';const close=document.createElement('button');close.type='button';close.textContent='×';close.setAttribute('aria-label',life.close);close.addEventListener('click',()=>credentialDialog.close());top.append(title,close);
@@ -35,21 +36,26 @@
   const file=credentialFiles[kind];
   if(file?.src){const link=document.createElement('a');link.href=file.src;link.target='_blank';link.rel='noopener';link.textContent=life.view;if(file.type==='image'){const image=document.createElement('img');image.src=file.src;image.alt=detail.textContent;body.append(image);}body.append(link);}
   else{const pending=document.createElement('p');pending.className='credential-pending';pending.textContent=life.pending;body.append(pending);}
-  credentialDialog.showModal();document.body.classList.add('credential-open');
+  if(!credentialDialog.open){credentialDialog.showModal();document.body.classList.add('credential-open');}credentialDialog.scrollTop=0;
  }
  function japan(row){
-  const content=row.querySelector('.framer-1q1tzeh');if(!content||content.querySelector('.jarvis-japan-study'))return;
-  const study=document.createElement('div');study.className='jarvis-japan-study';const intro=document.createElement('p');intro.textContent=life.lead;study.append(intro);
-  for(const [kind,label]of [['graduation',life.degree],['scholarship',life.award]]){const button=document.createElement('button');button.type='button';button.className='jarvis-credential-link';button.dataset.credential=kind;button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',label+' · '+life.view);const strong=document.createElement('strong');strong.textContent=label;button.append(strong);button.addEventListener('click',()=>credential(kind));study.append(button);}
-  content.append(study);
+  row.querySelector('.jarvis-japan-study')?.remove();
+  const paragraph=row.querySelector('.framer-iycs1n p');if(!paragraph||paragraph.querySelector('.jarvis-inline-proof'))return;
+  const parts={
+   'zh-Hant':['在日本生活六年，經營餐飲、校園店面、外送品牌、客製電腦與電商事業；','国士舘大学経営学部畢業','，並','連續三年獲獎學金，累計100萬日圓','。'],
+   en:['Over six years in Japan, I built and ran food businesses, a campus shop, delivery brands, custom PC assembly, and e-commerce ventures; I ','graduated from Kokushikan University’s Faculty of Business Administration',' and received ','scholarships for three consecutive years, totaling ¥1,000,000','.'],
+   ja:['日本で6年間生活し、飲食店、大学内の店舗、デリバリーブランド、カスタムPC組み立て、EC事業を経営。','国士舘大学経営学部を卒業','し、','3年連続で奨学金を受給（累計100万円）','しました。']
+  }[locale];
+  paragraph.classList.add('jarvis-japan-summary');paragraph.replaceChildren(document.createTextNode(parts[0]));
+  [['graduation',parts[1]],['scholarship',parts[3]]].forEach(([kind,label],i)=>{if(i)paragraph.append(document.createTextNode(parts[2]));const button=document.createElement('button');button.type='button';button.className='jarvis-credential-link jarvis-inline-proof';button.dataset.credential=kind;button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',label+' · '+life.view);const strong=document.createElement('strong');strong.textContent=label;button.append(strong);button.addEventListener('click',()=>credential(kind));paragraph.append(button);});paragraph.append(document.createTextNode(parts[4]));
  }
  function places(template){
   const container=template.parentElement.parentElement;
   life.places.forEach((place,i)=>{
    if(container.querySelector('[data-jarvis-place="'+i+'"]'))return;
-   const wrapper=template.parentElement.cloneNode(true),row=wrapper.querySelector('.framer-WLFa2');wrapper.dataset.jarvisPlace=String(i);wrapper.classList.add('jarvis-added-place');row.dataset.jarvisPlace=String(i);
-   wrapper.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));wrapper.querySelectorAll('.jarvis-japan-study').forEach(e=>e.remove());
-   set(row.querySelector('.framer-j6yv7y p'),String(i+4).padStart(2,'0'));set(row.querySelector('.framer-1b2crsy p'),place[0]);set(row.querySelector('h4'),place[1]);set(row.querySelector('.framer-iycs1n p'),place[2]);const location=row.querySelector('.framer-1dwlxmp');location.querySelectorAll('p').forEach((e,n)=>set(e,n===0?place[3]:''));set(row.querySelector('.framer-1hgww3v p'),ui.abroad);
+   const wrapper=template.parentElement.cloneNode(true),row=wrapper.querySelector('.framer-WLFa2');wrapper.dataset.jarvisPlace=String(i);wrapper.classList.add('jarvis-added-place','jarvis-ordered-place');row.dataset.jarvisPlace=String(i);
+   wrapper.querySelectorAll('.jarvis-japan-summary').forEach(e=>e.classList.remove('jarvis-japan-summary'));wrapper.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));wrapper.querySelectorAll('.jarvis-japan-study').forEach(e=>e.remove());
+   set(row.querySelector('.framer-j6yv7y p'),i===0?'03':'01');set(row.querySelector('.framer-1b2crsy p'),place[0]);set(row.querySelector('h4'),place[1]);set(row.querySelector('.framer-iycs1n p'),place[2]);const location=row.querySelector('.framer-1dwlxmp');location.querySelectorAll('p').forEach((e,n)=>set(e,n===0?place[3]:''));set(row.querySelector('.framer-1hgww3v p'),ui.abroad);
    container.append(wrapper);
   });
  }
@@ -76,9 +82,26 @@
   experience.querySelectorAll('.framer-WLFa2:not([data-jarvis-place])').forEach((row,i)=>{
    if(i===0){set(row.querySelector('.framer-1b2crsy p'),ui.period);japan(row);places(row);}
    set(row.querySelector('.framer-1hgww3v p'),ui.abroad);
+   row.parentElement.classList.add('jarvis-ordered-place');row.parentElement.style.order=String(i===0?2:i===1?4:5);set(row.querySelector('.framer-j6yv7y p'),i===0?'02':i===1?'04':'05');
    const title=row.querySelector('h4');if(title)set(title,title.textContent.trim());
    const location=row.querySelector('.framer-1dwlxmp');if(location){const ps=location.querySelectorAll('p');set(ps[0],i===0?'Tokyo, Japan':'Phoenix, Arizona');for(const p of [...ps].slice(1))set(p,'');}
   });
+  experience.querySelectorAll('.jarvis-added-place').forEach(wrapper=>wrapper.style.order=wrapper.dataset.jarvisPlace==='1'?'1':'3');
+
+  const originals=[...experience.querySelectorAll('.framer-WLFa2:not([data-jarvis-place])')];
+  const cebu=experience.querySelector('.jarvis-added-place[data-jarvis-place="0"]'),taiwan=experience.querySelector('.jarvis-added-place[data-jarvis-place="1"]');
+  if(originals.length===3&&cebu&&taiwan){
+   const ordered=[taiwan,originals[0].parentElement,cebu,...originals.slice(1).map(row=>row.parentElement)],container=originals[0].parentElement.parentElement;
+   const current=[...container.children].filter(e=>e.querySelector('.framer-WLFa2'));
+   if(ordered.some((e,i)=>current[i]!==e))ordered.forEach(e=>container.append(e));
+  }
+  for(const row of experience.querySelectorAll('.framer-WLFa2')){
+   const location=row.querySelector('.framer-1dwlxmp');if(!location)continue;
+   const place=location.querySelector('p')?.textContent||'';
+   const [symbol,label]=place.includes('Japan')?['jp','Japan']:place.includes('Philippines')?['ph','Philippines']:place==='Taiwan'?['tw','Taiwan']:['us','United States'];
+   let flag=location.querySelector('.jarvis-place-flag');if(!flag){flag=document.createElement('div');flag.className='jarvis-place-flag';flag.setAttribute('role','img');location.append(flag);}
+   let image=flag.querySelector('img');if(!image){flag.replaceChildren();image=document.createElement('img');image.alt='';image.width=28;image.height=19;flag.append(image);}const url='/assets/flags/'+symbol+'.svg';if(image.getAttribute('src')!==url)image.setAttribute('src',url);flag.setAttribute('aria-label',label);flag.title=label;
+  }
   const summary=experience.querySelector('[data-framer-name="Summary"]');if(summary){set(summary.querySelector('.framer-12d458h p'),ui.abroad);cv(summary);}
   center();
  }
