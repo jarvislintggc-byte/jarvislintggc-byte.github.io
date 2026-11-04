@@ -45,3 +45,39 @@
 .jarvis-cv small{color:#bcbcb5}
 .jarvis-cv button:disabled{opacity:.8}
 .jarvis-cv li>a:hover{background:#2a2a28}
+
+#experience .jarvis-japan-study{display:flex;flex-direction:column;align-items:flex-start;gap:9px;margin-top:14px;width:100%;min-width:0}
+#experience .jarvis-japan-study p{font:500 15px/1.6 Urbanist,Arial,sans-serif;margin:0}
+.jarvis-credential-link{display:block;max-width:100%;padding:4px 0;border:0;border-bottom:1px dashed currentColor;background:transparent;color:#111;font:700 15px/1.6 Urbanist,Arial,sans-serif;text-align:left;cursor:pointer;overflow-wrap:anywhere;animation:jarvis-certificate-hop 3.8s ease-in-out infinite;transform-origin:left center}
+.jarvis-credential-link+ .jarvis-credential-link{animation-delay:.3s}
+.jarvis-credential-link strong{font-weight:800}
+.jarvis-credential-link:hover{color:#b94d32;animation-play-state:paused}
+.jarvis-credential-link:focus-visible{outline:2px solid #b94d32;outline-offset:4px}
+@keyframes jarvis-certificate-hop{0%,72%,100%{transform:translateY(0)}78%{transform:translateY(-4px) rotate(-.5deg)}84%{transform:translateY(0)}90%{transform:translateY(-2px)}}
+#experience .jarvis-added-place{height:auto!important;min-width:0;width:100%!important}
+#experience .jarvis-added-place [style]{opacity:1!important;transform:none!important}
+body.credential-open{overflow:hidden}
+#jarvis-credential-dialog{box-sizing:border-box;width:min(720px,calc(100% - 32px));max-height:88dvh;margin:auto;padding:0;overflow:auto;overscroll-behavior:contain;border:1px solid #d9dbd0;border-radius:18px;background:#f5f2ea;color:#28332d;box-shadow:0 30px 100px #0003;font:16px/1.8 Urbanist,Arial,sans-serif}
+#jarvis-credential-dialog::backdrop{background:#1b251f99;backdrop-filter:blur(5px)}
+.credential-top{position:sticky;top:0;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 26px;background:#111;color:#faf7f3}
+.credential-top h2{margin:0;font:700 23px/1.4 Urbanist,Arial,sans-serif}
+.credential-top button{flex-shrink:0;width:42px;height:42px;border:0;border-radius:12px;background:#faf7f3;color:#111;font:28px/1 Arial,sans-serif;cursor:pointer}
+.credential-body{padding:26px}
+.credential-body p{margin:0 0 18px}
+.credential-body img{display:block;max-width:100%;height:auto;margin-bottom:20px}
+.credential-body a{color:inherit;text-underline-offset:4px}
+.credential-pending{border:1px dashed #bbbfb2;border-radius:12px;padding:28px 20px;text-align:center;color:#6d746d}
+body:has(#jarvis-credential-dialog[open]) #jarvis-global-dock{opacity:0;visibility:hidden;pointer-events:none}
+@media(max-width:809px){#experience .jarvis-added-place .framer-WLFa2{height:auto!important;min-height:0}#experience .jarvis-japan-study p,.jarvis-credential-link{font-size:14px}.credential-top{padding:16px}.credential-top h2{font-size:19px}.credential-body{padding:20px}}
+@media(prefers-reduced-motion:reduce){.jarvis-credential-link{animation:none}}
+
+@media(max-width:809px){
+ #experience .jarvis-added-place .framer-WLFa2{display:grid!important;grid-template-columns:26px minmax(0,1fr)!important;gap:12px 14px!important;padding:24px 0!important;align-items:start!important}
+ #experience .jarvis-added-place .framer-j6yv7y{grid-column:1;grid-row:1;width:auto!important}
+ #experience .jarvis-added-place .framer-1q1tzeh{grid-column:2;grid-row:1;width:100%!important;gap:12px!important}
+ #experience .jarvis-added-place .framer-1q1tzeh>div{width:100%!important}
+ #experience .jarvis-added-place .framer-1dwlxmp{grid-column:2;width:100%!important;padding:0!important;align-items:flex-start!important}
+ #experience .jarvis-added-place .framer-1hgww3v{grid-column:2;width:max-content!important;max-width:100%;padding:7px 10px!important;justify-self:start}
+ #experience .jarvis-added-place h4{font-size:22px!important;line-height:1.3!important;white-space:normal!important}
+ #experience .jarvis-added-place .framer-iycs1n p{font-size:15px!important;line-height:1.6!important;white-space:normal!important}
+}
