@@ -54,7 +54,7 @@
 .jarvis-credential-link:hover{color:#b94d32;animation-play-state:paused}
 .jarvis-credential-link:focus-visible{outline:2px solid #b94d32;outline-offset:4px}
 @keyframes jarvis-certificate-hop{0%,72%,100%{transform:translateY(0)}78%{transform:translateY(-4px) rotate(-.5deg)}84%{transform:translateY(0)}90%{transform:translateY(-2px)}}
-#experience .jarvis-added-place{height:auto!important;min-width:0;width:100%!important}
+#experience .jarvis-added-place{opacity:1!important;transform:none!important;height:auto!important;min-width:0;width:100%!important}
 #experience .jarvis-added-place [style]{opacity:1!important;transform:none!important}
 body.credential-open{overflow:hidden}
 #jarvis-credential-dialog{box-sizing:border-box;width:min(720px,calc(100% - 32px));max-height:88dvh;margin:auto;padding:0;overflow:auto;overscroll-behavior:contain;border:1px solid #d9dbd0;border-radius:18px;background:#f5f2ea;color:#28332d;box-shadow:0 30px 100px #0003;font:16px/1.8 Urbanist,Arial,sans-serif}
