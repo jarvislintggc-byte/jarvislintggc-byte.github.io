@@ -50,3 +50,7 @@ body{position:relative;isolation:isolate}
 body > .ink-atmosphere{position:fixed;z-index:2;inset:0;mix-blend-mode:multiply}
 body .life-journey,body .journey-stage,body .journey-stage:before{background-color:#f4f3ef}
 body .journey-stage:before{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.033' filter='url(%23n)'/%3E%3C/svg%3E");background-blend-mode:multiply}
+
+/* Match the My Story introduction and game prologue on one paper surface. */
+body.page-my-story,body.page-my-story .story-empty,body.page-my-story .life-journey,body.page-my-story .journey-stage,body.page-my-story .journey-stage:before{background-color:var(--paper,#f5f2ea)}
+body.page-my-story .journey-stage:before{background-image:none}
