@@ -36,3 +36,12 @@
 .jarvis-cv{margin-top:0}
 .jarvis-cv summary{width:180px;max-width:100%;box-sizing:border-box;background:#111;color:#faf7f3;font-size:12px;font-weight:600;text-transform:uppercase}
 @media(max-width:809px){.jarvis-cv summary{width:100%}}
+
+/* Remove table labels and match the global black navigation. */
+#experience [data-framer-name="Table Head"]{display:none!important}
+.jarvis-cv summary{border-radius:14px;border-color:#111;padding:16px 18px}
+.jarvis-cv ul{background:#111;color:#faf7f3;border-color:#111;border-radius:18px;padding:10px;box-shadow:0 16px 36px #0003}
+.jarvis-cv li>*{border-radius:10px;padding:13px 12px}
+.jarvis-cv small{color:#bcbcb5}
+.jarvis-cv button:disabled{opacity:.8}
+.jarvis-cv li>a:hover{background:#2a2a28}

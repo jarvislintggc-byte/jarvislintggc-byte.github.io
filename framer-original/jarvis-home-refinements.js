@@ -34,10 +34,11 @@
   const head=experience.querySelector('[data-framer-name="Table Head"]');if(head){set(head.children[2]?.querySelector('p'),ui.location);set(head.children[3]?.querySelector('p'),ui.abroad);}
   experience.querySelectorAll('.framer-WLFa2').forEach((row,i)=>{
    if(i===0)set(row.querySelector('.framer-1b2crsy p'),ui.period);
+   set(row.querySelector('.framer-1hgww3v p'),ui.abroad);
    const title=row.querySelector('h4');if(title)set(title,title.textContent.trim());
    const location=row.querySelector('.framer-1dwlxmp');if(location){const ps=location.querySelectorAll('p');set(ps[0],i===0?'Tokyo, Japan':'Phoenix, Arizona');for(const p of [...ps].slice(1))set(p,'');}
   });
-  const summary=experience.querySelector('[data-framer-name="Summary"]');if(summary)cv(summary);
+  const summary=experience.querySelector('[data-framer-name="Summary"]');if(summary){set(summary.querySelector('.framer-12d458h p'),ui.abroad);cv(summary);}
   center();
  }
  function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;update();});}
