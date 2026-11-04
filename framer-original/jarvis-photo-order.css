@@ -10,3 +10,9 @@
 #main main.framer-1n1z6hi>.framer-vhlkdt{order:1}
 #main main.framer-1n1z6hi>.framer-jhjn7z{order:2}
 #main #experience{order:4}
+
+/* Rotating exploration cards must not change the mobile document width. Clip outside paint without creating a new vertical scroll container. */
+@media(max-width:809px){
+ #main{overflow-x:clip}
+ #main .framer-1kefqrt-container{width:100%!important;max-width:100%;min-width:0;overflow:clip}
+}
