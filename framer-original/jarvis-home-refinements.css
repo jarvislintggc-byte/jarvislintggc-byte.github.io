@@ -106,3 +106,10 @@ body:has(#jarvis-credential-dialog[open]) #jarvis-global-dock{opacity:0;visibili
 
 /* Hide the exported builder badge on the personal site. */
 #__framer-badge-container,.__framer-badge{display:none!important}
+
+.credential-body figure{margin:24px 0 32px}
+.credential-body figure img{width:100%;max-height:70dvh;object-fit:contain;background:#fff;margin:0}
+.credential-body figcaption{margin-top:10px;font-size:13px;line-height:1.6;color:#6d746d}
+.jarvis-heading-proof{display:inline;border:0;border-bottom:1px dashed currentColor;padding:0;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;text-align:inherit;cursor:pointer}
+.jarvis-heading-proof:hover{color:#b94d32}
+.jarvis-heading-proof:focus-visible{outline:2px solid #b94d32;outline-offset:4px}

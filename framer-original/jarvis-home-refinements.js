@@ -21,7 +21,7 @@
  }[locale];
 
  let credentialFiles={graduation:null,scholarship:null},credentialDialog,credentialOpener;
- fetch('/credentials.json?v=1').then(r=>r.ok?r.json():{}).then(data=>credentialFiles=data).catch(()=>{});
+ fetch('/credentials.json?v=2').then(r=>r.ok?r.json():{}).then(data=>credentialFiles=data).catch(()=>{});
  function credential(kind){
   if(!credentialDialog?.open)credentialOpener=document.activeElement;
   if(!credentialDialog){
@@ -30,11 +30,12 @@
    const body=document.createElement('div');body.className='credential-body';credentialDialog.append(top,body);document.body.append(credentialDialog);
    credentialDialog.addEventListener('close',()=>{document.body.classList.remove('credential-open');credentialOpener?.focus({preventScroll:true});});
   }
-  credentialDialog.querySelector('h2').textContent=kind==='graduation'?life.degreeTitle:life.awardTitle;
+  const extra={asu:{'zh-Hant':['ASU 供應鏈管理碩士','W. P. Carey School of Business'],'en':['ASU · Master of Science','Supply Chain Management · W. P. Carey School of Business'],ja:['ASU サプライチェーンマネジメント修士','W. P. Carey School of Business']},cebu:{'zh-Hant':['宿霧 · CPILS','Intensive IELTS 課程結業證書'],en:['Cebu · CPILS','Intensive IELTS course completion certificate'],ja:['セブ · CPILS','Intensive IELTSコース 修了証書']}}[kind]?.[locale];
+  credentialDialog.querySelector('h2').textContent=extra?extra[0]:kind==='graduation'?life.degreeTitle:life.awardTitle;
   const body=credentialDialog.querySelector('.credential-body');body.replaceChildren();
-  const detail=document.createElement('p');detail.textContent=kind==='graduation'?life.degreeDetail:life.awardDetail;body.append(detail);
-  const file=credentialFiles[kind];
-  if(file?.src){const link=document.createElement('a');link.href=file.src;link.target='_blank';link.rel='noopener';link.textContent=life.view;if(file.type==='image'){const image=document.createElement('img');image.src=file.src;image.alt=detail.textContent;body.append(image);}body.append(link);}
+  const detail=document.createElement('p');detail.textContent=extra?extra[1]:kind==='graduation'?life.degreeDetail:life.awardDetail;body.append(detail);
+  const entry=credentialFiles[kind],files=entry?.files||(entry?.src?[entry]:[]);
+  if(files.length){for(const file of files){const caption=file.caption?.[locale]||detail.textContent;const figure=document.createElement('figure'),link=document.createElement('a'),image=document.createElement('img'),label=document.createElement('figcaption');link.href=file.src;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label',caption+' · '+life.view);image.src=file.src;image.alt=caption;image.decoding='async';label.textContent=caption;link.append(image);figure.append(link,label);body.append(figure);}}
   else{const pending=document.createElement('p');pending.className='credential-pending';pending.textContent=life.pending;body.append(pending);}
   if(!credentialDialog.open){credentialDialog.showModal();document.body.classList.add('credential-open');}credentialDialog.scrollTop=0;
  }
@@ -48,6 +49,10 @@
   }[locale];
   paragraph.classList.add('jarvis-japan-summary');paragraph.replaceChildren(document.createTextNode(parts[0]));
   [['graduation',parts[1]],['scholarship',parts[3]]].forEach(([kind,label],i)=>{if(i)paragraph.append(document.createTextNode(parts[2]));const button=document.createElement('button');button.type='button';button.className='jarvis-credential-link jarvis-inline-proof';button.dataset.credential=kind;button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',label+' · '+life.view);const strong=document.createElement('strong');strong.textContent=label;button.append(strong);button.addEventListener('click',()=>credential(kind));paragraph.append(button);});paragraph.append(document.createTextNode(parts[4]));
+ }
+ function credentialHeading(row,kind){
+  const heading=row.querySelector('h4');if(!heading||heading.querySelector('[data-credential]'))return;
+  const button=document.createElement('button');button.type='button';button.className='jarvis-heading-proof';button.dataset.credential=kind;button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',heading.textContent.trim()+' · '+life.view);button.textContent=heading.textContent.trim();button.addEventListener('click',()=>credential(kind));heading.replaceChildren(button);
  }
  function places(template){
   const container=template.parentElement.parentElement;
@@ -80,13 +85,13 @@
   experience.querySelectorAll('.framer-q7h972>div').forEach((block,i)=>{if(i>2)return;const ps=block.querySelectorAll('p');set(ps[0],numbers[i]);set(ps[ps.length-1],ui.stats[i]);ps[0]?.classList.add('jarvis-stat-value');});
   const head=experience.querySelector('[data-framer-name="Table Head"]');if(head){set(head.children[2]?.querySelector('p'),ui.location);set(head.children[3]?.querySelector('p'),ui.abroad);}
   experience.querySelectorAll('.framer-WLFa2:not([data-jarvis-place])').forEach((row,i)=>{
-   if(i===0){set(row.querySelector('.framer-1b2crsy p'),ui.period);japan(row);places(row);}
+   if(i===0){set(row.querySelector('.framer-1b2crsy p'),ui.period);japan(row);places(row);}if(i===1)credentialHeading(row,'asu');
    set(row.querySelector('.framer-1hgww3v p'),ui.abroad);
    row.parentElement.classList.add('jarvis-ordered-place');row.parentElement.style.order=String(i===0?2:i===1?4:5);set(row.querySelector('.framer-j6yv7y p'),i===0?'02':i===1?'04':'05');
    const title=row.querySelector('h4');if(title)set(title,title.textContent.trim());
    const location=row.querySelector('.framer-1dwlxmp');if(location){const ps=location.querySelectorAll('p');set(ps[0],i===0?'Tokyo, Japan':'Phoenix, Arizona');for(const p of [...ps].slice(1))set(p,'');}
   });
-  experience.querySelectorAll('.jarvis-added-place').forEach(wrapper=>wrapper.style.order=wrapper.dataset.jarvisPlace==='1'?'1':'3');
+  experience.querySelectorAll('.jarvis-added-place').forEach(wrapper=>{wrapper.style.order=wrapper.dataset.jarvisPlace==='1'?'1':'3';if(wrapper.dataset.jarvisPlace==='0')credentialHeading(wrapper,'cebu');});
 
   const originals=[...experience.querySelectorAll('.framer-WLFa2:not([data-jarvis-place])')];
   const cebu=experience.querySelector('.jarvis-added-place[data-jarvis-place="0"]'),taiwan=experience.querySelector('.jarvis-added-place[data-jarvis-place="1"]');
