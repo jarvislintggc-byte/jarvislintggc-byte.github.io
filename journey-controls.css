@@ -1,0 +1,19 @@
+.journey-auto-speed{display:grid;grid-template-columns:0fr;opacity:0;transform:translateX(-8px);transition:grid-template-columns .26s ease,opacity .2s ease,transform .26s ease;pointer-events:none;min-width:0}
+.journey-auto-speed.is-open{grid-template-columns:1fr;opacity:1;transform:translateX(0);pointer-events:auto}
+.journey-stage .life-game .journey-auto-speed .story-speed{position:static!important;inset:auto!important;z-index:auto;display:flex;align-items:center;gap:5px;min-width:0;overflow:hidden;margin:0;padding:0;border:0;background:transparent;box-shadow:none;white-space:nowrap;font:12px/1.4 var(--sans,Arial,sans-serif)}
+.journey-stage .life-game .journey-auto-speed .story-speed button{flex-shrink:0;min-width:38px;min-height:36px;padding:6px 7px;border:0;border-radius:7px;background:transparent;color:#687261;font:inherit;cursor:pointer;box-shadow:none}
+.journey-stage .life-game .journey-auto-speed .story-speed button[aria-pressed=true]{background:#e1e5d9;color:#28332d;font-weight:700}
+.journey-stage .life-game #settings-speed-row{display:none!important}
+#settings-toggle>span{display:none!important}
+#settings-toggle svg{width:23px;height:23px}
+@media(max-width:760px){
+ .journey-stage .life-game .game-brand{position:relative}
+ .journey-auto-speed{position:absolute;left:46px;top:calc(100% + 13px);z-index:65;max-width:calc(100vw - 90px);border-radius:10px;background:#f5f2ea;box-shadow:0 4px 14px #0002}
+ .journey-auto-speed:not(.is-open){visibility:hidden}
+ .journey-stage .life-game .journey-auto-speed.is-open .story-speed{padding:4px 6px}
+}
+@media(prefers-reduced-motion:reduce){.journey-auto-speed{transition:none;transform:none}}
+.journey-auto-speed{order:2}
+@media(max-width:760px){.journey-auto-speed{width:154px}}
+@media(max-width:760px){.journey-stage .life-game .game-toolbar #mobile-auto{position:absolute;left:0;top:calc(100% + 20px);z-index:65}.journey-auto-speed{left:70px;top:calc(100% + 20px)}}
+@media(max-width:760px){.journey-stage .life-game .game-toolbar #mobile-auto,.journey-auto-speed{top:64px}}
