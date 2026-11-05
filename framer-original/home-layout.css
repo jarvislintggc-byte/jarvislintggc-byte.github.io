@@ -1,0 +1,62 @@
+/* Only the two ornaments and the Experiences block requested in the PDF. */
+#hero-section .framer-12f4eb2,#hero-section .framer-v9grtb{display:none!important}
+.framer-zrw9y0>.framer-1ut795m{display:none!important}
+.framer-zrw9y0{width:min(1376px,calc(100vw - 104px))!important;max-width:calc(100vw - 40px)!important;min-width:0!important;align-self:center}
+.jarvis-experience-carousel{width:100%;min-width:0;padding:26px 0 35px;color:#171715;font-family:Inter,Arial,sans-serif}
+.jarvis-carousel-heading{display:flex;align-items:start;justify-content:space-between;gap:60px;margin-bottom:40px;text-align:left}
+.jarvis-carousel-heading h3{margin:0;font-size:clamp(30px,3.2vw,48px);font-weight:500;line-height:1.18;letter-spacing:-.045em}
+.jarvis-carousel-heading h3 span{color:#797975}
+.jarvis-carousel-heading p{font-size:16px;line-height:1.7;margin:5px 0 0;max-width:30ch;color:#66665f}
+.jarvis-carousel-track{display:flex;gap:20px;overflow-x:auto;overflow-y:hidden;width:100%;max-width:100%;min-width:0;box-sizing:border-box;padding:8px 0 28px;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:#a3a19a transparent;cursor:grab;overscroll-behavior-x:contain;touch-action:pan-x pan-y;contain:inline-size}
+.jarvis-carousel-track.is-dragging{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.jarvis-carousel-track a{display:block;flex:0 0 clamp(240px,24vw,340px);height:280px;border-radius:14px;overflow:hidden;scroll-snap-align:start;background:#e7e6df;user-select:none;-webkit-user-drag:none}
+.jarvis-carousel-track a:nth-child(even){margin-top:28px}
+.jarvis-carousel-track img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.jarvis-carousel-track:focus-visible,.jarvis-carousel-track a:focus-visible{outline:2px solid #544d3b;outline-offset:5px}
+@media(max-width:809px){.framer-zrw9y0{width:calc(100vw - 40px)!important}.jarvis-experience-carousel{padding-top:15px}.jarvis-carousel-heading{display:block;margin-bottom:25px}.jarvis-carousel-heading h3{font-size:32px}.jarvis-carousel-heading p{font-size:14px;margin-top:20px;max-width:35ch}.jarvis-carousel-track{gap:15px}.jarvis-carousel-track a{flex-basis:250px;height:240px}}
+@media(prefers-reduced-motion:reduce){.jarvis-carousel-track{scroll-behavior:auto}}
+
+/* Remove the redundant footer link row, retain logo and credits. */
+footer .framer-11w1mys{display:none!important}
+/* Only the moving gray thumb is visible. */
+.jarvis-carousel-track,.jarvis-photo-row{scrollbar-color:#999993 transparent}
+@supports selector(::-webkit-scrollbar){
+ .jarvis-carousel-track,.jarvis-photo-row{scrollbar-width:auto!important}
+ .jarvis-carousel-track::-webkit-scrollbar,.jarvis-photo-row::-webkit-scrollbar{height:6px;background:transparent}
+ .jarvis-carousel-track::-webkit-scrollbar-track,.jarvis-photo-row::-webkit-scrollbar-track{background:transparent;border:0;box-shadow:none}
+ .jarvis-carousel-track::-webkit-scrollbar-thumb,.jarvis-photo-row::-webkit-scrollbar-thumb{background:#999993;border-radius:10px}
+ .jarvis-carousel-track::-webkit-scrollbar-button,.jarvis-photo-row::-webkit-scrollbar-button{display:none;width:0;height:0}
+ .jarvis-carousel-track::-webkit-scrollbar-corner,.jarvis-photo-row::-webkit-scrollbar-corner{background:transparent}
+}
+
+/* Experience category navigation. */
+.jarvis-carousel-track a{position:relative}
+.jarvis-category-caption{position:absolute;inset:auto 0 0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:40px 18px 18px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:white;font-size:21px;font-weight:500;letter-spacing:-.025em}
+.jarvis-category-caption>span:last-child{font-size:16px;font-variant-numeric:tabular-nums}
+
+/* Keep the photo heading and gallery together below My Experiences. */
+#main main.framer-1n1z6hi>section.framer-lcc4ld{order:3}
+#main main.framer-1n1z6hi>section.framer-9pnuil{order:4}
+#main main.framer-1n1z6hi>section.framer-ymuz9f{order:5}
+#main main.framer-1n1z6hi>section.framer-141no99{order:6}
+
+/* The original Experiences section is a sibling of main. Flatten its layout box so Photos can follow it. */
+#main main.framer-1n1z6hi{display:contents!important}
+#main .framer-86kkr>*,#main .framer-RzDLJ>*{order:10}
+#main main.framer-1n1z6hi>.framer-vhlkdt{order:1}
+#main main.framer-1n1z6hi>.framer-jhjn7z{order:2}
+#main #experience{order:4}
+
+/* Rotating exploration cards must not change the mobile document width. Clip outside paint without creating a new vertical scroll container. */
+@media(max-width:809px){
+ #main{overflow-x:clip}
+ #main .framer-1kefqrt-container{width:100%!important;max-width:100%;min-width:0;overflow:clip}
+}
+
+.jarvis-article-marquee{position:relative;scroll-snap-type:none!important;scroll-behavior:auto;min-height:300px}
+.jarvis-article-marquee .jarvis-category-caption{flex-direction:column;align-items:flex-start;gap:8px;font-size:20px;line-height:1.35}
+.jarvis-article-marquee .jarvis-category-caption small{font-size:11px;letter-spacing:.06em;font-weight:400}
+.jarvis-article-marquee .jarvis-marquee-card{flex-shrink:0}
+body:has(#note-dialog.jarvis-home-article[open]){overflow:hidden}
+
+footer .framer-15xojo2,footer .framer-1jc8bad{display:none!important}

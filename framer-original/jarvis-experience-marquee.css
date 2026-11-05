@@ -1,5 +1,0 @@
-.jarvis-article-marquee{position:relative;scroll-snap-type:none!important;scroll-behavior:auto;min-height:300px}
-.jarvis-article-marquee .jarvis-category-caption{flex-direction:column;align-items:flex-start;gap:8px;font-size:20px;line-height:1.35}
-.jarvis-article-marquee .jarvis-category-caption small{font-size:11px;letter-spacing:.06em;font-weight:400}
-.jarvis-article-marquee .jarvis-marquee-card{flex-shrink:0}
-body:has(#note-dialog.jarvis-home-article[open]){overflow:hidden}

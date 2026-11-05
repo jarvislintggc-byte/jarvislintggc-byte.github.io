@@ -61,7 +61,7 @@
   if(lastOpen){lastOpen=false;trigger.focus({preventScroll:true});}
  }
  function schedule(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;refresh();});}
- new MutationObserver(schedule).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['open','lang']});
+ new MutationObserver(schedule).observe(document.documentElement,{subtree:true,attributes:true,attributeFilter:['open','lang']});
  menu.addEventListener('close',refresh);
  menu.addEventListener('click',event=>{
   if(event.target!==menu)return;
@@ -75,5 +75,5 @@
  });
  refresh();
  // Reuse the existing focus, navigation, Escape, and game-pause contract.
- const controller=document.createElement('script');controller.src='/navigation.js?v=global-dock-1';document.body.append(controller);
+ const controller=document.createElement('script');controller.src='/navigation.js?v=3e916b2ea3f82009';document.body.append(controller);
 })();

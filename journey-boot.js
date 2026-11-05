@@ -1,5 +1,10 @@
-// The whole game loads as one versioned module graph. Asset URLs stay cached.
-import('/runtime/journey.js?v=mobile-portal1').catch(error=>{
+// Prewarm the versioned game near its runway; the intro remains lightweight.
+(() => {
+let started=false,observer;
+function start(){
+ if(started)return;
+ started=true;observer?.disconnect();
+ import('/runtime/journey.js?v=3e916b2ea3f82009').catch(error=>{
   console.error('Journey could not initialize:',error);
   const stage=document.getElementById('journey-stage'),game=document.getElementById('life-game');
   if(!stage||!game)return;
@@ -15,4 +20,13 @@ import('/runtime/journey.js?v=mobile-portal1').catch(error=>{
     retry.type='button';retry.className='journey-retry';retry.textContent=japanese?'再読み込み':english?'Reload':'重新載入';retry.addEventListener('click',()=>location.reload());
     screen.setAttribute('role','alert');screen.replaceChildren(title,message,retry);
   }
-});
+ });
+}
+const runway=document.getElementById('journey-scroll');
+const direct=()=>{if(location.hash==='#journey-game')start();};
+if(runway&&typeof IntersectionObserver==='function'&&location.hash!=='#journey-game'){
+ observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting))start();},{rootMargin:'300px 0px'});
+ observer.observe(runway);
+}else start();
+if(typeof window!=='undefined')window.addEventListener('hashchange',direct);
+})();

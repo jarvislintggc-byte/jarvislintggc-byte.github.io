@@ -1,7 +1,7 @@
-import {surfaceY,floorAt} from './journey-terrain.mjs';
-import {npcScenes} from './journey-npc-scenes.mjs';
-import {npcArt} from './journey-npc-art.mjs';
-import {portalFrames} from './journey-sprites.mjs';
+import {surfaceY,floorAt} from './journey-terrain.mjs?v=3e916b2ea3f82009';
+import {npcScenes} from './journey-npc-scenes.mjs?v=3e916b2ea3f82009';
+import {npcArt} from './journey-npc-art.mjs?v=3e916b2ea3f82009';
+import {portalFrames} from './journey-sprites.mjs?v=3e916b2ea3f82009';
 
 export const npcSpriteScale=(art,mobile=false,training=false)=>Math.min(mobile?(training?.66:.82):1.15,(mobile?78:110)/Math.max(...art.poses.stand.map(f=>f.height)));
 

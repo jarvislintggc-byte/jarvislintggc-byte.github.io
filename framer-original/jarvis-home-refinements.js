@@ -21,7 +21,7 @@
  }[locale];
 
  let credentialFiles={graduation:null,scholarship:null},credentialDialog,credentialOpener;
- fetch('/credentials.json?v=2').then(r=>r.ok?r.json():{}).then(data=>credentialFiles=data).catch(()=>{});
+ fetch('/credentials.json?v=3e916b2ea3f82009').then(r=>r.ok?r.json():{}).then(data=>credentialFiles=data).catch(()=>{});
  function credential(kind){
   if(!credentialDialog?.open)credentialOpener=document.activeElement;
   if(!credentialDialog){
@@ -110,10 +110,9 @@
   const summary=experience.querySelector('[data-framer-name="Summary"]');if(summary){set(summary.querySelector('.framer-12d458h p'),ui.abroad);cv(summary);}
   center();
  }
- function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;update();});}
- new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});
- window.addEventListener('resize',schedule);window.addEventListener('load',schedule);
+ function schedule(){if(!window.JarvisHome.ready||queued)return;queued=true;requestAnimationFrame(()=>{queued=false;update();});}
+ window.JarvisHome.onReady(schedule);
+ window.addEventListener('resize',schedule);
  document.addEventListener('click',e=>{const menu=document.querySelector('.jarvis-cv[open]');if(menu&&!menu.contains(e.target))menu.open=false;});
- fetch('/home-profile.json?v=1').then(r=>{if(!r.ok)throw Error(r.status);return r.json();}).then(data=>{profile=data;document.querySelectorAll('.jarvis-cv').forEach(e=>e.remove());schedule();}).catch(()=>{});
- schedule();
+ fetch('/home-profile.json?v=3e916b2ea3f82009').then(r=>{if(!r.ok)throw Error(r.status);return r.json();}).then(data=>{profile=data;document.querySelectorAll('.jarvis-cv').forEach(e=>e.remove());schedule();}).catch(()=>{});
 })();

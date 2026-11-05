@@ -1,9 +1,9 @@
-import { receiveHit } from './journey-enemy.mjs';
-import { flatTerrain, supportAt, stepSupport, landingOn, nearbyRope } from './journey-terrain.mjs';
-import { impactTimes } from './journey-combat.mjs';
-import {castSpan} from './journey-skill-timing.mjs';
-export {experienceFor} from './journey-progression.mjs';
-export {attackReaches} from './journey-hitbox.mjs';
+import { receiveHit } from './journey-enemy.mjs?v=3e916b2ea3f82009';
+import { flatTerrain, supportAt, stepSupport, landingOn, nearbyRope } from './journey-terrain.mjs?v=3e916b2ea3f82009';
+import { impactTimes } from './journey-combat.mjs?v=3e916b2ea3f82009';
+import {castSpan} from './journey-skill-timing.mjs?v=3e916b2ea3f82009';
+export {experienceFor} from './journey-progression.mjs?v=3e916b2ea3f82009';
+export {attackReaches} from './journey-hitbox.mjs?v=3e916b2ea3f82009';
 export const playerPhases=['reading','encounter','portal','retiring','reward'];
 export const canMovePlayer=state=>playerPhases.includes(state.phase)||state.phase==='battle'&&state.bossHp===0;
 export const limits=rank=>({hp:100+Math.floor(rank/2)*20,mp:60+Math.floor(rank/2)*10});

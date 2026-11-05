@@ -1,5 +1,5 @@
-import {sampleFrames} from './journey-animation.mjs';
-import {setStyles} from './journey-render.mjs';
+import {sampleFrames} from './journey-animation.mjs?v=3e916b2ea3f82009';
+import {setStyles} from './journey-render.mjs?v=3e916b2ea3f82009';
 
 const horizontal = type => [1,3,4,6,7].includes(type);
 const vertical = type => [2,3,5,6,7].includes(type);

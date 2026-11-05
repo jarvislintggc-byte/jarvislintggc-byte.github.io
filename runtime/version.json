@@ -1,5 +1,5 @@
 {
-  "version": "4fdbcf09e75fc64a",
+  "version": "3e916b2ea3f82009",
   "entry": "journey.js",
   "modules": [
     "journey-animation.mjs",
@@ -33,6 +33,7 @@
     "journey-lock.mjs",
     "journey-map-objects-art.mjs",
     "journey-map-objects.mjs",
+    "journey-mobile-portal.mjs",
     "journey-mobility-art.mjs",
     "journey-mobility.mjs",
     "journey-monsters.mjs",
