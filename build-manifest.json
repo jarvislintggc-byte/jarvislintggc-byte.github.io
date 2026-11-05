@@ -1,5 +1,5 @@
 {
-  "version": "3e916b2ea3f82009",
+  "version": "ad78e35844627683",
   "inputs": [
     ".nojekyll",
     "app.js",
@@ -7408,6 +7408,7 @@
     "framer-original/assets/f2e5012bbcc824cd.jpg",
     "framer-original/assets/f5679bd140c345da.woff2",
     "framer-original/assets/f8bd57dac210787a.jpeg",
+    "framer-original/home-credentials.css",
     "framer-original/home-layout.css",
     "framer-original/jarvis-experience-marquee.js",
     "framer-original/jarvis-home-refinements.css",
