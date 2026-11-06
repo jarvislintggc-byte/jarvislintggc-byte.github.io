@@ -1,5 +1,5 @@
-import {tombstone} from './journey-death-art.mjs?v=6a8afb8402757530';
-import {sampleFrames,sequenceDuration} from './journey-animation.mjs?v=6a8afb8402757530';
+import {tombstone} from './journey-death-art.mjs?v=366635dd52fc9955';
+import {sampleFrames,sequenceDuration} from './journey-animation.mjs?v=366635dd52fc9955';
 export const tombstoneDuration=sequenceDuration(tombstone.fall)+sequenceDuration(tombstone.land);
 export function createDeathView(host,image,{asset,height,mobile}){
  return {render(time,x,reduced=false){
