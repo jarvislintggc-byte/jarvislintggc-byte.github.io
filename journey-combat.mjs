@@ -1,5 +1,5 @@
-import {ruleFor} from './journey-skill-rules.mjs?v=ad78e35844627683';
-import {castSpan,packetInterval} from './journey-skill-timing.mjs?v=ad78e35844627683';
+import {ruleFor} from './journey-skill-rules.mjs?v=6a8afb8402757530';
+import {castSpan,packetInterval} from './journey-skill-timing.mjs?v=6a8afb8402757530';
 // A single continuous clock for approach, original cast, recovery and departure.
 const clamp=value=>Math.max(0,Math.min(1,value));
 const smooth=value=>{const t=clamp(value);return t*t*(3-2*t);};
@@ -11,12 +11,12 @@ export function impactTimes(ability){
 export function combatPlan(ability,classId,casts=1,positions={}){
   const ranged=['mage','archer'].includes(classId)&&Boolean(ability);
   const startX=positions.startX??10,targetX=positions.targetX??64,facing=Math.sign(targetX-startX)||1;
-  const stationary=Boolean(positions.stationary),castX=stationary?startX:Math.max(5,Math.min(positions.maxX??94,targetX-facing*(ranged?21:8)));
+  const stationary=Boolean(positions.stationary),castX=positions.castX??(stationary?startX:Math.max(5,Math.min(positions.maxX??94,targetX-facing*(ranged?21:8))));
   const castDuration=ability?castSpan(ability)+75:1050;
   casts=casts===3?3:1;
   const recovery=140,activeDuration=castDuration*casts+recovery*(casts-1);
-  const approach=stationary?0:320,departure=stationary?0:360;
-  return {approach,castDuration,casts,recovery,activeDuration,departure,startX,targetX,facing,castX,stationary,total:approach+activeDuration+departure};
+  const approach=positions.approach??(stationary?0:320),departure=positions.doubleJump||stationary?0:360;
+  return {approach,castDuration,casts,recovery,activeDuration,departure,startX,targetX,facing,castX,stationary,doubleJump:positions.doubleJump,startY:positions.startY||0,total:approach+activeDuration+departure};
 }
 export function watchImpactTimes(ability,classId,casts=1,positions={}){
  const plan=combatPlan(ability,classId,casts,positions);
@@ -26,13 +26,18 @@ export function combatFrame(ability,classId,time,casts=1,positions={}){
   const plan=combatPlan(ability,classId,casts,positions),activeTime=time-plan.approach;
   const castIndex=Math.max(0,Math.min(plan.casts-1,Math.floor(activeTime/(plan.castDuration+plan.recovery))));
   const castTime=activeTime-castIndex*(plan.castDuration+plan.recovery);
-  if(time<plan.approach)return {x:plan.startX+(plan.castX-plan.startX)*smooth(time/plan.approach),facing:Math.sign(plan.castX-plan.startX)||plan.facing,pose:'walk',castTime:-1,hit:0};
+  if(time<plan.approach){
+    const t=clamp(time/plan.approach),second=t>=.32,u=(t-.32)/.68;
+    // The second impulse lifts the actor again without resetting its position.
+    const jump=second?70*(1-u)+360*u*(1-u):70*Math.sin(t/.32*Math.PI/2);
+    return {x:plan.startX+(plan.castX-plan.startX)*smooth(t),y:plan.startY*(1-t)+(plan.doubleJump?jump:0),facing:Math.sign(plan.castX-plan.startX)||plan.facing,pose:plan.doubleJump?'jump':'walk',phase:'approach',jumpStage:second?2:1,castTime:-1,hit:0};
+  }
   if(castTime<plan.castDuration){
     const impacts=impactTimes(ability);
     const hit=Math.max(0,...impacts.map(start=>{const t=(castTime-start)/180;return t>=0&&t<1?Math.sin(t*Math.PI):0;}));
     return {x:plan.castX,facing:plan.facing,pose:ability?'cast':castTime<750?'attack':'idle',castTime,castIndex,hit};
   }
   if(activeTime<plan.activeDuration)return {x:plan.castX,facing:plan.facing,pose:'idle',phase:'recovery',castTime:-1,castIndex,hit:0};
-  if(plan.stationary)return {x:plan.castX,facing:plan.facing,pose:'idle',castTime:-1,castIndex,hit:0};
+  if(plan.stationary||plan.doubleJump)return {x:plan.castX,facing:plan.facing,pose:'idle',castTime:-1,castIndex,hit:0};
   return {x:plan.castX+(plan.targetX-plan.castX)*smooth((activeTime-plan.activeDuration)/plan.departure),facing:plan.facing,pose:'walk',castTime:-1,castIndex,hit:0};
 }

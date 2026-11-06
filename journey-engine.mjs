@@ -1,8 +1,8 @@
-import { attackDamage, encounterHealth } from './journey-enemy.mjs?v=ad78e35844627683';
-import { jobById, skillRankFor } from './journey-growth.mjs?v=ad78e35844627683';
-import {petTeams} from './journey-pets.mjs?v=ad78e35844627683';
-import {levelFor} from './journey-progression.mjs?v=ad78e35844627683';
-import {ruleFor,splitDamage} from './journey-skill-rules.mjs?v=ad78e35844627683';
+import { attackDamage, encounterHealth } from './journey-enemy.mjs?v=6a8afb8402757530';
+import { jobById, skillRankFor } from './journey-growth.mjs?v=6a8afb8402757530';
+import {petTeams} from './journey-pets.mjs?v=6a8afb8402757530';
+import {levelFor} from './journey-progression.mjs?v=6a8afb8402757530';
+import {ruleFor,splitDamage} from './journey-skill-rules.mjs?v=6a8afb8402757530';
 const castRule=s=>ruleFor(s.castSkill?{id:jobById[s.classId].skillIds[skillRankFor(s.completed)-1]}:null);
 // Pure transition rules keep portal gating independent of animation/CSS timing.
 export function initialState(mode='watch') {
@@ -65,9 +65,9 @@ export function transition(state, event, chapters) {
     s.watchHits=packet+1;s.bossHp=packet===packets-1?0:Math.max(1,s.bossHp-splitDamage(s.watchStartHp??s.bossMaxHp,packets,packet));
   } else if (type === 'BEAT' && s.phase === 'battle'&&s.mode==='watch') {
     s.beat++;
-    if (s.beat >= 3) { s.phase = 'retiring'; s.characterX=Number.isFinite(event.targetX)?event.targetX:64;s.bossHp=0;s.defeated=Math.max(s.defeated||0,s.completed,s.chapter+1); }
+    if (s.beat >= 3) { s.phase = 'retiring'; s.characterX=Number.isFinite(event.targetX)?event.targetX:64;s.characterY=0;s.bossHp=0;s.defeated=Math.max(s.defeated||0,s.completed,s.chapter+1); }
   } else if (type === 'BOSS_EXITED' && s.phase === 'retiring') {
-    s.phase='reward'; s.rewardBeat=0;s.lootLanded=false;s.petLootReady=false;s.lootX=Number.isFinite(event.lootX)?Math.max(5,Math.min(Number.isFinite(event.maxX)?Math.max(94,event.maxX):94,event.lootX)):64;s.deathX=s.lootX;s.portalX=s.deathX;s.portalY=0; s.rewardNew=s.chapter >= s.completed;s.rewardLevelUp=false;
+    s.phase='reward'; s.rewardBeat=0;s.lootLanded=false;s.petLootReady=false;s.lootX=Number.isFinite(event.lootX)?Math.max(5,Math.min(Number.isFinite(event.maxX)?Math.max(94,event.maxX):94,event.lootX)):64;s.deathX=s.lootX; s.rewardNew=s.chapter >= s.completed;s.rewardLevelUp=false;
   } else if(type==='LOOT_LANDED'&&s.phase==='reward'&&s.rewardBeat===0&&!s.lootLanded){
     s.lootLanded=true;
   } else if(type==='PET_LOOT_REACHED'&&s.phase==='reward'&&s.rewardBeat===0&&s.lootLanded&&!s.petLootReady&&petTeams[s.classId]?.includes(event.petId)){

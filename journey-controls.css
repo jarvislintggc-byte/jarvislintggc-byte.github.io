@@ -20,3 +20,6 @@
 
 /* Mobile Auto now belongs to the right-hand toolbar, not the old floating tray. */
 @media(max-width:760px),(hover:none) and (pointer:coarse) and (max-width:1024px){.journey-stage .life-game .game-toolbar .game-tools #mobile-auto{position:static!important;inset:auto!important;transform:none!important}.journey-auto-speed{position:fixed;left:auto;right:12px;top:64px;z-index:65}}
+
+.journey-stage .life-game .game-toolbar #journey-settings[hidden]{display:none!important}
+.journey-stage .life-game .game-tools #game-sound{display:grid;place-items:center;width:36px;height:36px;min-width:36px;padding:7px;border:0;border-radius:50%;background:transparent;color:#586451;box-shadow:none}

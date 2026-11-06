@@ -75,5 +75,5 @@
  });
  refresh();
  // Reuse the existing focus, navigation, Escape, and game-pause contract.
- const controller=document.createElement('script');controller.src='/navigation.js?v=ad78e35844627683';document.body.append(controller);
+ const controller=document.createElement('script');controller.src='/navigation.js?v=6a8afb8402757530';document.body.append(controller);
 })();

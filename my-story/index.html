@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f2ea">
   <title>My story — Jarvis Lin</title>
-  <link rel="stylesheet" href="/styles.css?v=ad78e35844627683">
-  <link rel="stylesheet" href="/ink.css?v=ad78e35844627683">
-  <link rel="stylesheet" href="/navigation.css?v=ad78e35844627683">
-  <link rel="stylesheet" href="/pages.css?v=ad78e35844627683">
-  <link rel="stylesheet" href="/global-dock.css?v=ad78e35844627683">
-  <link rel="stylesheet" href="/article-dialog.css?v=ad78e35844627683">
-  <script src="/global-dock.js?v=ad78e35844627683" defer></script>
-  <script src="/site-language.js?v=ad78e35844627683" defer></script>
-  <script src="/journey-controls.js?v=ad78e35844627683" defer></script>
-  <script src="/journey-mobile-toolbar.js?v=ad78e35844627683" defer></script>
-  <script src="/journey-class-dropdown.js?v=ad78e35844627683" defer></script>
+  <link rel="stylesheet" href="/styles.css?v=6a8afb8402757530">
+  <link rel="stylesheet" href="/ink.css?v=6a8afb8402757530">
+  <link rel="stylesheet" href="/navigation.css?v=6a8afb8402757530">
+  <link rel="stylesheet" href="/pages.css?v=6a8afb8402757530">
+  <link rel="stylesheet" href="/global-dock.css?v=6a8afb8402757530">
+  <link rel="stylesheet" href="/article-dialog.css?v=6a8afb8402757530">
+  <script src="/global-dock.js?v=6a8afb8402757530" defer></script>
+  <script src="/site-language.js?v=6a8afb8402757530" defer></script>
+  <script src="/journey-controls.js?v=6a8afb8402757530" defer></script>
+  <script src="/journey-mobile-toolbar.js?v=6a8afb8402757530" defer></script>
+  <script src="/journey-class-dropdown.js?v=6a8afb8402757530" defer></script>
 <link rel="alternate" hreflang="en" href="/my-story/">
 <link rel="alternate" hreflang="zh-Hant" href="/zh/my-story/">
 <link rel="alternate" hreflang="ja" href="/ja/my-story/">
-<link rel="stylesheet" href="/journey.css?v=ad78e35844627683">
-<link rel="stylesheet" href="/journey-controls.css?v=ad78e35844627683">
-<script src="/journey-boot.js?v=ad78e35844627683" defer></script>
+<link rel="stylesheet" href="/journey.css?v=6a8afb8402757530">
+<link rel="stylesheet" href="/journey-controls.css?v=6a8afb8402757530">
+<script src="/journey-boot.js?v=6a8afb8402757530" defer></script>
 <style id="jarvis-brand-cleanup">a[href="#retired-contact"]{display:none!important}</style>
 <link rel="icon" type="image/png" href="/assets/brand/jarvis-graduation.png?v=brand1">
 <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg?v=brand1">
@@ -53,13 +53,14 @@
         <div class="game-bottom"><ol class="chapter-trail" id="chapter-trail" aria-label="Chapter Progress" data-journey-aria-label="章節進度"></ol></div>
         <div class="game-tools"><div class="journey-language" id="journey-language" role="group" aria-label="Language" data-journey-aria-label="Language"><button id="journey-language-zh" type="button" lang="zh-Hant" aria-pressed="true">中文</button><button id="journey-language-en" type="button" lang="en" aria-pressed="false">EN</button><button id="journey-language-ja" type="button" lang="ja" aria-pressed="false">日本語</button></div>
           <button type="button" id="game-pause" class="game-pause-icon" disabled aria-label="Pause" data-journey-aria-label="暫停" data-journey-text="暫停">Pause</button>
-          <details class="journey-settings" id="journey-settings">
+          <button type="button" id="game-sound" aria-pressed="true" aria-label="Mute All Audio" data-journey-aria-label="關閉所有聲音"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 5 6 9H3v6h3l5 4Z"/><g class="sound-waves"><path d="M15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></g><path class="sound-muted" d="m16 9 5 6m0-6-5 6"/></svg></button>
+          <details class="journey-settings" id="journey-settings" hidden>
             <summary id="settings-toggle" aria-controls="settings-panel" aria-label="Settings" data-journey-aria-label="設定"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="var(--paper,#f5f2ea)"/><circle cx="15" cy="17" r="3" fill="var(--paper,#f5f2ea)"/></svg><span data-journey-text="設定">Settings</span></summary>
             <section class="settings-panel" id="settings-panel" aria-labelledby="settings-heading">
               <header><h3 id="settings-heading" data-journey-text="播放設定">Playback settings</h3><button type="button" id="settings-close" aria-label="Close settings" data-journey-aria-label="關閉設定">×</button></header>
               <div class="settings-row" id="settings-mode-row"><span data-journey-text="播放方式">Playback mode</span><div class="play-mode"><button id="mode-manual" type="button" aria-pressed="true" data-journey-text="操作角色">Play</button><button id="mode-watch" type="button" aria-pressed="false" data-journey-text="觀看故事">Watch Story</button></div></div>
               <div class="settings-row" id="settings-speed-row"><span data-journey-text="觀看速度">Playback speed</span><div class="story-speed" id="story-speed" role="group" aria-label="Story Playback Speed" data-journey-aria-label="觀看故事速度" hidden><button id="story-speed-1" type="button" aria-pressed="true">1×</button><button id="story-speed-125" type="button" aria-pressed="false">1.25×</button><button id="story-speed-15" type="button" aria-pressed="false">1.5×</button></div></div>
-              <div class="settings-audio"><button type="button" id="game-sound" aria-pressed="true" aria-label="Mute All Audio" data-journey-aria-label="關閉所有聲音"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 5 6 9H3v6h3l5 4Z"/><g class="sound-waves"><path d="M15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></g><path class="sound-muted" d="m16 9 5 6m0-6-5 6"/></svg></button><p class="settings-bgm-caption">BGM: <output id="settings-bgm-current"></output></p></div>
+              <div class="settings-audio"><p class="settings-bgm-caption">BGM: <output id="settings-bgm-current"></output></p></div>
             </section>
           </details>
         </div>
@@ -153,7 +154,7 @@
           <p id="welcome-story" data-journey-text="楓之谷是我童年玩的第一款遊戲。我很喜歡它的視覺風格，因此想用這場冒險，呈現我的人生旅程。">MapleStory was the first game I played as a child. I loved its visual style, so I wanted to bring that adventure into my portfolio to share my journey.</p>
           <p class="welcome-hr" data-journey-text="親愛的 HR，如果您趕時間，可以直接前往 Experience，瀏覽我的經歷與專案。">Dear recruiters, short on time? Go straight to Experience to explore my background and projects.</p>
           <div class="welcome-actions"><button id="welcome-continue" type="button"><span data-journey-text="開始旅程">Begin the journey</span><span aria-hidden="true">↓</span></button><a href="/experience/" id="welcome-experience"><span data-journey-text="直接看 Experience">Go to Experience</span><span aria-hidden="true">↗</span></a></div>
-          <p class="welcome-device"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg><span data-journey-text="手機可用方向盤、大劍與跳躍鈕操作，也能在設定中切換為觀看故事。">Play on mobile with the joystick, sword and jump controls, or choose Watch Story in Settings.</span></p>
+          <p class="welcome-device"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg><span data-journey-text="手機可用方向盤、大劍與跳躍鈕操作，也能點「自動」觀看故事。">Play on mobile with the joystick, sword and jump controls, or tap Auto to watch the story.</span></p>
           <footer class="welcome-credits"><p data-journey-text="楓之谷影像與音樂著作權屬 NEXON；本頁為非官方作品集致敬創作。">MapleStory artwork and music belong to NEXON. This is an unofficial portfolio tribute.</p></footer>
         </div>
       </dialog>
@@ -170,9 +171,9 @@
   </div>
 </section>
 
-<script src="/journey-mobile-toolbar.js?v=ad78e35844627683" defer></script>
+<script src="/journey-mobile-toolbar.js?v=6a8afb8402757530" defer></script>
 
-<script src="/journey-class-dropdown.js?v=ad78e35844627683" defer></script>
+<script src="/journey-class-dropdown.js?v=6a8afb8402757530" defer></script>
 </main><footer class="wrap page-footer"><span>© 2026 Jarvis Lin</span><span>TAIWAN · JAPAN · ARIZONA</span><a href="/">Back to home ↗</a></footer><dialog id="site-menu" class="site-menu" aria-labelledby="menu-title">
     <div class="menu-shell">
       <div class="menu-topbar"><span>JARVIS LIN <span class="menu-brand-separator">/</span> PERSONAL INDEX</span><nav class="site-language" aria-label="Choose language"><a href="/zh/my-story/" data-site-language="zh-Hant" lang="zh-Hant" hreflang="zh-Hant">中文</a><a href="/my-story/" data-site-language="en" lang="en" hreflang="en" aria-current="page">EN</a><a href="/ja/my-story/" data-site-language="ja" lang="ja" hreflang="ja">日本語</a></nav><button class="menu-close" id="menu-close" type="button" aria-label="Close navigation" autofocus><span></span><span></span></button></div>
