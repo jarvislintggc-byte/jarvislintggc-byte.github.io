@@ -1,4 +1,4 @@
-import {ruleFor} from './journey-skill-rules.mjs?v=b2f5ac70167e4e97';
+import {ruleFor} from './journey-skill-rules.mjs?v=7858d5b8674fda7b';
 
 export const packetInterval=ability=>(ruleFor(ability).packetInterval||0)/(ability?.tempo||1);
 export function trackWindow(track){
