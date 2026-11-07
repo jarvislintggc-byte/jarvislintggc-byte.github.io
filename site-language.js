@@ -40,7 +40,7 @@
     data.locale = locale;
     document.title = `${data.pageNames[locale][data.slug === 'my-story' ? 1 : 0]} — Jarvis Lin`;
     const pageLocation = document.querySelector('.page-location');
-    if (data.slug === 'my-story' && pageLocation) pageLocation.textContent = '01 / ' + data.pageNames[locale][1].toUpperCase();
+    if (data.slug === 'my-story' && pageLocation) pageLocation.textContent = '02 / ' + data.pageNames[locale][1].toUpperCase();
     document.querySelector('meta[name=description]').content = {en:'Jarvis Lin: entrepreneurship, supply chain experience, and cross-border business.','zh-Hant':'Jarvis Lin 的創業、供應鏈實務與跨境商業經歷。',ja:'Jarvis Lin の起業、サプライチェーン、国境を越えたビジネスの経験。'}[locale];
     for (const nav of document.querySelectorAll('.site-language')) {
       nav.setAttribute('aria-label', data.names[locale]);
