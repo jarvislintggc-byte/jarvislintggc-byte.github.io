@@ -28,13 +28,13 @@
    gain.gain.setValueAtTime(.0001,t);gain.gain.exponentialRampToValueAtTime(strength,t+.0015);gain.gain.exponentialRampToValueAtTime(.0001,t+.035);
    src.connect(filter);filter.connect(gain);gain.connect(panner);this.voices++;src.start(t,Math.random()*.6);src.stop(t+.045);src.onended=()=>{this.voices--;panner.disconnect();src.disconnect();filter.disconnect();gain.disconnect();};
   }
-  tone(midi,x,width,volume=.035){
+  tone(midi,x,width,volume=.035,length=1){
    if(!this.ready()||this.voices>32)return;
    const t=this.ctx.currentTime+.008,frequency=440*2**((midi-69)/12),pan=this.route(x,width),partials=[[1,1,1.5],[2,.28,.72],[2.72,.12,.48],[4,.045,.25]];
    let remaining=partials.length;
    for(const [ratio,level,decay]of partials){const oscillator=this.ctx.createOscillator(),gain=this.ctx.createGain();oscillator.type='sine';oscillator.frequency.value=frequency*ratio;
-    gain.gain.setValueAtTime(.0001,t);gain.gain.exponentialRampToValueAtTime(volume*level,t+.008);gain.gain.exponentialRampToValueAtTime(.0001,t+decay);
-    oscillator.connect(gain);gain.connect(pan);this.voices++;oscillator.start(t);oscillator.stop(t+decay+.02);oscillator.onended=()=>{this.voices--;oscillator.disconnect();gain.disconnect();if(!--remaining)pan.disconnect();};
+    gain.gain.setValueAtTime(.0001,t);gain.gain.exponentialRampToValueAtTime(volume*level,t+.008);gain.gain.exponentialRampToValueAtTime(.0001,t+decay*length);
+    oscillator.connect(gain);gain.connect(pan);this.voices++;oscillator.start(t);oscillator.stop(t+decay*length+.02);oscillator.onended=()=>{this.voices--;oscillator.disconnect();gain.disconnect();if(!--remaining)pan.disconnect();};
    }
   }
   key(x,width,id,count=1){if(!this.ready())return;const now=this.ctx.currentTime;if(now-(this.keys.get(id)??-1)<.045)return;this.keys.set(id,now);this.click(x,width,1100+Math.random()*1700,.032+Math.min(count,3)*.008);}
@@ -46,6 +46,7 @@
    this.tone(52+octave+scale[degree],x,width,kind==='image'?.045:.032);
    if(kind==='dup')this.tone(59,x,width,.022);
   }
+  complete(){for(const [midi,level]of [[40,.075],[47,.045],[52,.05],[56,.032]])this.tone(midi,innerWidth*.5,innerWidth,level,3.2);}
   start(){this.tone(64,innerWidth*.4,innerWidth,.026);}
  }
  window.JarvisBuildSound=BuildSound;

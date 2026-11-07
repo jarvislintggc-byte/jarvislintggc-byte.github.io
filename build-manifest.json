@@ -1,5 +1,5 @@
 {
-  "version": "097c1c54bb80891c",
+  "version": "aac49a0fb6878216",
   "inputs": [
     ".nojekyll",
     "app.js",
@@ -7458,6 +7458,7 @@
     "home-build-sound.js",
     "home-build.css",
     "home-build.js",
+    "home-cat-guide.js",
     "home-lifecycle.js",
     "ink.css",
     "ink.js",
