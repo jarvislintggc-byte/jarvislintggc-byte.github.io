@@ -1,5 +1,5 @@
-import {sampleFrames} from './journey-animation.mjs?v=6506a6af7602f036';
-import {damageDigits} from './journey-monsters.mjs?v=6506a6af7602f036';
+import {sampleFrames} from './journey-animation.mjs?v=b2f5ac70167e4e97';
+import {damageDigits} from './journey-monsters.mjs?v=b2f5ac70167e4e97';
 export function createEnemyView(boss,image,host,{asset,mobile}){
  let numbers=[],effects=[];
  function draw(image,frame,scale){if(!image.src.endsWith(frame.file))image.src=asset(frame.file);Object.assign(image.style,{width:`${frame.width*scale}px`,height:`${frame.height*scale}px`,left:`${-frame.origin.x*scale}px`,top:`${-frame.origin.y*scale}px`});}

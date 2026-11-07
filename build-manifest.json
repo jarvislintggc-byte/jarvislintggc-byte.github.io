@@ -1,5 +1,5 @@
 {
-  "version": "6506a6af7602f036",
+  "version": "b2f5ac70167e4e97",
   "inputs": [
     ".nojekyll",
     "app.js",
@@ -38,6 +38,7 @@
     "assets/experience/cover-on-running.png",
     "assets/experience/cover-pelican-stores.png",
     "assets/experience/cover-tony-chocolonely.png",
+    "assets/experience/cover-verdeclean.png",
     "assets/experience/cover-yuki-studio.png",
     "assets/experience/devil-chicken-delivery.png",
     "assets/experience/industry-learning-chiao.png",
