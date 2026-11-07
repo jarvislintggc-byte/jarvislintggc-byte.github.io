@@ -1,4 +1,4 @@
-import {createClassCarousel} from './journey-carousel.mjs?v=366635dd52fc9955';
+import {createClassCarousel} from './journey-carousel.mjs?v=41bb5f0a7bb3f10f';
 
 // Native dialogs contain focus and isolate game input; closing releases only
 // their own pause reason, preserving user/offscreen/visibility pauses.

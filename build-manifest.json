@@ -1,5 +1,5 @@
 {
-  "version": "366635dd52fc9955",
+  "version": "41bb5f0a7bb3f10f",
   "inputs": [
     ".nojekyll",
     "app.js",
@@ -7455,6 +7455,9 @@
     "framer-original/runtime/yh3encGYx.gKZli6-M.mjs",
     "global-dock.css",
     "global-dock.js",
+    "home-build-sound.js",
+    "home-build.css",
+    "home-build.js",
     "home-lifecycle.js",
     "ink.css",
     "ink.js",

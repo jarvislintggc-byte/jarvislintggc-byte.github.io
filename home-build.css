@@ -1,0 +1,9 @@
+/* Only homepage experience sections use these markers. No layout or content rewrites. */
+[data-build-pending]{opacity:0!important}
+[data-build-active]{opacity:1!important;clip-path:inset(0 var(--build-unrevealed,100%) 0 0)!important}
+@media(prefers-reduced-motion:reduce){[data-build-pending],[data-build-active]{opacity:1!important;clip-path:none!important}}
+
+[data-build-typing]{opacity:0!important}
+
+[data-build-cv]{clip-path:none!important}
+[data-build-cv]>ul{opacity:var(--build-cv-reveal,0)!important;clip-path:inset(0 var(--build-cv-inset,100%) var(--build-cv-bottom,0%) 0)!important}

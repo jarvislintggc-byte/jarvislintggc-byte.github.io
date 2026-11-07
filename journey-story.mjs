@@ -1,4 +1,4 @@
-import {dialoguePerformances} from './journey-expression-cues.mjs?v=366635dd52fc9955';
+import {dialoguePerformances} from './journey-expression-cues.mjs?v=41bb5f0a7bb3f10f';
 // Current first-person narration uses owner-confirmed facts, not private quotes.
 export function isClosingSpeech(state){
   return state.phase==='portal'||state.phase==='reward'&&state.rewardBeat===3;
