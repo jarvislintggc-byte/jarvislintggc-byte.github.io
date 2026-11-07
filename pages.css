@@ -243,6 +243,39 @@ html[lang=ja] .list-index{white-space:nowrap}
 
 .page-connect .page-main{display:block}
 
+/* Paper and a single black contact list, matching the global navigation. */
+.page-connect{--paper:#f8f7f3;--ink:#111;--muted:#595b55;background:var(--paper)}
+.page-connect .contact-section{padding-block:100px 90px}
+.page-connect .contact-box{display:grid;grid-template-columns:minmax(0,1fr) minmax(400px,.95fr);align-items:center;gap:clamp(40px,6vw,100px);padding:0;border-radius:0;background:transparent;color:var(--ink)}
+.page-connect .contact-intro{min-width:0}
+.page-connect #contact-title{font-family:var(--sans);font-size:clamp(52px,5.5vw,84px);font-weight:650;line-height:1.08;letter-spacing:-.04em;text-wrap:balance;max-width:11ch}
+.page-connect #contact-title>span{color:#e00000}
+.page-connect .contact-lead{max-width:32ch;margin-top:30px;color:var(--muted);font-size:clamp(18px,1.6vw,22px);line-height:1.8}
+.page-connect .contact-lead p+p{margin-top:8px}
+.page-connect .contact-actions{width:100%;gap:0;border-radius:20px;overflow:hidden;background:#111;color:#f8f7f3;padding:5px 26px}
+.page-connect .contact-method{min-width:0;font-family:var(--sans);font-size:clamp(17px,1.65vw,23px);line-height:1.5}
+.page-connect .contact-method+.contact-method{border-top:1px solid #ffffff29}
+.page-connect .contact-method-icon,.page-connect .contact-method-arrow{width:23px;height:23px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.page-connect .contact-method-icon{color:#c9ccc5}
+.page-connect .contact-method-arrow{width:20px;height:20px;transition:transform .25s ease}
+.page-connect .contact-method-label,.page-connect .contact-flip{flex:1;min-width:0}
+.page-connect .contact-actions .linkedin-link,.page-connect .contact-email summary{display:flex;align-items:center;gap:20px;min-height:108px;margin:0;padding:24px 0;border:0;color:inherit;text-decoration:none;white-space:normal}
+.page-connect .contact-actions .linkedin-link>span{font-size:inherit;margin:0}
+.page-connect .contact-email summary{min-height:108px;perspective:1000px}
+.page-connect .contact-flip{transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.page-connect .contact-flip>span{line-height:1.6;overflow-wrap:anywhere}
+.page-connect .contact-flip-back{font-size:clamp(16px,1.5vw,21px);font-variant-numeric:tabular-nums}
+.page-connect .contact-email[open] .contact-method-arrow{transform:rotate(180deg)}
+.page-connect .linkedin-link:hover .contact-method-arrow{transform:translate(3px,-3px)}
+.page-connect .contact-email summary:hover,.page-connect .linkedin-link:hover{color:#d8d2bc}
+.page-connect .contact-actions :focus-visible{outline:2px solid #f8f7f3;outline-offset:-5px;border-radius:8px}
+.page-connect .perspective-section{border-top:1px solid var(--line);padding-top:58px}
+.page-connect .perspective-section .page-title,.page-connect .perspective-list h3{font-family:var(--sans);font-weight:550;letter-spacing:-.03em}
+.page-connect .perspective-intro,.page-connect .perspective-list p{font-size:20px;line-height:1.8}
+@media(max-width:1050px){.page-connect .contact-section{padding-block:76px}.page-connect .contact-box{grid-template-columns:minmax(0,1fr) minmax(340px,1fr);gap:36px}.page-connect #contact-title{font-size:60px}.page-connect .contact-actions{padding-inline:22px}.page-connect .contact-actions .linkedin-link,.page-connect .contact-email summary{gap:14px}}
+@media(max-width:760px){.page-connect .contact-section{padding-block:46px 52px}.page-connect .contact-box{grid-template-columns:1fr;gap:34px}.page-connect #contact-title{font-size:clamp(46px,11vw,66px);max-width:13ch;line-height:1.15}.page-connect .contact-lead{margin-top:22px;font-size:18px;max-width:34ch}.page-connect .contact-actions{margin:0;padding:3px 20px;border-radius:16px}.page-connect .contact-actions .linkedin-link,.page-connect .contact-email summary{min-height:94px;padding-block:22px;gap:14px}.page-connect .contact-method{font-size:18px}.page-connect .contact-flip-back{font-size:clamp(14px,3.9vw,18px)}.page-connect .contact-method-icon{width:21px;height:21px}.page-connect .contact-method-arrow{width:18px;height:18px}.page-connect .perspective-section{padding-top:38px}.page-connect .perspective-intro,.page-connect .perspective-list p{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.page-connect .contact-flip,.page-connect .contact-method-arrow{transition:none}}
+
 
 /* Show the complete first row of articles on arrival. */
 @media(min-width:1000px){

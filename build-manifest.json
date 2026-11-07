@@ -1,5 +1,5 @@
 {
-  "version": "aac49a0fb6878216",
+  "version": "fd09ce56ae08845c",
   "inputs": [
     ".nojekyll",
     "app.js",
@@ -7302,6 +7302,7 @@
     "assets/photos/photo-044.jpg",
     "assets/portraits/jarvis-mask.jpg",
     "assets/portraits/jarvis-portrait.jpg",
+    "contact-reveal.js",
     "framer-original/assets/00c0592b8e8fa40d.png",
     "framer-original/assets/046135e25cd6d90c.jpg",
     "framer-original/assets/05ea37f063d5de1c.png",
@@ -7458,8 +7459,8 @@
     "home-build-sound.js",
     "home-build.css",
     "home-build.js",
-    "home-cat-guide.js",
     "home-lifecycle.js",
+    "home-menu-hint.js",
     "ink.css",
     "ink.js",
     "journey-animation.mjs",

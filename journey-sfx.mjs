@@ -1,5 +1,5 @@
-import { combatAudio } from './journey-sfx-data.mjs?v=aac49a0fb6878216';
-import { impactTimes } from './journey-combat.mjs?v=aac49a0fb6878216';
+import { combatAudio } from './journey-sfx-data.mjs?v=fd09ce56ae08845c';
+import { impactTimes } from './journey-combat.mjs?v=fd09ce56ae08845c';
 export function soundEvents(ability){
   const entry=ability?combatAudio.skills[ability.id]:{use:combatAudio.beginner};
   const uses=ability?.id===3001005?[100,180]:[0];
