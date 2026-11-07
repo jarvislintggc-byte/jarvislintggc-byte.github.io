@@ -1,5 +1,5 @@
-import {sampleFrames} from './journey-animation.mjs?v=942b9fe11ef53361';
-import {setStyles} from './journey-render.mjs?v=942b9fe11ef53361';
+import {sampleFrames} from './journey-animation.mjs?v=6506a6af7602f036';
+import {setStyles} from './journey-render.mjs?v=6506a6af7602f036';
 
 const decodeImage=(url)=>{const image=new Image();image.src=url;return image.decode?image.decode():new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=reject;});};
 

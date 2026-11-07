@@ -2,9 +2,9 @@
  'use strict';
  if(document.getElementById('jarvis-global-dock'))return;
  const labels={
-  en:{hello:'Say Hello 👋',open:'Open navigation',close:'Close navigation',nav:'Site navigation',language:'Choose language',pages:['Home','My story','Experience','Connect']},
-  'zh-Hant':{hello:'打個招呼 👋',open:'開啟選單',close:'關閉選單',nav:'網站導覽',language:'選擇語言',pages:['首頁','我的故事','經歷與專案','聯絡我']},
-  ja:{hello:'こんにちは 👋',open:'メニューを開く',close:'メニューを閉じる',nav:'サイトナビゲーション',language:'言語を選択',pages:['ホーム','私の歩み','経験・プロジェクト','お問い合わせ']}
+  en:{hello:'Say Hello 👋',open:'Open navigation',close:'Close navigation',nav:'Site navigation',language:'Choose language',pages:['Home','My story','Learning notes','Connect']},
+  'zh-Hant':{hello:'打個招呼 👋',open:'開啟選單',close:'關閉選單',nav:'網站導覽',language:'選擇語言',pages:['首頁','我的故事','學習筆記','聯絡我']},
+  ja:{hello:'こんにちは 👋',open:'メニューを開く',close:'メニューを閉じる',nav:'サイトナビゲーション',language:'言語を選択',pages:['ホーム','私の歩み','学びのノート','お問い合わせ']}
  };
  const prefixes={en:'','zh-Hant':'/zh',ja:'/ja'},slugs=['','my-story','experience','connect'];
  const locale=()=>!document.body.classList.contains('content-page')?(location.pathname.startsWith('/zh/')?'zh-Hant':location.pathname.startsWith('/ja/')?'ja':'en'):(labels[document.documentElement.lang]?document.documentElement.lang:'en');
@@ -75,5 +75,5 @@
  });
  refresh();
  // Reuse the existing focus, navigation, Escape, and game-pause contract.
- const controller=document.createElement('script');controller.src='/navigation.js?v=942b9fe11ef53361';document.body.append(controller);
+ const controller=document.createElement('script');controller.src='/navigation.js?v=6506a6af7602f036';document.body.append(controller);
 })();
