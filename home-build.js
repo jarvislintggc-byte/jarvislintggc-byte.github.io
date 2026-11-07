@@ -27,7 +27,7 @@
  ui('.bar').setAttribute('aria-label',labels.controls);ui('.replay').textContent=labels.replay;
  let sections=[],tasks=[],agents=[],done=0,running=false,paused=false,tour=true,raf=0,last=0,started=false,autoCancelled=false,wait=0,bootTimer;
  reduced.addEventListener('change',()=>{if(reduced.matches&&running)finish();});
- window.addEventListener('error',event=>{if(event.filename?.includes('/home-build.js?v=41bb5f0a7bb3f10f'))finish();});
+ window.addEventListener('error',event=>{if(event.filename?.includes('/home-build.js?v=097c1c54bb80891c'))finish();});
  const speed=1;
  const colors=['#4d78ce','#a75b86','#528c69','#b18138'];
  const sfx=window.JarvisBuildSound?new window.JarvisBuildSound():null;

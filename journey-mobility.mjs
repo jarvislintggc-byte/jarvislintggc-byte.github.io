@@ -1,4 +1,4 @@
-import { sampleFrames } from './journey-animation.mjs?v=41bb5f0a7bb3f10f';
+import { sampleFrames } from './journey-animation.mjs?v=097c1c54bb80891c';
 
 // One short native effect at the take-off point, independent of attack layers.
 export function createMobilityView(host,{asset,mobile=()=>false}){

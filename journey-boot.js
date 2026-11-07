@@ -4,7 +4,7 @@ let started=false,observer;
 function start(){
  if(started)return;
  started=true;observer?.disconnect();
- import('/runtime/journey.js?v=41bb5f0a7bb3f10f').catch(error=>{
+ import('/runtime/journey.js?v=097c1c54bb80891c').catch(error=>{
   console.error('Journey could not initialize:',error);
   const stage=document.getElementById('journey-stage'),game=document.getElementById('life-game');
   if(!stage||!game)return;

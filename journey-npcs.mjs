@@ -1,8 +1,8 @@
-import {npcCast} from './journey-npc-scenes.mjs?v=41bb5f0a7bb3f10f';
-import {npcArt} from './journey-npc-art.mjs?v=41bb5f0a7bb3f10f';
-import {sampleFrames,sequenceDuration} from './journey-animation.mjs?v=41bb5f0a7bb3f10f';
-import {setStyles} from './journey-render.mjs?v=41bb5f0a7bb3f10f';
-import {npcFloorPosition,npcSpriteScale} from './journey-npc-platforms.mjs?v=41bb5f0a7bb3f10f';
+import {npcCast} from './journey-npc-scenes.mjs?v=097c1c54bb80891c';
+import {npcArt} from './journey-npc-art.mjs?v=097c1c54bb80891c';
+import {sampleFrames,sequenceDuration} from './journey-animation.mjs?v=097c1c54bb80891c';
+import {setStyles} from './journey-render.mjs?v=097c1c54bb80891c';
+import {npcFloorPosition,npcSpriteScale} from './journey-npc-platforms.mjs?v=097c1c54bb80891c';
 
 // Every NPC keeps a bubble; lines rotate without empty intervals.
 export function npcSpeechPages(text,language='zh-Hant'){

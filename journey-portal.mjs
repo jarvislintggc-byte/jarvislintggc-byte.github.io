@@ -1,4 +1,4 @@
-import {floorAt} from './journey-terrain.mjs?v=41bb5f0a7bb3f10f';
+import {floorAt} from './journey-terrain.mjs?v=097c1c54bb80891c';
 
 export const portalSurface=(terrain,width,portalX=88)=>floorAt(terrain,width*portalX/100);
 export function portalFrameGeometry(frame,mobile=false){
