@@ -1,5 +1,5 @@
-import { levelUp } from './journey-levelup.mjs?v=ceff2acd32ae8c1b';
-import { sampleFrames } from './journey-animation.mjs?v=ceff2acd32ae8c1b';
+import { levelUp } from './journey-levelup.mjs?v=942b9fe11ef53361';
+import { sampleFrames } from './journey-animation.mjs?v=942b9fe11ef53361';
 
 export function createLevelUpView(host,image,{asset,mobile}){
   return {

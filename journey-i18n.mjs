@@ -1,8 +1,8 @@
-import { japaneseChapters, japaneseUI, japaneseSkillNames, japaneseEquipment } from './journey-ja.mjs?v=ceff2acd32ae8c1b';
-import { chapters } from './journey-data.mjs?v=ceff2acd32ae8c1b';
-import { englishChapters, englishSkillNames, englishUI } from './journey-en.mjs?v=ceff2acd32ae8c1b';
-import { equipmentChanges } from './journey-growth.mjs?v=ceff2acd32ae8c1b';
-import { monsters } from './journey-monsters.mjs?v=ceff2acd32ae8c1b';
+import { japaneseChapters, japaneseUI, japaneseSkillNames, japaneseEquipment } from './journey-ja.mjs?v=942b9fe11ef53361';
+import { chapters } from './journey-data.mjs?v=942b9fe11ef53361';
+import { englishChapters, englishSkillNames, englishUI } from './journey-en.mjs?v=942b9fe11ef53361';
+import { equipmentChanges } from './journey-growth.mjs?v=942b9fe11ef53361';
+import { monsters } from './journey-monsters.mjs?v=942b9fe11ef53361';
 
 export const LANGUAGE_KEY='jarvis-journey-language';
 const english={...englishUI};

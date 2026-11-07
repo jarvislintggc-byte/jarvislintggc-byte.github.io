@@ -1,6 +1,6 @@
-import {pets} from './journey-pet-art.mjs?v=ceff2acd32ae8c1b';
-import {sampleFrames} from './journey-animation.mjs?v=ceff2acd32ae8c1b';
-import {setStyles} from './journey-render.mjs?v=ceff2acd32ae8c1b';
+import {pets} from './journey-pet-art.mjs?v=942b9fe11ef53361';
+import {sampleFrames} from './journey-animation.mjs?v=942b9fe11ef53361';
+import {setStyles} from './journey-render.mjs?v=942b9fe11ef53361';
 
 export const petSets=Object.freeze({
  luna6:Object.freeze([5002665,5002666,5002667]),

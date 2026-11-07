@@ -4,7 +4,7 @@
   const languages = new Set(['en', 'zh-Hant', 'ja']);
   function load(language, id = 'index') {
     if (!languages.has(language) || !/^[a-z0-9-]+$/.test(id)) return Promise.reject(new Error('Unknown article'));
-    const url = `/articles/${language}/${id}.json?v=ceff2acd32ae8c1b`;
+    const url = `/articles/${language}/${id}.json?v=942b9fe11ef53361`;
     if (!cache.has(url)) cache.set(url, fetch(url).then(response => {
       if (!response.ok) throw new Error(`Article unavailable (${response.status})`);
       return response.json();
