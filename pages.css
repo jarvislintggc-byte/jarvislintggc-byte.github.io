@@ -11,6 +11,7 @@
 .page-experience .work-section{border-top:0}
 .notes-grid{align-items:stretch}
 .work-note{position:relative;cursor:pointer;display:flex;flex-direction:column;border-radius:14px}
+.page-experience .work-note{background:transparent}
 .work-note:focus-within{outline:3px solid var(--orange);outline-offset:5px}
 .work-note .card-art{flex-shrink:0}
 .work-note .card-cover{padding:0}

@@ -1,4 +1,4 @@
-import { japaneseNPCs } from './journey-ja.mjs?v=5ce185914b443054';
+import { japaneseNPCs } from './journey-ja.mjs?v=ceff2acd32ae8c1b';
 // Fictional ambient game dialogue. These are not quotes from Jarvis's life.
 const actor=(id,x,zh,en,lines,action='idle',mobileX=x)=>({id,x,mobileX,role:{'zh-Hant':zh,en},lines:lines.map(([zh,en])=>({'zh-Hant':zh,en})),action});
 const baseNpcScenes=Object.freeze([

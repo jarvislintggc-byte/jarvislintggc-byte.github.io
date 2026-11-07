@@ -1,5 +1,5 @@
 {
-  "version": "5ce185914b443054",
+  "version": "ceff2acd32ae8c1b",
   "inputs": [
     ".nojekyll",
     "app.js",
@@ -7303,6 +7303,7 @@
     "assets/portraits/jarvis-mask.jpg",
     "assets/portraits/jarvis-portrait.jpg",
     "contact-reveal.js",
+    "dock-effects.js",
     "framer-original/assets/00c0592b8e8fa40d.png",
     "framer-original/assets/046135e25cd6d90c.jpg",
     "framer-original/assets/05ea37f063d5de1c.png",

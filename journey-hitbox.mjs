@@ -1,5 +1,5 @@
-import {ruleFor,skillVisualBounds} from './journey-skill-rules.mjs?v=5ce185914b443054';
-import {skillTrackGeometry} from './journey-skill-placement.mjs?v=5ce185914b443054';
+import {ruleFor,skillVisualBounds} from './journey-skill-rules.mjs?v=ceff2acd32ae8c1b';
+import {skillTrackGeometry} from './journey-skill-placement.mjs?v=ceff2acd32ae8c1b';
 
 const intersects=(a,b)=>a.left<=b.right&&a.right>=b.left&&a.bottom<=b.top&&a.top>=b.bottom;
 const footprints=new WeakMap();

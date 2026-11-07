@@ -38,7 +38,7 @@
   const controls = 'a,button,summary,input,textarea,select,dialog,[role="tab"],[role="button"]';
   function beginAction() { color = palette[Math.floor(actionCount / 3) % palette.length]; actionCount++; }
   function resetGesture() { previousPointer = null; lastMotion = -Infinity; pressedPointer = null; }
-  function canPaint(event) { return !mobile.matches && enabled && !document.hidden && paperBottom() > 0 && event.clientY < paperBottom() && !event.target.closest('.life-game') && !document.querySelector('dialog[open]') && !event.target.closest(controls) && !(continuous && event.target.closest('p,h1,h2,h3,h4,h5,h6,figure,img')); }
+  function canPaint(event,motion=false) { return !mobile.matches && enabled && !document.hidden && paperBottom() > 0 && event.clientY < paperBottom() && !event.target.closest('.life-game') && !document.querySelector('dialog[open]') && (!event.target.closest(controls)||(continuous&&motion)); }
   const points = [];
 
   function createFluid(target) {
@@ -168,7 +168,7 @@
   function add(x,y,dx,dy,down){points.push({x,y,dx:Math.max(-.07,Math.min(.07,dx)),dy:Math.max(-.07,Math.min(.07,dy)),down,color});if(points.length>48)points.splice(0,points.length-48);wake();}
   function seed(){if(!enabled)return;if(mobile.matches){spiralTime=0;previousSpiralPoint=null;wake();return;}const path=[{x:.06,y:.19},{x:.1,y:.14},{x:.17,y:.13},{x:.24,y:.16},{x:.29,y:.22}];path.forEach((p,i)=>{add(p.x,p.y,i?.018:.008,.006,i===1||i===2);});add(.91,.68,-.02,-.012,true);add(.88,.64,-.018,.007,false);}
   function pointer(event) {
-    if (!canPaint(event)) { resetGesture(); return; }
+    if (!canPaint(event,true)) { resetGesture(); return; }
     const y = event.clientY;
     if (y < 0 || y > height) { resetGesture(); return; }
     const p = { x:event.clientX/width, y:y/height, time:event.timeStamp };
@@ -188,7 +188,7 @@
     if (!canPaint(event) || event.button > 0 || event.shiftKey) return;
     const y=event.clientY;
     if(y>=0 && y<=height) {
-      if(event.pointerType==='mouse')event.preventDefault();
+      if(event.pointerType==='mouse'&&!(continuous&&event.target.closest('p,h1,h2,h3,h4,h5,h6,figure,img')))event.preventDefault();
       beginAction();pressedPointer=event.pointerId;lastMotion=event.timeStamp;
       previousPointer={x:event.clientX/width,y:y/height,time:event.timeStamp};
       add(event.clientX/width,y/height,.003,-.004,true);
