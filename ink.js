@@ -156,12 +156,12 @@
   }
   function render(now){
     frame=0;if(!visible())return;
-    const elapsed=previousTime?(now-previousTime)/1000:(mobile.matches||continuous?1/30:1/60);
+    const elapsed=previousTime?(now-previousTime)/1000:(mobile.matches?1/30:1/60);
     // Mobile runs at 30 fps; elapsed time keeps motion independent of refresh rate.
-    if((mobile.matches||continuous) && elapsed<1/30){frame=requestAnimationFrame(render);return;}
+    if(mobile.matches && elapsed<1/30){frame=requestAnimationFrame(render);return;}
     if(!mobile.matches && !continuous && now-lastInput>9000){engine.clear();return;}
     const dt=Math.min(elapsed,mobile.matches?.05:.033);previousTime=now;
-    if(mobile.matches||(continuous&&now-lastInput>1200)){if(document.querySelector('dialog[open]')){frame=requestAnimationFrame(render);return;}spiral(dt);}
+    if(mobile.matches||(continuous&&now-lastInput>9000)){if(document.querySelector('dialog[open]:not(#site-menu)')){frame=requestAnimationFrame(render);return;}spiral(dt);}
     for(const point of points.splice(0,24))engine.splat(point);
     engine.step(dt);frame=requestAnimationFrame(render);
   }
