@@ -10,7 +10,8 @@
  document.addEventListener('pointerout',event=>{if(!event.relatedTarget){pointer=null;clear();}},{passive:true});
  const names=new Set(),visible=new WeakSet();
  function updateNames(){for(const el of names)el.style.animationPlayState=document.hidden||reduced.matches||!visible.has(el)?'paused':'running';}
+ function syncVisibility(){dock.toggleAttribute('data-motion-paused',document.hidden);updateNames();}
  const observer=new IntersectionObserver(entries=>{for(const e of entries){if(e.isIntersecting)visible.add(e.target);else visible.delete(e.target);}updateNames();});
  function brand(){for(const el of names)if(!el.isConnected){observer.unobserve(el);names.delete(el);}for(const el of document.querySelectorAll('#hero-section mark,.framer-1p8qmfk *'))if(!el.children.length&&el.textContent.trim()==='Jarvis Lin'&&!names.has(el)){el.classList.add('jarvis-hero-name');names.add(el);observer.observe(el);}}
- window.JarvisHome?.onReady(brand);document.addEventListener('jarvis:home-ready',brand,{once:true});document.addEventListener('visibilitychange',updateNames);reduced.addEventListener('change',updateNames);brand();
+ window.JarvisHome?.onReady(brand);document.addEventListener('jarvis:home-ready',brand,{once:true});document.addEventListener('visibilitychange',syncVisibility);reduced.addEventListener('change',updateNames);brand();syncVisibility();
 })();

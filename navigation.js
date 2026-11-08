@@ -82,4 +82,23 @@
       location.assign(targetUrl);
     } else trigger.focus({ preventScroll: true });
   });
+  const hello=document.querySelector('.jarvis-dock-hello'),mouse=matchMedia('(hover:hover) and (pointer:fine)');
+  if(hello&&triggers[0]){
+    let armed=true,openedAt=null,pointer=null;
+    const outside=(point,r)=>r.width>0&&r.height>0&&(point.x<r.left||point.x>r.right||point.y<r.top||point.y>r.bottom);
+    function hoverOpen(event){
+      if(event.pointerType!=='mouse'||!mouse.matches||!armed||menu.open||hello.closest('[inert]'))return;
+      armed=false;openedAt=pointer={x:event.clientX,y:event.clientY};openMenu({currentTarget:triggers[0]});
+    }
+    hello.addEventListener('pointerenter',hoverOpen);
+    // Layout changes while closing or wobbling must not count as a fresh hover.
+    window.addEventListener('pointermove',event=>{
+      if(event.pointerType!=='mouse')return;pointer={x:event.clientX,y:event.clientY};
+      if(armed||menu.open||!openedAt||pointer.x===openedAt.x&&pointer.y===openedAt.y)return;
+      if(outside(pointer,hello.getBoundingClientRect()))armed=true;
+    },{passive:true});
+    menu.addEventListener('close',()=>{if(!armed&&pointer&&outside(pointer,hello.getBoundingClientRect()))armed=true;});
+    // The navigation controller can finish loading after the pointer arrives.
+    if(mouse.matches&&hello.matches(':hover')){const r=hello.getBoundingClientRect();hoverOpen({pointerType:'mouse',clientX:r.left+r.width/2,clientY:r.top+r.height/2});}
+  }
 })();
