@@ -150,7 +150,7 @@
     // Mobile runs at 30 fps; elapsed time keeps motion independent of refresh rate.
     if(mobile.matches && elapsed<1/30){frame=requestAnimationFrame(render);return;}
     const dt=Math.min(elapsed,mobile.matches?.05:.033);previousTime=now;
-    if(mobile.matches || now-lastInput>9000){if(document.querySelector('dialog[open]')){frame=requestAnimationFrame(render);return;}spiral(dt);}
+    if(mobile.matches || now-lastInput>9000){if(document.querySelector('dialog[open]:not(#site-menu)')){frame=requestAnimationFrame(render);return;}spiral(dt);}
     for(const point of points.splice(0,24))engine.splat(point);
     engine.step(dt);frame=requestAnimationFrame(render);
   }

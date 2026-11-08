@@ -40,7 +40,7 @@
  const sfx=window.JarvisBuildSound?new window.JarvisBuildSound():null;
  let assignment=0,lastRoster='',audioEnabled=true,hudSection=null,hadVisibleWork=false,completionActive=false,completionTimer=0,completionEnd=0,lastCompletionAt=-Infinity;
  const lockedControls=new Map(),completedGroups=new Set();let contentGroups=[],wasReading=false;
- const reading=()=>Boolean(document.querySelector('dialog[open]'));
+ const reading=()=>Boolean(document.querySelector('dialog[open]:not(#site-menu)'));
  const insideConstruction=target=>sections.some(root=>root.contains(target));
  const blocked=target=>Boolean(target.closest?.('[data-build-locked]')&&!target.closest?.('[data-build-ready]'));
  function restoreControl(control){const prior=lockedControls.get(control);if(!prior)return;control.inert=prior.inert;if(prior.disabled===null)control.removeAttribute('aria-disabled');else control.setAttribute('aria-disabled',prior.disabled);lockedControls.delete(control);}
@@ -284,8 +284,8 @@
  window.addEventListener('wheel',takeControl,{passive:true});
  window.addEventListener('touchstart',event=>{if(!event.composedPath().includes(host))takeControl(event);},{passive:true});
  document.addEventListener('keydown',event=>{if(reading()||event.target.closest?.('dialog'))return;if(event.key==='Escape'){autoCancelled=true;if(running)finish();}else if(['ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' '].includes(event.key))takeControl(event);});
- document.addEventListener('click',e=>{if(running&&!reading()&&!wasReading&&!e.target.closest?.('dialog')&&!insideConstruction(e.target)&&e.target.closest?.('a,button')&&!e.composedPath().includes(host))finish('已進入瀏覽 · 動畫已結束');},true);
- document.addEventListener('focusin',e=>{if(running&&!reading()&&!wasReading&&e.target!==host&&!insideConstruction(e.target))finish('已進入瀏覽 · 動畫已結束');});
+ document.addEventListener('click',e=>{if(running&&!reading()&&!wasReading&&!e.target.closest?.('dialog,#jarvis-global-dock')&&!insideConstruction(e.target)&&e.target.closest?.('a,button')&&!e.composedPath().includes(host))finish('已進入瀏覽 · 動畫已結束');},true);
+ document.addEventListener('focusin',e=>{if(running&&!reading()&&!wasReading&&!e.target.closest?.('#site-menu,#jarvis-global-dock')&&e.target!==host&&!insideConstruction(e.target))finish('已進入瀏覽 · 動畫已結束');});
  new MutationObserver(()=>{const modal=reading();if(modal===wasReading)return;wasReading=modal;last=0;if(modal){cancelAnimationFrame(raf);raf=0;clearTimeout(completionTimer);completionTimer=0;}setBarVisibility();if(!modal){schedule();if(running&&autoFollow&&!agents.some(a=>a.task)&&!visibleWork())advanceFollow();}}).observe(document.body,{subtree:true,attributes:true,attributeFilter:['open']});
  document.addEventListener('visibilitychange',()=>{syncSound();if(!document.hidden)unlockSound();last=0;if(document.hidden){cancelAnimationFrame(raf);raf=0;}else schedule();});
  let width=innerWidth;window.addEventListener('resize',()=>{if(Math.abs(innerWidth-width)>40&&running)finish('畫面尺寸已變更 · 可重播動畫');width=innerWidth;},{passive:true});
