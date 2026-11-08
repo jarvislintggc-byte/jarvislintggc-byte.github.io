@@ -27,9 +27,19 @@
     const menu=document.querySelector('.jarvis-cv[open]');if(menu&&!menu.contains(event.target))menu.open=false;
   });
   document.addEventListener('keydown',event=>{if(event.key==='Escape'){const menu=document.querySelector('.jarvis-cv[open]');if(menu){menu.open=false;menu.querySelector('summary').focus({preventScroll:true});}}});
+  function updateCvDownloads(){
+    document.querySelectorAll('.jarvis-cv button[disabled]').forEach(button=>{
+      const link=document.createElement('a');
+      link.href='/assets/resume/CV_Jarvis_Lin.pdf?v=20261109';
+      link.download='Jarvis_Lin_CV_English.pdf';link.type='application/pdf';link.hreflang='en';
+      link.lang=button.lang;link.append(document.createTextNode(button.firstChild.textContent.trim()));
+      const note=document.createElement('small');note.textContent='English PDF';link.append(note);
+      button.replaceWith(link);
+    });
+  }
   let watched=[],pending=false;
   const observer=new ResizeObserver(schedule);
-  function schedule(){if(!pending){pending=true;requestAnimationFrame(()=>{pending=false;center();});}}
+  function schedule(){if(!pending){pending=true;requestAnimationFrame(()=>{pending=false;updateCvDownloads();center();});}}
   function center(){
     const orbit=document.querySelector('.jarvis-exploration-orbit'),text=document.querySelector('.jarvis-exploration-title');
     if(!orbit||!text)return;const parent=text.offsetParent;if(!parent)return;
