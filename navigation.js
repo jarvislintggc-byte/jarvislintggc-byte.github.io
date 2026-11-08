@@ -6,9 +6,12 @@
   const closeButton = document.querySelector('#menu-close');
   const links = [...menu.querySelectorAll('.menu-list a')];
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  let closing = false;
+  const mouse=matchMedia('(hover:hover) and (pointer:fine)');
+  let closing = false, pointerDriven=false,leaveTimer=0;
   let closeTimer;
   let destination = null;
+  function cancelPointerClose(){clearTimeout(leaveTimer);leaveTimer=0;}
+  function schedulePointerClose(){if(!leaveTimer)leaveTimer=setTimeout(()=>{leaveTimer=0;if(menu.open&&pointerDriven&&!closing)closeMenu();},160);}
 
   function updateCurrent() {
     const current = location.pathname.replace(/\/index\.html$/, '/').replace(/\/+$/, '') || '/';
@@ -22,6 +25,7 @@
   function openMenu(event) {
     trigger=event?.currentTarget||trigger;
     if (menu.open) return;
+    cancelPointerClose();pointerDriven=mouse.matches&&Boolean(event?.fromPointer||event?.detail>0);
     clearTimeout(closeTimer);
     closing = false;
     destination = null;
@@ -36,6 +40,7 @@
     requestAnimationFrame(() => { if (menu.open && !closing) menu.classList.add('is-open'); });
   }
   function closeMenu(target = null) {
+    cancelPointerClose();
     if (!menu.open || closing) return;
     closing = true;
     destination = target;
@@ -48,6 +53,7 @@
   closeButton.addEventListener('click', () => closeMenu());
   menu.addEventListener('cancel', event => { event.preventDefault(); closeMenu(); });
   menu.addEventListener('keydown', event => {
+    pointerDriven=false;cancelPointerClose();
     if (event.key !== 'Tab') return;
     // Keep keyboard navigation in the panel, including at both ends of the list.
     const focusable = [...menu.querySelectorAll('a[href],button:not([disabled])')];
@@ -71,6 +77,7 @@
     closeMenu(link.href);
   }));
   menu.addEventListener('close', () => {
+    pointerDriven=false;cancelPointerClose();
     clearTimeout(closeTimer);
     const targetUrl = destination;
     destination = null;
@@ -82,19 +89,25 @@
       location.assign(targetUrl);
     } else trigger.focus({ preventScroll: true });
   });
-  const hello=document.querySelector('.jarvis-dock-hello'),mouse=matchMedia('(hover:hover) and (pointer:fine)');
+  const hello=document.querySelector('.jarvis-dock-hello');
   if(hello&&triggers[0]){
     let armed=true,openedAt=null,pointer=null;
     const outside=(point,r)=>r.width>0&&r.height>0&&(point.x<r.left||point.x>r.right||point.y<r.top||point.y>r.bottom);
     function hoverOpen(event){
       if(event.pointerType!=='mouse'||!mouse.matches||!armed||menu.open||hello.closest('[inert]'))return;
-      armed=false;openedAt=pointer={x:event.clientX,y:event.clientY};openMenu({currentTarget:triggers[0]});
+      armed=false;openedAt=pointer={x:event.clientX,y:event.clientY};openMenu({currentTarget:triggers[0],fromPointer:true});
     }
     hello.addEventListener('pointerenter',hoverOpen);
     // Layout changes while closing or wobbling must not count as a fresh hover.
     window.addEventListener('pointermove',event=>{
       if(event.pointerType!=='mouse')return;pointer={x:event.clientX,y:event.clientY};
-      if(armed||menu.open||!openedAt||pointer.x===openedAt.x&&pointer.y===openedAt.y)return;
+      if(menu.open){
+        if(!mouse.matches||closing){cancelPointerClose();return;}
+        if(outside(pointer,menu.getBoundingClientRect())){if(pointerDriven)schedulePointerClose();}
+        else{pointerDriven=true;cancelPointerClose();}
+        return;
+      }
+      if(armed||!openedAt||pointer.x===openedAt.x&&pointer.y===openedAt.y)return;
       if(outside(pointer,hello.getBoundingClientRect()))armed=true;
     },{passive:true});
     menu.addEventListener('close',()=>{if(!armed&&pointer&&outside(pointer,hello.getBoundingClientRect()))armed=true;});
