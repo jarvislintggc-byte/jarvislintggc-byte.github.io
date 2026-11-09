@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jarvislintggc-byte.github.io/sitemap.xml
