@@ -1,3 +1,19 @@
+/* Portfolio GA4: shared by all 15 public pages. */
+(() => {
+  if (window.__jarvisGA4 || location.hostname !== 'jarvislintggc-byte.github.io') return;
+  window.__jarvisGA4 = true;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-DEMTM27END', {
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
+  const tag = document.createElement('script');
+  tag.async = true;
+  tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-DEMTM27END';
+  document.head.appendChild(tag);
+})();
 (() => {
  'use strict';
  if(document.getElementById('jarvis-global-dock'))return;
