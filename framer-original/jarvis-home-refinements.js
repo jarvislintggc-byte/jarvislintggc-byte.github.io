@@ -30,10 +30,11 @@
   function updateCvDownloads(){
     document.querySelectorAll('.jarvis-cv button[disabled]').forEach(button=>{
       const link=document.createElement('a');
-      link.href='/assets/resume/CV_Jarvis_Lin.pdf?v=20261109';
-      link.download='Jarvis_Lin_CV_English.pdf';link.type='application/pdf';link.hreflang='en';
+      const japanese=button.lang==='ja';
+      link.href=japanese?'/assets/resume/CV_Jarvis_Lin_Japanese.pdf?v=20261113':'/assets/resume/CV_Jarvis_Lin.pdf?v=20261109';
+      link.download=japanese?'Jarvis_Lin_CV_Japanese.pdf':'Jarvis_Lin_CV_English.pdf';link.type='application/pdf';link.hreflang=japanese?'ja':'en';
       link.lang=button.lang;link.append(document.createTextNode(button.firstChild.textContent.trim()));
-      const note=document.createElement('small');note.textContent='English PDF';link.append(note);
+      const note=document.createElement('small');note.textContent=japanese?'日本語 PDF':'English PDF';link.append(note);
       button.replaceWith(link);
     });
   }
