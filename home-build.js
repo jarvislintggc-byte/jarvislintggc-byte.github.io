@@ -15,6 +15,8 @@
  .ruler{position:absolute;background:#303438ed;color:#9aabb5;font:9px/1 monospace;overflow:hidden;transition:transform .25s ease;pointer-events:none;z-index:3}
  .ruler-top{left:24px;right:0;top:0;height:24px;transform:translateY(-100%);border-bottom:1px solid #4c5358;background-image:repeating-linear-gradient(90deg,transparent 0 9px,#6d7a8466 9px 10px);background-size:100% 5px;background-repeat:no-repeat;background-position:bottom}
  .ruler-left{left:0;top:24px;bottom:0;width:24px;transform:translateX(-100%);border-right:1px solid #4c5358;background-image:repeating-linear-gradient(0deg,transparent 0 9px,#6d7a8466 9px 10px);background-size:5px 100%;background-repeat:no-repeat;background-position:right}
+ .rulers:before{content:'';position:absolute;left:0;top:0;width:24px;height:24px;background:#303438ed;border-right:1px solid #4c5358;border-bottom:1px solid #4c5358;opacity:0;transition:opacity .25s ease;pointer-events:none;z-index:3}
+ .rulers.is-visible:before{opacity:1}
  .rulers.is-visible .ruler{transform:translate(0,0)}
  .ruler b{position:absolute;font:inherit;font-weight:400}.ruler-top b{top:5px;transform:translateX(-50%)}.ruler-left b{left:5px;writing-mode:vertical-rl;transform:rotate(180deg) translateY(50%)}
  .ruler i{position:absolute;background:#079ff433;box-shadow:inset 0 -1px #079ff4}.ruler-top i{top:0;height:100%;left:0}.ruler-left i{left:0;width:100%;top:0}
@@ -25,7 +27,7 @@
  @keyframes build-toast{0%{opacity:0;transform:translate(-50%,18px) scale(.85)}20%,73%{opacity:1;transform:translate(-50%,0) scale(1)}100%{opacity:0;transform:translate(-50%,-12px) scale(1.025)}}
  @keyframes build-ring{0%{opacity:.9;transform:translate(-50%,-50%) scale(.15)}100%{opacity:0;transform:translate(-50%,-50%) scale(3.3)}}
  @keyframes build-spark{0%{opacity:0;transform:translate(0,0) rotate(var(--angle)) scaleX(.1)}12%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(var(--angle)) scaleX(.3)}}
- @media(prefers-reduced-motion:reduce){.ruler,.bar{transition:none}}
+ @media(prefers-reduced-motion:reduce){.ruler,.bar,.rulers:before{transition:none}}
  @media(max-width:600px){.bar{width:auto;gap:6px;padding:7px;bottom:max(10px,env(safe-area-inset-bottom));border-radius:13px}.progress{display:none}.identity{padding:0 3px}.count{min-width:47px;font-size:10px}button{padding:8px 9px;min-height:42px;font-size:11px}.agent span{font-size:9px}}
  </style><div class="rulers" aria-hidden="true"><div class="ruler ruler-top"><i></i><div class="ruler-labels"></div></div><div class="ruler ruler-left"><i></i><div class="ruler-labels"></div></div></div><div class="effects" aria-hidden="true"></div><div class="completion" hidden role="status" aria-live="polite"></div><div class="bar is-away" inert aria-hidden="true" role="region" aria-label="首頁動畫試作控制列"><div class="identity" aria-label="0 Agents"><div class="dots" aria-hidden="true"></div><strong class="agent-number">0</strong><span class="caption">Agents</span></div><span class="count">準備中</span><div class="progress"><i></i></div></div><button class="replay replay-launcher" hidden>重播動畫 ↻</button>`;
  const ui=selector=>shadow.querySelector(selector),reduced=matchMedia('(prefers-reduced-motion: reduce)'),mobile=matchMedia('(max-width:600px)');
@@ -34,7 +36,7 @@
  ui('.bar').setAttribute('aria-label',labels.controls);ui('.replay').textContent=labels.replay;
  let sections=[],tasks=[],agents=[],done=0,running=false,paused=false,autoFollow=true,engaged=false,followUntil=0,followTimer=0,raf=0,last=0,started=false,autoCancelled=false,bootTimer;
  reduced.addEventListener('change',()=>{if(reduced.matches&&running)finish();});
- window.addEventListener('error',event=>{if(event.filename?.includes('/home-build.js?v=59ef7762421858e7'))finish();});
+ window.addEventListener('error',event=>{if(event.filename?.includes('/home-build.js'))finish();});
  const speed=1;
  const colors=['#4d78ce','#a75b86','#528c69','#b18138'];
  const sfx=window.JarvisBuildSound?new window.JarvisBuildSound():null;
