@@ -13,10 +13,8 @@
  .box{position:absolute;border:1px solid #079ff4;opacity:0}.box:before,.box:after{content:'';position:absolute;width:5px;height:5px;border:1px solid #079ff4;background:#fff}.box:before{left:-3px;top:-3px}.box:after{right:-3px;bottom:-3px}.box small{position:absolute;left:-1px;top:-19px;white-space:nowrap;background:#079ff4;color:#fff;font:9px/16px monospace;padding:0 5px;border-radius:3px 3px 0 0}
  .build-ghost{position:absolute;pointer-events:none;transform-origin:top left;overflow:hidden}.build-ghost.type{white-space:pre-wrap}.build-ghost.type:after{content:"";border-right:1px solid #079ff4;margin-left:2px}
  .ruler{position:absolute;background:#303438ed;color:#9aabb5;font:9px/1 monospace;overflow:hidden;transition:transform .25s ease;pointer-events:none;z-index:3}
- .ruler-top{left:24px;right:0;top:0;height:24px;transform:translateY(-100%);border-bottom:1px solid #4c5358;background-image:repeating-linear-gradient(90deg,transparent 0 9px,#6d7a8466 9px 10px);background-size:100% 5px;background-repeat:no-repeat;background-position:bottom}
+ .ruler-top{left:0;right:0;top:0;height:24px;transform:translateY(-100%);border-bottom:1px solid #4c5358;background-image:repeating-linear-gradient(90deg,transparent 0 9px,#6d7a8466 9px 10px);background-size:100% 5px;background-repeat:no-repeat;background-position:bottom}
  .ruler-left{left:0;top:24px;bottom:0;width:24px;transform:translateX(-100%);border-right:1px solid #4c5358;background-image:repeating-linear-gradient(0deg,transparent 0 9px,#6d7a8466 9px 10px);background-size:5px 100%;background-repeat:no-repeat;background-position:right}
- .rulers:before{content:'';position:absolute;left:0;top:0;width:24px;height:24px;background:#303438ed;border-right:1px solid #4c5358;border-bottom:1px solid #4c5358;opacity:0;transition:opacity .25s ease;pointer-events:none;z-index:3}
- .rulers.is-visible:before{opacity:1}
  .rulers.is-visible .ruler{transform:translate(0,0)}
  .ruler b{position:absolute;font:inherit;font-weight:400}.ruler-top b{top:5px;transform:translateX(-50%)}.ruler-left b{left:5px;writing-mode:vertical-rl;transform:rotate(180deg) translateY(50%)}
  .ruler i{position:absolute;background:#079ff433;box-shadow:inset 0 -1px #079ff4}.ruler-top i{top:0;height:100%;left:0}.ruler-left i{left:0;width:100%;top:0}
@@ -27,7 +25,7 @@
  @keyframes build-toast{0%{opacity:0;transform:translate(-50%,18px) scale(.85)}20%,73%{opacity:1;transform:translate(-50%,0) scale(1)}100%{opacity:0;transform:translate(-50%,-12px) scale(1.025)}}
  @keyframes build-ring{0%{opacity:.9;transform:translate(-50%,-50%) scale(.15)}100%{opacity:0;transform:translate(-50%,-50%) scale(3.3)}}
  @keyframes build-spark{0%{opacity:0;transform:translate(0,0) rotate(var(--angle)) scaleX(.1)}12%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(var(--angle)) scaleX(.3)}}
- @media(prefers-reduced-motion:reduce){.ruler,.bar,.rulers:before{transition:none}}
+ @media(prefers-reduced-motion:reduce){.ruler,.bar{transition:none}}
  @media(max-width:600px){.bar{width:auto;gap:6px;padding:7px;bottom:max(10px,env(safe-area-inset-bottom));border-radius:13px}.progress{display:none}.identity{padding:0 3px}.count{min-width:47px;font-size:10px}button{padding:8px 9px;min-height:42px;font-size:11px}.agent span{font-size:9px}}
  </style><div class="rulers" aria-hidden="true"><div class="ruler ruler-top"><i></i><div class="ruler-labels"></div></div><div class="ruler ruler-left"><i></i><div class="ruler-labels"></div></div></div><div class="effects" aria-hidden="true"></div><div class="completion" hidden role="status" aria-live="polite"></div><div class="bar is-away" inert aria-hidden="true" role="region" aria-label="首頁動畫試作控制列"><div class="identity" aria-label="0 Agents"><div class="dots" aria-hidden="true"></div><strong class="agent-number">0</strong><span class="caption">Agents</span></div><span class="count">準備中</span><div class="progress"><i></i></div></div><button class="replay replay-launcher" hidden>重播動畫 ↻</button>`;
  const ui=selector=>shadow.querySelector(selector),reduced=matchMedia('(prefers-reduced-motion: reduce)'),mobile=matchMedia('(max-width:600px)');
@@ -132,7 +130,7 @@
  let rulerTimer=0,rulerOrigin=null,rulerWidth=0;const ruledSections=new Set();
  function hideRulers(){clearTimeout(rulerTimer);ui('.rulers').classList.remove('is-visible');}
  function updateRulers(){
-  if(rulerWidth!==innerWidth){rulerWidth=innerWidth;ui('.ruler-top .ruler-labels').innerHTML=Array.from({length:Math.ceil(innerWidth/100)},(_,i)=>`<b style="left:${i*100-24}px">${i*100}</b>`).join('');}
+  if(rulerWidth!==innerWidth){rulerWidth=innerWidth;ui('.ruler-top .ruler-labels').innerHTML=Array.from({length:Math.ceil(innerWidth/100)},(_,i)=>`<b style="left:${i*100}px">${i*100}</b>`).join('');}
   const origin=Math.floor(scrollY/100)*100;
   if(origin!==rulerOrigin){rulerOrigin=origin;}
   ui('.ruler-left .ruler-labels').innerHTML=Array.from({length:Math.ceil(innerHeight/100)+2},(_,i)=>`<b style="top:${origin+i*100-scrollY-24}px">${origin+i*100}</b>`).join('');
@@ -272,7 +270,7 @@
    Object.assign(agent.box.style,{left:box.left+'px',top:box.top+'px',width:Math.max(1,box.width*draw)+'px',height:box.height+'px',opacity:arrival>.85?'1':'0'});
    const size=`${Math.round(box.width*draw)} × ${Math.round(box.height)}`;
    agent.box.firstElementChild.textContent=size;agent.pointer.querySelector('span').textContent=size;
-   if(ui('.rulers').classList.contains('is-visible')){Object.assign(ui('.ruler-top i').style,{left:Math.max(0,r.left-24)+'px',width:Math.max(0,r.width*draw)+'px'});Object.assign(ui('.ruler-left i').style,{top:Math.max(0,r.top-24)+'px',height:Math.max(0,r.height)+'px'});}
+   if(ui('.rulers').classList.contains('is-visible')){Object.assign(ui('.ruler-top i').style,{left:Math.max(0,r.left)+'px',width:Math.max(0,r.width*draw)+'px'});Object.assign(ui('.ruler-left i').style,{top:Math.max(0,r.top-24)+'px',height:Math.max(0,r.height)+'px'});}
    if(task.effect==='draw'&&task.el.matches('p,span,small,summary,button')){const glyphs=Math.floor(task.el.textContent.trim().length*draw);if(glyphs>(task.soundGlyphs||0)){if(audioEnabled)sfx?.key(r.left,innerWidth,agent.assignment,glyphs-(task.soundGlyphs||0),0);task.soundGlyphs=glyphs;}}
    task.el.style.setProperty('--build-unrevealed',`${(1-draw)*100}%`);
    if(agent.time>=task.duration){if(audioEnabled)sfx?.place(task.effect==='duplicate'?'dup':task.effect==='type-scale'?'text':task.el.matches('img,.jarvis-marquee-card')?'image':'rect',r.left,r.top,r.width,r.height,innerWidth,innerHeight,task.fontSize||16);agent.ghost?.remove();agent.ghost=null;clearElement(task.el);task.state='done';done++;agent.task=null;agent.box.style.opacity='0';agent.pointer.style.opacity='0';updateRoster();progress();}
