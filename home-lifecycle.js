@@ -28,9 +28,10 @@
     const hero = document.getElementById('hero-section');
     const heading = hero?.querySelector('h1');
     if (!heading) return;
-    const headingHeight = heading.getBoundingClientRect().height;
+    // Use the layout height so the visible 20% enlargement cannot change the scroll distance.
+    const headingHeight = heading.offsetHeight;
     if (!headingHeight) return;
-    const flipDistance = headingHeight * 1.5;
+    const flipDistance = headingHeight;
     const pinnedOffset = Math.min(flipDistance, Math.max(0, -hero.getBoundingClientRect().top));
     const scrollProgress = pinnedOffset / flipDistance;
     const faceProgress = reducedMotion.matches ? Number(scrollProgress >= 0.5) : scrollProgress;
