@@ -34,6 +34,35 @@ footer .framer-11w1mys{display:none!important}
 .jarvis-category-caption small{font-size:11px;letter-spacing:.06em;font-weight:400}
 .jarvis-marquee-card[data-article-id="verdeclean-tsmc-rfp-translation"]>img{object-fit:contain;box-sizing:border-box;padding:12px 12px 92px;background:#f7f7f7}
 
+.jarvis-carousel-track a:is([data-article-id="arizona-chip-journey"],[data-article-id="arizona-innovation-map"]){
+ display:flex;
+ flex-direction:column;
+ background:#0e1117;
+}
+.jarvis-carousel-track a:is([data-article-id="arizona-chip-journey"],[data-article-id="arizona-innovation-map"])>img{
+ flex:1 1 0;
+ min-height:0;
+ object-position:left top;
+}
+.jarvis-carousel-track a:is([data-article-id="arizona-chip-journey"],[data-article-id="arizona-innovation-map"])>.jarvis-category-caption{
+ position:static;
+ flex:none;
+ min-height:58px;
+ box-sizing:border-box;
+ justify-content:center;
+ gap:3px;
+ padding:8px 14px;
+ background:#0e1117;
+}
+@media(max-width:809px){
+ .jarvis-carousel-heading{margin-bottom:14px}
+ .jarvis-carousel-heading h3{display:none}
+ .jarvis-carousel-heading p{margin-top:0}
+ .jarvis-carousel-track a:is([data-article-id="arizona-chip-journey"],[data-article-id="arizona-innovation-map"]){
+  flex-basis:clamp(220px,78vw,340px);
+ }
+}
+
 /* Keep the photo heading and gallery together below My Experiences. */
 #main main.framer-1n1z6hi>section.framer-lcc4ld{order:3}
 #main main.framer-1n1z6hi>section.framer-9pnuil{order:4}

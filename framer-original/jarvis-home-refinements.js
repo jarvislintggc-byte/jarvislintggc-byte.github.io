@@ -38,16 +38,61 @@
       button.replaceWith(link);
     });
   }
+  function updateExperienceLabels(){
+    const category = document.querySelector('#experience .jarvis-life-row:has(.jarvis-place-flag img[src="/assets/flags/tw.svg"]) .jarvis-life-category p');
+    const taiwanLabel = {en:'Life in Taiwan', 'zh-Hant':'台灣生活', ja:'台湾での暮らし'}[locale];
+    if(category && taiwanLabel && category.textContent !== taiwanLabel) category.textContent = taiwanLabel;
+
+    if(locale !== 'zh-Hant') return;
+    const summary = document.querySelector('#experience .jarvis-experience-summary');
+    const originalHeading = summary?.querySelector('.framer-1inv1wp');
+    if(!originalHeading || summary.querySelector('.jarvis-mobile-experience-heading')) return;
+    const heading = document.createElement('h2');
+    heading.className = 'jarvis-mobile-experience-heading';
+    for(const line of ['在不同地方，','留下實踐的足跡。']){
+      const span = document.createElement('span');
+      span.textContent = line;
+      heading.append(span);
+    }
+    originalHeading.after(heading);
+  }
+
   let watched=[],pending=false;
   const observer=new ResizeObserver(schedule);
-  function schedule(){if(!pending){pending=true;requestAnimationFrame(()=>{pending=false;updateCvDownloads();center();});}}
+  function schedule(){
+    if(pending) return;
+    pending=true;
+    requestAnimationFrame(()=>{
+      pending=false;
+      updateCvDownloads();
+      updateExperienceLabels();
+      center();
+    });
+  }
+
   function center(){
-    const orbit=document.querySelector('.jarvis-exploration-orbit'),text=document.querySelector('.jarvis-exploration-title');
-    if(!orbit||!text)return;const parent=text.offsetParent;if(!parent)return;
-    const targets=[orbit,text,parent];if(targets.some((e,i)=>watched[i]!==e)){observer.disconnect();targets.forEach(e=>observer.observe(e));watched=targets;}
-    if(innerWidth<810)return;
-    const r=orbit.getBoundingClientRect(),p=parent.getBoundingClientRect(),value=(r.top+r.height/2-p.top).toFixed(2)+'px';
-    if(text.style.getPropertyValue('--jarvis-exploration-center')!==value)text.style.setProperty('--jarvis-exploration-center',value);
+    const orbit = [...document.querySelectorAll('.jarvis-exploration-orbit')].find(node=>node.offsetHeight);
+    const text = [...document.querySelectorAll('.jarvis-exploration-title')].find(node=>node.offsetParent);
+    if(!orbit || !text) return;
+    const parent = text.offsetParent;
+    const targets = [orbit,text,parent];
+    if(targets.some((node,index)=>watched[index]!==node)){
+      observer.disconnect();
+      targets.forEach(node=>observer.observe(node));
+      watched=targets;
+    }
+    let top = 0;
+    let node = orbit;
+    while(node && node !== parent){
+      top += node.offsetTop;
+      node = node.offsetParent;
+    }
+    const bounds = orbit.getBoundingClientRect();
+    const centerY = innerWidth < 810 && node === parent
+      ? top + orbit.offsetHeight / 2
+      : bounds.top + bounds.height / 2 - parent.getBoundingClientRect().top;
+    const value = centerY.toFixed(2)+'px';
+    if(text.style.getPropertyValue('--jarvis-exploration-center')!==value) text.style.setProperty('--jarvis-exploration-center',value);
     text.classList.add('jarvis-centered-exploration');
   }
   window.JarvisHome.onReady(schedule);document.fonts?.ready.then(schedule);

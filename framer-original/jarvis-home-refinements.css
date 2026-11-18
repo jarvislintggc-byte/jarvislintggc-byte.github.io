@@ -42,9 +42,19 @@
 .jarvis-cv :focus-visible{outline:2px solid #bc5c3f;outline-offset:3px}
 @keyframes jarvis-cv-open{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
 
-@media(min-width:810px){#main .jarvis-centered-exploration{top:var(--jarvis-exploration-center)!important;bottom:auto!important;left:50%!important;transform:translate(-50%,-50%)!important}}
+#main .jarvis-centered-exploration{top:var(--jarvis-exploration-center)!important;bottom:auto!important;left:50%!important;transform:translate(-50%,-50%)!important}
+#experience .jarvis-mobile-experience-heading{display:none}
 @media(max-width:809px){
  .jarvis-cv,.jarvis-cv summary{width:100%}
+ #experience .jarvis-experience-summary>.framer-12d458h{display:none}
+ #experience .jarvis-experience-summary:has(>.jarvis-mobile-experience-heading)>.framer-1inv1wp{display:none}
+ #experience .jarvis-mobile-experience-heading{
+  display:block;
+  margin:0;
+  font:800 clamp(23px,9vw,46px)/1.1 Urbanist,system-ui,sans-serif;
+  letter-spacing:-.025em;
+ }
+ #experience .jarvis-mobile-experience-heading>span{display:block;white-space:nowrap}
  #experience .jarvis-stats{gap:12px}
  #experience .jarvis-life-row{grid-template-columns:minmax(0,1fr) auto;gap:24px 22px;padding:28px 0;min-height:0;height:auto}
  #experience .jarvis-life-number{display:none}
@@ -55,8 +65,50 @@
  #experience .jarvis-life-category p{font-size:16px}
  #experience .jarvis-life-location{grid-column:2;grid-row:2;align-self:center;justify-self:end;width:auto;max-width:150px;align-items:flex-end;gap:10px}
  #experience .jarvis-life-location p{text-align:right;font-size:13px;line-height:1.5;overflow-wrap:normal;word-break:normal}
- #experience .jarvis-place-flag{margin-top:8px;padding:4px;background:#f7f5ef}
- #experience .jarvis-place-flag img{width:70px;height:47px;object-position:center}
+ #experience .jarvis-life-location>.jarvis-place-flag{
+  align-self:flex-end;
+  flex:none;
+  width:70px;
+  height:47px;
+  margin:8px 0 0 auto;
+  padding:0;
+  background:transparent;
+ }
+ #experience .jarvis-place-flag img{width:100%;height:100%;object-fit:contain;object-position:right center}
+}
+@media(max-width:809.98px){
+ #hero-section{
+  margin-bottom:var(--jarvis-mobile-hero-distance,0px);
+ }
+ [data-framer-name="Sticky Avatar Wrap"],
+ #hero-section [data-framer-appear-id="wk9qvh"]{
+  translate:0 var(--jarvis-mobile-hero-pin,0px);
+ }
+ [data-framer-name="Avatar Wrap"]{
+  --avatar-progress:var(--jarvis-mobile-portrait-progress,0);
+  --avatar-rotation:calc(var(--avatar-progress) * 180deg);
+  --avatar-scale:.78;
+  --avatar-offset:26px;
+ }
+ [data-framer-name="Avatar Wrap"] :is([data-framer-name="Avatar - Front"],[data-framer-name="Avatar - Back"]){
+  opacity:1!important;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  transition:none!important;
+  transform:perspective(1200px) translateY(var(--avatar-offset)) scale(var(--avatar-scale)) rotateY(var(--avatar-face-rotation))!important;
+ }
+ [data-framer-name="Avatar - Front"]{
+  --avatar-face-rotation:var(--avatar-rotation);
+ }
+ [data-framer-name="Avatar - Back"]{
+  --avatar-face-rotation:calc(var(--avatar-rotation) - 180deg);
+ }
+}
+@media(max-width:809.98px) and (prefers-reduced-motion:reduce){
+ [data-framer-name="Avatar Wrap"]{
+  --avatar-scale:1;
+  --avatar-offset:0px;
+ }
 }
 @media(prefers-reduced-motion:reduce){.jarvis-cv[open] ul{animation:none}.jarvis-cv summary>span,#experience .jarvis-life-copy h4,#experience .jarvis-life-category{transition:none}}
 /* Generated builder chrome is not part of the portfolio UI. */
