@@ -59,3 +59,8 @@ body.page-my-story .journey-stage:before{background-image:none}
 .content-page>.ink-atmosphere{position:fixed;inset:0;z-index:0;opacity:.65;pointer-events:none;mix-blend-mode:multiply}
 .content-page>.page-header,.content-page>.page-main,.content-page>.page-footer{position:relative;z-index:1}
 .page-my-story .story-reflections{background:transparent}
+
+/* Pause the background wash on phones and touch-first screens. */
+@media(max-width:809.98px),(pointer:coarse){
+ .ink-atmosphere{display:none!important}
+}

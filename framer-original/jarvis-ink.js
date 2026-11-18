@@ -8,7 +8,7 @@
   function paperBottom() { return height; }
   function clipPaper() { stage.style.clipPath = 'none'; }
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const mobile = matchMedia('(max-width: 760px), (pointer: coarse)');
+  const mobile = matchMedia('(max-width: 809.98px), (pointer: coarse)');
   let canvas = document.querySelector('#ink-canvas');
   let enabled = !reducedMotion.matches;
   let engine;
@@ -130,7 +130,7 @@
   if(!engine)return;
 
   function resize(){const nextWidth=window.innerWidth,nextHeight=window.innerHeight;if(nextWidth===width&&nextHeight===height)return;width=nextWidth;height=nextHeight;stage.style.height=`${height}px`;clipPaper();try{engine.resize(width,height);}catch{engine=fallback();if(!engine)return;engine.resize(width,height);}points.length=0;resetGesture();if(enabled)seed();}
-  function visible(){return enabled && !document.hidden && paperBottom() > 0;}
+  function visible(){return !mobile.matches && enabled && !document.hidden && paperBottom() > 0;}
   function wake(){if(!visible())return;lastInput=performance.now();if(!frame){previousTime=0;frame=requestAnimationFrame(render);}}
   // One fluid brush follows the approved spiral, at twice the former drawing speed.
   function spiral(dt){

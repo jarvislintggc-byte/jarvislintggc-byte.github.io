@@ -13,3 +13,7 @@ body{isolation:isolate;background-color:#fff!important}
 
 /* Retire Instagram from the original hydrated footer too. */
 #main a[href*="instagram.com"]{display:none!important}
+
+@media(max-width:809.98px),(pointer:coarse){
+ .jarvis-author-ink{display:none!important}
+}
