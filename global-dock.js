@@ -89,7 +89,7 @@
   const a=event.target.closest('[data-site-language]');if(!a)return;
   try{localStorage.setItem('jarvis-site-language',a.dataset.siteLanguage);localStorage.setItem('jarvis-journey-language',a.dataset.siteLanguage);}catch{}
  });
+ // Bind controls before refresh makes the dock interactive.
+ window.initJarvisNavigation();
  refresh();
- // Reuse the existing focus, navigation, Escape, and game-pause contract.
- const controller=document.createElement('script');controller.src='/navigation.js?v=59ef7762421858e7';document.body.append(controller);
 })();

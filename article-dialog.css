@@ -4,10 +4,11 @@
 #note-dialog *,#note-dialog *::before,#note-dialog *::after{box-sizing:border-box}
 #note-dialog::backdrop{background:#1b251f99;backdrop-filter:blur(5px)}
 #note-dialog .dialog-top{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:20px 28px;background:var(--paper);border-bottom:1px solid var(--line)}
-#note-dialog #note-dialog-category{font:600 11.2px/1.7 'DM Sans',Arial,sans-serif;letter-spacing:1.5px}
-#note-dialog .dialog-actions{display:flex;align-items:center;gap:12px;margin-left:auto}
+#note-dialog #note-dialog-category{font:600 22.4px/1.25 'DM Sans',Arial,sans-serif;letter-spacing:1.5px}
+#note-dialog .dialog-actions{--note-language-circle:38px;display:flex;align-items:center;gap:12px;margin-left:auto;flex-shrink:0}
 #note-dialog .dialog-actions nav{display:flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:999px;padding:4px;font-size:13px}
 #note-dialog .dialog-actions nav a,#note-dialog [data-article-language]{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:8px 12px;border:0;border-radius:999px;background:transparent;color:var(--ink);font:500 13px/1.4 'DM Sans',Arial,sans-serif;text-decoration:none;cursor:pointer}
+#note-dialog [data-article-language]:is([data-article-language="en"],[data-article-language="zh-Hant"]){width:var(--note-language-circle);height:var(--note-language-circle);min-height:0;flex:none;padding:0;border-radius:50%}
 #note-dialog .dialog-actions nav [aria-current=true],#note-dialog .dialog-actions nav [aria-current=page]{background:var(--ink);color:var(--paper)}
 #note-dialog #note-dialog-close{display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;margin:0;padding:0;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);font:26px/1 Arial,sans-serif;cursor:pointer}
 #note-dialog #note-dialog-close span{margin:0;font:inherit}
@@ -18,7 +19,16 @@
 #note-dialog .note-article-section h3{margin:0 0 16px;font:500 32px/1.4 var(--serif);letter-spacing:-.4px}
 #note-dialog .note-article-section p{margin:15px 0 0;font-size:19.6px;line-height:1.95;color:#626c60;white-space:normal;overflow-wrap:anywhere}
 #note-dialog .note-resources{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-#note-dialog .note-resources a{display:inline-flex;align-items:center;gap:8px;max-width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:3px;font-size:26px;line-height:1.5;text-decoration:none;color:inherit;overflow-wrap:anywhere}
+#note-dialog .note-resources a{display:inline-block;max-width:100%;padding:8px 0;border:0;font-size:26px;line-height:1.5;color:inherit;overflow-wrap:anywhere}
+#note-dialog .note-resources a,#note-dialog .note-article-section p a:is([href^="https://"],[href^="http://"]){
+ position:relative;
+ text-decoration:underline dashed currentColor;
+ text-underline-offset:4px;
+ animation:note-resource-hop 3.8s ease-in-out infinite;
+}
+#note-dialog .note-resources a:nth-child(even){animation-delay:.3s}
+#note-dialog .note-resources a:is(:hover,:focus-visible),#note-dialog .note-article-section p a:is(:hover,:focus-visible){color:#b94d32;animation:none}
+@keyframes note-resource-hop{0%,72%,84%,100%{top:0}78%{top:-3px}90%{top:-1px}}
 #note-dialog .note-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px;margin-top:20px}
 #note-dialog .note-gallery figure,#note-dialog .note-gallery figure:first-child{grid-column:auto;margin:0;min-width:0}
 #note-dialog .note-gallery a{display:flex;align-items:center;justify-content:center;height:260px;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#eae9e0}
@@ -28,14 +38,14 @@
 #note-dialog .note-brief .note-article-section{border:0;padding:0;margin-top:14px}
 #note-dialog .note-brief .note-article-section h3,#note-dialog .note-brief .note-article-section p{display:inline;font:18px/1.8 'DM Sans',Arial,sans-serif;margin:0}
 #note-dialog .note-brief .note-article-section h3{font-weight:600;margin-right:10px}
-#note-dialog .note-brief .note-resources a{min-height:44px;padding:8px 12px;font-size:17px}
+#note-dialog .note-brief .note-resources a{min-height:44px;font-size:17px}
 #note-dialog [hidden]{display:none}
 #note-dialog :focus-visible{outline:2px solid #b94d32;outline-offset:3px}
 @media(max-width:760px){
 #note-dialog{width:calc(100% - 20px);max-height:92dvh}
 #note-dialog .dialog-top{padding:10px 12px;gap:8px;flex-wrap:nowrap}
-#note-dialog #note-dialog-category{font-size:10px;letter-spacing:.5px;flex:1;min-width:0;overflow-wrap:anywhere}
-#note-dialog .dialog-actions{width:auto;margin-left:auto;gap:4px}
+#note-dialog #note-dialog-category{font-size:20px;letter-spacing:.5px;flex:1;min-width:0;overflow-wrap:anywhere}
+#note-dialog .dialog-actions{--note-language-circle:34px;width:auto;margin-left:auto;gap:4px}
 #note-dialog .dialog-actions nav a,#note-dialog [data-article-language]{min-height:34px;padding:7px;font-size:11px}
 #note-dialog .dialog-content{padding:20px 18px}
 #note-dialog h2{font-size:27px;line-height:1.35;letter-spacing:-.5px}
@@ -44,7 +54,7 @@
 #note-dialog .note-article-section h3{font-size:20px;line-height:1.4;letter-spacing:0;margin-bottom:10px}
 #note-dialog .note-article-section p{font-size:16px;line-height:1.8;margin-top:12px}
 #note-dialog .note-brief .note-article-section h3,#note-dialog .note-brief .note-article-section p{font-size:16px;line-height:1.8}
-#note-dialog .note-resources a{min-height:44px;font-size:15px;padding:8px 12px}
+#note-dialog .note-resources a,#note-dialog .note-brief .note-resources a{min-height:44px;font-size:15px}
 #note-dialog .note-gallery{grid-template-columns:1fr;gap:16px;margin-top:16px}
 #note-dialog .note-gallery a{height:auto;max-height:320px}
 #note-dialog .note-gallery img{height:auto;max-height:320px}
@@ -59,3 +69,7 @@
 #note-dialog h2,#note-dialog .note-article-section h3{word-break:normal;letter-spacing:0}
 #note-dialog .note-gallery{width:100%;min-width:0}
 #note-dialog[aria-busy=true]{cursor:progress}
+
+@media(prefers-reduced-motion:reduce){
+ #note-dialog .note-resources a,#note-dialog .note-article-section p a{animation:none}
+}

@@ -163,15 +163,16 @@
 
 <link rel="stylesheet" href="/framer-original/jarvis-ink.css?v=59ef7762421858e7">
 <script src="/framer-original/jarvis-ink-boot.js?v=daea1603" defer></script>
-<link rel="stylesheet" href="/global-dock.css?v=59ef7762421858e7">
-<link rel="stylesheet" href="/article-dialog.css?v=59ef7762421858e7">
+<link rel="stylesheet" href="/global-dock.css?v=8b6b9ffa8df4">
+<link rel="stylesheet" href="/article-dialog.css?v=note-header-links-v2">
 <link rel="stylesheet" href="/research-link-gate.css?v=59ef7762421858e7">
-<link rel="stylesheet" href="/framer-original/home-layout.css?v=mobile-home-layout-v4">
+<link rel="stylesheet" href="/framer-original/home-layout.css?v=carousel-link-style-v6">
 <link rel="stylesheet" href="/framer-original/jarvis-home-refinements.css?v=mobile-hero-grow-v5">
 <link rel="stylesheet" href="/framer-original/home-credentials.css?v=59ef7762421858e7">
 <link rel="stylesheet" href="/home-build.css?v=59ef7762421858e7">
 <script src="/home-lifecycle.js?v=mobile-hero-grow-v5" defer></script>
-<script src="/global-dock.js?v=59ef7762421858e7" defer></script>
+<script src="/navigation.js?v=03334891b5c4" defer></script>
+<script src="/global-dock.js?v=81b694959790" defer></script>
 <script src="/dock-effects.js?v=59ef7762421858e7" defer></script>
 <script src="/article-data.js?v=59ef7762421858e7" defer></script>
 <script src="/article-dialog.js?v=59ef7762421858e7" defer></script>
@@ -199,6 +200,7 @@
 <meta name="twitter:description" content="Jarvis Lin 的個人作品集：結合台灣、日本與亞利桑那的創業、供應鏈管理及跨境商業經驗。">
 <meta name="twitter:image" content="https://jarvislintggc-byte.github.io/assets/brand/jarvis-graduation.png">
 <meta name="description" content="Jarvis Lin 的個人作品集：海外學經歷、商業與供應鏈專案，以及動手實作的探索紀錄。"><link rel="canonical" href="https://jarvislintggc-byte.github.io/zh/"><meta name="referrer" content="strict-origin-when-cross-origin"><style data-home-gif>img[src="/assets/portraits/jarvis-home.gif"]{object-fit:contain!important;background:#080402}</style>
+<style>.jarvis-review-notice{font:500 .875rem/1.55 system-ui,sans-serif;color:#373731;text-align:center;align-self:center;width:100%;margin:0 0 clamp(12px,2vw,28px);text-wrap:pretty}</style>
 </head>
 <body>
 
@@ -221,5 +223,19 @@
 	<!-- Start of bodyEnd -->
 
     <!-- End of bodyEnd -->
+<template id="jarvis-review-notice"><p class="jarvis-review-notice" lang="zh-Hant">各位國科會 TG TALENT 評審委員，您好！目前為作品集舊版，部分頁面排版仍在調整中。新版預計於 11 月底正式上線，感謝您撥冗閱覽。</p></template>
+<script>
+(() => {
+  const notice = document.getElementById("jarvis-review-notice");
+  function mountReviewNotice() {
+    const title = document.querySelector("#hero-section .framer-1ea0khq");
+    if (title && !title.querySelector(".jarvis-review-notice")) {
+      title.prepend(notice.content.cloneNode(true));
+    }
+  }
+  document.addEventListener("jarvis:home-ready", mountReviewNotice, {once: true});
+  document.addEventListener("DOMContentLoaded", mountReviewNotice, {once: true});
+})();
+</script>
 </body>
 </html>
