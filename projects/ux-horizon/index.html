@@ -1436,7 +1436,7 @@ a[data-apex-article].apex-tilt-photo {
       details.insertBefore(readingBlock, legacyAction);
     }
     const previousAction = layout.querySelector(':scope > .apex-project-action');
-    const adjusting = ['arizona-chip-journey', 'arizona-innovation-map'].includes(article.id);
+    const adjusting = ['arizona-chip-journey', 'arizona-innovation-map', 'ecosystem-study'].includes(article.id);
     if (!adjusting && !article.resource) {
       previousAction?.remove();
       return;
