@@ -209,7 +209,26 @@
     
     <!-- End of headEnd -->
 	
-<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg?v=gold-glow"><meta property="og:image" content="https://jarvislintggc-byte.github.io/portfolio-assets/media/6961c01ad6b4f2ca3312b52336570b8e8d779f3c.jpg"><meta name="twitter:image" content="https://jarvislintggc-byte.github.io/portfolio-assets/media/6961c01ad6b4f2ca3312b52336570b8e8d779f3c.jpg"></head>
+<link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg?v=gold-glow"><meta property="og:image" content="https://jarvislintggc-byte.github.io/portfolio-assets/media/6961c01ad6b4f2ca3312b52336570b8e8d779f3c.jpg"><meta name="twitter:image" content="https://jarvislintggc-byte.github.io/portfolio-assets/media/6961c01ad6b4f2ca3312b52336570b8e8d779f3c.jpg"><style id="home-speech-bubble">
+  #section-1::after {
+    content: "";
+    position: absolute;
+    right: calc(50% - 2.8vw);
+    top: clamp(12px, 2.5vh, 32px);
+    width: clamp(112px, 15.5vw, 240px);
+    aspect-ratio: 164 / 118;
+    background: url("/assets/brand/speech-bubble.svg") center / contain no-repeat;
+    pointer-events: none;
+  }
+  @media (max-width: 809px) {
+    #section-1::after {
+      top: max(76px, 12svh);
+      right: 56%;
+      width: clamp(72px, 22vw, 124px);
+    }
+  }
+</style>
+</head>
 <body>
 	
 	<!-- Start of bodyStart -->
