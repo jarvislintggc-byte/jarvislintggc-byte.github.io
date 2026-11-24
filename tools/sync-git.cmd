@@ -20,8 +20,6 @@ if not exist "%SITE_PYTHON%" (
   echo Python environment is missing. Git is synchronized; maintenance checks were not run.
   goto failed
 )
-"%SITE_PYTHON%" tools\sync_game.py --check
-if errorlevel 1 goto failed
 "%SITE_PYTHON%" -m unittest discover -s tools -p "test_*.py"
 if errorlevel 1 goto failed
 echo All maintenance checks passed. Nothing was published.

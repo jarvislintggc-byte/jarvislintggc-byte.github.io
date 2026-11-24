@@ -16,15 +16,15 @@
   <script src="/dock-effects.js?v=59ef7762421858e7" defer></script>
   <script src="/site-language.js?v=59ef7762421858e7" defer></script>
   <script src="/ink.js?v=smooth-20261109" defer></script>
-  <script src="/journey-controls.js?v=59ef7762421858e7" defer></script>
-  <script src="/journey-mobile-toolbar.js?v=59ef7762421858e7" defer></script>
-  <script src="/journey-class-dropdown.js?v=59ef7762421858e7" defer></script>
+
+
+
 <link rel="alternate" hreflang="en" href="/my-story/">
 <link rel="alternate" hreflang="zh-Hant" href="/zh/my-story/">
 <link rel="alternate" hreflang="ja" href="/ja/my-story/">
-<link rel="stylesheet" href="/journey.css?v=59ef7762421858e7">
-<link rel="stylesheet" href="/journey-controls.css?v=59ef7762421858e7">
-<script src="/journey-boot.js?v=59ef7762421858e7" defer></script>
+
+
+
 <style id="jarvis-brand-cleanup">a[href="#retired-contact"]{display:none!important}</style>
 <link rel="icon" type="image/png" href="/assets/brand/jarvis-graduation.png?v=brand1">
 <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg?v=brand1">
@@ -45,138 +45,11 @@
 </head>
 <body class="content-page page-my-story"><a class="skip" href="#main">本文へ移動</a>
 <nav class="site-language site-language-global" aria-label="言語を選択"><a href="/zh/my-story/" data-site-language="zh-Hant" lang="zh-Hant" hreflang="zh-Hant">中文</a><a href="/my-story/" data-site-language="en" lang="en" hreflang="en">EN</a><a href="/ja/my-story/" data-site-language="ja" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav><div class="ink-atmosphere" aria-hidden="true"><canvas id="ink-canvas"></canvas></div><header class="page-header wrap"><div class="page-brand-group"><a class="page-wordmark" href="/ja/">JARVIS LIN</a></div><span class="page-location">02 / 私の歩み</span></header><main id="main" class="page-main"><section id="intro" class="story-reflections" lang="en" aria-label="Personal reflections"><div class="story-reflections-copy"><p>かつて私は、人生とはひたすら上へと続く道だと思っていました。</p><p>十分に努力し、勇気を持ち、慣れた場所から踏み出せば、望む暮らしに一歩ずつ近づけるのだと。</p><p>けれど、努力が必ず報われるわけではなく、選択が思い描いた結果につながるとも限らないと、後になって知りました。</p><p>広い世界を見たことで、目指すものは大きくなりました。その一方で、平凡な日々に満足することが難しくなりました。誇りに思っていた経験が、誰にでも自分自身の道があることを、時に忘れさせていたのかもしれません。</p><p>謙虚であること、人の話に耳を傾けること、誰もが自分を理解してくれるわけではなく、すべてが思いどおりには進まないことを、少しずつ学んでいます。</p><p>今も成功を望んでいます。自分がどこまで行けるのか、見てみたい気持ちも変わりません。</p><p>ただ、人生には上へ登ることだけでなく、立ち止まり、失い、受け入れ、そして再び始める時間もあるのだと、わかり始めました。</p><p>成長とは、ますます自分の小ささを知りながら、それでも前へ進む勇気を持ち続けることなのかもしれません。</p></div></section>
-<section class="life-journey" id="journey-game" lang="ja" aria-labelledby="journey-heading">
-  <div class="journey-wrap"><div class="journey-scroll" id="journey-scroll"><div class="journey-stage" id="journey-stage">
-    <header class="journey-heading">
-      <h2 id="journey-heading" data-journey-text="每一段，都是下一段的起點。">一つの章が、次の章の始まりになる。</h2>
-    </header>
-    <div class="life-game" id="life-game" data-phase="ready" tabindex="0" role="region" aria-label="Jarvis の人生をたどる冒険ゲーム" data-journey-aria-label="Jarvis 的人生冒險遊戲" aria-describedby="game-controls">
-      <div class="game-toolbar">
-        <div class="game-brand"><button type="button" class="menu-trigger game-menu-trigger" id="game-menu-trigger" aria-label="メニューを開く／ゲームを離れる" data-journey-aria-label="開啟選單／離開遊戲" aria-controls="site-menu" aria-expanded="false"><span></span><span></span><span></span></button><button type="button" class="mobile-auto" id="mobile-auto" aria-pressed="false" aria-label="自動モード" data-journey-aria-label="自動模式" hidden><span class="auto-dot" aria-hidden="true"></span><span data-journey-text="自動">自動</span></button><span class="game-wordmark"><span aria-hidden="true">✦</span> JARVIS / THE JOURNEY</span></div>
-        <div class="game-bottom"><ol class="chapter-trail" id="chapter-trail" aria-label="章の進行状況" data-journey-aria-label="章節進度"></ol></div>
-        <div class="game-tools"><div class="journey-language" id="journey-language" role="group" aria-label="言語" data-journey-aria-label="Language"><button id="journey-language-zh" type="button" lang="zh-Hant" aria-pressed="true">中文</button><button id="journey-language-en" type="button" lang="en" aria-pressed="false">EN</button><button id="journey-language-ja" type="button" lang="ja" aria-pressed="false">日本語</button></div>
-          <button type="button" id="game-pause" class="game-pause-icon" disabled aria-label="一時停止" data-journey-aria-label="暫停" data-journey-text="暫停">一時停止</button>
-          <button type="button" id="game-sound" aria-pressed="true" aria-label="すべての音をミュート" data-journey-aria-label="關閉所有聲音"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 5 6 9H3v6h3l5 4Z"/><g class="sound-waves"><path d="M15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></g><path class="sound-muted" d="m16 9 5 6m0-6-5 6"/></svg></button>
-          <details class="journey-settings" id="journey-settings" hidden>
-            <summary id="settings-toggle" aria-controls="settings-panel" aria-label="設定" data-journey-aria-label="設定"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="var(--paper,#f5f2ea)"/><circle cx="15" cy="17" r="3" fill="var(--paper,#f5f2ea)"/></svg><span data-journey-text="設定">設定</span></summary>
-            <section class="settings-panel" id="settings-panel" aria-labelledby="settings-heading">
-              <header><h3 id="settings-heading" data-journey-text="播放設定">再生設定</h3><button type="button" id="settings-close" aria-label="設定を閉じる" data-journey-aria-label="關閉設定">×</button></header>
-              <div class="settings-row" id="settings-mode-row"><span data-journey-text="播放方式">再生モード</span><div class="play-mode"><button id="mode-manual" type="button" aria-pressed="true" data-journey-text="操作角色">キャラクターを操作</button><button id="mode-watch" type="button" aria-pressed="false" data-journey-text="觀看故事">物語を見る</button></div></div>
-              <div class="settings-row" id="settings-speed-row"><span data-journey-text="觀看速度">再生速度</span><div class="story-speed" id="story-speed" role="group" aria-label="物語の再生速度" data-journey-aria-label="觀看故事速度" hidden><button id="story-speed-1" type="button" aria-pressed="true">1×</button><button id="story-speed-125" type="button" aria-pressed="false">1.25×</button><button id="story-speed-15" type="button" aria-pressed="false">1.5×</button></div></div>
-              <div class="settings-audio"><p class="settings-bgm-caption">BGM: <output id="settings-bgm-current"></output></p></div>
-            </section>
-          </details>
-        </div>
-      </div>
-      <div class="game-scene" id="game-scene" aria-label="ゲームの背景" data-journey-aria-label="遊戲場景">
-        <div class="scene-world" id="scene-world"><div class="scene-sky" id="scene-sky" aria-hidden="true"></div>
-        <div class="scene-environment scene-environment-back" id="scene-environment-back" aria-hidden="true"></div>
-        <img class="scene-background" id="scene-background" src="/assets/journey/school.png" alt="楓之谷校園場景，作為住宿學校的遊戲化舞台" width="1400" height="700" loading="lazy">
-        <div class="scene-map-objects" id="scene-map-objects" aria-hidden="true" hidden></div>
-        <div class="scene-environment scene-environment-front" id="scene-environment-front" aria-hidden="true"></div>
-        <div class="scene-shade" aria-hidden="true"></div>
 
 
-        <div class="scene-floor" aria-hidden="true"></div>
-        <div class="scene-actors" id="scene-actors">
-        <div class="game-pets" id="game-pets" aria-hidden="true" hidden></div>
-        <div class="game-npcs" id="game-npcs" role="group" aria-label="場景 NPC・遊戲虛構演出" hidden></div>
-        <div class="game-character" id="game-character" aria-hidden="true"><img id="character-sprite" src="/assets/journey/beginner-idle.png" alt="" decoding="sync"><span class="character-shadow"></span><span class="character-name">Jarvis</span></div>
-        <button class="game-boss" id="game-boss" type="button" aria-label="この章のモンスターを攻撃" data-journey-aria-label="攻擊本章怪物" disabled><img id="monster-sprite" alt="" decoding="sync"><span class="boss-name" id="monster-name"></span></button>
-        <div id="monster-effects" class="monster-effects" aria-hidden="true"></div>
-        <div class="maple-skill-effects" id="maple-skill-effects" aria-hidden="true" hidden></div>
-        <div class="maple-mobility-effects" id="maple-mobility-effects" aria-hidden="true" hidden></div>
-        <div class="game-loot" id="game-loot" hidden aria-hidden="true"><img id="loot-image" alt=""></div>
-        <div class="levelup-effect" id="levelup-effect" aria-hidden="true" hidden><img id="levelup-frame" alt="" decoding="sync"></div>
 
-        <div class="enemy-health" id="enemy-health" hidden><span id="enemy-health-label"></span><div id="enemy-health-meter" role="progressbar"><i id="enemy-health-fill"></i></div></div>
 
-        <button class="game-portal" id="game-portal" type="button" disabled aria-label="ポータルはまだ開いていません" data-journey-aria-label="傳送門尚未開啟"><span class="maple-portal-light" aria-hidden="true"><img id="portal-frame" alt=""></span></button>
-        </div></div>
-        <div class="game-map-label"><span id="map-region" data-journey-text="TAIWAN / 時雨高中 · 12—18 歲">台湾 / 時雨高校 · 12〜18歳</span><strong id="map-title" data-journey-text="六年的鐘聲">6年間の鐘の音</strong></div>
-        <div class="chapter-badge" id="chapter-badge">CHAPTER 01 / 18</div>
-        <aside class="reward-banner character-status" id="reward-banner" aria-label="キャラクター情報" data-journey-aria-label="角色資訊" hidden>
-          <span id="reward-heading">CHARACTER</span><div class="status-title"><strong id="game-hud-level" data-journey-text="Lv.1 初心者">Lv.1 初心者</strong><button type="button" id="class-picker-toggle" class="class-menu-trigger" aria-label="職業を選ぶ" data-journey-aria-label="選擇職業" aria-haspopup="dialog" aria-controls="journey-class-picker"><span></span><span></span><span></span></button></div>
-          <div class="status-skill"><span><span data-journey-text="技能 ">スキル </span><b id="skill-count">0 / 5</b></span><strong id="game-hud-skill" data-journey-text="普通攻擊">通常攻撃</strong></div>
-          <div class="status-equipment"><img id="game-hud-gear-icon" alt="" hidden><div><span data-journey-text="裝備">装備</span><strong id="game-hud-gear" data-journey-text="初心者服裝">初心者の服</strong></div></div>
-        </aside>
-        <p class="battle-caption" id="battle-caption" hidden></p>
-        <div class="game-cover" id="game-cover" hidden>
-          <div id="class-screen" hidden></div>
-          <div id="complete-screen" hidden><p class="cover-kicker">CHAPTERS 01—18 / COMPLETE</p><h3><span data-journey-text="下一章，">次の章は、</span><br><span data-journey-text="還在繼續。">今も続いています。</span></h3><p class="cover-description" id="complete-growth"></p><span class="cover-meta" data-journey-text="18 章旅程 · 故事仍在繼續">全18章 · 物語は続いていく</span><div class="journey-end-links"><a href="/ja/experience/" data-journey-text="我的經歷">経験・プロジェクト</a><a href="/ja/what-i-bring/" data-journey-text="我能帶來什麼">提供できる価値</a><a href="/ja/connect/" data-journey-text="聯絡我 ↗">お問い合わせ ↗</a></div></div>
-        </div>
-        <div class="game-tombstone" id="game-tombstone" aria-hidden="true" hidden><img id="tombstone-frame" alt=""></div>
-        <section class="game-death-dialog" id="game-death-dialog" role="dialog" aria-labelledby="death-title" aria-describedby="death-message" hidden><strong id="death-title" data-journey-text="角色已倒下">倒れてしまいました</strong><p id="death-message" data-journey-text="稍候，墓碑正在落下…">墓石が着地するまでお待ちください…</p><button type="button" id="game-revive" disabled data-journey-text="在本關復活">この章で復活</button></section>
-        <div class="game-pause-cover" id="game-pause-cover" hidden><strong data-journey-text="旅程暫停">旅を一時停止中</strong><p data-journey-text="準備好了，再繼續。">準備ができたら、続きをどうぞ。</p><button type="button" id="game-resume" data-journey-text="繼續">再開</button></div>
-        <div class="game-dialogue character-bubble" id="character-bubble" aria-live="polite" aria-atomic="true" hidden>
-          <div class="bubble-skin" id="bubble-skin" aria-hidden="true"></div><img class="bubble-tail" id="bubble-tail" alt="" aria-hidden="true">
-          <div class="dialogue-copy" id="dialogue-copy"><div class="dialogue-byline"><strong id="dialogue-speaker">Jarvis</strong><span id="dialogue-counter"></span></div><p id="dialogue-text"></p></div>
-        </div>
-        <div class="portal-direction" id="portal-direction" role="status" aria-live="polite" hidden>
-          <svg viewBox="0 0 64 44" aria-hidden="true" stroke="#71421b" stroke-width="2.4" stroke-linejoin="round"><path fill="#ffce39" d="M4 10h30V3l25 19-25 19v-8H4z"/><path fill="#fff1a1" stroke="none" d="M7 13h30V9l16 12H7z"/></svg><span data-journey-text="傳點">ポータル</span>
-        </div>
-        <div class="mobile-controls" id="mobile-controls" aria-label="タッチ操作" data-journey-aria-label="手機操作" hidden>
-          <div class="touch-stick" id="touch-stick" role="group" tabindex="0" aria-label="移動スティック" data-journey-aria-label="移動方向盤">
-            <svg class="stick-directions" viewBox="0 0 100 100" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m44 16 6-5 6 5m28 28 5 6-5 6M56 84l-6 5-6-5M16 56l-5-6 5-6"/></svg>
-            <span class="stick-knob" id="touch-stick-knob" aria-hidden="true"></span>
-          </div>
-          <button type="button" class="touch-action touch-attack" id="touch-attack" aria-label="攻撃" data-journey-aria-label="攻擊" disabled>
-            <svg viewBox="0 0 64 64" aria-hidden="true" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m28 39 22-28 5-2-1 7-23 26Z" fill="currentColor" fill-opacity=".85" stroke-width="1.7"/><path d="m22 34 15 13M27 43l-8 10m-3-3 6 6M31 35l16-20" fill="none" stroke-width="3.3"/><path d="m24 37-4 2m14 5 1 5" fill="none" stroke-width="2"/></svg>
-          </button>
-          <button type="button" class="touch-action touch-jump" id="touch-jump" aria-label="ジャンプ。空中でもう一度押すと二段ジャンプ" data-journey-aria-label="跳躍，空中再按一次二段跳">
-            <svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="38" cy="17" r="4" fill="currentColor" stroke="none"/><path d="m35 26-7 12 11 5 9 10M35 26l6 10 10-2M31 30l-10-3-7 5m14 6-4 12-12 3"/><path d="M12 18c2-6 7-10 14-10m-4-4 5 4-5 4" stroke-width="1.8"/></svg>
-          </button>
-        </div>
-        <div class="scene-curtain" aria-hidden="true"></div>
-      </div>
-      <div class="story-controls"><button id="game-auto" type="button" aria-pressed="true" hidden data-journey-text="自動：開">自動：オン</button><button class="game-next" id="game-next" type="button" disabled data-journey-text="出發">出発</button></div>
-      <div class="player-actions" id="player-actions" hidden aria-label="キャラクター操作" data-journey-aria-label="角色操作">
-        <div class="movement-buttons"><button id="player-left" type="button" aria-label="左へ移動" data-journey-aria-label="向左移動">◀</button><button id="player-right" type="button" aria-label="右へ移動" data-journey-aria-label="向右移動">▶</button><button id="player-up" type="button" aria-label="ロープやはしごの近くで長押しして登る" data-journey-aria-label="靠近繩梯後按住向上攀爬"><span data-journey-text="攀爬 ">登る </span><kbd>↑</kbd></button><button id="player-down" type="button" aria-label="長押しで伏せる、ロープやはしごでは下へ降りる" data-journey-aria-label="按住趴下，繩梯上向下攀爬"><span data-journey-text="趴下 ">伏せる </span><kbd>↓</kbd></button><button id="player-jump" type="button" aria-label="ジャンプ。空中でもう一度押すと二段ジャンプ" data-journey-aria-label="跳躍，空中再按一次二段跳"><span data-journey-text="跳躍 ">ジャンプ </span><kbd>Space ×2</kbd></button></div>
-      </div>
-      <div class="classic-hud" id="classic-hud" aria-label="キャラクターの状態と対話履歴" data-journey-aria-label="角色狀態與旁白紀錄">
-        <div class="classic-chat-row"><div class="narration-history"><span class="narration-tab" data-journey-text="旁白">物語</span><ol id="dialogue-history" aria-label="直近の対話" data-journey-aria-label="最新一則對話" aria-live="polite" aria-relevant="additions text"></ol></div></div>
-        <div class="classic-status">
-          <div class="classic-identity"><strong class="classic-level"><span>LV.</span> <b id="player-level">1</b></strong><div><span id="player-job" data-journey-text="初心者">初心者</span><b>Jarvis</b></div></div>
-          <div class="classic-gauges"><div class="classic-meter hp"><label>HP <span id="player-hp-text">100 / 100</span></label><div id="player-hp-meter" role="progressbar" aria-label="HP"><i id="player-hp-fill"></i></div></div>
-          <div class="classic-meter mp"><label>MP <span id="player-mp-text">60 / 60</span></label><div id="player-mp-meter" role="progressbar" aria-label="MP"><i id="player-mp-fill"></i></div></div>
-          <div class="classic-meter exp"><label>EXP <span id="player-exp-text">0%</span></label><div id="player-exp-meter" role="progressbar" aria-label="EXP"><i id="player-exp-fill"></i></div></div>
-          </div></div><div class="classic-menu" id="classic-menu" aria-label="ゲームメニュー" data-journey-aria-label="遊戲選單">
-            <nav class="narration-controls" id="narration-controls" aria-label="セリフの操作" data-journey-aria-label="旁白導覽" hidden>
-              <button id="narration-previous" class="hud-menu red" type="button" disabled><svg class="hud-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M25 16H7m8-8-8 8 8 8"/></svg><span data-journey-text="上一句">前のセリフ</span></button>
-              <button id="narration-next" class="hud-menu green" type="button" disabled><svg class="hud-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M7 16h18m-8-8 8 8-8 8"/></svg><span data-journey-text="下一句">次のセリフ</span></button>
-            </nav>
-            <button type="button" id="hud-chapters" class="hud-menu orange" aria-controls="hud-panel"><svg class="hud-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path class="hud-icon-fill" d="M5 5h17a3 3 0 0 1 3 3v20H8a3 3 0 0 1-3-3Z"/><path d="M8 5h14a3 3 0 0 1 3 3v20H8a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3Zm1 0v23"/><path class="hud-icon-detail" d="M14 12h6m-6 5h6m-6 5h4M18 5v3"/></svg><span data-journey-text="目錄">章一覧</span></button>
-            <button type="button" id="hud-keys" class="hud-menu blue" aria-controls="hud-panel"><svg class="hud-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect class="hud-icon-fill" x="2" y="8" width="28" height="18" rx="3"/><rect x="2" y="8" width="28" height="18" rx="3"/><path class="hud-icon-detail" d="M7 13h1m4 0h1m4 0h1m4 0h3M7 17h1m4 0h1m4 0h1m4 0h3M7 22h2m4 0h12"/></svg><span data-journey-text="熱鍵選項">操作方法</span></button>
-          </div>
-      </div>
-      <section class="classic-window" id="hud-panel" role="dialog" aria-labelledby="hud-panel-title" hidden><header><strong id="hud-panel-title"></strong><button type="button" id="hud-panel-close" aria-label="メニューを閉じる" data-journey-aria-label="關閉選單">×</button></header><div id="hud-panel-body"></div></section>
-      <dialog class="journey-welcome" id="journey-welcome" aria-labelledby="welcome-title" aria-describedby="welcome-story">
-        <div class="welcome-content">
-          <span class="welcome-symbol" aria-hidden="true">✦</span><p class="welcome-kicker">A LITTLE BEFORE THE JOURNEY</p>
-          <h3 id="welcome-title" data-journey-text="從童年的冒險，走進我的故事。">子どもの頃の冒険から、私の物語へ。</h3>
-          <p id="welcome-story" data-journey-text="楓之谷是我童年玩的第一款遊戲。我很喜歡它的視覺風格，因此想用這場冒險，呈現我的人生旅程。">メイプルストーリーは、子どもの頃に初めて遊んだゲームです。その世界観や絵の雰囲気が好きで、この冒険を通して私の歩みを紹介したいと思いました。</p>
-          <p class="welcome-hr" data-journey-text="親愛的 HR，如果您趕時間，可以直接前往 Experience，瀏覽我的經歷與專案。">採用ご担当者の皆様、お急ぎの場合は Experience から経歴とプロジェクトをご覧いただけます。</p>
-          <div class="welcome-actions"><button id="welcome-continue" type="button"><span data-journey-text="開始旅程">旅を始める</span><span aria-hidden="true">↓</span></button><a href="/ja/experience/" id="welcome-experience"><span data-journey-text="直接看 Experience">Experience を見る</span><span aria-hidden="true">↗</span></a></div>
-          <p class="welcome-device"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg><span data-journey-text="手機可用方向盤、大劍與跳躍鈕操作，也能點「自動」觀看故事。">スマートフォンでもスティック・剣・ジャンプで操作できます。「自動」を押すと物語を自動再生できます。</span></p>
-          <footer class="welcome-credits"><p data-journey-text="楓之谷影像與音樂著作權屬 NEXON；本頁為非官方作品集致敬創作。">メイプルストーリーの画像・音楽の権利は NEXON に帰属します。本ページは非公式のポートフォリオ作品です。</p></footer>
-        </div>
-      </dialog>
-      <dialog class="journey-class-picker" id="journey-class-picker" aria-labelledby="class-picker-title">
-        <button type="button" id="class-picker-close" class="class-picker-close" aria-label="職業選択を閉じる" data-journey-aria-label="關閉職業選擇">×</button>
-        <div id="class-picker-screen"><h3 id="class-picker-title" data-journey-text="選一門職業探索我的旅程">職業を選んで、私の歩みをたどる</h3><div class="class-carousel" id="class-carousel"><fieldset class="class-choices" id="class-choices"><legend class="sr-only" data-journey-text="職業">職業</legend></fieldset></div><div class="class-carousel-footer"><span id="class-counter" class="sr-only"></span><div class="class-dots" id="class-dots"></div></div><p id="selection-note" class="sr-only" role="status"></p><button type="button" id="class-picker-done" data-journey-text="繼續">再開</button></div>
-      </dialog>
-      <span class="sr-only" id="story-controls-help" hidden data-journey-text="拖曳左側圓盤移動，上下拖曳可攀爬或趴下；點大劍攻擊，右側跳躍鈕可二段跳。對話結束後才能攻擊，靠近藍光傳點後點擊進入。設定內可切換觀看故事。">左のスティックで移動、上下で登り降りや伏せ。剣をタップして攻撃、右のジャンプを空中でもう一度押すと二段ジャンプ。会話が終わると攻撃できます。青いポータルに近づいてタップすると進みます。設定で自動再生に切り替えられます。</span>
-      <span class="sr-only" id="game-controls" data-journey-text="操作角色：左右方向鍵移動，Space / W / ↑ 跳躍，空中再按一次二段跳，所有職業從初心者起即可使用。靠近繩梯後按住 ↑／↓ 攀爬，Space 跳離；平台上 ↓＋Space 往下跳。地面按住 ↓ 趴下，放開站起。對話結束後 A 攻擊，學到新技能後會自動成為攻擊。對話期間可移動與跳躍。HP 歸零後等待墓碑落地，按「在本關復活」或 Enter 繼續。怪物倒下後可繼續移動，三隻寵物會跨平台取回地上裝備。靠近開啟的傳點按 E。Enter 推進對話。觸控可點擊本章怪物攻擊，點擊藍光傳點進入。">操作：左右キーで移動。Space / W / ↑ でジャンプし、空中でもう一度押すと二段ジャンプ。全職業が初心者から使用できます。ロープやはしごの近くで ↑／↓ を長押しして登り降りし、Space で離れます。↓＋Space で足場から降り、地面で ↓ を押すと伏せます。対話後は A で最新スキルを使って攻撃。対話中も移動とジャンプは可能です。HPが0になったら墓石の着地を待ち、「この章で復活」か Enter で再開。モンスターを倒した後は3匹のペットが装備を回収します。開いたポータルの隣で E。Enter で対話を進めます。タッチではモンスターをタップして攻撃、青いポータルをタップして進みます。</span>
-      <noscript><p class="game-noscript"><span data-journey-text="此互動旅程需要 JavaScript。你也可以前往 ">この物語には JavaScript が必要です。こちらでもご覧いただけます：</span><a href="/ja/my-story/">My story</a><span data-journey-text=" 閱讀我的經歷。">から私の経験を読めます。</span></p></noscript>
-    </div>
-    </div></div>
 
-  </div>
-</section>
-
-<script src="/journey-mobile-toolbar.js?v=59ef7762421858e7" defer></script>
-
-<script src="/journey-class-dropdown.js?v=59ef7762421858e7" defer></script>
 </main><footer class="wrap page-footer"><span>© 2026 Jarvis Lin</span><span>台湾 · 日本 · アリゾナ</span><a href="/ja/">ホームに戻る ↗</a></footer><dialog id="site-menu" class="site-menu" aria-labelledby="menu-title">
     <div class="menu-shell">
       <div class="menu-topbar"><span>JARVIS LIN <span class="menu-brand-separator">/</span> パーソナルインデックス</span><nav class="site-language" aria-label="言語を選択"><a href="/zh/my-story/" data-site-language="zh-Hant" lang="zh-Hant" hreflang="zh-Hant">中文</a><a href="/my-story/" data-site-language="en" lang="en" hreflang="en">EN</a><a href="/ja/my-story/" data-site-language="ja" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav><button class="menu-close" id="menu-close" type="button" aria-label="メニューを閉じる" autofocus><span></span><span></span></button></div>

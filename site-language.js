@@ -2,21 +2,21 @@
   'use strict';
   const data = JSON.parse(document.getElementById('site-locale-data').textContent);
   if (data.slug === '' && location.hash === '#journey-game') {
-    location.replace(data.prefixes[data.locale] + '/my-story/#journey-game');
+    location.replace(data.prefixes[data.locale] + '/my-story/#intro');
     return;
   }
   const locales = Object.keys(data.prefixes);
   const root = document.documentElement;
   const canonical = path => path.replace(/^\/(?:zh|ja)(?=\/)/, '').replace(/index\.html$/, '');
   const pathFor = (locale, path = location.pathname) => data.prefixes[locale] + canonical(path);
-  const save = locale => { try { localStorage.setItem('jarvis-site-language', locale); localStorage.setItem('jarvis-journey-language', locale); } catch {} };
+  const save = locale => { try { localStorage.setItem('jarvis-site-language', locale); } catch {} };
   const originalTexts = [];
-  // Only the intro and navigation update in place. The running game owns its DOM.
+  // Update portfolio content and navigation in place.
   for (const container of document.querySelectorAll('#intro,#journey,.home-main,.page-header,.page-footer,#site-menu,.skip')) {
     const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
     let node;
     while ((node = walker.nextNode())) {
-      if (node.parentElement.closest('.site-language,.life-journey,script,style')) continue;
+      if (node.parentElement.closest('.site-language,script,style')) continue;
       if (originalTexts.some(item => item.node === node)) continue;
       const shown = node.textContent.trim();
       const original = Object.entries(data.text[data.locale] || {}).find(([, value]) => value === shown)?.[0] || shown;
