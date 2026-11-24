@@ -656,6 +656,12 @@ a[data-apex-article].apex-tilt-photo {
 .apex-tilt-photo.apex-tilting { box-shadow: 0 0 6px 1px #ffc06338, 0 0 17px 3px #ffad382b; }
 .apex-tilt-photo:where(:not(.apex-figure-photo, .apex-photo-frame)) { border-radius: 16px; }
 .framer-12640pj.apex-tilt-photo { border-radius: 24px; }
+#main .framer-12640pj.acj-detail-cover,
+#main .acj-detail-cover .framer-12640pj {
+  aspect-ratio: 1731 / 909;
+  height: auto;
+}
+
 
 #section-4 .framer-1w0y98y {
   width: min(596px,100%); height: auto; grid-template-rows: none; grid-auto-rows: auto;
@@ -1410,7 +1416,12 @@ a[data-apex-article].apex-tilt-photo {
     const covers = [...details.parentElement.children].filter(node =>
       node.matches('.framer-12640pj, .ssr-variant:has(.framer-12640pj)'));
     for (const cover of covers) {
-      cover.querySelectorAll('img').forEach(image => updateCover(image, active));
+      const isAcjCover = active.id === 'arizona-chip-journey';
+      cover.classList.toggle('acj-detail-cover', isAcjCover);
+      const imageArticle = isAcjCover
+        ? { ...active, cover: { ...active.cover, src: '/assets/experience/acj-detail-cover-no-text.png', fit: 'contain' } }
+        : active;
+      cover.querySelectorAll('img').forEach(image => updateCover(image, imageArticle));
     }
     updateArticleReading(details, active);
     if (document.title !== `${active.title} | Jarvis Lin`) document.title = `${active.title} | Jarvis Lin`;
