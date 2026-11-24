@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1180" viewBox="0 0 164 118">
+  <title>手繪對話泡泡</title>
+  <g stroke="#271f20" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#fff" stroke-width="2.7" d="M 6 44 C 12 28 35 16 62 10 C 87 4 111 1 128 5 C 148 9 157 23 159 43 C 162 63 154 83 138 92 C 135 94 134 94 135 99 C 135 104 137 107 142 109 C 145 111 143 113 140 113 C 127 115 115 109 107 103 C 92 106 71 108 53 108 C 35 108 24 104 16 93 C 6 79 0 60 6 44 Z"/>
+    <g fill="none">
+      <path stroke-width="2.75" d="M 12 53 C 14 40 25 28 36 25"/>
+      <path stroke-width="2.8" d="M 11.5 57 L 11.5 58"/>
+      <path stroke-width="2.65" d="M 54 102 C 61 103 75 102 82 100.8 M 88 100.2 L 92 99.8"/>
+    </g>
+  </g>
+</svg>
