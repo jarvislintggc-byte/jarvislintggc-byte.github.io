@@ -67,6 +67,7 @@
     if (!sheet || document.getElementById("home-reflection")) return;
     const template = document.createElement("template");
     template.innerHTML = `<dialog id="home-reflection" aria-label="我的近況">
+    <div class="home-reflection-actions"><button type="button" class="home-reflection-close">×</button></div>
     <article tabindex="-1" autofocus></article>
   </dialog>`;
     const dialog = template.content.firstElementChild;
@@ -76,6 +77,8 @@
     trigger.setAttribute("aria-haspopup", "dialog");
     trigger.setAttribute("aria-controls", dialog.id);
     const article = dialog.querySelector("article");
+    const close = dialog.querySelector(".home-reflection-close");
+    const closeLabels = { "zh-Hant": "關閉故事", en: "Close story", ja: "物語を閉じる" };
     function applyLanguage() {
       const requested = document.documentElement.lang;
       const locale = Object.hasOwn(copy, requested) ? requested : "en";
@@ -98,6 +101,7 @@
       trigger.textContent = bubbleTitles[locale];
       trigger.setAttribute("aria-label", open);
       dialog.setAttribute("aria-label", title);
+      close.setAttribute("aria-label", closeLabels[locale]);
     }
 
     const font = document.createElement("link");
@@ -139,7 +143,17 @@
       }
       #home-reflection::-webkit-scrollbar { display: none; }
       #home-reflection::backdrop { background: rgb(12 9 8 / 84%); }
+      #home-reflection .home-reflection-actions { position: sticky; top: .75rem; height: 0; z-index: 1; }
+      #home-reflection .home-reflection-close {
+        position: absolute; inset-block-start: -.4rem; inset-inline-end: -.35rem;
+        display: grid; place-items: center; inline-size: 44px; block-size: 44px;
+        padding: 0; border: 1px solid #fff9f03b; border-radius: 50%;
+        color: inherit; background: #292322; font: 400 1.6rem/1 system-ui, sans-serif; cursor: pointer;
+      }
+      #home-reflection .home-reflection-close:hover { background: #453936; }
+      #home-reflection .home-reflection-close:focus-visible { outline: 2px solid #ffbc23; outline-offset: 2px; }
       #home-reflection article { outline: none; }
+      #home-reflection article p:first-child { padding-inline-end: 3rem; }
       #home-reflection p { margin: 0 0 .85em; }
       #home-reflection p:last-child { margin-bottom: 0; }`;
     document.head.append(style);
