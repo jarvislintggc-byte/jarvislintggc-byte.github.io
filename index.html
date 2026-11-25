@@ -590,6 +590,13 @@ a[href*="lemonsqueezy.com"], a[href*="framer.com/"], #__framer-badge-container, 
     animation: apex-language-enter .85s cubic-bezier(.22,.65,.3,1) .5s backwards;
   }
 }
+.apex-experience-location {
+  display: block;
+  margin-top: 3px;
+  color: rgb(255 255 255 / 85%);
+  font: 500 clamp(.72rem, 1.1vw, .85rem)/1.25 system-ui, sans-serif;
+  overflow-wrap: normal;
+}
 @keyframes apex-language-enter {
   from { opacity: 0; transform: translateY(calc(50% + 130px)); }
   to { opacity: 1; transform: translateY(50%); }
@@ -835,6 +842,14 @@ a[data-apex-article].apex-tilt-photo {
   const storeProjects = featured.find(ids => ids.includes('milk-tea-supply-chain'));
   storeProjects.splice(storeProjects.indexOf('milk-tea-supply-chain'), 1, 'yan-jian-yu-cha');
   additional.find(group => group.title === 'Supply Chain Projects').ids.unshift('milk-tea-supply-chain');
+  const experienceLocations = new Map([
+    ['2026/5- Present', 'Greater Phoenix, USA'],
+    ['2026/01~2026/05', 'Tempe, USA'],
+    ['2019/12 - 2023/04', 'Tokyo, Japan'],
+    ['2019/08 - 2024/04', 'Tokyo, Japan'],
+    ['2022/10-2023/06', 'Tokyo, Japan'],
+    ['2019/01-2021/03', 'Tokyo, Japan']
+  ]);
   const paragraphs = paragraphSets[locale] ?? {};
   const uiLabels = labelSets[locale] ?? {'JarvisLin':'Jarvis Lin'};
   const byId = new Map(articles.map(article => [article.id, article]));
@@ -894,6 +909,17 @@ a[data-apex-article].apex-tilt-photo {
         button.textContent = phrase;
         target.replaceChildren(translation.slice(0, start), button, translation.slice(start + phrase.length));
       }
+    }
+  }
+
+  function addExperienceLocations(root) {
+    for (const date of root.querySelectorAll('#section-3 p:not(:has(.apex-experience-location))')) {
+      const place = experienceLocations.get(date.textContent.trim().replace(/\s+/g, ' '));
+      if (!place) continue;
+      const location = document.createElement('span');
+      location.className = 'apex-experience-location';
+      location.textContent = place;
+      date.append(location);
     }
   }
 
@@ -1638,6 +1664,7 @@ a[data-apex-article].apex-tilt-photo {
         const active = byId.get(new URLSearchParams(location.search).get('article')) ?? byRoute.get(location.pathname.replace(/\/$/, ''));
         updateDetail(main, active);
       }
+      addExperienceLocations(main);
       translateCopy(main);
       updateDock(main);
       registerPhotos();
