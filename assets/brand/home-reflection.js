@@ -61,6 +61,8 @@
     ]
   };
 
+  const bubbleTitles = { "zh-Hant": "我的故事", en: "My Story", ja: "私の物語" };
+
   function install() {
     if (!sheet || document.getElementById("home-reflection")) return;
     const template = document.createElement("template");
@@ -93,9 +95,16 @@
       });
       article.replaceChildren(...paragraphs);
       dialog.scrollTop = 0;
+      trigger.textContent = bubbleTitles[locale];
       trigger.setAttribute("aria-label", open);
       dialog.setAttribute("aria-label", title);
     }
+
+    const font = document.createElement("link");
+    font.rel = "stylesheet";
+    font.href = "https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap&text=" +
+      encodeURIComponent(Object.values(bubbleTitles).join(""));
+    document.head.append(font);
 
     const style = document.createElement("style");
     // Keep the original artwork and responsive coordinates in the viewport.
@@ -103,6 +112,9 @@
       #section-1::after { content: none; }
       .home-bubble-trigger {
         position: fixed; z-index: 10; border: 0; padding: 0; appearance: none; cursor: pointer; pointer-events: auto;
+        display: grid; place-items: center; padding: 0 .45em .45em 0;
+        color: #332520; font: 600 clamp(.78rem, 2.25vw, 1.65rem)/1.15 "Klee One", "DFKai-SB", "Segoe Print", cursive;
+        white-space: nowrap;
         --dock-shift: 0px;
         animation: jarvis-dock-bubble 3s ease-in-out infinite;
         transform-origin: center;
