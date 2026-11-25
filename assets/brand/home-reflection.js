@@ -23,8 +23,7 @@
       "兜兜轉轉，走過了不同的國家，認識了不同的人，最後又回到了自己最初出發的地方。",
       "我仍舊渴望成功，仍舊對世界充滿好奇，也仍舊希望有一天，能夠成為連結台灣、日本與美國的橋樑。",
       "只是現在的我，開始明白人生不只有向上攀爬，也有停下來、失去、接受，以及重新開始。",
-      "或許成長不是變得越來越厲害，而是越來越清楚自己的渺小，卻依然有勇氣繼續前進。",
-      "我的故事，還遠遠沒有結束。"
+      "或許成長不是變得越來越厲害，而是越來越清楚自己的渺小，卻依然有勇氣繼續前進。"
     ],
     "en": [
       "From Wanhua into the world, and back to a new understanding of myself.",
@@ -41,8 +40,7 @@
       "After all those detours, after living in different countries and meeting so many people, I found myself back where I started.",
       "I still want to succeed. I’m still curious about the world, and I still hope to become a bridge between Taiwan, Japan, and the United States someday.",
       "What I’m beginning to understand now is that life also asks us to stop, to lose things, to accept what has happened, and to start again.",
-      "Maybe growth is about seeing more clearly how small we are and still finding the courage to keep going.",
-      "My story is far from over."
+      "Maybe growth is about seeing more clearly how small we are and still finding the courage to keep going."
     ],
     "ja": [
       "萬華から世界へ。そして、あらためて自分を知る。",
@@ -59,8 +57,7 @@
       "いくつもの国を巡り、さまざまな人と出会い、回り道をした末に、私は最初の出発点へ戻ってきました。",
       "今も成功したいという思いは変わりません。世界への好奇心も、いつか台湾、日本、アメリカをつなぐ架け橋になりたいという願いも、変わりません。",
       "今の私は、人生には上を目指すことだけでなく、立ち止まること、失うこと、受け入れること、そして再び始めることもあるのだと、少しずつ理解し始めています。",
-      "成長とは、自分がどんどん立派になることよりも、自分の小ささをより深く知り、それでも前に進む勇気を持ち続けることなのかもしれません。",
-      "私の物語は、まだまだ続きます。"
+      "成長とは、自分がどんどん立派になることよりも、自分の小ささをより深く知り、それでも前に進む勇気を持ち続けることなのかもしれません。"
     ]
   };
 
