@@ -2,9 +2,9 @@
   // Enhance the existing homepage bubble after the Framer page has loaded.
   const sheet = document.getElementById("home-speech-bubble");
   const labels = {
-    "zh-Hant": ["閱讀我的近況", "我的近況", "再點一下關閉"],
-    en: ["Read my reflection", "A personal reflection", "Click again to close"],
-    ja: ["最近の思いを読む", "最近の思い", "もう一度タップして閉じる"]
+    "zh-Hant": ["閱讀我的近況", "我的近況"],
+    en: ["Read my reflection", "A personal reflection"],
+    ja: ["最近の思いを読む", "最近の思い"]
   };
 
   function install() {
@@ -22,7 +22,6 @@
       <p>有時候，先把眼前的生活過好，把答應的事情做好，慢慢找回方向，也是一種前進。</p>
       <p>我還有很多不懂的事，也還在學習。希望往後的自己，能少一點急著證明，多一點耐心；帶著感謝，繼續走下去。</p>
     </article>
-    <button type="button">再點一下關閉</button>
   </dialog>`;
     const dialog = template.content.firstElementChild;
     const trigger = document.createElement("button");
@@ -31,10 +30,9 @@
     trigger.setAttribute("aria-haspopup", "dialog");
     trigger.setAttribute("aria-controls", dialog.id);
     function setLabels() {
-      const [open, title, close] = labels[document.documentElement.lang] || labels["zh-Hant"];
+      const [open, title] = labels[document.documentElement.lang] || labels["zh-Hant"];
       trigger.setAttribute("aria-label", open);
       dialog.setAttribute("aria-label", title);
-      dialog.querySelector("button").textContent = close;
     }
 
     const style = document.createElement("style");
@@ -44,20 +42,19 @@
       #section-1 > .home-bubble-trigger { z-index: 2; border: 0; padding: 0; appearance: none; cursor: pointer; pointer-events: auto; }
       [data-framer-name="Download CV Button Container"] { pointer-events: none; }
       [data-framer-name="Download CV Button Container"] a { pointer-events: auto; }
-      .home-bubble-trigger:focus-visible, #home-reflection button:focus-visible { outline: 3px solid #ffbc23; outline-offset: 3px; }
+      .home-bubble-trigger:focus-visible { outline: 3px solid #ffbc23; outline-offset: 3px; }
       html:has(#home-reflection[open]) { overflow: hidden; }
       #home-reflection {
         box-sizing: border-box; width: min(44rem, calc(100% - 2rem));
         max-height: 86dvh; margin: auto; padding: clamp(18px, 3vw, 42px);
-        overflow-y: auto; overscroll-behavior: contain; border: 0; border-radius: 14px;
+        overflow-y: auto; scrollbar-width: none; overscroll-behavior: contain; border: 0; border-radius: 14px;
         background: #201c1b; color: #fff9f0; font: 400 clamp(1rem, 1.2vw, 1.125rem)/1.75 system-ui, sans-serif;
       }
+      #home-reflection::-webkit-scrollbar { display: none; }
       #home-reflection::backdrop { background: rgb(12 9 8 / 84%); }
       #home-reflection article { outline: none; }
       #home-reflection p { margin: 0 0 .85em; }
-      #home-reflection button {
-        border: 0; background: transparent; color: #f1ce94; font: inherit; cursor: pointer; padding: .4em 0;
-      }`;
+      #home-reflection p:last-child { margin-bottom: 0; }`;
     document.head.append(style);
     document.body.append(dialog);
     setLabels();
