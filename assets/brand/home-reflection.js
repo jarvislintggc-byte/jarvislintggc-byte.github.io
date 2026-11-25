@@ -9,37 +9,58 @@
 
   const copy = {
     "zh-Hant": [
+      "從萬華出發，走向世界，再重新認識自己。",
+      "小時候在萬華長大的我，其實並不是一個愛讀書的孩子。",
+      "那時候的我，從來沒有想過，有一天自己會在日本生活多年、創業、學習不同的語言，甚至遠赴美國攻讀碩士，努力走進半導體產業。",
+      "回頭看，人生中的每一次轉變，都不是理所當然。",
+      "從十二歲開始的六年住宿學校生活，到獨自前往日本留學；從十九歲開始經濟獨立，到一邊求學、一邊經營自己的事業；再從菲律賓的語言學習，走到美國的研究所。",
+      "這一路上，我做過正確的選擇，也犯過許多錯誤。有過值得驕傲的時刻，也有過無數次對自己的懷疑。",
       "曾經，我以為人生是一條不斷向上的道路。",
       "只要努力一點、勇敢一點，願意走出熟悉的環境，就能慢慢接近自己想要的生活。",
-      "後來才發現，很多事情比我想像中複雜。努力未必會得到期待的回報，做了選擇，也不代表就能掌握結果。",
-      "有機會到不同的地方生活、求學與工作，我很幸運。這些經歷讓我看見更多可能，也讓我對自己有了更多期待。有時走得太急，便忘了停下來想想，自己究竟在追求什麼。",
-      "近期的簽證變動，讓我必須回到台灣，重新看待原本習以為常的事。我還在學著接受失落，也學著承認自己的不足，明白自己仍有許多可以做得更好的地方。",
-      "一路走來，我得到過很多人的幫助。許多看似靠自己走過的路，其實都有家人、朋友與前輩的支持。現在回頭看，心裡有更多感謝，也希望自己能更認真地聽懂別人的經驗與提醒。",
-      "有時候，先把眼前的生活過好，把答應的事情做好，慢慢找回方向，也是一種前進。",
-      "我還有很多不懂的事，也還在學習。希望往後的自己，能少一點急著證明，多一點耐心；帶著感謝，繼續走下去。",
-      "成長，就是明知道自己的渺小，卻仍然有勇氣繼續前進。"
+      "直到最近，我才逐漸明白，人生並不總是如此。",
+      "努力未必會得到期待的回報，做了選擇，也不代表就能掌握結果。",
+      "因為簽證問題，我不得不離開原本期待展開職涯的美國，回到台灣，重新思考自己的下一步。",
+      "兜兜轉轉，走過了不同的國家，認識了不同的人，最後又回到了自己最初出發的地方。",
+      "我仍舊渴望成功，仍舊對世界充滿好奇，也仍舊希望有一天，能夠成為連結台灣、日本與美國的橋樑。",
+      "只是現在的我，開始明白人生不只有向上攀爬，也有停下來、失去、接受，以及重新開始。",
+      "或許成長不是變得越來越厲害，而是越來越清楚自己的渺小，卻依然有勇氣繼續前進。",
+      "我的故事，還遠遠沒有結束。"
     ],
     "en": [
-      "I once believed that life was a continuous climb upward.",
-      "I thought that by working a little harder, being a little braver, and stepping outside my comfort zone, I could gradually move closer to the life I envisioned.",
-      "Over time, I came to realize that life is far more complicated than I had imagined. Effort does not always bring the rewards we hope for, and making choices does not mean we can control their outcomes.",
-      "I have been fortunate to live, study, and work in different parts of the world. These experiences opened my eyes to new possibilities and raised my expectations of myself. Sometimes, I moved forward so quickly that I forgot to reflect on what I was truly pursuing.",
-      "Recent visa circumstances required me to return to Taiwan and reconsider many things I had once taken for granted. I am still learning to accept disappointment, acknowledge my shortcomings, and recognize how much room I have to grow.",
-      "Throughout this journey, I have received support from many people. Much of what seemed like an independent journey was made possible by my family, friends, and mentors. Looking back, I feel a deeper sense of gratitude and a greater willingness to listen to the experiences and advice of others.",
-      "Sometimes, taking care of the life in front of us, honoring our commitments, and gradually finding our direction again is also a form of progress.",
-      "There is still so much I do not know, and I am still learning. Moving forward, I hope to be less eager to prove myself, more patient, and always grateful for the journey.",
-      "Growth is recognizing how small we are, yet still finding the courage to move forward."
+      "From Wanhua into the world, and back to a new understanding of myself.",
+      "Growing up in Wanhua, I was never much of a student.",
+      "Back then, I never imagined that I would spend years living in Japan, start a business, learn other languages, or travel as far as the United States to earn a master’s degree and work toward a career in the semiconductor industry.",
+      "Looking back, I realize that none of these turning points was a given.",
+      "At twelve, I started six years of boarding school. Then I went to Japan on my own to study. At nineteen, I became financially independent, and I went on to run my own business while studying. Later, language studies in the Philippines led me to graduate school in the United States.",
+      "Along the way, I made good decisions and plenty of mistakes. There were moments I was proud of and countless times when I doubted myself.",
+      "I once thought life was a steady climb upward.",
+      "I believed that if I worked a little harder, found a little more courage, and stepped outside what was familiar, I could gradually move closer to the life I wanted.",
+      "Only recently have I begun to understand that life doesn’t always unfold that way.",
+      "Hard work doesn’t always bring the reward we hope for, and making a choice doesn’t give us control over what happens next.",
+      "Because of visa issues, I had to leave the United States, where I had hoped to start my career, and return to Taiwan to rethink my next step.",
+      "After all those detours, after living in different countries and meeting so many people, I found myself back where I started.",
+      "I still want to succeed. I’m still curious about the world, and I still hope to become a bridge between Taiwan, Japan, and the United States someday.",
+      "What I’m beginning to understand now is that life also asks us to stop, to lose things, to accept what has happened, and to start again.",
+      "Maybe growth is about seeing more clearly how small we are and still finding the courage to keep going.",
+      "My story is far from over."
     ],
     "ja": [
-      "かつて私は、人生とは絶えず上を目指して進んでいくものだと思っていました。",
-      "もう少し努力し、もう少し勇気を持ち、慣れ親しんだ環境から一歩踏み出せば、理想とする人生に少しずつ近づけると信じていました。",
-      "しかし、人生は想像していた以上に複雑なものだと気づきました。努力が必ずしも望んだ結果につながるわけではなく、自分で選択したからといって、その結果まで思い通りになるとは限りません。",
-      "さまざまな国や地域で生活し、学び、働く機会に恵まれたことを、幸運に思っています。こうした経験を通じて、多くの可能性を知り、自分自身への期待も大きくなりました。時には先を急ぐあまり、自分が本当に何を求めているのか、立ち止まって考えることを忘れていました。",
-      "最近、ビザの事情により台湾へ帰国することになり、これまで当たり前だと思っていたことを改めて見つめ直すようになりました。今もなお、失ったものを受け入れ、自分の未熟さと向き合いながら、成長する余地がまだ多くあることを学んでいます。",
-      "これまでの道のりでは、多くの方々に支えていただきました。自分一人で歩んできたように思える道も、実際には家族や友人、先輩方の支えがあってこそのものでした。振り返ると、感謝の気持ちがより深まり、周囲の方々の経験や助言にも、より真摯に耳を傾けたいと思うようになりました。",
-      "目の前の日々を大切にし、約束したことを一つひとつ果たしながら、少しずつ自分の進むべき道を見つけていくことも、前進の一つの形だと思います。",
-      "まだ知らないことも多く、学びの途中にいます。これからは、自分を証明することを焦らず、もう少し心に余裕を持ち、感謝の気持ちを忘れずに歩んでいきたいと思います。",
-      "成長とは、自分の小ささを知りながらも、なお前へ進む勇気を持つこと。"
+      "萬華から世界へ。そして、あらためて自分を知る。",
+      "萬華で育った子どもの頃の私は、実は勉強が好きではありませんでした。",
+      "当時は、いつか日本で何年も暮らし、起業し、さまざまな言葉を学び、さらにはアメリカに渡って修士号を取得し、半導体業界を目指すようになるとは、想像もしていませんでした。",
+      "振り返ると、人生の一つひとつの転機は、決して当たり前に訪れたものではありません。",
+      "12歳から6年間の寮生活を送り、その後、一人で日本へ留学しました。19歳で経済的に自立し、学業と並行して自分の事業を営みました。やがてフィリピンでの語学学習を経て、アメリカの大学院へ進みました。",
+      "その道のりでは、正しい選択もしましたが、たくさんの失敗もしました。誇りに思える瞬間もあれば、自分を疑ったことも数え切れないほどあります。",
+      "かつて私は、人生とは上へと登り続ける道だと思っていました。",
+      "もう少し努力し、もう少し勇気を出して、慣れ親しんだ環境から一歩踏み出せば、望む暮らしに少しずつ近づけると信じていました。",
+      "でも最近になって、人生はいつもそう進むわけではないと、少しずつ分かってきました。",
+      "努力がいつも期待どおりに報われるとは限りません。自分で選んだ道でも、その先の結果まで思いどおりにできるわけではありません。",
+      "ビザの事情で、キャリアを始めたいと思っていたアメリカを離れざるを得なくなり、台湾に戻って次の一歩を考え直すことになりました。",
+      "いくつもの国を巡り、さまざまな人と出会い、回り道をした末に、私は最初の出発点へ戻ってきました。",
+      "今も成功したいという思いは変わりません。世界への好奇心も、いつか台湾、日本、アメリカをつなぐ架け橋になりたいという願いも、変わりません。",
+      "今の私は、人生には上を目指すことだけでなく、立ち止まること、失うこと、受け入れること、そして再び始めることもあるのだと、少しずつ理解し始めています。",
+      "成長とは、自分がどんどん立派になることよりも、自分の小ささをより深く知り、それでも前に進む勇気を持ち続けることなのかもしれません。",
+      "私の物語は、まだまだ続きます。"
     ]
   };
 
@@ -62,9 +83,9 @@
       if (article.lang === locale) return;
       article.lang = locale;
       const [open, title] = labels[locale];
-      const paragraphs = copy[locale].map((text, index, lines) => {
+      const paragraphs = copy[locale].map((text, index) => {
         const paragraph = document.createElement("p");
-        if (index === lines.length - 1) {
+        if (index === 0) {
           const emphasis = document.createElement("strong");
           emphasis.textContent = text;
           paragraph.append(emphasis);
